@@ -1,0 +1,63 @@
+{
+  "variant": "f39_motion_event_sampling",
+  "decoder_experiment": "kinematic_k20",
+  "seed": 1,
+  "validation_scene_id": 1,
+  "epochs": 30,
+  "scheduler": "warm_restarts",
+  "elapsed_seconds": 201.44800000000396,
+  "split": {
+    "strategy": "leave_one_complete_training_scene_out",
+    "validation_scene_id": 1,
+    "scene_counts": {
+      "0": 246,
+      "1": 877,
+      "2": 538,
+      "3": 3736,
+      "4": 4477
+    },
+    "train_samples": 8997,
+    "validation_samples": 877,
+    "target_test_accessed": false
+  },
+  "locked_backend": {
+    "decoder_class": "KinematicAnchorDecoder",
+    "decoder_fingerprint": "49e563b0bba12533",
+    "num_modes": 20,
+    "decoder_experiment": "kinematic_k20",
+    "classification_weight": 0.5,
+    "loss_class": "ModeQueryLoss",
+    "fusion_alpha": 0.3,
+    "parameter_counts": {
+      "total": 284642,
+      "trainable": 284065,
+      "decoder": 17483
+    }
+  },
+  "verifier_checkpoint": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\results\\social_verifier_crossval\\scale_0p030\\seed_1\\val_scene_1\\verifier_best.pth",
+  "evaluation": {
+    "samples": 877,
+    "original": {
+      "ade": 0.5349900126457214,
+      "fde": 0.9310737252235413,
+      "hit_best_ade": 0.38768529076396807,
+      "regret": 0.3753594160079956,
+      "regret_p95": 1.3594394207000724,
+      "active_modes": 16
+    },
+    "oracle": {
+      "min_ade_20": 0.15963059663772583,
+      "same_path_fde": 0.29209664463996887,
+      "min_fde_20": 0.24621246755123138
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.4529403746128082,
+      "fde": 0.7955111265182495,
+      "hit_best_ade": 0.41961231470923605,
+      "regret": 0.2933097779750824,
+      "regret_p95": 1.155816268920898,
+      "active_modes": 10
+    }
+  }
+}

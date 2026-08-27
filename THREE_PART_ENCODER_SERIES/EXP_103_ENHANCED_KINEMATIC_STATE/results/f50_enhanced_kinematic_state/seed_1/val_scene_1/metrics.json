@@ -1,0 +1,107 @@
+{
+  "variant": "f50_enhanced_kinematic_state",
+  "decoder_experiment": "kinematic_k20",
+  "seed": 1,
+  "validation_scene_id": 1,
+  "epochs": 30,
+  "scheduler": "warm_restarts",
+  "elapsed_seconds": 241.60057690000394,
+  "split": {
+    "strategy": "leave_one_complete_training_scene_out",
+    "validation_scene_id": 1,
+    "scene_counts": {
+      "0": 246,
+      "1": 877,
+      "2": 538,
+      "3": 3736,
+      "4": 4477
+    },
+    "train_samples": 8997,
+    "validation_samples": 877,
+    "target_test_accessed": false
+  },
+  "locked_backend": {
+    "decoder_class": "KinematicAnchorDecoder",
+    "decoder_fingerprint": "49e563b0bba12533",
+    "num_modes": 20,
+    "decoder_experiment": "kinematic_k20",
+    "classification_weight": 0.5,
+    "loss_class": "ModeQueryLoss",
+    "fusion_alpha": 0.3,
+    "oracle_coverage_weight": 0.2,
+    "oracle_coverage_temperature": 0.1,
+    "oracle_coverage_fde_weight": 0.25,
+    "oracle_coverage_warmup_epochs": 0.0,
+    "oracle_coverage_normalized": false,
+    "scene_sampling": "none",
+    "ema_decay": 0.995,
+    "augmentation": {
+      "rotation": true,
+      "reflection": true,
+      "speed_min": 0.9,
+      "speed_max": 1.1,
+      "probability": 0.5
+    },
+    "focal_heading_normalize": false,
+    "velocity_loss_weight": 0.0,
+    "acceleration_loss_weight": 0.0,
+    "checkpoint_criterion": "oracle_combo",
+    "parameter_counts": {
+      "total": 288277,
+      "trainable": 287700,
+      "decoder": 17483
+    }
+  },
+  "verifier_checkpoint": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\results\\social_verifier_crossval\\scale_0p030\\seed_1\\val_scene_1\\verifier_best.pth",
+  "evaluation": {
+    "samples": 877,
+    "original": {
+      "ade": 0.4693537950515747,
+      "fde": 0.8488325476646423,
+      "hit_best_ade": 0.2554161915621437,
+      "regret": 0.33202630281448364,
+      "regret_p95": 1.385618138313293,
+      "active_modes": 10
+    },
+    "oracle": {
+      "min_ade_20": 0.1373274326324463,
+      "same_path_fde": 0.25508174300193787,
+      "min_fde_20": 0.2211567461490631
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.4287014305591583,
+      "fde": 0.7847111225128174,
+      "hit_best_ade": 0.28506271379703535,
+      "regret": 0.29137399792671204,
+      "regret_p95": 1.3448333740234375,
+      "active_modes": 9
+    }
+  },
+  "evaluation_best_selected": {
+    "samples": 877,
+    "original": {
+      "ade": 0.4500499963760376,
+      "fde": 0.8249064683914185,
+      "hit_best_ade": 0.28734321550741165,
+      "regret": 0.31637096405029297,
+      "regret_p95": 1.3687514781951904,
+      "active_modes": 9
+    },
+    "oracle": {
+      "min_ade_20": 0.13367906212806702,
+      "same_path_fde": 0.250245600938797,
+      "min_fde_20": 0.21710887551307678
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.4180925190448761,
+      "fde": 0.7743291854858398,
+      "hit_best_ade": 0.322690992018244,
+      "regret": 0.28441348671913147,
+      "regret_p95": 1.3108489513397217,
+      "active_modes": 8
+    }
+  },
+  "best_checkpoint_score": 0.2422334998846054
+}

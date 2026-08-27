@@ -1,0 +1,30 @@
+{
+  "variant": "f41_edge_list_attention",
+  "checkpoint": "C:\\Users\\linke\\Documents\\New project\\AUTONOMOUS_EXPERIMENTS\\EXP_060_EDGE_LIST_ATTENTION\\results\\f41_edge_list_attention\\seed_1\\val_scene_1\\best_original_ade.pth",
+  "checkpoint_selection": "minimum_validation_original_ade_at_5_epoch_interval",
+  "evaluation": {
+    "samples": 877,
+    "original": {
+      "ade": 0.48785415291786194,
+      "fde": 0.8697227239608765,
+      "hit_best_ade": 0.45952109464082097,
+      "regret": 0.32601311802864075,
+      "regret_p95": 1.3187753200530998,
+      "active_modes": 7
+    },
+    "oracle": {
+      "min_ade_20": 0.16184097528457642,
+      "same_path_fde": 0.2827432155609131,
+      "min_fde_20": 0.25091397762298584
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.42860153317451477,
+      "fde": 0.7560402750968933,
+      "hit_best_ade": 0.4697833523375142,
+      "regret": 0.26676052808761597,
+      "regret_p95": 1.1261700630187985,
+      "active_modes": 6
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "experiment": "EXP_132 current selected model on standard whole-SDD split",
+  "model": "F16 temporal-social cross + kinematic K20 + coverage 0.20 + EMA + focal heading normalization + 50% reflection/speed augmentation",
+  "protocol": "31 train / 12 validation / 17 test videos, 8/12 at 2.5 Hz",
+  "checkpoint_selection": "validation oracle_combo; test evaluated once afterward",
+  "test_pixels": {
+    "samples": 2679,
+    "minADE20_px": 9.23714280128479,
+    "same_path_FDE_px": 20.31487226486206,
+    "minFDE20_px": 17.993370294570923,
+    "top1_ADE_px": 17.696945667266846,
+    "top1_FDE_px": 34.35208559036255
+  },
+  "validation_pixels": {
+    "samples": 3763,
+    "minADE20_px": 6.920694708824158,
+    "same_path_FDE_px": 14.967902898788452,
+    "minFDE20_px": 12.935057878494263,
+    "top1_ADE_px": 14.515947103500366,
+    "top1_FDE_px": 28.06091547012329
+  },
+  "parameters": {
+    "total": 284642,
+    "trainable": 284065,
+    "decoder": 17483
+  },
+  "elapsed_seconds": 723.4002848999808,
+  "comparison_table_short_SDD_min20_pixels": {
+    "PECNet": {
+      "ADE": 9.96,
+      "FDE": 15.88
+    },
+    "Trajectron++": {
+      "ADE": 9.9,
+      "FDE": 16.8
+    },
+    "MID": {
+      "ADE": 9.73,
+      "FDE": 15.32
+    },
+    "MemoNet": {
+      "ADE": 8.56,
+      "FDE": 12.7
+    },
+    "GSMNet": {
+      "ADE": 8.3,
+      "FDE": 12.7
+    }
+  },
+  "interpretation_guardrail": "Use minADE20/minFDE20 for literature comparison. Top-1 and same-path FDE are diagnostics, not substitutes for the published min20 columns."
+}

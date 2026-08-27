@@ -1,0 +1,32 @@
+{
+  "variant": "f16_temporal_social_cross",
+  "seed": 1,
+  "validation_scene_id": 0,
+  "checkpoint": "C:\\Users\\linke\\Documents\\New project\\AUTONOMOUS_EXPERIMENTS\\EXP_040_F16_CROSS_SCENE_VALIDATION\\results\\f16_temporal_social_cross\\seed_1\\val_scene_0\\best_original_ade.pth",
+  "checkpoint_selection": "minimum_validation_original_ade_at_5_epoch_interval",
+  "evaluation": {
+    "samples": 246,
+    "original": {
+      "ade": 1.058096170425415,
+      "fde": 2.1518783569335938,
+      "hit_best_ade": 0.13821138211382114,
+      "regret": 0.5055829882621765,
+      "regret_p95": 1.4228642582893372,
+      "active_modes": 13
+    },
+    "oracle": {
+      "min_ade_20": 0.5525131225585938,
+      "same_path_fde": 1.2582263946533203,
+      "min_fde_20": 1.095679759979248
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 1.0267995595932007,
+      "fde": 2.095106840133667,
+      "hit_best_ade": 0.14634146341463414,
+      "regret": 0.47428637742996216,
+      "regret_p95": 1.2900241017341614,
+      "active_modes": 12
+    }
+  }
+}

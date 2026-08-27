@@ -1,0 +1,35 @@
+{
+  "decoder_class": "KinematicAnchorDecoder",
+  "decoder_fingerprint": "49e563b0bba12533",
+  "num_modes": 20,
+  "decoder_experiment": "kinematic_k20",
+  "classification_weight": 0.5,
+  "loss_class": "ModeQueryLoss",
+  "fusion_alpha": 0.3,
+  "oracle_coverage_weight": 0.2,
+  "oracle_coverage_temperature": 0.1,
+  "oracle_coverage_fde_weight": 0.25,
+  "oracle_coverage_warmup_epochs": 0.0,
+  "oracle_coverage_normalized": false,
+  "scene_sampling": "none",
+  "ema_decay": 0.995,
+  "augmentation": {
+    "rotation": true,
+    "reflection": true,
+    "speed_min": 0.9,
+    "speed_max": 1.1,
+    "probability": 0.5
+  },
+  "focal_heading_normalize": false,
+  "velocity_loss_weight": 0.0,
+  "acceleration_loss_weight": 0.0,
+  "masked_history_weight": 0.1,
+  "masked_history_probability": 0.15,
+  "training_only_auxiliary_parameters": 194,
+  "checkpoint_criterion": "oracle_combo",
+  "parameter_counts": {
+    "total": 284642,
+    "trainable": 284065,
+    "decoder": 17483
+  }
+}

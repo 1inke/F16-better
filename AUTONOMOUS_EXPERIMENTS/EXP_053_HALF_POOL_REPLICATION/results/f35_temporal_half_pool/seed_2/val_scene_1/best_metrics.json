@@ -1,0 +1,32 @@
+{
+  "variant": "f35_temporal_half_pool",
+  "seed": 2,
+  "validation_scene_id": 1,
+  "checkpoint": "C:\\Users\\linke\\Documents\\New project\\AUTONOMOUS_EXPERIMENTS\\EXP_053_HALF_POOL_REPLICATION\\results\\f35_temporal_half_pool\\seed_2\\val_scene_1\\best_original_ade.pth",
+  "checkpoint_selection": "minimum_validation_original_ade_at_5_epoch_interval",
+  "evaluation": {
+    "samples": 877,
+    "original": {
+      "ade": 0.41648855805397034,
+      "fde": 0.7613335847854614,
+      "hit_best_ade": 0.4846066134549601,
+      "regret": 0.2624182105064392,
+      "regret_p95": 0.9775904417037957,
+      "active_modes": 10
+    },
+    "oracle": {
+      "min_ade_20": 0.15407034754753113,
+      "same_path_fde": 0.28119587898254395,
+      "min_fde_20": 0.24503572285175323
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.3960237205028534,
+      "fde": 0.7330520153045654,
+      "hit_best_ade": 0.4925883694412771,
+      "regret": 0.24195341765880585,
+      "regret_p95": 0.8701219916343679,
+      "active_modes": 11
+    }
+  }
+}

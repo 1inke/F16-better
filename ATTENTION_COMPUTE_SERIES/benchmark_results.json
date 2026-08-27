@@ -1,0 +1,56 @@
+[
+  {
+    "variant": "f36_fixed_half_projection",
+    "batch_size": 1,
+    "parameters": 284642,
+    "latency_ms_mean": 9.905144714355469,
+    "latency_ms_median": 9.845982360839844,
+    "latency_ms_p95": 10.286749969482422,
+    "peak_forward_bytes": 888832
+  },
+  {
+    "variant": "f36_fixed_half_projection",
+    "batch_size": 64,
+    "parameters": 284642,
+    "latency_ms_mean": 14.065801635742186,
+    "latency_ms_median": 14.047971191406251,
+    "latency_ms_p95": 14.507111389160157,
+    "peak_forward_bytes": 57229824
+  },
+  {
+    "variant": "f35_temporal_half_pool",
+    "batch_size": 1,
+    "parameters": 284642,
+    "latency_ms_mean": 10.164403137207032,
+    "latency_ms_median": 10.062585144042968,
+    "latency_ms_p95": 10.875351196289062,
+    "peak_forward_bytes": 888832
+  },
+  {
+    "variant": "f35_temporal_half_pool",
+    "batch_size": 64,
+    "parameters": 284642,
+    "latency_ms_mean": 12.328029296875,
+    "latency_ms_median": 12.045079956054687,
+    "latency_ms_p95": 13.482969360351563,
+    "peak_forward_bytes": 57229824
+  },
+  {
+    "variant": "f16_temporal_social_cross",
+    "batch_size": 1,
+    "parameters": 284642,
+    "latency_ms_mean": 9.643980407714844,
+    "latency_ms_median": 9.601238403320313,
+    "latency_ms_p95": 10.113793792724609,
+    "peak_forward_bytes": 952832
+  },
+  {
+    "variant": "f16_temporal_social_cross",
+    "batch_size": 64,
+    "parameters": 284642,
+    "latency_ms_mean": 12.126558837890624,
+    "latency_ms_median": 11.937269897460936,
+    "latency_ms_p95": 12.880586242675781,
+    "peak_forward_bytes": 61279232
+  }
+]

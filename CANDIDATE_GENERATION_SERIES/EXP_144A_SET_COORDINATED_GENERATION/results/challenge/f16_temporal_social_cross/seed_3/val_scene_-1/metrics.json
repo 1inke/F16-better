@@ -1,0 +1,204 @@
+{
+  "variant": "f16_temporal_social_cross",
+  "decoder_experiment": "g1_set_coordinated_generation",
+  "seed": 3,
+  "validation_scene_id": -1,
+  "epochs": 25,
+  "scheduler": "monotonic_cosine",
+  "elapsed_seconds": 855.0595546000404,
+  "split": {
+    "strategy": "motion_challenge_holdout_within_training_scenes",
+    "validation_fraction": 0.1,
+    "validation_seed": 20260825,
+    "scene_counts": {
+      "1": 877,
+      "2": 21217,
+      "3": 3736,
+      "4": 4477
+    },
+    "train_samples": 27275,
+    "validation_samples": 3032,
+    "target_test_accessed": false,
+    "data_path": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy",
+    "num_path": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_train.npy",
+    "challenge_definition": "Within each source scene, hold out the highest combined percentile of recent speed, motion nonlinearity, and low agent density.",
+    "challenge_train_means": {
+      "speed_median_step": 0.21305647492408752,
+      "nonlinearity_mean_step_change": 0.02254546619951725,
+      "valid_agents": 7.722933292388916,
+      "challenge_score": 1.0908737182617188
+    },
+    "challenge_validation_means": {
+      "speed_median_step": 0.46533527970314026,
+      "nonlinearity_mean_step_change": 0.05212044343352318,
+      "valid_agents": 5.062335014343262,
+      "challenge_score": 2.110748767852783
+    }
+  },
+  "locked_backend": {
+    "decoder_class": "StructuralCandidateDecoder",
+    "decoder_fingerprint": "14b40f1ec6cf4dae",
+    "num_modes": 20,
+    "decoder_experiment": "g1_set_coordinated_generation",
+    "encoder_experiment": "none",
+    "classification_weight": 0.5,
+    "loss_class": "ModeQueryLoss",
+    "fusion_alpha": 0.3,
+    "oracle_coverage_weight": 0.2,
+    "oracle_coverage_temperature": 0.1,
+    "oracle_coverage_fde_weight": 0.25,
+    "oracle_coverage_warmup_epochs": 0.0,
+    "oracle_coverage_normalized": false,
+    "scene_sampling": "none",
+    "motion_difficulty_sampling": false,
+    "motion_difficulty_strength": 0.8,
+    "ema_decay": 0.995,
+    "augmentation": {
+      "rotation": false,
+      "reflection": true,
+      "speed_min": 0.9,
+      "speed_max": 1.1,
+      "probability": 0.5,
+      "curvature_max": 0.0
+    },
+    "future_difficulty_weight": 0.0,
+    "focal_heading_normalize": true,
+    "velocity_loss_weight": 0.0,
+    "acceleration_loss_weight": 0.0,
+    "masked_history_weight": 0.0,
+    "masked_history_probability": 0.15,
+    "equivariance_weight": 0.0,
+    "training_only_auxiliary_parameters": 0,
+    "checkpoint_criterion": "oracle_combo",
+    "hierarchical_decoder": {
+      "cv_reference": false,
+      "anchor_steps": [
+        4,
+        8,
+        12
+      ],
+      "top_m": 20,
+      "use_refiner": true
+    },
+    "parameter_counts": {
+      "total": 360662,
+      "trainable": 38674,
+      "decoder": 93503
+    }
+  },
+  "verifier_checkpoint": null,
+  "evaluation": {
+    "samples": 3032,
+    "original": {
+      "ade": 0.7536267042160034,
+      "fde": 1.6268031597137451,
+      "hit_best_ade": 0.07222955145118734,
+      "regret": 0.47063395380973816,
+      "regret_p95": 1.2922171235084523,
+      "active_modes": 6
+    },
+    "oracle": {
+      "min_ade_20": 0.2829926609992981,
+      "same_path_fde": 0.5784446001052856,
+      "min_fde_20": 0.4887752830982208
+    },
+    "fusion_alpha": 0.3,
+    "fused": null,
+    "proposal_diagnostics": {
+      "coarse_min_ade_20": 0.2832839787006378,
+      "coarse_same_path_fde": 0.5772402286529541,
+      "coarse_min_fde_20": 0.49044984579086304,
+      "refinement_min_ade_delta": -0.0002913177013397217,
+      "refinement_min_fde_delta": -0.001674562692642212,
+      "top_m_coarse_oracle_ade_recall": 1.0,
+      "anchor_correction_mean": [
+        0.004326978232711554,
+        0.02571689523756504,
+        0.04147931933403015
+      ],
+      "anchor_correction_p95": [
+        0.015018286230042553,
+        0.098045230284333,
+        0.15534640178084372
+      ],
+      "anchor_correction_max": [
+        0.0707182064652443,
+        0.21739046275615692,
+        0.35183393955230713
+      ],
+      "progress_knot_mean": [
+        0.3333507776260376,
+        0.6667015552520752,
+        1.0
+      ],
+      "progress_knot_p05": [
+        0.3333333432674408,
+        0.6666666865348816,
+        1.0
+      ],
+      "progress_knot_p95": [
+        0.3333333432674408,
+        0.6666666865348816,
+        1.0
+      ]
+    }
+  },
+  "evaluation_best_selected": {
+    "samples": 3032,
+    "original": {
+      "ade": 0.7535366415977478,
+      "fde": 1.6265755891799927,
+      "hit_best_ade": 0.07255936675461741,
+      "regret": 0.47055956721305847,
+      "regret_p95": 1.2889095783233635,
+      "active_modes": 6
+    },
+    "oracle": {
+      "min_ade_20": 0.2829771339893341,
+      "same_path_fde": 0.5798091292381287,
+      "min_fde_20": 0.4886666536331177
+    },
+    "fusion_alpha": 0.3,
+    "fused": null,
+    "proposal_diagnostics": {
+      "coarse_min_ade_20": 0.2832839787006378,
+      "coarse_same_path_fde": 0.5772402286529541,
+      "coarse_min_fde_20": 0.49044984579086304,
+      "refinement_min_ade_delta": -0.00030684471130371094,
+      "refinement_min_fde_delta": -0.0017831921577453613,
+      "top_m_coarse_oracle_ade_recall": 1.0,
+      "anchor_correction_mean": [
+        0.0039061857387423515,
+        0.024530131369829178,
+        0.038277074694633484
+      ],
+      "anchor_correction_p95": [
+        0.012737673195078967,
+        0.09439030811190605,
+        0.147842814028263
+      ],
+      "anchor_correction_max": [
+        0.0664934515953064,
+        0.21341286599636078,
+        0.3514963686466217
+      ],
+      "progress_knot_mean": [
+        0.3333507776260376,
+        0.6667015552520752,
+        1.0
+      ],
+      "progress_knot_p05": [
+        0.3333333432674408,
+        0.6666666865348816,
+        1.0
+      ],
+      "progress_knot_p95": [
+        0.3333333432674408,
+        0.6666666865348816,
+        1.0
+      ]
+    }
+  },
+  "evaluation_test_best_selected": null,
+  "best_checkpoint_score": 0.5273104608058929
+}

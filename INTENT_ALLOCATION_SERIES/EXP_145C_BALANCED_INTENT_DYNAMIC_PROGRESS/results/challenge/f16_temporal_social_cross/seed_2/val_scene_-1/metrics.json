@@ -1,0 +1,204 @@
+{
+  "variant": "f16_temporal_social_cross",
+  "decoder_experiment": "i3_balanced_intent_dynamic_progress",
+  "seed": 2,
+  "validation_scene_id": -1,
+  "epochs": 30,
+  "scheduler": "monotonic_cosine",
+  "elapsed_seconds": 1212.9834919000277,
+  "split": {
+    "strategy": "motion_challenge_holdout_within_training_scenes",
+    "validation_fraction": 0.1,
+    "validation_seed": 20260825,
+    "scene_counts": {
+      "1": 877,
+      "2": 21217,
+      "3": 3736,
+      "4": 4477
+    },
+    "train_samples": 27275,
+    "validation_samples": 3032,
+    "target_test_accessed": false,
+    "data_path": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy",
+    "num_path": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_train.npy",
+    "challenge_definition": "Within each source scene, hold out the highest combined percentile of recent speed, motion nonlinearity, and low agent density.",
+    "challenge_train_means": {
+      "speed_median_step": 0.21305647492408752,
+      "nonlinearity_mean_step_change": 0.02254546619951725,
+      "valid_agents": 7.722933292388916,
+      "challenge_score": 1.0908737182617188
+    },
+    "challenge_validation_means": {
+      "speed_median_step": 0.46533527970314026,
+      "nonlinearity_mean_step_change": 0.05212044343352318,
+      "valid_agents": 5.062335014343262,
+      "challenge_score": 2.110748767852783
+    }
+  },
+  "locked_backend": {
+    "decoder_class": "BalancedIntentDecoder",
+    "decoder_fingerprint": "61c76a47363909e2",
+    "num_modes": 20,
+    "decoder_experiment": "i3_balanced_intent_dynamic_progress",
+    "encoder_experiment": "none",
+    "classification_weight": 0.5,
+    "loss_class": "ModeQueryLoss",
+    "fusion_alpha": 0.3,
+    "oracle_coverage_weight": 0.1,
+    "oracle_coverage_temperature": 0.1,
+    "oracle_coverage_fde_weight": 0.35,
+    "oracle_coverage_warmup_epochs": 0.0,
+    "oracle_coverage_normalized": false,
+    "scene_sampling": "none",
+    "motion_difficulty_sampling": false,
+    "motion_difficulty_strength": 0.8,
+    "ema_decay": 0.995,
+    "augmentation": {
+      "rotation": false,
+      "reflection": true,
+      "speed_min": 0.9,
+      "speed_max": 1.1,
+      "probability": 0.5,
+      "curvature_max": 0.0
+    },
+    "future_difficulty_weight": 0.0,
+    "focal_heading_normalize": true,
+    "velocity_loss_weight": 0.0,
+    "acceleration_loss_weight": 0.0,
+    "masked_history_weight": 0.0,
+    "masked_history_probability": 0.15,
+    "equivariance_weight": 0.0,
+    "training_only_auxiliary_parameters": 0,
+    "checkpoint_criterion": "oracle_combo",
+    "hierarchical_decoder": {
+      "cv_reference": false,
+      "anchor_steps": [
+        4,
+        8,
+        12
+      ],
+      "top_m": 20,
+      "use_refiner": true
+    },
+    "parameter_counts": {
+      "total": 326867,
+      "trainable": 15836,
+      "decoder": 59708
+    }
+  },
+  "verifier_checkpoint": null,
+  "evaluation": {
+    "samples": 3032,
+    "original": {
+      "ade": 0.7706757187843323,
+      "fde": 1.6807888746261597,
+      "hit_best_ade": 0.07552770448548812,
+      "regret": 0.49128639698028564,
+      "regret_p95": 1.3178499042987815,
+      "active_modes": 18
+    },
+    "oracle": {
+      "min_ade_20": 0.2793893814086914,
+      "same_path_fde": 0.5712340474128723,
+      "min_fde_20": 0.48217421770095825
+    },
+    "fusion_alpha": 0.3,
+    "fused": null,
+    "proposal_diagnostics": {
+      "coarse_min_ade_20": 0.30825075507164,
+      "coarse_same_path_fde": 0.5651898384094238,
+      "coarse_min_fde_20": 0.48217421770095825,
+      "refinement_min_ade_delta": -0.02886137366294861,
+      "refinement_min_fde_delta": 0.0,
+      "top_m_coarse_oracle_ade_recall": 1.0,
+      "anchor_correction_mean": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "anchor_correction_p95": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "anchor_correction_max": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "progress_knot_mean": [
+        0.29364168643951416,
+        0.6746219992637634,
+        1.0
+      ],
+      "progress_knot_p05": [
+        0.26867391765117643,
+        0.6333711743354797,
+        0.9999999403953552
+      ],
+      "progress_knot_p95": [
+        0.3049896463751793,
+        0.6954112619161605,
+        1.0
+      ]
+    }
+  },
+  "evaluation_best_selected": {
+    "samples": 3032,
+    "original": {
+      "ade": 0.7724551558494568,
+      "fde": 1.6831927299499512,
+      "hit_best_ade": 0.07948548812664907,
+      "regret": 0.49339279532432556,
+      "regret_p95": 1.3372261285781837,
+      "active_modes": 16
+    },
+    "oracle": {
+      "min_ade_20": 0.2790623605251312,
+      "same_path_fde": 0.5722708702087402,
+      "min_fde_20": 0.4822634756565094
+    },
+    "fusion_alpha": 0.3,
+    "fused": null,
+    "proposal_diagnostics": {
+      "coarse_min_ade_20": 0.30486413836479187,
+      "coarse_same_path_fde": 0.5657777786254883,
+      "coarse_min_fde_20": 0.4822634756565094,
+      "refinement_min_ade_delta": -0.025801777839660645,
+      "refinement_min_fde_delta": 0.0,
+      "top_m_coarse_oracle_ade_recall": 1.0,
+      "anchor_correction_mean": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "anchor_correction_p95": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "anchor_correction_max": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "progress_knot_mean": [
+        0.2966672480106354,
+        0.6759042143821716,
+        1.0
+      ],
+      "progress_knot_p05": [
+        0.2732270106673241,
+        0.6365670323371887,
+        0.9999999403953552
+      ],
+      "progress_knot_p95": [
+        0.3075607612729072,
+        0.696086299419403,
+        1.0
+      ]
+    }
+  },
+  "evaluation_test_best_selected": null,
+  "best_checkpoint_score": 0.5201940983533859
+}

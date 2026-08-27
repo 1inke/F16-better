@@ -1,0 +1,30 @@
+{
+  "variant": "f39_motion_event_sampling",
+  "checkpoint": "C:\\Users\\linke\\Documents\\New project\\AUTONOMOUS_EXPERIMENTS\\EXP_058_MOTION_EVENT_SAMPLING\\results\\f39_motion_event_sampling\\seed_1\\val_scene_1\\best_original_ade.pth",
+  "checkpoint_selection": "minimum_validation_original_ade_at_5_epoch_interval",
+  "evaluation": {
+    "samples": 877,
+    "original": {
+      "ade": 0.4872175455093384,
+      "fde": 0.8656648397445679,
+      "hit_best_ade": 0.4526795895096921,
+      "regret": 0.3297390639781952,
+      "regret_p95": 1.290534234046936,
+      "active_modes": 8
+    },
+    "oracle": {
+      "min_ade_20": 0.15747851133346558,
+      "same_path_fde": 0.2773660719394684,
+      "min_fde_20": 0.2462252378463745
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.45214608311653137,
+      "fde": 0.7985539436340332,
+      "hit_best_ade": 0.45952109464082097,
+      "regret": 0.2946675717830658,
+      "regret_p95": 1.1826787471771225,
+      "active_modes": 11
+    }
+  }
+}

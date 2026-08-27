@@ -1,0 +1,50 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Local caches and smoke-test artifacts
+.cache/
+**/[Ss][Mm][Oo][Kk][Ee]*/
+**/_[Ss][Mm][Oo][Kk][Ee]*/
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+
+# Model checkpoints and exported weights
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Raw and processed datasets / split indices
+data/
+datasets/
+processed_data/
+processed_data_*/
+**/data/
+**/datasets/
+**/processed_data/
+**/processed_data_*/
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Runtime logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# IDE and operating-system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

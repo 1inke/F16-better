@@ -1,0 +1,30 @@
+{
+  "variant": "f40_motion_token_squeeze",
+  "checkpoint": "C:\\Users\\linke\\Documents\\New project\\AUTONOMOUS_EXPERIMENTS\\EXP_059_MOTION_TOKEN_SQUEEZE\\results\\f40_motion_token_squeeze\\seed_1\\val_scene_1\\best_original_ade.pth",
+  "checkpoint_selection": "minimum_validation_original_ade_at_5_epoch_interval",
+  "evaluation": {
+    "samples": 877,
+    "original": {
+      "ade": 0.4887680113315582,
+      "fde": 0.8657439947128296,
+      "hit_best_ade": 0.467502850627138,
+      "regret": 0.32929733395576477,
+      "regret_p95": 1.370302629470825,
+      "active_modes": 8
+    },
+    "oracle": {
+      "min_ade_20": 0.15947064757347107,
+      "same_path_fde": 0.2775536775588989,
+      "min_fde_20": 0.24362801015377045
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.4353976845741272,
+      "fde": 0.7701361775398254,
+      "hit_best_ade": 0.4789053591790194,
+      "regret": 0.27592703700065613,
+      "regret_p95": 1.1862037658691398,
+      "active_modes": 8
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "variant": "f16_temporal_social_cross",
+  "decoder_experiment": "kinematic_k20",
+  "seed": 1,
+  "validation_scene_id": 1,
+  "epochs": 30,
+  "scheduler": "warm_restarts",
+  "elapsed_seconds": 723.4002848999808,
+  "split": {
+    "strategy": "leave_one_complete_training_scene_out",
+    "validation_scene_id": 1,
+    "scene_counts": {
+      "0": 8418,
+      "1": 3763
+    },
+    "train_samples": 8418,
+    "validation_samples": 3763,
+    "target_test_accessed": false,
+    "data_path": "C:\\Users\\linke\\Documents\\New project\\SDD_STANDARD_POTENTIAL_SERIES\\processed_data\\sdd_standard_train_val_data.npy",
+    "num_path": "C:\\Users\\linke\\Documents\\New project\\SDD_STANDARD_POTENTIAL_SERIES\\processed_data\\sdd_standard_train_val_num.npy",
+    "test_samples": 2679,
+    "test_data_path": "C:\\Users\\linke\\Documents\\New project\\SDD_STANDARD_POTENTIAL_SERIES\\processed_data\\sdd_standard_test_data.npy",
+    "test_num_path": "C:\\Users\\linke\\Documents\\New project\\SDD_STANDARD_POTENTIAL_SERIES\\processed_data\\sdd_standard_test_num.npy",
+    "test_policy": "held_out_until_after_validation_checkpoint_selection"
+  },
+  "locked_backend": {
+    "decoder_class": "KinematicAnchorDecoder",
+    "decoder_fingerprint": "49e563b0bba12533",
+    "num_modes": 20,
+    "decoder_experiment": "kinematic_k20",
+    "encoder_experiment": "none",
+    "classification_weight": 0.5,
+    "loss_class": "ModeQueryLoss",
+    "fusion_alpha": 0.3,
+    "oracle_coverage_weight": 0.2,
+    "oracle_coverage_temperature": 0.1,
+    "oracle_coverage_fde_weight": 0.25,
+    "oracle_coverage_warmup_epochs": 0.0,
+    "oracle_coverage_normalized": false,
+    "scene_sampling": "none",
+    "ema_decay": 0.995,
+    "augmentation": {
+      "rotation": false,
+      "reflection": true,
+      "speed_min": 0.9,
+      "speed_max": 1.1,
+      "probability": 0.5
+    },
+    "focal_heading_normalize": true,
+    "velocity_loss_weight": 0.0,
+    "acceleration_loss_weight": 0.0,
+    "masked_history_weight": 0.0,
+    "masked_history_probability": 0.15,
+    "equivariance_weight": 0.0,
+    "training_only_auxiliary_parameters": 0,
+    "checkpoint_criterion": "oracle_combo",
+    "parameter_counts": {
+      "total": 284642,
+      "trainable": 284065,
+      "decoder": 17483
+    }
+  },
+  "verifier_checkpoint": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\results\\social_verifier_crossval\\scale_0p030\\seed_1\\val_scene_1\\verifier_best.pth",
+  "evaluation": {
+    "samples": 3763,
+    "original": {
+      "ade": 0.7366377711296082,
+      "fde": 1.416313886642456,
+      "hit_best_ade": 0.19213393568960935,
+      "regret": 0.3902122974395752,
+      "regret_p95": 1.4835796833038322,
+      "active_modes": 19
+    },
+    "oracle": {
+      "min_ade_20": 0.34642553329467773,
+      "same_path_fde": 0.7453901767730713,
+      "min_fde_20": 0.6471725106239319
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.7321783900260925,
+      "fde": 1.419799566268921,
+      "hit_best_ade": 0.18867924528301888,
+      "regret": 0.38575294613838196,
+      "regret_p95": 1.4337523460388164,
+      "active_modes": 19
+    }
+  },
+  "evaluation_best_selected": {
+    "samples": 3763,
+    "original": {
+      "ade": 0.7257973551750183,
+      "fde": 1.4030457735061646,
+      "hit_best_ade": 0.21445655062450172,
+      "regret": 0.3797626495361328,
+      "regret_p95": 1.4201792597770682,
+      "active_modes": 19
+    },
+    "oracle": {
+      "min_ade_20": 0.3460347354412079,
+      "same_path_fde": 0.7483951449394226,
+      "min_fde_20": 0.6467528939247131
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.7318639159202576,
+      "fde": 1.4259922504425049,
+      "hit_best_ade": 0.20302949774116397,
+      "regret": 0.3858291208744049,
+      "regret_p95": 1.3882827639579767,
+      "active_modes": 17
+    }
+  },
+  "evaluation_test_best_selected": {
+    "samples": 2679,
+    "original": {
+      "ade": 0.8848472833633423,
+      "fde": 1.7176042795181274,
+      "hit_best_ade": 0.1955953714072415,
+      "regret": 0.4229901134967804,
+      "regret_p95": 1.5511124134063716,
+      "active_modes": 19
+    },
+    "oracle": {
+      "min_ade_20": 0.4618571400642395,
+      "same_path_fde": 1.015743613243103,
+      "min_fde_20": 0.8996685147285461
+    },
+    "fusion_alpha": 0.3,
+    "fused": null
+  },
+  "best_checkpoint_score": 0.6694111824035645
+}

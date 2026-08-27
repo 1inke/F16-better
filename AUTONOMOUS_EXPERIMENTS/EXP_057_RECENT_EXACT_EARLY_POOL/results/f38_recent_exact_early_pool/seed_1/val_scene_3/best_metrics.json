@@ -1,0 +1,32 @@
+{
+  "variant": "f38_recent_exact_early_pool",
+  "seed": 1,
+  "validation_scene_id": 3,
+  "checkpoint": "C:\\Users\\linke\\Documents\\New project\\AUTONOMOUS_EXPERIMENTS\\EXP_057_RECENT_EXACT_EARLY_POOL\\results\\f38_recent_exact_early_pool\\seed_1\\val_scene_3\\best_original_ade.pth",
+  "checkpoint_selection": "minimum_validation_original_ade_at_5_epoch_interval",
+  "evaluation": {
+    "samples": 3736,
+    "original": {
+      "ade": 0.4499121606349945,
+      "fde": 0.9653531908988953,
+      "hit_best_ade": 0.2845289079229122,
+      "regret": 0.24089962244033813,
+      "regret_p95": 0.8836501240730286,
+      "active_modes": 13
+    },
+    "oracle": {
+      "min_ade_20": 0.20901253819465637,
+      "same_path_fde": 0.45710811018943787,
+      "min_fde_20": 0.3703937828540802
+    },
+    "fusion_alpha": 0.3,
+    "fused": {
+      "ade": 0.4426640570163727,
+      "fde": 0.9557835459709167,
+      "hit_best_ade": 0.2837259100642398,
+      "regret": 0.2336515337228775,
+      "regret_p95": 0.845293253660202,
+      "active_modes": 15
+    }
+  }
+}
