@@ -13,6 +13,7 @@ DECODER = WORKSPACE / "AUTONOMOUS_EXPERIMENTS" / "EXP_002_LIGHT_KINEMATIC_DECODE
 DATA = PROJECT / "datasets" / "eth_ucy" / "processed_data_diverse"
 
 EXPERIMENTS = {
+    "baseline": None,
     "pb1_add": "pb1_time_bias_add",
     "pb2_replace": "pb2_time_bias_replace",
     "pb3_bias_only": "pb3_bias_only_interaction",
@@ -32,8 +33,6 @@ def command_for(args, name, split, seed):
         "--data-path", str(DATA / "eth_data_train.npy"),
         "--num-path", str(DATA / "eth_num_train.npy"),
         "--variant", "f16_temporal_social_cross",
-        "--encoder-experiment", EXPERIMENTS[name],
-        "--encoder-module", str(CUSTOM),
         "--decoder-experiment", "kinematic_k20",
         "--decoder-module", str(DECODER),
         "--seed", str(seed), "--val-scene-id", "-1",
@@ -50,6 +49,9 @@ def command_for(args, name, split, seed):
         "--focal-heading-normalize", "--augment-reflection",
         "--augment-speed-min", "0.9", "--augment-speed-max", "1.1", "--augment-probability", "0.5",
     ]
+    encoder_experiment = EXPERIMENTS[name]
+    if encoder_experiment is not None:
+        cmd += ["--encoder-experiment", encoder_experiment, "--encoder-module", str(CUSTOM)]
     if args.force: cmd.append("--force")
     return cmd
 
@@ -73,8 +75,10 @@ def summarize(seeds, names, splits):
             for seed in seeds:
                 p = result_dir(name, split, seed) / "metrics.json"
                 if p.is_file(): rows.append(metric_row(p, name, split, seed))
-    aggregate = []
+
+    aggregate, paired = [], []
     for split in splits:
+        baseline = {int(r["seed"]): r for r in rows if r["split"] == split and r["experiment"] == "baseline"}
         for name in names:
             selected = sorted((r for r in rows if r["split"] == split and r["experiment"] == name), key=lambda r: int(r["seed"]))
             if not selected: continue
@@ -86,7 +90,26 @@ def summarize(seeds, names, splits):
                     "values": [float(r[m]) for r in selected],
                 } for m in METRICS},
             })
-    result = {"description":"Time-resolved factorized physical attention-bias series","seeds":seeds,"experiments":names,"splits":splits,"rows":rows,"aggregate":aggregate}
+            if name != "baseline" and baseline:
+                changes = {}
+                for metric in METRICS[:-1]:
+                    vals = [
+                        100.0 * (float(r[metric]) / float(baseline[int(r["seed"])][metric]) - 1.0)
+                        for r in selected if int(r["seed"]) in baseline
+                    ]
+                    if vals:
+                        changes[metric] = {
+                            "mean": statistics.fmean(vals),
+                            "std": statistics.stdev(vals) if len(vals) > 1 else 0.0,
+                            "values": vals,
+                        }
+                paired.append({"split": split, "experiment": name, "paired_percent_change_vs_baseline": changes})
+
+    result = {
+        "description":"Time-resolved factorized physical attention-bias series",
+        "seeds":seeds, "experiments":names, "splits":splits,
+        "rows":rows, "aggregate":aggregate, "paired_comparisons":paired,
+    }
     (ROOT / "multiseed_summary.json").write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
     if rows:
         with (ROOT / "all_runs.csv").open("w", encoding="utf-8-sig", newline="") as h:
