@@ -1,6 +1,6 @@
 """Run the controlled time-resolved physical attention-bias series."""
 from __future__ import annotations
-import argparse, csv, json, statistics, subprocess
+import argparse, csv, json, os, statistics, subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -9,8 +9,13 @@ PROJECT = Path(r"C:\Users\linke\Desktop\DRSE\ASTRA_ACCURACY_Q20")
 PYTHON = Path(r"C:\coding_toobox\envs\astra2\python.exe")
 TRAINER = WORKSPACE / "FRONT_ENCODER_SERIES" / "train_front_variant.py"
 CUSTOM = ROOT / "physical_bias_models.py"
-DECODER = WORKSPACE / "AUTONOMOUS_EXPERIMENTS" / "EXP_002_LIGHT_KINEMATIC_DECODER" / "decoder_models.py"
+DECODER = ROOT / "current_mode_anchor_adapter.py"
 DATA = PROJECT / "datasets" / "eth_ucy" / "processed_data_diverse"
+SOURCE_ROOT = (
+    WORKSPACE / "MODE_TEMPLATE_GROUP_SERIES" /
+    "EXP_146B_ANCHORED_MODE_TEMPLATE" / "results"
+)
+RESULTS_ROOT = ROOT / "results_current_mode_anchor"
 
 EXPERIMENTS = {
     "baseline": None,
@@ -22,7 +27,13 @@ SPLITS = {"general": ("stratified_random", 0.05), "challenge": ("motion_challeng
 METRICS = ("min_ade_20","min_fde_20","same_path_fde","top1_ade","top1_fde","elapsed_seconds")
 
 def result_dir(name, split, seed):
-    return ROOT / "results" / split / name / "f16_temporal_social_cross" / f"seed_{seed}" / "val_scene_-1"
+    return RESULTS_ROOT / split / name / "f16_temporal_social_cross" / f"seed_{seed}" / "val_scene_-1"
+
+def source_checkpoint(split, seed):
+    return (
+        SOURCE_ROOT / split / "f16_temporal_social_cross" / f"seed_{seed}" /
+        "val_scene_-1" / "best_selected.pth"
+    )
 
 def command_for(args, name, split, seed):
     split_mode, validation_fraction = SPLITS[split]
@@ -33,7 +44,7 @@ def command_for(args, name, split, seed):
         "--data-path", str(DATA / "eth_data_train.npy"),
         "--num-path", str(DATA / "eth_num_train.npy"),
         "--variant", "f16_temporal_social_cross",
-        "--decoder-experiment", "kinematic_k20",
+        "--decoder-experiment", "current_mode_anchor_template",
         "--decoder-module", str(DECODER),
         "--seed", str(seed), "--val-scene-id", "-1",
         "--validation-fraction", str(validation_fraction),
@@ -42,8 +53,9 @@ def command_for(args, name, split, seed):
         "--epochs", str(args.epochs), "--val-freq", str(args.val_freq),
         "--batch-size", str(args.batch_size), "--device", args.device,
         "--max-agents", "9", "--graph-top-k", str(args.graph_top_k), "--graph-radius", "6.0",
-        "--scheduler", "warm_restarts",
-        "--output-root", str(ROOT / "results" / split / name),
+        "--scheduler", "monotonic_cosine", "--warmup-epochs", "1",
+        "--learning-rate", str(args.learning_rate),
+        "--output-root", str(RESULTS_ROOT / split / name),
         "--oracle-coverage-weight", "0.20", "--oracle-coverage-temperature", "0.10",
         "--checkpoint-criterion", "oracle_combo", "--ema-decay", "0.995",
         "--focal-heading-normalize", "--augment-reflection",
@@ -106,22 +118,23 @@ def summarize(seeds, names, splits):
                 paired.append({"split": split, "experiment": name, "paired_percent_change_vs_baseline": changes})
 
     result = {
-        "description":"Time-resolved factorized physical attention-bias series",
+        "description":"Physical attention bias on locked EXP-146B mode/three-anchor decoder",
         "seeds":seeds, "experiments":names, "splits":splits,
         "rows":rows, "aggregate":aggregate, "paired_comparisons":paired,
     }
-    (ROOT / "multiseed_summary.json").write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+    (ROOT / "multiseed_summary_current_mode_anchor.json").write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
     if rows:
-        with (ROOT / "all_runs.csv").open("w", encoding="utf-8-sig", newline="") as h:
+        with (ROOT / "all_runs_current_mode_anchor.csv").open("w", encoding="utf-8-sig", newline="") as h:
             w = csv.DictWriter(h, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
     return result
 
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--device", default="cuda:0")
-    p.add_argument("--epochs", type=int, default=30)
-    p.add_argument("--val-freq", type=int, default=5)
+    p.add_argument("--epochs", type=int, default=12)
+    p.add_argument("--val-freq", type=int, default=3)
     p.add_argument("--batch-size", type=int, default=64)
+    p.add_argument("--learning-rate", type=float, default=0.00025)
     p.add_argument("--seeds", type=int, nargs="+", default=[1,2,3])
     p.add_argument("--validation-seed", type=int, default=20260828)
     p.add_argument("--graph-top-k", type=int, default=4)
@@ -136,15 +149,19 @@ def main():
     for split in splits:
         for name in names:
             for seed in args.seeds:
+                source = source_checkpoint(split, seed)
+                if not source.is_file(): raise FileNotFoundError(source)
                 dest = result_dir(name, split, seed); metrics = dest/"metrics.json"
                 if metrics.is_file() and not args.force:
                     print(f"[skip] {split} {name} seed={seed}", flush=True); continue
                 cmd = command_for(args, name, split, seed)
                 if args.dry_run:
-                    print("[dry-run] "+json.dumps(cmd), flush=True); continue
+                    print("[dry-run] source="+str(source)+" command="+json.dumps(cmd), flush=True); continue
                 dest.mkdir(parents=True, exist_ok=True)
                 print(f"[run] {split} {name} seed={seed}", flush=True)
-                proc = subprocess.Popen(cmd, cwd=PROJECT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding="utf-8", errors="replace", bufsize=1)
+                env = os.environ.copy()
+                env["PHYSICAL_BIAS_SOURCE_CHECKPOINT"] = str(source)
+                proc = subprocess.Popen(cmd, cwd=PROJECT, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, encoding="utf-8", errors="replace", bufsize=1)
                 assert proc.stdout is not None
                 with (dest/"console.log").open("w", encoding="utf-8") as log:
                     for line in proc.stdout:
@@ -154,7 +171,7 @@ def main():
     if args.dry_run: print("[done] dry-run passed", flush=True)
     else:
         result = summarize(args.seeds, names, splits)
-        print(f"[done] completed {len(result['rows'])}/{len(names)*len(splits)*len(args.seeds)}; summary={ROOT/'multiseed_summary.json'}", flush=True)
+        print(f"[done] completed {len(result['rows'])}/{len(names)*len(splits)*len(args.seeds)}; summary={ROOT/'multiseed_summary_current_mode_anchor.json'}", flush=True)
 
 if __name__ == "__main__":
     main()

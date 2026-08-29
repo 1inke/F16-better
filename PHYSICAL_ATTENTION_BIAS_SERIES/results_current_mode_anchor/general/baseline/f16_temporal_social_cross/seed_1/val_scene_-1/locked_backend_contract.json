@@ -1,0 +1,51 @@
+{
+  "decoder_class": "InteractionFineTuneModeAnchorDecoder",
+  "decoder_fingerprint": "eae26c71ac588d44",
+  "num_modes": 20,
+  "decoder_experiment": "current_mode_anchor_template",
+  "encoder_experiment": "none",
+  "classification_weight": 0.5,
+  "loss_class": "ModeQueryLoss",
+  "fusion_alpha": 0.3,
+  "oracle_coverage_weight": 0.2,
+  "oracle_coverage_temperature": 0.1,
+  "oracle_coverage_fde_weight": 0.25,
+  "oracle_coverage_warmup_epochs": 0.0,
+  "oracle_coverage_normalized": false,
+  "scene_sampling": "none",
+  "motion_difficulty_sampling": false,
+  "motion_difficulty_strength": 0.8,
+  "ema_decay": 0.995,
+  "augmentation": {
+    "rotation": false,
+    "reflection": true,
+    "speed_min": 0.9,
+    "speed_max": 1.1,
+    "probability": 0.5,
+    "curvature_max": 0.0
+  },
+  "future_difficulty_weight": 0.0,
+  "focal_heading_normalize": true,
+  "velocity_loss_weight": 0.0,
+  "acceleration_loss_weight": 0.0,
+  "masked_history_weight": 0.0,
+  "masked_history_probability": 0.15,
+  "equivariance_weight": 0.0,
+  "training_only_auxiliary_parameters": 0,
+  "checkpoint_criterion": "oracle_combo",
+  "hierarchical_decoder": {
+    "cv_reference": false,
+    "anchor_steps": [
+      4,
+      8,
+      12
+    ],
+    "top_m": 20,
+    "use_refiner": true
+  },
+  "parameter_counts": {
+    "total": 355048,
+    "trainable": 249005,
+    "decoder": 87889
+  }
+}

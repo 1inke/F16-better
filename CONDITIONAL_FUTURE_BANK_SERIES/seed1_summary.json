@@ -1,0 +1,79 @@
+{
+  "description": "CFB1 cross-scene conditional future distillation",
+  "rows": [
+    {
+      "experiment": "baseline_reused_exact_match",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.17867590487003326,
+      "min_fde_20": 0.3140714466571808,
+      "same_path_fde": 0.37851184606552124,
+      "top1_ade": 0.46738529205322266,
+      "top1_fde": 1.0261527299880981,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 297.07420440006536
+    },
+    {
+      "experiment": "cfb1_cross_scene_three_future",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.1795073300600052,
+      "min_fde_20": 0.3168914318084717,
+      "same_path_fde": 0.37617355585098267,
+      "top1_ade": 0.46849143505096436,
+      "top1_fde": 1.0298731327056885,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 682.4848228000337
+    },
+    {
+      "experiment": "baseline_reused_exact_match",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.2780737280845642,
+      "min_fde_20": 0.4778404235839844,
+      "same_path_fde": 0.5693995952606201,
+      "top1_ade": 0.7500599026679993,
+      "top1_fde": 1.6194778680801392,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 631.6822688999819
+    },
+    {
+      "experiment": "cfb1_cross_scene_three_future",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.2784084379673004,
+      "min_fde_20": 0.4783599078655243,
+      "same_path_fde": 0.5678228735923767,
+      "top1_ade": 0.7472293972969055,
+      "top1_fde": 1.6133192777633667,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 757.786574000027
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "split": "general",
+      "percent_change": {
+        "min_ade_20": 0.465325859453003,
+        "min_fde_20": 0.8978801420203686,
+        "same_path_fde": -0.6177587937720164,
+        "top1_ade": 0.23666619736415484,
+        "top1_fde": 0.3625583803332555
+      }
+    },
+    {
+      "split": "challenge",
+      "percent_change": {
+        "min_ade_20": 0.12036731590638894,
+        "min_fde_20": 0.10871501361136016,
+        "same_path_fde": -0.27690951686077936,
+        "top1_ade": -0.37737057547343467,
+        "top1_fde": -0.3802824625243839
+      }
+    }
+  ]
+}

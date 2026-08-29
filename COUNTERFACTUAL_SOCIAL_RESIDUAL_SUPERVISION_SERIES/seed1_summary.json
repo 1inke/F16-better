@@ -1,0 +1,79 @@
+{
+  "description": "CSRS1 actual-gain counterfactual social residual seed1",
+  "rows": [
+    {
+      "experiment": "baseline",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.17867590487003326,
+      "min_fde_20": 0.3140714466571808,
+      "same_path_fde": 0.37851184606552124,
+      "top1_ade": 0.46738529205322266,
+      "top1_fde": 1.0261527299880981,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 297.07420440006536
+    },
+    {
+      "experiment": "csrs1_actual_gain_residual",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.18014809489250183,
+      "min_fde_20": 0.31692036986351013,
+      "same_path_fde": 0.3781614303588867,
+      "top1_ade": 0.46815168857574463,
+      "top1_fde": 1.0286870002746582,
+      "parameters": 356992,
+      "trainable_parameters": 250949,
+      "elapsed_seconds": 640.9278278999263
+    },
+    {
+      "experiment": "baseline",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.2780737280845642,
+      "min_fde_20": 0.4778404235839844,
+      "same_path_fde": 0.5693995952606201,
+      "top1_ade": 0.7500599026679993,
+      "top1_fde": 1.6194778680801392,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 631.6822688999819
+    },
+    {
+      "experiment": "csrs1_actual_gain_residual",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.27882078289985657,
+      "min_fde_20": 0.4777158796787262,
+      "same_path_fde": 0.568339467048645,
+      "top1_ade": 0.7483991384506226,
+      "top1_fde": 1.6173388957977295,
+      "parameters": 356992,
+      "trainable_parameters": 250949,
+      "elapsed_seconds": 861.6131409999216
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "split": "general",
+      "percent_change": {
+        "min_ade_20": 0.8239443497092713,
+        "min_fde_20": 0.9070939866236971,
+        "same_path_fde": -0.09257721000728303,
+        "top1_ade": 0.1639753187686388,
+        "top1_fde": 0.2469681376367383
+      }
+    },
+    {
+      "split": "challenge",
+      "percent_change": {
+        "min_ade_20": 0.2686535043918914,
+        "min_fde_20": -0.02606391153013865,
+        "same_path_fde": -0.18618352046595454,
+        "top1_ade": -0.22141754431469485,
+        "top1_fde": -0.13207789526296088
+      }
+    }
+  ]
+}

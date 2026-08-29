@@ -1,0 +1,4152 @@
+{
+  "main_model_training_performed": false,
+  "source": "TNPA frozen-B0 cache",
+  "domain_task": "0=corresponding training fold, 1=corresponding locked validation fold",
+  "matching": "exact common-support strata on scene, train-defined speed quartile, train-defined curvature quartile, and density_r4 bin",
+  "results": [
+    {
+      "split": "general",
+      "domain_classification": {
+        "D0_scene_only": {
+          "balanced_samples": 3032,
+          "oof_auroc": 0.4969853227838849,
+          "oof_auroc_ci95": [
+            0.47730982464029376,
+            0.5180986515796228
+          ],
+          "oof_auprc": 0.49988060738623397,
+          "brier": 0.2501040579784897,
+          "ece_10bin": 0.010444721581558597,
+          "top_standardized_coefficients": [
+            {
+              "feature": "scene_1",
+              "coefficient": 0.044684625239610774
+            },
+            {
+              "feature": "scene_4",
+              "coefficient": -0.023120671827268777
+            },
+            {
+              "feature": "scene_3",
+              "coefficient": 0.007461035515267231
+            },
+            {
+              "feature": "scene_2",
+              "coefficient": -0.0025327988608145444
+            }
+          ]
+        },
+        "D1_individual": {
+          "balanced_samples": 3032,
+          "oof_auroc": 0.4973771416239096,
+          "oof_auroc_ci95": [
+            0.4764677388890192,
+            0.5174579700390173
+          ],
+          "oof_auprc": 0.49303468476854084,
+          "brier": 0.2514738043373274,
+          "ece_10bin": 0.022290683427005173,
+          "top_standardized_coefficients": [
+            {
+              "feature": "speed_std",
+              "coefficient": -0.13753586395018957
+            },
+            {
+              "feature": "observation_nonlinearity",
+              "coefficient": 0.13495898251227845
+            },
+            {
+              "feature": "velocity_variance",
+              "coefficient": -0.07382626174099163
+            },
+            {
+              "feature": "last_acceleration",
+              "coefficient": 0.055721632529392516
+            },
+            {
+              "feature": "last_speed",
+              "coefficient": -0.04799957525927134
+            },
+            {
+              "feature": "heading_change_sum",
+              "coefficient": -0.03354178713943945
+            },
+            {
+              "feature": "mean_curvature",
+              "coefficient": -0.03354170029370035
+            },
+            {
+              "feature": "observation_displacement",
+              "coefficient": -0.011814487302934225
+            },
+            {
+              "feature": "mean_acceleration",
+              "coefficient": 0.00714718398121026
+            },
+            {
+              "feature": "mean_speed",
+              "coefficient": -0.002587558244710322
+            }
+          ]
+        },
+        "D2_social": {
+          "balanced_samples": 3032,
+          "oof_auroc": 0.5137952430016499,
+          "oof_auroc_ci95": [
+            0.4939478097026127,
+            0.5320266914264256
+          ],
+          "oof_auprc": 0.5140952627815095,
+          "brier": 0.2509509012067422,
+          "ece_10bin": 0.011894368937638459,
+          "top_standardized_coefficients": [
+            {
+              "feature": "mean_closing",
+              "coefficient": -0.15333416442936362
+            },
+            {
+              "feature": "maximum_closing",
+              "coefficient": 0.11604514006533162
+            },
+            {
+              "feature": "has_neighbour",
+              "coefficient": -0.08225563512772759
+            },
+            {
+              "feature": "minimum_ttc",
+              "coefficient": -0.06558502878844198
+            },
+            {
+              "feature": "social_delta_norm",
+              "coefficient": -0.05501174148346559
+            },
+            {
+              "feature": "density_r4",
+              "coefficient": -0.03965888665638951
+            },
+            {
+              "feature": "density_r2",
+              "coefficient": -0.03059615885770038
+            },
+            {
+              "feature": "neighbour_count",
+              "coefficient": -0.024221526804227296
+            },
+            {
+              "feature": "density_r6",
+              "coefficient": -0.016918886949611932
+            },
+            {
+              "feature": "nearest_distance",
+              "coefficient": -0.0051289380028140975
+            },
+            {
+              "feature": "sparse_edge_count",
+              "coefficient": -0.0012975044476240699
+            },
+            {
+              "feature": "minimum_dca",
+              "coefficient": -0.0010237914994500631
+            },
+            {
+              "feature": "fused_feature_norm",
+              "coefficient": -0.00044850165919218003
+            }
+          ]
+        },
+        "D3_individual_social": {
+          "balanced_samples": 3032,
+          "oof_auroc": 0.5104951319609304,
+          "oof_auroc_ci95": [
+            0.49192196163312124,
+            0.5313982537217734
+          ],
+          "oof_auprc": 0.5100534268454124,
+          "brier": 0.25194695876461864,
+          "ece_10bin": 0.02850669755907576,
+          "top_standardized_coefficients": [
+            {
+              "feature": "density_r6",
+              "coefficient": 0.33393794542295113
+            },
+            {
+              "feature": "observation_displacement",
+              "coefficient": -0.31662075421896185
+            },
+            {
+              "feature": "mean_speed",
+              "coefficient": 0.27829072014161166
+            },
+            {
+              "feature": "neighbour_count",
+              "coefficient": -0.18934682470027717
+            },
+            {
+              "feature": "density_r4",
+              "coefficient": -0.1598422959153739
+            },
+            {
+              "feature": "speed_std",
+              "coefficient": -0.14121030666907775
+            },
+            {
+              "feature": "social_delta_norm",
+              "coefficient": -0.10955236119331124
+            },
+            {
+              "feature": "observation_nonlinearity",
+              "coefficient": 0.08988756279518244
+            },
+            {
+              "feature": "minimum_dca",
+              "coefficient": 0.0856655050092437
+            },
+            {
+              "feature": "last_speed",
+              "coefficient": 0.06797162985614853
+            },
+            {
+              "feature": "density_r2",
+              "coefficient": -0.06155613274340813
+            },
+            {
+              "feature": "fused_feature_norm",
+              "coefficient": -0.06067614604835588
+            },
+            {
+              "feature": "last_acceleration",
+              "coefficient": 0.04701414371503397
+            },
+            {
+              "feature": "sparse_edge_count",
+              "coefficient": 0.04170360430232568
+            },
+            {
+              "feature": "has_neighbour",
+              "coefficient": -0.0405632303876424
+            }
+          ]
+        },
+        "D4_encoder_representation": {
+          "balanced_samples": 3032,
+          "oof_auroc": 0.4973845385370472,
+          "oof_auroc_ci95": [
+            0.4751748430652577,
+            0.5177318920196523
+          ],
+          "oof_auprc": 0.4947967838885454,
+          "brier": 0.2539870338571725,
+          "ece_10bin": 0.04708924574571994,
+          "top_standardized_coefficients": [
+            {
+              "feature": "encoder_fused_34",
+              "coefficient": 0.558779814496125
+            },
+            {
+              "feature": "encoder_fused_46",
+              "coefficient": 0.5579137491921767
+            },
+            {
+              "feature": "encoder_fused_23",
+              "coefficient": 0.5315728514223377
+            },
+            {
+              "feature": "encoder_fused_89",
+              "coefficient": -0.5269463289673169
+            },
+            {
+              "feature": "encoder_fused_47",
+              "coefficient": 0.49674777520945756
+            },
+            {
+              "feature": "encoder_individual_39",
+              "coefficient": 0.4934185787481843
+            },
+            {
+              "feature": "encoder_fused_32",
+              "coefficient": -0.48370825317625316
+            },
+            {
+              "feature": "encoder_fused_10",
+              "coefficient": -0.47116406242999004
+            },
+            {
+              "feature": "encoder_fused_3",
+              "coefficient": 0.4665777778450426
+            },
+            {
+              "feature": "encoder_individual_86",
+              "coefficient": 0.4325811821005627
+            },
+            {
+              "feature": "encoder_social_delta_75",
+              "coefficient": -0.43232524189475185
+            },
+            {
+              "feature": "encoder_fused_13",
+              "coefficient": -0.42496375226926786
+            },
+            {
+              "feature": "encoder_individual_25",
+              "coefficient": 0.42400815592384894
+            },
+            {
+              "feature": "encoder_fused_72",
+              "coefficient": -0.4197852473908447
+            },
+            {
+              "feature": "encoder_individual_75",
+              "coefficient": 0.4116820692874958
+            }
+          ]
+        },
+        "D5_all_observable": {
+          "balanced_samples": 3032,
+          "oof_auroc": 0.466152378151085,
+          "oof_auroc_ci95": [
+            0.44401092440805173,
+            0.4885809776153275
+          ],
+          "oof_auprc": 0.4781267653513351,
+          "brier": 0.25862221316174927,
+          "ece_10bin": 0.08728624470919023,
+          "top_standardized_coefficients": [
+            {
+              "feature": "encoder_social_delta_63",
+              "coefficient": 0.5159474682332625
+            },
+            {
+              "feature": "encoder_fused_63",
+              "coefficient": 0.49623488317721726
+            },
+            {
+              "feature": "encoder_fused_10",
+              "coefficient": -0.4702019724894112
+            },
+            {
+              "feature": "encoder_fused_72",
+              "coefficient": -0.46426529683782874
+            },
+            {
+              "feature": "encoder_social_delta_52",
+              "coefficient": -0.43707697230267495
+            },
+            {
+              "feature": "encoder_social_delta_18",
+              "coefficient": -0.43645486132705275
+            },
+            {
+              "feature": "encoder_individual_18",
+              "coefficient": 0.42945321411294046
+            },
+            {
+              "feature": "encoder_social_delta_37",
+              "coefficient": -0.419883080588082
+            },
+            {
+              "feature": "encoder_individual_63",
+              "coefficient": -0.40101044192293755
+            },
+            {
+              "feature": "encoder_individual_52",
+              "coefficient": 0.3982762380043353
+            },
+            {
+              "feature": "encoder_social_delta_43",
+              "coefficient": -0.3738403640972224
+            },
+            {
+              "feature": "encoder_social_delta_54",
+              "coefficient": 0.36732962281296533
+            },
+            {
+              "feature": "encoder_social_delta_7",
+              "coefficient": 0.3613662004392578
+            },
+            {
+              "feature": "encoder_individual_7",
+              "coefficient": -0.3610177232313205
+            },
+            {
+              "feature": "encoder_fused_54",
+              "coefficient": 0.3526509498262565
+            }
+          ]
+        }
+      },
+      "feature_shift": [
+        {
+          "feature": "social.minimum_dca",
+          "train_mean": 0.8046282529830933,
+          "train_median": 0.5407824516296387,
+          "validation_mean": 0.8392462134361267,
+          "validation_median": 0.5449849367141724,
+          "standardized_mean_difference": 0.03542177499243854,
+          "absolute_smd": 0.03542177499243854,
+          "wasserstein": 0.03771760130197048,
+          "train_p10": 0.01644984260201454,
+          "train_p90": 1.880781650543213,
+          "validation_p10": 0.02139534056186676,
+          "validation_p90": 1.9697100520133972
+        },
+        {
+          "feature": "individual.speed_std",
+          "train_mean": 0.028993403539061546,
+          "train_median": 0.021780839189887047,
+          "validation_mean": 0.028003672137856483,
+          "validation_median": 0.021295372396707535,
+          "standardized_mean_difference": -0.03441621159239375,
+          "absolute_smd": 0.03441621159239375,
+          "wasserstein": 0.000999429009895488,
+          "train_p10": 9.499716543359682e-05,
+          "train_p90": 0.06712912023067474,
+          "validation_p10": 9.516975478618406e-05,
+          "validation_p90": 0.06574126332998276
+        },
+        {
+          "feature": "social.density_r2",
+          "train_mean": 3.100864887237549,
+          "train_median": 3.0,
+          "validation_mean": 3.0211081504821777,
+          "validation_median": 3.0,
+          "standardized_mean_difference": -0.034342928086889074,
+          "absolute_smd": 0.034342928086889074,
+          "wasserstein": 0.07975667418055826,
+          "train_p10": 0.0,
+          "train_p90": 7.0,
+          "validation_p10": 0.0,
+          "validation_p90": 7.0
+        },
+        {
+          "feature": "social.minimum_ttc",
+          "train_mean": 4.273035526275635,
+          "train_median": 2.4449260234832764,
+          "validation_mean": 4.1710076332092285,
+          "validation_median": 2.3777501583099365,
+          "standardized_mean_difference": -0.02406633456389477,
+          "absolute_smd": 0.02406633456389477,
+          "wasserstein": 0.10282178035753892,
+          "train_p10": 0.2815917730331421,
+          "train_p90": 12.0,
+          "validation_p10": 0.23304226249456406,
+          "validation_p90": 12.0
+        },
+        {
+          "feature": "social.density_r4",
+          "train_mean": 5.756034851074219,
+          "train_median": 7.0,
+          "validation_mean": 5.695250511169434,
+          "validation_median": 7.0,
+          "standardized_mean_difference": -0.022389066800831452,
+          "absolute_smd": 0.022389066800831452,
+          "wasserstein": 0.06884059066757986,
+          "train_p10": 1.0,
+          "train_p90": 8.0,
+          "validation_p10": 1.0,
+          "validation_p90": 8.0
+        },
+        {
+          "feature": "social.social_delta_norm",
+          "train_mean": 34.05005645751953,
+          "train_median": 33.83657455444336,
+          "validation_mean": 33.87176513671875,
+          "validation_median": 33.74644470214844,
+          "standardized_mean_difference": -0.01943306875983042,
+          "absolute_smd": 0.01943306875983042,
+          "wasserstein": 0.22874087830258774,
+          "train_p10": 21.114870071411133,
+          "train_p90": 46.88349533081055,
+          "validation_p10": 20.69821262359619,
+          "validation_p90": 46.83981513977051
+        },
+        {
+          "feature": "encoder_social_delta_norm",
+          "train_mean": 34.05005645751953,
+          "train_median": 33.836578369140625,
+          "validation_mean": 33.87176513671875,
+          "validation_median": 33.74644470214844,
+          "standardized_mean_difference": -0.01943306875983042,
+          "absolute_smd": 0.01943306875983042,
+          "wasserstein": 0.22874084041823106,
+          "train_p10": 21.114870071411133,
+          "train_p90": 46.88349533081055,
+          "validation_p10": 20.69821262359619,
+          "validation_p90": 46.83981513977051
+        },
+        {
+          "feature": "encoder_individual_norm",
+          "train_mean": 36.97702407836914,
+          "train_median": 36.28019332885742,
+          "validation_mean": 36.8066520690918,
+          "validation_median": 36.133262634277344,
+          "standardized_mean_difference": -0.016543048186707068,
+          "absolute_smd": 0.016543048186707068,
+          "wasserstein": 0.22032733892684422,
+          "train_p10": 22.504169464111328,
+          "train_p90": 51.19939422607422,
+          "validation_p10": 22.073216438293457,
+          "validation_p90": 51.112504959106445
+        },
+        {
+          "feature": "social.maximum_closing",
+          "train_mean": 0.2923535406589508,
+          "train_median": 0.2607068419456482,
+          "validation_mean": 0.295911967754364,
+          "validation_median": 0.2703089714050293,
+          "standardized_mean_difference": 0.014006042725163217,
+          "absolute_smd": 0.014006042725163217,
+          "wasserstein": 0.007974493034084124,
+          "train_p10": 0.002279978711158037,
+          "train_p90": 0.6409890055656433,
+          "validation_p10": 0.0035538413794711232,
+          "validation_p90": 0.6194019317626953
+        },
+        {
+          "feature": "individual.last_acceleration",
+          "train_mean": 0.02557782642543316,
+          "train_median": 0.00031859290902502835,
+          "validation_mean": 0.026068121194839478,
+          "validation_median": 0.0003185868845321238,
+          "standardized_mean_difference": 0.011155628016575296,
+          "absolute_smd": 0.011155628016575296,
+          "wasserstein": 0.0007219754764677987,
+          "train_p10": 5.397430413722759e-07,
+          "train_p90": 0.08180513232946396,
+          "validation_p10": 4.773453952111595e-07,
+          "validation_p90": 0.08293567970395088
+        },
+        {
+          "feature": "social.nearest_distance",
+          "train_mean": 1.0203481912612915,
+          "train_median": 0.7055841684341431,
+          "validation_mean": 1.0100553035736084,
+          "validation_median": 0.7065404057502747,
+          "standardized_mean_difference": -0.010575849331719529,
+          "absolute_smd": 0.010575849331719529,
+          "wasserstein": 0.028512339606436097,
+          "train_p10": 0.4052606523036957,
+          "train_p90": 1.9666635990142822,
+          "validation_p10": 0.4034169763326645,
+          "validation_p90": 2.0440741777420044
+        },
+        {
+          "feature": "social.mean_closing",
+          "train_mean": 0.029431212693452835,
+          "train_median": 0.01055045798420906,
+          "validation_mean": 0.028145000338554382,
+          "validation_median": 0.007516432553529739,
+          "standardized_mean_difference": -0.007483752609967231,
+          "absolute_smd": 0.007483752609967231,
+          "wasserstein": 0.0055309287954553275,
+          "train_p10": -0.14037294685840607,
+          "train_p90": 0.2193191945552826,
+          "validation_p10": -0.14214834570884705,
+          "validation_p90": 0.2325863167643547
+        },
+        {
+          "feature": "individual.mean_speed",
+          "train_mean": 0.23974472284317017,
+          "train_median": 0.22869284451007843,
+          "validation_mean": 0.2406029999256134,
+          "validation_median": 0.23011557757854462,
+          "standardized_mean_difference": 0.004736817522159797,
+          "absolute_smd": 0.004736817522159797,
+          "wasserstein": 0.0030868567711125304,
+          "train_p10": 0.00700259068980813,
+          "train_p90": 0.4861777722835541,
+          "validation_p10": 0.007199378684163094,
+          "validation_p90": 0.48736153542995453
+        },
+        {
+          "feature": "individual.mean_acceleration",
+          "train_mean": 0.0255091805011034,
+          "train_median": 0.0212715994566679,
+          "validation_mean": 0.025410300120711327,
+          "validation_median": 0.02099267765879631,
+          "standardized_mean_difference": -0.004161085636677554,
+          "absolute_smd": 0.004161085636677554,
+          "wasserstein": 0.0004854458362610319,
+          "train_p10": 0.0002109262131853029,
+          "train_p90": 0.056090742349624634,
+          "validation_p10": 0.000212329083296936,
+          "validation_p90": 0.054494284093379974
+        },
+        {
+          "feature": "individual.observation_displacement",
+          "train_mean": 1.6507060527801514,
+          "train_median": 1.5662140846252441,
+          "validation_mean": 1.6557685136795044,
+          "validation_median": 1.5690460205078125,
+          "standardized_mean_difference": 0.003997112014242684,
+          "absolute_smd": 0.003997112014242684,
+          "wasserstein": 0.021064676841678266,
+          "train_p10": 0.0474768690764904,
+          "train_p90": 3.3782598972320557,
+          "validation_p10": 0.049084946513175964,
+          "validation_p90": 3.3839374780654907
+        },
+        {
+          "feature": "individual.observation_nonlinearity",
+          "train_mean": 0.06545744836330414,
+          "train_median": 0.05315018445253372,
+          "validation_mean": 0.06522120535373688,
+          "validation_median": 0.052510932087898254,
+          "standardized_mean_difference": -0.0038640599813732626,
+          "absolute_smd": 0.0038640599813732626,
+          "wasserstein": 0.0012761884658189675,
+          "train_p10": 8.209187944885343e-05,
+          "train_p90": 0.14430628716945648,
+          "validation_p10": 7.946626647026278e-05,
+          "validation_p90": 0.14148040115833282
+        },
+        {
+          "feature": "individual.mean_curvature",
+          "train_mean": 0.08899856358766556,
+          "train_median": 0.05405780300498009,
+          "validation_mean": 0.08859890699386597,
+          "validation_median": 0.05589922517538071,
+          "standardized_mean_difference": -0.0031328188564057648,
+          "absolute_smd": 0.0031328188564057648,
+          "wasserstein": 0.003178633313006915,
+          "train_p10": 0.007764413487166166,
+          "train_p90": 0.19890396296977997,
+          "validation_p10": 0.008047305513173342,
+          "validation_p90": 0.19386665523052216
+        },
+        {
+          "feature": "individual.heading_change_sum",
+          "train_mean": 0.533991277217865,
+          "train_median": 0.3243468105792999,
+          "validation_mean": 0.5315934419631958,
+          "validation_median": 0.33539533615112305,
+          "standardized_mean_difference": -0.0031326825021324267,
+          "absolute_smd": 0.0031326825021324267,
+          "wasserstein": 0.019071799009673096,
+          "train_p10": 0.04658647999167442,
+          "train_p90": 1.1934237480163574,
+          "validation_p10": 0.048283832147717476,
+          "validation_p90": 1.1631999015808105
+        },
+        {
+          "feature": "social.fused_feature_norm",
+          "train_mean": 7.956315517425537,
+          "train_median": 7.998826026916504,
+          "validation_mean": 7.955680847167969,
+          "validation_median": 8.006965637207031,
+          "standardized_mean_difference": -0.003048838832552102,
+          "absolute_smd": 0.003048838832552102,
+          "wasserstein": 0.00982923215104842,
+          "train_p10": 7.669855117797852,
+          "train_p90": 8.181175231933594,
+          "validation_p10": 7.655977010726929,
+          "validation_p90": 8.182273387908936
+        },
+        {
+          "feature": "encoder_fused_norm",
+          "train_mean": 7.956315517425537,
+          "train_median": 7.998826026916504,
+          "validation_mean": 7.955680847167969,
+          "validation_median": 8.006966590881348,
+          "standardized_mean_difference": -0.003048838832552102,
+          "absolute_smd": 0.003048838832552102,
+          "wasserstein": 0.009829240739286803,
+          "train_p10": 7.669855117797852,
+          "train_p90": 8.181175231933594,
+          "validation_p10": 7.655977010726929,
+          "validation_p90": 8.182273387908936
+        },
+        {
+          "feature": "individual.last_speed",
+          "train_mean": 0.23780803382396698,
+          "train_median": 0.2300662100315094,
+          "validation_mean": 0.2372966706752777,
+          "validation_median": 0.231562077999115,
+          "standardized_mean_difference": -0.0027626683520770184,
+          "absolute_smd": 0.0027626683520770184,
+          "wasserstein": 0.0032490461362828086,
+          "train_p10": 0.006478631868958473,
+          "train_p90": 0.4912726879119873,
+          "validation_p10": 0.006790899438783526,
+          "validation_p90": 0.4835251271724701
+        },
+        {
+          "feature": "social.neighbour_count",
+          "train_mean": 6.456948280334473,
+          "train_median": 8.0,
+          "validation_mean": 6.4531660079956055,
+          "validation_median": 8.0,
+          "standardized_mean_difference": -0.0016230078018176605,
+          "absolute_smd": 0.0016230078018176605,
+          "wasserstein": 0.04143736192112954,
+          "train_p10": 2.0,
+          "train_p90": 8.0,
+          "validation_p10": 2.0,
+          "validation_p90": 8.0
+        },
+        {
+          "feature": "individual.velocity_variance",
+          "train_mean": 0.003634061198681593,
+          "train_median": 0.0016043581999838352,
+          "validation_mean": 0.0036411923356354237,
+          "validation_median": 0.0015542020555585623,
+          "standardized_mean_difference": 0.0011449886006827158,
+          "absolute_smd": 0.0011449886006827158,
+          "wasserstein": 0.00017922643758637373,
+          "train_p10": 1.7794571149920557e-08,
+          "train_p90": 0.009307404048740864,
+          "validation_p10": 1.7810095620518496e-08,
+          "validation_p90": 0.008689837530255318
+        },
+        {
+          "feature": "social.has_neighbour",
+          "train_mean": 0.9814177751541138,
+          "train_median": 1.0,
+          "validation_mean": 0.9815303683280945,
+          "validation_median": 1.0,
+          "standardized_mean_difference": 0.0008349927673155894,
+          "absolute_smd": 0.0008349927673155894,
+          "wasserstein": 0.00011253883299979645,
+          "train_p10": 1.0,
+          "train_p90": 1.0,
+          "validation_p10": 1.0,
+          "validation_p90": 1.0
+        },
+        {
+          "feature": "social.density_r6",
+          "train_mean": 6.354971885681152,
+          "train_median": 8.0,
+          "validation_mean": 6.356860160827637,
+          "validation_median": 8.0,
+          "standardized_mean_difference": 0.0007671839246404305,
+          "absolute_smd": 0.0007671839246404305,
+          "wasserstein": 0.04459312308916534,
+          "train_p10": 2.0,
+          "train_p90": 8.0,
+          "validation_p10": 2.0,
+          "validation_p90": 8.0
+        },
+        {
+          "feature": "social.sparse_edge_count",
+          "train_mean": 2.453336000442505,
+          "train_median": 2.0,
+          "validation_mean": 2.4538259506225586,
+          "validation_median": 2.0,
+          "standardized_mean_difference": 0.0004250086111667324,
+          "absolute_smd": 0.0004250086111667324,
+          "wasserstein": 0.020053540258155558,
+          "train_p10": 2.0,
+          "train_p90": 4.0,
+          "validation_p10": 2.0,
+          "validation_p90": 4.0
+        }
+      ],
+      "matched_tail_probe": {
+        "matched_pairs": 1515,
+        "validation_retained_fraction": 0.9993403693931399,
+        "strata": {
+          "speed_edges": [
+            0.06462496519088745,
+            0.22869284451007843,
+            0.3841657340526581
+          ],
+          "curvature_edges": [
+            0.022344162687659264,
+            0.05405780300498009,
+            0.10781816393136978
+          ],
+          "cells": [
+            {
+              "stratum": [
+                1,
+                0,
+                0,
+                0
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                1,
+                0,
+                0,
+                1
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                1,
+                0,
+                0,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                1,
+                0,
+                0,
+                3
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                1,
+                0,
+                1,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                1,
+                0,
+                2,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                1,
+                0,
+                3,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                1,
+                0,
+                3,
+                1
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                1,
+                0,
+                3,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                1,
+                1,
+                3,
+                1
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                1,
+                2,
+                3,
+                1
+              ],
+              "pairs": 6
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                2,
+                0
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                2,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                3,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                3,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                0,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                0,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                0,
+                3
+              ],
+              "pairs": 126
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                1,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                1,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                1,
+                3
+              ],
+              "pairs": 26
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                2,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                2,
+                3
+              ],
+              "pairs": 16
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                3,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                3,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                3,
+                3
+              ],
+              "pairs": 36
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                0,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                0,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                0,
+                3
+              ],
+              "pairs": 28
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                1,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                1,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                1,
+                3
+              ],
+              "pairs": 61
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                2,
+                0
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                2,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                2,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                2,
+                3
+              ],
+              "pairs": 105
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                3,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                3,
+                1
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                3,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                3,
+                3
+              ],
+              "pairs": 130
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                0,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                0,
+                3
+              ],
+              "pairs": 42
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                1,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                1,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                1,
+                3
+              ],
+              "pairs": 80
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                2,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                2,
+                1
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                2,
+                3
+              ],
+              "pairs": 96
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                3,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                3,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                3,
+                3
+              ],
+              "pairs": 84
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                0,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                0,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                0,
+                3
+              ],
+              "pairs": 26
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                1,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                1,
+                1
+              ],
+              "pairs": 6
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                1,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                1,
+                3
+              ],
+              "pairs": 49
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                2,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                2,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                2,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                2,
+                3
+              ],
+              "pairs": 57
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                3,
+                3
+              ],
+              "pairs": 23
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                0,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                0,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                0,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                0,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                1,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                1,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                1,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                1,
+                3
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                2,
+                1
+              ],
+              "pairs": 7
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                2,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                3,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                3,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                0,
+                3,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                0,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                0,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                0,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                0,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                1,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                2,
+                0
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                2,
+                1
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                2,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                3,
+                1
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                3,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                3,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                0,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                0,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                0,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                0,
+                3
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                1,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                1,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                1,
+                3
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                2,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                2,
+                1
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                2,
+                3
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                3,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                0,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                0,
+                1
+              ],
+              "pairs": 8
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                0,
+                2
+              ],
+              "pairs": 6
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                0,
+                3
+              ],
+              "pairs": 27
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                1,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                1,
+                1
+              ],
+              "pairs": 9
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                1,
+                2
+              ],
+              "pairs": 12
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                1,
+                3
+              ],
+              "pairs": 16
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                2,
+                0
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                2,
+                1
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                2,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                2,
+                3
+              ],
+              "pairs": 14
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                3,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                3,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                0,
+                0
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                0,
+                1
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                0,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                0,
+                3
+              ],
+              "pairs": 25
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                1,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                1,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                1,
+                3
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                2,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                2,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                2,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                2,
+                3
+              ],
+              "pairs": 13
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                3,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                0,
+                3,
+                3
+              ],
+              "pairs": 30
+            },
+            {
+              "stratum": [
+                4,
+                1,
+                1,
+                3
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                4,
+                1,
+                2,
+                3
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                1,
+                3,
+                3
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                0,
+                3
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                1,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                1,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                1,
+                3
+              ],
+              "pairs": 7
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                2,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                2,
+                3
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                3,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                3,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                3,
+                3
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                0,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                0,
+                1
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                0,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                0,
+                3
+              ],
+              "pairs": 20
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                1,
+                1
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                1,
+                2
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                1,
+                3
+              ],
+              "pairs": 19
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                2,
+                0
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                2,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                2,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                2,
+                3
+              ],
+              "pairs": 12
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                3,
+                1
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                3,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                3,
+                3
+              ],
+              "pairs": 6
+            }
+          ]
+        },
+        "balance": {
+          "mean_speed": {
+            "smd_before": 0.004736817522159797,
+            "smd_after": 0.006145097652668855
+          },
+          "mean_curvature": {
+            "smd_before": -0.0031328188564057648,
+            "smd_after": 0.032593505047648144
+          },
+          "density_r4": {
+            "smd_before": -0.022389066800831452,
+            "smd_after": -0.0504958681046606
+          },
+          "neighbour_count": {
+            "smd_before": -0.0016230078018176605,
+            "smd_after": -0.010075445289139872
+          }
+        },
+        "labels": {
+          "ade": {
+            "train_prevalence": 0.18943894389438945,
+            "validation_prevalence": 0.17095709570957096,
+            "models": {
+              "M1_individual": {
+                "auroc": 0.6197618227873005,
+                "auprc": 0.23031931297072483
+              },
+              "M2_individual_social": {
+                "auroc": 0.6336288517817181,
+                "auprc": 0.2457393783472772,
+                "delta_auroc_vs_M1": 0.013867028994417607,
+                "delta_auroc_ci95": [
+                  -0.010653838199967491,
+                  0.04015942248129661
+                ],
+                "delta_auprc_vs_M1": 0.015420065376552355
+              },
+              "M3_individual_social_scene": {
+                "auroc": 0.6466197771930257,
+                "auprc": 0.2582279033130714,
+                "delta_auroc_vs_M1": 0.026857954405725137,
+                "delta_auroc_ci95": [
+                  0.001829708132913655,
+                  0.053526245717845776
+                ],
+                "delta_auprc_vs_M1": 0.02790859034234655
+              }
+            }
+          },
+          "fde": {
+            "train_prevalence": 0.19207920792079208,
+            "validation_prevalence": 0.1900990099009901,
+            "models": {
+              "M1_individual": {
+                "auroc": 0.6012236258263153,
+                "auprc": 0.24060132927964084
+              },
+              "M2_individual_social": {
+                "auroc": 0.6011217513356878,
+                "auprc": 0.25377395879154396,
+                "delta_auroc_vs_M1": -0.00010187449062748488,
+                "delta_auroc_ci95": [
+                  -0.02389981106594364,
+                  0.02633728828090546
+                ],
+                "delta_auprc_vs_M1": 0.013172629511903122
+              },
+              "M3_individual_social_scene": {
+                "auroc": 0.614908765733949,
+                "auprc": 0.26366511410354176,
+                "delta_auroc_vs_M1": 0.013685139907633759,
+                "delta_auroc_ci95": [
+                  -0.01241853680916998,
+                  0.03787413157040653
+                ],
+                "delta_auprc_vs_M1": 0.023063784823900924
+              }
+            }
+          },
+          "union": {
+            "train_prevalence": 0.2132013201320132,
+            "validation_prevalence": 0.20924092409240924,
+            "models": {
+              "M1_individual": {
+                "auroc": 0.6119794821021366,
+                "auprc": 0.27039817919050313
+              },
+              "M2_individual_social": {
+                "auroc": 0.6138832860234987,
+                "auprc": 0.2807031008445732,
+                "delta_auroc_vs_M1": 0.001903803921362135,
+                "delta_auroc_ci95": [
+                  -0.022794669113066313,
+                  0.02521922458294064
+                ],
+                "delta_auprc_vs_M1": 0.010304921654070043
+              },
+              "M3_individual_social_scene": {
+                "auroc": 0.6290373545815053,
+                "auprc": 0.2923591093743467,
+                "delta_auroc_vs_M1": 0.01705787247936874,
+                "delta_auroc_ci95": [
+                  -0.004643413480152914,
+                  0.04160906384076319
+                ],
+                "delta_auprc_vs_M1": 0.021960930183843597
+              }
+            }
+          }
+        }
+      },
+      "encoder_robustness": {
+        "split": "general",
+        "tail_auroc": {
+          "raw_P3": 0.6559543683917641,
+          "raw_P5": 0.6678820045988597,
+          "encoder_P4": 0.6703651788620447,
+          "all_P6": 0.6930996104618808
+        },
+        "domain_auroc": {
+          "raw_D3": 0.5104951319609304,
+          "encoder_D4": 0.4973845385370472,
+          "all_D5": 0.466152378151085
+        },
+        "encoder_more_task_informative_and_domain_invariant": true
+      }
+    },
+    {
+      "split": "challenge",
+      "domain_classification": {
+        "D0_scene_only": {
+          "balanced_samples": 6064,
+          "oof_auroc": 0.48821785954219193,
+          "oof_auroc_ci95": [
+            0.4748414778614432,
+            0.5028158802458806
+          ],
+          "oof_auprc": 0.49025337596802276,
+          "brier": 0.2502912431197226,
+          "ece_10bin": 0.011057225916507483,
+          "top_standardized_coefficients": [
+            {
+              "feature": "scene_3",
+              "coefficient": 0.016136836102499483
+            },
+            {
+              "feature": "scene_4",
+              "coefficient": -0.010541770980230345
+            },
+            {
+              "feature": "scene_2",
+              "coefficient": -0.005012378682797271
+            },
+            {
+              "feature": "scene_1",
+              "coefficient": 0.004852158558386839
+            }
+          ]
+        },
+        "D1_individual": {
+          "balanced_samples": 6064,
+          "oof_auroc": 0.9086470349691245,
+          "oof_auroc_ci95": [
+            0.9017523771914722,
+            0.9154377460241032
+          ],
+          "oof_auprc": 0.9058776915109025,
+          "brier": 0.12304452858369604,
+          "ece_10bin": 0.016466772419084102,
+          "top_standardized_coefficients": [
+            {
+              "feature": "last_speed",
+              "coefficient": 1.0881078014958685
+            },
+            {
+              "feature": "mean_acceleration",
+              "coefficient": 0.8817087764820061
+            },
+            {
+              "feature": "observation_nonlinearity",
+              "coefficient": 0.8333954392236715
+            },
+            {
+              "feature": "velocity_variance",
+              "coefficient": -0.6642164065051958
+            },
+            {
+              "feature": "observation_displacement",
+              "coefficient": 0.449251369669809
+            },
+            {
+              "feature": "mean_speed",
+              "coefficient": 0.37462030773752514
+            },
+            {
+              "feature": "speed_std",
+              "coefficient": 0.3010555257070289
+            },
+            {
+              "feature": "last_acceleration",
+              "coefficient": 0.17971100252576278
+            },
+            {
+              "feature": "heading_change_sum",
+              "coefficient": 0.007173804329743845
+            },
+            {
+              "feature": "mean_curvature",
+              "coefficient": 0.007173790669674093
+            }
+          ]
+        },
+        "D2_social": {
+          "balanced_samples": 6064,
+          "oof_auroc": 0.911292192862762,
+          "oof_auroc_ci95": [
+            0.9041499563078482,
+            0.9188543820014039
+          ],
+          "oof_auprc": 0.8950431166522554,
+          "brier": 0.11716547194431533,
+          "ece_10bin": 0.03058992822774755,
+          "top_standardized_coefficients": [
+            {
+              "feature": "neighbour_count",
+              "coefficient": -2.403577252159457
+            },
+            {
+              "feature": "social_delta_norm",
+              "coefficient": 1.547573794652524
+            },
+            {
+              "feature": "density_r6",
+              "coefficient": 1.1257615350569539
+            },
+            {
+              "feature": "mean_closing",
+              "coefficient": -0.4821344758822374
+            },
+            {
+              "feature": "nearest_distance",
+              "coefficient": 0.47211681689663154
+            },
+            {
+              "feature": "has_neighbour",
+              "coefficient": -0.4266539368413923
+            },
+            {
+              "feature": "fused_feature_norm",
+              "coefficient": -0.3801679949787745
+            },
+            {
+              "feature": "minimum_ttc",
+              "coefficient": -0.3153028937707051
+            },
+            {
+              "feature": "maximum_closing",
+              "coefficient": 0.2931213524373181
+            },
+            {
+              "feature": "density_r2",
+              "coefficient": -0.2844149606555444
+            },
+            {
+              "feature": "sparse_edge_count",
+              "coefficient": 0.25238742957209204
+            },
+            {
+              "feature": "density_r4",
+              "coefficient": -0.15686306552293303
+            },
+            {
+              "feature": "minimum_dca",
+              "coefficient": -0.07197990905346296
+            }
+          ]
+        },
+        "D3_individual_social": {
+          "balanced_samples": 6064,
+          "oof_auroc": 0.9693053123759929,
+          "oof_auroc_ci95": [
+            0.9650685298133279,
+            0.9728554142523499
+          ],
+          "oof_auprc": 0.95441056307014,
+          "brier": 0.06052775188126966,
+          "ece_10bin": 0.029061460385349274,
+          "top_standardized_coefficients": [
+            {
+              "feature": "neighbour_count",
+              "coefficient": -4.404349603002884
+            },
+            {
+              "feature": "mean_acceleration",
+              "coefficient": 2.5045959785905243
+            },
+            {
+              "feature": "density_r6",
+              "coefficient": 2.2348317955478003
+            },
+            {
+              "feature": "observation_nonlinearity",
+              "coefficient": 1.6457214059359808
+            },
+            {
+              "feature": "velocity_variance",
+              "coefficient": -1.4588404298438584
+            },
+            {
+              "feature": "last_speed",
+              "coefficient": 1.0651379501991198
+            },
+            {
+              "feature": "social_delta_norm",
+              "coefficient": 0.5270679323062973
+            },
+            {
+              "feature": "mean_closing",
+              "coefficient": -0.43977882112205474
+            },
+            {
+              "feature": "has_neighbour",
+              "coefficient": -0.3855285420808946
+            },
+            {
+              "feature": "density_r2",
+              "coefficient": -0.3380299935630885
+            },
+            {
+              "feature": "sparse_edge_count",
+              "coefficient": 0.30476583747751546
+            },
+            {
+              "feature": "mean_speed",
+              "coefficient": 0.29218795645337425
+            },
+            {
+              "feature": "maximum_closing",
+              "coefficient": 0.28304877636252307
+            },
+            {
+              "feature": "nearest_distance",
+              "coefficient": 0.21164493201904977
+            },
+            {
+              "feature": "observation_displacement",
+              "coefficient": 0.1987656886508258
+            }
+          ]
+        },
+        "D4_encoder_representation": {
+          "balanced_samples": 6064,
+          "oof_auroc": 0.9226294851400365,
+          "oof_auroc_ci95": [
+            0.9157297829325459,
+            0.9291609174732179
+          ],
+          "oof_auprc": 0.9124857730283147,
+          "brier": 0.10961004933705623,
+          "ece_10bin": 0.010790832412624986,
+          "top_standardized_coefficients": [
+            {
+              "feature": "encoder_individual_49",
+              "coefficient": 1.400304434550904
+            },
+            {
+              "feature": "encoder_social_delta_49",
+              "coefficient": -1.3166638279762903
+            },
+            {
+              "feature": "encoder_individual_81",
+              "coefficient": -1.3006278561905524
+            },
+            {
+              "feature": "encoder_individual_84",
+              "coefficient": -1.2946804539795431
+            },
+            {
+              "feature": "encoder_individual_82",
+              "coefficient": 1.1881022651490316
+            },
+            {
+              "feature": "encoder_fused_5",
+              "coefficient": -1.1872629618265556
+            },
+            {
+              "feature": "encoder_individual_5",
+              "coefficient": -1.1453113745157553
+            },
+            {
+              "feature": "encoder_fused_11",
+              "coefficient": 1.1121426587290415
+            },
+            {
+              "feature": "encoder_fused_78",
+              "coefficient": -1.1047476549099415
+            },
+            {
+              "feature": "encoder_individual_27",
+              "coefficient": -1.0745391304184544
+            },
+            {
+              "feature": "encoder_social_delta_82",
+              "coefficient": -0.987612960393675
+            },
+            {
+              "feature": "encoder_social_delta_27",
+              "coefficient": 0.9339485011976641
+            },
+            {
+              "feature": "encoder_fused_44",
+              "coefficient": 0.9272412395167134
+            },
+            {
+              "feature": "encoder_individual_50",
+              "coefficient": -0.9206601569530469
+            },
+            {
+              "feature": "encoder_individual_22",
+              "coefficient": -0.9199318247352443
+            }
+          ]
+        },
+        "D5_all_observable": {
+          "balanced_samples": 6064,
+          "oof_auroc": 0.9930169876636894,
+          "oof_auroc_ci95": [
+            0.9913834593824128,
+            0.9946213354805767
+          ],
+          "oof_auprc": 0.9913028901393257,
+          "brier": 0.026061881861493753,
+          "ece_10bin": 0.010236103326836795,
+          "top_standardized_coefficients": [
+            {
+              "feature": "neighbour_count",
+              "coefficient": -5.115620400382515
+            },
+            {
+              "feature": "mean_acceleration",
+              "coefficient": 3.961583203680238
+            },
+            {
+              "feature": "last_speed",
+              "coefficient": 3.265369483589822
+            },
+            {
+              "feature": "scene_2",
+              "coefficient": 2.3493924992010022
+            },
+            {
+              "feature": "scene_1",
+              "coefficient": -2.2594157948821953
+            },
+            {
+              "feature": "velocity_variance",
+              "coefficient": -2.2328035214940236
+            },
+            {
+              "feature": "scene_normalized_speed",
+              "coefficient": 2.0228343426022604
+            },
+            {
+              "feature": "observation_nonlinearity",
+              "coefficient": 1.9157114130035569
+            },
+            {
+              "feature": "scene_3",
+              "coefficient": -1.7048102176947528
+            },
+            {
+              "feature": "density_r6",
+              "coefficient": -1.2619354375117344
+            },
+            {
+              "feature": "encoder_individual_4",
+              "coefficient": 1.0143288815671316
+            },
+            {
+              "feature": "encoder_individual_12",
+              "coefficient": -0.9709026308598983
+            },
+            {
+              "feature": "encoder_social_delta_12",
+              "coefficient": 0.8883172496509795
+            },
+            {
+              "feature": "encoder_social_delta_4",
+              "coefficient": -0.7797195661338778
+            },
+            {
+              "feature": "encoder_individual_50",
+              "coefficient": -0.7306281851599621
+            }
+          ]
+        }
+      },
+      "feature_shift": [
+        {
+          "feature": "individual.last_speed",
+          "train_mean": 0.21310749650001526,
+          "train_median": 0.20281389355659485,
+          "validation_mean": 0.4597512483596802,
+          "validation_median": 0.4750886559486389,
+          "standardized_mean_difference": 1.5348105707031239,
+          "absolute_smd": 1.5348105707031239,
+          "wasserstein": 0.24664375361424337,
+          "train_p10": 0.005965137854218483,
+          "train_p90": 0.45625134110450755,
+          "validation_p10": 0.26231308579444884,
+          "validation_p90": 0.6336779296398163
+        },
+        {
+          "feature": "encoder_individual_norm",
+          "train_mean": 19.443742752075195,
+          "train_median": 17.395132064819336,
+          "validation_mean": 29.48064613342285,
+          "validation_median": 31.059757232666016,
+          "standardized_mean_difference": 1.5074275992836523,
+          "absolute_smd": 1.5074275992836523,
+          "wasserstein": 10.036904052425147,
+          "train_p10": 9.929345512390137,
+          "train_p90": 30.630654907226564,
+          "validation_p10": 22.09559211730957,
+          "validation_p90": 34.284981918334964
+        },
+        {
+          "feature": "individual.mean_speed",
+          "train_mean": 0.21636973321437836,
+          "train_median": 0.20244808495044708,
+          "validation_mean": 0.45044851303100586,
+          "validation_median": 0.45912203192710876,
+          "standardized_mean_difference": 1.4968668680203623,
+          "absolute_smd": 1.4968668680203623,
+          "wasserstein": 0.2340787713506889,
+          "train_p10": 0.00638185264542699,
+          "train_p90": 0.45615360736846927,
+          "validation_p10": 0.25555366575717925,
+          "validation_p90": 0.6253892421722412
+        },
+        {
+          "feature": "social.social_delta_norm",
+          "train_mean": 17.929031372070312,
+          "train_median": 16.88756561279297,
+          "validation_mean": 25.787508010864258,
+          "validation_median": 26.92592430114746,
+          "standardized_mean_difference": 1.4780367944954818,
+          "absolute_smd": 1.4780367944954818,
+          "wasserstein": 7.858476786426167,
+          "train_p10": 10.42455348968506,
+          "train_p90": 26.57196388244629,
+          "validation_p10": 19.435722732543944,
+          "validation_p90": 30.14055233001709
+        },
+        {
+          "feature": "encoder_social_delta_norm",
+          "train_mean": 17.929031372070312,
+          "train_median": 16.88756561279297,
+          "validation_mean": 25.787508010864258,
+          "validation_median": 26.92592430114746,
+          "standardized_mean_difference": 1.4780367944954818,
+          "absolute_smd": 1.4780367944954818,
+          "wasserstein": 7.858476767152409,
+          "train_p10": 10.42455348968506,
+          "train_p90": 26.57196388244629,
+          "validation_p10": 19.435722732543944,
+          "validation_p90": 30.14055233001709
+        },
+        {
+          "feature": "individual.observation_displacement",
+          "train_mean": 1.4900717735290527,
+          "train_median": 1.3805392980575562,
+          "validation_mean": 3.0982580184936523,
+          "validation_median": 3.152982234954834,
+          "standardized_mean_difference": 1.45727377286836,
+          "absolute_smd": 1.45727377286836,
+          "wasserstein": 1.608186239215244,
+          "train_p10": 0.044038232415914536,
+          "train_p90": 3.180444192886353,
+          "validation_p10": 1.7241374731063843,
+          "validation_p90": 4.354620313644409
+        },
+        {
+          "feature": "individual.mean_acceleration",
+          "train_mean": 0.02254546619951725,
+          "train_median": 0.019087066873908043,
+          "validation_mean": 0.05212044343352318,
+          "validation_median": 0.0477076917886734,
+          "standardized_mean_difference": 1.2027512481813283,
+          "absolute_smd": 1.2027512481813283,
+          "wasserstein": 0.02957498179435201,
+          "train_p10": 0.00019887424423359334,
+          "train_p90": 0.04887958690524103,
+          "validation_p10": 0.020531958341598513,
+          "validation_p90": 0.08739721328020096
+        },
+        {
+          "feature": "social.neighbour_count",
+          "train_mean": 6.722933292388916,
+          "train_median": 8.0,
+          "validation_mean": 4.062335014343262,
+          "validation_median": 3.0,
+          "standardized_mean_difference": -1.050884642255103,
+          "absolute_smd": 1.050884642255103,
+          "wasserstein": 2.6605979965609725,
+          "train_p10": 3.0,
+          "train_p90": 8.0,
+          "validation_p10": 1.0,
+          "validation_p90": 8.0
+        },
+        {
+          "feature": "individual.observation_nonlinearity",
+          "train_mean": 0.05830775573849678,
+          "train_median": 0.04832213371992111,
+          "validation_mean": 0.12965601682662964,
+          "validation_median": 0.11216402053833008,
+          "standardized_mean_difference": 1.0282411689644737,
+          "absolute_smd": 1.0282411689644737,
+          "wasserstein": 0.07134828127343584,
+          "train_p10": 7.941923104226589e-05,
+          "train_p90": 0.12919622063636785,
+          "validation_p10": 0.04435347728431225,
+          "validation_p90": 0.23997460156679154
+        },
+        {
+          "feature": "social.density_r6",
+          "train_mean": 6.623574733734131,
+          "train_median": 8.0,
+          "validation_mean": 3.9396438598632812,
+          "validation_median": 3.0,
+          "standardized_mean_difference": -1.019342852066007,
+          "absolute_smd": 1.019342852066007,
+          "wasserstein": 2.6839309026358618,
+          "train_p10": 3.0,
+          "train_p90": 8.0,
+          "validation_p10": 0.0,
+          "validation_p90": 8.0
+        },
+        {
+          "feature": "social.density_r4",
+          "train_mean": 6.026727676391602,
+          "train_median": 8.0,
+          "validation_mean": 3.290567398071289,
+          "validation_median": 2.0,
+          "standardized_mean_difference": -1.0022606207098887,
+          "absolute_smd": 1.0022606207098887,
+          "wasserstein": 2.7361604903637096,
+          "train_p10": 2.0,
+          "train_p90": 8.0,
+          "validation_p10": 0.0,
+          "validation_p90": 8.0
+        },
+        {
+          "feature": "social.density_r2",
+          "train_mean": 3.281686544418335,
+          "train_median": 3.0,
+          "validation_mean": 1.4343667030334473,
+          "validation_median": 1.0,
+          "standardized_mean_difference": -0.9103352527297324,
+          "absolute_smd": 0.9103352527297324,
+          "wasserstein": 1.8473197715054086,
+          "train_p10": 1.0,
+          "train_p90": 7.0,
+          "validation_p10": 0.0,
+          "validation_p90": 4.0
+        },
+        {
+          "feature": "individual.velocity_variance",
+          "train_mean": 0.002888558665290475,
+          "train_median": 0.0013324528699740767,
+          "validation_mean": 0.010343953035771847,
+          "validation_median": 0.0066913459450006485,
+          "standardized_mean_difference": 0.796872202152909,
+          "absolute_smd": 0.796872202152909,
+          "wasserstein": 0.007455394431773371,
+          "train_p10": 1.706794172662285e-08,
+          "train_p90": 0.007566519733518366,
+          "validation_p10": 0.0012920435750856996,
+          "validation_p90": 0.023215243406593804
+        },
+        {
+          "feature": "individual.speed_std",
+          "train_mean": 0.026517588645219803,
+          "train_median": 0.01992376148700714,
+          "validation_mean": 0.050770245492458344,
+          "validation_median": 0.03983905166387558,
+          "standardized_mean_difference": 0.723794522417416,
+          "absolute_smd": 0.723794522417416,
+          "wasserstein": 0.024252653521813973,
+          "train_p10": 9.057962597580627e-05,
+          "train_p90": 0.06174988076090823,
+          "validation_p10": 0.01273882519453764,
+          "validation_p90": 0.10399808138608933
+        },
+        {
+          "feature": "individual.last_acceleration",
+          "train_mean": 0.02243347279727459,
+          "train_median": 0.0003182703221682459,
+          "validation_mean": 0.05410866066813469,
+          "validation_median": 0.03300923854112625,
+          "standardized_mean_difference": 0.5959665376995521,
+          "absolute_smd": 0.5959665376995521,
+          "wasserstein": 0.03167518927748114,
+          "train_p10": 4.842877388000488e-07,
+          "train_p90": 0.073542295396328,
+          "validation_p10": 0.00020985818555345758,
+          "validation_p90": 0.14236403703689576
+        },
+        {
+          "feature": "social.fused_feature_norm",
+          "train_mean": 7.594677925109863,
+          "train_median": 7.585899829864502,
+          "validation_mean": 7.542736053466797,
+          "validation_median": 7.526699542999268,
+          "standardized_mean_difference": -0.5726409375278674,
+          "absolute_smd": 0.5726409375278674,
+          "wasserstein": 0.054919337727840176,
+          "train_p10": 7.473281478881836,
+          "train_p90": 7.742234325408935,
+          "validation_p10": 7.473832368850708,
+          "validation_p90": 7.640008354187012
+        },
+        {
+          "feature": "encoder_fused_norm",
+          "train_mean": 7.594677925109863,
+          "train_median": 7.585899829864502,
+          "validation_mean": 7.542736053466797,
+          "validation_median": 7.526700019836426,
+          "standardized_mean_difference": -0.5726409375278674,
+          "absolute_smd": 0.5726409375278674,
+          "wasserstein": 0.054919331803347016,
+          "train_p10": 7.473281478881836,
+          "train_p90": 7.7422340393066404,
+          "validation_p10": 7.473832368850708,
+          "validation_p90": 7.6400079250335695
+        },
+        {
+          "feature": "social.nearest_distance",
+          "train_mean": 0.9621766209602356,
+          "train_median": 0.6871466636657715,
+          "validation_mean": 1.5384957790374756,
+          "validation_median": 0.9502853155136108,
+          "standardized_mean_difference": 0.4666802411170939,
+          "absolute_smd": 0.4666802411170939,
+          "wasserstein": 0.627056307046475,
+          "train_p10": 0.4050803482532501,
+          "train_p90": 1.7708284854888918,
+          "validation_p10": 0.41169872879981995,
+          "validation_p90": 3.535270571708679
+        },
+        {
+          "feature": "social.sparse_edge_count",
+          "train_mean": 2.5010814666748047,
+          "train_median": 2.0,
+          "validation_mean": 2.024076461791992,
+          "validation_median": 2.0,
+          "standardized_mean_difference": -0.39188694768049753,
+          "absolute_smd": 0.39188694768049753,
+          "wasserstein": 0.4770050593848929,
+          "train_p10": 2.0,
+          "train_p90": 4.0,
+          "validation_p10": 0.0,
+          "validation_p90": 4.0
+        },
+        {
+          "feature": "social.has_neighbour",
+          "train_mean": 0.9889642596244812,
+          "train_median": 1.0,
+          "validation_mean": 0.9135884046554565,
+          "validation_median": 1.0,
+          "standardized_mean_difference": -0.35560463213915977,
+          "absolute_smd": 0.35560463213915977,
+          "wasserstein": 0.07537586247759916,
+          "train_p10": 1.0,
+          "train_p90": 1.0,
+          "validation_p10": 1.0,
+          "validation_p90": 1.0
+        },
+        {
+          "feature": "social.minimum_ttc",
+          "train_mean": 4.114712715148926,
+          "train_median": 2.3713414669036865,
+          "validation_mean": 5.646245956420898,
+          "validation_median": 3.54544734954834,
+          "standardized_mean_difference": 0.337182103606869,
+          "absolute_smd": 0.337182103606869,
+          "wasserstein": 1.531544059435416,
+          "train_p10": 0.27330389618873596,
+          "train_p90": 12.0,
+          "validation_p10": 0.34997239112854006,
+          "validation_p90": 12.0
+        },
+        {
+          "feature": "social.mean_closing",
+          "train_mean": 0.025869756937026978,
+          "train_median": 0.009928125888109207,
+          "validation_mean": 0.060825951397418976,
+          "validation_median": 0.020472675561904907,
+          "standardized_mean_difference": 0.1569028499300216,
+          "absolute_smd": 0.1569028499300216,
+          "wasserstein": 0.087665438814894,
+          "train_p10": -0.13383755683898926,
+          "train_p90": 0.20010156929492962,
+          "validation_p10": -0.24003090858459472,
+          "validation_p90": 0.390318787097931
+        },
+        {
+          "feature": "social.maximum_closing",
+          "train_mean": 0.29004862904548645,
+          "train_median": 0.25960054993629456,
+          "validation_mean": 0.3148670494556427,
+          "validation_median": 0.3054892122745514,
+          "standardized_mean_difference": 0.08045027931840423,
+          "absolute_smd": 0.08045027931840423,
+          "wasserstein": 0.1150844001239861,
+          "train_p10": 0.008211777918040754,
+          "train_p90": 0.6170624494552615,
+          "validation_p10": -0.04767281748354435,
+          "validation_p90": 0.8186071753501893
+        },
+        {
+          "feature": "individual.heading_change_sum",
+          "train_mean": 0.5295683145523071,
+          "train_median": 0.30770206451416016,
+          "validation_mean": 0.5725801587104797,
+          "validation_median": 0.44783279299736023,
+          "standardized_mean_difference": 0.06655923104637328,
+          "absolute_smd": 0.06655923104637328,
+          "wasserstein": 0.1584938025348644,
+          "train_p10": 0.0418030858039856,
+          "train_p90": 1.2069499015808112,
+          "validation_p10": 0.14563662707805633,
+          "validation_p90": 1.1277630090713502
+        },
+        {
+          "feature": "individual.mean_curvature",
+          "train_mean": 0.08826139569282532,
+          "train_median": 0.05128367990255356,
+          "validation_mean": 0.09543002396821976,
+          "validation_median": 0.07463879883289337,
+          "standardized_mean_difference": 0.06655910981105619,
+          "absolute_smd": 0.06655910981105619,
+          "wasserstein": 0.026415634603281158,
+          "train_p10": 0.006967180967330933,
+          "train_p90": 0.20115832686424265,
+          "validation_p10": 0.024272771179676057,
+          "validation_p90": 0.1879605069756508
+        },
+        {
+          "feature": "social.minimum_dca",
+          "train_mean": 0.8002257347106934,
+          "train_median": 0.5417983531951904,
+          "validation_mean": 0.8615420460700989,
+          "validation_median": 0.5246033668518066,
+          "standardized_mean_difference": 0.06027465276245108,
+          "absolute_smd": 0.06027465276245108,
+          "wasserstein": 0.1786453023951581,
+          "train_p10": 0.04830318093299866,
+          "train_p90": 1.8433261156082161,
+          "validation_p10": 0.0,
+          "validation_p90": 2.3941465616226196
+        }
+      ],
+      "matched_tail_probe": {
+        "matched_pairs": 1968,
+        "validation_retained_fraction": 0.6490765171503958,
+        "strata": {
+          "speed_edges": [
+            0.04675643518567085,
+            0.20244808495044708,
+            0.3506341278553009
+          ],
+          "curvature_edges": [
+            0.020292159169912338,
+            0.05128367990255356,
+            0.10550955310463905
+          ],
+          "cells": [
+            {
+              "stratum": [
+                1,
+                3,
+                1,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                2,
+                0
+              ],
+              "pairs": 7
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                2,
+                1
+              ],
+              "pairs": 19
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                2,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                3,
+                0
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                3,
+                1
+              ],
+              "pairs": 17
+            },
+            {
+              "stratum": [
+                1,
+                3,
+                3,
+                2
+              ],
+              "pairs": 9
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                0,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                3,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                0,
+                3,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                0,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                0,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                0,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                0,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                1,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                1,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                1,
+                3
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                2,
+                0
+              ],
+              "pairs": 11
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                2,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                2,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                2,
+                3
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                3,
+                0
+              ],
+              "pairs": 11
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                3,
+                1
+              ],
+              "pairs": 31
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                3,
+                2
+              ],
+              "pairs": 12
+            },
+            {
+              "stratum": [
+                2,
+                1,
+                3,
+                3
+              ],
+              "pairs": 26
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                0,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                0,
+                2
+              ],
+              "pairs": 7
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                1,
+                0
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                1,
+                1
+              ],
+              "pairs": 6
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                1,
+                2
+              ],
+              "pairs": 7
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                1,
+                3
+              ],
+              "pairs": 25
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                2,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                2,
+                1
+              ],
+              "pairs": 6
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "pairs": 20
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                2,
+                3
+              ],
+              "pairs": 65
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                3,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                3,
+                2
+              ],
+              "pairs": 8
+            },
+            {
+              "stratum": [
+                2,
+                2,
+                3,
+                3
+              ],
+              "pairs": 130
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                0,
+                1
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                0,
+                2
+              ],
+              "pairs": 13
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                0,
+                3
+              ],
+              "pairs": 28
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                1,
+                0
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                1,
+                1
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                1,
+                2
+              ],
+              "pairs": 13
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                1,
+                3
+              ],
+              "pairs": 169
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                2,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                2,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                2,
+                3
+              ],
+              "pairs": 449
+            },
+            {
+              "stratum": [
+                2,
+                3,
+                3,
+                3
+              ],
+              "pairs": 272
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                1,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                1,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                2,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                3,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                1,
+                3,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                1,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                1,
+                1
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                1,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                1,
+                3
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                2,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                2,
+                1
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                2,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                3,
+                0
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                3,
+                1
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                3,
+                2
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                2,
+                3,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                0,
+                0
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                0,
+                1
+              ],
+              "pairs": 6
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                1,
+                0
+              ],
+              "pairs": 21
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                1,
+                1
+              ],
+              "pairs": 41
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                1,
+                2
+              ],
+              "pairs": 22
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                1,
+                3
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                2,
+                0
+              ],
+              "pairs": 22
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                2,
+                1
+              ],
+              "pairs": 35
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                2,
+                2
+              ],
+              "pairs": 39
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                2,
+                3
+              ],
+              "pairs": 13
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                3,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                3,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                3,
+                2
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                4,
+                1,
+                2,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                4,
+                1,
+                2,
+                2
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                4,
+                1,
+                3,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                1,
+                3,
+                1
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                1,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                2,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                2,
+                1
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                2,
+                3
+              ],
+              "pairs": 6
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                3,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                3,
+                1
+              ],
+              "pairs": 7
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                3,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                4,
+                2,
+                3,
+                3
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                0,
+                0
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                0,
+                1
+              ],
+              "pairs": 20
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                0,
+                2
+              ],
+              "pairs": 10
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                0,
+                3
+              ],
+              "pairs": 6
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                1,
+                0
+              ],
+              "pairs": 12
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                1,
+                1
+              ],
+              "pairs": 34
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                1,
+                2
+              ],
+              "pairs": 35
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                1,
+                3
+              ],
+              "pairs": 23
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                2,
+                0
+              ],
+              "pairs": 1
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                2,
+                1
+              ],
+              "pairs": 4
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                2,
+                2
+              ],
+              "pairs": 5
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                2,
+                3
+              ],
+              "pairs": 47
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                3,
+                0
+              ],
+              "pairs": 2
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                3,
+                1
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                3,
+                2
+              ],
+              "pairs": 3
+            },
+            {
+              "stratum": [
+                4,
+                3,
+                3,
+                3
+              ],
+              "pairs": 25
+            }
+          ]
+        },
+        "balance": {
+          "mean_speed": {
+            "smd_before": 1.4968668680203623,
+            "smd_after": 0.5192546828159826
+          },
+          "mean_curvature": {
+            "smd_before": 0.06655910981105619,
+            "smd_after": 0.1311892098800786
+          },
+          "density_r4": {
+            "smd_before": -1.0022606207098887,
+            "smd_after": -0.3407870522957311
+          },
+          "neighbour_count": {
+            "smd_before": -1.050884642255103,
+            "smd_after": -0.5335903422423521
+          }
+        },
+        "labels": {
+          "ade": {
+            "train_prevalence": 0.25558943089430897,
+            "validation_prevalence": 0.3125,
+            "models": {
+              "M1_individual": {
+                "auroc": 0.5536062589007265,
+                "auprc": 0.35607039142373853
+              },
+              "M2_individual_social": {
+                "auroc": 0.5698676232882063,
+                "auprc": 0.3579907819861939,
+                "delta_auroc_vs_M1": 0.016261364387479826,
+                "delta_auroc_ci95": [
+                  -0.005293869901321504,
+                  0.035144129163404626
+                ],
+                "delta_auprc_vs_M1": 0.0019203905624553541
+              },
+              "M3_individual_social_scene": {
+                "auroc": 0.5640437690407947,
+                "auprc": 0.35116112400461513,
+                "delta_auroc_vs_M1": 0.010437510140068218,
+                "delta_auroc_ci95": [
+                  -0.010933741774965563,
+                  0.03136466889198008
+                ],
+                "delta_auprc_vs_M1": -0.004909267419123398
+              }
+            }
+          },
+          "fde": {
+            "train_prevalence": 0.25965447154471544,
+            "validation_prevalence": 0.3094512195121951,
+            "models": {
+              "M1_individual": {
+                "auroc": 0.5600056063632223,
+                "auprc": 0.35235164831341165
+              },
+              "M2_individual_social": {
+                "auroc": 0.559298769620761,
+                "auprc": 0.3510458011889238,
+                "delta_auroc_vs_M1": -0.0007068367424613031,
+                "delta_auroc_ci95": [
+                  -0.02631191699862997,
+                  0.022773689480655328
+                ],
+                "delta_auprc_vs_M1": -0.0013058471244878356
+              },
+              "M3_individual_social_scene": {
+                "auroc": 0.5552051578541645,
+                "auprc": 0.3464620977356683,
+                "delta_auroc_vs_M1": -0.004800448509057809,
+                "delta_auroc_ci95": [
+                  -0.028513744772664808,
+                  0.018053882719292254
+                ],
+                "delta_auprc_vs_M1": -0.005889550577743374
+              }
+            }
+          },
+          "union": {
+            "train_prevalence": 0.2931910569105691,
+            "validation_prevalence": 0.3516260162601626,
+            "models": {
+              "M1_individual": {
+                "auroc": 0.5625985286389911,
+                "auprc": 0.3992660516979968
+              },
+              "M2_individual_social": {
+                "auroc": 0.5773970772102125,
+                "auprc": 0.40578603425068027,
+                "delta_auroc_vs_M1": 0.014798548571221426,
+                "delta_auroc_ci95": [
+                  -0.006066486102722168,
+                  0.03704277094913452
+                ],
+                "delta_auprc_vs_M1": 0.00651998255268349
+              },
+              "M3_individual_social_scene": {
+                "auroc": 0.571809257615018,
+                "auprc": 0.39941495210832806,
+                "delta_auroc_vs_M1": 0.009210728976026927,
+                "delta_auroc_ci95": [
+                  -0.012656021294511884,
+                  0.031070031302105994
+                ],
+                "delta_auprc_vs_M1": 0.00014890041033127632
+              }
+            }
+          }
+        }
+      },
+      "encoder_robustness": {
+        "split": "challenge",
+        "tail_auroc": {
+          "raw_P3": 0.586890377618916,
+          "raw_P5": 0.594511413061259,
+          "encoder_P4": 0.5837453313867838,
+          "all_P6": 0.6262506335848074
+        },
+        "domain_auroc": {
+          "raw_D3": 0.9693053123759929,
+          "encoder_D4": 0.9226294851400365,
+          "all_D5": 0.9930169876636894
+        },
+        "encoder_more_task_informative_and_domain_invariant": false
+      }
+    }
+  ],
+  "decision": {
+    "social_branch_gate": {
+      "rule": "Challenge matched M2-M1 AUROC>=0.03, CI lower>0, General delta>=0",
+      "passed": false,
+      "deltas": {
+        "general": {
+          "auroc": 0.6138832860234987,
+          "auprc": 0.2807031008445732,
+          "delta_auroc_vs_M1": 0.001903803921362135,
+          "delta_auroc_ci95": [
+            -0.022794669113066313,
+            0.02521922458294064
+          ],
+          "delta_auprc_vs_M1": 0.010304921654070043
+        },
+        "challenge": {
+          "auroc": 0.5773970772102125,
+          "auprc": 0.40578603425068027,
+          "delta_auroc_vs_M1": 0.014798548571221426,
+          "delta_auroc_ci95": [
+            -0.006066486102722168,
+            0.03704277094913452
+          ],
+          "delta_auprc_vs_M1": 0.00651998255268349
+        }
+      }
+    },
+    "strongest_challenge_shift_source": {
+      "group": "mixed_motion_social",
+      "domain_auroc": 0.911292192862762
+    },
+    "motion_branch_gate_passed": false,
+    "scene_shortcut_detected": false,
+    "recommended_next_experiment": "freeze_tail_specific_modeling_and_focus_general_encoder_robustness"
+  }
+}

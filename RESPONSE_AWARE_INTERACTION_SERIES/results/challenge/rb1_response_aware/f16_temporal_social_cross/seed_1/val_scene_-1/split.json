@@ -1,0 +1,29 @@
+{
+  "strategy": "motion_challenge_holdout_within_training_scenes",
+  "validation_fraction": 0.1,
+  "validation_seed": 20260828,
+  "scene_counts": {
+    "1": 877,
+    "2": 21217,
+    "3": 3736,
+    "4": 4477
+  },
+  "train_samples": 27275,
+  "validation_samples": 3032,
+  "target_test_accessed": false,
+  "data_path": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy",
+  "num_path": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_train.npy",
+  "challenge_definition": "Within each source scene, hold out the highest combined percentile of recent speed, motion nonlinearity, and low agent density.",
+  "challenge_train_means": {
+    "speed_median_step": 0.21305647492408752,
+    "nonlinearity_mean_step_change": 0.02254546619951725,
+    "valid_agents": 7.722933292388916,
+    "challenge_score": 1.0908737182617188
+  },
+  "challenge_validation_means": {
+    "speed_median_step": 0.46533527970314026,
+    "nonlinearity_mean_step_change": 0.05212044343352318,
+    "valid_agents": 5.062335014343262,
+    "challenge_score": 2.110748767852783
+  }
+}

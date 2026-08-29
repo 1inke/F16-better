@@ -1,0 +1,158 @@
+{
+  "gate_passed": true,
+  "gate_rule": "each split: Bank20 union >=3% and the actually distilled Selected3 union >=1% on minADE or minFDE",
+  "split_pass": {
+    "general": true,
+    "challenge": true
+  },
+  "results": [
+    {
+      "split": "general",
+      "strict_leakage_policy": "train-only cross-scene; no same-scene candidates",
+      "retrieval": {
+        "bank_k": 20,
+        "selected_m": 3,
+        "feature_distance_mean": 1.301967740058899,
+        "feature_distance_p90": 2.3365449905395512
+      },
+      "overall": {
+        "subset": "overall",
+        "samples": 1516,
+        "baseline": {
+          "min_ade_20": 0.17867590487003326,
+          "min_fde_20": 0.3140714466571808
+        },
+        "bank20": {
+          "min_ade": 0.30393245816230774,
+          "min_fde": 0.5757308602333069
+        },
+        "selected3": {
+          "min_ade": 0.5345634818077087,
+          "min_fde": 1.0946539640426636
+        },
+        "union": {
+          "min_ade": 0.16816051304340363,
+          "min_fde": 0.2765556871891022
+        },
+        "union_improvement_pct": {
+          "min_ade": 5.885176198927555,
+          "min_fde": 11.944976172580335
+        },
+        "selected3_union": {
+          "min_ade": 0.17634069919586182,
+          "min_fde": 0.30544400215148926
+        },
+        "selected3_union_improvement_pct": {
+          "min_ade": 1.3069505235583145,
+          "min_fde": 2.7469687542493015
+        }
+      },
+      "social_needed": {
+        "subset": "social_needed",
+        "samples": 628,
+        "baseline": {
+          "min_ade_20": 0.19164565205574036,
+          "min_fde_20": 0.32329341769218445
+        },
+        "bank20": {
+          "min_ade": 0.3411809504032135,
+          "min_fde": 0.6456829309463501
+        },
+        "selected3": {
+          "min_ade": 0.6131052374839783,
+          "min_fde": 1.2389148473739624
+        },
+        "union": {
+          "min_ade": 0.1832016557455063,
+          "min_fde": 0.29048001766204834
+        },
+        "union_improvement_pct": {
+          "min_ade": 4.406046377602202,
+          "min_fde": 10.149727224381211
+        },
+        "selected3_union": {
+          "min_ade": 0.18989503383636475,
+          "min_fde": 0.3163851201534271
+        },
+        "selected3_union_improvement_pct": {
+          "min_ade": 0.9134661812554179,
+          "min_fde": 2.1368506628040573
+        }
+      }
+    },
+    {
+      "split": "challenge",
+      "strict_leakage_policy": "train-only cross-scene; no same-scene candidates",
+      "retrieval": {
+        "bank_k": 20,
+        "selected_m": 3,
+        "feature_distance_mean": 2.310593843460083,
+        "feature_distance_p90": 3.8971255302429197
+      },
+      "overall": {
+        "subset": "overall",
+        "samples": 3032,
+        "baseline": {
+          "min_ade_20": 0.2780737280845642,
+          "min_fde_20": 0.4778403639793396
+        },
+        "bank20": {
+          "min_ade": 0.45219457149505615,
+          "min_fde": 0.8316858410835266
+        },
+        "selected3": {
+          "min_ade": 0.7435064315795898,
+          "min_fde": 1.4848651885986328
+        },
+        "union": {
+          "min_ade": 0.26152053475379944,
+          "min_fde": 0.4154404103755951
+        },
+        "union_improvement_pct": {
+          "min_ade": 5.952807352491362,
+          "min_fde": 13.058744783318998
+        },
+        "selected3_union": {
+          "min_ade": 0.2729458808898926,
+          "min_fde": 0.4624256193637848
+        },
+        "selected3_union_improvement_pct": {
+          "min_ade": 1.8440602893316949,
+          "min_fde": 3.2259193189927537
+        }
+      },
+      "social_needed": {
+        "subset": "social_needed",
+        "samples": 1412,
+        "baseline": {
+          "min_ade_20": 0.2662472724914551,
+          "min_fde_20": 0.44297733902931213
+        },
+        "bank20": {
+          "min_ade": 0.4536406993865967,
+          "min_fde": 0.8371773958206177
+        },
+        "selected3": {
+          "min_ade": 0.7566224932670593,
+          "min_fde": 1.5206990242004395
+        },
+        "union": {
+          "min_ade": 0.253030002117157,
+          "min_fde": 0.39140549302101135
+        },
+        "union_improvement_pct": {
+          "min_ade": 4.964283859366969,
+          "min_fde": 11.642095760769433
+        },
+        "selected3_union": {
+          "min_ade": 0.2628609240055084,
+          "min_fde": 0.4320525825023651
+        },
+        "selected3_union_improvement_pct": {
+          "min_ade": 1.2718810052994356,
+          "min_fde": 2.4662111499622608
+        }
+      }
+    }
+  ]
+}

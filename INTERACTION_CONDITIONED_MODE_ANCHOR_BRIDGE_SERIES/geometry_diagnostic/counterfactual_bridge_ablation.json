@@ -1,0 +1,25 @@
+{
+  "description": "Same trained IC1 checkpoint with the bridge enabled versus its zeroed output projection; encoder weights are identical.",
+  "general": {
+    "metrics": {
+      "min_ade_20": {"enabled": 0.1795498431, "disabled": 0.1795357615, "enabled_vs_disabled_pct": 0.007843},
+      "min_fde_20": {"enabled": 0.3161467612, "disabled": 0.3182975352, "enabled_vs_disabled_pct": -0.675712},
+      "same_path_fde": {"enabled": 0.3792775273, "disabled": 0.3798446357, "enabled_vs_disabled_pct": -0.149300},
+      "top1_ade": {"enabled": 0.4651766121, "disabled": 0.4671799242, "enabled_vs_disabled_pct": -0.428810},
+      "top1_fde": {"enabled": 1.0217586756, "disabled": 1.0244649649, "enabled_vs_disabled_pct": -0.264166}
+    },
+    "direct_anchor_shift_mean": {"step_4": 0.014176868, "step_8": 0.030428996, "step_12": 0.049044807},
+    "direct_mode_differential_mean": 0.017229933
+  },
+  "challenge": {
+    "metrics": {
+      "min_ade_20": {"enabled": 0.2789117396, "disabled": 0.2789105773, "enabled_vs_disabled_pct": 0.000417},
+      "min_fde_20": {"enabled": 0.4797910750, "disabled": 0.4799833298, "enabled_vs_disabled_pct": -0.040054},
+      "same_path_fde": {"enabled": 0.5731462836, "disabled": 0.5729888678, "enabled_vs_disabled_pct": 0.027473},
+      "top1_ade": {"enabled": 0.7521830797, "disabled": 0.7537070513, "enabled_vs_disabled_pct": -0.202197},
+      "top1_fde": {"enabled": 1.6224230528, "disabled": 1.6254364252, "enabled_vs_disabled_pct": -0.185389}
+    },
+    "direct_anchor_shift_mean": {"step_4": 0.009497947, "step_8": 0.013658398, "step_12": 0.023179691},
+    "direct_mode_differential_mean": 0.007521429
+  }
+}

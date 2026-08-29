@@ -1,0 +1,79 @@
+{
+  "split": "challenge",
+  "seed": 1,
+  "train_fold_only": true,
+  "source_checkpoint": "C:\\Users\\linke\\Documents\\New project\\COUNTERFACTUAL_SOCIAL_RESIDUAL_SUPERVISION_SERIES\\results\\challenge\\baseline\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth",
+  "raw_robust_sigma": [
+    0.20036713778972626,
+    0.2730022966861725,
+    0.3718063235282898
+  ],
+  "selected_sigma": [
+    0.1502753496170044,
+    0.20475172996520996,
+    0.27885472774505615
+  ],
+  "selected_multiplier": 0.75,
+  "selected_train_diagnostics": {
+    "multiplier": 0.75,
+    "sigma": [
+      0.1502753496170044,
+      0.20475172996520996,
+      0.27885472774505615
+    ],
+    "mean_effective_modes": 2.2126426696777344,
+    "mean_posterior_top1": 0.7649255394935608
+  },
+  "calibration_candidates": [
+    {
+      "multiplier": 0.75,
+      "sigma": [
+        0.1502753496170044,
+        0.20475172996520996,
+        0.27885472774505615
+      ],
+      "mean_effective_modes": 2.2126426696777344,
+      "mean_posterior_top1": 0.7649255394935608
+    },
+    {
+      "multiplier": 1.0,
+      "sigma": [
+        0.20036713778972626,
+        0.2730022966861725,
+        0.3718063235282898
+      ],
+      "mean_effective_modes": 2.670726776123047,
+      "mean_posterior_top1": 0.6932228803634644
+    },
+    {
+      "multiplier": 1.25,
+      "sigma": [
+        0.2504589259624481,
+        0.341252863407135,
+        0.46475791931152344
+      ],
+      "mean_effective_modes": 3.189091682434082,
+      "mean_posterior_top1": 0.6214814186096191
+    },
+    {
+      "multiplier": 1.5,
+      "sigma": [
+        0.3005506992340088,
+        0.4095034599304199,
+        0.5577094554901123
+      ],
+      "mean_effective_modes": 3.7710976600646973,
+      "mean_posterior_top1": 0.5537213087081909
+    },
+    {
+      "multiplier": 2.0,
+      "sigma": [
+        0.4007342755794525,
+        0.546004593372345,
+        0.7436126470565796
+      ],
+      "mean_effective_modes": 5.093379974365234,
+      "mean_posterior_top1": 0.43743085861206055
+    }
+  ]
+}

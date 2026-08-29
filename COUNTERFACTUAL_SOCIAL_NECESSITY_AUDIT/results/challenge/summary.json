@@ -1,0 +1,312 @@
+{
+  "split": "challenge",
+  "samples": 3032,
+  "lambda_fde": 0.5,
+  "intervention": "only focal receive-row in F16 temporal-social allowed mask becomes self-loop",
+  "bootstrap": {
+    "method": "scene_x_contiguous_time_block",
+    "block_frames": 20,
+    "blocks": 110,
+    "repetitions": 2000
+  },
+  "overall": {
+    "samples": 3032,
+    "min_ade_20": {
+      "full": 0.27874067425727844,
+      "self_only": 0.2858336269855499,
+      "full_advantage_pct": 2.544642165041422
+    },
+    "min_fde_20": {
+      "full": 0.48037639260292053,
+      "self_only": 0.4985177516937256,
+      "full_advantage_pct": 3.7764884724051706
+    },
+    "same_path_fde": {
+      "full": 0.5705733299255371,
+      "self_only": 0.5941427946090698,
+      "full_advantage_pct": 4.130838833039863
+    },
+    "top1_ade": {
+      "full": 0.7520001530647278,
+      "self_only": 0.7725179195404053,
+      "full_advantage_pct": 2.7284258376888193
+    },
+    "top1_fde": {
+      "full": 1.6226844787597656,
+      "self_only": 1.665300726890564,
+      "full_advantage_pct": 2.626280628712885
+    },
+    "oracle_cost": {
+      "full": 0.5375123023986816,
+      "self_only": 0.5546461939811707,
+      "full_advantage_pct": 3.187627800522508
+    }
+  },
+  "overall_paired": {
+    "min_ade_20": {
+      "mean_paired_difference": 0.007092938226424059,
+      "median_paired_difference": 0.0,
+      "mean_95_ci_block_bootstrap": [
+        0.005190102160720574,
+        0.00921715909533074
+      ],
+      "social_help_win_rate": 0.49934036939313986,
+      "win_rate_95_ci_block_bootstrap": [
+        0.4773608593949475,
+        0.5342414121577709
+      ]
+    },
+    "min_fde_20": {
+      "mean_paired_difference": 0.018141396967251845,
+      "median_paired_difference": 0.0006060972809791565,
+      "mean_95_ci_block_bootstrap": [
+        0.013156337059596351,
+        0.024385822864878642
+      ],
+      "social_help_win_rate": 0.5029683377308707,
+      "win_rate_95_ci_block_bootstrap": [
+        0.48056050321169114,
+        0.5373250352345379
+      ]
+    },
+    "same_path_fde": {
+      "mean_paired_difference": 0.023569421260924837,
+      "median_paired_difference": 0.0,
+      "mean_95_ci_block_bootstrap": [
+        0.016305865437851588,
+        0.0323544763199138
+      ],
+      "social_help_win_rate": 0.4947229551451187,
+      "win_rate_95_ci_block_bootstrap": [
+        0.47630139574047775,
+        0.5227000836586726
+      ]
+    },
+    "top1_ade": {
+      "mean_paired_difference": 0.020517812121541565,
+      "median_paired_difference": 0.004741504788398743,
+      "mean_95_ci_block_bootstrap": [
+        0.012852528697533784,
+        0.027223575481548593
+      ],
+      "social_help_win_rate": 0.5273746701846965,
+      "win_rate_95_ci_block_bootstrap": [
+        0.4991643430345939,
+        0.5588043000893765
+      ]
+    },
+    "top1_fde": {
+      "mean_paired_difference": 0.042616285961170466,
+      "median_paired_difference": 0.012193620204925537,
+      "mean_95_ci_block_bootstrap": [
+        0.022062241435760625,
+        0.056762274311720415
+      ],
+      "social_help_win_rate": 0.5286939313984169,
+      "win_rate_95_ci_block_bootstrap": [
+        0.4972806897806898,
+        0.5573593206198859
+      ]
+    },
+    "oracle_cost": {
+      "mean_paired_difference": 0.017133904891309764,
+      "median_paired_difference": 0.0011512041091918945,
+      "mean_95_ci_block_bootstrap": [
+        0.013195538925513232,
+        0.023109588827645064
+      ],
+      "social_help_win_rate": 0.503957783641161,
+      "win_rate_95_ci_block_bootstrap": [
+        0.4832607234801782,
+        0.5384321660114664
+      ]
+    }
+  },
+  "high_interaction": {
+    "threshold_train_q75": 0.5804224014282227,
+    "metrics": {
+      "samples": 674,
+      "min_ade_20": {
+        "full": 0.33445969223976135,
+        "self_only": 0.3393898904323578,
+        "full_advantage_pct": 1.474078433661341
+      },
+      "min_fde_20": {
+        "full": 0.55729740858078,
+        "self_only": 0.5634350776672363,
+        "full_advantage_pct": 1.1013274047131372
+      },
+      "same_path_fde": {
+        "full": 0.6671772599220276,
+        "self_only": 0.6874176859855652,
+        "full_advantage_pct": 3.033740398451701
+      },
+      "top1_ade": {
+        "full": 0.8816892504692078,
+        "self_only": 0.9020635485649109,
+        "full_advantage_pct": 2.310825280546469
+      },
+      "top1_fde": {
+        "full": 1.8825002908706665,
+        "self_only": 1.923417568206787,
+        "full_advantage_pct": 2.1735602132202603
+      },
+      "oracle_cost": {
+        "full": 0.6351739168167114,
+        "self_only": 0.6455376744270325,
+        "full_advantage_pct": 1.6316409310793034
+      }
+    },
+    "oracle_cost_paired": {
+      "mean_paired_difference": 0.01036381627535254,
+      "median_paired_difference": 0.012986481189727783,
+      "mean_95_ci_block_bootstrap": [
+        -0.0021338570303370565,
+        0.019502696554691275
+      ],
+      "social_help_win_rate": 0.5608308605341247,
+      "win_rate_95_ci_block_bootstrap": [
+        0.5194978168572393,
+        0.5848864708812128
+      ]
+    }
+  },
+  "interaction_deciles": [
+    {
+      "decile": 1,
+      "samples": 304,
+      "potential_min": 0.0,
+      "potential_max": 0.06563010066747665,
+      "delta_min_ade_20": -9.257115016225725e-05,
+      "full_advantage_min_ade_20_pct": -0.03768801689147949,
+      "delta_min_fde_20": 0.00035869190469384193,
+      "full_advantage_min_fde_20_pct": 0.08009672164916992,
+      "delta_oracle_cost": -0.00039513889350928366,
+      "full_advantage_oracle_cost_pct": -0.08100271224975586
+    },
+    {
+      "decile": 2,
+      "samples": 303,
+      "potential_min": 0.06875728815793991,
+      "potential_max": 0.2566240429878235,
+      "delta_min_ade_20": 0.0029123458079993725,
+      "full_advantage_min_ade_20_pct": 1.048898696899414,
+      "delta_min_fde_20": 0.0051908050663769245,
+      "full_advantage_min_fde_20_pct": 0.9866833686828613,
+      "delta_oracle_cost": 0.00807190127670765,
+      "full_advantage_oracle_cost_pct": 1.444685459136963
+    },
+    {
+      "decile": 3,
+      "samples": 303,
+      "potential_min": 0.2566240429878235,
+      "potential_max": 0.3705141544342041,
+      "delta_min_ade_20": 0.004331359174102545,
+      "full_advantage_min_ade_20_pct": 1.6572952270507812,
+      "delta_min_fde_20": 0.0371868796646595,
+      "full_advantage_min_fde_20_pct": 8.46254825592041,
+      "delta_oracle_cost": 0.02479906752705574,
+      "full_advantage_oracle_cost_pct": 4.9750447273254395
+    },
+    {
+      "decile": 4,
+      "samples": 303,
+      "potential_min": 0.3705812394618988,
+      "potential_max": 0.4238969087600708,
+      "delta_min_ade_20": 0.010667036287486553,
+      "full_advantage_min_ade_20_pct": 4.465830326080322,
+      "delta_min_fde_20": 0.023501910269260406,
+      "full_advantage_min_fde_20_pct": 5.774092674255371,
+      "delta_oracle_cost": 0.021689679473638535,
+      "full_advantage_oracle_cost_pct": 4.7139763832092285
+    },
+    {
+      "decile": 5,
+      "samples": 303,
+      "potential_min": 0.424548476934433,
+      "potential_max": 0.4591810405254364,
+      "delta_min_ade_20": 0.012357550673186779,
+      "full_advantage_min_ade_20_pct": 4.825794696807861,
+      "delta_min_fde_20": 0.03711665794253349,
+      "full_advantage_min_fde_20_pct": 8.381927013397217,
+      "delta_oracle_cost": 0.0322129987180233,
+      "full_advantage_oracle_cost_pct": 6.566286087036133
+    },
+    {
+      "decile": 6,
+      "samples": 304,
+      "potential_min": 0.4591810405254364,
+      "potential_max": 0.493082195520401,
+      "delta_min_ade_20": 0.012382912449538708,
+      "full_advantage_min_ade_20_pct": 4.7258734703063965,
+      "delta_min_fde_20": 0.026997791603207588,
+      "full_advantage_min_fde_20_pct": 5.929100513458252,
+      "delta_oracle_cost": 0.02612711302936077,
+      "full_advantage_oracle_cost_pct": 5.134594440460205
+    },
+    {
+      "decile": 7,
+      "samples": 303,
+      "potential_min": 0.49314644932746887,
+      "potential_max": 0.5334802865982056,
+      "delta_min_ade_20": 0.00858476385474205,
+      "full_advantage_min_ade_20_pct": 2.9685497283935547,
+      "delta_min_fde_20": 0.011457190848886967,
+      "full_advantage_min_fde_20_pct": 2.3339033126831055,
+      "delta_oracle_cost": 0.011300737038254738,
+      "full_advantage_oracle_cost_pct": 2.045130729675293
+    },
+    {
+      "decile": 8,
+      "samples": 303,
+      "potential_min": 0.5334802865982056,
+      "potential_max": 0.5937168598175049,
+      "delta_min_ade_20": 0.0086751040071249,
+      "full_advantage_min_ade_20_pct": 3.0048727989196777,
+      "delta_min_fde_20": 0.026396889239549637,
+      "full_advantage_min_fde_20_pct": 5.524206161499023,
+      "delta_oracle_cost": 0.026433346793055534,
+      "full_advantage_oracle_cost_pct": 4.842174053192139
+    },
+    {
+      "decile": 9,
+      "samples": 303,
+      "potential_min": 0.5937168598175049,
+      "potential_max": 0.6597453355789185,
+      "delta_min_ade_20": 0.008498823270201683,
+      "full_advantage_min_ade_20_pct": 2.6962995529174805,
+      "delta_min_fde_20": 0.010498379357159138,
+      "full_advantage_min_fde_20_pct": 2.048313617706299,
+      "delta_oracle_cost": 0.01625162735581398,
+      "full_advantage_oracle_cost_pct": 2.7549266815185547
+    },
+    {
+      "decile": 10,
+      "samples": 303,
+      "potential_min": 0.6597453355789185,
+      "potential_max": 0.8406404852867126,
+      "delta_min_ade_20": 0.002618313068524003,
+      "full_advantage_min_ade_20_pct": 0.7419705390930176,
+      "delta_min_fde_20": 0.0027382327243685722,
+      "full_advantage_min_fde_20_pct": 0.45322179794311523,
+      "delta_oracle_cost": 0.004875881597399712,
+      "full_advantage_oracle_cost_pct": 0.7144331932067871
+    }
+  ],
+  "decile_trend_spearman": {
+    "min_ade_20": 0.19999999999999998,
+    "min_fde_20": -0.01818181818181818
+  },
+  "prediction_effect": {
+    "mean_all_mode_trajectory_shift": 0.11774566024541855,
+    "mean_all_mode_endpoint_shift": 0.235319584608078,
+    "ade_winner_change_rate": 0.22955145118733508,
+    "top1_change_rate": 0.08212401055408972
+  },
+  "gate_decision": {
+    "decision": "do_not_enter_csrs",
+    "high_metric_pass": false,
+    "high_win_ci_pass": true,
+    "decile_trend_pass": false
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "description": "CSO1 winner-protected set optimization",
+  "baseline_policy": "reuse exact CSRS1 B0",
+  "rows": [
+    {
+      "experiment": "baseline_reused_exact_match",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.17867590487003326,
+      "min_fde_20": 0.3140714466571808,
+      "same_path_fde": 0.37851184606552124,
+      "top1_ade": 0.46738529205322266,
+      "top1_fde": 1.0261527299880981,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 297.07420440006536
+    },
+    {
+      "experiment": "cso1_winner_protected_repulsion",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.17883999645709991,
+      "min_fde_20": 0.31501445174217224,
+      "same_path_fde": 0.3805660307407379,
+      "top1_ade": 0.4678823947906494,
+      "top1_fde": 1.026803970336914,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 308.33590629999526
+    },
+    {
+      "experiment": "cso1_repulsion_prototype",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.17955319583415985,
+      "min_fde_20": 0.3162544071674347,
+      "same_path_fde": 0.3813060224056244,
+      "top1_ade": 0.4666425883769989,
+      "top1_fde": 1.0259114503860474,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 350.76433799997903
+    },
+    {
+      "experiment": "baseline_reused_exact_match",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.2780737280845642,
+      "min_fde_20": 0.4778404235839844,
+      "same_path_fde": 0.5693995952606201,
+      "top1_ade": 0.7500599026679993,
+      "top1_fde": 1.6194778680801392,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 631.6822688999819
+    },
+    {
+      "experiment": "cso1_winner_protected_repulsion",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.2784373164176941,
+      "min_fde_20": 0.4780972898006439,
+      "same_path_fde": 0.5681127309799194,
+      "top1_ade": 0.7502930164337158,
+      "top1_fde": 1.6192104816436768,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 296.5443937999662
+    },
+    {
+      "experiment": "cso1_repulsion_prototype",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.27816659212112427,
+      "min_fde_20": 0.47759267687797546,
+      "same_path_fde": 0.5665009617805481,
+      "top1_ade": 0.7474147081375122,
+      "top1_fde": 1.612612247467041,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 332.2401075999951
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "split": "general",
+      "experiment": "cso1_winner_protected_repulsion",
+      "percent_change": {
+        "min_ade_20": 0.09183755760802104,
+        "min_fde_20": 0.3002517723366127,
+        "same_path_fde": 0.5427002342381249,
+        "top1_ade": 0.10635823289240065,
+        "top1_fde": 0.06346427093981699
+      }
+    },
+    {
+      "split": "general",
+      "experiment": "cso1_repulsion_prototype",
+      "percent_change": {
+        "min_ade_20": 0.4909956744109989,
+        "min_fde_20": 0.6950522034041118,
+        "same_path_fde": 0.738200499970465,
+        "top1_ade": -0.1589060864455205,
+        "top1_fde": -0.023513030273147884
+      }
+    },
+    {
+      "split": "challenge",
+      "experiment": "cso1_winner_protected_repulsion",
+      "percent_change": {
+        "min_ade_20": 0.1307524934607729,
+        "min_fde_20": 0.053755648116360355,
+        "same_path_fde": -0.2260037224142475,
+        "top1_ade": 0.03107935311397192,
+        "top1_fde": -0.016510657029189524
+      }
+    },
+    {
+      "split": "challenge",
+      "experiment": "cso1_repulsion_prototype",
+      "percent_change": {
+        "min_ade_20": 0.03339547291998368,
+        "min_fde_20": -0.051847163567853016,
+        "same_path_fde": -0.5090684124468448,
+        "top1_ade": -0.3526644366773857,
+        "top1_fde": -0.4239403790826213
+      }
+    }
+  ]
+}

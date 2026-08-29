@@ -1,0 +1,53 @@
+{
+  "split": "challenge",
+  "gate_passed": true,
+  "train_only_calibration": true,
+  "consensus_radius": 0.21233034133911133,
+  "ridge_coefficients": [
+    0.009505776688456535,
+    0.1392253190279007,
+    0.151779904961586,
+    0.0733991414308548
+  ],
+  "train": {
+    "candidate_level_spearman_confidence_vs_negative_utility": 0.6490663124799564,
+    "high_confidence_utility": 0.3971845805644989,
+    "low_confidence_utility": 1.797945261001587,
+    "high_vs_low_improvement_pct": 77.90897190570831,
+    "selected_utility": 0.6274610973455654,
+    "pseudo_usage_fraction": {
+      "0": 0.3855178735105408,
+      "1": 0.3129972502291476,
+      "2": 0.3014848762603116
+    }
+  },
+  "validation_locked": {
+    "candidate_level_spearman_confidence_vs_negative_utility": 0.45724300993971884,
+    "high_confidence_utility": 1.1765483617782593,
+    "low_confidence_utility": 2.384171962738037,
+    "high_vs_low_improvement_pct": 50.65169930458069,
+    "selected_utility": 1.0945325077137464,
+    "pseudo_usage_fraction": {
+      "0": 0.662598944591029,
+      "1": 0.27308707124010556,
+      "2": 0.06431398416886544
+    }
+  },
+  "metadata": {
+    "split": "challenge",
+    "seed": 1,
+    "bank_policy": "train-only cross-scene",
+    "confidence_fit": "Ridge on train fold only; validation never fits coefficients or thresholds",
+    "features": [
+      "retrieval_distance",
+      "future_neighbour_agreement",
+      "inverse_cluster_support",
+      "observed_motion_scale_gap"
+    ],
+    "confidence_threshold": 0.55,
+    "pseudo_modes": [
+      18,
+      19
+    ]
+  }
+}

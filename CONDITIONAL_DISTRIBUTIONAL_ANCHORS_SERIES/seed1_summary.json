@@ -1,0 +1,133 @@
+{
+  "description": "CDA1 fixed-scale anchor mixture with matched continuation control",
+  "rows": [
+    {
+      "experiment": "source_b0",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.17867590487003326,
+      "min_fde_20": 0.3140714466571808,
+      "same_path_fde": 0.37851184606552124,
+      "top1_ade": 0.46738529205322266,
+      "top1_fde": 1.0261527299880981,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 297.07420440006536
+    },
+    {
+      "experiment": "cda0_matched_continuation",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.17897094786167145,
+      "min_fde_20": 0.31431153416633606,
+      "same_path_fde": 0.37915822863578796,
+      "top1_ade": 0.46469956636428833,
+      "top1_fde": 1.0209702253341675,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 292.1502818999579
+    },
+    {
+      "experiment": "cda1_fixed_scale_anchor_mixture",
+      "split": "general",
+      "seed": 1,
+      "min_ade_20": 0.17847786843776703,
+      "min_fde_20": 0.3154379725456238,
+      "same_path_fde": 0.37743914127349854,
+      "top1_ade": 0.4639851152896881,
+      "top1_fde": 1.0193397998809814,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 301.9528541000327
+    },
+    {
+      "experiment": "source_b0",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.2780737280845642,
+      "min_fde_20": 0.4778404235839844,
+      "same_path_fde": 0.5693995952606201,
+      "top1_ade": 0.7500599026679993,
+      "top1_fde": 1.6194778680801392,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 631.6822688999819
+    },
+    {
+      "experiment": "cda0_matched_continuation",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.27875059843063354,
+      "min_fde_20": 0.4783974289894104,
+      "same_path_fde": 0.5675711631774902,
+      "top1_ade": 0.7521596550941467,
+      "top1_fde": 1.6218950748443604,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 281.2635327000171
+    },
+    {
+      "experiment": "cda1_fixed_scale_anchor_mixture",
+      "split": "challenge",
+      "seed": 1,
+      "min_ade_20": 0.27819421887397766,
+      "min_fde_20": 0.4784691333770752,
+      "same_path_fde": 0.5684444308280945,
+      "top1_ade": 0.750603199005127,
+      "top1_fde": 1.6186555624008179,
+      "parameters": 355048,
+      "trainable_parameters": 249005,
+      "elapsed_seconds": 280.6763690999942
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "split": "general",
+      "cda1_vs_matched_control_percent_change": {
+        "min_ade_20": -0.2755080809459187,
+        "min_fde_20": 0.35838276895419074,
+        "same_path_fde": -0.45339576790267566,
+        "top1_ade": -0.15374472590752308,
+        "top1_fde": -0.1596937317787539
+      },
+      "matched_control_vs_source_percent_change": {
+        "min_ade_20": 0.16512746464207861,
+        "min_fde_20": 0.07644359642069443,
+        "same_path_fde": 0.17076944274945216,
+        "top1_ade": -0.5746277716904502,
+        "top1_fde": -0.5050422322601777
+      },
+      "cda1_vs_source_percent_change": {
+        "min_ade_20": -0.1108355558127938,
+        "min_fde_20": 0.4351003260524289,
+        "same_path_fde": -0.2834005865795297,
+        "top1_ade": -0.7274890377053977,
+        "top1_fde": -0.6639294432511766
+      }
+    },
+    {
+      "split": "challenge",
+      "cda1_vs_matched_control_percent_change": {
+        "min_ade_20": -0.19959761872738735,
+        "min_fde_20": 0.014988455898734543,
+        "same_path_fde": 0.15386046847682966,
+        "top1_ade": -0.2069316106598329,
+        "top1_fde": -0.1997362525965718
+      },
+      "matched_control_vs_source_percent_change": {
+        "min_ade_20": 0.24341398618696886,
+        "min_fde_20": 0.11656724252173678,
+        "same_path_fde": -0.32111580309307497,
+        "top1_ade": 0.2799446309126097,
+        "top1_fde": 0.14925840061568163
+      },
+      "cda1_vs_source_percent_change": {
+        "min_ade_20": 0.04333051893949946,
+        "min_fde_20": 0.1315731700502143,
+        "same_path_fde": -0.16774940489524548,
+        "top1_ade": 0.07243372631908773,
+        "top1_fde": -0.050775975116978955
+      }
+    }
+  ]
+}
