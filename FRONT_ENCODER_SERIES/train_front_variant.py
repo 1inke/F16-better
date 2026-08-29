@@ -26,13 +26,25 @@ WORKSPACE = HERE.parent
 class TrajectoryDataset(Dataset):
     """Minimal no-scene ETH/UCY loader; avoids image-only dependencies."""
 
-    def __init__(self, data_path: Path, num_path: Path, cfg) -> None:
+    def __init__(
+        self, data_path: Path, num_path: Path, cfg,
+        sample_scene_path: Path | None = None,
+    ) -> None:
         self.data = np.load(data_path, mmap_mode="r")
         self.num = np.load(num_path, mmap_mode="r")
         self.past_frames = int(cfg.DATA.FREQUENCY * cfg.PREDICTION.OBS_TIME)
         self.future_frames = int(math.ceil(cfg.DATA.FREQUENCY * cfg.PREDICTION.PRED_TIME))
         self.scale = float(cfg.PREDICTION.TRAJ_SCALE)
         self.max_agents = int(cfg.DATA.MAX_AGENTS)
+        self.sample_scene_ids = (
+            np.load(sample_scene_path, mmap_mode="r")
+            if sample_scene_path is not None else None
+        )
+        if self.sample_scene_ids is not None and len(self.sample_scene_ids) != len(self.data):
+            raise ValueError(
+                "sample-scene sidecar length does not match trajectory data: "
+                f"{len(self.sample_scene_ids)} != {len(self.data)}"
+            )
 
     def __len__(self) -> int:
         return len(self.data)
@@ -48,8 +60,12 @@ class TrajectoryDataset(Dataset):
         num_valid = torch.tensor(
             min(int(self.num[index]), self.max_agents), dtype=torch.int64
         )
+        sample_scene_id = torch.tensor(
+            int(self.sample_scene_ids[index]) if self.sample_scene_ids is not None else -1,
+            dtype=torch.int64,
+        )
         empty = torch.empty(0, dtype=torch.float32)
-        return past, future, num_valid, empty, empty, empty
+        return past, future, num_valid, sample_scene_id, empty, empty
 
 
 def arguments() -> argparse.Namespace:
@@ -60,6 +76,8 @@ def arguments() -> argparse.Namespace:
     parser.add_argument("--num-path", type=Path, default=None)
     parser.add_argument("--test-data-path", type=Path, default=None)
     parser.add_argument("--test-num-path", type=Path, default=None)
+    parser.add_argument("--sample-scene-path", type=Path, default=None)
+    parser.add_argument("--test-sample-scene-path", type=Path, default=None)
     parser.add_argument("--max-agents", type=int, default=None)
     parser.add_argument("--graph-top-k", type=int, default=None)
     parser.add_argument("--graph-radius", type=float, default=None)
@@ -136,6 +154,7 @@ def arguments() -> argparse.Namespace:
     parser.add_argument("--epochs", type=int, default=30)
     parser.add_argument("--val-freq", type=int, default=5)
     parser.add_argument("--batch-size", type=int, default=64)
+    parser.add_argument("--learning-rate", type=float, default=None)
     parser.add_argument("--num-workers", type=int, default=0)
     parser.add_argument("--device", default="auto")
     parser.add_argument("--output-root", type=Path, default=Path("results/front_encoder_series"))
@@ -417,15 +436,21 @@ def evaluate(
 ) -> dict:
     model.eval()
     ade_parts, fde_parts, logits_parts, verifier_parts = [], [], [], []
+    sample_scene_parts = []
     coarse_ade_parts, coarse_fde_parts, selection_recall_parts = [], [], []
     anchor_correction_parts, progress_knot_parts = [], []
     mode_groups = None
     verifier, rotate = verifier_info if verifier_info else (None, None)
     with torch.inference_mode():
-        for past, future, num_valid, _, _, _ in loader:
+        for past, future, num_valid, sample_scene_ids, _, _ in loader:
             past = past.to(device)
             future = future.to(device)
             num_valid = num_valid.to(device).int()
+            sample_scene_ids = sample_scene_ids.to(device).long()
+            sample_scene_parts.append(sample_scene_ids.cpu().numpy())
+            set_scene_batch = getattr(model.decoder, "set_scene_batch", None)
+            if callable(set_scene_batch):
+                set_scene_batch(sample_scene_ids, past)
             if focal_heading_normalize:
                 past, future = normalize_to_focal_heading(past, future)
             center = past.mean(dim=-2, keepdim=True)
@@ -490,6 +515,27 @@ def evaluate(
         "fusion_alpha": float(alpha),
         "fused": None,
     }
+    sample_scenes = np.concatenate(sample_scene_parts)
+    valid_scenes = sample_scenes[sample_scenes >= 0]
+    if len(valid_scenes):
+        by_scene = {}
+        for scene in np.unique(valid_scenes):
+            members = sample_scenes == scene
+            scene_ade, scene_fde, scene_logits = ade[members], fde[members], logits[members]
+            scene_rows = np.arange(len(scene_ade))
+            scene_best_ade = scene_ade.argmin(axis=1)
+            by_scene[str(int(scene))] = {
+                "samples": int(members.sum()),
+                "min_ade_20": float(scene_ade.min(axis=1).mean()),
+                "same_path_fde": float(
+                    scene_fde[scene_rows, scene_best_ade].mean()
+                ),
+                "min_fde_20": float(scene_fde.min(axis=1).mean()),
+                "top1": selection_metrics(
+                    scene_ade, scene_fde, scene_logits.argmax(axis=1)
+                ),
+            }
+        result["by_sample_scene"] = by_scene
     if mode_groups is not None:
         selected = logits.argmax(axis=1)
         oracle = ade.argmin(axis=1)
@@ -583,6 +629,10 @@ def run() -> None:
     cfg.TRAIN.BATCH_SIZE = args.batch_size
     cfg.VAL.BATCH_SIZE = args.batch_size
     cfg.VAL.FREQ = args.val_freq
+    if args.learning_rate is not None:
+        if args.learning_rate <= 0.0:
+            raise ValueError("--learning-rate must be positive")
+        cfg.TRAIN.LR = float(args.learning_rate)
     if args.max_agents is not None:
         cfg.DATA.MAX_AGENTS = int(args.max_agents)
     if args.graph_top_k is not None:
@@ -705,7 +755,14 @@ def run() -> None:
     (run_dir / "split.json").write_text(json.dumps(split, indent=2), encoding="utf-8")
     np.savez_compressed(run_dir / "split_indices.npz", train=train_indices, validation=val_indices)
 
-    base_dataset = TrajectoryDataset(data_path, num_path, cfg)
+    sample_scene_path = (
+        args.sample_scene_path.resolve() if args.sample_scene_path is not None else None
+    )
+    if sample_scene_path is not None and not sample_scene_path.is_file():
+        raise FileNotFoundError(f"sample-scene sidecar missing: {sample_scene_path}")
+    base_dataset = TrajectoryDataset(
+        data_path, num_path, cfg, sample_scene_path=sample_scene_path
+    )
     generator = torch.Generator().manual_seed(args.seed)
     train_sampler = None
     sample_weights = torch.ones(len(train_indices), dtype=torch.double)
@@ -802,7 +859,18 @@ def run() -> None:
             raise FileNotFoundError(
                 f"test trajectory data missing: {test_data_path} / {test_num_path}"
             )
-        test_dataset = TrajectoryDataset(test_data_path, test_num_path, cfg)
+        test_sample_scene_path = (
+            args.test_sample_scene_path.resolve()
+            if args.test_sample_scene_path is not None else None
+        )
+        if test_sample_scene_path is not None and not test_sample_scene_path.is_file():
+            raise FileNotFoundError(
+                f"test sample-scene sidecar missing: {test_sample_scene_path}"
+            )
+        test_dataset = TrajectoryDataset(
+            test_data_path, test_num_path, cfg,
+            sample_scene_path=test_sample_scene_path,
+        )
         test_loader = DataLoader(
             test_dataset, batch_size=args.batch_size, shuffle=False,
             num_workers=args.num_workers, pin_memory=device.type == "cuda",
@@ -811,6 +879,10 @@ def run() -> None:
         split["test_samples"] = int(len(test_dataset))
         split["test_data_path"] = str(test_data_path)
         split["test_num_path"] = str(test_num_path)
+        split["sample_scene_path"] = str(sample_scene_path) if sample_scene_path else None
+        split["test_sample_scene_path"] = (
+            str(test_sample_scene_path) if test_sample_scene_path else None
+        )
         split["test_policy"] = "held_out_until_after_validation_checkpoint_selection"
         (run_dir / "split.json").write_text(
             json.dumps(split, indent=2), encoding="utf-8"
@@ -829,6 +901,7 @@ def run() -> None:
         encoder_module = importlib.util.module_from_spec(encoder_spec)
         encoder_spec.loader.exec_module(encoder_module)
         encoder_module.replace_encoder(model, cfg, args.encoder_experiment)
+    decoder_experiment_module = None
     if args.decoder_experiment != "q20":
         if args.decoder_module is None:
             raise ValueError("--decoder-module is required for a custom decoder")
@@ -839,9 +912,17 @@ def run() -> None:
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         module.replace_decoder(model, cfg, args.decoder_experiment)
+        decoder_experiment_module = module
     model = model.to(device)
     ema = ModelEMA(model, args.ema_decay) if args.ema_decay > 0.0 else None
-    loss_fn = ModeQueryLoss(cfg).to(device)
+    custom_loss_builder = (
+        getattr(decoder_experiment_module, "build_loss", None)
+        if decoder_experiment_module is not None else None
+    )
+    loss_fn = (
+        custom_loss_builder(cfg, model)
+        if callable(custom_loss_builder) else ModeQueryLoss(cfg)
+    ).to(device)
     history_reconstruction_head = None
     trainable_parameters = list(model.parameters())
     if args.masked_history_weight > 0.0:
@@ -937,11 +1018,15 @@ def run() -> None:
             training_policy(model)
         losses = []
         equivariance_losses = []
-        for past, future, num_valid, _, _, _ in train_loader:
+        for past, future, num_valid, sample_scene_ids, _, _ in train_loader:
             past = past.to(device)
             future = future.to(device)
             num_valid = num_valid.to(device).int()
+            sample_scene_ids = sample_scene_ids.to(device).long()
             past, future = augment_trajectories(past, future, args)
+            set_scene_batch = getattr(model.decoder, "set_scene_batch", None)
+            if callable(set_scene_batch):
+                set_scene_batch(sample_scene_ids, past)
             if args.focal_heading_normalize:
                 past, future = normalize_to_focal_heading(past, future)
             center = past.mean(dim=-2, keepdim=True)

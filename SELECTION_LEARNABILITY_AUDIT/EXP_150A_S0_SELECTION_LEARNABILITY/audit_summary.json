@@ -1,0 +1,633 @@
+{
+  "experiment": "EXP-150A frozen S0 selection learnability audit",
+  "combined_cost": "ADE + 0.25*FDE (same current coverage protocol)",
+  "seeds": {
+    "1": {
+      "overall": {
+        "samples": 2679,
+        "score_vs_negative_combined_cost_spearman": 0.8045225044694603,
+        "best_ADE_hit": 0.23217618514371033,
+        "best_FDE_hit": 0.23366927958193356,
+        "combined_winner_hit": 0.23366927958193356,
+        "top_scored_mode_usage": [
+          41,
+          756,
+          591,
+          1282,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 17.79525399208069,
+          "minFDE_px": 35.67016363143921,
+          "combined_winner_recall": 0.23366927958193356
+        },
+        "top2": {
+          "minADE_px": 14.968572854995728,
+          "minFDE_px": 29.53080654144287,
+          "combined_winner_recall": 0.372153788727137
+        },
+        "top3": {
+          "minADE_px": 13.699581623077393,
+          "minFDE_px": 26.736345291137695,
+          "combined_winner_recall": 0.46136618141097424
+        },
+        "top5": {
+          "minADE_px": 11.807039976119995,
+          "minFDE_px": 22.41884708404541,
+          "combined_winner_recall": 0.6521089958939903
+        },
+        "top10": {
+          "minADE_px": 9.404652118682861,
+          "minFDE_px": 16.84802532196045,
+          "combined_winner_recall": 0.8708473310936917
+        },
+        "top20": {
+          "minADE_px": 7.6283299922943115,
+          "minFDE_px": 12.348378896713257,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 10.166922807693481,
+          "p75": 13.941710472106934,
+          "p90": 27.27015380859381,
+          "p95": 38.40305633544921
+        },
+        "fde_regret_px": {
+          "mean": 23.321783542633057,
+          "p95": 90.58490676879882
+        }
+      },
+      "little": {
+        "samples": 518,
+        "score_vs_negative_combined_cost_spearman": 0.759163352396435,
+        "best_ADE_hit": 0.14864864864864866,
+        "best_FDE_hit": 0.13320463320463322,
+        "combined_winner_hit": 0.14092664092664092,
+        "top_scored_mode_usage": [
+          4,
+          84,
+          218,
+          207,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 26.83772325515747,
+          "minFDE_px": 54.177188873291016,
+          "combined_winner_recall": 0.14092664092664092
+        },
+        "top2": {
+          "minADE_px": 22.497856616973877,
+          "minFDE_px": 44.585089683532715,
+          "combined_winner_recall": 0.2799227799227799
+        },
+        "top3": {
+          "minADE_px": 20.41189670562744,
+          "minFDE_px": 39.930312633514404,
+          "combined_winner_recall": 0.3861003861003861
+        },
+        "top5": {
+          "minADE_px": 17.479900121688843,
+          "minFDE_px": 33.19805860519409,
+          "combined_winner_recall": 0.5772200772200772
+        },
+        "top10": {
+          "minADE_px": 13.924850225448608,
+          "minFDE_px": 25.22531509399414,
+          "combined_winner_recall": 0.8185328185328186
+        },
+        "top20": {
+          "minADE_px": 11.185778379440308,
+          "minFDE_px": 18.50491166114807,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 15.651944875717163,
+          "p75": 21.965974807739258,
+          "p90": 34.79306831359863,
+          "p95": 43.999065208435056
+        },
+        "fde_regret_px": {
+          "mean": 35.67227363586426,
+          "p95": 103.46873512268064
+        }
+      },
+      "non_little": {
+        "samples": 2161,
+        "score_vs_negative_combined_cost_spearman": 0.8153952674374506,
+        "best_ADE_hit": 0.25219805645534477,
+        "best_FDE_hit": 0.25775104118463676,
+        "combined_winner_hit": 0.25590004627487273,
+        "top_scored_mode_usage": [
+          37,
+          672,
+          373,
+          1075,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 15.627738237380981,
+          "minFDE_px": 31.233956813812256,
+          "combined_winner_recall": 0.25590004627487273
+        },
+        "top2": {
+          "minADE_px": 13.163775205612183,
+          "minFDE_px": 25.92223882675171,
+          "combined_winner_recall": 0.39426191577973163
+        },
+        "top3": {
+          "minADE_px": 12.090612649917603,
+          "minFDE_px": 23.57369899749756,
+          "combined_winner_recall": 0.47940768162887554
+        },
+        "top5": {
+          "minADE_px": 10.44723391532898,
+          "minFDE_px": 19.835031032562256,
+          "combined_winner_recall": 0.6700601573345674
+        },
+        "top10": {
+          "minADE_px": 8.321142792701721,
+          "minFDE_px": 14.839956760406494,
+          "combined_winner_recall": 0.8833873206848681
+        },
+        "top20": {
+          "minADE_px": 6.7755961418151855,
+          "minFDE_px": 10.872633457183838,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 8.85214388370514,
+          "p75": 11.736013412475586,
+          "p90": 25.140657424926758,
+          "p95": 36.319915771484375
+        },
+        "fde_regret_px": {
+          "mean": 20.361323356628418,
+          "p95": 86.19465637207031
+        }
+      }
+    },
+    "2": {
+      "overall": {
+        "samples": 2679,
+        "score_vs_negative_combined_cost_spearman": 0.8136870732261786,
+        "best_ADE_hit": 0.19932810750279956,
+        "best_FDE_hit": 0.24972004479283313,
+        "combined_winner_hit": 0.253826054497947,
+        "top_scored_mode_usage": [
+          1,
+          754,
+          504,
+          1417,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 17.98672080039978,
+          "minFDE_px": 35.965306758880615,
+          "combined_winner_recall": 0.253826054497947
+        },
+        "top2": {
+          "minADE_px": 15.014384984970093,
+          "minFDE_px": 29.571995735168457,
+          "combined_winner_recall": 0.42627846211272863
+        },
+        "top3": {
+          "minADE_px": 13.623347282409668,
+          "minFDE_px": 26.555068492889404,
+          "combined_winner_recall": 0.5240761478163494
+        },
+        "top5": {
+          "minADE_px": 11.689679622650146,
+          "minFDE_px": 22.213420867919922,
+          "combined_winner_recall": 0.6894363568495707
+        },
+        "top10": {
+          "minADE_px": 9.203729629516602,
+          "minFDE_px": 16.37866497039795,
+          "combined_winner_recall": 0.8742067935796939
+        },
+        "top20": {
+          "minADE_px": 7.4680012464523315,
+          "minFDE_px": 12.157349586486816,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 10.518720149993896,
+          "p75": 13.853378295898438,
+          "p90": 27.46589736938477,
+          "p95": 39.067449188232416
+        },
+        "fde_regret_px": {
+          "mean": 23.80795955657959,
+          "p95": 91.39439468383789
+        }
+      },
+      "little": {
+        "samples": 518,
+        "score_vs_negative_combined_cost_spearman": 0.7654599820013354,
+        "best_ADE_hit": 0.11003861003861004,
+        "best_FDE_hit": 0.15057915057915058,
+        "combined_winner_hit": 0.1525096525096525,
+        "top_scored_mode_usage": [
+          1,
+          80,
+          189,
+          247,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 27.211933135986328,
+          "minFDE_px": 54.370150566101074,
+          "combined_winner_recall": 0.1525096525096525
+        },
+        "top2": {
+          "minADE_px": 22.41065263748169,
+          "minFDE_px": 43.97261142730713,
+          "combined_winner_recall": 0.3223938223938224
+        },
+        "top3": {
+          "minADE_px": 20.17756938934326,
+          "minFDE_px": 39.47866201400757,
+          "combined_winner_recall": 0.40733590733590735
+        },
+        "top5": {
+          "minADE_px": 17.27663516998291,
+          "minFDE_px": 32.8735613822937,
+          "combined_winner_recall": 0.5733590733590733
+        },
+        "top10": {
+          "minADE_px": 13.820734024047852,
+          "minFDE_px": 24.664952754974365,
+          "combined_winner_recall": 0.8088803088803089
+        },
+        "top20": {
+          "minADE_px": 10.889825820922852,
+          "minFDE_px": 17.949135303497314,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 16.32210612297058,
+          "p75": 20.56396198272705,
+          "p90": 34.77439727783203,
+          "p95": 46.929761695861714
+        },
+        "fde_regret_px": {
+          "mean": 36.42102003097534,
+          "p95": 104.16865425109843
+        }
+      },
+      "non_little": {
+        "samples": 2161,
+        "score_vs_negative_combined_cost_spearman": 0.8252472922240817,
+        "best_ADE_hit": 0.22073114298935678,
+        "best_FDE_hit": 0.27348449791763074,
+        "combined_winner_hit": 0.2781119851920407,
+        "top_scored_mode_usage": [
+          0,
+          674,
+          315,
+          1170,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 15.775402784347534,
+          "minFDE_px": 31.553597450256348,
+          "combined_winner_recall": 0.2781119851920407
+        },
+        "top2": {
+          "minADE_px": 13.2414710521698,
+          "minFDE_px": 26.12011194229126,
+          "combined_winner_recall": 0.45118000925497453
+        },
+        "top3": {
+          "minADE_px": 12.052274942398071,
+          "minFDE_px": 23.457231521606445,
+          "combined_winner_recall": 0.5520592318371125
+        },
+        "top5": {
+          "minADE_px": 10.350464582443237,
+          "minFDE_px": 19.65814471244812,
+          "combined_winner_recall": 0.7172605275335493
+        },
+        "top10": {
+          "minADE_px": 8.097015619277954,
+          "minFDE_px": 14.392410516738892,
+          "combined_winner_recall": 0.8898658028690422
+        },
+        "top20": {
+          "minADE_px": 6.647776365280151,
+          "minFDE_px": 10.769035816192627,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 9.127625823020935,
+          "p75": 11.529829025268555,
+          "p90": 24.902284622192383,
+          "p95": 36.0370979309082
+        },
+        "fde_regret_px": {
+          "mean": 20.78455924987793,
+          "p95": 87.54583740234375
+        }
+      }
+    },
+    "3": {
+      "overall": {
+        "samples": 2679,
+        "score_vs_negative_combined_cost_spearman": 0.8150437684356467,
+        "best_ADE_hit": 0.19858156028368795,
+        "best_FDE_hit": 0.1675998506905562,
+        "combined_winner_hit": 0.19260918253079506,
+        "top_scored_mode_usage": [
+          11,
+          793,
+          364,
+          1134,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          377,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 18.80837917327881,
+          "minFDE_px": 37.76331901550293,
+          "combined_winner_recall": 0.19260918253079506
+        },
+        "top2": {
+          "minADE_px": 15.839052200317383,
+          "minFDE_px": 31.541411876678467,
+          "combined_winner_recall": 0.387458006718925
+        },
+        "top3": {
+          "minADE_px": 13.847224712371826,
+          "minFDE_px": 27.019813060760498,
+          "combined_winner_recall": 0.5024262784621127
+        },
+        "top5": {
+          "minADE_px": 11.919969320297241,
+          "minFDE_px": 22.7451491355896,
+          "combined_winner_recall": 0.6901829040686823
+        },
+        "top10": {
+          "minADE_px": 9.34155821800232,
+          "minFDE_px": 16.742302179336548,
+          "combined_winner_recall": 0.8727136991414707
+        },
+        "top20": {
+          "minADE_px": 7.553963661193848,
+          "minFDE_px": 12.342957258224487,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 11.254415512084961,
+          "p75": 14.59695816040039,
+          "p90": 28.691483306884766,
+          "p95": 39.4602672576904
+        },
+        "fde_regret_px": {
+          "mean": 25.420362949371338,
+          "p95": 93.65951080322263
+        }
+      },
+      "little": {
+        "samples": 518,
+        "score_vs_negative_combined_cost_spearman": 0.7669318082851916,
+        "best_ADE_hit": 0.14092664092664092,
+        "best_FDE_hit": 0.11003861003861004,
+        "combined_winner_hit": 0.13706563706563707,
+        "top_scored_mode_usage": [
+          1,
+          84,
+          116,
+          160,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          157,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 27.585086822509766,
+          "minFDE_px": 55.4766845703125,
+          "combined_winner_recall": 0.13706563706563707
+        },
+        "top2": {
+          "minADE_px": 22.982020378112793,
+          "minFDE_px": 46.167473793029785,
+          "combined_winner_recall": 0.2722007722007722
+        },
+        "top3": {
+          "minADE_px": 20.691261291503906,
+          "minFDE_px": 40.80521106719971,
+          "combined_winner_recall": 0.3745173745173745
+        },
+        "top5": {
+          "minADE_px": 17.871817350387573,
+          "minFDE_px": 34.01394844055176,
+          "combined_winner_recall": 0.5907335907335908
+        },
+        "top10": {
+          "minADE_px": 13.780325651168823,
+          "minFDE_px": 24.540302753448486,
+          "combined_winner_recall": 0.8243243243243243
+        },
+        "top20": {
+          "minADE_px": 10.968389511108398,
+          "minFDE_px": 18.004480600357056,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 16.61669373512268,
+          "p75": 21.090970039367676,
+          "p90": 36.362755966186526,
+          "p95": 50.1669412612915
+        },
+        "fde_regret_px": {
+          "mean": 37.47220516204834,
+          "p95": 103.84760589599605
+        }
+      },
+      "non_little": {
+        "samples": 2161,
+        "score_vs_negative_combined_cost_spearman": 0.8265763900728219,
+        "best_ADE_hit": 0.21240166589541878,
+        "best_FDE_hit": 0.1813975011568718,
+        "combined_winner_hit": 0.2059231837112448,
+        "top_scored_mode_usage": [
+          10,
+          709,
+          248,
+          974,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          220,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "top1": {
+          "minADE_px": 16.704567670822144,
+          "minFDE_px": 33.51735591888428,
+          "combined_winner_recall": 0.2059231837112448
+        },
+        "top2": {
+          "minADE_px": 14.12685513496399,
+          "minFDE_px": 28.03548812866211,
+          "combined_winner_recall": 0.4150856085145766
+        },
+        "top3": {
+          "minADE_px": 12.20668077468872,
+          "minFDE_px": 23.71539831161499,
+          "combined_winner_recall": 0.5330865340120314
+        },
+        "top5": {
+          "minADE_px": 10.493288040161133,
+          "minFDE_px": 20.043973922729492,
+          "combined_winner_recall": 0.7140212864414622
+        },
+        "top10": {
+          "minADE_px": 8.27756941318512,
+          "minFDE_px": 14.87309217453003,
+          "combined_winner_recall": 0.8843128181397502
+        },
+        "top20": {
+          "minADE_px": 6.735512614250183,
+          "minFDE_px": 10.985867977142334,
+          "combined_winner_recall": 1.0
+        },
+        "regret_px": {
+          "mean": 9.969055652618408,
+          "p75": 12.29391860961914,
+          "p90": 26.658723831176758,
+          "p95": 37.98402404785156
+        },
+        "fde_regret_px": {
+          "mean": 22.531487941741943,
+          "p95": 88.57395935058594
+        }
+      }
+    }
+  }
+}
