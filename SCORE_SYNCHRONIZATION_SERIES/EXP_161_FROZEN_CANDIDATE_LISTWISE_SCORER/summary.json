@@ -1,0 +1,564 @@
+{
+  "experiment": "EXP-161 Frozen Candidate Listwise Scorer",
+  "decision": "REJECTED",
+  "recommended_family": "UNRESOLVED",
+  "decision_reason": "Neither family passes the EXP-161 macro synchronization gate.",
+  "macro": {
+    "v2": {
+      "folds": 5,
+      "all_fold_sync_gates_passed": false,
+      "oracle": {
+        "minADE": 0.2224568486213684,
+        "minFDE": 0.36489710211753845,
+        "same_path_FDE": 0.43393095433712003
+      },
+      "raw_score": {
+        "top1_ADE": 0.5159788489341736,
+        "top1_FDE": 1.0648011803627013,
+        "top1_combined_cost": 0.7821791589260101,
+        "mean_regret": 0.45812715888023375,
+        "p90_regret": 1.1810125768184663,
+        "combined_winner_hit": 0.15463903372309318,
+        "spearman_mean": 0.7476279608759188,
+        "score_entropy": 2.631041097640991,
+        "active_modes": 6.6
+      },
+      "synced_score": {
+        "top1_ADE": 0.5775675356388092,
+        "top1_FDE": 1.2167165637016297,
+        "top1_combined_cost": 0.8817466616630554,
+        "mean_regret": 0.5576946616172791,
+        "p90_regret": 1.5173646759986876,
+        "combined_winner_hit": 0.2120475419962422,
+        "spearman_mean": 0.595019500246511,
+        "score_entropy": 2.184049463272095,
+        "active_modes": 17.4
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.11936281270415594,
+        "top1_FDE": -0.14267018682979082,
+        "mean_regret": -0.2173359531454342
+      },
+      "entropy_retention": 0.8301084560139818,
+      "macro_sync_gate_passed": false
+    },
+    "m2": {
+      "folds": 5,
+      "all_fold_sync_gates_passed": false,
+      "oracle": {
+        "minADE": 0.21999887228012086,
+        "minFDE": 0.36354092955589296,
+        "same_path_FDE": 0.4306469798088074
+      },
+      "raw_score": {
+        "top1_ADE": 0.5154502511024475,
+        "top1_FDE": 1.0742622494697571,
+        "top1_combined_cost": 0.784015816450119,
+        "mean_regret": 0.4627831816673279,
+        "p90_regret": 1.1752892339229584,
+        "combined_winner_hit": 0.13602500342729856,
+        "spearman_mean": 0.7318716104971893,
+        "score_entropy": 2.631041097640991,
+        "active_modes": 6.6
+      },
+      "synced_score": {
+        "top1_ADE": 0.5718078851699829,
+        "top1_FDE": 1.202291691303253,
+        "top1_combined_cost": 0.8723808526992798,
+        "mean_regret": 0.5511482179164886,
+        "p90_regret": 1.4922112703323367,
+        "combined_winner_hit": 0.17132940838072144,
+        "spearman_mean": 0.600867084101065,
+        "score_entropy": 2.2595956325531006,
+        "active_modes": 17.2
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.10933670892001213,
+        "top1_FDE": -0.11917894526842931,
+        "mean_regret": -0.19094262658983574
+      },
+      "entropy_retention": 0.8588218688712499,
+      "macro_sync_gate_passed": false
+    }
+  },
+  "per_fold": [
+    {
+      "samples": 364,
+      "oracle": {
+        "minADE": 0.41357702016830444,
+        "minFDE": 0.6000499725341797,
+        "same_path_FDE": 0.7547110319137573
+      },
+      "raw_score": {
+        "top1_ADE": 0.9444563984870911,
+        "top1_FDE": 1.8361815214157104,
+        "top1_combined_cost": 1.4035017490386963,
+        "mean_regret": 0.8166535496711731,
+        "p90_regret": 1.9421618223190307,
+        "combined_winner_hit": 0.057692307692307696,
+        "spearman_mean": 0.6355159877716269,
+        "score_entropy": 2.624312400817871,
+        "active_modes": 6
+      },
+      "synced_score": {
+        "top1_ADE": 1.0670526027679443,
+        "top1_FDE": 2.157083511352539,
+        "top1_combined_cost": 1.6063235998153687,
+        "mean_regret": 1.0194752216339111,
+        "p90_regret": 2.692780804634094,
+        "combined_winner_hit": 0.11263736263736264,
+        "spearman_mean": 0.42476245558952325,
+        "score_entropy": 2.0435540676116943,
+        "active_modes": 17
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.12980610272452808,
+        "top1_FDE": -0.17476594018297864,
+        "mean_regret": -0.24835705672791675
+      },
+      "entropy_retention": 0.7787007625215723,
+      "sync_gate_passed": false,
+      "fold": "eth",
+      "family": "v2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 27276,
+        "validation_samples": 3031,
+        "best_validation_loss": 2.432358221424094
+      }
+    },
+    {
+      "samples": 1197,
+      "oracle": {
+        "minADE": 0.14125020802021027,
+        "minFDE": 0.21800804138183594,
+        "same_path_FDE": 0.24728579819202423
+      },
+      "raw_score": {
+        "top1_ADE": 0.3076891005039215,
+        "top1_FDE": 0.5966606140136719,
+        "top1_combined_cost": 0.4568542540073395,
+        "mean_regret": 0.25710397958755493,
+        "p90_regret": 0.7586932182312013,
+        "combined_winner_hit": 0.1670843776106934,
+        "spearman_mean": 0.8216053919259301,
+        "score_entropy": 2.5982439517974854,
+        "active_modes": 7
+      },
+      "synced_score": {
+        "top1_ADE": 0.3499807119369507,
+        "top1_FDE": 0.6934177279472351,
+        "top1_combined_cost": 0.5233350992202759,
+        "mean_regret": 0.3235848844051361,
+        "p90_regret": 1.0481501817703252,
+        "combined_winner_hit": 0.19883040935672514,
+        "spearman_mean": 0.6195463596334193,
+        "score_entropy": 2.0626461505889893,
+        "active_modes": 18
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.13744916983983368,
+        "top1_FDE": -0.16216440579626745,
+        "mean_regret": -0.2585759462931283
+      },
+      "entropy_retention": 0.7938616191763035,
+      "sync_gate_passed": false,
+      "fold": "hotel",
+      "family": "v2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 26708,
+        "validation_samples": 2968,
+        "best_validation_loss": 2.4680675258533653
+      }
+    },
+    {
+      "samples": 24334,
+      "oracle": {
+        "minADE": 0.2389371544122696,
+        "minFDE": 0.4304630756378174,
+        "same_path_FDE": 0.497171014547348
+      },
+      "raw_score": {
+        "top1_ADE": 0.5826157331466675,
+        "top1_FDE": 1.2429217100143433,
+        "top1_combined_cost": 0.8933462500572205,
+        "mean_regret": 0.5365042090415955,
+        "p90_regret": 1.3485829234123232,
+        "combined_winner_hit": 0.1952412262677735,
+        "spearman_mean": 0.7057460986237272,
+        "score_entropy": 2.6581904888153076,
+        "active_modes": 6
+      },
+      "synced_score": {
+        "top1_ADE": 0.6058293581008911,
+        "top1_FDE": 1.319956660270691,
+        "top1_combined_cost": 0.9358184933662415,
+        "mean_regret": 0.5789765119552612,
+        "p90_regret": 1.4716799139976502,
+        "combined_winner_hit": 0.20941892002958823,
+        "spearman_mean": 0.6146909148436143,
+        "score_entropy": 2.250185012817383,
+        "active_modes": 16
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.039843800353362324,
+        "top1_FDE": -0.06197892404297822,
+        "mean_regret": -0.07916490159422573
+      },
+      "entropy_retention": 0.8465100685166611,
+      "sync_gate_passed": false,
+      "fold": "univ",
+      "family": "v2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 8887,
+        "validation_samples": 987,
+        "best_validation_loss": 2.0105227822590743
+      }
+    },
+    {
+      "samples": 2356,
+      "oracle": {
+        "minADE": 0.1828116774559021,
+        "minFDE": 0.3322129547595978,
+        "same_path_FDE": 0.38289394974708557
+      },
+      "raw_score": {
+        "top1_ADE": 0.42545774579048157,
+        "top1_FDE": 0.935937225818634,
+        "top1_combined_cost": 0.6594420671463013,
+        "mean_regret": 0.3856944143772125,
+        "p90_regret": 0.9288043677806854,
+        "combined_winner_hit": 0.18887945670628184,
+        "spearman_mean": 0.7837618239146253,
+        "score_entropy": 2.7071433067321777,
+        "active_modes": 7
+      },
+      "synced_score": {
+        "top1_ADE": 0.5081627368927002,
+        "top1_FDE": 1.1169888973236084,
+        "top1_combined_cost": 0.7874099016189575,
+        "mean_regret": 0.5136622786521912,
+        "p90_regret": 1.2331408262252808,
+        "combined_winner_hit": 0.1532258064516129,
+        "spearman_mean": 0.6779440111313938,
+        "score_entropy": 2.475707769393921,
+        "active_modes": 18
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.19439061086678877,
+        "top1_FDE": -0.19344424659101933,
+        "mean_regret": -0.3317856300346236
+      },
+      "entropy_retention": 0.9145093143895565,
+      "sync_gate_passed": false,
+      "fold": "zara01",
+      "family": "v2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 25719,
+        "validation_samples": 2858,
+        "best_validation_loss": 2.44193178277653
+      }
+    },
+    {
+      "samples": 5910,
+      "oracle": {
+        "minADE": 0.13570818305015564,
+        "minFDE": 0.24375146627426147,
+        "same_path_FDE": 0.28759297728538513
+      },
+      "raw_score": {
+        "top1_ADE": 0.3196752667427063,
+        "top1_FDE": 0.7123048305511475,
+        "top1_combined_cost": 0.49775147438049316,
+        "mean_regret": 0.2946796417236328,
+        "p90_regret": 0.9268205523490908,
+        "combined_winner_hit": 0.1642978003384095,
+        "spearman_mean": 0.791510502143684,
+        "score_entropy": 2.5673153400421143,
+        "active_modes": 7
+      },
+      "synced_score": {
+        "top1_ADE": 0.3568122684955597,
+        "top1_FDE": 0.7961360216140747,
+        "top1_combined_cost": 0.5558462142944336,
+        "mean_regret": 0.35277441143989563,
+        "p90_regret": 1.141071653366089,
+        "combined_winner_hit": 0.38612521150592216,
+        "spearman_mean": 0.6381537600346043,
+        "score_entropy": 2.0881543159484863,
+        "active_modes": 18
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.11617101983289646,
+        "top1_FDE": -0.11769004991593657,
+        "mean_regret": -0.1971455149614556
+      },
+      "entropy_retention": 0.8133610559559201,
+      "sync_gate_passed": false,
+      "fold": "zara02",
+      "family": "v2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 23468,
+        "validation_samples": 2608,
+        "best_validation_loss": 2.5088119521462846
+      }
+    },
+    {
+      "samples": 364,
+      "oracle": {
+        "minADE": 0.4085031747817993,
+        "minFDE": 0.5995822548866272,
+        "same_path_FDE": 0.7418616414070129
+      },
+      "raw_score": {
+        "top1_ADE": 0.9363164305686951,
+        "top1_FDE": 1.8343687057495117,
+        "top1_combined_cost": 1.3949086666107178,
+        "mean_regret": 0.8132052421569824,
+        "p90_regret": 1.9287228107452392,
+        "combined_winner_hit": 0.06043956043956044,
+        "spearman_mean": 0.6233826324051888,
+        "score_entropy": 2.624312400817871,
+        "active_modes": 6
+      },
+      "synced_score": {
+        "top1_ADE": 1.0346390008926392,
+        "top1_FDE": 2.0848422050476074,
+        "top1_combined_cost": 1.5558496713638306,
+        "mean_regret": 0.9741462469100952,
+        "p90_regret": 2.644786834716797,
+        "combined_winner_hit": 0.13736263736263737,
+        "spearman_mean": 0.4012848054201437,
+        "score_entropy": 2.198314666748047,
+        "active_modes": 15
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.10500998072224954,
+        "top1_FDE": -0.13654479522738794,
+        "mean_regret": -0.19790945312431285
+      },
+      "entropy_retention": 0.8376726284808693,
+      "sync_gate_passed": false,
+      "fold": "eth",
+      "family": "m2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 27276,
+        "validation_samples": 3031,
+        "best_validation_loss": 2.4630468667281105
+      }
+    },
+    {
+      "samples": 1197,
+      "oracle": {
+        "minADE": 0.142722949385643,
+        "minFDE": 0.21431824564933777,
+        "same_path_FDE": 0.24435743689537048
+      },
+      "raw_score": {
+        "top1_ADE": 0.31312182545661926,
+        "top1_FDE": 0.6204645037651062,
+        "top1_combined_cost": 0.468237966299057,
+        "mean_regret": 0.268047034740448,
+        "p90_regret": 0.7559882283210757,
+        "combined_winner_hit": 0.12280701754385964,
+        "spearman_mean": 0.7996683437918104,
+        "score_entropy": 2.5982439517974854,
+        "active_modes": 7
+      },
+      "synced_score": {
+        "top1_ADE": 0.3544630706310272,
+        "top1_FDE": 0.6913611888885498,
+        "top1_combined_cost": 0.5273033380508423,
+        "mean_regret": 0.32711249589920044,
+        "p90_regret": 1.0222145080566412,
+        "combined_winner_hit": 0.22389306599832914,
+        "spearman_mean": 0.6242272347535506,
+        "score_entropy": 2.1828460693359375,
+        "active_modes": 19
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.13202926724804587,
+        "top1_FDE": -0.11426388567472912,
+        "mean_regret": -0.2203548389033514
+      },
+      "entropy_retention": 0.840123602645482,
+      "sync_gate_passed": false,
+      "fold": "hotel",
+      "family": "m2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 26708,
+        "validation_samples": 2968,
+        "best_validation_loss": 2.491002413783112
+      }
+    },
+    {
+      "samples": 24334,
+      "oracle": {
+        "minADE": 0.23388387262821198,
+        "minFDE": 0.43082788586616516,
+        "same_path_FDE": 0.497356116771698
+      },
+      "raw_score": {
+        "top1_ADE": 0.5795652270317078,
+        "top1_FDE": 1.2499257326126099,
+        "top1_combined_cost": 0.8920466303825378,
+        "mean_regret": 0.5404276847839355,
+        "p90_regret": 1.3289520740509033,
+        "combined_winner_hit": 0.17946083668940577,
+        "spearman_mean": 0.6952440689131394,
+        "score_entropy": 2.6581904888153076,
+        "active_modes": 6
+      },
+      "synced_score": {
+        "top1_ADE": 0.6070548892021179,
+        "top1_FDE": 1.3200924396514893,
+        "top1_combined_cost": 0.937078058719635,
+        "mean_regret": 0.5854590535163879,
+        "p90_regret": 1.4649656295776368,
+        "combined_winner_hit": 0.18102243774143173,
+        "spearman_mean": 0.6105577084817739,
+        "score_entropy": 2.304473400115967,
+        "active_modes": 17
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.04743152433626974,
+        "top1_FDE": -0.05613670093199552,
+        "mean_regret": -0.08332542910057628
+      },
+      "entropy_retention": 0.8669331298160712,
+      "sync_gate_passed": false,
+      "fold": "univ",
+      "family": "m2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 8887,
+        "validation_samples": 987,
+        "best_validation_loss": 2.0633537549499077
+      }
+    },
+    {
+      "samples": 2356,
+      "oracle": {
+        "minADE": 0.1805684119462967,
+        "minFDE": 0.33199864625930786,
+        "same_path_FDE": 0.38449662923812866
+      },
+      "raw_score": {
+        "top1_ADE": 0.4242701828479767,
+        "top1_FDE": 0.9379250407218933,
+        "top1_combined_cost": 0.6587514281272888,
+        "mean_regret": 0.38717740774154663,
+        "p90_regret": 0.9284042418003082,
+        "combined_winner_hit": 0.17190152801358236,
+        "spearman_mean": 0.7728780780474106,
+        "score_entropy": 2.7071433067321777,
+        "active_modes": 7
+      },
+      "synced_score": {
+        "top1_ADE": 0.4889379143714905,
+        "top1_FDE": 1.0737557411193848,
+        "top1_combined_cost": 0.7573769092559814,
+        "mean_regret": 0.48580285906791687,
+        "p90_regret": 1.1466530561447144,
+        "combined_winner_hit": 0.1460101867572156,
+        "spearman_mean": 0.6973556556927123,
+        "score_entropy": 2.461350202560425,
+        "active_modes": 17
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.15242110838292255,
+        "top1_FDE": -0.14482042220873703,
+        "mean_regret": -0.2547293549529779
+      },
+      "entropy_retention": 0.9092057285772387,
+      "sync_gate_passed": false,
+      "fold": "zara01",
+      "family": "m2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 19,
+      "training": {
+        "train_samples": 25719,
+        "validation_samples": 2858,
+        "best_validation_loss": 2.4792321685980547
+      }
+    },
+    {
+      "samples": 5910,
+      "oracle": {
+        "minADE": 0.13431595265865326,
+        "minFDE": 0.24097761511802673,
+        "same_path_FDE": 0.2851630747318268
+      },
+      "raw_score": {
+        "top1_ADE": 0.32397758960723877,
+        "top1_FDE": 0.7286272644996643,
+        "top1_combined_cost": 0.5061343908309937,
+        "mean_regret": 0.3050585389137268,
+        "p90_regret": 0.9343788146972659,
+        "combined_winner_hit": 0.1455160744500846,
+        "spearman_mean": 0.7681849293283972,
+        "score_entropy": 2.5673153400421143,
+        "active_modes": 7
+      },
+      "synced_score": {
+        "top1_ADE": 0.37394455075263977,
+        "top1_FDE": 0.8414068818092346,
+        "top1_combined_cost": 0.5842962861061096,
+        "mean_regret": 0.3832204341888428,
+        "p90_regret": 1.1824363231658943,
+        "combined_winner_hit": 0.16835871404399322,
+        "spearman_mean": 0.6709100161571442,
+        "score_entropy": 2.150993824005127,
+        "active_modes": 18
+      },
+      "relative_improvement": {
+        "top1_ADE": -0.15422968362094558,
+        "top1_FDE": -0.154783690927369,
+        "mean_regret": -0.2562193327006683
+      },
+      "entropy_retention": 0.8378377951692689,
+      "sync_gate_passed": false,
+      "fold": "zara02",
+      "family": "m2",
+      "seed": 1,
+      "scorer_parameters": 24807,
+      "epochs_ran": 20,
+      "training": {
+        "train_samples": 23468,
+        "validation_samples": 2608,
+        "best_validation_loss": 2.516708464710259
+      }
+    }
+  ],
+  "protocol": {
+    "candidate_K": 20,
+    "encoder_decoder_frozen": true,
+    "candidate_geometry_frozen": true,
+    "scorer_only": true,
+    "test_fold_used_for_training": false,
+    "seed": 1
+  }
+}

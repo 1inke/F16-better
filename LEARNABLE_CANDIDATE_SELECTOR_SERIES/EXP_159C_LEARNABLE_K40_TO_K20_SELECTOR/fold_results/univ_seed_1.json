@@ -1,0 +1,89 @@
+{
+  "run_contract": {
+    "seed": 1,
+    "epochs": 20,
+    "selector_batch_size": 256,
+    "learning_rate": 0.001,
+    "temperature": 0.1,
+    "validation_fraction": 0.1,
+    "patience": 5,
+    "hidden_dim": 64,
+    "max_train_samples": 0,
+    "max_test_samples": 0
+  },
+  "report": {
+    "samples": 24334,
+    "k40_oracle": {
+      "minADE": 0.19993634521961212,
+      "minFDE": 0.30544421076774597,
+      "same_path_FDE": 0.40872684121131897,
+      "combined_cost": 0.2927815616130829
+    },
+    "learned_top20_oracle": {
+      "minADE": 0.25308912992477417,
+      "minFDE": 0.4585207402706146,
+      "same_path_FDE": 0.5350210070610046,
+      "combined_cost": 0.3798671066761017
+    },
+    "v2_oracle": {
+      "minADE": 0.2389371544122696,
+      "minFDE": 0.4304630756378174,
+      "same_path_FDE": 0.497171014547348,
+      "combined_cost": 0.3568419814109802
+    },
+    "top1": {
+      "ADE": 0.6685550212860107,
+      "FDE": 1.4360716342926025,
+      "combined_winner_hit": 0.1338045532999096,
+      "best_ADE_hit": 0.1393112517465275,
+      "best_FDE_hit": 0.11806525848606887
+    },
+    "retention": {
+      "best_ADE": 0.7724171940494781,
+      "best_FDE": 0.7296786389413988,
+      "best_combined": 0.7582395002876634
+    },
+    "compression_loss": {
+      "minADE": 0.2658485361767442,
+      "minFDE": 0.5011603563154947,
+      "same_path_FDE": 0.30899405939525604
+    },
+    "selected_K20": {
+      "mean": 10.70226843100189,
+      "std": 1.3683109265648459,
+      "histogram": [
+        0,
+        0,
+        0,
+        6,
+        21,
+        73,
+        123,
+        292,
+        858,
+        2309,
+        5808,
+        8566,
+        4826,
+        1137,
+        219,
+        72,
+        18,
+        6,
+        0,
+        0,
+        0
+      ]
+    },
+    "score_entropy": 3.0985326766967773,
+    "fold": "univ",
+    "seed": 1,
+    "selector_parameters": 20651,
+    "training": {
+      "train_samples": 8887,
+      "validation_samples": 987,
+      "best_validation_loss": 2.8054100124065395
+    },
+    "epochs_ran": 20
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "contract": {
+    "device": "cuda:0",
+    "folds": [
+      "all"
+    ],
+    "families": [
+      "v2",
+      "m2"
+    ],
+    "seed": 1,
+    "epochs": 20,
+    "candidate_batch_size": 64,
+    "scorer_batch_size": 256,
+    "learning_rate": 0.001,
+    "temperature": 0.1,
+    "validation_fraction": 0.1,
+    "patience": 5,
+    "hidden_dim": 64,
+    "max_train_samples": 0,
+    "max_test_samples": 0,
+    "output_dir": "C:\\Users\\linke\\Documents\\New project\\SCORE_SYNCHRONIZATION_SERIES\\EXP_161_FROZEN_CANDIDATE_LISTWISE_SCORER",
+    "force_cache": false,
+    "force": false,
+    "dry_run": false
+  },
+  "report": {
+    "samples": 24334,
+    "oracle": {
+      "minADE": 0.23388387262821198,
+      "minFDE": 0.43082788586616516,
+      "same_path_FDE": 0.497356116771698
+    },
+    "raw_score": {
+      "top1_ADE": 0.5795652270317078,
+      "top1_FDE": 1.2499257326126099,
+      "top1_combined_cost": 0.8920466303825378,
+      "mean_regret": 0.5404276847839355,
+      "p90_regret": 1.3289520740509033,
+      "combined_winner_hit": 0.17946083668940577,
+      "spearman_mean": 0.6952440689131394,
+      "score_entropy": 2.6581904888153076,
+      "active_modes": 6
+    },
+    "synced_score": {
+      "top1_ADE": 0.6070548892021179,
+      "top1_FDE": 1.3200924396514893,
+      "top1_combined_cost": 0.937078058719635,
+      "mean_regret": 0.5854590535163879,
+      "p90_regret": 1.4649656295776368,
+      "combined_winner_hit": 0.18102243774143173,
+      "spearman_mean": 0.6105577084817739,
+      "score_entropy": 2.304473400115967,
+      "active_modes": 17
+    },
+    "relative_improvement": {
+      "top1_ADE": -0.04743152433626974,
+      "top1_FDE": -0.05613670093199552,
+      "mean_regret": -0.08332542910057628
+    },
+    "entropy_retention": 0.8669331298160712,
+    "sync_gate_passed": false,
+    "fold": "univ",
+    "family": "m2",
+    "seed": 1,
+    "scorer_parameters": 24807,
+    "epochs_ran": 20,
+    "training": {
+      "train_samples": 8887,
+      "validation_samples": 987,
+      "best_validation_loss": 2.0633537549499077
+    }
+  }
+}

@@ -1,0 +1,1030 @@
+{
+  "experiment": "EXP-160 Score-Trajectory Mismatch Audit",
+  "protocol": "official ETH/UCY 8/12 at 2.5 Hz",
+  "seed": 1,
+  "folds": [
+    "eth",
+    "hotel",
+    "univ",
+    "zara01",
+    "zara02"
+  ],
+  "decision": "PASSED",
+  "macro_correlation": {
+    "h3": 0.7841158912332844,
+    "v2": 0.7476279608759188,
+    "m2": 0.7318716104971893
+  },
+  "macro_oracle_combined_cost": {
+    "h3": 0.33547591269016264,
+    "v2": 0.32405197322368623,
+    "m2": 0.32123264372348787
+  },
+  "macro_regret": {
+    "h3": 0.4409058392047882,
+    "v2": 0.45812715888023375,
+    "m2": 0.4627831816673279
+  },
+  "per_fold": [
+    {
+      "fold": "eth",
+      "score_audit": {
+        "h3": {
+          "score_quality_spearman_mean": 0.6607122201107164,
+          "score_quality_spearman_median": 0.7879699248120301,
+          "best_ADE_hit": 0.12362637362637363,
+          "best_FDE_hit": 0.14560439560439561,
+          "combined_winner_hit": 0.12637362637362637,
+          "top1_ADE": 0.9369823932647705,
+          "top1_FDE": 1.838688611984253,
+          "mean_regret": 0.8079929351806641,
+          "p75_regret": 1.1651265919208527,
+          "p90_regret": 1.9737324595451355,
+          "p95_regret": 2.432051849365232,
+          "mean_FDE_regret": 1.2387679815292358,
+          "score_entropy": 2.624312400817871,
+          "active_modes": 6,
+          "top_mode_usage": [
+            17,
+            169,
+            31,
+            145,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.12637362637362637,
+              "best_combined_cost": 1.3966546058654785,
+              "combined_regret": 0.8079929351806641
+            },
+            "2": {
+              "combined_winner_hit": 0.22802197802197802,
+              "best_combined_cost": 1.2982314825057983,
+              "combined_regret": 0.7095699310302734
+            },
+            "3": {
+              "combined_winner_hit": 0.30494505494505497,
+              "best_combined_cost": 1.190317988395691,
+              "combined_regret": 0.6016564965248108
+            },
+            "5": {
+              "combined_winner_hit": 0.4697802197802198,
+              "best_combined_cost": 1.0438226461410522,
+              "combined_regret": 0.4551612138748169
+            },
+            "10": {
+              "combined_winner_hit": 0.7335164835164835,
+              "best_combined_cost": 0.8114772439002991,
+              "combined_regret": 0.22281573712825775
+            }
+          }
+        },
+        "v2": {
+          "score_quality_spearman_mean": 0.6355159877716269,
+          "score_quality_spearman_median": 0.7721804511278196,
+          "best_ADE_hit": 0.06043956043956044,
+          "best_FDE_hit": 0.0989010989010989,
+          "combined_winner_hit": 0.057692307692307696,
+          "top1_ADE": 0.9444563984870911,
+          "top1_FDE": 1.8361815214157104,
+          "mean_regret": 0.8166535496711731,
+          "p75_regret": 1.1837737560272217,
+          "p90_regret": 1.9421618223190307,
+          "p95_regret": 2.377949404716491,
+          "mean_FDE_regret": 1.2361314296722412,
+          "score_entropy": 2.624312400817871,
+          "active_modes": 6,
+          "top_mode_usage": [
+            17,
+            169,
+            31,
+            145,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.057692307692307696,
+              "best_combined_cost": 1.4035017490386963,
+              "combined_regret": 0.8166535496711731
+            },
+            "2": {
+              "combined_winner_hit": 0.18681318681318682,
+              "best_combined_cost": 1.3125306367874146,
+              "combined_regret": 0.7256824970245361
+            },
+            "3": {
+              "combined_winner_hit": 0.260989010989011,
+              "best_combined_cost": 1.2137575149536133,
+              "combined_regret": 0.6269094347953796
+            },
+            "5": {
+              "combined_winner_hit": 0.42032967032967034,
+              "best_combined_cost": 1.0558104515075684,
+              "combined_regret": 0.4689621925354004
+            },
+            "10": {
+              "combined_winner_hit": 0.6840659340659341,
+              "best_combined_cost": 0.8427460193634033,
+              "combined_regret": 0.2558978199958801
+            }
+          }
+        },
+        "m2": {
+          "score_quality_spearman_mean": 0.6233826324051888,
+          "score_quality_spearman_median": 0.762406015037594,
+          "best_ADE_hit": 0.06318681318681318,
+          "best_FDE_hit": 0.06593406593406594,
+          "combined_winner_hit": 0.06043956043956044,
+          "top1_ADE": 0.9363164305686951,
+          "top1_FDE": 1.8343687057495117,
+          "mean_regret": 0.8132052421569824,
+          "p75_regret": 1.1741367876529694,
+          "p90_regret": 1.9287228107452392,
+          "p95_regret": 2.3889216184616084,
+          "mean_FDE_regret": 1.2347865104675293,
+          "score_entropy": 2.624312400817871,
+          "active_modes": 6,
+          "top_mode_usage": [
+            17,
+            169,
+            31,
+            145,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.06043956043956044,
+              "best_combined_cost": 1.3949086666107178,
+              "combined_regret": 0.8132052421569824
+            },
+            "2": {
+              "combined_winner_hit": 0.1620879120879121,
+              "best_combined_cost": 1.304044246673584,
+              "combined_regret": 0.7223408222198486
+            },
+            "3": {
+              "combined_winner_hit": 0.2554945054945055,
+              "best_combined_cost": 1.2064781188964844,
+              "combined_regret": 0.624774694442749
+            },
+            "5": {
+              "combined_winner_hit": 0.41208791208791207,
+              "best_combined_cost": 1.0503957271575928,
+              "combined_regret": 0.46869227290153503
+            },
+            "10": {
+              "combined_winner_hit": 0.6840659340659341,
+              "best_combined_cost": 0.8397753238677979,
+              "combined_regret": 0.2580718696117401
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": "hotel",
+      "score_audit": {
+        "h3": {
+          "score_quality_spearman_mean": 0.8691277064842557,
+          "score_quality_spearman_median": 0.9533834586466166,
+          "best_ADE_hit": 0.2121971595655806,
+          "best_FDE_hit": 0.2606516290726817,
+          "combined_winner_hit": 0.22890559732664995,
+          "top1_ADE": 0.2963615953922272,
+          "top1_FDE": 0.5523920059204102,
+          "mean_regret": 0.22758373618125916,
+          "p75_regret": 0.3453550338745117,
+          "p90_regret": 0.7117598056793222,
+          "p95_regret": 0.9816616296768189,
+          "mean_FDE_regret": 0.32263627648353577,
+          "score_entropy": 2.5982439517974854,
+          "active_modes": 7,
+          "top_mode_usage": [
+            47,
+            704,
+            113,
+            311,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            18,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.22890559732664995,
+              "best_combined_cost": 0.4344596266746521,
+              "combined_regret": 0.22758373618125916
+            },
+            "2": {
+              "combined_winner_hit": 0.6733500417710944,
+              "best_combined_cost": 0.36692097783088684,
+              "combined_regret": 0.1600451022386551
+            },
+            "3": {
+              "combined_winner_hit": 0.7218045112781954,
+              "best_combined_cost": 0.33578410744667053,
+              "combined_regret": 0.12890823185443878
+            },
+            "5": {
+              "combined_winner_hit": 0.8212197159565581,
+              "best_combined_cost": 0.27814191579818726,
+              "combined_regret": 0.0712660402059555
+            },
+            "10": {
+              "combined_winner_hit": 0.948203842940685,
+              "best_combined_cost": 0.22782275080680847,
+              "combined_regret": 0.02094685658812523
+            }
+          }
+        },
+        "v2": {
+          "score_quality_spearman_mean": 0.8216053919259301,
+          "score_quality_spearman_median": 0.9067669172932331,
+          "best_ADE_hit": 0.16123642439431912,
+          "best_FDE_hit": 0.16541353383458646,
+          "combined_winner_hit": 0.1670843776106934,
+          "top1_ADE": 0.3076891005039215,
+          "top1_FDE": 0.5966606140136719,
+          "mean_regret": 0.25710397958755493,
+          "p75_regret": 0.3586631417274475,
+          "p90_regret": 0.7586932182312013,
+          "p95_regret": 1.0386333227157594,
+          "mean_FDE_regret": 0.37865257263183594,
+          "score_entropy": 2.5982439517974854,
+          "active_modes": 7,
+          "top_mode_usage": [
+            47,
+            704,
+            113,
+            311,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            18,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.1670843776106934,
+              "best_combined_cost": 0.4568542540073395,
+              "combined_regret": 0.25710397958755493
+            },
+            "2": {
+              "combined_winner_hit": 0.6299081035923141,
+              "best_combined_cost": 0.37320995330810547,
+              "combined_regret": 0.17345969378948212
+            },
+            "3": {
+              "combined_winner_hit": 0.7017543859649122,
+              "best_combined_cost": 0.3391895592212677,
+              "combined_regret": 0.13943932950496674
+            },
+            "5": {
+              "combined_winner_hit": 0.8028404344193818,
+              "best_combined_cost": 0.2805485427379608,
+              "combined_regret": 0.08079827576875687
+            },
+            "10": {
+              "combined_winner_hit": 0.9281537176274018,
+              "best_combined_cost": 0.2280460000038147,
+              "combined_regret": 0.028295747935771942
+            }
+          }
+        },
+        "m2": {
+          "score_quality_spearman_mean": 0.7996683437918104,
+          "score_quality_spearman_median": 0.8661654135338346,
+          "best_ADE_hit": 0.10776942355889724,
+          "best_FDE_hit": 0.12698412698412698,
+          "combined_winner_hit": 0.12280701754385964,
+          "top1_ADE": 0.31312182545661926,
+          "top1_FDE": 0.6204645037651062,
+          "mean_regret": 0.268047034740448,
+          "p75_regret": 0.3655831813812256,
+          "p90_regret": 0.7559882283210757,
+          "p95_regret": 1.0291776180267338,
+          "mean_FDE_regret": 0.40614625811576843,
+          "score_entropy": 2.5982439517974854,
+          "active_modes": 7,
+          "top_mode_usage": [
+            47,
+            704,
+            113,
+            311,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            18,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.12280701754385964,
+              "best_combined_cost": 0.468237966299057,
+              "combined_regret": 0.268047034740448
+            },
+            "2": {
+              "combined_winner_hit": 0.5806182121971596,
+              "best_combined_cost": 0.37828198075294495,
+              "combined_regret": 0.17809104919433594
+            },
+            "3": {
+              "combined_winner_hit": 0.7009189640768588,
+              "best_combined_cost": 0.3414674699306488,
+              "combined_regret": 0.14127658307552338
+            },
+            "5": {
+              "combined_winner_hit": 0.7969924812030075,
+              "best_combined_cost": 0.28274646401405334,
+              "combined_regret": 0.08255553990602493
+            },
+            "10": {
+              "combined_winner_hit": 0.9223057644110275,
+              "best_combined_cost": 0.22969448566436768,
+              "combined_regret": 0.029503585770726204
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": "univ",
+      "score_audit": {
+        "h3": {
+          "score_quality_spearman_mean": 0.7259835707457185,
+          "score_quality_spearman_median": 0.8390977443609022,
+          "best_ADE_hit": 0.26970493959069614,
+          "best_FDE_hit": 0.25458206624476043,
+          "combined_winner_hit": 0.26555436837346924,
+          "top1_ADE": 0.5866315364837646,
+          "top1_FDE": 1.2432986497879028,
+          "mean_regret": 0.5273526310920715,
+          "p75_regret": 0.7897306233644485,
+          "p90_regret": 1.3337125897407531,
+          "p95_regret": 1.7443515121936795,
+          "mean_FDE_regret": 0.7988830208778381,
+          "score_entropy": 2.6581904888153076,
+          "active_modes": 6,
+          "top_mode_usage": [
+            8772,
+            0,
+            8048,
+            6471,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            178,
+            0,
+            0,
+            0,
+            86,
+            0,
+            0,
+            0,
+            0,
+            779
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.26555436837346924,
+              "best_combined_cost": 0.8974562287330627,
+              "combined_regret": 0.5273526310920715
+            },
+            "2": {
+              "combined_winner_hit": 0.37112681844333034,
+              "best_combined_cost": 0.80081707239151,
+              "combined_regret": 0.430713415145874
+            },
+            "3": {
+              "combined_winner_hit": 0.49872606229966304,
+              "best_combined_cost": 0.6987271308898926,
+              "combined_regret": 0.3286234736442566
+            },
+            "5": {
+              "combined_winner_hit": 0.6594887811292841,
+              "best_combined_cost": 0.5667197704315186,
+              "combined_regret": 0.19661617279052734
+            },
+            "10": {
+              "combined_winner_hit": 0.890770115887236,
+              "best_combined_cost": 0.4313831031322479,
+              "combined_regret": 0.061279475688934326
+            }
+          }
+        },
+        "v2": {
+          "score_quality_spearman_mean": 0.7057460986237272,
+          "score_quality_spearman_median": 0.8285714285714286,
+          "best_ADE_hit": 0.1958576477356785,
+          "best_FDE_hit": 0.19092627599243855,
+          "combined_winner_hit": 0.1952412262677735,
+          "top1_ADE": 0.5826157331466675,
+          "top1_FDE": 1.2429217100143433,
+          "mean_regret": 0.5365042090415955,
+          "p75_regret": 0.7886430621147156,
+          "p90_regret": 1.3485828518867495,
+          "p95_regret": 1.7374171435832975,
+          "mean_FDE_regret": 0.8124586939811707,
+          "score_entropy": 2.6581904888153076,
+          "active_modes": 6,
+          "top_mode_usage": [
+            8772,
+            0,
+            8048,
+            6471,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            178,
+            0,
+            0,
+            0,
+            86,
+            0,
+            0,
+            0,
+            0,
+            779
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.1952412262677735,
+              "best_combined_cost": 0.8933462500572205,
+              "combined_regret": 0.5365042090415955
+            },
+            "2": {
+              "combined_winner_hit": 0.31433385386701734,
+              "best_combined_cost": 0.8039237856864929,
+              "combined_regret": 0.44708189368247986
+            },
+            "3": {
+              "combined_winner_hit": 0.44735760664091395,
+              "best_combined_cost": 0.7139255404472351,
+              "combined_regret": 0.35708361864089966
+            },
+            "5": {
+              "combined_winner_hit": 0.6063121558313471,
+              "best_combined_cost": 0.5828379988670349,
+              "combined_regret": 0.22599604725837708
+            },
+            "10": {
+              "combined_winner_hit": 0.8622503493054985,
+              "best_combined_cost": 0.4337475299835205,
+              "combined_regret": 0.07690560072660446
+            }
+          }
+        },
+        "m2": {
+          "score_quality_spearman_mean": 0.6952440689131394,
+          "score_quality_spearman_median": 0.8210526315789474,
+          "best_ADE_hit": 0.17526917070765186,
+          "best_FDE_hit": 0.17958412098298676,
+          "combined_winner_hit": 0.17946083668940577,
+          "top1_ADE": 0.5795652270317078,
+          "top1_FDE": 1.2499257326126099,
+          "mean_regret": 0.5404276847839355,
+          "p75_regret": 0.7972077876329422,
+          "p90_regret": 1.3289520740509033,
+          "p95_regret": 1.7237622559070587,
+          "mean_FDE_regret": 0.8190978169441223,
+          "score_entropy": 2.6581904888153076,
+          "active_modes": 6,
+          "top_mode_usage": [
+            8772,
+            0,
+            8048,
+            6471,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            178,
+            0,
+            0,
+            0,
+            86,
+            0,
+            0,
+            0,
+            0,
+            779
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.17946083668940577,
+              "best_combined_cost": 0.8920466303825378,
+              "combined_regret": 0.5404276847839355
+            },
+            "2": {
+              "combined_winner_hit": 0.2824854113585929,
+              "best_combined_cost": 0.8048182725906372,
+              "combined_regret": 0.45319923758506775
+            },
+            "3": {
+              "combined_winner_hit": 0.4347415139311252,
+              "best_combined_cost": 0.7157297134399414,
+              "combined_regret": 0.36411067843437195
+            },
+            "5": {
+              "combined_winner_hit": 0.5929152625955453,
+              "best_combined_cost": 0.5823541283607483,
+              "combined_regret": 0.23073510825634003
+            },
+            "10": {
+              "combined_winner_hit": 0.8553053341004356,
+              "best_combined_cost": 0.43196243047714233,
+              "combined_regret": 0.08034345507621765
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": "zara01",
+      "score_audit": {
+        "h3": {
+          "score_quality_spearman_mean": 0.8174910961614562,
+          "score_quality_spearman_median": 0.9022556390977443,
+          "best_ADE_hit": 0.25127334465195245,
+          "best_FDE_hit": 0.23896434634974534,
+          "combined_winner_hit": 0.24787775891341257,
+          "top1_ADE": 0.42315948009490967,
+          "top1_FDE": 0.9339218139648438,
+          "mean_regret": 0.3642716407775879,
+          "p75_regret": 0.5052017420530319,
+          "p90_regret": 0.9122246205806732,
+          "p95_regret": 1.2798789143562317,
+          "mean_FDE_regret": 0.5702270269393921,
+          "score_entropy": 2.7071433067321777,
+          "active_modes": 7,
+          "top_mode_usage": [
+            38,
+            213,
+            461,
+            1599,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            37,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.24787775891341257,
+              "best_combined_cost": 0.6566399335861206,
+              "combined_regret": 0.3642716407775879
+            },
+            "2": {
+              "combined_winner_hit": 0.3760611205432937,
+              "best_combined_cost": 0.5711284279823303,
+              "combined_regret": 0.2787601351737976
+            },
+            "3": {
+              "combined_winner_hit": 0.5089134125636672,
+              "best_combined_cost": 0.49679115414619446,
+              "combined_regret": 0.20442284643650055
+            },
+            "5": {
+              "combined_winner_hit": 0.7024617996604414,
+              "best_combined_cost": 0.4224236309528351,
+              "combined_regret": 0.13005536794662476
+            },
+            "10": {
+              "combined_winner_hit": 0.9108658743633277,
+              "best_combined_cost": 0.33693987131118774,
+              "combined_regret": 0.04457159340381622
+            }
+          }
+        },
+        "v2": {
+          "score_quality_spearman_mean": 0.7837618239146253,
+          "score_quality_spearman_median": 0.8736842105263158,
+          "best_ADE_hit": 0.18463497453310695,
+          "best_FDE_hit": 0.1833616298811545,
+          "combined_winner_hit": 0.18887945670628184,
+          "top1_ADE": 0.42545774579048157,
+          "top1_FDE": 0.935937225818634,
+          "mean_regret": 0.3856944143772125,
+          "p75_regret": 0.5294985920190811,
+          "p90_regret": 0.9288043677806854,
+          "p95_regret": 1.2400729656219482,
+          "mean_FDE_regret": 0.6037243008613586,
+          "score_entropy": 2.7071433067321777,
+          "active_modes": 7,
+          "top_mode_usage": [
+            38,
+            213,
+            461,
+            1599,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            37,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.18887945670628184,
+              "best_combined_cost": 0.6594420671463013,
+              "combined_regret": 0.3856944143772125
+            },
+            "2": {
+              "combined_winner_hit": 0.3132427843803056,
+              "best_combined_cost": 0.5660317540168762,
+              "combined_regret": 0.2922841012477875
+            },
+            "3": {
+              "combined_winner_hit": 0.4397283531409168,
+              "best_combined_cost": 0.49684274196624756,
+              "combined_regret": 0.22309504449367523
+            },
+            "5": {
+              "combined_winner_hit": 0.652376910016978,
+              "best_combined_cost": 0.42109623551368713,
+              "combined_regret": 0.147348552942276
+            },
+            "10": {
+              "combined_winner_hit": 0.884125636672326,
+              "best_combined_cost": 0.3260457217693329,
+              "combined_regret": 0.052298057824373245
+            }
+          }
+        },
+        "m2": {
+          "score_quality_spearman_mean": 0.7728780780474106,
+          "score_quality_spearman_median": 0.8646616541353384,
+          "best_ADE_hit": 0.17147707979626486,
+          "best_FDE_hit": 0.17147707979626486,
+          "combined_winner_hit": 0.17190152801358236,
+          "top1_ADE": 0.4242701828479767,
+          "top1_FDE": 0.9379250407218933,
+          "mean_regret": 0.38717740774154663,
+          "p75_regret": 0.5286806225776672,
+          "p90_regret": 0.9284042418003082,
+          "p95_regret": 1.248539000749588,
+          "mean_FDE_regret": 0.6059264540672302,
+          "score_entropy": 2.7071433067321777,
+          "active_modes": 7,
+          "top_mode_usage": [
+            38,
+            213,
+            461,
+            1599,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            37,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.17190152801358236,
+              "best_combined_cost": 0.6587514281272888,
+              "combined_regret": 0.38717740774154663
+            },
+            "2": {
+              "combined_winner_hit": 0.29499151103565363,
+              "best_combined_cost": 0.5653581619262695,
+              "combined_regret": 0.2937842011451721
+            },
+            "3": {
+              "combined_winner_hit": 0.43463497453310695,
+              "best_combined_cost": 0.4960419237613678,
+              "combined_regret": 0.224467933177948
+            },
+            "5": {
+              "combined_winner_hit": 0.6396434634974533,
+              "best_combined_cost": 0.4224894344806671,
+              "combined_regret": 0.15091541409492493
+            },
+            "10": {
+              "combined_winner_hit": 0.8790322580645161,
+              "best_combined_cost": 0.3264874517917633,
+              "combined_regret": 0.054913442581892014
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": "zara02",
+      "score_audit": {
+        "h3": {
+          "score_quality_spearman_mean": 0.847264862664275,
+          "score_quality_spearman_median": 0.9578947368421052,
+          "best_ADE_hit": 0.35160744500846025,
+          "best_FDE_hit": 0.44686971235194584,
+          "combined_winner_hit": 0.4277495769881557,
+          "top1_ADE": 0.3205840587615967,
+          "top1_FDE": 0.7044576406478882,
+          "mean_regret": 0.2773282527923584,
+          "p75_regret": 0.4051123186945915,
+          "p90_regret": 0.9105005204677583,
+          "p95_regret": 1.2449607610702518,
+          "mean_FDE_regret": 0.4381447732448578,
+          "score_entropy": 2.5673153400421143,
+          "active_modes": 7,
+          "top_mode_usage": [
+            224,
+            2874,
+            541,
+            2230,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            27,
+            13,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.4277495769881557,
+              "best_combined_cost": 0.4966984689235687,
+              "combined_regret": 0.2773282527923584
+            },
+            "2": {
+              "combined_winner_hit": 0.5974619289340102,
+              "best_combined_cost": 0.4420836567878723,
+              "combined_regret": 0.2227134257555008
+            },
+            "3": {
+              "combined_winner_hit": 0.6634517766497462,
+              "best_combined_cost": 0.3959011733531952,
+              "combined_regret": 0.17653091251850128
+            },
+            "5": {
+              "combined_winner_hit": 0.7776649746192893,
+              "best_combined_cost": 0.3389450013637543,
+              "combined_regret": 0.11957482248544693
+            },
+            "10": {
+              "combined_winner_hit": 0.9109983079526227,
+              "best_combined_cost": 0.26386529207229614,
+              "combined_regret": 0.04449506103992462
+            }
+          }
+        },
+        "v2": {
+          "score_quality_spearman_mean": 0.791510502143684,
+          "score_quality_spearman_median": 0.8872180451127819,
+          "best_ADE_hit": 0.16209813874788495,
+          "best_FDE_hit": 0.16362098138747885,
+          "combined_winner_hit": 0.1642978003384095,
+          "top1_ADE": 0.3196752667427063,
+          "top1_FDE": 0.7123048305511475,
+          "mean_regret": 0.2946796417236328,
+          "p75_regret": 0.40845300257205963,
+          "p90_regret": 0.9268205523490908,
+          "p95_regret": 1.2774048507213596,
+          "mean_FDE_regret": 0.468553364276886,
+          "score_entropy": 2.5673153400421143,
+          "active_modes": 7,
+          "top_mode_usage": [
+            224,
+            2874,
+            541,
+            2230,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            27,
+            13,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.1642978003384095,
+              "best_combined_cost": 0.49775147438049316,
+              "combined_regret": 0.2946796417236328
+            },
+            "2": {
+              "combined_winner_hit": 0.5609137055837563,
+              "best_combined_cost": 0.43571123480796814,
+              "combined_regret": 0.2326393872499466
+            },
+            "3": {
+              "combined_winner_hit": 0.6341793570219966,
+              "best_combined_cost": 0.3913238048553467,
+              "combined_regret": 0.18825198709964752
+            },
+            "5": {
+              "combined_winner_hit": 0.7521150592216582,
+              "best_combined_cost": 0.3342965245246887,
+              "combined_regret": 0.13122467696666718
+            },
+            "10": {
+              "combined_winner_hit": 0.8964467005076142,
+              "best_combined_cost": 0.25607556104660034,
+              "combined_regret": 0.05300373584032059
+            }
+          }
+        },
+        "m2": {
+          "score_quality_spearman_mean": 0.7681849293283972,
+          "score_quality_spearman_median": 0.8511278195488722,
+          "best_ADE_hit": 0.1407783417935702,
+          "best_FDE_hit": 0.1467005076142132,
+          "combined_winner_hit": 0.1455160744500846,
+          "top1_ADE": 0.32397758960723877,
+          "top1_FDE": 0.7286272644996643,
+          "mean_regret": 0.3050585389137268,
+          "p75_regret": 0.4109623283147812,
+          "p90_regret": 0.9343788146972659,
+          "p95_regret": 1.2987997889518739,
+          "mean_FDE_regret": 0.4876496195793152,
+          "score_entropy": 2.5673153400421143,
+          "active_modes": 7,
+          "top_mode_usage": [
+            224,
+            2874,
+            541,
+            2230,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            27,
+            13,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "recovery": {
+            "1": {
+              "combined_winner_hit": 0.1455160744500846,
+              "best_combined_cost": 0.5061343908309937,
+              "combined_regret": 0.3050585389137268
+            },
+            "2": {
+              "combined_winner_hit": 0.5164128595600677,
+              "best_combined_cost": 0.4388999044895172,
+              "combined_regret": 0.23782408237457275
+            },
+            "3": {
+              "combined_winner_hit": 0.6186125211505922,
+              "best_combined_cost": 0.395250529050827,
+              "combined_regret": 0.194174662232399
+            },
+            "5": {
+              "combined_winner_hit": 0.739424703891709,
+              "best_combined_cost": 0.3373727798461914,
+              "combined_regret": 0.13629691302776337
+            },
+            "10": {
+              "combined_winner_hit": 0.8913705583756345,
+              "best_combined_cost": 0.25758910179138184,
+              "combined_regret": 0.0565132275223732
+            }
+          }
+        }
+      }
+    }
+  ]
+}

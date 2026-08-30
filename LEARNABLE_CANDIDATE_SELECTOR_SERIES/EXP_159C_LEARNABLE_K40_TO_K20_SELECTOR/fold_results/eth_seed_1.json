@@ -1,0 +1,89 @@
+{
+  "run_contract": {
+    "seed": 1,
+    "epochs": 20,
+    "selector_batch_size": 256,
+    "learning_rate": 0.001,
+    "temperature": 0.1,
+    "validation_fraction": 0.1,
+    "patience": 5,
+    "hidden_dim": 64,
+    "max_train_samples": 0,
+    "max_test_samples": 0
+  },
+  "report": {
+    "samples": 364,
+    "k40_oracle": {
+      "minADE": 0.35340726375579834,
+      "minFDE": 0.4625893831253052,
+      "same_path_FDE": 0.6910409331321716,
+      "combined_cost": 0.5039513111114502
+    },
+    "learned_top20_oracle": {
+      "minADE": 0.4943120777606964,
+      "minFDE": 0.8234409093856812,
+      "same_path_FDE": 0.9685750007629395,
+      "combined_cost": 0.7210304141044617
+    },
+    "v2_oracle": {
+      "minADE": 0.4135770797729492,
+      "minFDE": 0.6000499725341797,
+      "same_path_FDE": 0.7547110319137573,
+      "combined_cost": 0.5868481993675232
+    },
+    "top1": {
+      "ADE": 1.0620808601379395,
+      "FDE": 2.140070915222168,
+      "combined_winner_hit": 0.10714285714285714,
+      "best_ADE_hit": 0.12087912087912088,
+      "best_FDE_hit": 0.07417582417582418
+    },
+    "retention": {
+      "best_ADE": 0.6291208791208791,
+      "best_FDE": 0.6346153846153846,
+      "best_combined": 0.6401098901098901
+    },
+    "compression_loss": {
+      "minADE": 0.3987037858459588,
+      "minFDE": 0.7800687595171836,
+      "same_path_FDE": 0.40161740690646663
+    },
+    "selected_K20": {
+      "mean": 9.228021978021978,
+      "std": 1.94008763809087,
+      "histogram": [
+        0,
+        0,
+        2,
+        1,
+        4,
+        10,
+        8,
+        30,
+        62,
+        86,
+        67,
+        54,
+        26,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "score_entropy": 2.8839094638824463,
+    "fold": "eth",
+    "seed": 1,
+    "selector_parameters": 20651,
+    "training": {
+      "train_samples": 27276,
+      "validation_samples": 3031,
+      "best_validation_loss": 3.0636953734911065
+    },
+    "epochs_ran": 20
+  }
+}
