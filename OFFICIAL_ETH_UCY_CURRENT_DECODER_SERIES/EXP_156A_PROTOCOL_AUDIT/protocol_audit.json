@@ -1,0 +1,121 @@
+{
+  "experiment": "EXP-156A official protocol audit",
+  "passed": true,
+  "protocol": {
+    "frequency_hz": 2.5,
+    "observation_frames": 8,
+    "prediction_frames": 12,
+    "observation_seconds": 3.2,
+    "prediction_seconds": 4.8,
+    "configured_prediction_seconds": 4.8,
+    "ceil_frames": 12
+  },
+  "folds": [
+    {
+      "fold": "eth",
+      "train_samples": 30307,
+      "test_samples": 364,
+      "sample_shape": [
+        9,
+        20,
+        6
+      ],
+      "train_valid_agents": [
+        1,
+        9
+      ],
+      "test_valid_agents": [
+        1,
+        5
+      ],
+      "exact_train_test_overlap": 0,
+      "shape_ok": true,
+      "count_ok": true
+    },
+    {
+      "fold": "hotel",
+      "train_samples": 29676,
+      "test_samples": 1197,
+      "sample_shape": [
+        9,
+        20,
+        6
+      ],
+      "train_valid_agents": [
+        1,
+        9
+      ],
+      "test_valid_agents": [
+        1,
+        8
+      ],
+      "exact_train_test_overlap": 0,
+      "shape_ok": true,
+      "count_ok": true
+    },
+    {
+      "fold": "univ",
+      "train_samples": 9874,
+      "test_samples": 24334,
+      "sample_shape": [
+        9,
+        20,
+        6
+      ],
+      "train_valid_agents": [
+        1,
+        9
+      ],
+      "test_valid_agents": [
+        1,
+        9
+      ],
+      "exact_train_test_overlap": 0,
+      "shape_ok": true,
+      "count_ok": true
+    },
+    {
+      "fold": "zara01",
+      "train_samples": 28577,
+      "test_samples": 2356,
+      "sample_shape": [
+        9,
+        20,
+        6
+      ],
+      "train_valid_agents": [
+        1,
+        9
+      ],
+      "test_valid_agents": [
+        1,
+        9
+      ],
+      "exact_train_test_overlap": 0,
+      "shape_ok": true,
+      "count_ok": true
+    },
+    {
+      "fold": "zara02",
+      "train_samples": 26076,
+      "test_samples": 5910,
+      "sample_shape": [
+        9,
+        20,
+        6
+      ],
+      "train_valid_agents": [
+        1,
+        9
+      ],
+      "test_valid_agents": [
+        1,
+        9
+      ],
+      "exact_train_test_overlap": 0,
+      "shape_ok": true,
+      "count_ok": true
+    }
+  ],
+  "failures": []
+}

@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "split": "general",
+    "seed": 1,
+    "minADE20": 0.17836692929267883,
+    "minFDE20": 0.3150083124637604,
+    "same_path_FDE": 0.3772846460342407,
+    "top1_ADE": 0.4693351984024048,
+    "top1_FDE": 1.0321460962295532,
+    "parameters": 355276,
+    "decision": "rejected",
+    "reason": "Oracle improvement versus matched E0 is only 0.06% ADE and 0.14% FDE; same-path FDE regresses about 1.12%."
+  },
+  {
+    "split": "challenge",
+    "seed": 1,
+    "minADE20": 0.2790622413158417,
+    "minFDE20": 0.4807150661945343,
+    "same_path_FDE": 0.572422206401825,
+    "top1_ADE": 0.7492751479148865,
+    "top1_FDE": 1.6185953617095947,
+    "parameters": 355276,
+    "decision": "rejected",
+    "reason": "All oracle metrics are indistinguishable from the matched E0 checkpoint."
+  }
+]

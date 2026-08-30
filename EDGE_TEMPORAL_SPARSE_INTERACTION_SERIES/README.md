@@ -11,3 +11,10 @@ Run the initial screen:
 It runs both General and Challenge, each for 12 epochs. Results are stored under `EXP_151_ETSE_E1/results/`; the compact summary is `EXP_151_ETSE_E1/summary.json`.
 
 Promotion requires at least one split to improve oracle minADE or minFDE by 0.5% or more versus its matched E0 checkpoint, no material regression on the other split, and a subsequent mechanism audit before E1b.
+
+## Decision
+
+**EXP-151 rejected. Do not proceed to E1b.** The learned time-aligned
+relation bias was active, but its oracle gains were below the screening
+threshold and General same-path FDE regressed. The machine-readable decision
+is recorded in `EXP_151_ETSE_E1/summary.json`.
