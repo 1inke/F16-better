@@ -1,0 +1,426 @@
+{
+  "experiment": "EXP-164 Frozen F16+H3+V2 Official Three-Seed Validation",
+  "method_frozen": "F16 + H3 + V2 + original score",
+  "complete": true,
+  "expected_runs": 15,
+  "available_runs": 15,
+  "fold_statistics": [
+    {
+      "fold": "eth",
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "count": 3,
+      "metrics": {
+        "minADE": {
+          "mean": 0.4233730932076772,
+          "std": 0.008702642675474622
+        },
+        "minFDE": {
+          "mean": 0.614808996518453,
+          "std": 0.012808733454522681
+        },
+        "same_path_FDE": {
+          "mean": 0.782232940196991,
+          "std": 0.031848651181668616
+        },
+        "top1_ADE": {
+          "mean": 0.9433582822481791,
+          "std": 0.0010889757334190573
+        },
+        "top1_FDE": {
+          "mean": 1.8378010988235474,
+          "std": 0.01711475026379889
+        }
+      }
+    },
+    {
+      "fold": "hotel",
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "count": 3,
+      "metrics": {
+        "minADE": {
+          "mean": 0.14317630231380463,
+          "std": 0.00372908691572404
+        },
+        "minFDE": {
+          "mean": 0.2244381606578827,
+          "std": 0.007999821572129041
+        },
+        "same_path_FDE": {
+          "mean": 0.25359919170538586,
+          "std": 0.008242683600366733
+        },
+        "top1_ADE": {
+          "mean": 0.3120138645172119,
+          "std": 0.005747585146315624
+        },
+        "top1_FDE": {
+          "mean": 0.5968004266421,
+          "std": 0.008584250644514348
+        }
+      }
+    },
+    {
+      "fold": "univ",
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "count": 3,
+      "metrics": {
+        "minADE": {
+          "mean": 0.239050621787707,
+          "std": 0.0007938108019783541
+        },
+        "minFDE": {
+          "mean": 0.4297383427619934,
+          "std": 0.0006522379427648568
+        },
+        "same_path_FDE": {
+          "mean": 0.4961441953976949,
+          "std": 0.0014142446814667566
+        },
+        "top1_ADE": {
+          "mean": 0.5843697587649027,
+          "std": 0.0021909748719534184
+        },
+        "top1_FDE": {
+          "mean": 1.2471027374267578,
+          "std": 0.00575405493466144
+        }
+      }
+    },
+    {
+      "fold": "zara01",
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "count": 3,
+      "metrics": {
+        "minADE": {
+          "mean": 0.1830816070238749,
+          "std": 0.0018963164916263899
+        },
+        "minFDE": {
+          "mean": 0.33185967803001404,
+          "std": 0.003333571065094298
+        },
+        "same_path_FDE": {
+          "mean": 0.3852269649505615,
+          "std": 0.004918787490840159
+        },
+        "top1_ADE": {
+          "mean": 0.42395663261413574,
+          "std": 0.001551046193523105
+        },
+        "top1_FDE": {
+          "mean": 0.9299154678980509,
+          "std": 0.005392229029546814
+        }
+      }
+    },
+    {
+      "fold": "zara02",
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "count": 3,
+      "metrics": {
+        "minADE": {
+          "mean": 0.13587937752405801,
+          "std": 0.0002537629414584484
+        },
+        "minFDE": {
+          "mean": 0.2454275836547216,
+          "std": 0.0016886542232596878
+        },
+        "same_path_FDE": {
+          "mean": 0.28990723689397174,
+          "std": 0.0020061750119527693
+        },
+        "top1_ADE": {
+          "mean": 0.31653233369191486,
+          "std": 0.00275415604012441
+        },
+        "top1_FDE": {
+          "mean": 0.7028876543045044,
+          "std": 0.008535556421046302
+        }
+      }
+    }
+  ],
+  "seed_macro": [
+    {
+      "seed": 1,
+      "minADE": 0.2224568486213684,
+      "minFDE": 0.36489710211753845,
+      "same_path_FDE": 0.43393095433712003,
+      "top1_ADE": 0.5159788489341736,
+      "top1_FDE": 1.0648011803627013
+    },
+    {
+      "seed": 2,
+      "minADE": 0.2258438140153885,
+      "minFDE": 0.37188877165317535,
+      "same_path_FDE": 0.44107732772827146,
+      "top1_ADE": 0.5169081389904022,
+      "top1_FDE": 1.060373318195343
+    },
+    {
+      "seed": 3,
+      "minADE": 0.22643593847751617,
+      "minFDE": 0.370977783203125,
+      "same_path_FDE": 0.44925803542137144,
+      "top1_ADE": 0.5152515351772309,
+      "top1_FDE": 1.0635299324989318
+    }
+  ],
+  "macro_across_seed_means": {
+    "minADE": {
+      "mean": 0.22491220037142437,
+      "std": 0.0021469087095262332
+    },
+    "minFDE": {
+      "mean": 0.3692545523246129,
+      "std": 0.0038010530408534708
+    },
+    "same_path_FDE": {
+      "mean": 0.44142210582892094,
+      "std": 0.00766935509640934
+    },
+    "top1_ADE": {
+      "mean": 0.516046174367269,
+      "std": 0.0008303514821505185
+    },
+    "top1_FDE": {
+      "mean": 1.062901477018992,
+      "std": 0.0022798482539372208
+    }
+  },
+  "rows": [
+    {
+      "fold": "eth",
+      "seed": 1,
+      "samples": 364,
+      "minADE": 0.41357702016830444,
+      "minFDE": 0.6000499725341797,
+      "same_path_FDE": 0.7547110319137573,
+      "top1_ADE": 0.9444563984870911,
+      "top1_FDE": 1.8361815214157104,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "existing_official_seed1"
+    },
+    {
+      "fold": "eth",
+      "seed": 2,
+      "samples": 364,
+      "minADE": 0.426331102848053,
+      "minFDE": 0.6213566064834595,
+      "same_path_FDE": 0.7748693823814392,
+      "top1_ADE": 0.9422786831855774,
+      "top1_FDE": 1.8215537071228027,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "eth",
+      "seed": 3,
+      "samples": 364,
+      "minADE": 0.4302111566066742,
+      "minFDE": 0.6230204105377197,
+      "same_path_FDE": 0.8171184062957764,
+      "top1_ADE": 0.9433397650718689,
+      "top1_FDE": 1.855668067932129,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "samples": 1197,
+      "minADE": 0.14125020802021027,
+      "minFDE": 0.21800804138183594,
+      "same_path_FDE": 0.24728579819202423,
+      "top1_ADE": 0.3076891005039215,
+      "top1_FDE": 0.5966606140136719,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "existing_official_seed1"
+    },
+    {
+      "fold": "hotel",
+      "seed": 2,
+      "samples": 1197,
+      "minADE": 0.14747457206249237,
+      "minFDE": 0.23339667916297913,
+      "same_path_FDE": 0.2629241645336151,
+      "top1_ADE": 0.3185359537601471,
+      "top1_FDE": 0.6054537296295166,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "hotel",
+      "seed": 3,
+      "samples": 1197,
+      "minADE": 0.14080412685871124,
+      "minFDE": 0.221909761428833,
+      "same_path_FDE": 0.2505876123905182,
+      "top1_ADE": 0.30981653928756714,
+      "top1_FDE": 0.5882869362831116,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "samples": 24334,
+      "minADE": 0.2389371544122696,
+      "minFDE": 0.4304630756378174,
+      "same_path_FDE": 0.497171014547348,
+      "top1_ADE": 0.5826157331466675,
+      "top1_FDE": 1.2429217100143433,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "existing_official_seed1"
+    },
+    {
+      "fold": "univ",
+      "seed": 2,
+      "samples": 24334,
+      "minADE": 0.23831965029239655,
+      "minFDE": 0.4291985332965851,
+      "same_path_FDE": 0.4945310950279236,
+      "top1_ADE": 0.5868256688117981,
+      "top1_FDE": 1.2536652088165283,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "univ",
+      "seed": 3,
+      "samples": 24334,
+      "minADE": 0.2398950606584549,
+      "minFDE": 0.42955341935157776,
+      "same_path_FDE": 0.4967304766178131,
+      "top1_ADE": 0.5836678743362427,
+      "top1_FDE": 1.2447212934494019,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "samples": 2356,
+      "minADE": 0.1828116774559021,
+      "minFDE": 0.3322129547595978,
+      "same_path_FDE": 0.38289394974708557,
+      "top1_ADE": 0.42545774579048157,
+      "top1_FDE": 0.935937225818634,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "existing_official_seed1"
+    },
+    {
+      "fold": "zara01",
+      "seed": 2,
+      "samples": 2356,
+      "minADE": 0.1813347190618515,
+      "minFDE": 0.3283635377883911,
+      "same_path_FDE": 0.3819088041782379,
+      "top1_ADE": 0.42236006259918213,
+      "top1_FDE": 0.9255334734916687,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "zara01",
+      "seed": 3,
+      "samples": 2356,
+      "minADE": 0.18509842455387115,
+      "minFDE": 0.3350025415420532,
+      "same_path_FDE": 0.3908781409263611,
+      "top1_ADE": 0.42405208945274353,
+      "top1_FDE": 0.9282757043838501,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "samples": 5910,
+      "minADE": 0.13570818305015564,
+      "minFDE": 0.24375146627426147,
+      "same_path_FDE": 0.28759297728538513,
+      "top1_ADE": 0.3196752667427063,
+      "top1_FDE": 0.7123048305511475,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "existing_official_seed1"
+    },
+    {
+      "fold": "zara02",
+      "seed": 2,
+      "samples": 5910,
+      "minADE": 0.13575902581214905,
+      "minFDE": 0.24712850153446198,
+      "same_path_FDE": 0.2911531925201416,
+      "top1_ADE": 0.3145403265953064,
+      "top1_FDE": 0.6956604719161987,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    },
+    {
+      "fold": "zara02",
+      "seed": 3,
+      "samples": 5910,
+      "minADE": 0.13617092370986938,
+      "minFDE": 0.24540278315544128,
+      "same_path_FDE": 0.29097554087638855,
+      "top1_ADE": 0.31538140773773193,
+      "top1_FDE": 0.700697660446167,
+      "parameters": 321988,
+      "decoder_parameters": 54829,
+      "source": "new_official_run"
+    }
+  ],
+  "protocol": {
+    "folds": [
+      "eth",
+      "hotel",
+      "univ",
+      "zara01",
+      "zara02"
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "SDD": false,
+    "M2": false,
+    "new_scorer": false
+  }
+}

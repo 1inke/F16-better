@@ -1,0 +1,130 @@
+{
+  "experiment": "EXP-163 Explicit Endpoint Prototype K20",
+  "decision": "REJECTED",
+  "macro": {
+    "minADE": 0.30554105043411256,
+    "minFDE": 0.5448375403881073,
+    "same_path_FDE": 0.6085214614868164,
+    "top1_ADE": 0.5509747803211212,
+    "top1_FDE": 1.120807945728302
+  },
+  "v2_macro": {
+    "minADE": 0.2224568486213684,
+    "minFDE": 0.36489710211753845,
+    "same_path_FDE": 0.43393095433712003
+  },
+  "relative_gain_vs_V2": {
+    "minADE": -0.3734845761218042,
+    "minFDE": -0.49312652039809146,
+    "same_path_FDE": -0.4023462843677601
+  },
+  "fold_stability": {
+    "ADE_non_regression_folds": 0,
+    "FDE_non_regression_folds": 0,
+    "max_ADE_regression": 0.6254546439800936,
+    "max_FDE_regression": 0.8350153687710387,
+    "per_fold": [
+      {
+        "fold": "eth",
+        "ADE_regression_vs_V2": 0.6254546439800936,
+        "FDE_regression_vs_V2": 0.8350153687710387
+      },
+      {
+        "fold": "hotel",
+        "ADE_regression_vs_V2": 0.2249211189072935,
+        "FDE_regression_vs_V2": 0.36106232337990707
+      },
+      {
+        "fold": "univ",
+        "ADE_regression_vs_V2": 0.17306376299899195,
+        "FDE_regression_vs_V2": 0.22248036962757545
+      },
+      {
+        "fold": "zara01",
+        "ADE_regression_vs_V2": 0.2690803375598414,
+        "FDE_regression_vs_V2": 0.391505610772626
+      },
+      {
+        "fold": "zara02",
+        "ADE_regression_vs_V2": 0.2537414812112848,
+        "FDE_regression_vs_V2": 0.38606509252663734
+      }
+    ]
+  },
+  "rows": [
+    {
+      "fold": "eth",
+      "seed": 1,
+      "samples": 364,
+      "minADE": 0.6722506880760193,
+      "minFDE": 1.1011009216308594,
+      "same_path_FDE": 1.1941159963607788,
+      "top1_ADE": 1.0712237358093262,
+      "top1_FDE": 1.9903758764266968,
+      "parameters": 296262,
+      "decoder_parameters": 29103
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "samples": 1197,
+      "minADE": 0.1730203628540039,
+      "minFDE": 0.29672253131866455,
+      "same_path_FDE": 0.3389417231082916,
+      "top1_ADE": 0.31795990467071533,
+      "top1_FDE": 0.6085367202758789,
+      "parameters": 296262,
+      "decoder_parameters": 29103
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "samples": 24334,
+      "minADE": 0.2802885174751282,
+      "minFDE": 0.5262326598167419,
+      "same_path_FDE": 0.6098608374595642,
+      "top1_ADE": 0.5813400745391846,
+      "top1_FDE": 1.270483136177063,
+      "parameters": 296262,
+      "decoder_parameters": 29103
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "samples": 2356,
+      "minADE": 0.23200270533561707,
+      "minFDE": 0.4622761905193329,
+      "same_path_FDE": 0.5184292793273926,
+      "top1_ADE": 0.45150119066238403,
+      "top1_FDE": 0.9913126230239868,
+      "parameters": 296262,
+      "decoder_parameters": 29103
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "samples": 5910,
+      "minADE": 0.1701429784297943,
+      "minFDE": 0.33785539865493774,
+      "same_path_FDE": 0.3812594711780548,
+      "top1_ADE": 0.33284899592399597,
+      "top1_FDE": 0.7433313727378845,
+      "parameters": 296262,
+      "decoder_parameters": 29103
+    }
+  ],
+  "protocol": {
+    "encoder": "frozen F16 from fold-local V2 checkpoint",
+    "candidate_K": 20,
+    "available_folds": [
+      "eth",
+      "hotel",
+      "univ",
+      "zara01",
+      "zara02"
+    ],
+    "seed1_fivefold": true,
+    "new_scorer": false,
+    "M2": false
+  }
+}
