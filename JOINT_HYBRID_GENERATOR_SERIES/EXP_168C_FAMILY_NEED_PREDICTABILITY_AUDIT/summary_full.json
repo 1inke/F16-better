@@ -1,0 +1,152 @@
+{
+  "experiment": "EXP-168C Family Need Predictability Audit",
+  "complete": true,
+  "trained_new_trajectory_model": false,
+  "outer_test_used": false,
+  "target": "family containing minimum ADE + 0.25*FDE candidate",
+  "metrics": [
+    {
+      "outer_fold": "eth",
+      "feature_set": "speed",
+      "samples": 1516,
+      "structured_prevalence": 0.24142480211081793,
+      "balanced_accuracy": 0.5493751484913281,
+      "roc_auc": 0.5623188405797102,
+      "constant_quality": 0.43562860508808143,
+      "predicted_quality": 0.4674693231031945,
+      "oracle_family_quality": 0.32123660318133246,
+      "quality_gain_vs_constant_pct": -7.309143073530506,
+      "oracle_regret_closed_pct": -27.83474148924262
+    },
+    {
+      "outer_fold": "eth",
+      "feature_set": "full",
+      "samples": 1516,
+      "structured_prevalence": 0.24142480211081793,
+      "balanced_accuracy": 0.6175124732715609,
+      "roc_auc": 0.670655737704918,
+      "constant_quality": 0.43562860508808143,
+      "predicted_quality": 0.45068160558456066,
+      "oracle_family_quality": 0.32123660318133246,
+      "quality_gain_vs_constant_pct": -3.455466496153439,
+      "oracle_regret_closed_pct": -13.159137217259525
+    },
+    {
+      "outer_fold": "hotel",
+      "feature_set": "speed",
+      "samples": 1484,
+      "structured_prevalence": 0.23787061994609165,
+      "balanced_accuracy": 0.5567486468140956,
+      "roc_auc": 0.5646861685740263,
+      "constant_quality": 0.4434138670881565,
+      "predicted_quality": 0.46422013803698986,
+      "oracle_family_quality": 0.3362870652837656,
+      "quality_gain_vs_constant_pct": -4.6922914444389265,
+      "oracle_regret_closed_pct": -19.422096616703588
+    },
+    {
+      "outer_fold": "hotel",
+      "feature_set": "full",
+      "samples": 1484,
+      "structured_prevalence": 0.23787061994609165,
+      "balanced_accuracy": 0.6156275751860396,
+      "roc_auc": 0.663262724706507,
+      "constant_quality": 0.4434138670881565,
+      "predicted_quality": 0.44770179543003435,
+      "oracle_family_quality": 0.3362870652837656,
+      "quality_gain_vs_constant_pct": -0.9670262163960153,
+      "oracle_regret_closed_pct": -4.002666251259359
+    },
+    {
+      "outer_fold": "univ",
+      "feature_set": "speed",
+      "samples": 494,
+      "structured_prevalence": 0.5182186234817814,
+      "balanced_accuracy": 0.7534466911764706,
+      "roc_auc": 0.8213629201680672,
+      "constant_quality": 0.3369577060414003,
+      "predicted_quality": 0.3606525613862252,
+      "oracle_family_quality": 0.2522519147061264,
+      "quality_gain_vs_constant_pct": -7.031996870822012,
+      "oracle_regret_closed_pct": -27.973123172934333
+    },
+    {
+      "outer_fold": "univ",
+      "feature_set": "full",
+      "samples": 494,
+      "structured_prevalence": 0.5182186234817814,
+      "balanced_accuracy": 0.784516150210084,
+      "roc_auc": 0.8575531775210085,
+      "constant_quality": 0.3369577060414003,
+      "predicted_quality": 0.339243988872238,
+      "oracle_family_quality": 0.2522519147061264,
+      "quality_gain_vs_constant_pct": -0.6785073585931882,
+      "oracle_regret_closed_pct": -2.6990867977236306
+    },
+    {
+      "outer_fold": "zara01",
+      "feature_set": "speed",
+      "samples": 1429,
+      "structured_prevalence": 0.2323303009097271,
+      "balanced_accuracy": 0.5503248179591658,
+      "roc_auc": 0.5648180689942999,
+      "constant_quality": 0.43771227657276174,
+      "predicted_quality": 0.4557579835232261,
+      "oracle_family_quality": 0.3292778538604527,
+      "quality_gain_vs_constant_pct": -4.122732652545238,
+      "oracle_regret_closed_pct": -16.64204640840117
+    },
+    {
+      "outer_fold": "zara01",
+      "feature_set": "full",
+      "samples": 1429,
+      "structured_prevalence": 0.2323303009097271,
+      "balanced_accuracy": 0.61552179547726,
+      "roc_auc": 0.6665412790633821,
+      "constant_quality": 0.43771227657276174,
+      "predicted_quality": 0.4554644566607069,
+      "oracle_family_quality": 0.3292778538604527,
+      "quality_gain_vs_constant_pct": -4.055673335676747,
+      "oracle_regret_closed_pct": -16.371351129930446
+    },
+    {
+      "outer_fold": "zara02",
+      "feature_set": "speed",
+      "samples": 1304,
+      "structured_prevalence": 0.2822085889570552,
+      "balanced_accuracy": 0.5938429022668154,
+      "roc_auc": 0.6114565914158305,
+      "constant_quality": 0.4895927387648948,
+      "predicted_quality": 0.5006681376056848,
+      "oracle_family_quality": 0.3595828790131219,
+      "quality_gain_vs_constant_pct": -2.2621656662495013,
+      "oracle_regret_closed_pct": -8.51889146095247
+    },
+    {
+      "outer_fold": "zara02",
+      "feature_set": "full",
+      "samples": 1304,
+      "structured_prevalence": 0.2822085889570552,
+      "balanced_accuracy": 0.6390979189892234,
+      "roc_auc": 0.6797833054626533,
+      "constant_quality": 0.4895927387648948,
+      "predicted_quality": 0.4689553096934016,
+      "oracle_family_quality": 0.3595828790131219,
+      "quality_gain_vs_constant_pct": 4.2152236823519145,
+      "oracle_regret_closed_pct": 15.873741507679586
+    }
+  ],
+  "full_feature_macro": {
+    "balanced_accuracy": 0.6544551826268337,
+    "roc_auc": 0.7075592448916939,
+    "quality_gain_vs_constant_pct": -0.9882899448934952,
+    "oracle_regret_closed_pct": -4.071699977698675
+  },
+  "gate": {
+    "macro_balanced_accuracy_ge_0p60": true,
+    "all_fold_balanced_accuracy_ge_0p55": true,
+    "macro_roc_auc_ge_0p65": true,
+    "macro_quality_gain_vs_constant_ge_3pct": false,
+    "conditional_allocator_allowed": false
+  }
+}

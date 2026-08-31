@@ -1,0 +1,188 @@
+{
+  "experiment": "EXP-165 Official Fold Shift Candidate Geometry Causal Audit",
+  "complete": true,
+  "folds": [
+    "eth",
+    "hotel",
+    "univ",
+    "zara01",
+    "zara02"
+  ],
+  "seed": 1,
+  "trained_new_model": false,
+  "verdict": {
+    "scale_hypothesis": {
+      "available": true,
+      "scale_SMD": 0.6577589862440767,
+      "condition_shift_pass": false,
+      "monotonic_gap_pass": false,
+      "correction_correlation_pass": false,
+      "top_speed_relative_failure_pass": false,
+      "radial_shortfall_pass": false,
+      "v2_top_speed_J_degradation": 0.19551882229505813,
+      "k20_top_speed_J_degradation": 0.22907684196936162,
+      "mechanism_pass": false,
+      "EXP166A_ALLOWED": false
+    },
+    "density_lateral_hypothesis": {
+      "available": true,
+      "target_samples": 2225,
+      "enough_samples": true,
+      "target_H3_minus_K20_J": 0.04372898937673882,
+      "overall_H3_minus_K20_J": 0.0639264240492069,
+      "concentrated_degradation_pass": false,
+      "lateral_narrowing_pass": false,
+      "V2_partial_recovery_pass": true,
+      "duplicate_or_longitudinal_concentration_pass": true,
+      "EXP167_ALLOWED": false
+    }
+  },
+  "fold_diagnostics": [
+    {
+      "fold": "eth",
+      "samples": 364,
+      "speed_boundaries": [
+        0.04759557172656059,
+        0.23019041121006012,
+        0.3881211131811142
+      ],
+      "density_boundaries": [
+        5.0,
+        8.0
+      ],
+      "speed_gap_h3_minus_k20": [
+        -0.17300615685158655,
+        -0.26742445899729145,
+        -0.12625908851623535,
+        -0.41028713691048324
+      ],
+      "speed_gap_v2_minus_k20": [
+        -0.1944885129109025,
+        -0.25122943729685066,
+        -0.11881758570671082,
+        -0.40578013216145337
+      ],
+      "speed_gap_h3_spearman": -0.39999999999999997,
+      "speed_gap_v2_spearman": -0.39999999999999997,
+      "speed_correction_spearman": 0.17050670375701507
+    },
+    {
+      "fold": "hotel",
+      "samples": 1197,
+      "speed_boundaries": [
+        0.052721841260790825,
+        0.23201188445091248,
+        0.38979360461235046
+      ],
+      "density_boundaries": [
+        5.0,
+        8.0
+      ],
+      "speed_gap_h3_minus_k20": [
+        -0.011342723272551017,
+        -0.0010808145687464744,
+        0.024973054957944295,
+        0.020818094464770533
+      ],
+      "speed_gap_v2_minus_k20": [
+        -0.02731928899053745,
+        -0.004581357394495318,
+        0.020068679438080897,
+        0.018179325027423993
+      ],
+      "speed_gap_h3_spearman": 0.7999999999999999,
+      "speed_gap_v2_spearman": 0.7999999999999999,
+      "speed_correction_spearman": -0.5801815399409406
+    },
+    {
+      "fold": "univ",
+      "samples": 24334,
+      "speed_boundaries": [
+        0.012352589517831802,
+        0.3501427471637726,
+        0.4791116937994957
+      ],
+      "density_boundaries": [
+        1.0,
+        4.0
+      ],
+      "speed_gap_h3_minus_k20": [
+        0.048463262231639485,
+        0.07613074822023196,
+        0.049327842964647484,
+        -0.016247446248569643
+      ],
+      "speed_gap_v2_minus_k20": [
+        0.03715276297746416,
+        0.05660772393574135,
+        0.04103449126526427,
+        -0.0279578189294501
+      ],
+      "speed_gap_h3_spearman": -0.39999999999999997,
+      "speed_gap_v2_spearman": -0.39999999999999997,
+      "speed_correction_spearman": -0.17336263857414852
+    },
+    {
+      "fold": "zara01",
+      "samples": 2356,
+      "speed_boundaries": [
+        0.03923330828547478,
+        0.21611760556697845,
+        0.37361234426498413
+      ],
+      "density_boundaries": [
+        5.0,
+        8.0
+      ],
+      "speed_gap_h3_minus_k20": [
+        0.012597375109791756,
+        0.022483249537614516,
+        -0.0049174138275552386,
+        0.04915237867600213
+      ],
+      "speed_gap_v2_minus_k20": [
+        -0.015459312222898007,
+        0.017393697367666605,
+        -0.022497154233499992,
+        0.016492524948511715
+      ],
+      "speed_gap_h3_spearman": 0.39999999999999997,
+      "speed_gap_v2_spearman": 0.0,
+      "speed_correction_spearman": 0.6720120123953115
+    },
+    {
+      "fold": "zara02",
+      "samples": 5910,
+      "speed_boundaries": [
+        0.07262248732149601,
+        0.23074547201395035,
+        0.37532955408096313
+      ],
+      "density_boundaries": [
+        5.0,
+        8.0
+      ],
+      "speed_gap_h3_minus_k20": [
+        0.02808503086985957,
+        -0.03997913703065494,
+        -0.0026252084026188206,
+        0.02351861327336426
+      ],
+      "speed_gap_v2_minus_k20": [
+        0.014880894595237613,
+        -0.05245888480925795,
+        -0.02239189461733286,
+        -0.010953628865248016
+      ],
+      "speed_gap_h3_spearman": -0.19999999999999998,
+      "speed_gap_v2_spearman": -0.19999999999999998,
+      "speed_correction_spearman": -0.22562236953973583
+    }
+  ],
+  "protocol": {
+    "speed_bins_from_outer_train": true,
+    "density_bins_from_outer_train": true,
+    "observation_only_condition_features": true,
+    "future_used_for_diagnostics_only": true
+  }
+}
