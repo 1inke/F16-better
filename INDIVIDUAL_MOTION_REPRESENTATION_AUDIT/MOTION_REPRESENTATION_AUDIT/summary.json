@@ -1,0 +1,890 @@
+{
+  "audit": "individual_motion_representation",
+  "complete": true,
+  "training": false,
+  "model": "EXP-164 official F16+H3+V2 seed1",
+  "full_model_reproduction": {
+    "eth": {
+      "minADE": {
+        "expected": 0.41357702016830444,
+        "observed": 0.4135770797729492,
+        "absolute_difference": 5.960464477539063e-08
+      },
+      "minFDE": {
+        "expected": 0.6000499725341797,
+        "observed": 0.6000499725341797,
+        "absolute_difference": 0.0
+      },
+      "sameFDE": {
+        "expected": 0.7547110319137573,
+        "observed": 0.7547110319137573,
+        "absolute_difference": 0.0
+      }
+    },
+    "hotel": {
+      "minADE": {
+        "expected": 0.14125020802021027,
+        "observed": 0.14125022292137146,
+        "absolute_difference": 1.4901161193847656e-08
+      },
+      "minFDE": {
+        "expected": 0.21800804138183594,
+        "observed": 0.21800804138183594,
+        "absolute_difference": 0.0
+      },
+      "sameFDE": {
+        "expected": 0.24728579819202423,
+        "observed": 0.24728579819202423,
+        "absolute_difference": 0.0
+      }
+    },
+    "univ": {
+      "minADE": {
+        "expected": 0.2389371544122696,
+        "observed": 0.2389371544122696,
+        "absolute_difference": 0.0
+      },
+      "minFDE": {
+        "expected": 0.4304630756378174,
+        "observed": 0.4304630756378174,
+        "absolute_difference": 0.0
+      },
+      "sameFDE": {
+        "expected": 0.497171014547348,
+        "observed": 0.497171014547348,
+        "absolute_difference": 0.0
+      }
+    },
+    "zara01": {
+      "minADE": {
+        "expected": 0.1828116774559021,
+        "observed": 0.1828116774559021,
+        "absolute_difference": 0.0
+      },
+      "minFDE": {
+        "expected": 0.3322129547595978,
+        "observed": 0.3322129547595978,
+        "absolute_difference": 0.0
+      },
+      "sameFDE": {
+        "expected": 0.38289394974708557,
+        "observed": 0.38289394974708557,
+        "absolute_difference": 0.0
+      }
+    },
+    "zara02": {
+      "minADE": {
+        "expected": 0.13570818305015564,
+        "observed": 0.13570818305015564,
+        "absolute_difference": 0.0
+      },
+      "minFDE": {
+        "expected": 0.24375146627426147,
+        "observed": 0.24375146627426147,
+        "absolute_difference": 0.0
+      },
+      "sameFDE": {
+        "expected": 0.28759297728538513,
+        "observed": 0.28759297728538513,
+        "absolute_difference": 0.0
+      }
+    }
+  },
+  "macro_fold_summary": {
+    "samples": 6832.2,
+    "high_acc_samples": 1975.6,
+    "high_acc_minADE": 0.2843544989824295,
+    "non_high_acc_minADE": 0.1509671315550804,
+    "high_acc_minADE_gap_pct": 114.30606145572942,
+    "high_acc_minFDE": 0.4675431907176971,
+    "non_high_acc_minFDE": 0.2463614225387573,
+    "high_acc_minFDE_gap_pct": 125.59319087081867,
+    "high_acc_J": 0.5181260943412781,
+    "non_high_acc_J": 0.2741478443145752,
+    "high_acc_J_gap_pct": 118.43161285461751,
+    "high_acc_robust_mean_norm": 2.828927230834961,
+    "non_high_acc_robust_mean_norm": 2.9533064365386963,
+    "high_vs_non_high_robust_mean_norm_effect_size": -0.5338319643353636,
+    "high_acc_temporal_mean_norm": 9.948420333862305,
+    "non_high_acc_temporal_mean_norm": 9.94128360748291,
+    "high_vs_non_high_temporal_mean_norm_effect_size": 0.3880941865960552,
+    "high_acc_post_social_norm": 9.62496223449707,
+    "non_high_acc_post_social_norm": 9.636697006225585,
+    "high_vs_non_high_post_social_norm_effect_size": -0.5068268380124337,
+    "high_acc_encoder_mean_norm": 9.812598037719727,
+    "non_high_acc_encoder_mean_norm": 9.822244262695312,
+    "high_vs_non_high_encoder_mean_norm_effect_size": -0.4913530936320594,
+    "robust_norm_acc_spearman": -0.17533523347491703,
+    "temporal_norm_acc_spearman": 0.24025669210419848,
+    "encoder_norm_acc_spearman": -0.04741555628861972,
+    "robust_norm_error_spearman": -0.22337359455311684,
+    "temporal_norm_error_spearman": 0.22972701063124318,
+    "encoder_norm_error_spearman": -0.04921839021091008
+  },
+  "per_fold": [
+    {
+      "fold": "eth",
+      "samples": 364,
+      "high_acc_samples": 325,
+      "high_acc_minADE": 0.4390668570995331,
+      "non_high_acc_minADE": 0.20116204023361206,
+      "high_acc_minADE_gap_pct": 118.2652634610581,
+      "high_acc_minFDE": 0.6432405710220337,
+      "non_high_acc_minFDE": 0.24012801051139832,
+      "high_acc_minFDE_gap_pct": 167.87402671272312,
+      "high_acc_J": 0.7606870532035828,
+      "non_high_acc_J": 0.3212260603904724,
+      "high_acc_J_gap_pct": 136.8073911185522,
+      "high_acc_robust_mean_norm": 3.225201368331909,
+      "non_high_acc_robust_mean_norm": 3.437246799468994,
+      "high_vs_non_high_robust_mean_norm_effect_size": -0.797042240826069,
+      "high_acc_temporal_mean_norm": 9.945496559143066,
+      "non_high_acc_temporal_mean_norm": 9.94680404663086,
+      "high_vs_non_high_temporal_mean_norm_effect_size": -0.06686973751355656,
+      "high_acc_post_social_norm": 9.60815715789795,
+      "non_high_acc_post_social_norm": 9.675789833068848,
+      "high_vs_non_high_post_social_norm_effect_size": -2.890001826265607,
+      "high_acc_encoder_mean_norm": 9.771171569824219,
+      "non_high_acc_encoder_mean_norm": 9.789917945861816,
+      "high_vs_non_high_encoder_mean_norm_effect_size": -1.1185766392167567,
+      "robust_norm_acc_spearman": 0.2059845602489824,
+      "temporal_norm_acc_spearman": -0.19541352285407967,
+      "encoder_norm_acc_spearman": -0.3977087324728343,
+      "robust_norm_error_spearman": 0.11919923552525187,
+      "temporal_norm_error_spearman": -0.3939374138931466,
+      "encoder_norm_error_spearman": -0.48348486356352666
+    },
+    {
+      "fold": "hotel",
+      "samples": 1197,
+      "high_acc_samples": 724,
+      "high_acc_minADE": 0.19775354862213135,
+      "non_high_acc_minADE": 0.05476311594247818,
+      "high_acc_minADE_gap_pct": 261.1071890610585,
+      "high_acc_minFDE": 0.3078900873661041,
+      "non_high_acc_minFDE": 0.08042967319488525,
+      "high_acc_minFDE_gap_pct": 282.8065875887255,
+      "high_acc_J": 0.3516985774040222,
+      "non_high_acc_J": 0.09497794508934021,
+      "high_acc_J_gap_pct": 270.29499540466986,
+      "high_acc_robust_mean_norm": 2.9019663333892822,
+      "non_high_acc_robust_mean_norm": 3.331413984298706,
+      "high_vs_non_high_robust_mean_norm_effect_size": -1.9991662896974276,
+      "high_acc_temporal_mean_norm": 9.972070693969727,
+      "non_high_acc_temporal_mean_norm": 9.94684886932373,
+      "high_vs_non_high_temporal_mean_norm_effect_size": 1.5023173601631254,
+      "high_acc_post_social_norm": 9.603719711303711,
+      "non_high_acc_post_social_norm": 9.61263370513916,
+      "high_vs_non_high_post_social_norm_effect_size": -0.6402728216276178,
+      "high_acc_encoder_mean_norm": 9.805110931396484,
+      "non_high_acc_encoder_mean_norm": 9.822328567504883,
+      "high_vs_non_high_encoder_mean_norm_effect_size": -1.1584502193815378,
+      "robust_norm_acc_spearman": -0.6082030272399916,
+      "temporal_norm_acc_spearman": 0.5849368967252618,
+      "encoder_norm_acc_spearman": -0.49846136679375425,
+      "robust_norm_error_spearman": -0.6302478877532177,
+      "temporal_norm_error_spearman": 0.569759372361974,
+      "encoder_norm_error_spearman": -0.5583804097538437
+    },
+    {
+      "fold": "univ",
+      "samples": 24334,
+      "high_acc_samples": 7620,
+      "high_acc_minADE": 0.30788367986679077,
+      "non_high_acc_minADE": 0.20750409364700317,
+      "high_acc_minADE_gap_pct": 48.374749844959176,
+      "high_acc_minFDE": 0.5359320044517517,
+      "non_high_acc_minFDE": 0.3823792636394501,
+      "high_acc_minFDE_gap_pct": 40.15718304146543,
+      "high_acc_J": 0.575849711894989,
+      "non_high_acc_J": 0.398693710565567,
+      "high_acc_J_gap_pct": 44.43410985292879,
+      "high_acc_robust_mean_norm": 2.3651070594787598,
+      "non_high_acc_robust_mean_norm": 2.445685386657715,
+      "high_vs_non_high_robust_mean_norm_effect_size": -0.3971309944008305,
+      "high_acc_temporal_mean_norm": 9.901318550109863,
+      "non_high_acc_temporal_mean_norm": 9.895160675048828,
+      "high_vs_non_high_temporal_mean_norm_effect_size": 0.42805342860142037,
+      "high_acc_post_social_norm": 9.732839584350586,
+      "non_high_acc_post_social_norm": 9.731806755065918,
+      "high_vs_non_high_post_social_norm_effect_size": 0.09539081738987566,
+      "high_acc_encoder_mean_norm": 9.867770195007324,
+      "non_high_acc_encoder_mean_norm": 9.854092597961426,
+      "high_vs_non_high_encoder_mean_norm_effect_size": 0.7251597978972584,
+      "robust_norm_acc_spearman": -0.3089772295882506,
+      "temporal_norm_acc_spearman": 0.3685282325536707,
+      "encoder_norm_acc_spearman": 0.5179505067995269,
+      "robust_norm_error_spearman": -0.19504903567838028,
+      "temporal_norm_error_spearman": 0.33702453597938953,
+      "encoder_norm_error_spearman": 0.4244170444976964
+    },
+    {
+      "fold": "zara01",
+      "samples": 2356,
+      "high_acc_samples": 403,
+      "high_acc_minADE": 0.22567875683307648,
+      "non_high_acc_minADE": 0.17396610975265503,
+      "high_acc_minADE_gap_pct": 29.725701835803807,
+      "high_acc_minFDE": 0.40895000100135803,
+      "non_high_acc_minFDE": 0.31637832522392273,
+      "high_acc_minFDE_gap_pct": 29.25980334206395,
+      "high_acc_J": 0.4301537871360779,
+      "non_high_acc_J": 0.3321552574634552,
+      "high_acc_J_gap_pct": 29.50383215999668,
+      "high_acc_robust_mean_norm": 2.8636674880981445,
+      "non_high_acc_robust_mean_norm": 2.7416374683380127,
+      "high_vs_non_high_robust_mean_norm_effect_size": 0.6053032253218587,
+      "high_acc_temporal_mean_norm": 9.964703559875488,
+      "non_high_acc_temporal_mean_norm": 9.97237491607666,
+      "high_vs_non_high_temporal_mean_norm_effect_size": -0.6153621862777284,
+      "high_acc_post_social_norm": 9.582341194152832,
+      "non_high_acc_post_social_norm": 9.574594497680664,
+      "high_vs_non_high_post_social_norm_effect_size": 0.43507105321212924,
+      "high_acc_encoder_mean_norm": 9.810450553894043,
+      "non_high_acc_encoder_mean_norm": 9.838584899902344,
+      "high_vs_non_high_encoder_mean_norm_effect_size": -0.9970516316788168,
+      "robust_norm_acc_spearman": 0.21441793029240727,
+      "temporal_norm_acc_spearman": -0.18111452435552264,
+      "encoder_norm_acc_spearman": -0.34286959189723687,
+      "robust_norm_error_spearman": 0.02135689185136977,
+      "temporal_norm_error_spearman": 0.02771489401756928,
+      "encoder_norm_error_spearman": -0.13796659095565078
+    },
+    {
+      "fold": "zara02",
+      "samples": 5910,
+      "high_acc_samples": 806,
+      "high_acc_minADE": 0.25138965249061584,
+      "non_high_acc_minADE": 0.11744029819965363,
+      "high_acc_minADE_gap_pct": 114.05740307576747,
+      "high_acc_minFDE": 0.44170328974723816,
+      "non_high_acc_minFDE": 0.21249184012413025,
+      "high_acc_minFDE_gap_pct": 107.86835366911531,
+      "high_acc_J": 0.4722413420677185,
+      "non_high_acc_J": 0.22368624806404114,
+      "high_acc_J_gap_pct": 111.11773573694003,
+      "high_acc_robust_mean_norm": 2.788693904876709,
+      "non_high_acc_robust_mean_norm": 2.8105485439300537,
+      "high_vs_non_high_robust_mean_norm_effect_size": -0.08112352207434971,
+      "high_acc_temporal_mean_norm": 9.958512306213379,
+      "non_high_acc_temporal_mean_norm": 9.945229530334473,
+      "high_vs_non_high_temporal_mean_norm_effect_size": 0.6923320680070151,
+      "high_acc_post_social_norm": 9.597753524780273,
+      "non_high_acc_post_social_norm": 9.58866024017334,
+      "high_vs_non_high_post_social_norm_effect_size": 0.4656785872290515,
+      "high_acc_encoder_mean_norm": 9.808486938476562,
+      "non_high_acc_encoder_mean_norm": 9.806297302246094,
+      "high_vs_non_high_encoder_mean_norm_effect_size": 0.09215322421955605,
+      "robust_norm_acc_spearman": -0.3798984010877325,
+      "temporal_norm_acc_spearman": 0.6243463784516622,
+      "encoder_norm_acc_spearman": 0.4840114029211999,
+      "robust_norm_error_spearman": -0.43212717671060785,
+      "temporal_norm_error_spearman": 0.6080736646904297,
+      "encoder_norm_error_spearman": 0.5093228687207743
+    }
+  ],
+  "linear_probes": [
+    {
+      "fold": "eth",
+      "representation": "robust_state",
+      "target": "mean_acceleration",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": 0.25913800122089214,
+      "outer_pearson": 0.7745699071190644,
+      "outer_spearman": 0.8272442771243474
+    },
+    {
+      "fold": "eth",
+      "representation": "robust_state",
+      "target": "observation_nonlinearity",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -0.44929704365409107,
+      "outer_pearson": 0.5265345273875381,
+      "outer_spearman": 0.6121315819674582
+    },
+    {
+      "fold": "eth",
+      "representation": "robust_state",
+      "target": "future_J",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -3.343425952370696,
+      "outer_pearson": 0.27558939572390767,
+      "outer_spearman": 0.3488528557108925
+    },
+    {
+      "fold": "eth",
+      "representation": "temporal",
+      "target": "mean_acceleration",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -0.04826872468209786,
+      "outer_pearson": 0.7965084452361304,
+      "outer_spearman": 0.7999271227279457
+    },
+    {
+      "fold": "eth",
+      "representation": "temporal",
+      "target": "observation_nonlinearity",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": 0.4361988321822904,
+      "outer_pearson": 0.75160018847543,
+      "outer_spearman": 0.7424215575197928
+    },
+    {
+      "fold": "eth",
+      "representation": "temporal",
+      "target": "future_J",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -0.10295209958102669,
+      "outer_pearson": 0.4784663957503193,
+      "outer_spearman": 0.5172905289828745
+    },
+    {
+      "fold": "eth",
+      "representation": "post_social",
+      "target": "mean_acceleration",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -0.06933861310643596,
+      "outer_pearson": 0.7821104493530727,
+      "outer_spearman": 0.7739894860035789
+    },
+    {
+      "fold": "eth",
+      "representation": "post_social",
+      "target": "observation_nonlinearity",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -0.18825260118001697,
+      "outer_pearson": 0.5779011597323652,
+      "outer_spearman": 0.6440368178762709
+    },
+    {
+      "fold": "eth",
+      "representation": "post_social",
+      "target": "future_J",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -0.021779506922124714,
+      "outer_pearson": 0.43997773918566396,
+      "outer_spearman": 0.45735446744430386
+    },
+    {
+      "fold": "eth",
+      "representation": "encoder_output",
+      "target": "mean_acceleration",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -0.1769486465083634,
+      "outer_pearson": 0.7713045243823391,
+      "outer_spearman": 0.7903296347271841
+    },
+    {
+      "fold": "eth",
+      "representation": "encoder_output",
+      "target": "observation_nonlinearity",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": 0.3548238211193039,
+      "outer_pearson": 0.6866087401355914,
+      "outer_spearman": 0.7343060393758798
+    },
+    {
+      "fold": "eth",
+      "representation": "encoder_output",
+      "target": "future_J",
+      "train_samples": 1516,
+      "test_samples": 364,
+      "outer_r2": -0.0013395467337422584,
+      "outer_pearson": 0.46445712900899433,
+      "outer_spearman": 0.4965832810752139
+    },
+    {
+      "fold": "hotel",
+      "representation": "robust_state",
+      "target": "mean_acceleration",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": 0.24629746220732884,
+      "outer_pearson": 0.8284300875422977,
+      "outer_spearman": 0.8582541731321455
+    },
+    {
+      "fold": "hotel",
+      "representation": "robust_state",
+      "target": "observation_nonlinearity",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": -171.97996267426603,
+      "outer_pearson": 0.6834161433399784,
+      "outer_spearman": 0.8753969232221783
+    },
+    {
+      "fold": "hotel",
+      "representation": "robust_state",
+      "target": "future_J",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": -3.5144019575363243,
+      "outer_pearson": -0.05286990251116644,
+      "outer_spearman": -0.13657092923013323
+    },
+    {
+      "fold": "hotel",
+      "representation": "temporal",
+      "target": "mean_acceleration",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": -0.6958758524906847,
+      "outer_pearson": 0.8948320097543212,
+      "outer_spearman": 0.9315205227104456
+    },
+    {
+      "fold": "hotel",
+      "representation": "temporal",
+      "target": "observation_nonlinearity",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": -8.181286972647932,
+      "outer_pearson": 0.7140524929924867,
+      "outer_spearman": 0.8314021318502248
+    },
+    {
+      "fold": "hotel",
+      "representation": "temporal",
+      "target": "future_J",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": -6.990907062978899,
+      "outer_pearson": 0.7229735092956233,
+      "outer_spearman": 0.7660247992689334
+    },
+    {
+      "fold": "hotel",
+      "representation": "post_social",
+      "target": "mean_acceleration",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": 0.3043185420527331,
+      "outer_pearson": 0.8584947946301922,
+      "outer_spearman": 0.8757053322798861
+    },
+    {
+      "fold": "hotel",
+      "representation": "post_social",
+      "target": "observation_nonlinearity",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": -3.7739797569205775,
+      "outer_pearson": 0.6924454473995912,
+      "outer_spearman": 0.8066666959839278
+    },
+    {
+      "fold": "hotel",
+      "representation": "post_social",
+      "target": "future_J",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": 0.10306085012813382,
+      "outer_pearson": 0.553179045341997,
+      "outer_spearman": 0.6140010150906642
+    },
+    {
+      "fold": "hotel",
+      "representation": "encoder_output",
+      "target": "mean_acceleration",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": 0.25867502810640675,
+      "outer_pearson": 0.8824487143378986,
+      "outer_spearman": 0.8969543597920945
+    },
+    {
+      "fold": "hotel",
+      "representation": "encoder_output",
+      "target": "observation_nonlinearity",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": -0.9605605758069384,
+      "outer_pearson": 0.6627426137694573,
+      "outer_spearman": 0.7576792640311375
+    },
+    {
+      "fold": "hotel",
+      "representation": "encoder_output",
+      "target": "future_J",
+      "train_samples": 1484,
+      "test_samples": 1197,
+      "outer_r2": -0.44795897122062445,
+      "outer_pearson": 0.4375097048610202,
+      "outer_spearman": 0.5260348158952022
+    },
+    {
+      "fold": "univ",
+      "representation": "robust_state",
+      "target": "mean_acceleration",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": 0.5147812083996615,
+      "outer_pearson": 0.8567111166276858,
+      "outer_spearman": 0.8678448204098075
+    },
+    {
+      "fold": "univ",
+      "representation": "robust_state",
+      "target": "observation_nonlinearity",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": 0.247570492313537,
+      "outer_pearson": 0.7392020029742413,
+      "outer_spearman": 0.4862609553367497
+    },
+    {
+      "fold": "univ",
+      "representation": "robust_state",
+      "target": "future_J",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": -1.3381699325145262,
+      "outer_pearson": 0.055719891429193626,
+      "outer_spearman": -0.013262413574379047
+    },
+    {
+      "fold": "univ",
+      "representation": "temporal",
+      "target": "mean_acceleration",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": 0.3997371976769106,
+      "outer_pearson": 0.8681516436317643,
+      "outer_spearman": 0.9114782569530813
+    },
+    {
+      "fold": "univ",
+      "representation": "temporal",
+      "target": "observation_nonlinearity",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": 0.36471165164865127,
+      "outer_pearson": 0.856587968767792,
+      "outer_spearman": 0.8765104545915012
+    },
+    {
+      "fold": "univ",
+      "representation": "temporal",
+      "target": "future_J",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": -1.7039470023530603,
+      "outer_pearson": -0.09322024212790835,
+      "outer_spearman": -0.11604065136211324
+    },
+    {
+      "fold": "univ",
+      "representation": "post_social",
+      "target": "mean_acceleration",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": 0.03264591278816198,
+      "outer_pearson": 0.6974629409687267,
+      "outer_spearman": 0.7183108209560637
+    },
+    {
+      "fold": "univ",
+      "representation": "post_social",
+      "target": "observation_nonlinearity",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": 0.18959953454368828,
+      "outer_pearson": 0.626336729423377,
+      "outer_spearman": 0.5893725358329392
+    },
+    {
+      "fold": "univ",
+      "representation": "post_social",
+      "target": "future_J",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": -1.8014104934527793,
+      "outer_pearson": 0.103842012165806,
+      "outer_spearman": 0.0812384641802771
+    },
+    {
+      "fold": "univ",
+      "representation": "encoder_output",
+      "target": "mean_acceleration",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": 0.23956001611830813,
+      "outer_pearson": 0.7388524048243859,
+      "outer_spearman": 0.7394431642456829
+    },
+    {
+      "fold": "univ",
+      "representation": "encoder_output",
+      "target": "observation_nonlinearity",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": 0.5139823047180501,
+      "outer_pearson": 0.8038582384516084,
+      "outer_spearman": 0.8005144744488147
+    },
+    {
+      "fold": "univ",
+      "representation": "encoder_output",
+      "target": "future_J",
+      "train_samples": 494,
+      "test_samples": 24334,
+      "outer_r2": -1.549708203216904,
+      "outer_pearson": 0.05377032381969545,
+      "outer_spearman": 0.02198371297525425
+    },
+    {
+      "fold": "zara01",
+      "representation": "robust_state",
+      "target": "mean_acceleration",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": 0.7368816060884037,
+      "outer_pearson": 0.901345830282373,
+      "outer_spearman": 0.9227468301555315
+    },
+    {
+      "fold": "zara01",
+      "representation": "robust_state",
+      "target": "observation_nonlinearity",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": 0.8308693277496287,
+      "outer_pearson": 0.9129030818566916,
+      "outer_spearman": 0.9115697196999596
+    },
+    {
+      "fold": "zara01",
+      "representation": "robust_state",
+      "target": "future_J",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": -0.4402263024721762,
+      "outer_pearson": 0.21779209297291655,
+      "outer_spearman": 0.1560446093338892
+    },
+    {
+      "fold": "zara01",
+      "representation": "temporal",
+      "target": "mean_acceleration",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": 0.7913396624641547,
+      "outer_pearson": 0.9161400575437018,
+      "outer_spearman": 0.9079140222747607
+    },
+    {
+      "fold": "zara01",
+      "representation": "temporal",
+      "target": "observation_nonlinearity",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": 0.795758222223789,
+      "outer_pearson": 0.894241929501874,
+      "outer_spearman": 0.8221186740626694
+    },
+    {
+      "fold": "zara01",
+      "representation": "temporal",
+      "target": "future_J",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": -0.1949866297381191,
+      "outer_pearson": 0.2457533781920071,
+      "outer_spearman": 0.20515135523907482
+    },
+    {
+      "fold": "zara01",
+      "representation": "post_social",
+      "target": "mean_acceleration",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": 0.6356763249671361,
+      "outer_pearson": 0.8307018451328806,
+      "outer_spearman": 0.7847229170924594
+    },
+    {
+      "fold": "zara01",
+      "representation": "post_social",
+      "target": "observation_nonlinearity",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": 0.36552176163330485,
+      "outer_pearson": 0.6673808406362844,
+      "outer_spearman": 0.5667014184158597
+    },
+    {
+      "fold": "zara01",
+      "representation": "post_social",
+      "target": "future_J",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": -0.12340783823308432,
+      "outer_pearson": 0.27126274364820235,
+      "outer_spearman": 0.2505218982585892
+    },
+    {
+      "fold": "zara01",
+      "representation": "encoder_output",
+      "target": "mean_acceleration",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": 0.7695212010642241,
+      "outer_pearson": 0.8985594284823942,
+      "outer_spearman": 0.8686714997314859
+    },
+    {
+      "fold": "zara01",
+      "representation": "encoder_output",
+      "target": "observation_nonlinearity",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": 0.6431881646343859,
+      "outer_pearson": 0.8136820395324305,
+      "outer_spearman": 0.7096110486026153
+    },
+    {
+      "fold": "zara01",
+      "representation": "encoder_output",
+      "target": "future_J",
+      "train_samples": 1429,
+      "test_samples": 2356,
+      "outer_r2": -0.10158640528508989,
+      "outer_pearson": 0.2975498906308607,
+      "outer_spearman": 0.27165775012927784
+    },
+    {
+      "fold": "zara02",
+      "representation": "robust_state",
+      "target": "mean_acceleration",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.47626011213211983,
+      "outer_pearson": 0.8089681244306028,
+      "outer_spearman": 0.7730716053968821
+    },
+    {
+      "fold": "zara02",
+      "representation": "robust_state",
+      "target": "observation_nonlinearity",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.3708948301759101,
+      "outer_pearson": 0.7821650191856906,
+      "outer_spearman": 0.7892785967247443
+    },
+    {
+      "fold": "zara02",
+      "representation": "robust_state",
+      "target": "future_J",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": -0.42418701901610434,
+      "outer_pearson": 0.3533166653112837,
+      "outer_spearman": 0.4023651158685715
+    },
+    {
+      "fold": "zara02",
+      "representation": "temporal",
+      "target": "mean_acceleration",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": -0.2977695609838462,
+      "outer_pearson": 0.5473516874354099,
+      "outer_spearman": 0.22055486920456002
+    },
+    {
+      "fold": "zara02",
+      "representation": "temporal",
+      "target": "observation_nonlinearity",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": -1.5219265154947563,
+      "outer_pearson": 0.6983173391394185,
+      "outer_spearman": 0.7917508694229092
+    },
+    {
+      "fold": "zara02",
+      "representation": "temporal",
+      "target": "future_J",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.11780049336386167,
+      "outer_pearson": 0.5484144809697954,
+      "outer_spearman": 0.6148437821510713
+    },
+    {
+      "fold": "zara02",
+      "representation": "post_social",
+      "target": "mean_acceleration",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.5146949748979226,
+      "outer_pearson": 0.7636769792667728,
+      "outer_spearman": 0.6147469057777104
+    },
+    {
+      "fold": "zara02",
+      "representation": "post_social",
+      "target": "observation_nonlinearity",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.27690662547737577,
+      "outer_pearson": 0.64938809645665,
+      "outer_spearman": 0.6068979573770401
+    },
+    {
+      "fold": "zara02",
+      "representation": "post_social",
+      "target": "future_J",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.08909802479940077,
+      "outer_pearson": 0.46339366780143987,
+      "outer_spearman": 0.4994593169901172
+    },
+    {
+      "fold": "zara02",
+      "representation": "encoder_output",
+      "target": "mean_acceleration",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.5896587299051439,
+      "outer_pearson": 0.8304803404401643,
+      "outer_spearman": 0.7008976231637889
+    },
+    {
+      "fold": "zara02",
+      "representation": "encoder_output",
+      "target": "observation_nonlinearity",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.5647971541152335,
+      "outer_pearson": 0.7858505762699526,
+      "outer_spearman": 0.6809732278592222
+    },
+    {
+      "fold": "zara02",
+      "representation": "encoder_output",
+      "target": "future_J",
+      "train_samples": 1304,
+      "test_samples": 5910,
+      "outer_r2": 0.0038700342955738654,
+      "outer_pearson": 0.4646271628164801,
+      "outer_spearman": 0.5213676186120975
+    }
+  ],
+  "interpretation_guardrail": "Norm correlations alone do not prove information absence; use them together with cross-domain linear decodability and error stratification.",
+  "next_step": "manual mechanism decision after audit; do not train a new encoder from norm-only evidence"
+}
