@@ -1,0 +1,10 @@
+{
+  "B3_SDPA": {
+    "implemented_as_new_variant": false,
+    "reason": "F16 temporal-social attention adds pair-specific relation bias and relation value messages and requires explicit flattened neighbor-time weights; fused SDPA cannot reproduce this as a safe drop-in. Any nn.MultiheadAttention submodules already use PyTorch's inference SDPA path when eligible."
+  },
+  "B4_VECTORIZATION": {
+    "implemented_as_new_variant": false,
+    "reason": "Current graph construction uses batched cdist/topk/masks; H3 interpolation uses einsum; V2 correction is batched. No per-agent or per-candidate Python loop remains in these requested paths, so a no-retrain vectorization patch would be a no-op."
+  }
+}

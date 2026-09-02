@@ -1,0 +1,33 @@
+{
+  "protocol": {
+    "batch_size": 1,
+    "warmup": 100,
+    "iterations": 1000,
+    "precision": "FP32"
+  },
+  "rows": [
+    {
+      "model": "F16_baseline",
+      "parameters": 321988,
+      "profiler_flops": 42593859,
+      "latency_mean_ms": 12.59836069913581,
+      "latency_median_ms": 11.380600044503808,
+      "latency_p95_ms": 21.55277002602815,
+      "throughput_samples_s": 79.37540636287667,
+      "peak_vram_mib": 12.619140625
+    },
+    {
+      "model": "Q3KV",
+      "parameters": 321988,
+      "profiler_flops": 40815099,
+      "latency_mean_ms": 11.02576379920356,
+      "latency_median_ms": 11.130700004287064,
+      "latency_p95_ms": 12.283334892708803,
+      "throughput_samples_s": 90.69666448615872,
+      "peak_vram_mib": 12.62109375
+    }
+  ],
+  "latency_improvement": 0.02195842391785235,
+  "flops_improvement": 0.041760949624216955,
+  "efficiency_gate": false
+}

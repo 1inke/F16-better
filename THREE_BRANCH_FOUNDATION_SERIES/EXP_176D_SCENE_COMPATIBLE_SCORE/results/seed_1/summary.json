@@ -1,0 +1,65 @@
+{
+  "experiment": "EXP-176D",
+  "training": false,
+  "candidate_generator": "frozen EXP-175S0 F16+H3+Joint-V2 seed1",
+  "appearance_variant": "appearance_similarity",
+  "score_rule": "original_logit - 0.10 * within_sample_score_std * (1 - appearance_similarity)",
+  "lambda_selected_without_test": true,
+  "future_used_for_scoring": false,
+  "validation": {
+    "original": {
+      "samples": 3763,
+      "top1_ADE": 0.7295036315917969,
+      "top1_FDE": 1.444801688194275,
+      "top1_combined": 1.090704083442688,
+      "mean_regret": 0.6246013641357422,
+      "p90_regret": 1.8209572792053232,
+      "p95_regret": 2.5561941862106314,
+      "combined_winner_hit": 0.2872707945787935,
+      "selected_scene_violation": 0.17873544991016388,
+      "active_modes": 6
+    },
+    "scene_compatible": {
+      "samples": 3763,
+      "top1_ADE": 0.7308401465415955,
+      "top1_FDE": 1.44774329662323,
+      "top1_combined": 1.092775821685791,
+      "mean_regret": 0.62667316198349,
+      "p90_regret": 1.8209572792053232,
+      "p95_regret": 2.5561941862106314,
+      "combined_winner_hit": 0.2848790858357693,
+      "selected_scene_violation": 0.176103413105011,
+      "active_modes": 6
+    },
+    "relative_improvement": {
+      "top1_ADE": -0.0018320881376317096,
+      "top1_FDE": -0.002035994595653833,
+      "top1_combined": -0.00189945034088789,
+      "mean_regret": -0.003316992191674988,
+      "p90_regret": 0.0,
+      "p95_regret": 0.0,
+      "selected_scene_violation": 0.014725880100874276
+    },
+    "selection_flip_rate": 0.015413234121711401,
+    "mean_score_std": 0.9186416864395142,
+    "mean_abs_score_correction": 0.02104312740266323,
+    "max_abs_score_correction": 0.13076592981815338,
+    "oracle": {
+      "minADE20": 0.3211902379989624,
+      "minFDE20": 0.5280516147613525,
+      "same_path_FDE": 0.6145767569541931
+    },
+    "candidate_set_changed": false
+  },
+  "validation_gate": {
+    "combined_cost_improves": false,
+    "mean_regret_improves": false,
+    "p95_regret_not_worse_2pct": true,
+    "scene_violation_improves": true,
+    "nonzero_selection_effect": true
+  },
+  "validation_gate_pass": false,
+  "test_accessed": false,
+  "accepted": false,
+  "recommendation": "Stop: fixed scene-compatible score did not pass validation direction gate"
+}

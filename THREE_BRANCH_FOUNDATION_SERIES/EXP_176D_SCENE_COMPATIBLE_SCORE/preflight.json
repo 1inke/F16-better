@@ -1,0 +1,64 @@
+{
+  "experiment": "EXP-176D",
+  "training": false,
+  "candidate_generator": "frozen EXP-175S0 F16+H3+Joint-V2 seed1",
+  "appearance_variant": "appearance_similarity",
+  "score_rule": "original_logit - 0.10 * within_sample_score_std * (1 - appearance_similarity)",
+  "lambda_selected_without_test": true,
+  "future_used_for_scoring": false,
+  "validation": {
+    "original": {
+      "samples": 32,
+      "top1_ADE": 1.011964201927185,
+      "top1_FDE": 1.939788818359375,
+      "top1_combined": 1.4969114065170288,
+      "mean_regret": 0.8797694444656372,
+      "p90_regret": 2.31349265575409,
+      "p95_regret": 2.936871814727783,
+      "combined_winner_hit": 0.3125,
+      "selected_scene_violation": 0.3699010908603668,
+      "active_modes": 5
+    },
+    "scene_compatible": {
+      "samples": 32,
+      "top1_ADE": 1.011964201927185,
+      "top1_FDE": 1.939788818359375,
+      "top1_combined": 1.4969114065170288,
+      "mean_regret": 0.8797694444656372,
+      "p90_regret": 2.31349265575409,
+      "p95_regret": 2.936871814727783,
+      "combined_winner_hit": 0.3125,
+      "selected_scene_violation": 0.3699010908603668,
+      "active_modes": 5
+    },
+    "relative_improvement": {
+      "top1_ADE": 0.0,
+      "top1_FDE": 0.0,
+      "top1_combined": 0.0,
+      "mean_regret": 0.0,
+      "p90_regret": 0.0,
+      "p95_regret": 0.0,
+      "selected_scene_violation": 0.0
+    },
+    "selection_flip_rate": 0.0,
+    "mean_score_std": 0.839428186416626,
+    "mean_abs_score_correction": 0.03534459322690964,
+    "max_abs_score_correction": 0.12588120996952057,
+    "oracle": {
+      "minADE20": 0.42881524562835693,
+      "minFDE20": 0.724722683429718,
+      "same_path_FDE": 0.7768343687057495
+    },
+    "candidate_set_changed": false
+  },
+  "validation_gate": {
+    "combined_cost_improves": false,
+    "mean_regret_improves": false,
+    "p95_regret_not_worse_2pct": true,
+    "scene_violation_improves": false,
+    "nonzero_selection_effect": false
+  },
+  "validation_gate_pass": false,
+  "status": "preflight_passed",
+  "test_accessed": false
+}

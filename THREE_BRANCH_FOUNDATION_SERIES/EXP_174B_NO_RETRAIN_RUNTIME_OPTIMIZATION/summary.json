@@ -1,0 +1,266 @@
+{
+  "experiment": "EXP-174B",
+  "training": false,
+  "checkpoint": "EXP173 F16 Joint-V2 seed1 eth",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "torch": "2.11.0+cu128",
+  "protocol": {
+    "warmup": 100,
+    "iterations": 1000,
+    "synchronize_each_iteration": true,
+    "accuracy_fold": "eth",
+    "accuracy_tolerance": "relative minADE/minFDE < 0.2%"
+  },
+  "variant_status": {
+    "B0_FP32_EAGER": {
+      "status": "available"
+    },
+    "B1_FP16_AUTOCAST": {
+      "status": "available"
+    },
+    "B1_BF16_AUTOCAST": {
+      "status": "available"
+    },
+    "B2_TORCH_COMPILE_FP32": {
+      "status": "failed",
+      "error": "TypeError(\"Too few parameters for <class 'torch._inductor.codegen.common.CSE'>; actual 1, expected 2\")"
+    }
+  },
+  "accuracy": {
+    "B0_FP32_EAGER": {
+      "samples": 364,
+      "minADE": 0.4086463749408722,
+      "minFDE": 0.5742117762565613,
+      "same_path_FDE": 0.733770489692688,
+      "top1_ADE": 0.9670271277427673,
+      "top1_FDE": 1.9023586511611938,
+      "prediction_mean_abs_error": 0.0,
+      "prediction_max_abs_error": 0.0
+    },
+    "B1_FP16_AUTOCAST": {
+      "samples": 364,
+      "minADE": 0.40859606862068176,
+      "minFDE": 0.5742703080177307,
+      "same_path_FDE": 0.7351688146591187,
+      "top1_ADE": 0.9659850597381592,
+      "top1_FDE": 1.899410367012024,
+      "prediction_mean_abs_error": 0.0018591220723465085,
+      "prediction_max_abs_error": 0.5262773036956787
+    },
+    "B1_BF16_AUTOCAST": {
+      "samples": 364,
+      "minADE": 0.4083397090435028,
+      "minFDE": 0.5730456113815308,
+      "same_path_FDE": 0.7356309294700623,
+      "top1_ADE": 0.9659836888313293,
+      "top1_FDE": 1.8972902297973633,
+      "prediction_mean_abs_error": 0.0094709238037467,
+      "prediction_max_abs_error": 0.3089001178741455
+    }
+  },
+  "runtime_rows": [
+    {
+      "variant": "B0_FP32_EAGER",
+      "batch_size": 1,
+      "precision": "FP32",
+      "latency_mean_ms": 11.23892160016112,
+      "latency_median_ms": 10.380349936895072,
+      "latency_p95_ms": 12.645875127054751,
+      "throughput_samples_s": 88.97650820748355,
+      "forward_peak_mib": 0.88232421875,
+      "warmup": 100,
+      "iterations": 1000,
+      "mean_valid_agents": 9.0,
+      "metric_minADE": 0.4086463749408722,
+      "metric_minFDE": 0.5742117762565613,
+      "metric_same_path_FDE": 0.733770489692688,
+      "metric_top1_ADE": 0.9670271277427673,
+      "metric_top1_FDE": 1.9023586511611938,
+      "metric_prediction_mean_abs_error": 0.0,
+      "metric_prediction_max_abs_error": 0.0,
+      "relative_change_minADE": 0.0,
+      "relative_change_minFDE": 0.0,
+      "relative_change_same_path_FDE": 0.0,
+      "relative_change_top1_ADE": 0.0,
+      "relative_change_top1_FDE": 0.0
+    },
+    {
+      "variant": "B1_FP16_AUTOCAST",
+      "batch_size": 1,
+      "precision": "FLOAT16",
+      "latency_mean_ms": 13.290256506530568,
+      "latency_median_ms": 13.696450041607022,
+      "latency_p95_ms": 14.75489012664184,
+      "throughput_samples_s": 75.24309252485983,
+      "forward_peak_mib": 0.69384765625,
+      "warmup": 100,
+      "iterations": 1000,
+      "mean_valid_agents": 9.0,
+      "metric_minADE": 0.40859606862068176,
+      "metric_minFDE": 0.5742703080177307,
+      "metric_same_path_FDE": 0.7351688146591187,
+      "metric_top1_ADE": 0.9659850597381592,
+      "metric_top1_FDE": 1.899410367012024,
+      "metric_prediction_mean_abs_error": 0.0018591220723465085,
+      "metric_prediction_max_abs_error": 0.5262773036956787,
+      "relative_change_minADE": -0.00012310477536403575,
+      "relative_change_minFDE": 0.00010193410095316047,
+      "relative_change_same_path_FDE": 0.0019056707595535016,
+      "relative_change_top1_ADE": -0.001077599557150477,
+      "relative_change_top1_FDE": -0.0015498045793679305
+    },
+    {
+      "variant": "B1_BF16_AUTOCAST",
+      "batch_size": 1,
+      "precision": "BFLOAT16",
+      "latency_mean_ms": 12.406825400423259,
+      "latency_median_ms": 11.996850022114813,
+      "latency_p95_ms": 14.634945127181707,
+      "throughput_samples_s": 80.60079574956258,
+      "forward_peak_mib": 0.69384765625,
+      "warmup": 100,
+      "iterations": 1000,
+      "mean_valid_agents": 9.0,
+      "metric_minADE": 0.4083397090435028,
+      "metric_minFDE": 0.5730456113815308,
+      "metric_same_path_FDE": 0.7356309294700623,
+      "metric_top1_ADE": 0.9659836888313293,
+      "metric_top1_FDE": 1.8972902297973633,
+      "metric_prediction_mean_abs_error": 0.0094709238037467,
+      "metric_prediction_max_abs_error": 0.3089001178741455,
+      "relative_change_minADE": -0.0007504432100094993,
+      "relative_change_minFDE": -0.0020308968280536854,
+      "relative_change_same_path_FDE": 0.0025354518933480286,
+      "relative_change_top1_ADE": -0.0010790172080007432,
+      "relative_change_top1_FDE": -0.002664282763261694
+    },
+    {
+      "variant": "B0_FP32_EAGER",
+      "batch_size": 64,
+      "precision": "FP32",
+      "latency_mean_ms": 13.818834298755974,
+      "latency_median_ms": 13.495499966666102,
+      "latency_p95_ms": 16.06555498437956,
+      "throughput_samples_s": 4631.36025921966,
+      "forward_peak_mib": 58.4658203125,
+      "warmup": 100,
+      "iterations": 1000,
+      "mean_valid_agents": 9.0,
+      "metric_minADE": 0.4086463749408722,
+      "metric_minFDE": 0.5742117762565613,
+      "metric_same_path_FDE": 0.733770489692688,
+      "metric_top1_ADE": 0.9670271277427673,
+      "metric_top1_FDE": 1.9023586511611938,
+      "metric_prediction_mean_abs_error": 0.0,
+      "metric_prediction_max_abs_error": 0.0,
+      "relative_change_minADE": 0.0,
+      "relative_change_minFDE": 0.0,
+      "relative_change_same_path_FDE": 0.0,
+      "relative_change_top1_ADE": 0.0,
+      "relative_change_top1_FDE": 0.0
+    },
+    {
+      "variant": "B1_FP16_AUTOCAST",
+      "batch_size": 64,
+      "precision": "FLOAT16",
+      "latency_mean_ms": 16.425771901151165,
+      "latency_median_ms": 15.8922498812899,
+      "latency_p95_ms": 20.07949519902467,
+      "throughput_samples_s": 3896.31612962522,
+      "forward_peak_mib": 45.19091796875,
+      "warmup": 100,
+      "iterations": 1000,
+      "mean_valid_agents": 9.0,
+      "metric_minADE": 0.40859606862068176,
+      "metric_minFDE": 0.5742703080177307,
+      "metric_same_path_FDE": 0.7351688146591187,
+      "metric_top1_ADE": 0.9659850597381592,
+      "metric_top1_FDE": 1.899410367012024,
+      "metric_prediction_mean_abs_error": 0.0018591220723465085,
+      "metric_prediction_max_abs_error": 0.5262773036956787,
+      "relative_change_minADE": -0.00012310477536403575,
+      "relative_change_minFDE": 0.00010193410095316047,
+      "relative_change_same_path_FDE": 0.0019056707595535016,
+      "relative_change_top1_ADE": -0.001077599557150477,
+      "relative_change_top1_FDE": -0.0015498045793679305
+    },
+    {
+      "variant": "B1_BF16_AUTOCAST",
+      "batch_size": 64,
+      "precision": "BFLOAT16",
+      "latency_mean_ms": 16.28023679740727,
+      "latency_median_ms": 15.76504996046424,
+      "latency_p95_ms": 20.45473987236619,
+      "throughput_samples_s": 3931.1467515136146,
+      "forward_peak_mib": 45.85693359375,
+      "warmup": 100,
+      "iterations": 1000,
+      "mean_valid_agents": 9.0,
+      "metric_minADE": 0.4083397090435028,
+      "metric_minFDE": 0.5730456113815308,
+      "metric_same_path_FDE": 0.7356309294700623,
+      "metric_top1_ADE": 0.9659836888313293,
+      "metric_top1_FDE": 1.8972902297973633,
+      "metric_prediction_mean_abs_error": 0.0094709238037467,
+      "metric_prediction_max_abs_error": 0.3089001178741455,
+      "relative_change_minADE": -0.0007504432100094993,
+      "relative_change_minFDE": -0.0020308968280536854,
+      "relative_change_same_path_FDE": 0.0025354518933480286,
+      "relative_change_top1_ADE": -0.0010790172080007432,
+      "relative_change_top1_FDE": -0.002664282763261694
+    }
+  ],
+  "decisions": [
+    {
+      "variant": "B0_FP32_EAGER",
+      "status": "available",
+      "batch1_latency_improvement": 0.0,
+      "batch64_throughput_improvement": 0.0,
+      "accuracy_within_0p2pct": true,
+      "speed_gate_pass": false,
+      "accepted": false
+    },
+    {
+      "variant": "B1_FP16_AUTOCAST",
+      "status": "available",
+      "batch1_latency_improvement": -0.1825206171328786,
+      "batch64_throughput_improvement": -0.15871020358029497,
+      "accuracy_within_0p2pct": true,
+      "speed_gate_pass": false,
+      "accepted": false
+    },
+    {
+      "variant": "B1_BF16_AUTOCAST",
+      "status": "available",
+      "batch1_latency_improvement": -0.1039160020695753,
+      "batch64_throughput_improvement": -0.15118960057407083,
+      "accuracy_within_0p2pct": false,
+      "speed_gate_pass": false,
+      "accepted": false
+    },
+    {
+      "variant": "B2_TORCH_COMPILE_FP32",
+      "status": "failed",
+      "accepted": false,
+      "reason": "TypeError(\"Too few parameters for <class 'torch._inductor.codegen.common.CSE'>; actual 1, expected 2\")"
+    }
+  ],
+  "recommendation": null,
+  "structural_audit": {
+    "B3_SDPA": {
+      "implemented_as_new_variant": false,
+      "reason": "F16 temporal-social attention adds pair-specific relation bias and relation value messages and requires explicit flattened neighbor-time weights; fused SDPA cannot reproduce this as a safe drop-in. Any nn.MultiheadAttention submodules already use PyTorch's inference SDPA path when eligible."
+    },
+    "B4_VECTORIZATION": {
+      "implemented_as_new_variant": false,
+      "reason": "Current graph construction uses batched cdist/topk/masks; H3 interpolation uses einsum; V2 correction is batched. No per-agent or per-candidate Python loop remains in these requested paths, so a no-retrain vectorization patch would be a no-op."
+    }
+  },
+  "failures": [
+    {
+      "variant": "B2_TORCH_COMPILE_FP32",
+      "phase": "compile_probe",
+      "error": "TypeError(\"Too few parameters for <class 'torch._inductor.codegen.common.CSE'>; actual 1, expected 2\")"
+    }
+  ]
+}

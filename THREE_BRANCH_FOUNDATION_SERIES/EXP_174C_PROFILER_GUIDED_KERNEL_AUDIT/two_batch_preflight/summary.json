@@ -1,0 +1,420 @@
+{
+  "experiment": "EXP-174C",
+  "training": false,
+  "model": "EXP173 F16 + H3 + Joint-V2",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "torch": "2.11.0+cu128",
+  "cases": [
+    {
+      "batch_size": 1,
+      "active_steps": 2,
+      "peak_vram_mib": 11.34521484375,
+      "operator_self_device_total_us": 0.0,
+      "operator_self_cpu_total_us": 23380.999999999985,
+      "cuda_timing_backend": "cuda_events_module_fallback"
+    },
+    {
+      "batch_size": 64,
+      "active_steps": 2,
+      "peak_vram_mib": 74.57958984375,
+      "operator_self_device_total_us": 0.0,
+      "operator_self_cpu_total_us": 31918.199999999968,
+      "cuda_timing_backend": "cuda_events_module_fallback"
+    }
+  ],
+  "module_ranges": [
+    {
+      "batch_size": 1,
+      "name": "step::model_forward",
+      "calls": 2,
+      "self_cpu_us": 3817.3000000000156,
+      "cpu_total_us": 33250.7,
+      "self_device_us": 0.0,
+      "device_total_us": 22445.631980895996,
+      "self_cpu_memory_bytes": -6848,
+      "self_device_memory_bytes": -3123200,
+      "flops": 0,
+      "device_fraction_of_step_total": 1.0
+    },
+    {
+      "batch_size": 1,
+      "name": "module::input_projection",
+      "calls": 2,
+      "self_cpu_us": 74.09999999999775,
+      "cpu_total_us": 308.09999999999775,
+      "self_device_us": 0.0,
+      "device_total_us": 345.11999785900116,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": 0,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.015375820032723555
+    },
+    {
+      "batch_size": 1,
+      "name": "module::drse_motion_encoder",
+      "calls": 2,
+      "self_cpu_us": 461.40000000000055,
+      "cpu_total_us": 1286.5999999999995,
+      "self_device_us": 0.0,
+      "device_total_us": 1034.6240401268005,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -115712,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.0460946718277923
+    },
+    {
+      "batch_size": 1,
+      "name": "module::robust_state",
+      "calls": 2,
+      "self_cpu_us": 1103.9000000000078,
+      "cpu_total_us": 2754.5999999999976,
+      "self_device_us": 0.0,
+      "device_total_us": 1604.3840050697327,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -285696,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.0714786737319431
+    },
+    {
+      "batch_size": 1,
+      "name": "module::f16_encoder_total",
+      "calls": 2,
+      "self_cpu_us": 2129.2999999999993,
+      "cpu_total_us": 10843.8,
+      "self_device_us": 0.0,
+      "device_total_us": 6948.15993309021,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -3535872,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.3095551035944968
+    },
+    {
+      "batch_size": 1,
+      "name": "module::temporal_transformer",
+      "calls": 2,
+      "self_cpu_us": 363.60000000000036,
+      "cpu_total_us": 1295.3999999999996,
+      "self_device_us": 0.0,
+      "device_total_us": 745.8879947662354,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -55296,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.03323087518324626
+    },
+    {
+      "batch_size": 1,
+      "name": "module::temporal_queries",
+      "calls": 2,
+      "self_cpu_us": 799.0,
+      "cpu_total_us": 2829.500000000002,
+      "self_device_us": 0.0,
+      "device_total_us": 1987.231969833374,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -815104,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.08853535385079617
+    },
+    {
+      "batch_size": 1,
+      "name": "module::joint_v2_decoder",
+      "calls": 2,
+      "self_cpu_us": 1175.899999999996,
+      "cpu_total_us": 4590.400000000003,
+      "self_device_us": 0.0,
+      "device_total_us": 2616.160035133362,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -1963008,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.11655541877190347
+    },
+    {
+      "batch_size": 1,
+      "name": "module::self_state_encoder",
+      "calls": 2,
+      "self_cpu_us": 0.0,
+      "cpu_total_us": 0.0,
+      "self_device_us": 0.0,
+      "device_total_us": 0.0,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": 0,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.0
+    },
+    {
+      "batch_size": 64,
+      "name": "step::model_forward",
+      "calls": 2,
+      "self_cpu_us": 5736.899999999987,
+      "cpu_total_us": 45961.2,
+      "self_device_us": 0.0,
+      "device_total_us": 26340.447425842285,
+      "self_cpu_memory_bytes": -6848,
+      "self_device_memory_bytes": -188740608,
+      "flops": 0,
+      "device_fraction_of_step_total": 1.0
+    },
+    {
+      "batch_size": 64,
+      "name": "module::input_projection",
+      "calls": 2,
+      "self_cpu_us": 84.29999999999859,
+      "cpu_total_us": 350.5000000000015,
+      "self_device_us": 0.0,
+      "device_total_us": 286.17599606513977,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": 0,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.010864507782976233
+    },
+    {
+      "batch_size": 64,
+      "name": "module::drse_motion_encoder",
+      "calls": 2,
+      "self_cpu_us": 603.5000000000055,
+      "cpu_total_us": 1734.2999999999993,
+      "self_device_us": 0.0,
+      "device_total_us": 1057.7279925346375,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -6857728,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.04015603742163141
+    },
+    {
+      "batch_size": 64,
+      "name": "module::robust_state",
+      "calls": 2,
+      "self_cpu_us": 1748.2000000000262,
+      "cpu_total_us": 4085.2000000000007,
+      "self_device_us": 0.0,
+      "device_total_us": 2012.3520493507385,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -17731584,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.07639779297660848
+    },
+    {
+      "batch_size": 64,
+      "name": "module::f16_encoder_total",
+      "calls": 2,
+      "self_cpu_us": 2902.3000000000193,
+      "cpu_total_us": 14563.000000000005,
+      "self_device_us": 0.0,
+      "device_total_us": 8096.672058105469,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -231723008,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.3073855173075733
+    },
+    {
+      "batch_size": 64,
+      "name": "module::temporal_transformer",
+      "calls": 2,
+      "self_cpu_us": 466.30000000000655,
+      "cpu_total_us": 1657.5000000000036,
+      "self_device_us": 0.0,
+      "device_total_us": 1247.7760314941406,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -3538944,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.04737110237049212
+    },
+    {
+      "batch_size": 64,
+      "name": "module::temporal_queries",
+      "calls": 2,
+      "self_cpu_us": 1046.4000000000106,
+      "cpu_total_us": 3638.4000000000033,
+      "self_device_us": 0.0,
+      "device_total_us": 1958.5599899291992,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -53231616,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.07435560825013475
+    },
+    {
+      "batch_size": 64,
+      "name": "module::joint_v2_decoder",
+      "calls": 2,
+      "self_cpu_us": 1520.399999999976,
+      "cpu_total_us": 5802.099999999995,
+      "self_device_us": 0.0,
+      "device_total_us": 3060.8959197998047,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -125159424,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.11620516046347784
+    },
+    {
+      "batch_size": 64,
+      "name": "module::self_state_encoder",
+      "calls": 2,
+      "self_cpu_us": 0.0,
+      "cpu_total_us": 0.0,
+      "self_device_us": 0.0,
+      "device_total_us": 0.0,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": 0,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.0
+    }
+  ],
+  "operator_categories": [
+    {
+      "batch_size": 1,
+      "category": "attention_normalization",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 312.4999999999982,
+      "cpu_fraction": 0.013365553226979101,
+      "calls": 32
+    },
+    {
+      "batch_size": 1,
+      "category": "decoder_interpolation",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 171.39999999999782,
+      "cpu_fraction": 0.007330738633933447,
+      "calls": 6
+    },
+    {
+      "batch_size": 1,
+      "category": "graph_and_mask",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 241.09999999999218,
+      "cpu_fraction": 0.010311791625678642,
+      "calls": 24
+    },
+    {
+      "batch_size": 1,
+      "category": "layout_and_copy",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 2899.000000000031,
+      "cpu_fraction": 0.12398956417604177,
+      "calls": 928
+    },
+    {
+      "batch_size": 1,
+      "category": "matrix_and_mlp",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 4538.900000000023,
+      "cpu_fraction": 0.19412771053419556,
+      "calls": 212
+    },
+    {
+      "batch_size": 1,
+      "category": "normalization_activation",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 1016.3000000000222,
+      "cpu_fraction": 0.04346691758265356,
+      "calls": 84
+    },
+    {
+      "batch_size": 1,
+      "category": "other",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 14201.799999999912,
+      "cpu_fraction": 0.6074077242205176,
+      "calls": 2844
+    },
+    {
+      "batch_size": 64,
+      "category": "attention_normalization",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 414.80000000001246,
+      "cpu_fraction": 0.01299572031004295,
+      "calls": 32
+    },
+    {
+      "batch_size": 64,
+      "category": "decoder_interpolation",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 261.50000000001455,
+      "cpu_fraction": 0.008192817890733652,
+      "calls": 6
+    },
+    {
+      "batch_size": 64,
+      "category": "graph_and_mask",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 299.5000000000041,
+      "cpu_fraction": 0.009383361217111379,
+      "calls": 24
+    },
+    {
+      "batch_size": 64,
+      "category": "layout_and_copy",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 4390.300000000072,
+      "cpu_fraction": 0.13754848331046476,
+      "calls": 932
+    },
+    {
+      "batch_size": 64,
+      "category": "matrix_and_mlp",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 5850.300000000005,
+      "cpu_fraction": 0.183290411113409,
+      "calls": 212
+    },
+    {
+      "batch_size": 64,
+      "category": "normalization_activation",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 1376.4000000000722,
+      "cpu_fraction": 0.04312273248491687,
+      "calls": 84
+    },
+    {
+      "batch_size": 64,
+      "category": "other",
+      "self_device_us": 0.0,
+      "device_fraction": 0.0,
+      "self_cpu_us": 19325.399999999794,
+      "cpu_fraction": 0.6054664736733216,
+      "calls": 2856
+    }
+  ],
+  "decision_rule": "Only a module with inclusive device time >=20% justifies targeted structural optimization",
+  "candidate_bottlenecks": [
+    {
+      "batch_size": 1,
+      "name": "module::f16_encoder_total",
+      "calls": 2,
+      "self_cpu_us": 2129.2999999999993,
+      "cpu_total_us": 10843.8,
+      "self_device_us": 0.0,
+      "device_total_us": 6948.15993309021,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -3535872,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.3095551035944968
+    },
+    {
+      "batch_size": 64,
+      "name": "module::f16_encoder_total",
+      "calls": 2,
+      "self_cpu_us": 2902.3000000000193,
+      "cpu_total_us": 14563.000000000005,
+      "self_device_us": 0.0,
+      "device_total_us": 8096.672058105469,
+      "self_cpu_memory_bytes": 0,
+      "self_device_memory_bytes": -231723008,
+      "flops": 0,
+      "device_fraction_of_step_total": 0.3073855173075733
+    }
+  ],
+  "next": "Consider EXP-174D only if a stable >=20% structural bottleneck is present in both relevant profiles",
+  "smoke": false
+}
