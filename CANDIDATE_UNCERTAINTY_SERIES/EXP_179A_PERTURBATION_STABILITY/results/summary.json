@@ -1,0 +1,165 @@
+{
+  "experiment": "EXP-179A",
+  "training": false,
+  "seed": 1,
+  "folds": [
+    "eth",
+    "hotel",
+    "univ",
+    "zara01",
+    "zara02"
+  ],
+  "checkpoint": "EXP-173 final F16 + H3 + Joint-V2, fixed mode identity",
+  "primary_perturbations": [
+    "original",
+    "p1_plus",
+    "p1_minus",
+    "p3_plus",
+    "p3_minus"
+  ],
+  "p1": "symmetric Gaussian noise, sigma=0.01 * per-sample median observed step",
+  "p2": "drop first observation and linearly realign 7 to 8 steps; supplementary only",
+  "p3": "last two velocity magnitudes x0.98/x1.02 with headings preserved",
+  "score_control": "source-fold cross-fitted 25-bin native-score calibration",
+  "quality": "ADE + 0.25 * FDE",
+  "feature_summary": [
+    {
+      "feature": "trajectory_U",
+      "macro_spearman": -0.036558124863069044,
+      "abs_macro_spearman": 0.036558124863069044,
+      "positive_folds": 1,
+      "negative_folds": 4,
+      "stable_sign_folds": 4,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "endpoint_U",
+      "macro_spearman": -0.0476508428869646,
+      "abs_macro_spearman": 0.0476508428869646,
+      "positive_folds": 1,
+      "negative_folds": 4,
+      "stable_sign_folds": 4,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "teacher_U_0p7_0p3",
+      "macro_spearman": -0.04213482323375733,
+      "abs_macro_spearman": 0.04213482323375733,
+      "positive_folds": 1,
+      "negative_folds": 4,
+      "stable_sign_folds": 4,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "logit_variance",
+      "macro_spearman": 0.04112192725878662,
+      "abs_macro_spearman": 0.04112192725878662,
+      "positive_folds": 3,
+      "negative_folds": 2,
+      "stable_sign_folds": 3,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "rank_variance",
+      "macro_spearman": -0.012928074494257957,
+      "abs_macro_spearman": 0.012928074494257957,
+      "positive_folds": 2,
+      "negative_folds": 3,
+      "stable_sign_folds": 3,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "v2_correction_variance",
+      "macro_spearman": -0.10744167597012926,
+      "abs_macro_spearman": 0.10744167597012926,
+      "positive_folds": 0,
+      "negative_folds": 5,
+      "stable_sign_folds": 5,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "endpoint_direction_variance",
+      "macro_spearman": 0.031809515317789694,
+      "abs_macro_spearman": 0.031809515317789694,
+      "positive_folds": 3,
+      "negative_folds": 2,
+      "stable_sign_folds": 3,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "p2_trajectory_U",
+      "macro_spearman": -0.020108768535082026,
+      "abs_macro_spearman": 0.020108768535082026,
+      "positive_folds": 2,
+      "negative_folds": 3,
+      "stable_sign_folds": 3,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "p2_endpoint_U",
+      "macro_spearman": -0.03294835211199846,
+      "abs_macro_spearman": 0.03294835211199846,
+      "positive_folds": 2,
+      "negative_folds": 3,
+      "stable_sign_folds": 3,
+      "cross_scene_gate": false
+    }
+  ],
+  "top5_discrimination": [
+    {
+      "fold": "eth",
+      "samples": 364,
+      "winner_uncertainty": 0.037881795316934586,
+      "nonwinner_uncertainty": 0.039071936160326004,
+      "nonwinner_minus_winner": 0.0011901416582986712,
+      "winner_lower_fraction": 0.48626373626373626
+    },
+    {
+      "fold": "hotel",
+      "samples": 1197,
+      "winner_uncertainty": 0.03442973643541336,
+      "nonwinner_uncertainty": 0.03846636414527893,
+      "nonwinner_minus_winner": 0.004036630038172007,
+      "winner_lower_fraction": 0.7151211361737677
+    },
+    {
+      "fold": "univ",
+      "samples": 24334,
+      "winner_uncertainty": 0.02153904363512993,
+      "nonwinner_uncertainty": 0.02167457900941372,
+      "nonwinner_minus_winner": 0.0001355358399450779,
+      "winner_lower_fraction": 0.5342730336155174
+    },
+    {
+      "fold": "zara01",
+      "samples": 2356,
+      "winner_uncertainty": 0.04805673286318779,
+      "nonwinner_uncertainty": 0.04820540174841881,
+      "nonwinner_minus_winner": 0.00014866689161863178,
+      "winner_lower_fraction": 0.4847198641765705
+    },
+    {
+      "fold": "zara02",
+      "samples": 5910,
+      "winner_uncertainty": 0.030746472999453545,
+      "nonwinner_uncertainty": 0.030979767441749573,
+      "nonwinner_minus_winner": 0.00023329269606620073,
+      "winner_lower_fraction": 0.6414551607445008
+    }
+  ],
+  "gate": {
+    "primary_feature": "trajectory_U",
+    "cross_scene_spearman_gate": false,
+    "macro_spearman": -0.036558124863069044,
+    "stable_sign_folds": 4,
+    "q1_quality": 1.6266239404678344,
+    "q4_quality": 1.646308708190918,
+    "q4_vs_q1_relative_gap": 0.012101609495199016,
+    "q1_q4_gap_at_least_10_percent": false,
+    "top5_nonwinner_minus_winner_uncertainty": 0.0011488534248201177,
+    "top5_positive_folds": 5,
+    "top5_discrimination_gate": true,
+    "passed": false,
+    "decision": "STOP_UNCERTAINTY_SCORER"
+  }
+}
