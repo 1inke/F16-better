@@ -1,0 +1,26 @@
+﻿feature,stored_as,higher_is_better,supplementary
+native_logit,native_logit,True,False
+native_probability,softmax(native_logit),True,False
+native_rank,"1=best_native_rank, 0=worst",True,False
+speed_mismatch,-absolute_speed_mismatch,True,False
+heading_mismatch,-absolute_heading_mismatch,True,False
+acceleration_mismatch,-L2_acceleration_mismatch,True,False
+turning_mismatch,-absolute_turning_mismatch,True,False
+mean_jerk,-mean_jerk_norm,True,False
+path_length_ratio,-abs(log(path_length_ratio)),True,False
+endpoint_speed_ratio,-abs(log(endpoint_speed_ratio)),True,False
+correction_t4,-V2_correction_norm_t4,True,False
+correction_t8,-V2_correction_norm_t8,True,False
+correction_t12,-V2_correction_norm_t12,True,False
+correction_total,-sum_V2_correction_norm,True,False
+correction_ratio,-correction_to_anchor_extent_ratio,True,False
+anchor_curvature,-mean_anchor_turn_angle,True,False
+endpoint_centrality,-mean_endpoint_pair_distance,True,False
+trajectory_centrality,-mean_trajectory_pair_distance,True,False
+h3_centrality,-weighted_H3_pair_distance,True,False
+score_weighted_centrality,-native_probability_weighted_trajectory_distance,True,False
+nearest_candidate_distance,-nearest_trajectory_distance,True,False
+endpoint_local_density,Gaussian_endpoint_density,True,False
+trajectory_local_density,Gaussian_trajectory_density,True,False
+mean_social_clearance,CV_proxy_mean_clearance_supplementary,True,True
+collision_count,-CV_proxy_collision_count_supplementary,True,True
