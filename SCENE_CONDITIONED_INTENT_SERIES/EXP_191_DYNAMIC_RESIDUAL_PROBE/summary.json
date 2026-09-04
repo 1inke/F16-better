@@ -1,0 +1,87 @@
+{
+  "experiment": "EXP-191",
+  "title": "Conditional Dynamic Residual Oracle Probe",
+  "decision": "DYNAMIC_RESIDUAL_NEUTRAL",
+  "description": "动态环境残差在 D+ 子集上未能带来 Regret 降低（变化 +0.00%）。",
+  "exposure_rate_pct": 33.33333333333333,
+  "dplus_sample_count": 893,
+  "total_test_samples": 2679,
+  "dplus_regret_gain_pct": 0.0,
+  "dplus_ade_gain_pct": 0.0,
+  "bootstrap_ci": [
+    0.0,
+    0.0
+  ],
+  "groups": {
+    "Group_A_Native_Baseline": {
+      "all": {
+        "selected_ade": 17.266769409179688,
+        "selected_fde": 34.580989837646484,
+        "mean_regret": 9.689974784851074,
+        "winner_hit": 0.0
+      },
+      "dplus": {
+        "selected_ade": 18.601478576660156,
+        "selected_fde": 36.70398712158203,
+        "mean_regret": 10.354490280151367,
+        "winner_hit": 0.0
+      }
+    },
+    "Group_B_Capacity_Control_Zero": {
+      "all": {
+        "selected_ade": 17.266769409179688,
+        "selected_fde": 34.580989837646484,
+        "mean_regret": 9.689974784851074,
+        "winner_hit": 0.0
+      },
+      "dplus": {
+        "selected_ade": 18.601478576660156,
+        "selected_fde": 36.70398712158203,
+        "mean_regret": 10.354490280151367,
+        "winner_hit": 0.0
+      }
+    },
+    "Group_C_Ped_Hazard_Control": {
+      "all": {
+        "selected_ade": 17.283384323120117,
+        "selected_fde": 34.619224548339844,
+        "mean_regret": 9.706589698791504,
+        "winner_hit": 0.0
+      },
+      "dplus": {
+        "selected_ade": 18.635639190673828,
+        "selected_fde": 36.769493103027344,
+        "mean_regret": 10.388648986816406,
+        "winner_hit": 0.0
+      }
+    },
+    "Group_D_NonPed_Residual_Hazard": {
+      "all": {
+        "selected_ade": 17.266769409179688,
+        "selected_fde": 34.580989837646484,
+        "mean_regret": 9.689974784851074,
+        "winner_hit": 0.0
+      },
+      "dplus": {
+        "selected_ade": 18.601478576660156,
+        "selected_fde": 36.70398712158203,
+        "mean_regret": 10.354490280151367,
+        "winner_hit": 0.0
+      }
+    },
+    "Group_E_Shuffled_Null_Control": {
+      "all": {
+        "selected_ade": 17.264421463012695,
+        "selected_fde": 34.576988220214844,
+        "mean_regret": 9.687626838684082,
+        "winner_hit": 0.0
+      },
+      "dplus": {
+        "selected_ade": 18.602712631225586,
+        "selected_fde": 36.7060546875,
+        "mean_regret": 10.355721473693848,
+        "winner_hit": 0.0
+      }
+    }
+  }
+}
