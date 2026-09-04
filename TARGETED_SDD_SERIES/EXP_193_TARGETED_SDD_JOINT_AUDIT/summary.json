@@ -1,0 +1,46 @@
+{
+  "experiment": "EXP-193",
+  "title": "SDD Targeted Joint Training Feasibility Study (C0 vs C1)",
+  "decision": "SDD_TARGETED_NEUTRAL_OR_SLIGHT_REGRESSION",
+  "description": "C1 相比 C0 未见明显改善（Selected ADE 变化 -1.51%，Regret 变化 -1.89%）。",
+  "results": {
+    "pre": {
+      "minADE20_px": 7.5767951011657715,
+      "minFDE20_px": 12.387171745300293,
+      "selected_ade_px": 17.266769409179688,
+      "selected_fde_px": 34.580989837646484,
+      "mean_regret_px": 9.689974784851074,
+      "collision_rate": 0.008585293019783502,
+      "near_collision_rate": 0.03546099290780142,
+      "little_selected_ade_px": 25.869281768798828,
+      "little_minADE20_px": 11.060526847839355
+    },
+    "c0": {
+      "minADE20_px": 7.5193772315979,
+      "minFDE20_px": 12.2734375,
+      "selected_ade_px": 17.620100021362305,
+      "selected_fde_px": 35.27189636230469,
+      "mean_regret_px": 10.100722312927246,
+      "collision_rate": 0.0048525569242254575,
+      "near_collision_rate": 0.036207540126913025,
+      "little_selected_ade_px": 25.90020179748535,
+      "little_minADE20_px": 11.045108795166016
+    },
+    "c1": {
+      "minADE20_px": 7.595273494720459,
+      "minFDE20_px": 12.424442291259766,
+      "selected_ade_px": 17.886747360229492,
+      "selected_fde_px": 35.7289924621582,
+      "mean_regret_px": 10.291471481323242,
+      "collision_rate": 0.007465472191116088,
+      "near_collision_rate": 0.03434117207913401,
+      "little_selected_ade_px": 26.298404693603516,
+      "little_minADE20_px": 11.150404930114746
+    }
+  },
+  "gains": {
+    "ade_gain_pct": -1.5133134235555352,
+    "regret_gain_pct": -1.8884705715735681,
+    "little_gain_pct": -1.5374509404665162
+  }
+}
