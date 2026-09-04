@@ -1,0 +1,124 @@
+{
+  "experiment": "EXP-187A End-to-End Encoder Contribution Ablation",
+  "complete": true,
+  "available_stage_runs": 40,
+  "expected_stage_runs": 40,
+  "protocol": {
+    "seeds": [
+      1
+    ],
+    "folds": [
+      "eth",
+      "hotel",
+      "univ",
+      "zara01",
+      "zara02"
+    ],
+    "stages": [
+      "h3",
+      "v2"
+    ],
+    "variants": {
+      "e0": "f0_baseline",
+      "e1": "f3_factorized",
+      "e2": "f4_relation_tokens",
+      "f16": "f16_temporal_social_cross"
+    },
+    "macro": "five-fold equal weight",
+    "decoder": "matched H3 then fresh jointly trainable Joint-V2",
+    "references": "E2/F16 from EXP-173 exact protocol"
+  },
+  "macro": {
+    "1": {
+      "e0": {
+        "h3": {
+          "minADE20": 0.23996787667274475,
+          "minFDE20": 0.39942930936813353,
+          "same_path_FDE": 0.46984330415725706,
+          "J": 0.4396825313568115,
+          "top1_ADE": 0.5414923071861267,
+          "top1_FDE": 1.1120179772377015,
+          "parameters_total": 188568
+        },
+        "v2": {
+          "minADE20": 0.2302883595228195,
+          "minFDE20": 0.37720235288143156,
+          "same_path_FDE": 0.4456678807735443,
+          "J": 0.4188895359635353,
+          "top1_ADE": 0.5433586299419403,
+          "top1_FDE": 1.120053482055664,
+          "parameters_total": 215082
+        }
+      },
+      "e1": {
+        "h3": {
+          "minADE20": 0.23399079740047454,
+          "minFDE20": 0.39066166877746583,
+          "same_path_FDE": 0.46667091846466063,
+          "J": 0.42932163178920746,
+          "top1_ADE": 0.518611216545105,
+          "top1_FDE": 1.066936445236206,
+          "parameters_total": 295474
+        },
+        "v2": {
+          "minADE20": 0.22405862510204316,
+          "minFDE20": 0.36571453511714935,
+          "same_path_FDE": 0.43565156757831575,
+          "J": 0.40691589266061784,
+          "top1_ADE": 0.519259262084961,
+          "top1_FDE": 1.0670008778572082,
+          "parameters_total": 321988
+        }
+      },
+      "e2": {
+        "h3": {
+          "minADE20": 0.23184872269630433,
+          "minFDE20": 0.3851797729730606,
+          "same_path_FDE": 0.46259992122650145,
+          "J": 0.4244386091828346,
+          "top1_ADE": 0.519385290145874,
+          "top1_FDE": 1.069729256629944,
+          "parameters_total": 295474
+        },
+        "v2": {
+          "minADE20": 0.22790855765342713,
+          "minFDE20": 0.37024207711219786,
+          "same_path_FDE": 0.4394212275743484,
+          "J": 0.41302959620952606,
+          "top1_ADE": 0.5197825014591217,
+          "top1_FDE": 1.068327295780182,
+          "parameters_total": 321988
+        }
+      },
+      "f16": {
+        "h3": {
+          "minADE20": 0.2294980764389038,
+          "minFDE20": 0.3808199465274811,
+          "same_path_FDE": 0.45726354122161866,
+          "J": 0.41990804970264434,
+          "top1_ADE": 0.5127438187599183,
+          "top1_FDE": 1.0545517444610595,
+          "parameters_total": 295474
+        },
+        "v2": {
+          "minADE20": 0.2181049883365631,
+          "minFDE20": 0.3532153725624084,
+          "same_path_FDE": 0.42357916533946993,
+          "J": 0.3947126746177673,
+          "top1_ADE": 0.51841242313385,
+          "top1_FDE": 1.0756638288497924,
+          "parameters_total": 321988
+        }
+      }
+    }
+  },
+  "decision": {
+    "seed": 1,
+    "E0_macro_J": 0.4188895359635353,
+    "E1_macro_J": 0.40691589266061784,
+    "E1_vs_E0_J_gain_pct": 2.85842502018474,
+    "positive_folds": 3,
+    "verdict": "INCONCLUSIVE",
+    "next_action": "REVIEW_FOLD_STABILITY_BEFORE_MULTI_SEED"
+  }
+}
