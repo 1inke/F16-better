@@ -1,0 +1,54 @@
+{
+  "experiment": "EXP-190",
+  "title": "Nonlinear Segment-wise Path Affordance Reranking Probe",
+  "decision": "EXP190_MARGINAL_PATH_BENEFIT",
+  "description": "非线性路径示能带来了温和改善（Regret 下降 0.68%，Winner 命中率提升 +0.00 百分点），CI 为 [-0.030, 0.210] px。",
+  "benchmarks": {
+    "B0_Native_Baseline": {
+      "selected_ade": 17.266769409179688,
+      "selected_fde": 34.580989837646484,
+      "winner_hit_rate": 0.0,
+      "mean_regret": 9.689974784851074,
+      "p95_regret": 38.330987548828126,
+      "obstacle_crossing_rate": 0.6345651362448675
+    },
+    "B1_Linear_Ridge_35D": {
+      "selected_ade": 17.207448959350586,
+      "selected_fde": 34.47073745727539,
+      "winner_hit_rate": 0.0,
+      "mean_regret": 9.630654335021973,
+      "p95_regret": 37.6289669036865,
+      "obstacle_crossing_rate": 0.6718924972004479
+    },
+    "B4_Nonlinear_MLP_35D": {
+      "selected_ade": 17.20081901550293,
+      "selected_fde": 34.431312561035156,
+      "winner_hit_rate": 0.0,
+      "mean_regret": 9.6240234375,
+      "p95_regret": 38.00827445983884,
+      "obstacle_crossing_rate": 0.6345651362448675
+    },
+    "B5_Path_Rays_MLP_51D": {
+      "selected_ade": 17.252769470214844,
+      "selected_fde": 34.54868698120117,
+      "winner_hit_rate": 0.0,
+      "mean_regret": 9.675973892211914,
+      "p95_regret": 38.330987548828126,
+      "obstacle_crossing_rate": 0.7465472191116088
+    },
+    "B6_Counterfactual_Swap": {
+      "selected_ade": 17.237110137939453,
+      "selected_fde": 34.52192306518555,
+      "winner_hit_rate": 0.0,
+      "mean_regret": 9.660314559936523,
+      "p95_regret": 38.330987548828126,
+      "obstacle_crossing_rate": 0.6345651362448675
+    }
+  },
+  "bootstrap_ci": [
+    -0.029874581843614578,
+    0.20987995117902739
+  ],
+  "regret_reduction_pct": 0.6806142308458838,
+  "ade_reduction_pct": 0.38194981420031016
+}
