@@ -1,0 +1,36 @@
+{
+  "experiment": "EXP-192",
+  "title": "ETH Hard-Fold Targeted Feasibility Study (Smoke Test C0 vs C1)",
+  "decision": "TARGETED_ETH_NEUTRAL_OR_SLIGHT_REGRESSION",
+  "description": "C1 相比 C0 未见明显改善（Selected ADE 变化 -0.46%，碰撞率变化 -0.27 pp）。",
+  "results": {
+    "pre": {
+      "minADE20": 0.4086463749408722,
+      "minFDE20": 0.5742117762565613,
+      "selected_ade": 0.9670272469520569,
+      "selected_fde": 1.9023586511611938,
+      "collision_rate": 0.027472527472527472,
+      "mean_regret": 0.5583807826042175
+    },
+    "c0": {
+      "minADE20": 0.4106887876987457,
+      "minFDE20": 0.5809255838394165,
+      "selected_ade": 0.9620068073272705,
+      "selected_fde": 1.8900376558303833,
+      "collision_rate": 0.02197802197802198,
+      "mean_regret": 0.5513180494308472
+    },
+    "c1": {
+      "minADE20": 0.4120994806289673,
+      "minFDE20": 0.5892243981361389,
+      "selected_ade": 0.9664680361747742,
+      "selected_fde": 1.8985071182250977,
+      "collision_rate": 0.024725274725274724,
+      "mean_regret": 0.5543685555458069
+    }
+  },
+  "gains": {
+    "ade_gain_pct": -0.46374192090160243,
+    "collision_drop_pp": -0.27472527472527464
+  }
+}
