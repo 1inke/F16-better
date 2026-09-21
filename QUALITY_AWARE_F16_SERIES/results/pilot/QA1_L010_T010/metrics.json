@@ -1,0 +1,66 @@
+{
+  "checkpoint": "C:\\Users\\linke\\Documents\\New project\\QUALITY_AWARE_F16_SERIES\\results\\pilot\\QA1_L010_T010\\best_selected.pth",
+  "fold": "eth",
+  "seed": 1,
+  "temperature_scale": 1.0,
+  "val": {
+    "generation": {
+      "min_ade20": 0.21902620792388916,
+      "min_fde20": 0.3957306444644928,
+      "endpoint_diversity": 2.4140141010284424,
+      "trajectory_diversity": 1.0694574117660522
+    },
+    "selection": {
+      "selected_ade": 0.5437949895858765,
+      "selected_fde": 1.1966402530670166,
+      "selection_regret": 0.3247687518596649,
+      "exact_oracle_hit": 0.18733509234828497,
+      "near_oracle_05": 0.24934036939313983
+    },
+    "probability": {
+      "oracle_nll": 2.6619436740875244,
+      "soft_ce": 2.7223916053771973,
+      "brier_score": 0.911341667175293,
+      "top1_ece": 0.13566180105298997,
+      "mean_max_prob": 0.11367858201265335,
+      "mean_entropy": 2.7354021072387695
+    },
+    "raw": {
+      "samples": 1516,
+      "mean_logit": 2.3505783081054688,
+      "std_logit": 1.1551275253295898,
+      "min_logit": -2.289541244506836,
+      "max_logit": 4.8489155769348145
+    }
+  },
+  "test": {
+    "generation": {
+      "min_ade20": 0.4067092835903168,
+      "min_fde20": 0.588384747505188,
+      "endpoint_diversity": 2.820377826690674,
+      "trajectory_diversity": 1.2423434257507324
+    },
+    "selection": {
+      "selected_ade": 0.9587117433547974,
+      "selected_fde": 1.9011616706848145,
+      "selection_regret": 0.5520024299621582,
+      "exact_oracle_hit": 0.07417582417582418,
+      "near_oracle_05": 0.17857142857142858
+    },
+    "probability": {
+      "oracle_nll": 3.241029739379883,
+      "soft_ce": 3.187168598175049,
+      "brier_score": 0.966515839099884,
+      "top1_ece": 0.06803676807372779,
+      "mean_max_prob": 0.1285763531923294,
+      "mean_entropy": 2.667706251144409
+    },
+    "raw": {
+      "samples": 364,
+      "mean_logit": 1.9872463941574097,
+      "std_logit": 1.2531821727752686,
+      "min_logit": -2.2244772911071777,
+      "max_logit": 5.027737617492676
+    }
+  }
+}

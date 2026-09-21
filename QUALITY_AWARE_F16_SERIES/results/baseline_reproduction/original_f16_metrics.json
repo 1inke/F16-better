@@ -1,0 +1,66 @@
+{
+  "checkpoint": "C:\\Users\\linke\\Documents\\New project\\E2_F16_END_TO_END_COMPARISON_SERIES\\EXP_173_E2_F16_END_TO_END\\results\\eth\\v2\\e3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth",
+  "fold": "eth",
+  "seed": 1,
+  "temperature_scale": 1.0,
+  "val": {
+    "generation": {
+      "min_ade20": 0.2195655256509781,
+      "min_fde20": 0.39603129029273987,
+      "endpoint_diversity": 2.4301395416259766,
+      "trajectory_diversity": 1.0819569826126099
+    },
+    "selection": {
+      "selected_ade": 0.5388688445091248,
+      "selected_fde": 1.1872947216033936,
+      "selection_regret": 0.3193033039569855,
+      "exact_oracle_hit": 0.20184696569920843,
+      "near_oracle_05": 0.25065963060686014
+    },
+    "probability": {
+      "oracle_nll": 2.6452317237854004,
+      "soft_ce": 2.7116453647613525,
+      "brier_score": 0.9062057137489319,
+      "top1_ece": 0.13575449733845008,
+      "mean_max_prob": 0.11490514129400253,
+      "mean_entropy": 2.741166830062866
+    },
+    "raw": {
+      "samples": 1516,
+      "mean_logit": 1.797347068786621,
+      "std_logit": 1.0714157819747925,
+      "min_logit": -2.5288074016571045,
+      "max_logit": 4.331544876098633
+    }
+  },
+  "test": {
+    "generation": {
+      "min_ade20": 0.4086463749408722,
+      "min_fde20": 0.5742117166519165,
+      "endpoint_diversity": 2.8879880905151367,
+      "trajectory_diversity": 1.2771481275558472
+    },
+    "selection": {
+      "selected_ade": 0.9670271873474121,
+      "selected_fde": 1.9023586511611938,
+      "selection_regret": 0.5583807826042175,
+      "exact_oracle_hit": 0.07142857142857142,
+      "near_oracle_05": 0.1510989010989011
+    },
+    "probability": {
+      "oracle_nll": 3.1530137062072754,
+      "soft_ce": 3.1239805221557617,
+      "brier_score": 0.9615136384963989,
+      "top1_ece": 0.05108259835249774,
+      "mean_max_prob": 0.13200297951698303,
+      "mean_entropy": 2.6771671772003174
+    },
+    "raw": {
+      "samples": 364,
+      "mean_logit": 1.51533842086792,
+      "std_logit": 1.147834062576294,
+      "min_logit": -2.4637768268585205,
+      "max_logit": 4.523078441619873
+    }
+  }
+}

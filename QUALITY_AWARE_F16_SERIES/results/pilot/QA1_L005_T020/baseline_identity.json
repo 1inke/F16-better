@@ -1,0 +1,32 @@
+{
+  "architecture": "FrontEncoderASTRA",
+  "variant": "f16_temporal_social_cross",
+  "decoder": "v2_joint_wide_endpoint_correction",
+  "source_checkpoint": "C:\\Users\\linke\\Documents\\New project\\E2_F16_END_TO_END_COMPARISON_SERIES\\EXP_173_E2_F16_END_TO_END\\results\\eth\\v2\\e3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth",
+  "seed": 1,
+  "fold": "eth",
+  "candidate_count": 20,
+  "total_parameter_count": 321988,
+  "trainable_parameter_count": 321988,
+  "original_loss_components": [
+    "WeightedTrajectoryLoss",
+    "ModeQueryLoss.classification",
+    "ModeQueryLoss.endpoint",
+    "ModeQueryLoss.diversity",
+    "ModeQueryLoss.short_horizon",
+    "oracle_coverage_attraction"
+  ],
+  "quality_loss_type": "ade_soft_distribution",
+  "lambda_q": 0.05,
+  "quality_tau": 0.2,
+  "optimizer": "AdamW",
+  "learning_rate_groups": {
+    "encoder": 2.5e-05,
+    "decoder_non_score": 0.000125,
+    "score_head": 0.00025
+  },
+  "epochs": 20,
+  "batch_size": 64,
+  "validation_split": "scene_tail_holdout_0.05",
+  "checkpoint_criterion": "val_selected_ade_with_minade_guard"
+}

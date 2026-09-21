@@ -1,0 +1,53 @@
+{
+  "fold": "eth",
+  "seed": 1,
+  "lambda_q": 0.05,
+  "quality_tau": 0.05,
+  "elapsed_seconds": 800.2644640000071,
+  "val": {
+    "generation": {
+      "min_ade20": 0.21928498148918152,
+      "min_fde20": 0.39598482847213745,
+      "endpoint_diversity": 2.408952236175537,
+      "trajectory_diversity": 1.0705370903015137
+    },
+    "selection": {
+      "selected_ade": 0.5427089333534241,
+      "selected_fde": 1.19553542137146,
+      "selection_regret": 0.3234238922595978,
+      "exact_oracle_hit": 0.12598944591029024,
+      "near_oracle_05": 0.25131926121372034
+    },
+    "probability": {
+      "oracle_nll": 2.6626639366149902,
+      "soft_ce": 2.7210123538970947,
+      "brier_score": 0.91068035364151,
+      "top1_ece": 0.1371588199976881,
+      "mean_max_prob": 0.1141604408621788,
+      "mean_entropy": 2.741060733795166
+    }
+  },
+  "test": {
+    "generation": {
+      "min_ade20": 0.4079935550689697,
+      "min_fde20": 0.5838831067085266,
+      "endpoint_diversity": 2.8232884407043457,
+      "trajectory_diversity": 1.2470389604568481
+    },
+    "selection": {
+      "selected_ade": 0.9642509818077087,
+      "selected_fde": 1.8997101783752441,
+      "selection_regret": 0.5562573671340942,
+      "exact_oracle_hit": 0.057692307692307696,
+      "near_oracle_05": 0.15384615384615385
+    },
+    "probability": {
+      "oracle_nll": 3.2208902835845947,
+      "soft_ce": 3.158621072769165,
+      "brier_score": 0.9675416946411133,
+      "top1_ece": 0.045504545813405906,
+      "mean_max_prob": 0.1323280781507492,
+      "mean_entropy": 2.6704976558685303
+    }
+  }
+}
