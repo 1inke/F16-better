@@ -1,54 +1,62 @@
 """
 Gradient Direction Similarity and Redundancy Audit.
 
-Analyzes the gradient direction of logits for:
-1. Native classification supervision:
-   g_orig = 0.5 * [(p - q_orig) + 0.25 * (p - one_hot(winner))]
-2. Proposed auxiliary soft CE:
-   g_new = p - q_new
+Enforces Butler Rule: research.semantic_objective_alignment
+Computes exact analytic gradient vectors w.r.t logits for:
+1. Pure Soft Distribution Gradients (strictly isolates target distribution shape):
+   g_soft_orig = p - q_orig
+   g_soft_cand = p - q_cand
+2. Full Training Objective Gradients (strictly symmetric with true loss formulation):
+   g_total_orig = w_cls * [(p - q_orig) + w_hard * (p - y_winner)]
+   g_total_cand = w_cls * [(p - q_cand) + w_hard * (p - y_winner)]
+3. Soft-Only Objective Gradients (when evaluating removal of hard CE):
+   g_softonly_cand = w_cls * (p - q_cand)
 """
 from __future__ import annotations
 
 import numpy as np
 
 
-def compute_gradient_vectors(
+def softmax(logits: np.ndarray) -> np.ndarray:
+    scaled = logits - np.max(logits, axis=-1, keepdims=True)
+    exp = np.exp(scaled)
+    return exp / np.sum(exp, axis=-1, keepdims=True)
+
+
+def compute_gradient_vectors_all_modes(
     logits: np.ndarray,
     q_orig: np.ndarray,
-    q_new: np.ndarray,
+    q_cand: np.ndarray,
     winner: np.ndarray,
     hard_weight: float = 0.25,
     cls_weight: float = 0.5,
-) -> tuple[np.ndarray, np.ndarray]:
+) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     """
-    Computes exact analytic gradient vectors w.r.t logits.
-    logits: [N, K]
-    q_orig, q_new: [N, K]
-    winner: [N] (winner indices)
+    Computes mathematically symmetric pairs of gradient vectors w.r.t logits.
 
-    Returns:
-        g_orig: [N, K]
-        g_new: [N, K]
+    Returns dict mapping mode_name -> (g_orig, g_cand)
     """
-    # p = softmax(logits)
-    scaled_logits = logits - np.max(logits, axis=-1, keepdims=True)
-    exp_logits = np.exp(scaled_logits)
-    p = exp_logits / np.sum(exp_logits, axis=-1, keepdims=True)
-
-    # One-hot winner
+    p = softmax(logits)
     N, K = logits.shape
     y_winner = np.zeros_like(p)
     y_winner[np.arange(N), winner] = 1.0
 
-    # Native classification gradient
+    # 1. Pure soft gradients
     g_soft_orig = p - q_orig
-    g_hard_orig = p - y_winner
-    g_orig = cls_weight * (g_soft_orig + hard_weight * g_hard_orig)
+    g_soft_cand = p - q_cand
 
-    # Auxiliary candidate gradient
-    g_new = p - q_new
+    # 2. Symmetric full objective gradients (with hard CE on both sides)
+    g_full_orig = cls_weight * (g_soft_orig + hard_weight * (p - y_winner))
+    g_full_cand = cls_weight * (g_soft_cand + hard_weight * (p - y_winner))
 
-    return g_orig, g_new
+    # 3. Soft-only candidate vs full native original
+    g_softonly_cand = cls_weight * g_soft_cand
+
+    return {
+        "pure_soft": (g_soft_orig, g_soft_cand),
+        "full_objective": (g_full_orig, g_full_cand),
+        "soft_only_vs_full": (g_full_orig, g_softonly_cand),
+    }
 
 
 def analyze_gradient_similarity(
@@ -70,7 +78,6 @@ def analyze_gradient_similarity(
     # Sign conflict ratio
     sign_orig = np.sign(g_orig)
     sign_new = np.sign(g_new)
-    # Exclude exact zeros
     conflict_mask = (sign_orig != sign_new) & (sign_orig != 0) & (sign_new != 0)
     sign_conflict_ratio = np.mean(conflict_mask.astype(np.float64), axis=-1)
 

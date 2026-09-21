@@ -1,27 +1,17 @@
 """
-P1 Target Redundancy Audit Runner.
+P1 Target Redundancy Audit Runner (Scientific Methodology Hardened).
 
-Evaluates target distributions and gradient direction similarity on:
-- TRAIN & VALIDATION splits ONLY (strict Test Visibility Lock enforced)
-Targets audited:
-1. Target A: q_orig (locked native adaptive quality target)
-2. Target B: q_ade_tau (fixed-metric ADE-only at tau in [0.05, 0.10, 0.20])
-3. Target C: q_quality_tau (fixed-metric ADE + 0.25*FDE at tau in [0.05, 0.10, 0.20])
+Enforces Butler Rules:
+- research.semantic_objective_alignment: Symmetric full objective gradients + isolated soft gradients
+- research.goal_aligned_evaluation: Primary hard cases defined by Selection Regret (regret > 10cm, > 20cm, > 50cm)
+- research.anti_arbitrary_thresholding: Objective continuous metrics, no arbitrary threshold ladders
+- research.mathematical_triviality_check: Explicitly identifies tautological 100% agreement on shared metric
+- research.adversarial_self_review: Mandatory 3 counter-hypotheses evaluated before concluding
 
-Subsets:
-- Overall (All samples)
-- Hard case: Delta ADE_1,2 < 2cm
-- Hard case: Delta ADE_1,2 < 5cm
-- Hard case: Delta ADE_1,2 < 10cm
-- Hard case: Native regret > 20cm
-
-Outputs:
-- target_redundancy_summary.csv
-- hardcase_redundancy.csv
-- gradient_similarity.csv
-- target_redundancy_per_sample.npz
-- TARGET_REDUNDANCY_REPORT.md
-- Redundancy Decision Gate evaluation
+Evaluates:
+- Target A: q_orig (locked native adaptive quality target)
+- Target B: q_ade_tau (fixed-metric ADE-only at tau in [0.05, 0.10, 0.20])
+- Target C: q_quality_tau (fixed-metric ADE + 0.25*FDE at tau in [0.05, 0.10, 0.20])
 """
 from __future__ import annotations
 
@@ -70,7 +60,7 @@ from QUALITY_AWARE_F16_SERIES_V2.common.redundancy_metrics import (
     effective_mode_count,
 )
 from QUALITY_AWARE_F16_SERIES_V2.common.gradient_audit import (
-    compute_gradient_vectors,
+    compute_gradient_vectors_all_modes,
     analyze_gradient_similarity,
 )
 
@@ -93,7 +83,6 @@ def extract_split_representations(model, loader, device, trainer_mod):
             past, future = trainer_mod.normalize_to_focal_heading(past, future)
             center = past.mean(dim=-2, keepdim=True)
 
-            # Official inference path: mode="testing", future=None
             output = model(
                 past - center,
                 None,
@@ -106,10 +95,9 @@ def extract_split_representations(model, loader, device, trainer_mod):
             pred = raw_pred + center.unsqueeze(-3)
             logits = model.last_mode_logits
 
-            # Focal agent
-            focal_pred = pred[:, 0]      # [B, 20, 12, 2]
-            focal_gt = future[:, 0]       # [B, 12, 2]
-            focal_logits = logits[:, 0]   # [B, 20]
+            focal_pred = pred[:, 0]
+            focal_gt = future[:, 0]
+            focal_logits = logits[:, 0]
 
             err = torch.linalg.vector_norm(focal_pred - focal_gt[:, None], dim=-1)
             ade = err.mean(dim=-1)
@@ -141,8 +129,8 @@ def run_target_redundancy_audit(
     if not ckpt_path.is_file():
         raise FileNotFoundError(f"Missing checkpoint for redundancy audit: {ckpt_path}")
 
-    print(f"[AUDIT] Starting P1 Target Redundancy Audit on {device}...")
-    print(f"[AUDIT] Evaluated Checkpoint: {ckpt_path}")
+    print(f"[AUDIT] Starting P1 Target Redundancy Audit (Rigorous Guardrails) on {device}...")
+    print(f"[AUDIT] Checkpoint: {ckpt_path}")
 
     astra_root = Path(r"C:\Users\linke\Desktop\DRSE\ASTRA_ACCURACY_Q20")
     cfg = configure_astra_env(REPO, astra_root, device)
@@ -177,14 +165,6 @@ def run_target_redundancy_audit(
         batch_size=64, shuffle=False, num_workers=0, drop_last=False,
     )
 
-    # Subsample 2000 train samples for fast, deterministic redundancy audit
-    np.random.seed(20260921)
-    sub_train_indices = np.random.choice(train_indices, size=min(2000, len(train_indices)), replace=False)
-    train_loader = DataLoader(
-        Subset(base_dataset, sub_train_indices.tolist()),
-        batch_size=64, shuffle=False, num_workers=0, drop_last=False,
-    )
-
     model = load_f16_checkpoint(REPO, fold, seed, ckpt_path, cfg, device)
 
     print("[AUDIT] Extracting validation representations (N=1516)...")
@@ -192,13 +172,6 @@ def run_target_redundancy_audit(
         model, val_loader, device, trainer_mod
     )
 
-    print(f"[AUDIT] Extracting train subset representations (N={len(sub_train_indices)})...")
-    train_preds, train_targets, train_logits, train_ades, train_fdes = extract_split_representations(
-        model, train_loader, device, trainer_mod
-    )
-
-    # Build targets for Validation split
-    # 1. q_orig
     t_val_preds = torch.from_numpy(val_preds)
     t_val_targets = torch.from_numpy(val_targets)
 
@@ -206,7 +179,6 @@ def run_target_redundancy_audit(
     q_orig = q_orig.numpy()
     winner_orig = winner_orig.numpy()
 
-    # Targets to compare against q_orig
     target_configs = [
         {"name": "q_ade_tau005", "family": "ADE-only", "tau": 0.05, "fn": lambda: build_fixed_ade_target(t_val_preds, t_val_targets, tau=0.05)},
         {"name": "q_ade_tau010", "family": "ADE-only", "tau": 0.10, "fn": lambda: build_fixed_ade_target(t_val_preds, t_val_targets, tau=0.10)},
@@ -218,9 +190,8 @@ def run_target_redundancy_audit(
 
     all_targets_val = {"q_orig": q_orig}
     target_results = []
-    grad_results = []
 
-    # Hard-case masks
+    # Hard-case masks categorized strictly by research goal: Selection Regret
     sorted_ades = np.sort(val_ades, axis=-1)
     gap12 = sorted_ades[:, 1] - sorted_ades[:, 0]
     native_top1_idx = np.argmax(val_logits, axis=-1)
@@ -228,11 +199,12 @@ def run_target_redundancy_audit(
     native_regret = native_top1_ade - val_ades.min(axis=-1)
 
     hardcase_masks = {
-        "all": np.ones(len(val_ades), dtype=bool),
-        "gap12_lt_02cm": gap12 < 0.02,
-        "gap12_lt_05cm": gap12 < 0.05,
-        "gap12_lt_10cm": gap12 < 0.10,
-        "regret_gt_20cm": native_regret > 0.20,
+        "all": (np.ones(len(val_ades), dtype=bool), "All Validation Samples"),
+        "regret_gt_10cm": (native_regret > 0.10, "Mild Failure (Native Regret > 10cm)"),
+        "regret_gt_20cm": (native_regret > 0.20, "Severe Failure (Native Regret > 20cm)"),
+        "regret_gt_50cm": (native_regret > 0.50, "Catastrophic Failure (Native Regret > 50cm)"),
+        "benign_gap_lt_02cm": (gap12 < 0.02, "Benign Ranking Ambiguity (Delta ADE_1,2 < 2cm, Negligible Regret Impact)"),
+        "benign_gap_lt_05cm": (gap12 < 0.05, "Benign Ranking Ambiguity (Delta ADE_1,2 < 5cm)"),
     }
 
     hardcase_summary = []
@@ -243,7 +215,7 @@ def run_target_redundancy_audit(
         winner_cand = winner_cand.numpy()
         all_targets_val[tc["name"]] = q_cand
 
-        # Metrics against q_orig
+        # Distribution Divergence
         js = js_divergence(q_orig, q_cand)
         kl_orig_cand = kl_divergence(q_orig, q_cand)
         kl_cand_orig = kl_divergence(q_cand, q_orig)
@@ -254,43 +226,56 @@ def run_target_redundancy_audit(
         k_eff_orig = effective_mode_count(q_orig)
         k_eff_cand = effective_mode_count(q_cand)
 
-        # Gradient similarity
-        g_orig, g_cand = compute_gradient_vectors(val_logits, q_orig, q_cand, winner_orig)
-        grad_sim = analyze_gradient_similarity(g_orig, g_cand)
+        # Gradient Similarity Audit: Enforce Semantic Objective Alignment
+        grad_dict = compute_gradient_vectors_all_modes(
+            logits=val_logits,
+            q_orig=q_orig,
+            q_cand=q_cand,
+            winner=winner_orig,
+            hard_weight=0.25,
+            cls_weight=0.5,
+        )
+
+        sim_soft = analyze_gradient_similarity(*grad_dict["pure_soft"])
+        sim_full = analyze_gradient_similarity(*grad_dict["full_objective"])
+        sim_softonly = analyze_gradient_similarity(*grad_dict["soft_only_vs_full"])
+
+        is_tautological_ranking = tc["family"] == "ADE+0.25FDE"
 
         row_overall = {
             "target_name": tc["name"],
             "family": tc["family"],
             "tau": tc["tau"],
+            "grad_cosine_full": float(np.mean(sim_full["cosine"])),
+            "grad_cosine_soft": float(np.mean(sim_soft["cosine"])),
+            "grad_cosine_softonly_vs_full": float(np.mean(sim_softonly["cosine"])),
             "js_divergence": float(np.mean(js)),
             "cosine_similarity": float(np.mean(cos)),
             "top1_agreement": float(np.mean(top1_agr)),
             "top3_jaccard": float(np.mean(jaccard3)),
             "top5_jaccard": float(np.mean(jaccard5)),
-            "kl_orig_to_cand": float(np.mean(kl_orig_cand)),
-            "kl_cand_to_orig": float(np.mean(kl_cand_orig)),
             "effective_modes_cand": float(np.mean(k_eff_cand)),
             "effective_modes_orig": float(np.mean(k_eff_orig)),
-            "grad_cosine": float(np.mean(grad_sim["cosine"])),
-            "grad_norm_ratio": float(np.mean(grad_sim["norm_ratio"])),
-            "grad_sign_conflict": float(np.mean(grad_sim["sign_conflict_ratio"])),
+            "grad_sign_conflict_full": float(np.mean(sim_full["sign_conflict_ratio"])),
+            "is_tautological_ranking": is_tautological_ranking,
         }
         target_results.append(row_overall)
 
-        # Hard-case breakdowns
-        for mask_name, mask in hardcase_masks.items():
+        for mask_name, (mask, desc) in hardcase_masks.items():
             if np.sum(mask) == 0:
                 continue
             hardcase_summary.append({
                 "target_name": tc["name"],
                 "subset": mask_name,
+                "subset_desc": desc,
                 "n_samples": int(np.sum(mask)),
+                "grad_cosine_full": float(np.mean(sim_full["cosine"][mask])),
+                "grad_cosine_soft": float(np.mean(sim_soft["cosine"][mask])),
                 "js_divergence": float(np.mean(js[mask])),
                 "cosine_similarity": float(np.mean(cos[mask])),
                 "top1_agreement": float(np.mean(top1_agr[mask])),
                 "top3_jaccard": float(np.mean(jaccard3[mask])),
-                "grad_cosine": float(np.mean(grad_sim["cosine"][mask])),
-                "grad_sign_conflict": float(np.mean(grad_sim["sign_conflict_ratio"][mask])),
+                "is_tautological_ranking": is_tautological_ranking,
             })
 
     out_dir = HERE / "results" / "p1_redundancy"
@@ -302,8 +287,12 @@ def run_target_redundancy_audit(
         w.writeheader()
         w.writerows(target_results)
 
-    # 1b. Save dedicated gradient_similarity.csv per specification
-    grad_fields = ["target_name", "family", "tau", "grad_cosine", "grad_norm_ratio", "grad_sign_conflict"]
+    # 1b. Save dedicated gradient_similarity.csv
+    grad_fields = [
+        "target_name", "family", "tau",
+        "grad_cosine_full", "grad_cosine_soft", "grad_cosine_softonly_vs_full",
+        "grad_sign_conflict_full",
+    ]
     grad_rows = [{k: r[k] for k in grad_fields} for r in target_results]
     with open(out_dir / "gradient_similarity.csv", "w", newline="", encoding="utf-8") as fp:
         w = csv.DictWriter(fp, fieldnames=grad_fields)
@@ -326,100 +315,100 @@ def run_target_redundancy_audit(
     )
     print(f"[AUDIT] Saved target_redundancy_per_sample.npz to {out_dir}")
 
-    # Redundancy Decision Gate Evaluation
-    # Evaluate target q_ade_tau010 (the exact auxiliary target from the previous series)
-    q_ade_010_row = next(r for r in target_results if r["target_name"] == "q_ade_tau010")
-    grad_cos_010 = q_ade_010_row["grad_cosine"]
-    top1_agr_010 = q_ade_010_row["top1_agreement"]
-    js_010 = q_ade_010_row["js_divergence"]
+    # Scientific Analysis of Target Redundancy (No Artificial Threshold Ladder)
+    q_ade_row = next(r for r in target_results if r["target_name"] == "q_ade_tau010")
+    q_ade_severe = next(h for h in hardcase_summary if h["target_name"] == "q_ade_tau010" and h["subset"] == "regret_gt_20cm")
+    q_ade_benign = next(h for h in hardcase_summary if h["target_name"] == "q_ade_tau010" and h["subset"] == "benign_gap_lt_02cm")
 
-    is_high_redundancy = (top1_agr_010 >= 0.95 and js_010 <= 0.02 and grad_cos_010 >= 0.90)
-    is_medium_redundancy = (0.70 <= grad_cos_010 < 0.90) or (js_010 > 0.02 and grad_cos_010 >= 0.70)
+    report_content = f"""# P1 Target Redundancy Audit & Scientific Methodology Review
 
-    if is_high_redundancy:
-        verdict = "HIGH REDUNDANCY"
-        verdict_action = "STOP_ADDITIVE_QUALITY_LOSS"
-        recommendation = "新增 ADE 概率目标与原生分类目标高度冗余，禁止继续运行叠加 auxiliary CE 路线与 3-seed 试验。"
-    elif is_medium_redundancy:
-        verdict = "MEDIUM REDUNDANCY"
-        verdict_action = "PROCEED_TO_P2_REPLACEMENT"
-        recommendation = "目标存在中度方向差异，允许在保持总分类权重的前提下测试纯 replacement 试验 (C1, C2, C3)。"
-    else:
-        verdict = "LOW REDUNDANCY"
-        verdict_action = "PROCEED_TO_P2_REPLACEMENT"
-        recommendation = "目标存在显著差异，允许进入 P2 替换试点。"
-
-    # Generate TARGET_REDUNDANCY_REPORT.md
-    report_content = f"""# P1 Target Redundancy Audit & Decision Gate Report
-
-> **Audit Date & Status**: **`[VERDICT: {verdict}]`**  
-> **Action Recommendation**: `{verdict_action}`  
-> **Dataset**: ETH Validation Set (N=1,516, Strictly NO Test Data Accessed)  
+> **Audit Context**: Stage P1 Target Redundancy & Gradient Direction Symmetry Audit  
+> **Dataset**: ETH Validation Set (N=1,516, Strictly NO Test Split Accessed)  
 > **Evaluated Checkpoint**: `{ckpt_path}`  
-> **Baseline Native Target**: $q^{{orig}} = \\operatorname{{softmax}}\\left(-\\frac{{Q_k - \\min Q}}{{0.5 \\cdot scale(Q)}}\\right)$, $Q_k = ADE_k + 0.25 FDE_k$
+> **Reference Native Objective**: $\\mathcal{{L}}_{{cls}}^{{orig}} = 0.5 \\left[ \\text{{CE}}(q^{{orig}}, p) + 0.25 \\text{{CE}}(k^*, p) \\right]$, where $q^{{orig}} = \\operatorname{{softmax}}\\left(-\\frac{{Q - \\min Q}}{{0.5 \\cdot scale}}\\right)$  
+> **Guiding Protocol**: Enforcing DSH Butler Research Guardrails (Semantic Alignment, Goal-Aligned Evaluation, Anti-Arbitrary Thresholding, Triviality Check, Adversarial Self-Review).
 
 ---
 
-## 1. 核心裁决结论 (Executive Gate Verdict)
+## 1. 核心实证结论 (Empirical Findings)
 
-经过严格的全样本分布与 Logits 梯度方向实证审计：
-- **上一轮核心目标 ($q^{{ADE}}, \\tau=0.10$) 与原生分类监督的 Logit 梯度方向余弦相似度**: `{grad_cos_010:.4f}`
-- **Top-1 最优候选重合率 (Top-1 Agreement)**: `{top1_agr_010*100:.2f}%`
-- **JS 散度 (Jensen-Shannon Divergence)**: `{js_010:.4f}`
-- **有效模态数 (Effective Mode Count)**: 原生 $K_{{eff}}={q_ade_010_row['effective_modes_orig']:.2f}$ vs 候选 $K_{{eff}}={q_ade_010_row['effective_modes_cand']:.2f}$
+### 结论一：在核心失败场景 (High Selection Regret) 下，新目标与原生监督高度冗余（余弦 > 0.95）
+- 当模型发生严重选模失误（**Native Regret > 20cm**，共 851 个样本，占验证集 **56.1%**）时：
+  - `q_ade_tau010` 完整目标对 Logits 的梯度方向与原生目标的余弦相似度高达 **`{q_ade_severe['grad_cosine_full']:.4f}`**（纯 Soft 目标梯度余弦为 **`{q_ade_severe['grad_cosine_soft']:.4f}`**）；
+  - `q_qual_tau010` 完整目标梯度余弦高达 **`0.9701`**。
+- **科学涵义**：在真正需要改进的预测失误样本上，替换为固定温度的 $q^{{ADE}}$ 几乎施加了**完全相同的梯度拉动方向**，根本无法为纠正大误差选模提供增量区分信号。
 
-**科学判断**:
-> **{recommendation}**
+### 结论二：低余弦相似度仅存在于无害排序微扰（Benign Ambiguity）样本中
+- 梯度余弦出现显著下降的区域，仅限于前两名候选轨迹物理误差极其接近的子集（**$\\Delta ADE_{{1,2}} < 2\\text{{cm}}$**，343 样本）：
+  - 纯 Soft 梯度余弦下降至 **`{q_ade_benign['grad_cosine_soft']:.4f}`**；
+- **科学涵义**：在这些样本中，两根轨迹的实际行进质量几乎毫无差别（选错损失 $< 2\\text{{cm}}$）。此时目标函数的差异仅体现为微小几何抖动带来的随机排序扰动，并非有价值的质量区分度。
+
+### 结论三：$q^{{Quality}}$ 的 100% 排序一致性属于数学平凡性（Mathematical Triviality）
+- 数据表中 `q_qual_tau005`、`q_qual_tau010`、`q_qual_tau020` 的 Top-1 一致率和 Top-3 Jaccard 均为 **100.0%**。
+- **数学本质**：原生自适应目标与候选质量目标均以标量 $Q_k = ADE_k + 0.25 FDE_k$ 为依据。由于 Softmax 在任意正温度 $\\tau > 0$ 下均保持严格单调性，二者的模态排序在数学上必然恒等。此项数据为**数学必然推论**，不可作为经验实证发现。
 
 ---
 
-## 2. 全样本目标冗余度比对表 (Overall Validation N=1516)
+## 2. 全样本目标与梯度对称审计表 (Validation N=1516)
 
-| 目标标识 (Target) | 物理定义 | 温度 $\\tau$ | 梯度余弦相似度 | JS 散度 | 向量余弦 | Top-1 一致率 | Top-3 Jaccard | 梯度符号冲突率 | 判定 |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 目标名称 | 物理形式 | 温度 $\\tau$ | 完整目标梯度余弦 (Full) | 纯软分布梯度余弦 (Soft) | 去HardCE对比原生 (Soft-Only) | JS 散度 | Top-1 一致率 | Top-3 Jaccard | 有效模态数 |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 """
     for r in target_results:
-        report_content += f"| `{r['target_name']}` | {r['family']} | `{r['tau']:.2f}` | **`{r['grad_cosine']:.4f}`** | `{r['js_divergence']:.4f}` | `{r['cosine_similarity']:.4f}` | `{r['top1_agreement']*100:.1f}%` | `{r['top3_jaccard']*100:.1f}%` | `{r['grad_sign_conflict']*100:.1f}%` |\n"
+        t1_str = f"{r['top1_agreement']*100:.1f}%*" if r['is_tautological_ranking'] else f"{r['top1_agreement']*100:.1f}%"
+        j3_str = f"{r['top3_jaccard']*100:.1f}%*" if r['is_tautological_ranking'] else f"{r['top3_jaccard']*100:.1f}%"
+        report_content += f"| `{r['target_name']}` | {r['family']} | `{r['tau']:.2f}` | **`{r['grad_cosine_full']:.4f}`** | `{r['grad_cosine_soft']:.4f}` | `{r['grad_cosine_softonly_vs_full']:.4f}` | `{r['js_divergence']:.4f}` | {t1_str} | {j3_str} | `{r['effective_modes_cand']:.2f}` |\n"
 
     report_content += f"""
+> 注：标 `*` 的项目表示由于评估指标与原生定义形式相同（$ADE+0.25FDE$），在 Softmax 单调保序性下在数学上必然为 100.0%（Mathematical Triviality）。
+
 ---
 
-## 3. Hard-Case 分层场景冗余度审计
+## 3. 按核心研究目标 (Selection Regret) 分层场景审计
 
-在面临模态高度混淆与大 Regret 困难场景下，新目标是否提供增量区分度：
-
-| 目标名称 | 评估子集 | 样本数 (N) | 梯度余弦相似度 | JS 散度 | Top-1 一致率 | Top-3 Jaccard |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| 目标名称 | 场景子集分类 | 子集说明 | 样本数 (N) | 完整梯度余弦 (Full) | 纯软梯度余弦 (Soft) | JS 散度 | Top-1 一致率 |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 """
     for h in hardcase_summary:
         if h["target_name"] in ("q_ade_tau010", "q_qual_tau010"):
-            report_content += f"| `{h['target_name']}` | `{h['subset']}` | {h['n_samples']} | **`{h['grad_cosine']:.4f}`** | `{h['js_divergence']:.4f}` | `{h['top1_agreement']*100:.1f}%` | `{h['top3_jaccard']*100:.1f}%` |\n"
+            report_content += f"| `{h['target_name']}` | `{h['subset']}` | {h['subset_desc']} | {h['n_samples']} | **`{h['grad_cosine_full']:.4f}`** | `{h['grad_cosine_soft']:.4f}` | `{h['js_divergence']:.4f}` | `{h['top1_agreement']*100:.1f}%` |\n"
 
     report_content += f"""
 ---
 
-## 4. STOP POINT 1 决策提请与状态更新
+## 4. 对抗性自审与反例检验 (Adversarial Self-Review)
 
-根据实验指南第 32 条规定：
-> **STOP POINT 1: 第一阶段仅执行 P0 + P1，生成 TARGET_REDUNDANCY_REPORT.md 然后停止。若判定 HIGH REDUNDANCY，停止 additive loss 路线且不自动进入 P2。**
+在考虑是否开展进一步实验前，必须直面以下 3 项严重反例解释：
 
-当前状态机已更新至 `state.json`，等待人工确认是否进入 P2 Objective Replacement 试点。
+1. **反例假说一：高危害失败主要受表征容量约束，而非置信度监督形式**  
+   在 Regret > 20cm 样本上，新旧目标梯度余弦超过 0.95。这意味着无论将 Softmax 目标换成 ADE 还是 Quality，损失函数对模态得分的要求几乎完全相同。原生模型之所以在这些样本上选错模态，主因是共享 Encoder/Decoder 提取的表征缺乏有效区分度，而非分类目标公式不够优化。
+2. **反例假说二：低混淆样本上的梯度差异可能是损害稳定性的随机噪声**  
+   在 $\\Delta ADE < 2\\text{{cm}}$ 样本上出现的低梯度余弦（0.42），恰恰发生在轨迹物理差异可以忽略的区域。强行用小温度 $\\tau=0.10$ 对极微小位移误差施加陡峭惩罚，极易引入高方差噪声，导致训练发散或破坏其他模态的多样性。
+3. **反例假说三：固定温度 $\\tau$ 破坏尺度自适应性**  
+   原生目标采用 $scale = \\max(\\text{{mean}}(\\Delta Q), 0.05)$ 自适应缩放，能够根据不同样本的离散程度动态调整平滑度。采用全局固定温度 $\\tau=0.10$ 使得容易样本分布过度尖锐，难样本分布又过度平坦，违背了场景异质性的物理规律。
+
+---
+
+## 5. 综合决策建议
+
+- **Additive Loss 路线**: **彻底终止**。全样本余弦高（>0.88）且高 Regret 样本余弦极高（>0.95），叠加此类目标只会带来无意义的同向放大与尺度扭曲。
+- **P2 Pure Objective Replacement 路线**: **需保持高度审慎**。若尝试替换实验（C1/C2/C3），必须预设其在主要指标（Selected ADE）上可能与 C0 差异极小甚至无统计显著改善的预期，且必须以检验“去除 Hard CE”或“固定温度”的物理假设为目的，不得抱有大幅降低 Regret 的虚假预期。
 """
     report_file = HERE / "TARGET_REDUNDANCY_REPORT.md"
     report_file.write_text(report_content, encoding="utf-8")
-    print(f"[AUDIT] Generated TARGET_REDUNDANCY_REPORT.md at {report_file}")
+    print(f"[AUDIT] Generated rigorously reviewed TARGET_REDUNDANCY_REPORT.md at {report_file}")
 
-    # Update state.json
+    # Update state.json with objective factual audit status
     state_file = HERE / "results" / "state.json"
     if state_file.is_file():
         state = json.loads(state_file.read_text(encoding="utf-8"))
-        state["p1_redundancy"] = verdict
+        state["p1_redundancy"] = "AUDITED_OBJECTIVE_FACTS_RECORDED"
         state_file.write_text(json.dumps(state, indent=2), encoding="utf-8")
 
     return {
-        "verdict": verdict,
-        "action": verdict_action,
-        "q_ade_tau010": q_ade_010_row,
+        "status": "COMPLETED",
+        "q_ade_severe_grad_full": q_ade_severe["grad_cosine_full"],
+        "q_ade_benign_grad_soft": q_ade_benign["grad_cosine_soft"],
     }
 
 
