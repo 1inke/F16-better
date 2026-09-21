@@ -38,6 +38,6 @@
    $$
    \mathcal{L}_{quality} = -\sum_{k=1}^{20} q_k \log \text{softmax}(s_k)
    $$
-   严禁 $ADE_k$ 对生成器反向传播，确保 Quality Loss 只对分数头提供概率校准梯度，杜绝欺骗性退化。
+   严禁 $ADE_k$ 对生成器反向传播；特别注意：Quality target 的 ADE 分支被 detach，但 logits 梯度仍可经 score head 反传到共享 decoder/encoder，因此不能宣称其对候选生成完全无影响。
 3. **单主体监督原则**：
    第一阶段仅对 Focal Agent（索引 `[:, 0]`）计算 $\mathcal{L}_{quality}$，邻居 Agents 维持原生监督，保证因果归因纯净。

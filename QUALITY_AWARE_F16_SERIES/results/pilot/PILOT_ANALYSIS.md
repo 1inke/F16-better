@@ -1,6 +1,7 @@
 # Quality-Aware F16 Training Series: Pilot Phase Analysis (STOP POINT 2)
 
 > **Execution Protocol**: Seed 1 Pilot Sweep (ETH Fold)  
+> **Protocol Qualification**: *This pilot used a modified training protocol (differential learning rates, grad clip 1.0, validation-selected ADE checkpointing) and is not a strict EXP-173 reproduction.*  
 > **Pilot Verdict**: **`[VERDICT: QUALITY_PROB_WEAK]`**  
 > **Verdict Summary**: Top-1 与概率质量均无实质性增益  
 > **Best Model Configuration**: `QA1_L005_T020` (`lambda_q=0.05`, `tau=0.2`)
@@ -69,7 +70,7 @@
 当前阶段已完备交付：
 1. `TRAINING_LOSS_MAP.md` $\checkmark$
 2. `MODEL_OUTPUT_AUDIT.md` $\checkmark$
-3. `reproduction_metrics.csv` & `REPRODUCTION_AUDIT.md` (Q1 Gate PASS) $\checkmark$
+3. `reproduction_metrics.csv` & `REPRODUCTION_AUDIT.md` (QA-framework baseline consistency check) $\checkmark$
 4. `lambda_sweep.csv`, `tau_sweep.csv`, `generation_metrics.csv`, `selection_metrics.csv`, `probability_metrics.csv` $\checkmark$
 5. `PILOT_ANALYSIS.md` $\checkmark$
 
