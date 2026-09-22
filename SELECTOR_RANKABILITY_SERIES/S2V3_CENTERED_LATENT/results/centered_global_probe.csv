@@ -1,0 +1,10 @@
+Configuration,Model_Type,Feature_Groups,Latent_Type,Latent_Key,ADE_Macro_m,ADE_Micro_m,FDE_Macro_m,ADE_Regret_m,Oracle_Hit,NearOracle05,PairwiseAcc_05,PairwiseAcc_10,Collision_Social,Mean_Alpha,Latency_ms,Params
+Native_G0,baseline,g0,None,None,0.5184,0.5054,1.0757,0.3003,17.74%,34.92%,82.15%,83.41%,6.68%,0.00,0.106,0
+G0_L3c,linear_residual,g0,centered,l3,0.5171,0.5060,1.0723,0.2990,18.81%,34.79%,82.15%,83.43%,6.65%,0.06,0.203,70
+G0_L4c,linear_residual,g0,centered,l4,0.5305,0.5069,1.0947,0.3124,20.05%,35.35%,80.27%,81.54%,6.50%,0.10,0.299,134
+G0_L5c,linear_residual,g0,centered,l5,0.5157,0.5051,1.0668,0.2976,18.89%,34.92%,81.89%,83.19%,6.55%,0.29,0.203,76
+G0_G1_L3c,linear_residual,g0+g1,centered,l3,0.5101,0.4951,1.0558,0.2920,18.14%,34.70%,82.54%,83.81%,6.60%,0.16,0.208,80
+G0_G1_L4c,linear_residual,g0+g1,centered,l4,0.5148,0.4973,1.0708,0.2967,19.76%,35.36%,81.82%,83.07%,6.56%,0.09,0.300,144
+G0_G1_L5c,linear_residual,g0+g1,centered,l5,0.5087,0.4911,1.0536,0.2906,18.68%,34.98%,82.52%,83.79%,6.56%,0.16,0.217,86
+G0_G1_raw_L5,linear_residual,g0+g1,raw,l5,0.5075,0.4888,1.0505,0.2894,19.37%,35.40%,82.67%,83.94%,6.64%,0.30,0.216,86
+G0_G1_L5c_mlp,mlp_residual,g0+g1,centered,l5,0.5146,0.5091,1.0669,0.2965,14.36%,36.04%,81.98%,83.29%,6.38%,0.24,3.362,9857

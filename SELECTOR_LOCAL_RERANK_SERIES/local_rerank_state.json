@@ -1,0 +1,70 @@
+{
+  "jobs": {
+    "stage0/s6f_local_oracle_bound": {
+      "status": "success",
+      "started_at": "2026-09-21T03:23:17.724730+00:00",
+      "command": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\S6F_LOCAL_ORACLE\\run_s6f_local_oracle_bound.py"
+      ],
+      "log": "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\logs\\stage0__s6f_local_oracle_bound.log",
+      "finished_at": "2026-09-21T03:23:18.349742+00:00",
+      "returncode": 0
+    },
+    "stage1/s6a_local_k_sweep": {
+      "status": "success",
+      "started_at": "2026-09-21T03:23:18.350780+00:00",
+      "command": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\S6A_LOCAL_K_SWEEP\\run_s6a_local_k_sweep.py"
+      ],
+      "log": "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\logs\\stage1__s6a_local_k_sweep.log",
+      "finished_at": "2026-09-21T03:23:23.851584+00:00",
+      "returncode": 0
+    },
+    "stage2/s6b_hardcase_training": {
+      "status": "success",
+      "started_at": "2026-09-21T03:31:45.174820+00:00",
+      "command": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\S6B_HARDCASE_TRAINING\\run_s6b_hardcase_training.py"
+      ],
+      "log": "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\logs\\stage2__s6b_hardcase_training.log",
+      "finished_at": "2026-09-21T03:35:35.990398+00:00",
+      "returncode": 0
+    },
+    "stage2/s6c_near_oracle_loss": {
+      "status": "success",
+      "started_at": "2026-09-21T03:35:35.993265+00:00",
+      "command": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\S6C_NEAR_ORACLE_LOSS\\run_s6c_near_oracle_loss.py"
+      ],
+      "log": "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\logs\\stage2__s6c_near_oracle_loss.log",
+      "finished_at": "2026-09-21T03:41:29.191794+00:00",
+      "returncode": 0
+    },
+    "stage3/s6d_gate_local": {
+      "status": "success",
+      "started_at": "2026-09-21T03:42:01.440193+00:00",
+      "command": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\S6D_GATE_LOCAL\\run_s6d_gate_local.py"
+      ],
+      "log": "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\logs\\stage3__s6d_gate_local.log",
+      "finished_at": "2026-09-21T03:43:10.836250+00:00",
+      "returncode": 0
+    },
+    "stage3/s6e_adaptive_k": {
+      "status": "success",
+      "started_at": "2026-09-21T03:43:10.840816+00:00",
+      "command": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\S6E_ADAPTIVE_K\\run_s6e_adaptive_k.py"
+      ],
+      "log": "C:\\Users\\linke\\Documents\\New project\\SELECTOR_LOCAL_RERANK_SERIES\\logs\\stage3__s6e_adaptive_k.log",
+      "finished_at": "2026-09-21T03:45:58.919680+00:00",
+      "returncode": 0
+    }
+  }
+}

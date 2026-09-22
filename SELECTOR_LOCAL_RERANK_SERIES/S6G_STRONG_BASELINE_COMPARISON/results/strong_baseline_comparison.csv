@@ -1,0 +1,8 @@
+Method,ADE_Macro_m,FDE_Macro_m,ADE_Regret_m,NearOracle05,Collision_Social,Intervention_Rate,False_Intervention,Latency_ms,Params
+Native (Frozen F16 Top-1),0.5184,1.0757,0.3003,34.92%,6.68%,0.00%,0.00%,0.000,0
+Global Linear Residual (G0-G2),0.5135,1.0640,0.2954,35.07%,6.64%,11.25%,1.15%,0.158,23
+Global Transformer Residual (G0-G4) [Strongest Global],0.5077,1.0543,0.2895,35.82%,6.31%,20.84%,2.50%,4.620,52865
+"Local Linear Residual (K=3, G0-G4+GL) [Best Deterministic]",0.5104,1.0601,0.2923,35.09%,6.71%,16.50%,3.03%,0.016,39
+"Local Tiny Set Attention (K=5, G0-G4+GL) [Best Local Neural]",0.5088,1.0560,0.2907,35.51%,6.71%,18.20%,2.68%,4.532,36033
+Gate + Strongest Global (D3 @ 20% Budget),0.5119,1.0612,0.2938,35.40%,6.03%,9.41%,0.57%,0.120,54365
+Gate + Best Local (D4 @ 20% Budget),0.5127,1.0628,0.2946,35.60%,6.01%,9.91%,0.53%,0.100,37533

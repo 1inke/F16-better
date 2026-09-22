@@ -1,0 +1,20 @@
+{
+  "selection_constraints": {
+    "max_ade_degradation_pct": 1.0,
+    "max_fde_degradation_pct": 1.0,
+    "max_collision_increase_pp": 0.1
+  },
+  "native_baseline": {
+    "ade": 0.5184,
+    "fde": 1.0757,
+    "collision": 6.68
+  },
+  "methods": [
+    "linear_residual_g012",
+    "mlp_residual_g0124",
+    "native_plus_mpn_risk_grid",
+    "mpn_shield_k20",
+    "two_stage_gate_mpn",
+    "cv_shield_k20"
+  ]
+}

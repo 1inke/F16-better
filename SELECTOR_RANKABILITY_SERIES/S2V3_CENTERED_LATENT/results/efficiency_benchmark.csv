@@ -1,0 +1,5 @@
+System,Model,Params,Param_Reduction,FLOPs_B1,FLOP_Reduction,CPU_B1_Mean_ms,CPU_B1_p95_ms,CPU_B64_Mean_ms,GPU_B1_Mean_ms,GPU_B1_Median_ms,GPU_B1_p95_ms,GPU_B64_Mean_ms,Peak_VRAM_B64_MB
+Selector-Only,Global_Transformer_Residual,21121,0.00%,"468,480",0.00%,0.5497,1.2782,1.4747,2.7956,1.3581,6.5822,2.7166,11.07
+Selector-Only,Tiny_L5_Linear_Residual,87,99.59%,"3,440",99.27%,0.0207,0.0327,0.0480,0.4665,0.1565,3.7061,0.4717,9.64
+End-to-End (F16 + Selector),F16 + Global_Transformer,"343,109",0.00%,N/A,0.00%,N/A,N/A,N/A,38.7430,37.3056,47.9811,N/A,N/A
+End-to-End (F16 + Selector),F16 + Tiny_L5_Linear,"322,075",6.13%,N/A,0.00%,N/A,N/A,N/A,36.4139,36.1040,45.1050,N/A,N/A

@@ -1,0 +1,77 @@
+{
+  "repo_root": "C:/Users/linke/Documents/New project",
+  "work_root": "SELECTOR_BENCHMARK_SERIES",
+  "python_executable": "C:/coding_toobox/envs/astra2/python.exe",
+  "folds": [
+    "eth",
+    "hotel",
+    "univ",
+    "zara01",
+    "zara02"
+  ],
+  "screen_seed": 1,
+  "confirm_seeds": [
+    2,
+    3
+  ],
+  "cache_shard_size": 2048,
+  "cache_root": "SELECTOR_BENCHMARK_SERIES/cache",
+  "feature_root": "SELECTOR_BENCHMARK_SERIES/features",
+  "result_root": "SELECTOR_BENCHMARK_SERIES/results",
+  "finalists_file": "SELECTOR_BENCHMARK_SERIES/results/finalists.json",
+  "feature_groups": [
+    "g0",
+    "g1",
+    "g2",
+    "g3",
+    "g4"
+  ],
+  "finalist_top_k": 6,
+  "selection_constraints": {
+    "max_ade_degradation_pct": 1.0,
+    "max_fde_degradation_pct": 1.0,
+    "max_collision_increase_pp": 0.1
+  },
+  "scripts": {
+    "build_candidate_cache": "SELECTOR_BENCHMARK_SERIES/build_candidate_cache.py",
+    "build_feature_bank": "SELECTOR_BENCHMARK_SERIES/build_feature_bank.py",
+    "run_selector_benchmark": "SELECTOR_BENCHMARK_SERIES/run_selector_benchmark.py",
+    "aggregate_results": "SELECTOR_BENCHMARK_SERIES/aggregate_selector_results.py",
+    "select_finalists": "SELECTOR_BENCHMARK_SERIES/select_finalists.py",
+    "final_report": "SELECTOR_BENCHMARK_SERIES/build_final_report.py"
+  },
+  "screen_methods": [
+    "native",
+    "cv_shield_k5",
+    "cv_shield_k20",
+    "mpn_shield_k5",
+    "mpn_shield_k20",
+    "mbr_uniform",
+    "mbr_native_weighted",
+    "native_plus_mbr_grid",
+    "native_plus_cv_risk_grid",
+    "native_plus_mpn_risk_grid",
+    "native_plus_smoothness_grid",
+    "consensus_plus_mpn_risk",
+    "ridge_utility_g01",
+    "linear_pointwise_g012",
+    "linear_pairwise_g012",
+    "linear_residual_g012",
+    "gbdt_pointwise_g012",
+    "lambdarank_g012",
+    "mlp_pointwise_g01",
+    "mlp_pointwise_g012",
+    "mlp_pairwise_g0124",
+    "mlp_listwise_g0124",
+    "mlp_residual_g0124",
+    "mlp_multitask_g01234",
+    "deepsets_listwise_g0124",
+    "tcn_pairwise_g0124",
+    "gru_pairwise_g0124",
+    "tiny_transformer_listwise_g0124",
+    "two_stage_gate_mpn"
+  ],
+  "env": {
+    "PYTHONPATH": "C:/Users/linke/Documents/New project"
+  }
+}
