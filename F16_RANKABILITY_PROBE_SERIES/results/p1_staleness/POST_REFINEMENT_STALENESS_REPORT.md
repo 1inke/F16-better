@@ -62,9 +62,9 @@
 ### 科学发现归因：
 当前 F16 架构中，`score_head` 直接从 `[mode, source_anchors]` 输出评分，随后 `refiner` 独立输出 $\Delta A$ 得到 `corrected_anchors` 与最终轨迹。
 实证数据表明：
-- **Anchor 修正具有显著的非保序性**：随着微调几何位移变大，修正前的质量排序完全被打乱，导致原始评分头对最终轨迹的判断产生“盲人摸象”式的严重时序滞后（Score Staleness）。
-- **这就是为什么此前单纯在分类损失上做 soft-CE 或调温度收效甚微的本质原因**：损失函数是在强迫模型为一个它还未看到其几何形态的最终轨迹打分！
+- **微调修正后确实存在局部 Top-1 模态转移**：全体验证集中有 31.33% 的样本在 Refiner 微调后最优候选发生转移，且原生评分头对最终轨迹的秩相关出现轻微衰减（$\Delta \rho = +0.0254$），呈现出一定的 Score Staleness 现象。
+- **定位为次要结构现象而非唯一主导根因**：Score staleness 是一个可观察到的结构现象，但后续 R1/R2 探针结果表明，仅显式提供 post-correction geometry 带来的性能增益较小（约 1.9 mm），因此它目前更适合被视为次要影响因素，暂不能直接断言为 Selection 问题的唯一本质根因。
 
-### 建议进入 P2 时的核心对照假说：
-- **假说 1 (R1: Pre-correction refit)**：若只给原生输入 `[mode, source_anchors]`，即便使用最先进的 Pairwise RankNet 损失，由于物理几何信息缺失，Regret Closure 也将受到严格限制。
-- **假说 2 (R2: Post-correction probe)**：若将输入切换为 `[mode, corrected_anchors]`（维度同样为 70 维，严格单变量控制），若 Regret 显著闭合，将实锤证明 **架构评分时序倒置是 Selection Bottleneck 的主要根源**！
+### P2 对照假说验证：
+- **假说 1 (R1: Pre-correction refit)**：仅重训评分损失，检验原输入信息是否已被充分利用。
+- **假说 2 (R2: Post-correction probe)**：将输入替换为微调后几何 `[mode, corrected_anchors]`（严格单变量控制 70 维），精确量化后置几何修正带来的真实闭合增益。

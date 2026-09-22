@@ -27,27 +27,32 @@ def compute_gradient_vectors_all_modes(
     logits: np.ndarray,
     q_orig: np.ndarray,
     q_cand: np.ndarray,
-    winner: np.ndarray,
+    winner_orig: np.ndarray,
+    winner_cand: np.ndarray,
     hard_weight: float = 0.25,
     cls_weight: float = 0.5,
 ) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     """
     Computes mathematically symmetric pairs of gradient vectors w.r.t logits.
+    winner_orig: [N] ground-truth winner for original objective (e.g. argmin(ADE + 0.25*FDE))
+    winner_cand: [N] ground-truth winner for candidate objective (e.g. argmin(ADE))
 
     Returns dict mapping mode_name -> (g_orig, g_cand)
     """
     p = softmax(logits)
     N, K = logits.shape
-    y_winner = np.zeros_like(p)
-    y_winner[np.arange(N), winner] = 1.0
+    y_orig = np.zeros_like(p)
+    y_cand = np.zeros_like(p)
+    y_orig[np.arange(N), winner_orig] = 1.0
+    y_cand[np.arange(N), winner_cand] = 1.0
 
     # 1. Pure soft gradients
     g_soft_orig = p - q_orig
     g_soft_cand = p - q_cand
 
-    # 2. Symmetric full objective gradients (with hard CE on both sides)
-    g_full_orig = cls_weight * (g_soft_orig + hard_weight * (p - y_winner))
-    g_full_cand = cls_weight * (g_soft_cand + hard_weight * (p - y_winner))
+    # 2. Symmetric full objective gradients (with respective hard CE on each side)
+    g_full_orig = cls_weight * (g_soft_orig + hard_weight * (p - y_orig))
+    g_full_cand = cls_weight * (g_soft_cand + hard_weight * (p - y_cand))
 
     # 3. Soft-only candidate vs full native original
     g_softonly_cand = cls_weight * g_soft_cand

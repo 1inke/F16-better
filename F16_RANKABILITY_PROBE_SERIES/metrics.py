@@ -19,21 +19,47 @@ def compute_pairwise_accuracy(
 ) -> float:
     """
     Computes pairwise ranking accuracy for pairs with delta ADE > min_delta.
-    scores: [N, K]
-    ades:   [N, K]
+    delta_ade[n, i, j] = ades[n, j] - ades[n, i]
+    When delta_ade > 0, candidate i is better than candidate j.
+    Accuracy is fraction where score_i > score_j.
     """
-    # delta_ade[n, i, j] = ades[n, j] - ades[n, i]
-    delta_ade = ades[:, :, None] - ades[:, None, :]
-    # s_diff[n, i, j] = scores[n, i] - scores[n, j]
+    # delta_ade[n, i, j] = ADE_j - ADE_i
+    # delta > 0 => i is better than j
+    delta_ade = ades[:, None, :] - ades[:, :, None]
+
+    # score_i - score_j
     s_diff = scores[:, :, None] - scores[:, None, :]
 
-    # Pair where i is meaningfully better than j
     mask = delta_ade > min_delta
     if np.sum(mask) == 0:
         return 0.0
 
-    # Correct if s_i > s_j
     correct = (s_diff > 0) & mask
+    return float(np.sum(correct) / np.sum(mask))
+
+
+def compute_oracle_margin_accuracy(
+    scores: np.ndarray,
+    ades: np.ndarray,
+    oracle_indices: np.ndarray,
+    margin_threshold: float = 0.10,
+) -> float:
+    """
+    Computes fraction of competitor modes j with ADE_j - ADE_oracle > margin_threshold
+    where score_oracle > score_j.
+    """
+    N, K = scores.shape
+    oracle_scores = scores[np.arange(N), oracle_indices]  # [N]
+    oracle_ades = ades[np.arange(N), oracle_indices]      # [N]
+
+    competitor_gap = ades - oracle_ades[:, None]          # [N, K]
+    score_diff = oracle_scores[:, None] - scores          # [N, K]
+
+    mask = competitor_gap > margin_threshold
+    if np.sum(mask) == 0:
+        return 0.0
+
+    correct = (score_diff > 0) & mask
     return float(np.sum(correct) / np.sum(mask))
 
 
@@ -100,6 +126,10 @@ def evaluate_probe_predictions(
     pairwise_10 = compute_pairwise_accuracy(scores, ade_final, min_delta=0.10)
     pairwise_20 = compute_pairwise_accuracy(scores, ade_final, min_delta=0.20)
 
+    # Oracle margin accuracies
+    oracle_margin_10 = compute_oracle_margin_accuracy(scores, ade_final, oracle_idx, margin_threshold=0.10)
+    oracle_margin_20 = compute_oracle_margin_accuracy(scores, ade_final, oracle_idx, margin_threshold=0.20)
+
     # Spearman rank correlation
     rhos = compute_sample_spearman(scores, ade_final)
     mean_spearman = float(np.mean(rhos))
@@ -118,6 +148,8 @@ def evaluate_probe_predictions(
         "pairwise_acc_05": pairwise_05,
         "pairwise_acc_10": pairwise_10,
         "pairwise_acc_20": pairwise_20,
+        "oracle_margin_10": oracle_margin_10,
+        "oracle_margin_20": oracle_margin_20,
         "regret_median": float(np.median(sample_regret)),
         "regret_p75": float(np.percentile(sample_regret, 75)),
         "regret_p90": float(np.percentile(sample_regret, 90)),

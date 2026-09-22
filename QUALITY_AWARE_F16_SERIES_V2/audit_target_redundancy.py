@@ -231,7 +231,8 @@ def run_target_redundancy_audit(
             logits=val_logits,
             q_orig=q_orig,
             q_cand=q_cand,
-            winner=winner_orig,
+            winner_orig=winner_orig,
+            winner_cand=winner_cand,
             hard_weight=0.25,
             cls_weight=0.5,
         )
@@ -241,6 +242,7 @@ def run_target_redundancy_audit(
         sim_softonly = analyze_gradient_similarity(*grad_dict["soft_only_vs_full"])
 
         is_tautological_ranking = tc["family"] == "ADE+0.25FDE"
+        hard_winner_agr = float(np.mean(winner_orig == winner_cand))
 
         row_overall = {
             "target_name": tc["name"],
@@ -249,6 +251,7 @@ def run_target_redundancy_audit(
             "grad_cosine_full": float(np.mean(sim_full["cosine"])),
             "grad_cosine_soft": float(np.mean(sim_soft["cosine"])),
             "grad_cosine_softonly_vs_full": float(np.mean(sim_softonly["cosine"])),
+            "hard_winner_agreement": hard_winner_agr,
             "js_divergence": float(np.mean(js)),
             "cosine_similarity": float(np.mean(cos)),
             "top1_agreement": float(np.mean(top1_agr)),
@@ -351,13 +354,13 @@ def run_target_redundancy_audit(
 
 ## 2. 全样本目标与梯度对称审计表 (Validation N=1516)
 
-| 目标名称 | 物理形式 | 温度 $\\tau$ | 完整目标梯度余弦 (Full) | 纯软分布梯度余弦 (Soft) | 去HardCE对比原生 (Soft-Only) | JS 散度 | Top-1 一致率 | Top-3 Jaccard | 有效模态数 |
+| 目标名称 | 物理形式 | 温度 $\\tau$ | 完整目标梯度余弦 (Full) | 纯软分布梯度余弦 (Soft) | 去HardCE对比原生 (Soft-Only) | Hard Winner 一致率 | JS 散度 | Top-1 一致率 | Top-3 Jaccard | 有效模态数 |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 """
     for r in target_results:
         t1_str = f"{r['top1_agreement']*100:.1f}%*" if r['is_tautological_ranking'] else f"{r['top1_agreement']*100:.1f}%"
         j3_str = f"{r['top3_jaccard']*100:.1f}%*" if r['is_tautological_ranking'] else f"{r['top3_jaccard']*100:.1f}%"
-        report_content += f"| `{r['target_name']}` | {r['family']} | `{r['tau']:.2f}` | **`{r['grad_cosine_full']:.4f}`** | `{r['grad_cosine_soft']:.4f}` | `{r['grad_cosine_softonly_vs_full']:.4f}` | `{r['js_divergence']:.4f}` | {t1_str} | {j3_str} | `{r['effective_modes_cand']:.2f}` |\n"
+        report_content += f"| `{r['target_name']}` | {r['family']} | `{r['tau']:.2f}` | **`{r['grad_cosine_full']:.4f}`** | `{r['grad_cosine_soft']:.4f}` | `{r['grad_cosine_softonly_vs_full']:.4f}` | `{r['hard_winner_agreement']*100:.1f}%` | `{r['js_divergence']:.4f}` | {t1_str} | {j3_str} | `{r['effective_modes_cand']:.2f}` |\n"
 
     report_content += f"""
 > 注：标 `*` 的项目表示由于评估指标与原生定义形式相同（$ADE+0.25FDE$），在 Softmax 单调保序性下在数学上必然为 100.0%（Mathematical Triviality）。
@@ -366,7 +369,7 @@ def run_target_redundancy_audit(
 
 ## 3. 按核心研究目标 (Selection Regret) 分层场景审计
 
-| 目标名称 | 场景子集分类 | 子集说明 | 样本数 (N) | 完整梯度余弦 (Full) | 纯软梯度余弦 (Soft) | JS 散度 | Top-1 一致率 |
+| 目标名称 | 场景子集分类 | 子集说明 | 样本数 (N) | 完整梯度余弦 (Full) | 纯软梯度余弦 (Soft) | Hard Winner 一致率 | JS 散度 | Top-1 一致率 |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 """
     for h in hardcase_summary:
