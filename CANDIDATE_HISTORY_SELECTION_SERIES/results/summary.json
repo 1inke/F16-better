@@ -1,0 +1,56 @@
+{
+  "means": {
+    "linear": {
+      "selected_ade": 0.5317717591921488,
+      "selected_fde": 1.171193798383077,
+      "regret": 0.312206228574117,
+      "harmful_rate": 0.08267370272647317
+    },
+    "cv_history": {
+      "selected_ade": 0.5336710015932719,
+      "selected_fde": 1.177178144454956,
+      "regret": 0.314105490843455,
+      "harmful_rate": 0.06156552330694811
+    },
+    "real_history": {
+      "selected_ade": 0.533776044845581,
+      "selected_fde": 1.1779696544011433,
+      "regret": 0.31421051422754925,
+      "harmful_rate": 0.06112576956904134
+    }
+  },
+  "native": {
+    "n": 1516,
+    "selected_ade": 0.5388688445091248,
+    "selected_fde": 1.1872947216033936,
+    "minade": 0.2195655256509781,
+    "minfde": 0.3960312306880951,
+    "regret": 0.31930333375930786,
+    "near_oracle_05": 0.25065963060686014,
+    "exact_oracle": 0.20184696569920843,
+    "improvement_m": 0.0,
+    "regret_p90": 0.7118933498859406,
+    "intervention_rate": 0.0,
+    "harmful_rate": 0.0,
+    "useful_rate": 0.0,
+    "mean_harm_m": 0.0,
+    "mean_benefit_m": 0.0,
+    "high_regret_n": 851,
+    "high_regret_improvement_m": 0.0,
+    "small_gap_high_regret_n": 69,
+    "small_gap_high_regret_improvement_m": 0.0,
+    "small_gap_low_regret_n": 274,
+    "small_gap_low_regret_improvement_m": 0.0
+  },
+  "checks": {
+    "relative_ade_gain_pass": false,
+    "fde_guard_pass": true,
+    "seed_direction_pass": true,
+    "native_guard_pass": true,
+    "linear_guard_pass": false,
+    "harmful_rate_guard_pass": true
+  },
+  "relative_ade_gain_vs_cv": -0.00019683147856187496,
+  "positive_seeds": 2,
+  "verdict": "NO_CLEAR_HISTORY_GAIN_REVIEW"
+}

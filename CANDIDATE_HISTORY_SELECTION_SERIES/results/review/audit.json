@@ -1,0 +1,105 @@
+{
+  "audit": "PASS",
+  "means": {
+    "linear": {
+      "selected_ade": 0.5317717591921488,
+      "selected_fde": 1.171193798383077,
+      "regret": 0.312206228574117,
+      "harmful_rate": 0.08267370272647317,
+      "mean_harm_m": 0.018413482854763668,
+      "mean_benefit_m": 0.025510574380556744,
+      "high_regret_improvement_m": 0.024218416772782803,
+      "low_regret_improvement_m": -0.014813054663439592,
+      "pure_utility_ade": 0.5594069957733154
+    },
+    "cv_history": {
+      "selected_ade": 0.5336710015932719,
+      "selected_fde": 1.177178144454956,
+      "regret": 0.314105490843455,
+      "harmful_rate": 0.06156552330694811,
+      "mean_harm_m": 0.014145209453999996,
+      "mean_benefit_m": 0.019343049575885136,
+      "high_regret_improvement_m": 0.019753218318025272,
+      "low_regret_improvement_m": -0.013428667560219765,
+      "pure_utility_ade": 0.5356565713882446
+    },
+    "real_history": {
+      "selected_ade": 0.533776044845581,
+      "selected_fde": 1.1779696544011433,
+      "regret": 0.31421051422754925,
+      "harmful_rate": 0.06112576956904134,
+      "mean_harm_m": 0.014371348234514395,
+      "mean_benefit_m": 0.01946415565907955,
+      "high_regret_improvement_m": 0.018460117901364963,
+      "low_regret_improvement_m": -0.01201332857211431,
+      "pure_utility_ade": 0.5353329380353292
+    }
+  },
+  "native": {
+    "n": 1516,
+    "selected_ade": 0.5388688445091248,
+    "selected_fde": 1.1872947216033936,
+    "minade": 0.2195655256509781,
+    "minfde": 0.3960312306880951,
+    "regret": 0.31930333375930786,
+    "near_oracle_05": 0.25065963060686014,
+    "exact_oracle": 0.20184696569920843,
+    "improvement_m": 0.0,
+    "regret_p90": 0.7118933498859406,
+    "intervention_rate": 0.0,
+    "harmful_rate": 0.0,
+    "useful_rate": 0.0,
+    "mean_harm_m": 0.0,
+    "mean_benefit_m": 0.0,
+    "high_regret_n": 851,
+    "high_regret_improvement_m": 0.0,
+    "small_gap_high_regret_n": 69,
+    "small_gap_high_regret_improvement_m": 0.0,
+    "small_gap_low_regret_n": 274,
+    "small_gap_low_regret_improvement_m": 0.0
+  },
+  "paired_seed_differences": [
+    {
+      "seed": 1,
+      "real_minus_cv_ade_mm": 2.292234217748046,
+      "changed_selection_n": 252,
+      "better_n": 132,
+      "worse_n": 120
+    },
+    {
+      "seed": 2,
+      "real_minus_cv_ade_mm": -0.9794741636142135,
+      "changed_selection_n": 29,
+      "better_n": 15,
+      "worse_n": 14
+    },
+    {
+      "seed": 3,
+      "real_minus_cv_ade_mm": -0.9976618457585573,
+      "changed_selection_n": 33,
+      "better_n": 17,
+      "worse_n": 16
+    }
+  ],
+  "ablations": [
+    {
+      "seed": 1,
+      "cv_replacement_delta_mm": -2.338290214538574,
+      "shuffle_mean_delta_mm": 0.33024946848551434
+    },
+    {
+      "seed": 2,
+      "cv_replacement_delta_mm": 2.288222312927246,
+      "shuffle_mean_delta_mm": 1.488049825032552
+    },
+    {
+      "seed": 3,
+      "cv_replacement_delta_mm": 2.722442150115967,
+      "shuffle_mean_delta_mm": 1.3782580693562825
+    }
+  ],
+  "calibration_native_ade": 0.4351669251918793,
+  "inference_scope": "ETH generator seed 1 development pilot; not five-fold/test confirmation",
+  "new_training_executed": false,
+  "test_accessed": false
+}
