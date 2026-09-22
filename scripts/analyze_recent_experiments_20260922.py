@@ -1,0 +1,167 @@
+"""Read-only result synthesis. Writes only the dated review and source manifest."""
+from pathlib import Path
+import csv
+import hashlib
+import json
+import statistics
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / 'experiment_review_20260922'
+OUT.mkdir(exist_ok=True)
+sources = {}
+
+def rows(rel):
+    path = ROOT / rel
+    sources[rel] = hashlib.sha256(path.read_bytes()).hexdigest()
+    with path.open(encoding='utf-8-sig', newline='') as f:
+        return list(csv.DictReader(f))
+
+def table(data, cols):
+    def display(value):
+        value = str(value)
+        if len(value) > 12 and value.replace('.', '', 1).replace('-', '', 1).isdigit():
+            return f'{float(value):.6f}'
+        return value
+    return '\n'.join(['| ' + ' | '.join(cols) + ' |', '| ' + ' | '.join(['---'] * len(cols)) + ' |'] +
+                     ['| ' + ' | '.join(display(r.get(c, '')) for c in cols) + ' |' for r in data])
+
+tiny = rows('SELECTOR_RANKABILITY_SERIES/S2V3_CENTERED_LATENT/results/tiny_selector_multiseed.csv')
+probe = rows('F16_RANKABILITY_PROBE_SERIES/results/p2_rankability/probe_summary.csv')
+qa = rows('QUALITY_AWARE_F16_SERIES/results/pilot/selection_metrics.csv')
+local = rows('SELECTOR_LOCAL_RERANK_SERIES/S6F_LOCAL_ORACLE/results/local_oracle_bound.csv')
+repro = rows('SELECTOR_LOCAL_RERANK_SERIES/S6R_REPRO_AUDIT/results/reproduction_audit.csv')
+grad = rows('QUALITY_AWARE_F16_SERIES_V2/results/p1_redundancy/hardcase_redundancy.csv')
+stale = rows('F16_RANKABILITY_PROBE_SERIES/results/p1_staleness/staleness_metrics.csv')
+ci = rows('F16_RANKABILITY_PROBE_SERIES/results/p2_rankability/bootstrap_ci.csv')
+eff = rows('SELECTOR_RANKABILITY_SERIES/S2V3_CENTERED_LATENT/results/efficiency_benchmark.csv')
+strong = rows('SELECTOR_LOCAL_RERANK_SERIES/S6G_STRONG_BASELINE_COMPARISON/results/strong_baseline_comparison.csv')
+
+def mean(method, field):
+    return statistics.mean(float(r[field]) for r in tiny if r['Method'] == method)
+
+native = mean('Native', 'ADE_Macro_m')
+tv = mean('Tiny_L5_Linear', 'ADE_Macro_m')
+reg = mean('Native', 'ADE_Regret_m')
+probe_names = {'Native_R0', 'R1_exact_input', 'R2_post_correction', 'R3_context_post', 'R4_full_final',
+               'R5_oracle_vs_rest_mean_3seeds', 'R6_listwise_top1_mean_3seeds', 'R7_set_aware_ranker_mean_3seeds'}
+pt = []
+for r in probe:
+    if r['probe_name'] in probe_names:
+        pt.append({'探针': r['probe_name'], 'Selected ADE': f"{float(r['selected_ade']):.4f}",
+                   'Regret闭合率': f"{float(r['regret_closure_pct']):.2f}%",
+                   'Oracle Recall@1': f"{float(r['oracle_recall_1'])*100:.2f}%"})
+
+report = f'''# 最近实验分析与下一轮决策（2026-09-22）
+
+本报告核查工作区中九月二十一、二十二日相关实验系列的现有代码、CSV/JSON与报告。没有启动训练，没有解锁测试集，没有修改原始结果。数字表格由源文件动态生成；源文件哈希见 source_manifest.json。目录修改时间用于定位，不能单独证明训练发生时间。trajectory-candidate-selection 是选择器研究的另一个副本，不作为独立重复实验计数。
+
+## 判断
+
+保留 Tiny L5 为待确认的轻量部署候选；暂停继续扩展后处理排序器、局部 K 与近似重复的质量损失网格。当前证据支持“已测试的冻结特征与探针收益小”，不支持“已证明信息论极限”或“必须全面重构生成器”。下一轮应优先检验直接观察条件能否给评分器带来增量信息，并与项目原有固定预算时间选择主线衔接。
+
+## 一、五折候选选择系列
+
+{table([r for r in tiny if r['Seed']=='all'], ['Method','ADE_Macro_m','ADE_Micro_m','ADE_Regret_m','Params'])}
+
+按逐种子 CSV 重新求均值：Tiny 对 Native 的 Macro ADE 改善为 {(native-tv)*1000:.2f} mm，相对改善 {(native-tv)/native*100:.2f}%，只闭合当前 oracle regret 的 {(native-tv)/reg*100:.2f}%。这是小幅工程收益，不是解决选模瓶颈。Oracle 是用真实未来挑选候选的事后下界，并非观察信息下保证可达的性能。
+
+S1 修正后的全局 pairwise 已较高，而 Top-1 仍弱；两两排序容易被大量明显差候选贡献的正确比较抬高。S2/S2V2 中 raw L5 配合几何特征的线性残差最值得保留；增加非线性容量没有稳定带来更大收益。中心化结果不支持继续沿该方向投入，但零和导致的负余弦、近零分母导致的能量比不能作为新的判别信息证据。
+
+S4 门控可以少干预，不能保证“识别坏选择”之后就会选到更好的候选。S5/S6 的局部 oracle 提供诊断下界，局部实际重排、hard-case 加权、near-oracle loss、Adaptive-K 的收益有限。
+
+局部候选池数据：
+
+{table(local, ['K','LocalOracleADE_Macro','GapToGlobal_Macro_m','ExactOracleRecall_Macro','NearOracle05_Macro'])}
+
+Top-K 截断仍可能漏掉好候选，不能写成“完全不是瓶颈”。局部 oracle 与实际模型之间的大间距也不能直接命名为“可学习空间”。
+
+重复运行审计：
+
+{table(repro, ['Config','Run1_ADE_Macro','Run2_ADE_Macro','Delta_ADE_mm','Status'])}
+
+这些 PASS 证明当前实现重复一致，不证明复现历史最优记录。尤其局部 attention 的新协议与早期榜单存在差异；后续必须锁定架构、特征、超参数、种子、校准和权重身份。
+
+## 二、Quality-Aware F16
+
+{table([r for r in qa if r['run_id'] in ('QA0_STANDARD_FINETUNE','QA1_L005_T020')], ['run_id','split','selected_ade','selected_fde','selection_regret'])}
+
+V1 的验证集最佳模型在测试 ADE 上没有改善，因此不值得继续大规模 additive-loss 搜索。V1 的微调协议与 EXP-173 不同，不能用它直接归因原始损失优劣。温度标定保持 argmax，不会改进 Top-1；ECE改善也不能代替 ADE 或整体概率质量改善。
+
+V2 的主要成果是恢复原生协议、评估和损失等价性；它的 pilot 和 multiseed 仍处于 BLOCKED，不是已经完成的目标替换实验。
+
+严重选择失败子集上的目标梯度：
+
+{table([r for r in grad if r['target_name'] in ('q_ade_tau010','q_qual_tau010') and r['subset'] in ('all','regret_gt_20cm','benign_gap_lt_02cm')], ['target_name','subset','n_samples','grad_cosine_full','grad_cosine_soft'])}
+
+新旧梯度高度同向支持“新增监督有限”的工作假说，但不等于训练轨迹相同，更不能证明表征是唯一原因。同向梯度仍可改变样本权重与优化过程。最佳与次佳候选的 ADE 接近，只能说明这两者互换代价小，不能保证模型没有选到其他很差的候选；应将 oracle gap 与 native regret 做交叉分层。
+
+## 三、F16 Rankability 探针
+
+这是 EXP-173 V2 / ETH / 一个生成器种子的验证诊断。R5–R7 的多个种子是评分器初始化种子，不能称为多个独立生成器种子或五折泛化证据。
+
+{table(pt, ['探针','Selected ADE','Regret闭合率','Oracle Recall@1'])}
+
+R2 相对 R1 只改变修正前后几何信息，增益有限；R3 加入冻结 context、R4 加入最终完整轨迹也没有大幅提升。R5 的 oracle-vs-rest、R6 的 hard CE、R7 的集合 attention 没有带来稳定的大幅突破。支持暂停继续扩大同类探针网格。
+
+Coarse/final 一致性诊断：
+
+{table(stale, ['metric_name','mean'])}
+
+最优候选身份可能改变，但整体排序仍高度接近。结合 R1/R2 的小差距，评分滞后存在可能、尚无证据说明它是主要原因。应检查更换 oracle 的实际 regret 权重，而不能只看 oracle 身份改变比例。
+
+当前 bootstrap 文件明确注明在选中的验证 checkpoint 上计算描述性区间；同一验证集还用于早停，不能当作独立确认。大量配置筛选后报告最佳值也有选择偏差。后续需按场景/轨迹或不重叠时间块保留相关结构，分折计算并等权汇总 Macro；不可把不同种子下同一样本全部混在一起充当独立样本。
+
+## 四、必须先修复的可信度问题
+
+1. **性能模型与效率模型不一致。** 训练表 Params 与效率表不同。run_t2_efficiency_benchmark.py 硬编码 D_TRANS、D_TINY，并对随机张量构造替代模型。停止引用它来证明实际训练模型的精确压缩倍数。
+2. **端到端延迟实际是分段相加。** 同脚本将 F16 计时与单独 selector 计时相加，甚至相加 p95；这不是集成路径实测，p95也不能这样求和。必须计入真实 hook、特征构造、归一化、数据移动、残差融合和 argmax。
+3. **Tiny 优于当前 Transformer 不等于取代历史最强 Transformer。** S6G 与 T1 的 Transformer 参数、实现和训练预算不同。只可保留同一批次内的观察比较，不可跨协议宣布无损替代。
+4. **报告过强或过期。** 中心化报告的信息论极限、Tiny效率标题、V2 README建议直接推进与 state 阻断状态等互相冲突；冗余报告还将不同余弦字段混写。原报告需要重新从机读输出生成，在修复前停止把它们当作正式结论。
+5. **外层隔离需覆盖整条生成器链。** selector 的外层留一折不自动保证生成器也严格外层隔离。当前缓存使用各自留出折模型；其他折缓存的生成器可能训练过当前外层测试折。应核对每个 outer fold 的 generator training IDs、cache IDs、selector IDs；这是需要核查的泄漏风险，不是本次已经证实的泄漏。
+
+## 五、下一轮实验顺序与停止条件
+
+### P0：零训练协议收口（先完成）
+
+- 指定主目标：候选覆盖看 minADE/minFDE；单轨迹部署看 Selected ADE；概率可靠性另列。不得因选模 gap 大就将论文主线全部改为排序。
+- 锁定 EXP-173 V2 当前权重与划分；不要混入早期 EXP-154 架构身份。差异实验保留明确 treatment 字段，其余控制项一致。
+- 从实际训练输入与权重导出维度、参数与哈希，保存显式 sample_id；先解决模型与计时对象不一致，再做集成延迟测量。
+- 重新生成 Macro 汇总、场景/轨迹分组区间与困难样本交叉表；记录已用于历史比较的测试折，避免宣称这些折从未被观察。
+- 不需要把所有旧实验重跑一遍：优先修复会改变候选选择、轻量化结论和下一轮决策的部分。
+
+### P1：最小观察条件评分试点（首选新增实验）
+
+目的：区分“原有冻结摘要不足”与“观察历史仍能提供可学习增量”。候选生成器全程冻结，保证 minADE不受候选变化混淆。只选一种预先锁定的评分目标与训练预算，不再同时扫描温度、loss和网络深度。
+
+| 组别 | 输入与处理 | 主要对照问题 |
+|---|---|---|
+| A0 | 原生评分，不训练 | 当前参照 |
+| A1 | 当前 raw L5 + 几何的 Tiny residual | 最便宜的已知改进 |
+| A2 | 冻结 mode/context + 最终候选，重新训练小评分器 | 与已有探针对齐的容量对照 |
+| A3 | A2 + 独立可训练的目标自身观察历史编码，候选条件读取 | 避免仅重复使用冻结摘要；检验时间信息增量 |
+| A4（条件执行） | A3 + 有效邻居的观察历史与相对运动 | 仅当 A3 有信号后检验社会信息增量 |
+
+A2/A3须匹配额外容量与训练预算；增加 A3 的等参数宽度对照、候选间置换观察条件的诊断消融。置换仅用于机制诊断，不用于选取测试配置。严禁输入真实未来邻居状态。观察历史本身不增加原始信息，新增的是可训练的读取路径，这仍只是待检验假说。
+
+先在固定生成器、固定 development 切分做少量种子试点，报告 Selected ADE、regret、near-oracle、严重失败子集以及受损样本。只有超过预先声明的实际意义门槛、且不是单个种子偶然获胜，才进入跨生成器种子和五折确认。建议实际意义门槛可设为相对 Selected ADE 改善至少 2%，但这只是待锁定的资源决策阈值，不是统计定律；同时不得以明显 FDE/尾部退化换平均数。
+
+若 A3 无稳定增量，停止此轮选模扩展。若有效，再做“独立观察分支 vs 解冻原 encoder 最后一个块”的匹配对照，才有依据讨论联合表征重训练。不要直接跳到更大的 Transformer 或全面重构。
+
+### P2：与开题主线一致的固定预算时间选择（后续主线）
+
+历史 AV2 结果支持更高采样频率有用，但没有验证固定预算自适应选择。可在相同物理观察时长、相同输入帧预算和相同解码器下，比较均匀采样、观察运动变化驱动采样、可学习因果采样。锁定真实时间编码、必须保留最后观测、邻居同步规则及选择开销。
+
+Full-rate 只作为更高预算参照；端到端测量包含选帧，报告全体及转弯/急变/静止等预定义子集。先用廉价确定性采样验证输入选择空间，再考虑可学习选择器；如果廉价方案既无稳健精度收益也无实际效率优势，不立即扩大网络复杂度。
+
+### 本轮不建议
+
+继续扩大局部 K、中心化 latent、多种相似质量 loss、仅以 ECE 改善作为选模进展，或重启典型小邻居规模的稀疏 kernel 优化。Tiny可保留，正式工程贡献要等身份、隔离与集成测量收口。
+
+## 范围限制
+
+这是现有结果与代码的审阅，不是全部训练的独立复现。没有重算完整张量级指标或执行GPU性能测试。CSV中已有舍入精度影响再汇总的末位数字。上述证据支持资源优先级判断，不支持表征不可恢复性的理论证明。
+'''
+(OUT / '实验分析与后续路线.md').write_text(report, encoding='utf-8')
+(OUT / 'source_manifest.json').write_text(json.dumps(sources, ensure_ascii=False, indent=2), encoding='utf-8')
+print(OUT / '实验分析与后续路线.md')
+print(f'Loaded {len(sources)} machine-readable result sources; no training executed.')
