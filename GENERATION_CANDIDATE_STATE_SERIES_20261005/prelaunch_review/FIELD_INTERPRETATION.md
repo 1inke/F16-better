@@ -1,0 +1,14 @@
+# Prelaunch field interpretation — candidate-state experiment
+
+This is a single-assistant local implementation review, not an independent external review.
+
+- Generic zero means FIT-standardized immutable-native-state32 multiplied by zero. Generic mean_std means actual standardized state32. BOTH use the same learned sigmoid persistent response. Neither arm is the previous transient Gaussian trial.
+- BOTH actual GPU trainable counts are45,798. Full paired initialization/buffers/native output identity passed. Masked first state weight receives zero data gradient (weight decay can still change it); masked biases remain trainable. Nominal matching is not matching functional capacity or optimization.
+- The inherited preflight field profile_sum_error is a legacy name: its code measures max(abs(sum(profile))), about6 for these noncentered sigmoid profiles. This is NOT a failed zero-sum test. Neither registered arm is zero-sum; actual endpoint decomposition maximum error is1.86265e-9m. Clock parameters are curve codes, not identified semantic onset/duration.
+- Inputs are only observed past/tokens and deterministic immutable native-predicted trajectories. The32 state values do not add future observations, GT, groups, scores, or independent external information. No all-input sensitivity or full-rank assertion follows from finite FIT variance.
+- FIT518,240 candidate points were used for fixed scalers, not selected CAL/DEV outcomes. Production feature math and independent scalar fixtures agree within4.19165e-8. Online original tokens/paths agree exactly; context error2.38419e-7. All original F16/decoder/scorer weights and buffers remain frozen.
+- Quality and temporal reports use different explicitly defined single-candidate references: normalized-adequacy closest versus ADE+.5FDE joint oracle. Never combine early/middle/late segments from different candidates. Native logitargmax inheritedslot is not a new probability or rescored deployed decision.
+- Dataset windows, three seed repeats, prior F16 training and repeatedly explored ETHDEV are dependent exploratory evidence. This experiment is not a confirmation of independent generalization, intention, decoder root cause, or SOTA.
+- Existing loss, safeguards, K20, splits, original mode ordering, epochs, and learning rate remain unchanged. Joint-oracle native/freshcontrol CIs and perseed/allgroup pooled kinematic1% protection are enforced at completion in addition to original ADE/FDE gates.
+- Preflight host peakRSS2.297GiB/private3.214GiB; minimum physical15.495GiB/commit14.314GiB. Process6GiB and system physical+commit eachreserve6GiB remain enforced. No full32-feature cache is retained: statistics are computed in256-row chunks and features per forward batch.
+- This document does not itself authorize production: BOTH actual2epoch exact resume, immutable source/oldSHA checks, benchmark and sole0trigger worker confirmation must still complete.

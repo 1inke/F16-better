@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "policies_checked": 18,
+  "all_nonwhitelist_F16_exact": true,
+  "original_decoder_scorer_exact": true,
+  "encoder_all_frozen": false,
+  "whitelist": {
+    "zero": "agent_aware_trans_encoder.temporal_encoder.layers.0.self_attn.",
+    "mean_std": [
+      "agent_aware_trans_encoder.temporal_encoder.layers.0.linear1.",
+      "agent_aware_trans_encoder.temporal_encoder.layers.0.linear2."
+    ]
+  }
+}

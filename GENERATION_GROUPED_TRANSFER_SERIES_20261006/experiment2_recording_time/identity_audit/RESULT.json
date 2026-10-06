@@ -1,0 +1,241 @@
+{
+  "status": "PASS_IDENTITY_MATCHED_RECORDING_TIME_SPLIT",
+  "formal": false,
+  "no_model_forward": true,
+  "no_optimizer": true,
+  "tag": "20261006-grouped-time-v1",
+  "block_width_source_indices": 50,
+  "full_window_indices": 20,
+  "unique_ids": 25912,
+  "all_windows_in_registry": true,
+  "unknown_time_retained": 123,
+  "unknown_not_unpredictable": true,
+  "reserved_boundary_windows": 4720,
+  "unused_both": 3548,
+  "outer_time_blocks": 14,
+  "outer_target_tracks": 154,
+  "blocks": [
+    {
+      "sequence": "biwi_hotel",
+      "occupied": 19,
+      "outer": [
+        11,
+        18,
+        9,
+        23
+      ],
+      "inner": [
+        13,
+        2
+      ],
+      "training_blocks": 13
+    },
+    {
+      "sequence": "crowds_zara01",
+      "occupied": 14,
+      "outer": [
+        1,
+        5,
+        0
+      ],
+      "inner": [
+        12
+      ],
+      "training_blocks": 10
+    },
+    {
+      "sequence": "crowds_zara02",
+      "occupied": 16,
+      "outer": [
+        13,
+        2,
+        7
+      ],
+      "inner": [
+        9
+      ],
+      "training_blocks": 12
+    },
+    {
+      "sequence": "crowds_zara03",
+      "occupied": 11,
+      "outer": [
+        9,
+        7
+      ],
+      "inner": [
+        2
+      ],
+      "training_blocks": 8
+    },
+    {
+      "sequence": "students001",
+      "occupied": 7,
+      "outer": [
+        5
+      ],
+      "inner": [
+        6
+      ],
+      "training_blocks": 5
+    },
+    {
+      "sequence": "students003",
+      "occupied": 5,
+      "outer": [
+        1
+      ],
+      "inner": [
+        3
+      ],
+      "training_blocks": 3
+    }
+  ],
+  "partitions": {
+    "random_training": {
+      "n": 16104,
+      "scene": {
+        "hotel": 403,
+        "university": 10282,
+        "zara": 5419
+      },
+      "sequence": {
+        "biwi_hotel": 403,
+        "crowds_zara01": 1390,
+        "crowds_zara02": 2929,
+        "crowds_zara03": 1100,
+        "students001": 7941,
+        "students003": 2341
+      },
+      "loss_group": {
+        "0": 9160,
+        "1": 2923,
+        "2": 4021
+      }
+    },
+    "grouped_training": {
+      "n": 16104,
+      "scene": {
+        "hotel": 403,
+        "university": 10282,
+        "zara": 5419
+      },
+      "sequence": {
+        "biwi_hotel": 403,
+        "crowds_zara01": 1390,
+        "crowds_zara02": 2929,
+        "crowds_zara03": 1100,
+        "students001": 7941,
+        "students003": 2341
+      },
+      "loss_group": {
+        "0": 9160,
+        "1": 2923,
+        "2": 4021
+      }
+    },
+    "outer_evaluation": {
+      "n": 566,
+      "scene": {
+        "hotel": 28,
+        "university": 404,
+        "zara": 134
+      },
+      "sequence": {
+        "biwi_hotel": 28,
+        "crowds_zara01": 60,
+        "crowds_zara02": 59,
+        "crowds_zara03": 15,
+        "students001": 270,
+        "students003": 134
+      },
+      "loss_group": {
+        "0": 306,
+        "1": 118,
+        "2": 142
+      }
+    },
+    "inner_calibration": {
+      "n": 2134,
+      "scene": {
+        "hotel": 33,
+        "university": 1729,
+        "zara": 372
+      },
+      "sequence": {
+        "biwi_hotel": 33,
+        "crowds_zara01": 47,
+        "crowds_zara02": 252,
+        "crowds_zara03": 73,
+        "students001": 978,
+        "students003": 751
+      },
+      "loss_group": {
+        "0": 1065,
+        "1": 465,
+        "2": 604
+      }
+    },
+    "common_statistics": {
+      "n": 12544,
+      "scene": {
+        "hotel": 283,
+        "university": 7944,
+        "zara": 4317
+      },
+      "sequence": {
+        "biwi_hotel": 283,
+        "crowds_zara01": 1070,
+        "crowds_zara02": 2387,
+        "crowds_zara03": 860,
+        "students001": 6527,
+        "students003": 1417
+      },
+      "loss_group": {
+        "0": 7089,
+        "1": 2264,
+        "2": 3191
+      }
+    }
+  },
+  "random_exposure": {
+    "n": 566,
+    "same_sequence_20index_overlap": 566,
+    "same_target_20index_overlap": 564,
+    "same_target_exposure": 564
+  },
+  "grouped_exposure": {
+    "n": 566,
+    "same_sequence_20index_overlap": 0,
+    "same_target_20index_overlap": 0,
+    "same_target_exposure": 227
+  },
+  "sharedinner_no_same_sequence20index_overlap": true,
+  "all_initial_final_old_SHA": true,
+  "inherited_digests_count": 32754,
+  "old_file_count": 33551,
+  "sources": {
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\experiment2_recording_time\\identity_split_audit.py": "2e0f59d269079346309ec7456bd1324e6595b45c306e75691d3adc97d1b0685b",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\experiment2_recording_time\\README.md": "bd735f5ba99998d7998d82f83890bb4447db358481a8638d4f9f6a4a836dbca8",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\experiment2_recording_time\\DESIGN.md": "27d23d23578b7075bc3e752920025888f97913d1ff89d217a07f7b241dc58a80",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\experiment2_recording_time\\protocol.json": "84655c298b0fabf38efa30532c2b815af3403de3df04bf2451147a0f9f21a3fe"
+  },
+  "saved_split_SHA": "1c52a25f37307fdb18fd77d725c379e1a5e3437295652e511bf4003be7926c7f",
+  "metadata_scale_matches_exact": true,
+  "resource": {
+    "peak_RSS_GiB": 0.07151412963867188,
+    "peak_private_GiB": 0.7788162231445312,
+    "min_physical_GiB": 17.646156311035156,
+    "min_commit_GiB": 18.199378967285156,
+    "checks": 199
+  },
+  "elapsed_seconds": 180.480809199973,
+  "limitations": [
+    "frozenF16seen;newheadonly",
+    "timepurge NOTtargetdisjoint",
+    "known-time eligibility subset;123 unknown retained",
+    "far-time sharedscene/target correlations remain",
+    "3scene6recordings notindependentwholemodelgeneralization",
+    "trainingdistribution/finiteoptimization confound"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003",
+  "status": "EXECUTION_AUTHORIZED_NOT_FORMAL_GENERATION_TRIAL",
+  "human_authorization": "2026-10-03: 好，执行这个实验；启动后结束当前轮，按预计耗时一半检查并更新时间，完成继续分析",
+  "parent_blueprint": "F16_OBSERVABLE_CUE_DIAGNOSIS_DESIGN_20261003/protocol.json",
+  "native": "EXP156B fold-local eth V2/F16 seed1, all original parameters/buffers frozen, native K20 and original logit argmax",
+  "data": {"original_train":28791,"original_FIT":25912,"original_CAL":2879,"native_exploratory_dev":1516,"new_heldtest":false,"other_fold":false,"external_data":false},
+  "future_roles": ["offline event labels", "posthoc candidate errors", "metadata source-coordinate identity recovery"],
+  "future_not_features_or_forward": true,
+  "preprocessing_eligibility_caveat": "Original get_valid_id requires minimum future existence. Existing valid-count/neighbor eligibility are retained, not rebuilt using futures by this study; no future coordinates enter forward. This selection bias prevents interpreting performance as strictly deployment-available information without a separate past-only eligibility audit.",
+  "metadata_source_allowlist": ["biwi_hotel_train.txt","crowds_zara01_train.txt","crowds_zara02_train.txt","crowds_zara03_train.txt","students001_train.txt","students003_train.txt","uni_examples_train.txt"],
+  "pre_outcome_amendment": {
+    "reason": "Processed arrays omit pedestrian identity and contain negative/aliased frame identifiers. Restore full-window source metadata before claiming independence. Merge multiple recordings of the same physical scene family conservatively.",
+    "OOF": "Leave-one-verified-scene-family-out within original FIT; this purges every same-scene track/time window across folds. Unverified rows excluded only from OOF and listed.",
+    "scene_families": ["hotel","zara","university"],
+    "too_few_clusters": "Three scene families insufficient for well-powered group bootstrap or exchangeability-backed permutation inference. Report no reliable CI/Holm p values, exploratory contrasts only.",
+    "CAL": "Original CAL unchanged, descriptive evaluation; not an independent group split. No hyperparameter choice.",
+    "native_training_history": "Frozen F16 already trained on original data; probe grouped holdout does not retroactively create independent native validation."
+  },
+  "event_definition": {"dt":0.4,"velocity_window_seconds":0.8,"persistence_windows":2,"turn_angle_degrees":30,"turn_min_both_speeds":0.2,"speed_difference":"max(.3,.5*reference_speed)","start_reference_max":0.1,"start_future_min":0.3,"stop_reference_min":0.3,"stop_future_max":0.1,"boundary_uncertain_separate":true,"sensitivity_factors":[0.75,1.25],"onset_bins_steps":[2,6,12]},
+  "probe_features": ["B1:last velocity/speed","R1:focal history/kinematics","R2:R1 plus actual valid relative-neighbor histories and distance/closing/TCA/DCA","E1:pre-social temporal768","E2:post-social tokens768","E2_motion:actual decoder input plus motion7","E3:decoder context64","E4:per-mode conditioning mean/std128","social:fused focal-agent96"],
+  "probes": {
+    "primary": "L2 logistic C=.1,1,10, choose nested FIT scene-group heldout logloss, fixed C1 if inner groups insufficient",
+    "standardization": "Training partition only for each inner/outer fold",
+    "capacity_sensitivity": "Both full dimension and train-only PCA<=64",
+    "secondary_MLP": {"hidden":32,"activation":"SiLU","epochs":32,"batch_size":512,"optimizer":"AdamW","lr":0.001,"weight_decay":0.001,"seeds":[1,2,3],"dropout":0,"early_stopping":false,"model_choice_from_CAL_DEV":false},
+    "type_onset_direction": "Secondary C1 logistic on R2/E2_motion/E3, actual-event subset; conditional accuracy not deployable full event-and-timing prediction",
+    "null_sanity": "Destroy training label association by within-scene shuffle; not formal group permutation p value",
+    "primary_contrasts": ["R2-R1","E2-E1","E3-E2_motion"],
+    "saved_predictions_IDs":true,
+    "resume": "Per-job SHA verified completed-job skipping; unfinished MLP epoch checkpoint parameter/optimizer/allRNG/history restoration tested by two real FIT epochs"
+  },
+  "functional_diagnosis": {"no_native_optimizer":true,"FIT_fixed_n":128,"neighbor_rigid_shift_m":[-0.05,0.05],"invalid_neighbor_sanity_shift":0.01,"input_jacobian_n":16,"GT_counterfactual_scoring":false,"support_caveat":"Small perturbation magnitude is not proof of support membership or beneficial use"},
+  "human_blind_materials": {"n":120,"seed":20261010,"uniform_sampling":true,"exclude_32_previous_annotations":true,"unseen_GT_status_requires_human_declaration":true,"human_answers_fabricated":false,"interface":"Data-only past-first/reveal package; existing visualization remains immutable; a new blind UI can be added later"},
+  "old_results_models_scientific_scripts_immutable":true,
+  "all_new_artifacts_in_this_folder":true,
+  "formal_cycle_increment":false,
+  "major_claim":false,
+  "progress_fraction_of_planning_time":0.5,
+  "progress_queries": "One halfway-time query after real verified independent start; then one revised completion deadline check, quiet while unchanged",
+  "limitations": ["Probe-readable is not native model use","Functional sensitivity is not beneficial causal use","Risk prediction is not exact onset/direction/path prediction","Failed tests do not establish missing information or irreducible error","Human blind judgments are pending"]
+}

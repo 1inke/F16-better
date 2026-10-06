@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-04T04:18:23.011888+08:00",
+  "scheduled_at": "2026-10-04T04:16:52+08:00",
+  "actual_worker_pid": 16692,
+  "parent_pid": 2728,
+  "real_process_name": "python.exe",
+  "task_state": "Running",
+  "worker_state": "RUNNING",
+  "triggers": 0,
+  "stderr_bytes": 0,
+  "exit_status": null,
+  "completed_trainings": 2,
+  "total_trainings": 6,
+  "completed_epochs": 162,
+  "total_epochs": 480,
+  "epoch_fraction": 0.3375,
+  "actual_stage": "zero seed3 completed2/80; mean_std three seeds not yet started",
+  "trainings": [
+    {
+      "arm": "zero",
+      "seed": 1,
+      "epoch": 80,
+      "complete": true
+    },
+    {
+      "arm": "zero",
+      "seed": 2,
+      "epoch": 80,
+      "complete": true
+    },
+    {
+      "arm": "zero",
+      "seed": 3,
+      "epoch": 2,
+      "complete": false
+    },
+    {
+      "arm": "mean_std",
+      "seed": 1,
+      "epoch": 0,
+      "complete": false
+    },
+    {
+      "arm": "mean_std",
+      "seed": 2,
+      "epoch": 0,
+      "complete": false
+    },
+    {
+      "arm": "mean_std",
+      "seed": 3,
+      "epoch": 0,
+      "complete": false
+    }
+  ],
+  "remaining_epochs": 318,
+  "remaining_minutes": [
+    180,
+    210
+  ],
+  "basis": "91.53min wall since launch including start hash/setup for162epochs. Remaining78control+240treatment plus calibration/save/18policy evaluation/independent groups+CIs/source229/18872oldSHA. Microbenchmark only; production cause of slowdown unknown, no abnormality/restart claim.",
+  "checkpoint_eligibility_note": "Some CAL feasible=False marks checkpoint eligibility, not worker failure or final experiment outcome."
+}

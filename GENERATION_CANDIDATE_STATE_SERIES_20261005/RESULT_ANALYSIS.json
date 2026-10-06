@@ -1,0 +1,502 @@
+{
+  "status": "ANALYZED_MAJOR_FAIL",
+  "study": "candidate_state_20261005",
+  "experiment": 1,
+  "completed": 1,
+  "review_after": 3,
+  "production_actual_seconds": 1420.912983,
+  "production_finished_at": "2026-10-05T07:52:55.345882+08:00",
+  "first_and_only_half_check": "2026-10-05T09:05:10.0599394+08:00",
+  "evidence": {
+    "worker_and_exit": "SUCCESS",
+    "independent_audit": "PASS",
+    "saved_metrics_recompute": "PASS",
+    "completion_review": "PASS_SAVED_OUTPUT_COMPLETION_REVIEW",
+    "predictions": 18,
+    "fresh_trainings": 6,
+    "epochs_each": 80,
+    "unique_IDs": 1516,
+    "K20_shape": [
+      1516,
+      20,
+      12,
+      2
+    ],
+    "old_files_verified": 27838,
+    "source_verified": 364,
+    "min_metric_error": 4.612843742535233e-7,
+    "all18_quality_and_complete_link_reconstruction": true,
+    "no_supplement_model_forward": true,
+    "no_optimizer": true
+  },
+  "gates": {
+    "change_ade_fde_gain_5pct": false,
+    "protected_groups_guard": true,
+    "each_seed_change_improves": false,
+    "native_and_zero_ci": false,
+    "all_seed_feasible": true,
+    "coverage_guard": true,
+    "duplicate_guard": true,
+    "kinematic_guard": true,
+    "same_path_joint_guard": true,
+    "motion_distribution_no_harm_1pct": false,
+    "global_pooled_motion_each_seed_group_1pct": false,
+    "native_and_fresh_joint_CI_exclude_zero": false
+  },
+  "primary_change": {
+    "ADE": 0.3670632541179657,
+    "FDE": 0.6867942810058594,
+    "native_ADE": 0.3721747398376465,
+    "native_FDE": 0.6963264346122742,
+    "raw_masked_control_ADE": 0.36974096298217773,
+    "raw_masked_control_FDE": 0.692263662815094
+  },
+  "primary_gain_percent": [
+    {
+      "group": "overall",
+      "ADE_gain_pct": 0.5796007436633221,
+      "FDE_gain_pct": 0.7019700522004069
+    },
+    {
+      "group": "stable",
+      "ADE_gain_pct": 0.5515594669588286,
+      "FDE_gain_pct": 0.5078205948123249
+    },
+    {
+      "group": "transition",
+      "ADE_gain_pct": -0.39340740564641763,
+      "FDE_gain_pct": 0.3692547710278604
+    },
+    {
+      "group": "change",
+      "ADE_gain_pct": 1.3734101680061839,
+      "FDE_gain_pct": 1.3689202552998658
+    }
+  ],
+  "primary_change_CIs": [
+    {
+      "policy": "constrained",
+      "reference": "native",
+      "group": "change",
+      "metric": "minade20",
+      "delta": -0.005111516752629715,
+      "ci_low": -0.015067232142499073,
+      "ci_high": 0.004113602431098417
+    },
+    {
+      "policy": "constrained",
+      "reference": "native",
+      "group": "change",
+      "metric": "minfde20",
+      "delta": -0.009532053179493221,
+      "ci_low": -0.037775752235966846,
+      "ci_high": 0.016632754209497277
+    },
+    {
+      "policy": "constrained",
+      "reference": "native",
+      "group": "change",
+      "metric": "top3_ade",
+      "delta": -0.0035646756155964863,
+      "ci_low": -0.010580290241308942,
+      "ci_high": 0.0030020966566263797
+    },
+    {
+      "policy": "constrained",
+      "reference": "native",
+      "group": "change",
+      "metric": "joint_oracle",
+      "delta": -0.010237827696607787,
+      "ci_low": -0.03298201141085459,
+      "ci_high": 0.010332577541938275
+    },
+    {
+      "policy": "constrained",
+      "reference": "zero",
+      "group": "change",
+      "metric": "minade20",
+      "delta": -0.0026777148168806893,
+      "ci_low": -0.012225781136814655,
+      "ci_high": 0.005726668953489067
+    },
+    {
+      "policy": "constrained",
+      "reference": "zero",
+      "group": "change",
+      "metric": "minfde20",
+      "delta": -0.00546932127465938,
+      "ci_low": -0.031840302630345735,
+      "ci_high": 0.018297460541596828
+    },
+    {
+      "policy": "constrained",
+      "reference": "zero",
+      "group": "change",
+      "metric": "top3_ade",
+      "delta": -0.002829083379341348,
+      "ci_low": -0.009439434082719245,
+      "ci_high": 0.003366264000100667
+    },
+    {
+      "policy": "constrained",
+      "reference": "zero",
+      "group": "change",
+      "metric": "joint_oracle",
+      "delta": -0.006246429120478608,
+      "ci_low": -0.02764395296250669,
+      "ci_high": 0.013060173038977945
+    }
+  ],
+  "native": {
+    "samepath_good": 733,
+    "effective_good": 929,
+    "raw_good": 1146,
+    "clear_event_n": 469,
+    "clear_event_good": 92,
+    "inherited_argmax_good": 281
+  },
+  "primary_quality_rows": [
+    {
+      "arm": "zero",
+      "seed": 1,
+      "policy": "constrained",
+      "good": 732,
+      "raw_good_total": 1148,
+      "effective_good_total": 932,
+      "rescued": 15,
+      "lost": 16,
+      "clear_good": 91,
+      "clear_rescued": 6,
+      "clear_lost": 7,
+      "inherited_selected_good": 281,
+      "lost_effective_on_retained_coverage": 2,
+      "gained_effective_on_retained_coverage": 6,
+      "native_multiple_to_one": 2,
+      "changed_distinct_count": 3,
+      "raw_good_histogram": {
+        "0": 784,
+        "1": 507,
+        "2": 40,
+        "3": 179,
+        "4": 6
+      },
+      "effective_good_histogram": {
+        "0": 784,
+        "1": 532,
+        "2": 200
+      },
+      "all_distinct_histogram": {
+        "18": 27,
+        "19": 172,
+        "20": 1317
+      }
+    },
+    {
+      "arm": "zero",
+      "seed": 2,
+      "policy": "constrained",
+      "good": 737,
+      "raw_good_total": 1153,
+      "effective_good_total": 937,
+      "rescued": 13,
+      "lost": 9,
+      "clear_good": 92,
+      "clear_rescued": 4,
+      "clear_lost": 4,
+      "inherited_selected_good": 280,
+      "lost_effective_on_retained_coverage": 1,
+      "gained_effective_on_retained_coverage": 5,
+      "native_multiple_to_one": 1,
+      "changed_distinct_count": 3,
+      "raw_good_histogram": {
+        "0": 779,
+        "1": 512,
+        "2": 40,
+        "3": 179,
+        "4": 6
+      },
+      "effective_good_histogram": {
+        "0": 779,
+        "1": 537,
+        "2": 200
+      },
+      "all_distinct_histogram": {
+        "18": 27,
+        "19": 172,
+        "20": 1317
+      }
+    },
+    {
+      "arm": "zero",
+      "seed": 3,
+      "policy": "constrained",
+      "good": 735,
+      "raw_good_total": 1154,
+      "effective_good_total": 929,
+      "rescued": 16,
+      "lost": 14,
+      "clear_good": 90,
+      "clear_rescued": 3,
+      "clear_lost": 5,
+      "inherited_selected_good": 281,
+      "lost_effective_on_retained_coverage": 11,
+      "gained_effective_on_retained_coverage": 9,
+      "native_multiple_to_one": 11,
+      "changed_distinct_count": 12,
+      "raw_good_histogram": {
+        "0": 781,
+        "1": 507,
+        "2": 43,
+        "3": 179,
+        "4": 6
+      },
+      "effective_good_histogram": {
+        "0": 781,
+        "1": 541,
+        "2": 194
+      },
+      "all_distinct_histogram": {
+        "18": 36,
+        "19": 163,
+        "20": 1317
+      }
+    },
+    {
+      "arm": "mean_std",
+      "seed": 1,
+      "policy": "constrained",
+      "good": 744,
+      "raw_good_total": 1164,
+      "effective_good_total": 938,
+      "rescued": 30,
+      "lost": 19,
+      "clear_good": 99,
+      "clear_rescued": 16,
+      "clear_lost": 9,
+      "inherited_selected_good": 285,
+      "lost_effective_on_retained_coverage": 10,
+      "gained_effective_on_retained_coverage": 8,
+      "native_multiple_to_one": 10,
+      "changed_distinct_count": 9,
+      "raw_good_histogram": {
+        "0": 772,
+        "1": 516,
+        "2": 42,
+        "3": 180,
+        "4": 6
+      },
+      "effective_good_histogram": {
+        "0": 772,
+        "1": 550,
+        "2": 194
+      },
+      "all_distinct_histogram": {
+        "18": 36,
+        "19": 164,
+        "20": 1316
+      }
+    },
+    {
+      "arm": "mean_std",
+      "seed": 2,
+      "policy": "constrained",
+      "good": 742,
+      "raw_good_total": 1160,
+      "effective_good_total": 942,
+      "rescued": 22,
+      "lost": 13,
+      "clear_good": 93,
+      "clear_rescued": 10,
+      "clear_lost": 9,
+      "inherited_selected_good": 283,
+      "lost_effective_on_retained_coverage": 3,
+      "gained_effective_on_retained_coverage": 7,
+      "native_multiple_to_one": 3,
+      "changed_distinct_count": 1,
+      "raw_good_histogram": {
+        "0": 774,
+        "1": 515,
+        "2": 42,
+        "3": 179,
+        "4": 6
+      },
+      "effective_good_histogram": {
+        "0": 774,
+        "1": 542,
+        "2": 200
+      },
+      "all_distinct_histogram": {
+        "18": 28,
+        "19": 172,
+        "20": 1316
+      }
+    },
+    {
+      "arm": "mean_std",
+      "seed": 3,
+      "policy": "constrained",
+      "good": 749,
+      "raw_good_total": 1177,
+      "effective_good_total": 828,
+      "rescued": 41,
+      "lost": 25,
+      "clear_good": 100,
+      "clear_rescued": 18,
+      "clear_lost": 10,
+      "inherited_selected_good": 289,
+      "lost_effective_on_retained_coverage": 135,
+      "gained_effective_on_retained_coverage": 18,
+      "native_multiple_to_one": 135,
+      "changed_distinct_count": 137,
+      "raw_good_histogram": {
+        "0": 767,
+        "1": 515,
+        "2": 47,
+        "3": 180,
+        "4": 7
+      },
+      "effective_good_histogram": {
+        "0": 767,
+        "1": 671,
+        "2": 77,
+        "3": 1
+      },
+      "all_distinct_histogram": {
+        "18": 160,
+        "19": 42,
+        "20": 1314
+      }
+    }
+  ],
+  "paired_constrained_coverage": [
+    {
+      "seed": 1,
+      "rescued": 31,
+      "lost": 19,
+      "clear_rescued": 18,
+      "clear_lost": 10,
+      "coverage_gain": 12,
+      "effective_good_delta": 6
+    },
+    {
+      "seed": 2,
+      "rescued": 22,
+      "lost": 17,
+      "clear_rescued": 11,
+      "clear_lost": 10,
+      "coverage_gain": 5,
+      "effective_good_delta": 5
+    },
+    {
+      "seed": 3,
+      "rescued": 44,
+      "lost": 30,
+      "clear_rescued": 20,
+      "clear_lost": 10,
+      "coverage_gain": 14,
+      "effective_good_delta": -101
+    }
+  ],
+  "history_train_loss_gain_pct": [
+    {
+      "arm": "zero",
+      "seed": 1,
+      "selected_epoch": 30,
+      "train_loss_gain_pct": 6.321405986026307,
+      "CAL_first_change_ADE": 0.24598419666290283,
+      "CAL_final_change_ADE": 0.2493889480829239,
+      "CAL_first_change_FDE": 0.432086706161499,
+      "CAL_final_change_FDE": 0.4392016530036926
+    },
+    {
+      "arm": "zero",
+      "seed": 2,
+      "selected_epoch": 21,
+      "train_loss_gain_pct": 6.858600279490501,
+      "CAL_first_change_ADE": 0.2459326535463333,
+      "CAL_final_change_ADE": 0.2512119710445404,
+      "CAL_first_change_FDE": 0.4319201707839966,
+      "CAL_final_change_FDE": 0.44483062624931335
+    },
+    {
+      "arm": "zero",
+      "seed": 3,
+      "selected_epoch": 28,
+      "train_loss_gain_pct": 6.105517863416399,
+      "CAL_first_change_ADE": 0.24590043723583221,
+      "CAL_final_change_ADE": 0.25158247351646423,
+      "CAL_first_change_FDE": 0.43190622329711914,
+      "CAL_final_change_FDE": 0.4393126666545868
+    },
+    {
+      "arm": "mean_std",
+      "seed": 1,
+      "selected_epoch": 29,
+      "train_loss_gain_pct": 13.20155350844191,
+      "CAL_first_change_ADE": 0.24598075449466705,
+      "CAL_final_change_ADE": 0.254558265209198,
+      "CAL_first_change_FDE": 0.4320838153362274,
+      "CAL_final_change_FDE": 0.4429003894329071
+    },
+    {
+      "arm": "mean_std",
+      "seed": 2,
+      "selected_epoch": 25,
+      "train_loss_gain_pct": 13.831876206275917,
+      "CAL_first_change_ADE": 0.24593424797058105,
+      "CAL_final_change_ADE": 0.25995784997940063,
+      "CAL_first_change_FDE": 0.431919127702713,
+      "CAL_final_change_FDE": 0.4605115056037903
+    },
+    {
+      "arm": "mean_std",
+      "seed": 3,
+      "selected_epoch": 35,
+      "train_loss_gain_pct": 13.894790708191284,
+      "CAL_first_change_ADE": 0.2458985298871994,
+      "CAL_final_change_ADE": 0.25849536061286926,
+      "CAL_first_change_FDE": 0.43189117312431335,
+      "CAL_final_change_FDE": 0.455289751291275
+    }
+  ],
+  "resource": {
+    "status": "SUCCESS",
+    "peak_RSS_GiB": 2.5793113708496094,
+    "peak_private_GiB": 3.3632850646972656,
+    "min_physical_GiB": 15.411434173583984,
+    "min_commit_GiB": 13.749252319335938,
+    "checks": 103632,
+    "process_budget_GiB": 6,
+    "system_reserve_GiB": 6,
+    "time": 1791157975.344375
+  },
+  "supplement_resource": {
+    "peak_RSS_GiB": 0.1182708740234375,
+    "peak_private_GiB": 1.5405731201171875,
+    "min_physical_GiB": 17.299388885498047,
+    "min_commit_GiB": 15.737686157226562
+  },
+  "interpretation": [
+    "Small samepath coverage increment with uncertain mean effect; no major/baseline/SOTA/intent claim.",
+    "Seed3 more windows covered but135 prior multi-effective-good windows become one; fewer effective clusters not automatically harmful or semantic collapse.",
+    "FIT training loss gain13.2-13.9% vsmasked6.1-6.9%; CALfinal worsens. This is descriptive generalization gap, not decoder/loss/optimizer rootcause proof.",
+    "Inherited nativeargmax slot only; scorer was not retrained or recalibrated.",
+    "6 fresh trainings and18 policies, not18 independent trainings;3 seeds repeat IDs, related tracks/scenes and exploratory DEV. No scene-correlation significance claim."
+  ],
+  "skill": "Academic Research Suite inline evidence/counterexample phases; no external or delegated reviewers.",
+  "devils_advocate": {
+    "checkpoint2": {
+      "verdict": "PASS_WITH_LIMITATIONS",
+      "major": "Coverage increment and effectivegood reduction oppose a simple more-good-is-better story; allseeds/policies/FITCAL andmotion retained.",
+      "minor": "Registered same SciPy complete linkage reconstructed, not independent alternative algorithm."
+    },
+    "checkpoint3": {
+      "verdict": "PASS_TO_SCOPED_NEXT_DESIGN_NOT_MAJOR",
+      "major": "Native/freshCIs cross0, seed3 andglobalmotion fail; cannot call improved movement intent or promote baseline.",
+      "strongest_counterargument": "Active state branch adds effective learning capacity versus maskedcontrol and can overfit; raw-vs-relative twoactive branches is only a representation/optimization comparison."
+    }
+  },
+  "next_design": "../GENERATION_OBSERVED_DISCREPANCY_SERIES_20261005/DESIGN.md",
+  "next_implementation_at": "2026-10-05T09:45:00+08:00",
+  "next_production_started": false
+}

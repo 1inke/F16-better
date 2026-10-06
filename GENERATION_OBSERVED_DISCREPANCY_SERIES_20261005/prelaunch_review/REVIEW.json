@@ -1,0 +1,58 @@
+{
+  "status": "PASS_ACTUAL_GATES_CURRENT_SOURCE_LOCK",
+  "source_count": 382,
+  "old_files": 28514,
+  "params_both": 45798,
+  "both_active_state": true,
+  "raw_previous_actual_sameweights_forward_exact": true,
+  "centered_coordinates": 30,
+  "common_rawFIT_scalers": true,
+  "last2_unchanged": true,
+  "actual_GPU8_FIT_passed": true,
+  "actual_both2epoch_resume_exact": true,
+  "benchmark": {
+    "status": "PASS_THROUGHPUT_ONLY",
+    "records": [
+      {
+        "arm": "zero",
+        "step128_seconds": 0.008287765625937027,
+        "CAL2879_seconds": 0.03421119996346533,
+        "measured_steps": 32,
+        "warmup_steps": 4
+      },
+      {
+        "arm": "mean_std",
+        "step128_seconds": 0.008820090630251798,
+        "CAL2879_seconds": 0.03457279998110607,
+        "measured_steps": 32,
+        "warmup_steps": 4
+      }
+    ],
+    "compute_minutes": 14.166715279803611,
+    "not_production_guarantee": true,
+    "not_gpu_isolation_guaranteed": true,
+    "saved_model": false
+  },
+  "memory_preflight": {
+    "peak_RSS_GiB": 2.2972564697265625,
+    "peak_private_GiB": 3.21417236328125,
+    "min_physical_GiB": 14.638656616210938,
+    "min_commit_GiB": 13.90566635131836,
+    "checks": 364
+  },
+  "memory_latest": {
+    "status": "BENCHMARK_PASS",
+    "peak_RSS_GiB": 2.093170166015625,
+    "peak_private_GiB": 2.8629188537597656,
+    "min_physical_GiB": 15.22695541381836,
+    "min_commit_GiB": 14.540603637695312,
+    "checks": 99,
+    "process_budget_GiB": 6,
+    "system_reserve_GiB": 6,
+    "time": 1791166021.8775141
+  },
+  "scientific_scope": "raw_vs_conditionally_centered_state32 only; wholeoldF16decoderScorer fixed",
+  "independent_external_review": false,
+  "no_model_forward_this_review": true,
+  "design_only_status_is_preregistration_snapshot": true
+}

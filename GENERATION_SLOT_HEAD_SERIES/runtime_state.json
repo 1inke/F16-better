@@ -1,0 +1,46 @@
+{
+  "status": "COMPLETE_AUDITED_GATE_FAIL",
+  "cycle": 3,
+  "experiment_in_cycle": 3,
+  "completed_in_cycle": 3,
+  "pid": 47712,
+  "parent_pid": 2728,
+  "windows_task": "Trajectory-SlotHead-Cycle3",
+  "launched_at": "2026-10-02T00:51:43.747545+08:00",
+  "estimate_minutes_range": [
+    30,
+    50
+  ],
+  "planning_minutes": 40,
+  "first_progress_query_at": "2026-10-02T01:15:44+08:00",
+  "first_progress_query_done": true,
+  "next_review_at": null,
+  "analysis_deadline": null,
+  "startup_confirmed": true,
+  "startup_progress": "realPID47712 parent2728 service/taskRunning/zero seed1epoch1/stderr empty",
+  "new_trainings": 6,
+  "epochs_each": 80,
+  "trainable_parameters": {
+    "zero": 25158,
+    "mean_std": 32568
+  },
+  "paired_shared_front_init_exact": true,
+  "native_identity_exact": true,
+  "internal_arm_mapping": {
+    "zero": "shared_last_layer",
+    "mean_std": "native_slot_untied_last_layer"
+  },
+  "mode_order": "locked original native K20 IDs; no arbitrary reordered input support",
+  "scope": "new head only/originaldecoder F16 scorer frozen/nativebase3anchor correction/commonclip1.5/originalfitcal loss noGTforward test",
+  "resume": "both-arm parameters/boolbuffers/optimizer/RNG/history/calibration EXACT",
+  "required_after_completion": "complete audit then mandatory cycle3 3/3 totalreview before next direction",
+  "progress_checked_at": "2026-10-02T01:17:30+08:00",
+  "progress": "SamePID47712 parent2728/taskRunning/stderr empty;zero3seeds complete;mean_stdseed1epoch55/80;295/480epochs61%",
+  "remaining_estimate_minutes": [
+    16,
+    20
+  ],
+  "finished_at": "2026-10-02T01:35:12.886010+08:00",
+  "audit": "18SHA/18IDfiniteK20/allstoredmetrics independent recompute PASS/frozen18/SUCCESS",
+  "result_analysis": "RESULT_ANALYSIS.md"
+}

@@ -1,0 +1,12 @@
+First invocation (no repeated attempt):
+C:/coding_toobox/envs/astra2/python.exe -B F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005/numeric_preflight.py
+Exit code: 1. Captured terminal output, retained verbatim below.
+
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\numeric_preflight.py", line 116, in <module>
+    if __name__=='__main__': raise SystemExit(main())
+  File "C:\Users\linke\Documents\New project\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\numeric_preflight.py", line 67, in main
+    rows = []; arrays = {}; resources = [resource()]
+  File "C:\Users\linke\Documents\New project\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\numeric_preflight.py", line 29, in resource
+    assert max(p.rss, p.private) <= 6*2**30 and min(v.avail_phys, v.avail_page) >= 6*2**30, 'STOP_RESOURCE'
+AssertionError: STOP_RESOURCE

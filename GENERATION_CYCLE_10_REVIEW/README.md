@@ -1,0 +1,3 @@
+# Mandatory cycle10 review
+
+Three completed fresh experiments only: direct observed neighbor-history input, candidate-query neighbor-axis attention, nonlinear per-neighbor messages before mean. Independently re-audit all18SHA/predictions pertrial,all stored sample/groupmetrics,80histories,source,frozenall andpriorSHA. Repeated controls/ETHdev not independentgeneralization. No optimizer/new DEVforward/test/oldfile edits. Keep full summaries/CIs/allpolicygroups/history and source references in REVIEW.json; synthesize MD before selecting newdirection. No fourth localpooling/attention/coeffepochvariant. Allnewartifacts here.

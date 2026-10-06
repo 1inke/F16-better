@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-10-06T02:46:12.7477981+08:00",
+  "worker": {
+    "pid": 31532,
+    "parent_pid": 2728,
+    "status": "RUNNING",
+    "started_at": "2026-10-06T02:15:03.676192+08:00",
+    "stage": "INITIAL_SOURCE_OLD_SHA"
+  },
+  "progress": {
+    "stage": "TRAIN",
+    "at": "2026-10-06T02:42:01.389117+08:00",
+    "arm": "mean_std",
+    "seed": 2
+  },
+  "actual_process": {
+    "ProcessId": 31532,
+    "ParentProcessId": 2728,
+    "Name": "python.exe",
+    "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006\\recovery_source_20261006\\independent_worker.py\""
+  },
+  "task_state": "Running",
+  "triggers": 0,
+  "exit_state": null,
+  "trainings": [
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "arm": "zero",
+      "seed": 1
+    },
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "arm": "zero",
+      "seed": 2
+    },
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "arm": "zero",
+      "seed": 3
+    },
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "arm": "mean_std",
+      "seed": 1
+    },
+    {
+      "last_completed_epoch": "45",
+      "complete": false,
+      "arm": "mean_std",
+      "seed": 2
+    },
+    {
+      "last_completed_epoch": 0,
+      "complete": false,
+      "arm": "mean_std",
+      "seed": 3
+    }
+  ],
+  "stderr_bytes": 0
+}

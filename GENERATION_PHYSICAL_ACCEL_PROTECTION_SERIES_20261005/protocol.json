@@ -1,0 +1,52 @@
+{
+  "protocol": "raw_active_persistent_plus_physical_accel_protection_v1",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "epochs": 80,
+  "trainable_parameters": 45798,
+  "raw_state_both_active": true,
+  "clock_both_active": true,
+  "dt": 0.4,
+  "added_weight": 0.1,
+  "native_tolerance": 1.01,
+  "normalization_floor_m_s2": 0.001,
+  "normalization_scope": "FIT25912_native_groupmean_acceleration_allK_all11only",
+  "groups": [
+    "stable",
+    "transition",
+    "change"
+  ],
+  "factor": "control_originaltotal_vs_treatment_originaltotal_plus_.1_group_batch_native_relative_normalized_accelmean_hinge",
+  "batch_group_weight": "n_g/B",
+  "empty_group": "zero",
+  "all_old_loss_guards_data_budget_unchanged": true,
+  "change_original_primary_assignment": false,
+  "oldF16_decoder_scorer_frozen": true,
+  "test_access": "forbidden",
+  "additional_event_supervision": false,
+  "future_observations": false,
+  "failedhead_warmstart": false,
+  "process_budget_GiB": 6,
+  "system_reserve_each_GiB": 6,
+  "progress_fraction": 0.5,
+  "implementation_at": "2026-10-05T18:20:00+08:00",
+  "all_major_and_motion_gates_unchanged": true,
+  "velocity_residual_scale": 1.5,
+  "protection_weight": 0.1,
+  "guard_fraction": 0.01,
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 20261001,
+  "set_context": "mean_std",
+  "pulse_center_range": [
+    0.05,
+    0.95
+  ],
+  "pulse_span_range": [
+    0.05,
+    0.5
+  ],
+  "amplitude_drift_partition": 0.5
+}

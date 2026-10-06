@@ -1,0 +1,12 @@
+{
+  "status": "IMPLEMENTATION_ONLY_REPAIR_FULL_PREFLIGHT_PASS",
+  "failure_provenance": "failures/preflight_20261004_232819",
+  "cause": "The smoke-test requested FIT_12000_12064, which is not a member of the original fixed 64-row block grid.",
+  "correction": "Use existing locked FIT_12032_12096 in both smoke comparison and finite-difference checks; the production jobs grid remains exactly 450 original blocks.",
+  "original_inputs_models_results_changed": false,
+  "scientific_thresholds_or_loss_changed": false,
+  "failed_source_and_trace_preserved": true,
+  "all_prior_preflight_failure_files_added_to_source_preservation_locks": true,
+  "production_launch_count": 0,
+  "conclusion": "Complete preflight PASS: source319 and old23614 SHA unchanged, original objective error1.67e-16/gradient3.47e-18, finite difference1.63e-9, independent sampled components/quality/motion arithmetic, source-mismatch and corrupt-output rejection, full compact result allocation and memory guards. No model forward or training."
+}

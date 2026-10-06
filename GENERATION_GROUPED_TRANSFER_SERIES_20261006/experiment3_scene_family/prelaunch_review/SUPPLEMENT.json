@@ -1,0 +1,17 @@
+{
+  "status": "PASS_WITH_REVIEW_METADATA_CORRECTION",
+  "review_file": "prelaunch_review/REVIEW.json",
+  "issue": "The review script emits a stale hard-coded train_per_arm value of 16104 from experiment 2.",
+  "correct_value": 16337,
+  "evidence": {
+    "design_protocol_train_each": 16337,
+    "metadata_scale_train_each": 16337,
+    "identity_audit_random_training_n": 16337,
+    "identity_audit_grouped_training_n": 16337,
+    "identity_audit_exact_global_loss_group_match": true
+  },
+  "other_review_gates": "The original prelaunch review status is PASS; source hashes, inherited old-file hashes, identity split, GPU/frozen checks, exact two-arm two-epoch resume, saved-output pipeline, disk and resource checks passed.",
+  "production_or_scientific_code_changed": false,
+  "review_script_changed_after_source_lock": false,
+  "training_or_optimizer_run_by_this_supplement": false
+}

@@ -1,0 +1,33 @@
+{
+  "protocol": "uniform_dual_raw_persistent_training_endpoint_accel_projection_v1",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "epochs": 80,
+  "trainable_parameters": 91596,
+  "factor": "unprojected_vs_fixed_endpoint_preserving_projection_IN_TRAIN_FORWARD",
+  "expert_mixture": "uniform_0.5_0.5_BOTH",
+  "prediction_precision": "float32_head_and_base_to_float64_cumsum_BOTH",
+  "loss": "original_total_plus_0.1_existing_P_acc_BOTH_unchanged_equations",
+  "projection_source": "F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005/recovery_numeric_20261006/projection.py",
+  "projection_gradient": "autograd_through_safe_alpha_and_mean; float32_zero_budget_mean_cast_has_straight_through_cast_derivative_not_quantization_FD_proof",
+  "same_code_endpoints_matched": true,
+  "final_trained_endpoints_matched": false,
+  "scalers": "immutable_prior_FIT25912_rawstate_and_physical_scales_no_refit",
+  "fit_n": 25912,
+  "cal_n": 2879,
+  "dev_n": 1516,
+  "calibration": "original_CAL_guard_and_order_unchanged",
+  "new_loss": false,
+  "new_assignment": false,
+  "event_supervision": false,
+  "old_F16_whole_decoder_scorer_frozen": true,
+  "test_access": "forbidden",
+  "failedhead_warmstart": false,
+  "process_budget_GiB": 6,
+  "system_reserve_each_GiB": 6,
+  "progress_fraction": 0.5,
+  "all_major_and_motion_gates_unchanged": true
+}

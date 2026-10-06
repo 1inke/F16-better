@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "samples": 1516,
+  "candidates": 20,
+  "dt_seconds": 0.4,
+  "scope": "ETH existing development cache; original F16 V2 seed1 native scoring/final refiner output. Not latest generated-head results; not held-out test.",
+  "thresholds": {
+    "ADE_m": 0.3,
+    "FDE_m": 0.5,
+    "joint_regret_m": 0.2,
+    "joint_fde_weight": 0.5
+  },
+  "threshold_role": "Descriptive adjustable thresholds only; no change to formal major gates.",
+  "counts": {
+    "准确选中：双oracle": 232,
+    "好候选未选中": 688,
+    "准确选中：可接受非双oracle": 149,
+    "终点接近、路径不足": 77,
+    "路径接近、终点不足": 104,
+    "ADE/FDE分属不同候选": 54,
+    "候选不足且选择有额外损失": 207,
+    "候选不足、选择接近最优": 5
+  },
+  "selected_ADE_mean": 0.5388688445091248,
+  "selected_FDE_mean": 1.1872947216033936,
+  "minADE_mean": 0.2195655256509781,
+  "minFDE_mean": 0.3960312306880951,
+  "source_sha_before": {
+    "C:\\Users\\linke\\Documents\\New project\\F16_RANKABILITY_PROBE_SERIES\\results\\cache\\val_seed1.npz": "ba871a58a336e94691c66db1f18c7f2588c7eae2332880186bca364e5a10b044",
+    "C:\\Users\\linke\\Documents\\New project\\F16_RANKABILITY_PROBE_SERIES\\results\\p0_identity\\CACHE_IDENTITY_AUDIT.md": "1df3c036f6731ccb312e333c7d08f059d84622d779e2e3d7e0f5bacf83df991a"
+  },
+  "source_sha_after": {
+    "C:\\Users\\linke\\Documents\\New project\\F16_RANKABILITY_PROBE_SERIES\\results\\cache\\val_seed1.npz": "ba871a58a336e94691c66db1f18c7f2588c7eae2332880186bca364e5a10b044",
+    "C:\\Users\\linke\\Documents\\New project\\F16_RANKABILITY_PROBE_SERIES\\results\\p0_identity\\CACHE_IDENTITY_AUDIT.md": "1df3c036f6731ccb312e333c7d08f059d84622d779e2e3d7e0f5bacf83df991a"
+  },
+  "checks": [
+    "explicit unique sample IDs",
+    "finite N1516 K20 T12 xy2",
+    "cached ADE/FDE independently recomputed within1e-5",
+    "selected index equals actual native logits argmax",
+    "minADE index matches cached oracle",
+    "same-candidate classification synthetic tests",
+    "all samples partitioned",
+    "input cache/reference SHA unchanged"
+  ]
+}

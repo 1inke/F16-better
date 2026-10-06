@@ -1,0 +1,12 @@
+Supplementary saved-data review only, no model/optimizer/training.
+First review failed in metrics(native_z): it referenced current-head saved cluster
+counts while calculating native-only coverage. Cluster-to-coverage assertion
+correctly rejected this mismatched hypothetical input. Original production
+outputs/audits/source and all old files untouched; production remains SUCCESS.
+Preserved pre-fix supplement in review_before_native_cluster_mask_fix.py.
+Fix: native-only error/motion/count reference has no inherited cluster fields;
+actual-head saved cluster-bound/group verification remains unchanged.
+Trace:
+review.py main line101 native=metrics(native_z)
+review.py metrics line45 assert effective_good>0 == coverage
+AssertionError

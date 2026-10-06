@@ -1,0 +1,6 @@
+{
+  "status": "SUPPLEMENT_MASK_DTYPE_BUG_BEFORE_REPORTS",
+  "error": "Saved GT event fields are integer; ~ on uint8 then array indexing was not boolean selection. All FIT primary raw arrays independently match. Explicit bool casts fix supplement only.",
+  "production_outputs_unchanged": true,
+  "fix": "Cast GT_event, GT_uncertain and cue flags to bool before masks; no thresholds/metrics/data change."
+}

@@ -1,0 +1,74 @@
+{
+  "status": "ANALYSIS_COMPLETE_VALIDATION_ONLY",
+  "baseline_checkpoint": "C:\\Users\\linke\\Documents\\New project\\QUALITY_AWARE_F16_SERIES_V2\\results\\p0_protocol\\C0_EXP173_EXACT\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth",
+  "baseline_sha256": "691e9f9ff6b7dc1df1c7d5f4901d97ea9885fac891099c84044bf56dd98d2341",
+  "validation_samples": 1516,
+  "validation_id_sha256": "dfd29348a6eb3d3ac601c3fae60250d86762a85fb94ea326d050d582621e870d",
+  "selection_candidate_identity_max_error": {
+    "best_selection": 2.86102294921875e-06,
+    "best_generation": 2.86102294921875e-06,
+    "final": 2.86102294921875e-06
+  },
+  "selection_candidate_identity_tolerance": 5e-06,
+  "frozen_c00_parameter_audit": {
+    "s_only_g0_s1": {
+      "best_selection": {
+        "checkpoint_sha256": "ac2976a16df94eacea8b3010e1393044bce2617d18d35c9b2ad4cea5b33acd6c",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      },
+      "best_generation": {
+        "checkpoint_sha256": "133cbf6cd12a54b18742466131f08f855ae08b31a9ae88b92e90e0904fbd1536",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      },
+      "final": {
+        "checkpoint_sha256": "5669db5f5c4ee56ce162d4c87ed9876516b238dc80fdc162ea7bdcc9e977ec8e",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      }
+    },
+    "g_only_g1_s0": {
+      "best_selection": {
+        "checkpoint_sha256": "b05addeac538fcb90f28acdbbbd412e1f00c3dfea3c0bd3623fb0dbcd90d787c",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      },
+      "best_generation": {
+        "checkpoint_sha256": "e3f86c7a637194886e7f19b6388671d07fbfa5c2b5cd5dd1d740fa27f41aa9b3",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      },
+      "final": {
+        "checkpoint_sha256": "58adc485947d09712ba35c312643bbaa288993638f87b2cedd75593ec0a44da0",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      }
+    },
+    "joint_g1_s1": {
+      "best_selection": {
+        "checkpoint_sha256": "d1887d401365edf194123da439b8ef910be729c24cb05d4d84ee808530579c15",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      },
+      "best_generation": {
+        "checkpoint_sha256": "3b1ae2449aa74085856aa8c87fd14df13a01b8c32a94904ee32c679fdb85b735",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      },
+      "final": {
+        "checkpoint_sha256": "9825a974c9b919b012a4b7b2dbf1619746c1ce4d924007824bd6f94417805852",
+        "shared_tensors_exact": 136,
+        "changed_shared_tensors": 0
+      }
+    }
+  },
+  "motion_groups": {
+    "stable": "score < 0.25",
+    "transition": "0.25 <= score < 0.50",
+    "change": "score >= 0.50"
+  },
+  "bootstrap_repetitions": 10000,
+  "sample_bootstrap_scope": "conditional on one trained model per cell; not training-seed uncertainty",
+  "test_accessed": false
+}

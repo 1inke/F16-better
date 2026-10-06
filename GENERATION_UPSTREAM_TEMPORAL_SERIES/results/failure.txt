@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\GENERATION_DIRECT_ANCHOR_SERIES\run_head.py", line 149, in main
+    c.main()
+  File "C:\Users\linke\Documents\New project\GENERATION_SET_CONTEXT_SERIES\run_context.py", line 168, in main
+    evaluate(device);m.write_json(m.RESULTS/'exit_status.json',dict(status='SUCCESS',time=time.time()))
+  File "C:\Users\linke\Documents\New project\GENERATION_UPSTREAM_TEMPORAL_SERIES\run_head.py", line 136, in evaluate
+    n.evaluate(device)
+  File "C:\Users\linke\Documents\New project\GENERATION_NATIVE_DECODER_SERIES\run_native.py", line 183, in evaluate
+    ORIGINAL_EVALUATE(device)
+  File "C:\Users\linke\Documents\New project\GENERATION_SET_CONTEXT_SERIES\run_context.py", line 102, in evaluate
+    cache=p.load_npz(p.DEV_CACHE);dim=cache['motion'].shape[1]+cache['social'].shape[1]
+  File "C:\Users\linke\Documents\New project\GENERATION_UPSTREAM_TEMPORAL_SERIES\run_head.py", line 47, in load_cache
+    cache['_online_observation']=raw_observations('train' if Path(path)==p.TRAIN_CACHE else 'dev',cache)
+  File "C:\Users\linke\Documents\New project\GENERATION_UPSTREAM_TEMPORAL_SERIES\run_head.py", line 30, in raw_observations
+    dataset=TRAINER.TrajectoryDataset(*n.f.fold_data('eth',split),BACKEND_CFG)
+  File "C:\Users\linke\Documents\New project\FRONT_ENCODER_SERIES\train_front_variant.py", line 33, in __init__
+    self.data = np.load(data_path, mmap_mode="r")
+  File "C:\coding_toobox\envs\astra2\lib\site-packages\numpy\lib\npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_dev.npy'

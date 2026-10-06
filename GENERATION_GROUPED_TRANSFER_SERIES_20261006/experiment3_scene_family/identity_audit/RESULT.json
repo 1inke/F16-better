@@ -1,0 +1,165 @@
+{
+  "status": "PASS_IDENTITY_MATCHED_SCENE_FAMILY_SPLIT",
+  "formal": false,
+  "no_model_forward": true,
+  "no_optimizer": true,
+  "tag": "20261006-grouped-scene-v1",
+  "target_family": "zara",
+  "unique_ids": 25912,
+  "all_windows_in_registry": true,
+  "unknown_time_retained": 123,
+  "unknown_not_unpredictable": true,
+  "unused_both": 2087,
+  "outer_target_tracks": 309,
+  "outer_recordings": 3,
+  "partitions": {
+    "random_training": {
+      "n": 16337,
+      "scene": {
+        "hotel": 525,
+        "university": 11658,
+        "zara": 4154
+      },
+      "sequence": {
+        "biwi_hotel": 525,
+        "crowds_zara01": 1056,
+        "crowds_zara02": 2251,
+        "crowds_zara03": 847,
+        "students001": 7772,
+        "students003": 3886
+      },
+      "loss_group": {
+        "0": 7819,
+        "1": 3694,
+        "2": 4824
+      }
+    },
+    "grouped_training": {
+      "n": 16337,
+      "scene": {
+        "hotel": 759,
+        "university": 15578,
+        "zara": 0
+      },
+      "sequence": {
+        "biwi_hotel": 759,
+        "crowds_zara01": 0,
+        "crowds_zara02": 0,
+        "crowds_zara03": 0,
+        "students001": 10475,
+        "students003": 5103
+      },
+      "loss_group": {
+        "0": 7819,
+        "1": 3694,
+        "2": 4824
+      }
+    },
+    "outer_evaluation": {
+      "n": 1561,
+      "scene": {
+        "hotel": 0,
+        "university": 0,
+        "zara": 1561
+      },
+      "sequence": {
+        "biwi_hotel": 0,
+        "crowds_zara01": 395,
+        "crowds_zara02": 851,
+        "crowds_zara03": 315,
+        "students001": 0,
+        "students003": 0
+      },
+      "loss_group": {
+        "0": 1226,
+        "1": 124,
+        "2": 211
+      }
+    },
+    "inner_calibration": {
+      "n": 1773,
+      "scene": {
+        "hotel": 74,
+        "university": 1699,
+        "zara": 0
+      },
+      "sequence": {
+        "biwi_hotel": 74,
+        "crowds_zara01": 0,
+        "crowds_zara02": 0,
+        "crowds_zara03": 0,
+        "students001": 1216,
+        "students003": 483
+      },
+      "loss_group": {
+        "0": 833,
+        "1": 418,
+        "2": 522
+      }
+    },
+    "common_statistics": {
+      "n": 12183,
+      "scene": {
+        "hotel": 525,
+        "university": 11658,
+        "zara": 0
+      },
+      "sequence": {
+        "biwi_hotel": 525,
+        "crowds_zara01": 0,
+        "crowds_zara02": 0,
+        "crowds_zara03": 0,
+        "students001": 7772,
+        "students003": 3886
+      },
+      "loss_group": {
+        "0": 4858,
+        "1": 3230,
+        "2": 4095
+      }
+    }
+  },
+  "random_exposure": {
+    "n": 1561,
+    "same_sequence_20index_overlap": 1561,
+    "same_target_20index_overlap": 1555,
+    "same_target_exposure": 1555,
+    "same_family_training_windows": 4154
+  },
+  "grouped_exposure": {
+    "n": 1561,
+    "same_sequence_20index_overlap": 0,
+    "same_target_20index_overlap": 0,
+    "same_target_exposure": 0,
+    "same_family_training_windows": 0
+  },
+  "sharedinner_whole_target_disjoint": true,
+  "composition": "EXACT_GLOBAL_LOSS_GROUP_NOT_SEQUENCE_OR_SCENE",
+  "all_initial_final_old_SHA": true,
+  "inherited_digests_count": 33551,
+  "old_file_count": 34351,
+  "sources": {
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\experiment3_scene_family\\identity_split_audit.py": "3fc1bacc0a528e3f152c389fb6dff941cb003304151a1e5b1e78984f1321f6b6",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\experiment3_scene_family\\README.md": "c200c555fae59b30c48256da94162c7473e9226ff50f463cbe658304b32ead28",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\experiment3_scene_family\\DESIGN.md": "06805a2be59ffe0e13fd16c82104760fd62580e8b763f9988e6b636190109b29",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\experiment3_scene_family\\protocol.json": "6139e7b89210f2345caed3fa6422dc04d29f3d675313fe4982277d3eaa7c749d"
+  },
+  "saved_split_SHA": "f8482b638354426e3d0b8f6a97a14866b57e19f187beb23d97bc0588ee535cd0",
+  "metadata_scale_matches_exact": true,
+  "resource": {
+    "peak_RSS_GiB": 0.21442794799804688,
+    "peak_private_GiB": 0.9216423034667969,
+    "min_physical_GiB": 16.65972900390625,
+    "min_commit_GiB": 15.695144653320312,
+    "checks": 205
+  },
+  "elapsed_seconds": 200.31229229999008,
+  "limitations": [
+    "frozenF16seen;newheadonly",
+    "oneheldzaraFamilyNOToriginalCALuniversity",
+    "family_target_time_context_distributions_coupled",
+    "unknown_times_not_zero_overlap",
+    "3recordings_not_independent_sceneCI",
+    "finiteoptimization_confound"
+  ]
+}

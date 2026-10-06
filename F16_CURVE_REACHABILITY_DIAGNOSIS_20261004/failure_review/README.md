@@ -1,0 +1,11 @@
+# Failure review — stopped for human decision
+
+The sole 50%-elapsed-time check was performed at 2026-10-04T21:40:50.6887030+08:00 (scheduled21:38:36). Worker48072 had already failed at21:24:14.125652, after171/450 scientific blocks (10,944 FIT windows). No current worker; no full FIT/CAL classification. The synthetic resume fixture is not a science block.
+
+Read-only reproduction of exactly FIT_10944_11008, with locked fitting budget and original astra2 environment, isolates the failure: float32 normalized pulse profile sum has max residual6.079673767e-6, slightly above the existing6e-6 audit. Float32/float64 path max1.116892575e-6m is below2e-5m; endpoint decomposition discrepancy is also about1.12e-6m. SampleID11422/slot4 reaches the max profile residual. This suggests a numerical-audit sensitivity, not a demonstrated modeling or RAM failure. No threshold, production source, fitting protocol or model was changed. The fixed64-row fitting reproduction is failure diagnosis, not new training or completion.
+
+All171 done source identities and342 output SHA verified. All21,852 original manifest files and295 locked sources rehashed unchanged after failure. This preservation review is NOT the unfinished full-population arithmetic/classification or frozen replay audit. Sequential early FIT blocks cannot estimate FIT/CAL category proportions or prove decoder root cause. Formal response study remains2/3.
+
+Original failure/code/log/exit remain under failures/worker_20261004_212414 and original task root; nothing overwritten. Supplemental initial default-Python attempts failed before science because of temp permission and an OpenMP runtime conflict. Original production Python astra2 was then used successfully. No unsupported duplicate-OpenMP workaround used.
+
+Per the human stop-on-obstruction rule: STOP, wait for direct approval before a justified numerical audit repair and source-compatible SHA-verified recovery. Candidate ADE/FDE thresholds, geometric bounds, solver budget and data scope must not be silently changed to force PASS. No automatic retry, new training, broader unfreezing, model/loss/data change. Keep automation ACTIVE but waiting, no old PID/log/results queries or repeated half-check.

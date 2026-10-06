@@ -1,0 +1,99 @@
+{
+  "scope": "locked ETH validation set",
+  "sample_count": 1516,
+  "sample_ids_exactly_aligned": true,
+  "c00_visual_cache_max_abs_error": 2.86102294921875e-06,
+  "paired_summary": {
+    "minADE": {
+      "h3_mean": 0.22540587186813354,
+      "c00_mean": 0.2195655256509781,
+      "relative_change_pct": -2.591035525716989,
+      "ci95_low_pct": -4.1134231925010685,
+      "ci95_high_pct": -1.0517758339643488
+    },
+    "minFDE": {
+      "h3_mean": 0.41362321376800537,
+      "c00_mean": 0.39603129029273987,
+      "relative_change_pct": -4.25312769924285,
+      "ci95_low_pct": -6.401584422588348,
+      "ci95_high_pct": -2.0291369438171394
+    },
+    "selected_ADE": {
+      "h3_mean": 0.540369987487793,
+      "c00_mean": 0.5388688445091248,
+      "relative_change_pct": -0.27779910310102557,
+      "ci95_low_pct": -1.241375172138214,
+      "ci95_high_pct": 0.6930246889591216
+    },
+    "spread": {
+      "h3_mean": 2.725398540496826,
+      "c00_mean": 2.4301393032073975,
+      "relative_change_pct": -10.833616915183512,
+      "ci95_low_pct": -11.2795814037323,
+      "ci95_high_pct": -10.373724985122681
+    },
+    "winner_switch_rate": 0.262532981530343,
+    "c00_minade_better_fraction": 0.5910290237467019,
+    "c00_selected_better_fraction": 0.5686015831134564,
+    "h3_oracle_rank_mean": 5.731530343007916,
+    "c00_oracle_rank_mean": 6.319920844327177,
+    "h3_oracle_rank_median": 4.0,
+    "c00_oracle_rank_median": 5.0
+  },
+  "representatives": [
+    {
+      "category": "Clear oracle gain",
+      "selection_rule": "10th percentile of paired minADE change",
+      "cache_index": 304,
+      "sample_id": 8939,
+      "h3_minADE": 0.1970643699169159,
+      "c00_minADE": 0.11397480964660645,
+      "delta_minADE": -0.08308956027030945,
+      "h3_selected_ADE": 0.3402661681175232,
+      "c00_selected_ADE": 0.3379616141319275,
+      "delta_selected_ADE": -0.002304553985595703,
+      "winner_changed": true
+    },
+    {
+      "category": "Typical case",
+      "selection_rule": "closest sample to the median paired change",
+      "cache_index": 151,
+      "sample_id": 7213,
+      "h3_minADE": 0.01182545255869627,
+      "c00_minADE": 0.00899377278983593,
+      "delta_minADE": -0.00283167976886034,
+      "h3_selected_ADE": 0.014361435547471046,
+      "c00_selected_ADE": 0.00899377278983593,
+      "delta_selected_ADE": -0.005367662757635117,
+      "winner_changed": false
+    },
+    {
+      "category": "Geometry-score mismatch",
+      "selection_rule": "oracle improves but the selected trajectory becomes worse",
+      "cache_index": 232,
+      "sample_id": 7294,
+      "h3_minADE": 0.5681673884391785,
+      "c00_minADE": 0.47332704067230225,
+      "delta_minADE": -0.09484034776687622,
+      "h3_selected_ADE": 1.3065851926803589,
+      "c00_selected_ADE": 1.7405335903167725,
+      "delta_selected_ADE": 0.4339483976364136,
+      "winner_changed": true
+    },
+    {
+      "category": "Oracle degradation",
+      "selection_rule": "90th percentile of paired minADE change",
+      "cache_index": 341,
+      "sample_id": 8976,
+      "h3_minADE": 0.16459044814109802,
+      "c00_minADE": 0.23516914248466492,
+      "delta_minADE": 0.0705786943435669,
+      "h3_selected_ADE": 0.7379392981529236,
+      "c00_selected_ADE": 0.7642821073532104,
+      "delta_selected_ADE": 0.026342809200286865,
+      "winner_changed": false
+    }
+  ],
+  "representative_selection_is_descriptive_not_inferential": true,
+  "test_data_used": false
+}

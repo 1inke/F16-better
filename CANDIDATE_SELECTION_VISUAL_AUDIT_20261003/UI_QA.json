@@ -1,0 +1,46 @@
+{
+  "status": "PASS_LOCALHOST_VISUAL_AND_DATA_QA",
+  "browser": "Codex In-app Browser; localhost-only preview",
+  "data_tests": {
+    "python_synthetic_tests": 4,
+    "web_sample_rows_agree_with_python": 6064,
+    "threshold_group_count_rows_verified": 288,
+    "finite_coordinate_components_checked": 2910720,
+    "rounded_web_ADE_recompute_max_error_m": 0.000005236753754855883,
+    "rounded_web_FDE_recompute_max_error_m": 0.000013345835094824565,
+    "native_selected_slot_equals_argmax_all_models": true
+  },
+  "browser_checks": {
+    "native_default_counts": [371,692,37,135,69,212],
+    "native_strict_counts": [281,452,56,77,191,459],
+    "native_loose_counts": [776,626,7,14,26,67],
+    "exact_minADE_filter_count": 149,
+    "missed_adequate_filter_count": 692,
+    "candidate_click_updates_highlight": true,
+    "unsaved_draft_retained_when_toggling_layers": true,
+    "comparison_selection_warning_visible": true,
+    "all_four_candidate_sources_selectable": true,
+    "empty_filter_disables_navigation_and_annotation_save": true,
+    "split_oracle_example_ID30297_has_zero_samepath_adequate": true,
+    "SVG_text_export_valid_and_saved": "example_ID9019_selection.svg",
+    "JSON_text_export_valid_empty_annotations": true,
+    "localStorage_write_reload_roundtrip_tested": false,
+    "browser_download_event_confirmed": false,
+    "download_limitation": "The in-app browser did not emit a download event. Same JSON/SVG text is exposed in a copyable fallback, verified through the UI. Standard browser download behavior not claimed as tested.",
+    "mobile_viewport_test": {"width":390,"height":844,"page_scroll_width":375,"paired_space_plot_width":346.66668701171875,"paired_space_plot_height":330,"override_reset":true},
+    "wide_paired_space_plots_same_dimensions": true,
+    "browser_page_console_errors": []
+  },
+  "screenshots": ["preview.jpg","preview_case.jpg","preview_mobile.jpg"],
+  "representative_preview": {"model":"native","sample_id":9019,"rule":"median_joint_regret within missed-adequate category; not hand-selected maximum"},
+  "offline_file_navigation_tested": false,
+  "offline_design": "Plain relative script/style files; no fetch, CDN, third-party API or server-side logic required. Keep the whole folder together.",
+  "final_UI_SHA256": {
+    "index.html":"947ed5d79b4af7436de57ea7d6790203f0947bcc4c8323fae204c614f7ae126e",
+    "viewer.js":"ca702d2c76e7c50503a1027b5c7bec93f7bebc2142c3754262423775f3796abc",
+    "style.css":"c09c3543328b193f0d327768990f97680496477f8f5620691a3eb12808b5d177",
+    "test_web_data.js":"ac17390ab0b3bce8a79179583adb35fae1486add325eba551d6b2b5d42e225ed"
+  },
+  "scientific_audit": "audit.json: 17573 locked prior files SHA unchanged before and after; no source/model/result edits, no GPU, no optimizer, no test access",
+  "scope": "Posthoc exploratory human-review tool; not a formal experiment, new baseline, causal proof or independent generalization"
+}

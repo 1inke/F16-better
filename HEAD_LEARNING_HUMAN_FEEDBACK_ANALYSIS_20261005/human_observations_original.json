@@ -1,0 +1,614 @@
+{
+  "study": "head_learning_20261005",
+  "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+  "annotations": [
+    {
+      "sample_id": 27381,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "可以看出改后的，对于预测结点附近的运动状态有了较好的学习，但对于后半段预测仍然出现了问题，这个问题意味着我们要继续改解码方式",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:53:25.599Z"
+    },
+    {
+      "sample_id": 27398,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "可以看出改后的，对于预测结点附近的运动状态有了较好的学习，但对于后半段预测仍然出现了问题，这个问题意味着我们要继续改解码方式。只是出现了较高质量候选，模型没选中，但是前半段确实和GT相近",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:54:22.998Z"
+    },
+    {
+      "sample_id": 27526,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "有好的GT，但是没选中。同时，这也反映了一些我们后半段预测的问题，前半段效果可以",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:55:29.315Z"
+    },
+    {
+      "sample_id": 27716,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "终点存在问题，但原始F16也有这个问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:56:09.579Z"
+    },
+    {
+      "sample_id": 27717,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "我倾向于认为还是后半段的问题，因为看原F16，我感觉像是多模态候选蒙对了一个 min ade.fde，根据模型选取的那条轨迹，他似乎并没有理解这个样例的运动情况。",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:57:33.582Z"
+    },
+    {
+      "sample_id": 27765,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "一个恶化的例子",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:57:55.885Z"
+    },
+    {
+      "sample_id": 27825,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "可以看出改后的，对于预测结点附近的运动状态有了较好的学习，但对于后半段预测仍然出现了问题，这个问题意味着我们要继续改解码方式",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:58:33.959Z"
+    },
+    {
+      "sample_id": 27952,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "需要进一步研究",
+      "note": "比较难以理解",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:59:06.669Z"
+    },
+    {
+      "sample_id": 28230,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "需要进一步研究",
+      "note": "仍然存在问题，对于运动的理解",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:59:27.187Z"
+    },
+    {
+      "sample_id": 28238,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "后半段存在问题，但和原F15，拉不开差距",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T17:59:56.601Z"
+    },
+    {
+      "sample_id": 28378,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "存在问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:00:07.854Z"
+    },
+    {
+      "sample_id": 28455,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "存在问题，和原F16拉不开差距",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:00:28.814Z"
+    },
+    {
+      "sample_id": 28836,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "需要进一步研究",
+      "note": "存在问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:01:01.707Z"
+    },
+    {
+      "sample_id": 28993,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "存在问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:01:20.418Z"
+    },
+    {
+      "sample_id": 29007,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "lost",
+      "tag": "未标注",
+      "note": "没学到运动，有问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:01:55.835Z"
+    },
+    {
+      "sample_id": 26759,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "有了一些改善，但不多，对于终点，后半段的预测存在问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:03:04.758Z"
+    },
+    {
+      "sample_id": 26774,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "有改进，后半部分存在问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:03:33.287Z"
+    },
+    {
+      "sample_id": 26798,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "后半部分",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:03:54.362Z"
+    },
+    {
+      "sample_id": 26957,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "有好的候选，且质量优于F16，但是模型未选中。后半段仍然存在问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:04:38.837Z"
+    },
+    {
+      "sample_id": 26962,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "模型对前半段的预测有了很好的提升，后半段仍然不足",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:05:32.325Z"
+    },
+    {
+      "sample_id": 27041,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "有好的候选，但是模型的筛选出现了问题。终点的问题也需要考虑",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:06:35.979Z"
+    },
+    {
+      "sample_id": 27043,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "仍然存在模型将未来状态的预测仍然是预测时间点状态的顺延。",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:07:51.368Z"
+    },
+    {
+      "sample_id": 27086,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "有较高质量的候选，没选对，而且候选质量确实提升了，仅针对最优的那条。",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:08:46.321Z"
+    },
+    {
+      "sample_id": 27241,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "能看出模型确实对运动状态的理解有了进步，但筛选出最优，仍然是问题。",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:09:30.818Z"
+    },
+    {
+      "sample_id": 27474,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "候选质量确实变好了，后半段问题比较大。以及筛选问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:10:48.419Z"
+    },
+    {
+      "sample_id": 27522,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "有好的候选但是模型没学到",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:11:23.684Z"
+    },
+    {
+      "sample_id": 27700,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "对运动的理解更好了，但是后半段确实有待提高",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:12:03.204Z"
+    },
+    {
+      "sample_id": 27767,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "候选质量更好，但模型依旧顺延预测开始节点的运动状态",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:12:46.509Z"
+    },
+    {
+      "sample_id": 27844,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "候选变好，但是模型依然选择了顺延预测时间节点的状态",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:13:14.394Z"
+    },
+    {
+      "sample_id": 27903,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "顺延，候选质量提升。",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:13:33.515Z"
+    },
+    {
+      "sample_id": 28083,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "后半段预测存在问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:13:47.590Z"
+    },
+    {
+      "sample_id": 28186,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "后半段存在问题(模型选中的这条，又是顺延)，候选质量提升了。",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:14:38.898Z"
+    },
+    {
+      "sample_id": 28280,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "质量提升，外加，又是顺延",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:14:59.914Z"
+    },
+    {
+      "sample_id": 28406,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "能看出模型对运动的理解更好了，但是后半段依然存在问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:15:22.216Z"
+    },
+    {
+      "sample_id": 28705,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "顺延问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:16:02.937Z"
+    },
+    {
+      "sample_id": 28975,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "候选质量提升，但是模型倾向顺延",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:16:22.467Z"
+    },
+    {
+      "sample_id": 29180,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "候选质量提升，仍存在顺延问题",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:16:45.463Z"
+    },
+    {
+      "sample_id": 29201,
+      "seed": 7,
+      "reference": "native",
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "classification": "rescued",
+      "tag": "未标注",
+      "note": "候选质量提升，但是依然顺延",
+      "highlighted_slot_1based": null,
+      "path_mode": "closest",
+      "source_sha": "6cc9ccf86e932aba27d237b213185e900d534a8e3c4c8aefc2d5047e413cef3c",
+      "saved_at": "2026-10-04T18:17:02.630Z"
+    }
+  ]
+}

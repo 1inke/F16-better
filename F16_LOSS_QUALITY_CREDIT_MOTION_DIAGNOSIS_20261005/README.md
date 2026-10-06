@@ -1,0 +1,3 @@
+# Loss改善与完整候选质量一致性诊断
+
+人类已授权三项冻结诊断：checkpoint间loss→coverage；hardwinner直接/间接credit；质量与原平滑及物理运动学参数gradient。详细定义见DESIGN.md/protocol.json。DESIGN_IMPLEMENTATION_PENDING不是预检PASS或running，runtime决定实际状态。全旧模型结果不改，无optimizer/newloss训练/DEV。实测预检通过后sole独立OSworker与一次50%检查。

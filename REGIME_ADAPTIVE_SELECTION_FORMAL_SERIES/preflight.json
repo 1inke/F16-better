@@ -1,0 +1,162 @@
+{
+  "status": "PREFLIGHT_PASS_NO_TRAINING_NO_TEST_LOAD",
+  "protocol": "regime_adaptive_selection_formal_v1",
+  "folds": {
+    "eth": {
+      "train": 28791,
+      "dev": 1516,
+      "train_id_sha256": "0371df4057f9cf937da908c95aaee2dcf9d7f70eab25caa18da176153b854c45",
+      "dev_id_sha256": "dfd29348a6eb3d3ac601c3fae60250d86762a85fb94ea326d050d582621e870d"
+    },
+    "hotel": {
+      "train": 28192,
+      "dev": 1484,
+      "train_id_sha256": "0e050e03662517fa31cd48c109f1bd187ea993e3cc92d5d1c9af46c30aa7df85",
+      "dev_id_sha256": "43c398b3abdeb3570c8b79aabb1d6c5fb36a42ed3622c2a704ba85c0b61caace"
+    },
+    "univ": {
+      "train": 9380,
+      "dev": 494,
+      "train_id_sha256": "0e6cacf3d908c4eb2f4a1a13162f2527aacfbb7d1898d63944d37c11b0a0a014",
+      "dev_id_sha256": "c87645b47c83aca4575c4eac4b59f7d962017942bffc3b64b53b1ae1157b5872"
+    },
+    "zara01": {
+      "train": 27148,
+      "dev": 1429,
+      "train_id_sha256": "60bc70d4a8f1b18e14d514882ba3b16f96af6629f498d9ed42c9dc32b312e407",
+      "dev_id_sha256": "076e17f75bcf53630c5110c972e221c792980c2a9ec78dfae339e8f75a959969"
+    },
+    "zara02": {
+      "train": 24772,
+      "dev": 1304,
+      "train_id_sha256": "d838a3ca45c2c79a7e86e7d315b0008830d1696f607c075316ee23ff1ec3f400",
+      "dev_id_sha256": "15e5013c872da0cba4e7d1dddb05acde7399aad31013f1afab8a18334c0adaea"
+    }
+  },
+  "arms": [
+    "constant_gate",
+    "shuffled_d1",
+    "d0_motion_gate",
+    "d1_social_gate"
+  ],
+  "head_seeds": [
+    1,
+    2,
+    3
+  ],
+  "source_hashes": {
+    "C:\\coding_toobox\\envs\\astra2\\python.exe": "ab4eea482338433355b60533c0f4af111a0ca21b392b4c4a4db35077de21eda6",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\motif_rbf_official_4p8.yaml": "d0a826f632b728110dd22c16a7449d97dd153ba60f219a01548d1482da4cdfd3",
+    "C:\\Users\\linke\\Documents\\New project\\REGIME_CHANGE_DETECTOR_SERIES\\run_detector_experiment.py": "ad9592da338846556372cb102f200d857262106ff5e846c28b3e8a599de4d23a",
+    "C:\\Users\\linke\\Documents\\New project\\FRONT_ENCODER_SERIES\\front_encoder_models.py": "2d270336a40704c13a8d127e70898ac091715a276114d07776733f814d8a5949",
+    "C:\\Users\\linke\\Documents\\New project\\FRONT_ENCODER_SERIES\\train_front_variant.py": "8bd583d8b4b6972babebaabc939d61848133e082bd9d72aa02a148674ee9058a",
+    "C:\\Users\\linke\\Documents\\New project\\E2_F16_END_TO_END_COMPARISON_SERIES\\joint_v2_adapter.py": "0ddceb3149add6b02353184ac85f002c8375d238f67c673029bf6aa7c134bd76",
+    "C:\\Users\\linke\\Documents\\New project\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\formal_config.json": "7fe8c301820dc529449e59269b7b549cace059f40d2fa694d9c559a907b9c8d6",
+    "C:\\Users\\linke\\Documents\\New project\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\run_formal_regime_selection.py": "8e736fba86629bfd3670f73e549519a8ff51a5cb41a7733e1926a1e1471b5360",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\h3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "8fee24d0bd7b009e6e6ee280a0eee4e0e6c345d750733754741192f3adf0bb57",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "f245c1ba7277b9b843c891f7f3902a66f3c4005108fe1f729a74be3c7167bc43",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\split_indices.npz": "1f53e20b1d2462df27c6fe9d2032973fd92304f7616f7f0dd6f80da01de8197e",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\metrics.json": "6cd0e4e8c828f0f05cc9612050900dab570058683f6093a2342f29c32529742a",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\hotel\\h3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "ddcb159863b9b6d12fb1a21444d5ef9370360e23e7b2add880d442ca1250e410",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\hotel\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "e725a61cee184b491bc277f307f8287bb04a2e5a536e9ecda2cd940a10aa66ba",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\hotel\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\split_indices.npz": "da4e9fd027929bd83749bc1425042002a9c0e23c94e365c6178a023eeed9e772",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\hotel\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\metrics.json": "aa5801c777cd06a6cb71f3a9772b27742367d381068c09cf0459e104241b8657",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\univ\\h3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "ac5fdaed895efc4f6c774b8e4400f8d9a756f3540b4082e2fe0e88809bbc456d",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\univ\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "8fffbb13651868e319b59ceda1d74b815b650a094e31fa59eab6d3266baa9c4a",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\univ\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\split_indices.npz": "0a1c5076b78a98ecb62d43d084a46c92b0b2f14cc1b891066b1e73d5eb944b41",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\univ\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\metrics.json": "63943b6929fb660a5cd81b6c99efe2b02f18e1900253cf8d43c8af0e2a9889eb",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\zara01\\h3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "c5a771a7ae9d1590485f8088563d9cfa374cdd8635bf8d18a0f1cbb4c75df951",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\zara01\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "95b581219532c7de6e1d78048595c0d8dc74053d4af2734f068634379ac36f8f",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\zara01\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\split_indices.npz": "4d8fb855630654c450aebc3ae91e99f06a2d89ba2ff03d122c951fb3b498e6cd",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\zara01\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\metrics.json": "da59497ee2d0c23c2d38ad766ed4c82e4458b6e1c8e14086a24045adf5f60920",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\zara02\\h3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "347350edbb243735285b3419bc87111d0f5a7eeb22f84330ea139b37325ec1f7",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\zara02\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "54e975723d229b798204e26e9bb1096e55e637af474b9a75369ee55e250a6a43",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\zara02\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\split_indices.npz": "094978d04e188e646544b0f9748af9ba048e1834e6f80458882a8eb3b5890b91",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\zara02\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\metrics.json": "f3d5740eb6b179470ad063ed434827ec4e89a61275bdd33c6fc026a3d3aa953f"
+  },
+  "large_array_locks": {
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy": {
+      "bytes": 261852608,
+      "mtime_ns": 1784809874573494000
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_train.npy": {
+      "bytes": 121356,
+      "mtime_ns": 1784809874576590900
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_test.npy": {
+      "bytes": 3145088,
+      "mtime_ns": 1784809875297647500
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_test.npy": {
+      "bytes": 1584,
+      "mtime_ns": 1784809875299568700
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\hotel_data_train.npy": {
+      "bytes": 256400768,
+      "mtime_ns": 1784809894576680300
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\hotel_num_train.npy": {
+      "bytes": 118832,
+      "mtime_ns": 1784809894578189200
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\hotel_data_test.npy": {
+      "bytes": 10342208,
+      "mtime_ns": 1784809895876359600
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\hotel_num_test.npy": {
+      "bytes": 4916,
+      "mtime_ns": 1784809895876359600
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\univ_data_train.npy": {
+      "bytes": 85311488,
+      "mtime_ns": 1784809837646402200
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\univ_num_train.npy": {
+      "bytes": 39624,
+      "mtime_ns": 1784809837647580600
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\univ_data_test.npy": {
+      "bytes": 210245888,
+      "mtime_ns": 1784809848357957300
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\univ_num_test.npy": {
+      "bytes": 97464,
+      "mtime_ns": 1784809848359465700
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara01_data_train.npy": {
+      "bytes": 246905408,
+      "mtime_ns": 1784809938914431200
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara01_num_train.npy": {
+      "bytes": 114436,
+      "mtime_ns": 1784809938915937700
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara01_data_test.npy": {
+      "bytes": 20355968,
+      "mtime_ns": 1784809940326713000
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara01_num_test.npy": {
+      "bytes": 9552,
+      "mtime_ns": 1784809940328239600
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara02_data_train.npy": {
+      "bytes": 225296768,
+      "mtime_ns": 1784809962789647800
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara02_num_train.npy": {
+      "bytes": 104432,
+      "mtime_ns": 1784809962791662500
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara02_data_test.npy": {
+      "bytes": 51062528,
+      "mtime_ns": 1784809965794528800
+    },
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara02_num_test.npy": {
+      "bytes": 23768,
+      "mtime_ns": 1784809965796047900
+    }
+  },
+  "test_access_authorized": true,
+  "test_load_deferred_until_all_training_locked": true,
+  "preflight_started_training": false
+}

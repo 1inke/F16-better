@@ -1,0 +1,123 @@
+{
+  "name": "F16_CUE_RESPONSE_CONCORDANCE_20261004",
+  "status": "FAILED_RUN_PRESERVED_RECOVERY_ANALYZED",
+  "formal_trial": false,
+  "task_name": "Trajectory-CueConcordance-20261004",
+  "preflight": "PASS",
+  "source_files_locked": 272,
+  "old_files_locked": 21756,
+  "optimizer": false,
+  "model_forward": false,
+  "entire_old_model_unchanged": true,
+  "planning_minutes": 8,
+  "eta_minutes": [
+    6,
+    12
+  ],
+  "progress_time_fraction": 0.5,
+  "first_progress_query_done": true,
+  "launch_confirmation_count": 1,
+  "worker_pid": 38040,
+  "parent_pid": 2728,
+  "started_at": "2026-10-04T16:54:37.747508+08:00",
+  "query_at": "2026-10-04T16:58:38+08:00",
+  "analysis_deadline": null,
+  "next_review_at": null,
+  "current_stage": "FAILED_FIT_PAIRWISE_DISTANCE_MEMORY",
+  "worker_status": "FAILURE",
+  "completed_analysis_jobs": 0,
+  "finished_at": "2026-10-04T16:56:04.973008+08:00",
+  "failure": "C:\\Users\\linke\\Documents\\New project\\F16_CUE_RESPONSE_CONCORDANCE_20261004\\failures\\worker_20261004_165604",
+  "pending_decision": null,
+  "halfway_check": {
+    "checked_at": "2026-10-04T17:00:16.2153490+08:00",
+    "worker": {
+      "status": "FAILURE",
+      "pid": 38040,
+      "parent_pid": 2728,
+      "started_at": "2026-10-04T16:54:37.747508+08:00",
+      "task": "Trajectory-CueConcordance-20261004",
+      "launcher": "Windows Task Scheduler on demand, no triggers",
+      "optimizer": false,
+      "model_forward": false,
+      "finished_at": "2026-10-04T16:56:04.973008+08:00",
+      "failure": "C:\\Users\\linke\\Documents\\New project\\F16_CUE_RESPONSE_CONCORDANCE_20261004\\failures\\worker_20261004_165604"
+    },
+    "actual_process": null,
+    "task_state": "Ready",
+    "triggers": 0,
+    "exit_state": {
+      "status": "FAILURE",
+      "worker_pid": 38040,
+      "failure": "C:\\Users\\linke\\Documents\\New project\\F16_CUE_RESPONSE_CONCORDANCE_20261004\\failures\\worker_20261004_165604"
+    },
+    "progress": {
+      "stage": "JOB_ANALYSIS",
+      "at": "2026-10-04T16:55:53.191208+08:00",
+      "active_job": "FIT_native",
+      "completed_jobs": 0,
+      "total_jobs": 9,
+      "job_seconds": []
+    },
+    "stderr_bytes": 1984
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "updated": true,
+    "waiting_for_human_decision": false,
+    "no_daily_repeat_of_halfway": true,
+    "no_PID_log_result_query_without_new_human_decision": true,
+    "recovery_analyzed": true,
+    "quiet_when_analyzed": true
+  },
+  "startup_confirmation": {
+    "checked_at": "2026-10-04T16:54:52.9994702+08:00",
+    "worker": {
+      "status": "RUNNING",
+      "pid": 38040,
+      "parent_pid": 2728,
+      "started_at": "2026-10-04T16:54:37.747508+08:00",
+      "task": "Trajectory-CueConcordance-20261004",
+      "launcher": "Windows Task Scheduler on demand, no triggers",
+      "optimizer": false,
+      "model_forward": false
+    },
+    "actual_process": {
+      "ProcessId": 38040,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\F16_CUE_RESPONSE_CONCORDANCE_20261004\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": null,
+    "progress": {
+      "stage": "INITIAL_OLD_AND_SOURCE_SHA",
+      "at": "2026-10-04T16:54:51.419603+08:00",
+      "files_done": 4000,
+      "files_total": 21777
+    },
+    "stderr_bytes": 0
+  },
+  "response_study_completed": 2,
+  "response_study_review_after": 3,
+  "after_analysis": "Current diagnostic complete; no completed-PID/old-node checks or automatic formal third training. Next proposed FIT/CAL-only same-bound reachability-vs-learning diagnostic requires solver/data/resource preflight; GT-assisted fit is not deployable benefit. Stop meaningful obstruction for direct human decision.",
+  "early_wakeup_policy": "No PID/task/log/results query before scheduled node; one50%timecheck then corrected completion node; after ANALYZED without new input stay quiet.",
+  "whole_original_F16_decoder_scorer_frozen": true,
+  "priority": [
+    "samepath_quality_coverage",
+    "distinct_good_candidate_count_not_maximized",
+    "selection_last"
+  ],
+  "recovery_runtime": "F16_CUE_RESPONSE_CONCORDANCE_20261004/recovery_memory_20261004/runtime_state.json",
+  "recovery_authorization": "2026-10-04 optimize memory, estimate workload within about17GB available RAM, resume same protocol",
+  "current_recovery": {
+    "runtime_state": "F16_CUE_RESPONSE_CONCORDANCE_20261004/recovery_memory_20261004/runtime_state.json",
+    "status": "ANALYZED",
+    "worker_pid": 6952,
+    "finished_at": "2026-10-04T17:45:38.033655+08:00",
+    "analysis": "F16_CUE_RESPONSE_CONCORDANCE_20261004/recovery_memory_20261004/RESULT_ANALYSIS.md",
+    "no_completed_PID_queries": true
+  }
+}

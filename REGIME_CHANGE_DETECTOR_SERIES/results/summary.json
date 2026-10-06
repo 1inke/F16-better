@@ -1,0 +1,121 @@
+{
+  "status": "H1_H2_PASS_READY_FOR_MINIMAL_INTERVENTION_REVIEW",
+  "best_detector_selected_on_internal_dev_only": "d1_motion_social",
+  "gate_a": true,
+  "gate_b": true,
+  "detector_metrics": [
+    {
+      "model": "d0_motion_only",
+      "best_dev_auroc": 0.7673952777052482,
+      "best_epoch": 29,
+      "input_dim": 76,
+      "train_binary_n": 22218,
+      "train_positive_prevalence": 0.3054730296134949,
+      "binary_n": 1290,
+      "positive_prevalence": 0.17286821705426356,
+      "auroc": 0.8685178258475842,
+      "pr_auc": 0.649337828506769,
+      "brier": 0.12365788040887506,
+      "ece": 0.16956308200493336,
+      "auroc_ci_lower": 0.8395468834711126,
+      "auroc_ci_upper": 0.8944279254100808,
+      "pr_auc_ci_lower": 0.5880105464907138,
+      "pr_auc_ci_upper": 0.7138645197297883,
+      "brier_ci_lower": 0.11574139723968563,
+      "brier_ci_upper": 0.131659175391456,
+      "pearson": 0.576292280754668,
+      "pearson_ci_lower": 0.5359668580714037,
+      "pearson_ci_upper": 0.6153155522110908,
+      "spearman": 0.4722859680627135,
+      "spearman_ci_lower": 0.4309812563147249,
+      "spearman_ci_upper": 0.5123050636514156,
+      "monotonic_group_probability": true,
+      "gate_a": true
+    },
+    {
+      "model": "d1_motion_social",
+      "best_dev_auroc": 0.8218210302510351,
+      "best_epoch": 3,
+      "input_dim": 172,
+      "train_binary_n": 22218,
+      "train_positive_prevalence": 0.3054730296134949,
+      "binary_n": 1290,
+      "positive_prevalence": 0.17286821705426356,
+      "auroc": 0.8665593571515626,
+      "pr_auc": 0.6268723702056194,
+      "brier": 0.12198879496271711,
+      "ece": 0.1427698122770634,
+      "auroc_ci_lower": 0.8375095086597099,
+      "auroc_ci_upper": 0.8960142430266327,
+      "pr_auc_ci_lower": 0.5656660428026135,
+      "pr_auc_ci_upper": 0.6913934715534626,
+      "brier_ci_lower": 0.11028133501874884,
+      "brier_ci_upper": 0.13369886343394385,
+      "pearson": 0.5855574729539827,
+      "pearson_ci_lower": 0.5440531389581609,
+      "pearson_ci_upper": 0.6251958043646026,
+      "spearman": 0.4934420997193656,
+      "spearman_ci_lower": 0.45436756998907624,
+      "spearman_ci_upper": 0.5322997712630382,
+      "monotonic_group_probability": true,
+      "gate_a": true
+    }
+  ],
+  "failure_diagnosis": {
+    "correlations": {
+      "ade_regret": {
+        "pearson": 0.23308172773435526,
+        "pearson_ci_lower": 0.18291793215260058,
+        "pearson_ci_upper": 0.2829354547603715,
+        "spearman": 0.22329547433395575,
+        "spearman_ci_lower": 0.17816756403676293,
+        "spearman_ci_upper": 0.2677087735680875
+      },
+      "fde_regret": {
+        "pearson": 0.2186042320213461,
+        "pearson_ci_lower": 0.16669402933951244,
+        "pearson_ci_upper": 0.2710397787846661,
+        "spearman": 0.23314045426751534,
+        "spearman_ci_lower": 0.18708711016350474,
+        "spearman_ci_upper": 0.2791843736474457
+      },
+      "gt_best_candidate_rank": {
+        "pearson": 0.18080480036325336,
+        "pearson_ci_lower": 0.13127452468145914,
+        "pearson_ci_upper": 0.2292009112201247,
+        "spearman": 0.14119369039281376,
+        "spearman_ci_lower": 0.09566798890631684,
+        "spearman_ci_upper": 0.18649923067433666
+      }
+    },
+    "positive_core_correlations": [
+      "ade_regret",
+      "fde_regret",
+      "gt_best_candidate_rank"
+    ],
+    "q5_worse_than_q1": true,
+    "gate_b": true
+  },
+  "training": {
+    "d0_motion_only": {
+      "best_dev_auroc": 0.7673952777052482,
+      "best_epoch": 29,
+      "input_dim": 76,
+      "train_binary_n": 22218,
+      "train_positive_prevalence": 0.3054730296134949
+    },
+    "d1_motion_social": {
+      "best_dev_auroc": 0.8218210302510351,
+      "best_epoch": 3,
+      "input_dim": 172,
+      "train_binary_n": 22218,
+      "train_positive_prevalence": 0.3054730296134949
+    }
+  },
+  "elapsed_seconds": null,
+  "recovered_from_cached_completed_training_after_plot_compatibility_fix": true,
+  "validation_samples": 1516,
+  "test_accessed": false,
+  "stage_c_started": false,
+  "bootstrap_scope": "sample uncertainty conditional on one detector seed"
+}

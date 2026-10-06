@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\GENERATION_HISTORY_ENCODER_SERIES\run_history.py", line 120, in <module>
+    try:c.main()
+  File "C:\Users\linke\Documents\New project\GENERATION_SET_CONTEXT_SERIES\run_context.py", line 156, in main
+    if args.action=='preflight':preflight(device);return
+  File "C:\Users\linke\Documents\New project\GENERATION_HISTORY_ENCODER_SERIES\run_history.py", line 81, in preflight
+    loss=m.objective(out,b,gt,res,s,groups,cfg,c.d.ARM,torch.tensor(scale,device=device));loss.backward()
+  File "C:\coding_toobox\envs\astra2\lib\site-packages\torch\_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "C:\coding_toobox\envs\astra2\lib\site-packages\torch\autograd\__init__.py", line 381, in backward
+    _engine_run_backward(
+  File "C:\coding_toobox\envs\astra2\lib\site-packages\torch\autograd\graph.py", line 869, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: cudnn RNN backward can only be called in training mode

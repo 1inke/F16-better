@@ -1,0 +1,16 @@
+{
+  "purpose": "Posthoc human visual diagnosis of candidate generation and selection; not a new training experiment",
+  "scope": "ETH existing development subset, generator seed1, 1516 explicit IDs, K20, 8 observed and 12 future steps",
+  "primary_model": "Current generation-study immutable fold-local F16/V2 native baseline, native logits argmax",
+  "comparisons": "PAIRWISE_HISTORY, NEIGHBOR_READOUT, NEIGHBOR_MESSAGE constrained seed1; inherited native slot selection reference only, NOT rescoring corrected paths or promoted deployed models",
+  "diagnostic_ade_threshold_m": 0.3,
+  "diagnostic_fde_threshold_m": 0.5,
+  "sensitivity_presets_m": [[0.2,0.4],[0.3,0.5],[0.5,1.0]],
+  "joint_quality": "ADE + 0.5 FDE; single candidate, not separate minima",
+  "dt_s": 0.4,
+  "selection_input": "Existing native logits only; no future or GT-derived groups",
+  "classification": "GT posthoc mutually exclusive six classes; good candidate must satisfy BOTH thresholds on the SAME path",
+  "data_policy": "All 1516 samples, all20 candidates, no hand-filtering; thresholds only visual diagnostics, never experiment gates or tuning",
+  "preservation": "All writes under this new directory except a final .memory update. Old files read-only, SHA audited. No training, GPU, test, new fold or external data",
+  "limitations": "Repeated ETH development subset and one generator seed; descriptive counts not independent generalization or causal attribution. Unfinished cycle11 outputs excluded. Softmax of scores is not calibrated probability. Alternative futures not disproven by a single GT"
+}

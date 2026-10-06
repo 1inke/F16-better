@@ -1,0 +1,1 @@
+Control orchestration first attempt applied child and parent runtime updates, then JavaScript structuredClone was unavailable before ledger edits. Corrected to JSON clone; no scientific source/model/result changes or worker restart. Final ledger JSON is validated and controls reconciled. This is not a production failure.

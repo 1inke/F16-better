@@ -1,0 +1,6 @@
+2026-10-04 first preflight stopped before any formal worker or task launch.
+Assertion: saved visualizer native paths bitwise equal to features/dev.npz replay paths.
+Read-only diagnosis: same1516IDs, samefuture EXACT; bothfloat32; coordinate maximum3.814697265625e-6m, mean1.0375778719357611e-7m. Original features/dev_audit.json AND train_audit.json already record max_path_error3.814697265625e-6 under original2e-5 replay tolerance. This is previously disclosed batch/replay float rounding, not data-origin mismatch or old-file mutation.
+Source before fix preserved as diagnosis_before_canonical_input_fix.py.
+Fix onlynew input shim: quality/candidate trajectories and original scores now read original immutable eth_train/dev evaluation cache; observed R2 cues still fromlocked diagnostic feature cache. Verify IDs, futures, cachedmetrics and replay discrepancy against recorded oldaudit. DEV native then bitwise matches saved visualizer. No old science, model, loss, quality threshold or event rule changes.
+Initial preflight all21776 old/source hash checks completed before this assertion. Final preflight must rerun after correcting input plumbing and passing the analysis-job resume check.

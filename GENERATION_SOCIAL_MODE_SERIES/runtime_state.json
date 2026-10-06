@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE_AUDITED_GATE_FAIL",
+  "cycle": 5,
+  "experiment_in_cycle": 2,
+  "completed_in_cycle": 2,
+  "pid": 44452,
+  "parent_pid": 2728,
+  "windows_task": "Trajectory-SocialMode-Cycle5",
+  "launched_at": "2026-10-02T04:43:17.026119+08:00",
+  "estimate_minutes_range": [
+    18,
+    30
+  ],
+  "planning_minutes": 25,
+  "first_progress_query_at": "2026-10-02T04:58:18+08:00",
+  "first_progress_query_done": true,
+  "next_review_at": null,
+  "analysis_deadline": null,
+  "startup_confirmed": true,
+  "startup_progress": "realPythonPID44452 serviceparent2728 taskRunning zero seed1epoch5/80 stderr empty",
+  "new_trainings": 6,
+  "epochs_each": 80,
+  "parameters_each": 41638,
+  "internal_arm_mapping": {
+    "zero": "fullsocial_static_modulation",
+    "mean_std": "fullsocial_native_mode_conditioned_modulation"
+  },
+  "paired_full_init_exact": true,
+  "native_identity_exact": true,
+  "initial_internal_inputs_exact": true,
+  "both_arms_full_social_input": true,
+  "effective_capacity_note": "Static gateweightdata gradientszero/biaslearnable; nominalparameters not equal effectivecapacity",
+  "resume": "botharm actual2epoch params/boolbuffer/socialscalers/optimizer/RNG/history/calibrationEXACT",
+  "scope": "alloriginaldecoder/F16/scorer frozen; nativebase3anchor/commonclip1.5/originalloss fitcal/K20; noGTgroup/logitforward/test",
+  "finished_at": "2026-10-02T05:01:02.403988+08:00",
+  "independent_audit": "18SHA/18originaldecoderfrozen/18explicitIDsfiniteK20/allstoredmetrics recomputed PASS",
+  "progress_query_note": "First scheduled query delivered late at05:06; already SUCCESS05:01, audited immediately, no second progress query",
+  "audit_failure_provenance": "First read-only audit passed str cpu instead of torch.device; diagnostic invocation only corrected and PASS; production training unaffected."
+}

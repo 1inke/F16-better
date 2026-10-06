@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "imported_done_blocks": 171,
+  "imported_output_SHA_verified": true,
+  "imported_classification_and_effective_counts_exact": true,
+  "actual_production_candidate_adequacy_exact": true,
+  "actual_production_window_witness_exact": true,
+  "original_solver_source_unchanged": true,
+  "original_protocol_unchanged": true,
+  "failed_block": {
+    "status": "PASS",
+    "metric_error_max": 0,
+    "float32_vs_float64_path_max": 1.116892574870576e-06,
+    "endpoint_max": 1.1168925762028437e-06,
+    "independent_per_slot_lowerbound_recomputed": true,
+    "numeric_profile": {
+      "status": "PASS_DERIVED_ROUNDOFF_AND_HIGH_PRECISION",
+      "zero_sum_actual_max": 6.042420864105225e-06,
+      "zero_sum_derived_bound_max": 9.921278172765908e-06,
+      "high_precision_zero_sum_max": 1.4988010832439613e-15,
+      "profile_high_precision_error_max": 8.32114106841253e-07,
+      "profile_elementwise_bound_max": 1.134708431738028e-06,
+      "production_profile_bitwise_equal": true,
+      "float32_unit_roundoff": 5.960464477539063e-08
+    },
+    "original_components": {
+      "status": "PASS_ORIGINAL_COMPONENTS_CLASSIFICATION",
+      "production_path_norm_error_max_m": 9.541398640621973e-07,
+      "primary_same_candidate_adequacy_exact": true,
+      "robust_window_witness_exact": true
+    }
+  },
+  "clock_grid": {
+    "status": "PASS_DERIVED_ROUNDOFF_AND_HIGH_PRECISION",
+    "zero_sum_actual_max": 2.7418136596679688e-06,
+    "zero_sum_derived_bound_max": 5.246082594024695e-06,
+    "high_precision_zero_sum_max": 1.1171619185290638e-15,
+    "profile_high_precision_error_max": 4.4375876051550023e-07,
+    "profile_elementwise_bound_max": 5.740741975165688e-07,
+    "production_profile_bitwise_equal": true,
+    "float32_unit_roundoff": 5.960464477539063e-08
+  },
+  "corrupted_profile_rejected": true,
+  "source_mismatch_rejected": true,
+  "fixture_fit_discarded": true,
+  "validation_seconds": 36.24988249997841,
+  "resource": {
+    "peak_rss_bytes": 1431310336,
+    "peak_private_bytes": 1843732480,
+    "minimum_system_available_bytes": 16243253248,
+    "minimum_system_commit_available_bytes": 17197477888,
+    "samples": 871,
+    "sampling_interval_seconds": 0.05,
+    "process_budget_bytes": 6442450944,
+    "system_reserve_bytes": 6442450944,
+    "final_memory": {
+      "rss_bytes": 804073472,
+      "private_bytes": 1227595776,
+      "lifetime_peak_rss_bytes": 1466998784,
+      "lifetime_peak_private_bytes": 1892667392,
+      "physical_available_bytes": 16817377280,
+      "physical_total_bytes": 33943089152,
+      "system_commit_available_bytes": 17760616448,
+      "pointer_bits": 64
+    }
+  },
+  "models": [
+    {
+      "seed": 1,
+      "path": "C:\\Users\\linke\\Documents\\New project\\GENERATION_PULSE_RESPONSE_SERIES_20261004\\results\\models\\mean_std\\seed_1\\balanced_protected\\constrained.pth",
+      "sha": "20eecdebe320066911aa577c628873fa4dd1d94331f31cebd1470b51e51525e3",
+      "epoch": 34,
+      "fallback": false
+    },
+    {
+      "seed": 2,
+      "path": "C:\\Users\\linke\\Documents\\New project\\GENERATION_PULSE_RESPONSE_SERIES_20261004\\results\\models\\mean_std\\seed_2\\balanced_protected\\constrained.pth",
+      "sha": "86080bc60317ac4899bccadb66761757d2080d4e214667ebf6ec357fbbe08106",
+      "epoch": 26,
+      "fallback": false
+    },
+    {
+      "seed": 3,
+      "path": "C:\\Users\\linke\\Documents\\New project\\GENERATION_PULSE_RESPONSE_SERIES_20261004\\results\\models\\mean_std\\seed_3\\balanced_protected\\constrained.pth",
+      "sha": "95d3ae91cde9d9bd92759a2bbef88acd9547ff8a417054f9c37b09b99e02bbee",
+      "epoch": 18,
+      "fallback": false
+    }
+  ]
+}

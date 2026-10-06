@@ -1,0 +1,5 @@
+# Source-lock failure provenance
+
+After actual preflight, both real 2-epoch FIT/CAL-subset exact-resume tests and benchmark finished, the assistant changed only new quality report verdict/title strings and new check_once progress-display fields. The final source verifier rejected quality_audit.py. The changed check_once.ps1 also differs from the preflight lock; verification stopped at the first mismatch. This was an assistant edit-order mistake, not a production training failure or old-source/model change. No production worker was launched. Do not silently replace expected hashes, restore files to hide the edit, or bypass the gate.
+
+These locked_* reconstructions preserve the exact pre-edit new-file content for comparison against the preflight source hashes. Existing failure snapshot contains post-edit sources, preflight/resume/benchmark reports and trace. Scientific projection/loss/model/data/numerical thresholds were not changed. Stop pending human confirmation of re-locking the final implementation and revalidating all applicable gates; current tests do not substitute for a current-source final PASS.

@@ -1,0 +1,16 @@
+{
+  "protocol": "learned_gaussian_transient_vs_learned_sigmoid_persistent_v1",
+  "seeds": [1,2,3], "epochs":80, "velocity_residual_scale":1.5,
+  "protection_weight":0.1, "guard_fraction":0.01,
+  "bootstrap_repetitions":5000, "bootstrap_seed":20261001,
+  "test_access":"forbidden", "set_context":"mean_std",
+  "study":"time_response_20261004", "experiment_in_study":3,
+  "zero_label":"learned_clock_zero_sum_gaussian_transient",
+  "mean_std_label":"learned_clock_sigmoid_persistent",
+  "factor":"response_profile_only_Gaussian_centered_Linf_vs_sigmoid_noncentered",
+  "pulse_center_range":[0.05,0.95], "pulse_span_range":[0.05,0.5],
+  "amplitude_drift_partition":0.5, "both_clock_active":true,
+  "future_observations":false, "progress_fraction":0.5,
+  "after_analysis":"mandatory fullthree response review before new direction; substantiveobstruction stop human",
+  "process_budget_GiB":6,"system_reserve_GiB":6,"host_available_RAM_GB_approx":17
+}

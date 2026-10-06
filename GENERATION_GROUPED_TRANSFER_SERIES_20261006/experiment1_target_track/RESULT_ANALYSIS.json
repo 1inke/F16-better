@@ -1,0 +1,92 @@
+{
+  "status": "ANALYZED",
+  "primary": "outer_fixed_epoch80_final",
+  "study_completed_of_three": 1,
+  "production_finished_at": "2026-10-06T09:42:20.072694+08:00",
+  "production_elapsed_seconds": 2103.492649,
+  "completion_checked_at": "2026-10-06T09:55:59.4766771+08:00",
+  "science_audit": "PASS",
+  "completion_review": "completion_review/REVIEW.json",
+  "baseline_upgrade": false,
+  "branch": "RELATED_TARGET_WINDOW_EXPOSURE_SIGNAL_NOT_COMPLETE_COVERAGE_COLLAPSE; transfer/context isolation next, no automatic loss/scorer/MoE",
+  "outer": {
+    "n": 1035,
+    "change_n": 253,
+    "native_good": 625,
+    "native_change_good": 110,
+    "random_good": [
+      642,
+      649,
+      632
+    ],
+    "grouped_good": [
+      642,
+      622,
+      632
+    ],
+    "random_change_good": [
+      113,
+      115,
+      113
+    ],
+    "grouped_change_good": [
+      107,
+      108,
+      109
+    ],
+    "random_change_minADE": 0.24930508651945285,
+    "random_change_minFDE": 0.42603509922042515,
+    "grouped_change_minADE": 0.26405989994858725,
+    "grouped_change_minFDE": 0.4552678069556997,
+    "coverage_grouped_minus_random": -0.008695652173913044,
+    "coverage_CI": [
+      -0.031983012785186817,
+      0.011770708720178684
+    ],
+    "change_coverage_difference": -0.022397891963109356,
+    "change_coverage_CI": [
+      -0.062411347517730496,
+      0.016597642856764332
+    ],
+    "continuous_error_and_J_CIs": "exploratory clustered positive; see180intervals raw RESULT"
+  },
+  "original_CAL_change": {
+    "native": 243,
+    "n": 700,
+    "random": [
+      228,
+      232,
+      237
+    ],
+    "grouped": [
+      224,
+      239,
+      217
+    ]
+  },
+  "inner_change": {
+    "native": 166,
+    "n": 497,
+    "random": [
+      152,
+      156,
+      172
+    ],
+    "grouped": [
+      165,
+      172,
+      179
+    ]
+  },
+  "motion": "allgrouped PASS; random5finalspeedp95failures strictly retained",
+  "sources": 565,
+  "old_files": 32754,
+  "production_private_GiB": 3.901592254638672,
+  "next": "experiment2_recording_time registered;10:20HK implementation; metadataonly feasibility16104/566/142/2134/common12544; no worker or ETA",
+  "no_unique_root_cause": true,
+  "all_success_thresholds_unchanged": true,
+  "counterreviews": {
+    "2": "inline sameassistant PASS_WITH_LIMITATIONS",
+    "3": "inline sameassistant PASS_WITH_LIMITATIONS"
+  }
+}

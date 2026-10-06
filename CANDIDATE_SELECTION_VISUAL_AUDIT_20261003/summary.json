@@ -1,0 +1,3962 @@
+{
+  "models": [
+    {
+      "key": "native",
+      "label": "原生F16/V2：真实最高分选择",
+      "selection": "真实原生选择",
+      "selected_ade": 0.5424319016441138,
+      "selected_fde": 1.1973156893420953,
+      "minade": 0.2191542524134681,
+      "minfde": 0.3997248016782631,
+      "counts": [
+        371,
+        692,
+        37,
+        135,
+        69,
+        212
+      ],
+      "exact_ade_hits": 149,
+      "exact_fde_hits": 143,
+      "oracle_disagreement": 368
+    },
+    {
+      "key": "pairwise",
+      "label": "Pairwise history · constrained seed1（继承slot参考）",
+      "selection": "继承原生slot参考；未重新评分",
+      "selected_ade": 0.5406387522233767,
+      "selected_fde": 1.1964571798250427,
+      "minade": 0.21767339731181112,
+      "minfde": 0.39630615924044116,
+      "counts": [
+        371,
+        686,
+        41,
+        129,
+        65,
+        224
+      ],
+      "exact_ade_hits": 165,
+      "exact_fde_hits": 131,
+      "oracle_disagreement": 376
+    },
+    {
+      "key": "readout",
+      "label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "selection": "继承原生slot参考；未重新评分",
+      "selected_ade": 0.5424061906136066,
+      "selected_fde": 1.2010214253242377,
+      "minade": 0.2196531306954106,
+      "minfde": 0.3954539912144383,
+      "counts": [
+        378,
+        666,
+        41,
+        126,
+        83,
+        222
+      ],
+      "exact_ade_hits": 165,
+      "exact_fde_hits": 136,
+      "oracle_disagreement": 383
+    },
+    {
+      "key": "messages",
+      "label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "selection": "继承原生slot参考；未重新评分",
+      "selected_ade": 0.5420516332919253,
+      "selected_fde": 1.2049944416860776,
+      "minade": 0.21868774816751213,
+      "minfde": 0.39884408259602816,
+      "counts": [
+        365,
+        684,
+        42,
+        127,
+        73,
+        225
+      ],
+      "exact_ade_hits": 168,
+      "exact_fde_hits": 135,
+      "oracle_disagreement": 377
+    }
+  ],
+  "groups": {
+    "0": 1067,
+    "2": 223,
+    "1": 226
+  },
+  "classes": [
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "overall",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 371,
+      "denominator": 1516,
+      "fraction": 0.24472295514511874,
+      "mean_selected_ade": 0.0930624605131735,
+      "mean_selected_fde": 0.18065195753445923,
+      "mean_ade_regret": 0.01603408225004909
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "overall",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 692,
+      "denominator": 1516,
+      "fraction": 0.45646437994722955,
+      "mean_selected_ade": 0.48589520948352766,
+      "mean_selected_fde": 1.0771540093420002,
+      "mean_ade_regret": 0.31665270985717947
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "overall",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 37,
+      "denominator": 1516,
+      "fraction": 0.024406332453825858,
+      "mean_selected_ade": 0.49548786673964995,
+      "mean_selected_fde": 1.0573161266832385,
+      "mean_ade_regret": 0.25676956951150476
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "overall",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 135,
+      "denominator": 1516,
+      "fraction": 0.08905013192612138,
+      "mean_selected_ade": 0.6832793848749456,
+      "mean_selected_fde": 1.6005280779627507,
+      "mean_ade_regret": 0.44210527357344126
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "overall",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 69,
+      "denominator": 1516,
+      "fraction": 0.04551451187335093,
+      "mean_selected_ade": 0.8592472221838092,
+      "mean_selected_fde": 1.7062174345026555,
+      "mean_ade_regret": 0.47949619731903065
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "overall",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 212,
+      "denominator": 1516,
+      "fraction": 0.13984168865435356,
+      "mean_selected_ade": 1.3287607486854744,
+      "mean_selected_fde": 2.9707412459421394,
+      "mean_ade_regret": 0.7676729852753266
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "stable",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 325,
+      "denominator": 1067,
+      "fraction": 0.3045923149015933,
+      "mean_selected_ade": 0.08569202527109292,
+      "mean_selected_fde": 0.16516303913328098,
+      "mean_ade_regret": 0.015995490384901008
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "stable",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 516,
+      "denominator": 1067,
+      "fraction": 0.4835988753514527,
+      "mean_selected_ade": 0.45517738233339816,
+      "mean_selected_fde": 0.9979361507644867,
+      "mean_ade_regret": 0.28984492003158774
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "stable",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 25,
+      "denominator": 1067,
+      "fraction": 0.023430178069353328,
+      "mean_selected_ade": 0.5022520930142265,
+      "mean_selected_fde": 1.0246985577735856,
+      "mean_ade_regret": 0.262537548096163
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "stable",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 87,
+      "denominator": 1067,
+      "fraction": 0.08153701968134958,
+      "mean_selected_ade": 0.6800330629483217,
+      "mean_selected_fde": 1.5465497286931413,
+      "mean_ade_regret": 0.44086227801898376
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "stable",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 29,
+      "denominator": 1067,
+      "fraction": 0.02717900656044986,
+      "mean_selected_ade": 0.7667658669014791,
+      "mean_selected_fde": 1.4071635066483659,
+      "mean_ade_regret": 0.41597440329687696
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "stable",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 85,
+      "denominator": 1067,
+      "fraction": 0.07966260543580131,
+      "mean_selected_ade": 1.1548926796599437,
+      "mean_selected_fde": 2.503182598371553,
+      "mean_ade_regret": 0.6610404024899997
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "transition",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 28,
+      "denominator": 226,
+      "fraction": 0.12389380530973451,
+      "mean_selected_ade": 0.12988388876800458,
+      "mean_selected_fde": 0.29992101545295086,
+      "mean_ade_regret": 0.011250734833169209
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "transition",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 105,
+      "denominator": 226,
+      "fraction": 0.4646017699115044,
+      "mean_selected_ade": 0.5669553977236256,
+      "mean_selected_fde": 1.2704255753852154,
+      "mean_ade_regret": 0.390808390862233
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "transition",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 5,
+      "denominator": 226,
+      "fraction": 0.022123893805309734,
+      "mean_selected_ade": 0.45204867515914965,
+      "mean_selected_fde": 0.9874645629073149,
+      "mean_ade_regret": 0.20027863758724385
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "transition",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 20,
+      "denominator": 226,
+      "fraction": 0.08849557522123894,
+      "mean_selected_ade": 0.7161681067220892,
+      "mean_selected_fde": 1.6010771557392178,
+      "mean_ade_regret": 0.46571632817809316
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "transition",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 16,
+      "denominator": 226,
+      "fraction": 0.07079646017699115,
+      "mean_selected_ade": 0.7069525658352286,
+      "mean_selected_fde": 1.3364267372764311,
+      "mean_ade_regret": 0.35267207112195476
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "transition",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 52,
+      "denominator": 226,
+      "fraction": 0.23008849557522124,
+      "mean_selected_ade": 1.3360368319570328,
+      "mean_selected_fde": 2.926934633540054,
+      "mean_ade_regret": 0.7865119861651494
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "change",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 18,
+      "denominator": 223,
+      "fraction": 0.08071748878923767,
+      "mean_selected_ade": 0.1688619862098914,
+      "mean_selected_fde": 0.2747833385714128,
+      "mean_ade_regret": 0.024171642463702632
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "change",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 71,
+      "denominator": 223,
+      "fraction": 0.3183856502242152,
+      "mean_selected_ade": 0.5892625199660145,
+      "mean_selected_fde": 1.3670540176724146,
+      "mean_ade_regret": 0.40181430203287977
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "change",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 7,
+      "denominator": 223,
+      "fraction": 0.03139013452914798,
+      "mean_selected_ade": 0.5023579097450913,
+      "mean_selected_fde": 1.2237014183433719,
+      "mean_ade_regret": 0.27652031165505464
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "change",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 28,
+      "denominator": 223,
+      "fraction": 0.12556053811659193,
+      "mean_selected_ade": 0.6698742266847102,
+      "mean_selected_fde": 1.7678543219244158,
+      "mean_ade_regret": 0.4291023993286114
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "change",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 24,
+      "denominator": 223,
+      "fraction": 0.10762331838565023,
+      "mean_selected_ade": 1.0725252973823456,
+      "mean_selected_fde": 2.314101395477406,
+      "mean_ade_regret": 0.6408011158938504
+    },
+    {
+      "model": "native",
+      "model_label": "原生F16/V2：真实最高分选择",
+      "group": "change",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 75,
+      "denominator": 223,
+      "fraction": 0.336322869955157,
+      "mean_selected_ade": 1.5207664758461283,
+      "mean_selected_fde": 3.5310136311209135,
+      "mean_ade_regret": 0.8754615384817529
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 371,
+      "denominator": 1516,
+      "fraction": 0.24472295514511874,
+      "mean_selected_ade": 0.09287122260064766,
+      "mean_selected_fde": 0.18192323012482386,
+      "mean_ade_regret": 0.01580926255932891
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 686,
+      "denominator": 1516,
+      "fraction": 0.4525065963060686,
+      "mean_selected_ade": 0.4852641130469693,
+      "mean_selected_fde": 1.0818242757392147,
+      "mean_ade_regret": 0.31699196739115987
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 41,
+      "denominator": 1516,
+      "fraction": 0.02704485488126649,
+      "mean_selected_ade": 0.49538900835309035,
+      "mean_selected_fde": 1.0836918060222402,
+      "mean_ade_regret": 0.2642741857362746
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 129,
+      "denominator": 1516,
+      "fraction": 0.08509234828496043,
+      "mean_selected_ade": 0.6767325072719126,
+      "mean_selected_fde": 1.586199119816011,
+      "mean_ade_regret": 0.43353125457728586
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 65,
+      "denominator": 1516,
+      "fraction": 0.04287598944591029,
+      "mean_selected_ade": 0.8237654419407037,
+      "mean_selected_fde": 1.595363222600203,
+      "mean_ade_regret": 0.4479589622257609
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 224,
+      "denominator": 1516,
+      "fraction": 0.14775725593667546,
+      "mean_selected_ade": 1.2995881550396366,
+      "mean_selected_fde": 2.908278808523051,
+      "mean_ade_regret": 0.7607841339542638
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 325,
+      "denominator": 1067,
+      "fraction": 0.3045923149015933,
+      "mean_selected_ade": 0.08485658831105644,
+      "mean_selected_fde": 0.16533140355591652,
+      "mean_ade_regret": 0.01578853240988312
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 515,
+      "denominator": 1067,
+      "fraction": 0.48266166822867856,
+      "mean_selected_ade": 0.4544157747607081,
+      "mean_selected_fde": 1.0053316576960234,
+      "mean_ade_regret": 0.2893104325361302
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 27,
+      "denominator": 1067,
+      "fraction": 0.02530459231490159,
+      "mean_selected_ade": 0.5285866624043363,
+      "mean_selected_fde": 1.1103080265191838,
+      "mean_ade_regret": 0.2991928549845574
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 82,
+      "denominator": 1067,
+      "fraction": 0.07685098406747891,
+      "mean_selected_ade": 0.6679160870040926,
+      "mean_selected_fde": 1.5248979634546262,
+      "mean_ade_regret": 0.4266380375396921
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 27,
+      "denominator": 1067,
+      "fraction": 0.02530459231490159,
+      "mean_selected_ade": 0.7464141028693853,
+      "mean_selected_fde": 1.3213659900690256,
+      "mean_ade_regret": 0.38511946937886204
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 91,
+      "denominator": 1067,
+      "fraction": 0.08528584817244611,
+      "mean_selected_ade": 1.120314226564559,
+      "mean_selected_fde": 2.4525246359220017,
+      "mean_ade_regret": 0.6590215250566664
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 28,
+      "denominator": 226,
+      "fraction": 0.12389380530973451,
+      "mean_selected_ade": 0.1350676637845221,
+      "mean_selected_fde": 0.3102652457842713,
+      "mean_ade_regret": 0.012457545051185666
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 104,
+      "denominator": 226,
+      "fraction": 0.46017699115044247,
+      "mean_selected_ade": 0.5586819975030919,
+      "mean_selected_fde": 1.247881520027377,
+      "mean_ade_regret": 0.38332355940560553
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 226,
+      "fraction": 0.017699115044247787,
+      "mean_selected_ade": 0.5089481389235481,
+      "mean_selected_fde": 1.2337678833840686,
+      "mean_ade_regret": 0.2608499682828461
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 23,
+      "denominator": 226,
+      "fraction": 0.10176991150442478,
+      "mean_selected_ade": 0.7283252340239784,
+      "mean_selected_fde": 1.6133526306899524,
+      "mean_ade_regret": 0.4787343566438873
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 14,
+      "denominator": 226,
+      "fraction": 0.061946902654867256,
+      "mean_selected_ade": 0.718550298262023,
+      "mean_selected_fde": 1.3826284837630287,
+      "mean_ade_regret": 0.3560382117342783
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 53,
+      "denominator": 226,
+      "fraction": 0.2345132743362832,
+      "mean_selected_ade": 1.3323120358505722,
+      "mean_selected_fde": 2.9111180612337186,
+      "mean_ade_regret": 0.7840137537438645
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 18,
+      "denominator": 223,
+      "fraction": 0.08071748878923767,
+      "mean_selected_ade": 0.17194098876557362,
+      "mean_selected_fde": 0.2818547410376217,
+      "mean_ade_regret": 0.021397339714767316
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 67,
+      "denominator": 223,
+      "fraction": 0.3004484304932735,
+      "mean_selected_ade": 0.6084198478826076,
+      "mean_selected_fde": 1.4120294232955544,
+      "mean_ade_regret": 0.42680547307530864
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 10,
+      "denominator": 223,
+      "fraction": 0.04484304932735426,
+      "mean_selected_ade": 0.40033169018654363,
+      "mean_selected_fde": 0.9517975797357613,
+      "mean_ade_regret": 0.1713634657472823
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 24,
+      "denominator": 223,
+      "fraction": 0.10762331838565023,
+      "mean_selected_ade": 0.6574122467162344,
+      "mean_selected_fde": 1.7696226227965486,
+      "mean_ade_regret": 0.41376343997523857
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 24,
+      "denominator": 223,
+      "fraction": 0.10762331838565023,
+      "mean_selected_ade": 0.9721611988751673,
+      "mean_selected_fde": 2.027705373519462,
+      "mean_ade_regret": 0.5722738294652205
+    },
+    {
+      "model": "pairwise",
+      "model_label": "Pairwise history · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 80,
+      "denominator": 223,
+      "fraction": 0.35874439461883406,
+      "mean_selected_ade": 1.481832677642793,
+      "mean_selected_fde": 3.4248181749359277,
+      "mean_ade_regret": 0.86114947846467
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 378,
+      "denominator": 1516,
+      "fraction": 0.24934036939313983,
+      "mean_selected_ade": 0.09584743344052297,
+      "mean_selected_fde": 0.18607488798816474,
+      "mean_ade_regret": 0.016142522061394476
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 666,
+      "denominator": 1516,
+      "fraction": 0.4393139841688654,
+      "mean_selected_ade": 0.49112120606309667,
+      "mean_selected_fde": 1.0907206334291792,
+      "mean_ade_regret": 0.3205198643270178
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 41,
+      "denominator": 1516,
+      "fraction": 0.02704485488126649,
+      "mean_selected_ade": 0.5210711873124145,
+      "mean_selected_fde": 1.1202502451571523,
+      "mean_ade_regret": 0.28480608937853535
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 126,
+      "denominator": 1516,
+      "fraction": 0.08311345646437995,
+      "mean_selected_ade": 0.6429648653941616,
+      "mean_selected_fde": 1.522904672284256,
+      "mean_ade_regret": 0.4042910610527066
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 83,
+      "denominator": 1516,
+      "fraction": 0.05474934036939314,
+      "mean_selected_ade": 0.8425063851618685,
+      "mean_selected_fde": 1.6413468390629444,
+      "mean_ade_regret": 0.46138451968352334
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 222,
+      "denominator": 1516,
+      "fraction": 0.14643799472295516,
+      "mean_selected_ade": 1.2912847306476543,
+      "mean_selected_fde": 2.9276765534536064,
+      "mean_ade_regret": 0.760418456595004
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 332,
+      "denominator": 1067,
+      "fraction": 0.31115276476101217,
+      "mean_selected_ade": 0.08752988667438986,
+      "mean_selected_fde": 0.1717012507802691,
+      "mean_ade_regret": 0.016477636106589
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 497,
+      "denominator": 1067,
+      "fraction": 0.46579194001874413,
+      "mean_selected_ade": 0.4607706479274152,
+      "mean_selected_fde": 1.0190627592397354,
+      "mean_ade_regret": 0.29289517455140324
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 27,
+      "denominator": 1067,
+      "fraction": 0.02530459231490159,
+      "mean_selected_ade": 0.5171447408459315,
+      "mean_selected_fde": 1.0396195605529177,
+      "mean_ade_regret": 0.2801500393516682
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 76,
+      "denominator": 1067,
+      "fraction": 0.07122774133083412,
+      "mean_selected_ade": 0.6376770246289636,
+      "mean_selected_fde": 1.4607040055458362,
+      "mean_ade_regret": 0.4003235302319446
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 38,
+      "denominator": 1067,
+      "fraction": 0.03561387066541706,
+      "mean_selected_ade": 0.7587624276439017,
+      "mean_selected_fde": 1.398932768626335,
+      "mean_ade_regret": 0.3930058310028996
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 97,
+      "denominator": 1067,
+      "fraction": 0.09090909090909091,
+      "mean_selected_ade": 1.0840376713373967,
+      "mean_selected_fde": 2.449557817570109,
+      "mean_ade_regret": 0.6326617976682075
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 26,
+      "denominator": 226,
+      "fraction": 0.11504424778761062,
+      "mean_selected_ade": 0.13145996818735867,
+      "mean_selected_fde": 0.28672358925663144,
+      "mean_ade_regret": 0.010307095691809107
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 103,
+      "denominator": 226,
+      "fraction": 0.4557522123893805,
+      "mean_selected_ade": 0.5509631927723782,
+      "mean_selected_fde": 1.228849056593339,
+      "mean_ade_regret": 0.376854538862488
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 5,
+      "denominator": 226,
+      "fraction": 0.022123893805309734,
+      "mean_selected_ade": 0.4749061351730749,
+      "mean_selected_fde": 1.17501877510625,
+      "mean_ade_regret": 0.24923209786948114
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 21,
+      "denominator": 226,
+      "fraction": 0.09292035398230089,
+      "mean_selected_ade": 0.6389736888077014,
+      "mean_selected_fde": 1.4655651817391202,
+      "mean_ade_regret": 0.40070211044021065
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 19,
+      "denominator": 226,
+      "fraction": 0.084070796460177,
+      "mean_selected_ade": 0.7051071127423123,
+      "mean_selected_fde": 1.3530102338110044,
+      "mean_ade_regret": 0.3454996536336502
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 52,
+      "denominator": 226,
+      "fraction": 0.23008849557522124,
+      "mean_selected_ade": 1.406102724238435,
+      "mean_selected_fde": 3.079877722983224,
+      "mean_ade_regret": 0.8503900767707792
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 20,
+      "denominator": 223,
+      "fraction": 0.08968609865470852,
+      "mean_selected_ade": 0.18762241458744597,
+      "mean_selected_fde": 0.293833953990226,
+      "mean_ade_regret": 0.018165683191626324
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 66,
+      "denominator": 223,
+      "fraction": 0.29596412556053814,
+      "mean_selected_ade": 0.6262803388263963,
+      "mean_selected_fde": 1.4147620862510764,
+      "mean_ade_regret": 0.44062591495318476
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 9,
+      "denominator": 223,
+      "fraction": 0.04035874439461883,
+      "mean_selected_ade": 0.5584977779003857,
+      "mean_selected_fde": 1.3317153378870243,
+      "mean_ade_regret": 0.31853756807527805
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 29,
+      "denominator": 223,
+      "fraction": 0.13004484304932734,
+      "mean_selected_ade": 0.6597128173414257,
+      "mean_selected_fde": 1.7274350162003855,
+      "mean_ade_regret": 0.4172876233023732
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 26,
+      "denominator": 223,
+      "fraction": 0.11659192825112108,
+      "mean_selected_ade": 1.0653085606101111,
+      "mean_selected_fde": 2.2063518458467146,
+      "mean_ade_regret": 0.6460076975608805
+    },
+    {
+      "model": "readout",
+      "model_label": "Neighbor attention · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 73,
+      "denominator": 223,
+      "fraction": 0.3273542600896861,
+      "mean_selected_ade": 1.4848796496390835,
+      "mean_selected_fde": 3.4545677392777048,
+      "mean_ade_regret": 0.8660879314821126
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 365,
+      "denominator": 1516,
+      "fraction": 0.2407651715039578,
+      "mean_selected_ade": 0.09033389896548169,
+      "mean_selected_fde": 0.174689409014137,
+      "mean_ade_regret": 0.01562805896286402
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 684,
+      "denominator": 1516,
+      "fraction": 0.45118733509234826,
+      "mean_selected_ade": 0.4810742626151371,
+      "mean_selected_fde": 1.0765726178381554,
+      "mean_ade_regret": 0.31278314666798923
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 42,
+      "denominator": 1516,
+      "fraction": 0.027704485488126648,
+      "mean_selected_ade": 0.4873582590098,
+      "mean_selected_fde": 1.070484219203483,
+      "mean_ade_regret": 0.2518458783481326
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 127,
+      "denominator": 1516,
+      "fraction": 0.08377308707124011,
+      "mean_selected_ade": 0.6729078279229289,
+      "mean_selected_fde": 1.5951875052382658,
+      "mean_ade_regret": 0.4303034398279764
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 73,
+      "denominator": 1516,
+      "fraction": 0.048153034300791556,
+      "mean_selected_ade": 0.8444033573461537,
+      "mean_selected_fde": 1.6670229794068843,
+      "mean_ade_regret": 0.46497043730099563
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "overall",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 225,
+      "denominator": 1516,
+      "fraction": 0.14841688654353563,
+      "mean_selected_ade": 1.298461427593384,
+      "mean_selected_fde": 2.921744181493896,
+      "mean_ade_regret": 0.7617903570422805
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 319,
+      "denominator": 1067,
+      "fraction": 0.29896907216494845,
+      "mean_selected_ade": 0.082067006049063,
+      "mean_selected_fde": 0.158643617908246,
+      "mean_ade_regret": 0.01559926434986441
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 513,
+      "denominator": 1067,
+      "fraction": 0.48078725398313027,
+      "mean_selected_ade": 0.44807497231736165,
+      "mean_selected_fde": 0.9972361949464355,
+      "mean_ade_regret": 0.282742361632634
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 29,
+      "denominator": 1067,
+      "fraction": 0.02717900656044986,
+      "mean_selected_ade": 0.533879985580959,
+      "mean_selected_fde": 1.077053373610016,
+      "mean_ade_regret": 0.30225367194154773
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 82,
+      "denominator": 1067,
+      "fraction": 0.07685098406747891,
+      "mean_selected_ade": 0.6762829829625702,
+      "mean_selected_fde": 1.5608018574805214,
+      "mean_ade_regret": 0.43527917144932743
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 31,
+      "denominator": 1067,
+      "fraction": 0.029053420805998126,
+      "mean_selected_ade": 0.7683926920138396,
+      "mean_selected_fde": 1.429394500662038,
+      "mean_ade_regret": 0.4095467057081211
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "stable",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 93,
+      "denominator": 1067,
+      "fraction": 0.08716026241799438,
+      "mean_selected_ade": 1.0984789351328375,
+      "mean_selected_fde": 2.435963345203458,
+      "mean_ade_regret": 0.6417723065394237
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 26,
+      "denominator": 226,
+      "fraction": 0.11504424778761062,
+      "mean_selected_ade": 0.1270904136519753,
+      "mean_selected_fde": 0.29344678019878645,
+      "mean_ade_regret": 0.008262794325523817
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 108,
+      "denominator": 226,
+      "fraction": 0.4778761061946903,
+      "mean_selected_ade": 0.5628924937249784,
+      "mean_selected_fde": 1.2596206496521367,
+      "mean_ade_regret": 0.3842155333618216
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 226,
+      "fraction": 0.017699115044247787,
+      "mean_selected_ade": 0.37658070970374447,
+      "mean_selected_fde": 1.0717020143878266,
+      "mean_ade_regret": 0.13128850697828148
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 20,
+      "denominator": 226,
+      "fraction": 0.08849557522123894,
+      "mean_selected_ade": 0.7116697452997359,
+      "mean_selected_fde": 1.5778854665725404,
+      "mean_ade_regret": 0.46444529650087246
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 13,
+      "denominator": 226,
+      "fraction": 0.05752212389380531,
+      "mean_selected_ade": 0.6998615140806372,
+      "mean_selected_fde": 1.2877574805908485,
+      "mean_ade_regret": 0.31073726089341847
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "transition",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 55,
+      "denominator": 226,
+      "fraction": 0.24336283185840707,
+      "mean_selected_ade": 1.3194279732115894,
+      "mean_selected_fde": 2.891625677983658,
+      "mean_ade_regret": 0.7817627627345289
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 0,
+      "category": "选中合格轨迹",
+      "n": 20,
+      "denominator": 223,
+      "fraction": 0.08968609865470852,
+      "mean_selected_ade": 0.17440737188991812,
+      "mean_selected_fde": 0.27623519461305435,
+      "mean_ade_regret": 0.025662177068750146
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 1,
+      "category": "合格候选被漏选",
+      "n": 63,
+      "denominator": 223,
+      "fraction": 0.2825112107623318,
+      "mean_selected_ade": 0.609522944565866,
+      "mean_selected_fde": 1.4088011497039092,
+      "mean_ade_regret": 0.43494544762359755
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 2,
+      "category": "分离最优的指标错觉",
+      "n": 9,
+      "denominator": 223,
+      "fraction": 0.04035874439461883,
+      "mean_selected_ade": 0.3866893841943121,
+      "mean_selected_fde": 1.0487757015893893,
+      "mean_ade_regret": 0.14300181960039568
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 3,
+      "category": "仅路径接近",
+      "n": 25,
+      "denominator": 223,
+      "fraction": 0.11210762331838565,
+      "mean_selected_ade": 0.6308277854914602,
+      "mean_selected_fde": 1.7218140608162487,
+      "mean_ade_regret": 0.3866695547716282
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 4,
+      "category": "仅终点接近",
+      "n": 29,
+      "denominator": 223,
+      "fraction": 0.13004484304932734,
+      "mean_selected_ade": 0.9904507569238593,
+      "mean_selected_fde": 2.091055197534425,
+      "mean_ade_regret": 0.5933555053243618
+    },
+    {
+      "model": "messages",
+      "model_label": "Neighbor messages · constrained seed1（继承slot参考）",
+      "group": "change",
+      "class_id": 5,
+      "category": "整体覆盖不足",
+      "n": 77,
+      "denominator": 223,
+      "fraction": 0.3452914798206278,
+      "mean_selected_ade": 1.5250226196690921,
+      "mean_selected_fde": 3.5299797070532946,
+      "mean_ade_regret": 0.892481219168151
+    }
+  ],
+  "sensitivity": [
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 281,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 452,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 56,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 77,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 191,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 459,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 249,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 356,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 41,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 56,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 132,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 233,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 20,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 65,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 7,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 9,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 26,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 99,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 12,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 31,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 8,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 12,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 33,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 127,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 371,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 692,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 37,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 135,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 69,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 212,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 325,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 516,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 25,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 87,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 29,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 85,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 28,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 105,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 5,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 20,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 16,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 52,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 18,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 71,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 7,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 28,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 24,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 75,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 776,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 626,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 7,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 14,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 26,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 67,
+      "denominator": 1516
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 656,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 374,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 1,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 4,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 8,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 24,
+      "denominator": 1067
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 68,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 131,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 3,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 6,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 14,
+      "denominator": 226
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 52,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 121,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 2,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 7,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 12,
+      "denominator": 223
+    },
+    {
+      "model": "native",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 29,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 279,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 441,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 64,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 89,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 190,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 453,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 249,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 347,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 47,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 64,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 132,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 228,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 20,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 63,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 5,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 13,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 29,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 96,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 10,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 31,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 12,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 12,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 29,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 129,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 371,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 686,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 41,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 129,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 65,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 224,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 325,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 515,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 27,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 82,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 27,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 91,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 28,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 104,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 23,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 14,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 53,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 18,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 67,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 10,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 24,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 24,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 80,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 775,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 627,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 7,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 16,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 24,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 67,
+      "denominator": 1516
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 651,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 382,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 1,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 5,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 6,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 22,
+      "denominator": 1067
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 69,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 129,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 16,
+      "denominator": 226
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 55,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 116,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 2,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 7,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 14,
+      "denominator": 223
+    },
+    {
+      "model": "pairwise",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 29,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 281,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 422,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 63,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 90,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 216,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 444,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 253,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 334,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 50,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 64,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 144,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 222,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 18,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 62,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 6,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 14,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 30,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 96,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 10,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 26,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 7,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 12,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 42,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 126,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 378,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 666,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 41,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 126,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 83,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 222,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 332,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 497,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 27,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 76,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 38,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 97,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 26,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 103,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 5,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 21,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 19,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 52,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 20,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 66,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 9,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 29,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 26,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 73,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 764,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 632,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 13,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 19,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 27,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 61,
+      "denominator": 1516
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 643,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 380,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 6,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 7,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 9,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 22,
+      "denominator": 1067
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 68,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 129,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 5,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 7,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 13,
+      "denominator": 226
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 53,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 123,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 3,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 7,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 11,
+      "denominator": 223
+    },
+    {
+      "model": "readout",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 26,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 279,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 443,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 63,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 79,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 193,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 459,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 250,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 345,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 47,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 56,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 137,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 232,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 19,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 65,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 5,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 12,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 28,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 97,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 10,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 33,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 11,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 11,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 28,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.2,
+      "fde_limit": 0.4,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 130,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 365,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 684,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 42,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 127,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 73,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 225,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 319,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 513,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 29,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 82,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 31,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 93,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 26,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 108,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 20,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 13,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 55,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 20,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 63,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 9,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 25,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 29,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.3,
+      "fde_limit": 0.5,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 77,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "选中合格轨迹",
+      "n": 766,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "合格候选被漏选",
+      "n": 631,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "分离最优的指标错觉",
+      "n": 10,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "仅路径接近",
+      "n": 22,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "仅终点接近",
+      "n": 22,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "overall",
+      "category": "整体覆盖不足",
+      "n": 65,
+      "denominator": 1516
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "选中合格轨迹",
+      "n": 644,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "合格候选被漏选",
+      "n": 384,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "分离最优的指标错觉",
+      "n": 2,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "仅路径接近",
+      "n": 7,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "仅终点接近",
+      "n": 8,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "stable",
+      "category": "整体覆盖不足",
+      "n": 22,
+      "denominator": 1067
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "选中合格轨迹",
+      "n": 68,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "合格候选被漏选",
+      "n": 128,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "仅路径接近",
+      "n": 8,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "仅终点接近",
+      "n": 4,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "transition",
+      "category": "整体覆盖不足",
+      "n": 14,
+      "denominator": 226
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "选中合格轨迹",
+      "n": 54,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "合格候选被漏选",
+      "n": 119,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "分离最优的指标错觉",
+      "n": 4,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "仅路径接近",
+      "n": 7,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "仅终点接近",
+      "n": 10,
+      "denominator": 223
+    },
+    {
+      "model": "messages",
+      "ade_limit": 0.5,
+      "fde_limit": 1.0,
+      "group": "change",
+      "category": "整体覆盖不足",
+      "n": 29,
+      "denominator": 223
+    }
+  ],
+  "protocol": {
+    "purpose": "Posthoc human visual diagnosis of candidate generation and selection; not a new training experiment",
+    "scope": "ETH existing development subset, generator seed1, 1516 explicit IDs, K20, 8 observed and 12 future steps",
+    "primary_model": "Current generation-study immutable fold-local F16/V2 native baseline, native logits argmax",
+    "comparisons": "PAIRWISE_HISTORY, NEIGHBOR_READOUT, NEIGHBOR_MESSAGE constrained seed1; inherited native slot selection reference only, NOT rescoring corrected paths or promoted deployed models",
+    "diagnostic_ade_threshold_m": 0.3,
+    "diagnostic_fde_threshold_m": 0.5,
+    "sensitivity_presets_m": [
+      [
+        0.2,
+        0.4
+      ],
+      [
+        0.3,
+        0.5
+      ],
+      [
+        0.5,
+        1.0
+      ]
+    ],
+    "joint_quality": "ADE + 0.5 FDE; single candidate, not separate minima",
+    "dt_s": 0.4,
+    "selection_input": "Existing native logits only; no future or GT-derived groups",
+    "classification": "GT posthoc mutually exclusive six classes; good candidate must satisfy BOTH thresholds on the SAME path",
+    "data_policy": "All 1516 samples, all20 candidates, no hand-filtering; thresholds only visual diagnostics, never experiment gates or tuning",
+    "preservation": "All writes under this new directory except a final .memory update. Old files read-only, SHA audited. No training, GPU, test, new fold or external data",
+    "limitations": "Repeated ETH development subset and one generator seed; descriptive counts not independent generalization or causal attribution. Unfinished cycle11 outputs excluded. Softmax of scores is not calibrated probability. Alternative futures not disproven by a single GT"
+  }
+}

@@ -1,0 +1,11 @@
+# Cycle8 experiment1 SOFT_SET result
+
+NormalSUCCESS2026-10-03 01:39:48HK, actual47m36.2s.18modelSHA/18explicit1516IDfiniteK20/allstoredmetricsindependent recompute/frozen/source/SUCCESS/12120oldfilesunchangedPASS. Separate model/sourcehash rereadPASS. No oldPID43644query/retrain; alloldresults preserved.
+
+Constrained softmin changeADE/FDE .372740507/.695523739 vsnative .372174740/.696326435: ADEharm.152%,FDEgain.115%. Freshhard .371383339/.691851854. Softminusfreshhard ADEdelta+.001357188 CI[-.000165761,.003147544],FDEdelta+.003671887 CI[-.000177984,.007650251],joint+.002980255 CI[-.000364723,.006749861]. Bothnative ADE/FDE CIcross0; no5%/perseed/freshcontrolCI/motiondistributionPASS. No reliable softincrement/major/newbaseline/intent/ranking.
+
+Overall/stable/transition/change softADE .219411507/.175403178/.275891721/.372740507 andFDE .401658088/.316517025/.513664663/.695523739. Protectedgroups/coverage/duplicates/hardkinematics/samepathPASS, motionFAIL overallaccelmean .102657653 vsnative.099468641(+3.206%);changejerkp95 3.003076 vs2.888452(+3.97%). Near30cm count change1.014948 vsnative.968610(+4.785%);this densityincrease doesnotprove candidatequality improved. GTfamilycoveragechange.905830 vs.910314. No proof allsoftmethods fail, GTconcentration impossible, or futureintention unpredictable.
+
+Protocol same25158parameter/forward/pairedhead, tau .03040965m fixedFITonly/nativejointminmedian*.1, alloriginalregularizers/protection/cal unchanged. Constantnormalizedsoftmin makes scalarhardsofttrainingloss incomparable. HypotheticalFIT128effectivecandidatecount1.72257 isnotallFIT/actualtraininglearningguarantee. Hardcontrol repeatseffectivearchitecture/seeds nativecontexthead, notindependentvalidation. ExistingETHdev adaptivereuse/3seed/scene dependence remain exploratory limitations.
+
+Completedcycle8 1/3. Next FIT1024/CAL512 assignmentdiagnosis seed20261004/nooptimizer/noDEVtest testsnative-vslearnedwinner switching/descriptive gap andsoftweights. Switching may be legitimateimprovement, not causeproof. No temperature/floor/LR/epoch sweep. Any newnative-fixed assignment contrast must be motivated by actualFIT/CAL evidence and pairedpreflight/exactresume beforelaunch; nativefixed labels couldlimit futurecoverage, GT remainslossonly/noinferencegroup routing. Thirdformalcomplete fullreviewmandatory.

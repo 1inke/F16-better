@@ -1,0 +1,45 @@
+{
+  "status": "RUNNING",
+  "cycle": 11,
+  "experiment_index": 1,
+  "completed_in_cycle": 0,
+  "worker_pid": 31812,
+  "parent_pid": 2728,
+  "task_name": "Trajectory-CandidateExchange-Cycle11",
+  "started_at": "2026-10-03T16:36:31.600162+08:00",
+  "startup_confirmed": true,
+  "startup_training": "zero seed1epoch1/80",
+  "stderr_empty_at_startup": true,
+  "planning_minutes": 40,
+  "estimated_range_minutes": [
+    30,
+    50
+  ],
+  "first_progress_query_at": "2026-10-03T17:00:32+08:00",
+  "first_progress_query_done": true,
+  "analysis_deadline": "2026-10-03T17:22:00+08:00",
+  "next_review": "2026-10-03T17:22:00+08:00",
+  "preflight": "PASS",
+  "resume_check": "PASS_BOTH_EXACT",
+  "parameters_trainable": {
+    "zero": 41638,
+    "mean_std": 41638
+  },
+  "old_files_locked": 17573,
+  "benchmark_compute_minutes": 27.915012,
+  "scope": "newQKV128to32+160to128to64to6head only;alloriginalF16decoder/scorerfrozen/nativeK20/originallossguardsdata unchanged",
+  "prepared_schema": "past0:16,tokens16:784,reserved784:940zero",
+  "control_note": "diagonal ownvalue vsall20 learned attention,QKcontroldatagrad0/nominalnot equaleffectivecapacity",
+  "first_progress_query_completed_at": "2026-10-03T17:09:52+08:00",
+  "progress_epochs": 440,
+  "progress_total_epochs": 480,
+  "progress_completed_trainings": 5,
+  "progress_training": "mean_std seed3 epoch40/80",
+  "progress_pid_verified": true,
+  "progress_stderr_empty": true,
+  "remaining_estimate_minutes": [
+    8,
+    12
+  ],
+  "progress_task_state_note": "Task query returned but tabular rendering did not expose State; real python PID/service parent and fresh train logs verified. Do not claim independently visible Task Running at this check."
+}

@@ -1,0 +1,52 @@
+{
+  "protocol": "native_candidate_state32_inputmask_v1",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "epochs": 80,
+  "velocity_residual_scale": 1.5,
+  "protection_weight": 0.1,
+  "guard_fraction": 0.01,
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 20261001,
+  "test_access": "forbidden",
+  "set_context": "mean_std",
+  "study": "candidate_state_20261005",
+  "experiment_in_study": 1,
+  "zero_label": "FIT_standardized_native_state32_masked_zero",
+  "mean_std_label": "actual_FIT_standardized_native_state32",
+  "factor": "candidate_state_input_availability_only",
+  "pulse_center_range": [
+    0.05,
+    0.95
+  ],
+  "pulse_span_range": [
+    0.05,
+    0.5
+  ],
+  "both_clock_active": true,
+  "future_observations": false,
+  "progress_fraction": 0.5,
+  "after_analysis": "Every3newformal fullreview; substantiveobstruction STOP human; autonomous lawfulnewhead continuation",
+  "process_budget_GiB": 6,
+  "system_reserve_GiB": 6,
+  "host_available_RAM_GB_approx": 17,
+  "both_profile": "learned_sigmoid_persistent",
+  "feature_dimension": 32,
+  "expected_trainable_parameters": 45798,
+  "state_encoder": [
+    32,
+    32,
+    32
+  ],
+  "head": [
+    192,
+    128,
+    64,
+    6
+  ],
+  "scalers": "FIT25912_all20_candidatepoints_only_std_floor_.001",
+  "amplitude_drift_partition": 0.5
+}

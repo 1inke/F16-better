@@ -1,0 +1,56 @@
+{
+  "status": "COMPLETE_AUDITED_GATE_FAIL",
+  "cycle": 5,
+  "experiment_in_cycle": 1,
+  "completed_in_cycle": 1,
+  "pid": 45412,
+  "parent_pid": 2728,
+  "windows_task": "Trajectory-SocialTap-Cycle5",
+  "launched_at": "2026-10-02T04:18:08.144796+08:00",
+  "estimate_minutes_range": [
+    18,
+    30
+  ],
+  "planning_minutes": 25,
+  "first_progress_query_at": "2026-10-02T04:33:09+08:00",
+  "first_progress_query_done": true,
+  "next_review_at": null,
+  "analysis_deadline": null,
+  "startup_confirmed": true,
+  "startup_progress": "realPythonPID45412 serviceparent2728 taskRunning zero seed1epoch5/80 stderr empty",
+  "new_trainings": 6,
+  "epochs_each": 80,
+  "parameters_each": 39558,
+  "internal_arm_mapping": {
+    "zero": "uniformmean_plus_constant_social_projection",
+    "mean_std": "uniformmean_plus_direct_frozen_social_projection"
+  },
+  "paired_full_init_exact": true,
+  "native_identity_exact": true,
+  "effective_capacity_note": "Control social weight data gradientzero but biaslearnable, same nominal parameters not equal effectivecapacity",
+  "obs_schema": {
+    "past": [
+      0,
+      16
+    ],
+    "tokens": [
+      16,
+      784
+    ],
+    "social": [
+      784,
+      880
+    ],
+    "reserved": [
+      880,
+      940
+    ]
+  },
+  "fit_only_social_normalization_buffers": true,
+  "resume": "botharm actual2epoch params/boolbuffers/socialscalers/optimizer/RNG/history/calibrationEXACT",
+  "scope": "Wholeoriginaldecoder/F16/scorer frozen/nativebase3anchor/commonclip1.5/originalloss fitcal/K20/nofutureGTgroup/logitsforward/test",
+  "progress_checked_at": "2026-10-02T04:36:10+08:00",
+  "finished_at": "2026-10-02T04:35:21.826339+08:00",
+  "audit": "independent18SHA IDsfiniteK20 allstoredmetrics recomputePASS; frozen18/SUCCESS",
+  "result_analysis": "RESULT_ANALYSIS.md"
+}

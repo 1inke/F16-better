@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETE_AUDITED_GATE_FAIL",
+  "evaluation_repair_completed_at": "2026-10-02T16:14:03.187894+08:00",
+  "independent_audit": "evaluation_repair/independent_audit.json",
+  "result_analysis": "RESULT_ANALYSIS.md",
+  "major_result": false,
+  "completed_trainings": 6,
+  "production_failure": "All training finished15:34HK; finaldev rawfile mapping eth_data_dev.npy nonexistent. Originalfailure retained; no retraining.",
+  "evaluation_repair": {"pid":38712,"parent_pid":2728,"started_at":"2026-10-02T16:11:46.167168+08:00","task":"Trajectory-UpstreamTemporal-EvaluationRepair","training_invoked":false,"verified_completed_models":18,"source_hashes_unchanged":true,"output_directory":"evaluation_repair/results","estimate_minutes_range":[5,10],"next_review_at":"2026-10-02T16:22:00+08:00"},
+  "cycle": 6,
+  "experiment_in_cycle": 1,
+  "completed_in_cycle": 1,
+  "pid": 35968,
+  "parent_pid": 2728,
+  "windows_task": "Trajectory-UpstreamTemporal-Cycle6",
+  "launched_at": "2026-10-02T11:56:06.915410+08:00",
+  "estimate_minutes_range": [
+    65,
+    90
+  ],
+  "planning_minutes": 75,
+  "first_progress_query_at": "2026-10-02T12:41:07+08:00",
+  "first_progress_query_done": true,
+  "next_review_at": "2026-10-02T16:22:00+08:00",
+  "analysis_deadline": "2026-10-02T16:22:00+08:00",
+  "startup_confirmed": true,
+  "startup_progress": "realPythonPID35968/serviceparent2728/taskRunning/zero seed1epoch1/80/stderr empty",
+  "new_trainings": 6,
+  "epochs_each": 80,
+  "trainable_parameters": {
+    "zero": 25158,
+    "mean_std": 99942
+  },
+  "unfrozen_module": "original.agent_aware_trans_encoder.temporal_encoder.layers.0",
+  "unfrozen_parameters": 74784,
+  "paired_full_init_exact": true,
+  "native_output_identity_exact": true,
+  "initial_native_alignment_error": 9.5367431640625e-7,
+  "resume": "Both actual2epoch continuous/interrupted allparams/boolbuffers/optimizer/torchCUDAloadernumpyPythonRNG/history/calibration EXACT",
+  "old_results_protection": "8626priorresultfileSHAmanifest; recheckedunchangedbeforelaunch; allnewoutputsinside thisnewfolder",
+  "online_forward": true,
+  "last_user_requested_progress_at": "2026-10-02T14:52:00+08:00",
+  "last_user_requested_progress": {"completed_trainings":4,"total_trainings":6,"arm":"mean_std","seed":2,"last_logged_epoch":55,"total_logged_epochs":375,"total_epochs":480,"pid_verified":true,"stderr_empty":true,"remaining_minutes_estimate":[50,65],"note":"Human-requested check, not repeated automatic60pct query. Keep scheduled analysis16:00. Late calibration feasibleFalse is protection failure for epoch selection, not runtime crash or final dev verdict."},
+  "first_progress_query_completed_at": "2026-10-02T12:45:40+08:00",
+  "progress_at_query": {
+    "completed_trainings": 1,
+    "total_trainings": 6,
+    "arm": "zero",
+    "seed": 2,
+    "last_logged_epoch": 50,
+    "epochs_each": 80,
+    "total_logged_epochs": 130,
+    "total_epochs": 480,
+    "pid_verified": true,
+    "task_running": true,
+    "stderr_empty": true
+  },
+  "remaining_minutes_range": [
+    150,
+    210
+  ],
+  "estimate_revision_note": "Actual first130epochs took~49min, substantially slower than microbenchmark; remaining110control+240treatment epochs plus calibration/IO/evaluation estimated2.5–3.5h. No claimed cause, no protocol/source change. Do not repeat60%query or poll before16:00."
+}

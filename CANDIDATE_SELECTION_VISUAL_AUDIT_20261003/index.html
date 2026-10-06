@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>候选 → 评分 → 选择 · 轨迹诊断</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main>
+  <header><div class="eyebrow">TRAJECTORY CASE REVIEW · ETH · K20 · 既有DEVELOPMENT</div><h1>候选 → 评分 → 选择</h1><p>把生成覆盖与选择遗憾分开看。全1516个样本，无训练、无test；GT只用于事后诊断。</p><nav><a href="#case-heading">本例轨迹</a><a href="gallery.html">分类代表案例</a><a href="REPORT.md">数据报告</a><a href="per_sample_classification.csv" download>全量分类CSV</a><a href="README.md">方法与局限</a></nav></header>
+  <section class="toolbar" aria-label="诊断设置">
+    <label class="model-label">候选来源<select id="model"></select></label>
+    <label>分类口径<select id="preset"><option value=".3,.5">默认 · ADE≤0.30 / FDE≤0.50 m</option><option value=".2,.4">更严格 · 0.20 / 0.40 m</option><option value=".5,1">更宽松 · 0.50 / 1.00 m</option><option value="custom">自定义</option></select></label>
+    <label>ADE阈值(m)<input id="ade-limit" type="number" min=".01" step=".05" value=".30"></label>
+    <label>FDE阈值(m)<input id="fde-limit" type="number" min=".01" step=".05" value=".50"></label>
+  </section>
+  <p id="selection-semantics" class="notice"></p>
+  <div class="category-grid" id="categories" aria-label="全量分类；点击筛选"></div>
+  <details><summary>分类怎么算？为什么minADE和minFDE不能直接合并？</summary><p>“合格”要求同一条轨迹同时满足两个阈值。若minADE和minFDE分别达标，却没有同一条候选双达标，则是“分离最优的指标错觉”。分类只描述当前GT和口径，不证明排序/生成的因果主因，也不否定其他合理未来。阈值不会改变训练或重大结果门槛。</p></details>
+  <section class="filterbar" aria-label="查找样本">
+    <label>运动组（GT事后标签）<select id="group"><option value="all">全部运动组</option><option value="0">stable</option><option value="1">transition</option><option value="2">change</option></select></label>
+    <label>选择标记<select id="flag"><option value="all">全部</option><option value="ade">选中精确minADE slot</option><option value="fde">选中精确minFDE slot</option><option value="joint">选中精确联合最优slot</option><option value="different">minADE/minFDE不同slot</option><option value="dominated">所选在ADE/FDE上被其他候选支配</option></select></label>
+    <label>排序<select id="sort"><option value="id">样本ID升序</option><option value="regret">联合选择遗憾由大到小</option><option value="ade-regret">ADE选择遗憾由大到小</option><option value="oracle">最佳候选联合误差由大到小</option><option value="selected">所选联合误差由大到小</option></select></label>
+    <label>跳到样本ID<input id="id-search" type="number" min="0" placeholder="显式ID"></label><button id="go">定位</button>
+  </section>
+  <section class="sample-nav"><button id="previous">← 上一个</button><select id="sample" aria-label="当前筛选样本"></select><button id="next">下一个 →</button><span id="position" aria-live="polite"></span><button id="reset">显示全部</button></section>
+  <div id="case-heading" aria-live="polite"></div>
+  <div id="metrics" class="metric-grid"></div>
+  <div class="layer-controls" aria-label="轨迹图层">
+    <label><input type="checkbox" id="show-all" checked>全部候选</label>
+    <label><input type="checkbox" id="show-ade" checked><span class="swatch ade"></span>minADE（虚线）</label>
+    <label><input type="checkbox" id="show-fde" checked><span class="swatch fde"></span>minFDE（点线）</label>
+    <label><input type="checkbox" id="show-joint"><span class="swatch joint"></span>联合最优</label>
+    <label><input type="checkbox" id="show-neighbors">邻居观察历史</label>
+    <label><input type="checkbox" id="focus">聚焦GT/选中（可能裁掉远候选）</label>
+    <span><span class="swatch gt"></span>GT　<span class="swatch selected"></span>模型选中　<span class="swatch past"></span>观察历史</span>
+  </div>
+  <div class="chart-grid">
+    <section><h2>01 · 候选集合</h2><p class="subtle">点击任意候选，联动查看评分和误差。</p><svg id="candidates-plot" role="img" aria-label="20条候选、GT与观察历史米制等比例轨迹图"></svg></section>
+    <section><h2>02 · 候选质量平面</h2><p class="subtle">同一点对应同一条轨迹；左下框为双达标区域。</p><svg id="quality-plot" role="img" aria-label="全部候选的ADE与FDE散点图"></svg></section>
+    <section><h2>03 · 最终选择 vs GT</h2><p class="subtle">与左图完全同尺度；oracle线是事后参照。</p><svg id="selected-plot" role="img" aria-label="所选轨迹与GT和oracle参照米制等比例图"></svg></section>
+  </div>
+  <div id="highlight-detail" class="notice" aria-live="polite"></div>
+  <div class="bottom-grid">
+    <section><h2>评分排序与候选误差</h2><p class="subtle">slot为1–20；评分高者被选。分数不是校准概率。点击行高亮轨迹。</p><div class="table-wrap"><table><thead><tr><th>评分排名</th><th>Slot / 标记</th><th>原生logit</th><th>ADE(m)</th><th>FDE(m)</th><th>Q(m)</th></tr></thead><tbody id="candidate-table"></tbody></table></div></section>
+    <section class="side-panel"><h2>误差随预测时间</h2><p class="subtle">时间对应同一帧；Q = ADE + 0.5 FDE。</p><svg id="error-plot" role="img" aria-label="所选与oracle轨迹的逐帧距离误差"></svg><div id="secondary-metrics"></div>
+      <h2>你的直观判断</h2><p class="subtle">人工备注独立保存，不覆盖数据分类或旧结果。</p>
+      <label>主要观察<select id="human-tag"><option value="">未标注</option><option>方向不对</option><option>速度 / 进度不对</option><option>转向 / 停止时机不对</option><option>有好候选但明显错选</option><option>多模态歧义</option><option>不自然运动 / 抖动</option><option>无明显问题</option><option>需进一步核验</option></select></label>
+      <label>观察笔记<textarea id="human-note" rows="4" placeholder="例如：GT先减速再左转；有候选方向正确，但得分仍偏向继续直行。"></textarea></label>
+      <div class="action-row"><button id="save-note">保存本例备注</button><button id="export-notes">导出全部人工备注JSON</button><button id="export-svg">导出本例选择图SVG</button></div><p id="note-status" aria-live="polite"></p>
+      <details id="export-fallback"><summary>导出文本备份（内嵌浏览器不支持下载时使用）</summary><p id="export-name" class="subtle">先点击上面的导出按钮。</p><label>导出内容<textarea id="export-text" rows="5" readonly placeholder="导出后，这里会显示相同的JSON或SVG内容。"></textarea></label><button id="select-export">选中全部导出文本</button><p class="subtle">可复制到文本文件，保存为上方显示的文件名；不依赖下载功能。</p></details>
+    </section>
+  </div>
+  <footer><p>这是描述性、GT事后的诊断工具，不是新训练或成功判据。只展示当前原生基线及3个已完成实验的固定seed1候选；未完成实验不纳入。全部源文件只读，旧结果SHA前后核验。空间坐标按米等比例，网页每坐标分量舍入≤5μm；连续分类指标保留完整精度。单个生成器、反复使用的ETH dev不能证明独立泛化或根因。</p><a href="audit.json">完整性审计</a> · <a href="threshold_sensitivity.csv">三档阈值敏感性</a> · <a href="candidate_metrics.csv.gz">全部候选精确指标</a> · <a href="data/arrays.npz">精确坐标数组</a></footer>
+</main>
+<div id="tooltip" hidden></div>
+<script>window.AUDIT_MODELS={};</script><script src="data/common.js"></script><script src="data/native.js"></script><script src="viewer.js"></script>
+</body></html>

@@ -1,0 +1,9 @@
+# Cycle7 experiment2: BASIS_CONDITION
+
+Verified independent Windows launch 2026-10-02 23:02:48HK, worker33520 parent2728service; startup TRAIN raw Gaussian seed1 epoch5/80, stderr empty.
+Six fresh80epoch models, seeds1/2/3: rawGaussian versus FIT-covariance-conditionedGaussian, both774 trainable parameters. Whole original F16/native decoder/scorer frozen. Same nativeK20/3anchor/commonclip1.5/original loss/protection.1/constrainedcal/fit25912cal2879/LR/order.
+FIT-only phi covariance uses518240 candidate-feature points, saved mean and symmetric inverse sqrt with fixed relative eigenfloor1e-4. NoGT/CAL/dev chosen transform. With bias and invertible transform the unbounded linear span is unchanged, but optimization and isotropic weight decay geometry change; amplification may hurt. This is not an intention/ranking/independent-generator claim.
+Actual GPU preflight PASS, fullpaired state/nativeidentity, gradients/finiteK20/bounds/frozen/source/10931oldfiles unchanged. Both real2epoch continuous-interrupted params/buffers/optimizer/allRNG/history/calibration EXACT. See preflight.json/resume_check.json.
+ETA30–45min planning40; single60% query23:26:49HK, initial analysis23:42:49. Quiet until query, revise using actual remaining train/calIO/18policy evaluation. OS worker independent Codex; machine awake/login required.
+Cycle7 completed1/3. Previous LOCAL_BASIS fully audited failed major; rawGaussian freshcontrol repeats effective architecture/seeds, not independent validation. Third completed experiment requires total review before new direction.
+Completion requires18SHA/18explicit1516IDfiniteK20/allmetrics recompute/frozen/source/SUCCESS/10931oldhash. All original major5%change/1%protected/3seed/nativefreshcontrolCI/samepathcoverageduplicatehardmotion/allgroupmotion1% gates unchanged. No old outputs or parent sources may change.

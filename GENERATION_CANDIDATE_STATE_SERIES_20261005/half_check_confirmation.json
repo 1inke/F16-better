@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-05T09:05:10.0599394+08:00",
+  "worker": {
+    "pid": 40032,
+    "parent_pid": 2728,
+    "started_at": "2026-10-05T07:29:14.432899+08:00",
+    "status": "SUCCESS",
+    "launcher": "Windows Task Scheduler on-demand, no triggers",
+    "stage": "SAVED_QUALITY_CLUSTER_GLOBAL_MOTION_AUDIT",
+    "completion_recompute": {
+      "sample_max_error": 0,
+      "group_rows": 72,
+      "aggregate_rows": 24,
+      "CI_rows": 96
+    },
+    "quality_recompute": {
+      "status": "PASS",
+      "quality_predictions": 18,
+      "pooled_motion_pass": false
+    },
+    "final_old_SHA_files": 27838,
+    "finished_at": "2026-10-05T07:52:55.345882+08:00"
+  },
+  "actual_process": null,
+  "task_state": "Ready",
+  "triggers": 0,
+  "exit_state": {
+    "status": "SUCCESS",
+    "time": 1791157909.7946095
+  },
+  "trainings": [
+    {
+      "complete": true,
+      "seed": 1,
+      "arm": "zero",
+      "last_completed_epoch": "80"
+    },
+    {
+      "complete": true,
+      "seed": 2,
+      "arm": "zero",
+      "last_completed_epoch": "80"
+    },
+    {
+      "complete": true,
+      "seed": 3,
+      "arm": "zero",
+      "last_completed_epoch": "80"
+    },
+    {
+      "complete": true,
+      "seed": 1,
+      "arm": "mean_std",
+      "last_completed_epoch": "80"
+    },
+    {
+      "complete": true,
+      "seed": 2,
+      "arm": "mean_std",
+      "last_completed_epoch": "80"
+    },
+    {
+      "complete": true,
+      "seed": 3,
+      "arm": "mean_std",
+      "last_completed_epoch": "80"
+    }
+  ],
+  "stderr_bytes": 0
+}

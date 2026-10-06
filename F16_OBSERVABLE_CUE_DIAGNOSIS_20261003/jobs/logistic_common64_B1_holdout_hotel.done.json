@@ -1,0 +1,38 @@
+{
+  "status": "SUCCESS",
+  "predictions": "jobs/logistic_common64_B1_holdout_hotel.predictions.npz",
+  "metrics": {
+    "n": 825,
+    "prevalence": 0.05090909090909091,
+    "AUPRC": 0.03959625229457951,
+    "AUROC": 0.34791400595998295,
+    "Brier": 0.19443954959116494,
+    "log_loss": 0.5820216058505292
+  },
+  "probe": "B1",
+  "mode": "common64",
+  "reader": "L2_logistic",
+  "heldout_scene_family": "hotel",
+  "C": 10.0,
+  "selection": {
+    "inner_groups": 2,
+    "Cs": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_log_losses": [
+      0.8854316723522471,
+      0.8843397918107314,
+      0.8839668565628943
+    ],
+    "selection": "FIT inner scene-family held-out log loss; no CAL/DEV choice"
+  },
+  "train_n": 24392,
+  "input_dim": 3,
+  "transformed_dim": 3,
+  "hashes": {
+    "jobs/logistic_common64_B1_holdout_hotel.predictions.npz": "9f286898ed290b20c4303e0eeb626072f43411bbd34f87cc5e965942f82383c2",
+    "jobs/logistic_common64_B1_holdout_hotel.joblib": "1cd74c08846900417f5c0dca66ab5f8354efc3e176315a2196c3ad9cc6803e2a"
+  }
+}

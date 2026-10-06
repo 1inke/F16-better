@@ -1,0 +1,72 @@
+{
+  "status": "ANALYZED_NO_MAJOR",
+  "analyzed_at": "2026-10-04T07:56:00.000+08:00",
+  "finished_at": "2026-10-04T07:15:50.559104+08:00",
+  "actual_elapsed_minutes": 268.9877666666667,
+  "one_paired_experiment": 1,
+  "fresh_80epoch_trainings": 6,
+  "policy_entries": 18,
+  "study_completed": 1,
+  "gates": {
+    "change_ade_fde_gain_5pct": false,
+    "protected_groups_guard": true,
+    "each_seed_change_improves": false,
+    "native_and_zero_ci": false,
+    "all_seed_feasible": true,
+    "coverage_guard": true,
+    "duplicate_guard": true,
+    "kinematic_guard": true,
+    "same_path_joint_guard": true,
+    "motion_distribution_no_harm_1pct": false
+  },
+  "findings": {
+    "change_ADE": 0.3714573085308075,
+    "change_FDE": 0.694879949092865,
+    "native_change_ADE": 0.3721747398376465,
+    "native_change_FDE": 0.6963264346122742,
+    "control_change_ADE": 0.3707596957683563,
+    "control_change_FDE": 0.691922128200531,
+    "change_gain_pct": [
+      0.1927673294409904,
+      0.20773095024241295
+    ],
+    "native_fresh_control_CIs_cross_zero": true,
+    "overall_acceleration_mean_harm_pct": 3.9038594564754447,
+    "change_acceleration_mean_harm_pct": 5.309630887720096,
+    "strict_samepath": {
+      "overall_native": 733,
+      "overall_treatment": [
+        734,
+        735,
+        734
+      ],
+      "clear_event_n": 469,
+      "clear_event_native": 92,
+      "clear_event_treatment": [
+        90,
+        91,
+        93
+      ],
+      "clear_event_rescued": [
+        1,
+        3,
+        5
+      ],
+      "clear_event_lost": [
+        3,
+        4,
+        4
+      ]
+    }
+  },
+  "all_numeric_evidence": "completion_review/REVIEW.json",
+  "registered_source_and_model_audit": "results/independent_audit.json",
+  "registered_metrics_recompute": "results/saved_metrics_recompute.json",
+  "supplemental_recomputed_inputs": 793,
+  "supplement_optimizer": false,
+  "supplement_model_replay": false,
+  "old_files_preserved": 18872,
+  "oldhash_comparison": "Completed worker audit; not repeated in CPU supplement",
+  "report": "RESULT_ANALYSIS.md",
+  "after_analysis": "Await human discussion; no automatic next experiment"
+}

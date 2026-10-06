@@ -1,0 +1,40 @@
+{
+  "status": "COMPLETE_AUDITED_GATE_FAIL",
+  "cycle": 4,
+  "experiment_in_cycle": 2,
+  "completed_in_cycle": 2,
+  "pid": 45988,
+  "parent_pid": 2728,
+  "windows_task": "Trajectory-TokenContrast-Cycle4",
+  "launched_at": "2026-10-02T02:55:55.570976+08:00",
+  "estimate_minutes_range": [
+    35,
+    50
+  ],
+  "planning_minutes": 40,
+  "first_progress_query_at": "2026-10-02T03:19:56+08:00",
+  "first_progress_query_done": true,
+  "next_review_at": null,
+  "analysis_deadline": null,
+  "startup_confirmed": true,
+  "startup_progress": "actualPythonPID45988 parent2728service; taskRunning; zero seed1epoch5/80; stderr empty",
+  "new_trainings": 6,
+  "epochs_each": 80,
+  "parameters_each": 36454,
+  "token_dim": 96,
+  "readout_dim": 64,
+  "internal_arm_mapping": {
+    "zero": "uniform_mean_plus_zero_contrast",
+    "mean_std": "uniform_mean_plus_last4_minus_first4_contrast"
+  },
+  "paired_full_init_exact": true,
+  "native_identity_exact": true,
+  "effective_capacity_note": "Control contrast input columns data gradient zero; nominal matching not equal effective capacity",
+  "mode_order": "locked_original_native20",
+  "resume": "both arms 2epoch tensors/boolbuffers/optimizer/RNG/history/calibration EXACT",
+  "scope": "originaldecoder/F16/scorer frozen; nativebase3anchor/commonclip1.5; originalfit25912cal2879/loss/constrainedcal; no GT/group/logit forward/test",
+  "progress_checked_at": "2026-10-02T03:23:40+08:00",
+  "finished_at": "2026-10-02T03:13:25.310809+08:00",
+  "audit": "independent18SHA IDsfiniteK20 allstoredmetricsrecomputePASS; frozen18/SUCCESS",
+  "result_analysis": "RESULT_ANALYSIS.md"
+}

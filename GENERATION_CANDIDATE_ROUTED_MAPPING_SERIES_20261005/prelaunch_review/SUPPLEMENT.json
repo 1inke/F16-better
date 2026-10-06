@@ -1,0 +1,40 @@
+{
+  "status": "PASS_EXISTING_METADATA_FIT_ONLY",
+  "FIT_n": 25912,
+  "route_median": 0.3674289137125015,
+  "scene_counts": {
+    "hotel": {
+      "windows": 833,
+      "expert0_candidates": 7830,
+      "expert1_candidates": 8830
+    },
+    "university": {
+      "windows": 17277,
+      "expert0_candidates": 178801,
+      "expert1_candidates": 166739
+    },
+    "zara": {
+      "windows": 7802,
+      "expert0_candidates": 72489,
+      "expert1_candidates": 83551
+    }
+  },
+  "metadata_SHA": "9e0e2f581d05487e4905fc2fe34c963458cace0254daf5289e12aaea9ac49591",
+  "no_model_forward": true,
+  "GT_route": false,
+  "no_new_source_files": true,
+  "reviewer": "Same assistant inline, not external reviewer",
+  "GPU_numpy_synthetic_bounded_mix_EXACT": [
+    true,
+    true
+  ],
+  "q_CPU_GPU_first128_roundoff_max": 1.1920928955078125e-7,
+  "q_CPU_GPU_first128_route_difference": 0,
+  "saved_auditor_backend": "Registered CUDA0 and128 batch scalar recompute; bitwise q+branch assertions retained; no model replay in q arithmetic",
+  "no_scientific_tolerance_changed": true,
+  "failures_preserved": [
+    "preflight1_metadata_tensor",
+    "saved_q_backend_review"
+  ],
+  "initial_q_backend_review_before_production": true
+}

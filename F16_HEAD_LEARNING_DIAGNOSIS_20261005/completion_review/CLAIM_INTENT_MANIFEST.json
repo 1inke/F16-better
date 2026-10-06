@@ -1,0 +1,11 @@
+{
+  "manifest_id": "head-learning-analysis-20261005",
+  "same_assistant_not_external_review": true,
+  "claims": [
+    {"id":"C1","claim":"Recorded actual parameter gradients reach meaningful head layers; sparse hard-winner output gradients are not equivalent to no shared-parameter learning.","evidence":"gradient_existing_seed1/2/3.json and fresh epoch gradients"},
+    {"id":"C2","claim":"The fixed enriched FIT set gains strict complete-candidate coverage, only partially resolving targeted failures.","evidence":"Saved FIT snapshots and completion group arithmetic"},
+    {"id":"C3","claim":"CAL total coverage and errors do not reproduce FIT gains, and clock learning has no consistent CAL advantage.","evidence":"All three seeds and both arms saved CAL snapshots"},
+    {"id":"C4","claim":"Candidate coverage gains must be evaluated alongside lost cases, effective distinct count and motion harm.","evidence":"Saved paths, same-candidate coverage, clusters and motion metrics"}
+  ],
+  "negative_constraints": ["No unique decoder/root-cause proof","No deployment/major/SOTA/generalization claim","No independent three-seed people counting","No change of quality/motion standards","No automatic next training"]
+}

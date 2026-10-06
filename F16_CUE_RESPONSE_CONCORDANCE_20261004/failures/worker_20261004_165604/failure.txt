@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\F16_CUE_RESPONSE_CONCORDANCE_20261004\independent_worker.py", line 20, in <module>
+    diagnosis.run();state.update(status='SUCCESS',finished_at=datetime.now().astimezone().isoformat())
+  File "C:\Users\linke\Documents\New project\F16_CUE_RESPONSE_CONCORDANCE_20261004\diagnosis.py", line 411, in run
+    out=calculate(x,p);save(path,out)
+  File "C:\Users\linke\Documents\New project\F16_CUE_RESPONSE_CONCORDANCE_20261004\diagnosis.py", line 203, in calculate
+    mean,end = distances(x['paths']); clusters = cluster_all(mean,end,p['dedup_thresholds'])
+  File "C:\Users\linke\Documents\New project\F16_CUE_RESPONSE_CONCORDANCE_20261004\diagnosis.py", line 129, in distances
+    d = np.linalg.norm(paths[:,i].astype(np.float64)-paths[:,j].astype(np.float64),axis=-1)
+numpy.core._exceptions._ArrayMemoryError: Unable to allocate 901. MiB for an array with shape (25912, 190, 12, 2) and data type float64

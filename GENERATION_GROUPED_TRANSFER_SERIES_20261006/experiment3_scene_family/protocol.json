@@ -1,0 +1,31 @@
+{
+  "version": "matched-scene-family-v1",
+  "target_family": "zara",
+  "tag": "20261006-grouped-scene-v1",
+  "outer_window_fraction_by_target_sequence": 0.2,
+  "inner_track_fraction_by_nontarget_sequence": 0.1,
+  "composition": "EXACTglobalOriginal3lossgroup_NOTsequence_SCENEEXPOSUREINTERVENTION",
+  "primary": "outer_fixed_epoch80_final",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "epochs": 80,
+  "model": "both91596uniformdualrawpersistent approvedtrainprojection",
+  "loss": "originaltotal+.1P unchanged",
+  "stats": "common training intersection only",
+  "original_CAL_selection": false,
+  "DEV_access": false,
+  "process_GiB": 6,
+  "physical_commit_each_reserve_GiB": 6,
+  "formal_started": false,
+  "feasibility_minimums": {
+    "train_each": 10000,
+    "common": 5000,
+    "outer": 1000,
+    "outer_change": 200
+  },
+  "bootstrap": "targettrack+3modelseed exploratory2000seed20261006;perrecording descriptive,NOindependentSceneCI",
+  "scope": "existingFITonly;oldF16decoderScorer fixed;noqualityassignment/newloss/gating/unfreeze/data"
+}

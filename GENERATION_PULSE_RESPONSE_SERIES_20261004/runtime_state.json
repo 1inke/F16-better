@@ -1,0 +1,345 @@
+{
+  "name": "GENERATION_PULSE_RESPONSE_SERIES_20261004",
+  "status": "ANALYZED",
+  "formal_trial": true,
+  "human_authorization": "2026-10-04 继续实验: new folder, original unchanged scope, half-time/completion flow",
+  "study": "time_response_20261004",
+  "experiment_index": 2,
+  "study_completed_before": 1,
+  "review_after_approved_new_completions": 3,
+  "task_name": "Trajectory-PulseResponse-20261004",
+  "preflight": "PASS",
+  "resume": "PASS_BOTH_ARMS_EXACT",
+  "first_progress_query_done": true,
+  "progress_fraction": 0.5,
+  "source_scope": "all original F16/wholedecoder/scorer frozen, original loss/data/guards/K20 unchanged",
+  "old_files_locked": 19558,
+  "source_files_locked": 256,
+  "parameters_trainable": {
+    "zero": 39590,
+    "mean_std": 39590
+  },
+  "preflight_response": {
+    "zero": {
+      "clock_gradient": 0,
+      "endpoint_error": 4.6566128730773926e-9,
+      "profile_sum_error": 0.0000010132789611816406,
+      "center_std": 0,
+      "span_std": 0,
+      "residual_nonzero": 0.000495081942062825
+    },
+    "mean_std": {
+      "clock_gradient": 0.0012565269134938717,
+      "endpoint_error": 9.313225746154785e-9,
+      "profile_sum_error": 0.00000286102294921875,
+      "center_std": 0.0008677569567225873,
+      "span_std": 0.00030667282408103347,
+      "residual_nonzero": 0.0004970550071448088
+    }
+  },
+  "online_cache_alignment": {
+    "tokens": 0,
+    "native_path": 0,
+    "context": 2.384185791015625e-7
+  },
+  "preflight_finished_read_at": "2026-10-04T12:57:05.1125021+08:00",
+  "benchmark": "PASS_THROUGHPUT_ONLY",
+  "benchmark_compute_minutes": 82.7997247228559,
+  "benchmark_gpu_isolation": false,
+  "eta_minutes": [
+    110,
+    180
+  ],
+  "planning_minutes": 140,
+  "launch_confirmation_required": false,
+  "stage": "Completed scientific and integrity analysis; waiting for human discussion",
+  "actual_stage": "ANALYZED",
+  "started_at": "2026-10-04T13:02:33.304375+08:00",
+  "worker_pid": 37772,
+  "parent_pid": 2728,
+  "query_at": "2026-10-04T14:12:34.000+08:00",
+  "analysis_deadline": null,
+  "next_review_at": null,
+  "startup_confirmation": {
+    "checked_at": "2026-10-04T13:03:22.9269728+08:00",
+    "worker": {
+      "pid": 37772,
+      "parent_pid": 2728,
+      "started_at": "2026-10-04T13:02:33.304375+08:00",
+      "status": "RUNNING",
+      "launcher": "Windows Task Scheduler on-demand, no triggers"
+    },
+    "actual_process": {
+      "ProcessId": 37772,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_PULSE_RESPONSE_SERIES_20261004\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": null,
+    "trainings": [
+      {
+        "arm": "zero",
+        "complete": false,
+        "seed": 1,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "zero",
+        "complete": false,
+        "seed": 2,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "zero",
+        "complete": false,
+        "seed": 3,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "mean_std",
+        "complete": false,
+        "seed": 1,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "mean_std",
+        "complete": false,
+        "seed": 2,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "mean_std",
+        "complete": false,
+        "seed": 3,
+        "last_completed_epoch": 0
+      }
+    ],
+    "stderr_bytes": 0,
+    "confirmation_count": 1,
+    "no_completed_epoch_observed": true
+  },
+  "study_counter": {
+    "series": "time_response_20261004",
+    "experiment_index": 2,
+    "completed": 2,
+    "review_after_approved_completions": 3,
+    "historical_cycle_reset": false
+  },
+  "automation_id": "automation",
+  "after_analysis": "Analysis delivered. No automatic experiment3; await human decision. Preserve scientific scopes, results, and historical counters.",
+  "automation": {
+    "status": "ACTIVE",
+    "updated": true,
+    "local_halfway_target": "2026-10-04T14:12:34.000+08:00",
+    "reschedule_after_halfway": false,
+    "no_daily_repeat_of_completed_check": true,
+    "quiet_before_deadline": false,
+    "rrule": "FREQ=DAILY;BYHOUR=14;BYMINUTE=42;BYSECOND=0",
+    "halfway_done": true,
+    "local_completion_target": "2026-10-04T14:42:00.000+08:00",
+    "completed": true,
+    "quiet_when_analyzed": true,
+    "waiting_for_human_discussion": true
+  },
+  "initial_analysis_deadline": "2026-10-04T15:22:34.000+08:00",
+  "remaining_minutes": [
+    0,
+    0
+  ],
+  "halfway_check": {
+    "checked_at": "2026-10-04T14:17:25.8780431+08:00",
+    "scheduled_at": "2026-10-04T14:12:34.000+08:00",
+    "actual_worker_pid": 37772,
+    "parent_pid": 2728,
+    "real_process_name": "python.exe",
+    "task_state": "Running",
+    "triggers": 0,
+    "worker_state": "RUNNING",
+    "exit_state": null,
+    "stderr_bytes": 0,
+    "actual_stage": "TRAIN mean_std seed3 completed51/80",
+    "completed_trainings": 5,
+    "total_trainings": 6,
+    "completed_epochs": 451,
+    "total_epochs": 480,
+    "epoch_fraction": 0.9395833333333333,
+    "trainings": [
+      {
+        "arm": "zero",
+        "seed": 1,
+        "last_completed_epoch": 80,
+        "complete": true
+      },
+      {
+        "arm": "zero",
+        "seed": 2,
+        "last_completed_epoch": 80,
+        "complete": true
+      },
+      {
+        "arm": "zero",
+        "seed": 3,
+        "last_completed_epoch": 80,
+        "complete": true
+      },
+      {
+        "arm": "mean_std",
+        "seed": 1,
+        "last_completed_epoch": 80,
+        "complete": true
+      },
+      {
+        "arm": "mean_std",
+        "seed": 2,
+        "last_completed_epoch": 80,
+        "complete": true
+      },
+      {
+        "arm": "mean_std",
+        "seed": 3,
+        "last_completed_epoch": 51,
+        "complete": false
+      }
+    ],
+    "remaining_epochs": 29,
+    "remaining_minutes": [
+      15,
+      25
+    ],
+    "elapsed_minutes": 74.87623333333333,
+    "basis": "One authorized halfway-time check. All three fixed-clock seeds and two learned-clock seeds are complete; learned-clock seed3 has51/80 epochs. Remaining29 epochs plus calibration/save,18policy evaluation, saved all-group/bootstrap/temporal/pulse audits, source256 and all19558 priorfile SHA. Epoch fraction is not full-work wall-time fraction; no interim outcome claim.",
+    "checkpoint_eligibility_note": "CAL feasible=False is checkpoint eligibility, not a production failure or final outcome.",
+    "check_count": 1,
+    "no_repeat_halfway_check": true
+  },
+  "finished_at": "2026-10-04T14:27:33.339346+08:00",
+  "analyzed_at": "2026-10-04T14:43:08.9108775+08:00",
+  "actual_elapsed_minutes": 85.00058333333334,
+  "completion_check_done": true,
+  "completion_check": {
+    "checked_at": "2026-10-04T14:43:08.9108775+08:00",
+    "method": "Human-triggered saved completed-worker and results review; no completed PID/task query",
+    "worker_status": "SUCCESS",
+    "results_exit_status": "SUCCESS",
+    "saved_metrics_recompute": "PASS",
+    "completed_trainings": 6,
+    "total_trainings": 6,
+    "completed_epochs": 480,
+    "total_epochs": 480,
+    "registered_sources_unchanged": 256,
+    "old_files_unchanged": 19558,
+    "supplement": "completion_review/REVIEW.json",
+    "supplement_status": "PASS_SAVED_OUTPUT_SUPPLEMENT_ONLY",
+    "supplement_inputs_unchanged": 839,
+    "old_SHA_rerun_by_supplement": false,
+    "no_model_forward_or_optimizer": true
+  },
+  "completion_audit": {
+    "status": "PASS",
+    "trainings": 6,
+    "epochs_each": 80,
+    "policy_entries": 18,
+    "IDs": 1516,
+    "K": 20,
+    "source_SHA": 256,
+    "old_SHA": 19558,
+    "saved_metrics_max_error": 0,
+    "registered_group_CIs_recomputed": true,
+    "original_F16_decoder_scorer_frozen": true,
+    "worker_and_results_exit_SUCCESS": true,
+    "supplement_inputs_before_after": 839,
+    "supplement_minmetric_max_error": 0,
+    "old_SHA_scope": "Completed worker audit; not rerun by saved-output completion supplement."
+  },
+  "analysis": "RESULT_ANALYSIS.md",
+  "analysis_json": "RESULT_ANALYSIS.json",
+  "verdict": "PULSE_RESPONSE_GATE_FAIL",
+  "major": false,
+  "findings": {
+    "change": {
+      "native_ADE": 0.3721747398376465,
+      "native_FDE": 0.6963264346122742,
+      "fixed_ADE": 0.365773469209671,
+      "fixed_FDE": 0.6862253546714783,
+      "learned_ADE": 0.3649151027202606,
+      "learned_FDE": 0.6860807538032532,
+      "gain_pct": [
+        1.950599097765937,
+        1.4713904714426018
+      ],
+      "gain_vs_control_pct": [
+        0.23467161007195703,
+        0.021071921525595005
+      ]
+    },
+    "motion": [
+      {
+        "policy": "constrained",
+        "group": "overall",
+        "ade_gain_pct": 0.5344255698555123,
+        "fde_gain_pct": 0.18812248658680586,
+        "accelmean_harm_pct": 14.600318865536789,
+        "jerkmean_harm_pct": 1.4097915775532543,
+        "jerkp95_harm_pct": 0.22005708841525973
+      },
+      {
+        "policy": "constrained",
+        "group": "stable",
+        "ade_gain_pct": 0.14409736694811492,
+        "fde_gain_pct": -0.19060723266599577,
+        "accelmean_harm_pct": 12.056799433007237,
+        "jerkmean_harm_pct": 1.1246869678797955,
+        "jerkp95_harm_pct": 0.20648765488069376
+      },
+      {
+        "policy": "constrained",
+        "group": "transition",
+        "ade_gain_pct": -0.18081871446138376,
+        "fde_gain_pct": -0.4371117145939518,
+        "accelmean_harm_pct": 18.75096573012125,
+        "jerkmean_harm_pct": 1.8362573528307058,
+        "jerkp95_harm_pct": 0.2447927900272484
+      },
+      {
+        "policy": "constrained",
+        "group": "change",
+        "ade_gain_pct": 1.950599097765937,
+        "fde_gain_pct": 1.4713904714426018,
+        "accelmean_harm_pct": 23.79243746819837,
+        "jerkmean_harm_pct": 2.4786288070793416,
+        "jerkp95_harm_pct": 0.273969646823935
+      }
+    ],
+    "samepath": {
+      "thresholds": [
+        0.2,
+        0.4
+      ],
+      "clear_n": 469,
+      "native_count": 92,
+      "learned_counts": [
+        88,
+        88,
+        88
+      ],
+      "rescued": [
+        8,
+        4,
+        5
+      ],
+      "lost": [
+        12,
+        8,
+        9
+      ],
+      "overall_native": 733,
+      "overall_learned": [
+        723,
+        728,
+        727
+      ]
+    }
+  }
+}

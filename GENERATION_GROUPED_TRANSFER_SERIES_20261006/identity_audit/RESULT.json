@@ -1,0 +1,183 @@
+{
+  "status": "PASS_IDENTITY_MATCHED_TARGET_TRACK_SPLIT",
+  "formal": false,
+  "no_model_forward": true,
+  "no_optimizer": true,
+  "elapsed_seconds": 172.43499560002238,
+  "unique_ids": 25912,
+  "tracks": 956,
+  "ambiguous_time_windows": 123,
+  "ambiguous_identity_windows": 0,
+  "all_windows_accounted_for": true,
+  "unused_by_each_arm_reported_not_deleted": true,
+  "outer_target_tracks": 191,
+  "inner_calibration_tracks": 76,
+  "partitions": {
+    "outer_evaluation": {
+      "n": 1035,
+      "scene": {
+        "hotel": 46,
+        "university": 662,
+        "zara": 327
+      },
+      "sequence": {
+        "biwi_hotel": 46,
+        "crowds_zara01": 68,
+        "crowds_zara02": 222,
+        "crowds_zara03": 37,
+        "students001": 461,
+        "students003": 201
+      },
+      "loss_group": {
+        "0": 604,
+        "1": 178,
+        "2": 253
+      }
+    },
+    "inner_calibration": {
+      "n": 1856,
+      "scene": {
+        "hotel": 28,
+        "university": 1150,
+        "zara": 678
+      },
+      "sequence": {
+        "biwi_hotel": 28,
+        "crowds_zara01": 145,
+        "crowds_zara02": 168,
+        "crowds_zara03": 365,
+        "students001": 786,
+        "students003": 364
+      },
+      "loss_group": {
+        "0": 978,
+        "1": 381,
+        "2": 497
+      }
+    },
+    "grouped_training": {
+      "n": 18909,
+      "scene": {
+        "hotel": 593,
+        "university": 12820,
+        "zara": 5496
+      },
+      "sequence": {
+        "biwi_hotel": 593,
+        "crowds_zara01": 1487,
+        "crowds_zara02": 2978,
+        "crowds_zara03": 1031,
+        "students001": 8613,
+        "students003": 4207
+      },
+      "loss_group": {
+        "0": 10767,
+        "1": 3417,
+        "2": 4725
+      }
+    },
+    "random_training": {
+      "n": 18909,
+      "scene": {
+        "hotel": 593,
+        "university": 12820,
+        "zara": 5496
+      },
+      "sequence": {
+        "biwi_hotel": 593,
+        "crowds_zara01": 1487,
+        "crowds_zara02": 2978,
+        "crowds_zara03": 1031,
+        "students001": 8613,
+        "students003": 4207
+      },
+      "loss_group": {
+        "0": 10767,
+        "1": 3417,
+        "2": 4725
+      }
+    },
+    "common_statistics": {
+      "n": 15572,
+      "scene": {
+        "hotel": 473,
+        "university": 10641,
+        "zara": 4458
+      },
+      "sequence": {
+        "biwi_hotel": 473,
+        "crowds_zara01": 1264,
+        "crowds_zara02": 2291,
+        "crowds_zara03": 903,
+        "students001": 7112,
+        "students003": 3529
+      },
+      "loss_group": {
+        "0": 8839,
+        "1": 2768,
+        "2": 3965
+      }
+    }
+  },
+  "random_exposure": {
+    "evaluation_windows": 1035,
+    "same_target_track_exposed": 1028,
+    "known_start_windows": 1031,
+    "unknown_start_windows": 4,
+    "same_target_full20frame_overlap": 1024,
+    "same_sequence_full20frame_overlap": 1031,
+    "sequence_overlap_is_context_time_proxy_not_neighbor_identity": true
+  },
+  "grouped_exposure": {
+    "evaluation_windows": 1035,
+    "same_target_track_exposed": 0,
+    "known_start_windows": 1031,
+    "unknown_start_windows": 4,
+    "same_target_full20frame_overlap": 0,
+    "same_sequence_full20frame_overlap": 1029,
+    "sequence_overlap_is_context_time_proxy_not_neighbor_identity": true
+  },
+  "old_protocol": {
+    "kind": "ordered_prefix_suffix",
+    "FIT_n": 25912,
+    "CAL_n": 2879,
+    "original_CAL_scenes": {
+      "university": 2879
+    },
+    "target_tracks_shared_between_FIT_and_CAL": 32,
+    "CAL_tracks": 111
+  },
+  "input_hashes": {
+    "C:\\Users\\linke\\Documents\\New project\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\metadata.npz": "9e0e2f581d05487e4905fc2fe34c963458cace0254daf5289e12aaea9ac49591",
+    "C:\\Users\\linke\\Documents\\New project\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\metadata_audit.json": "6071f4cf2be1a292b97f29101169da40ab46462647eb512640c0a06c25a91e13",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_CANDIDATE_ROUTED_MAPPING_SERIES_20261005\\state_scalers.npz": "7f3359e219669b1aa6817149c2346cea0aeeb71457154740fd1c9458eb3df055",
+    "C:\\Users\\linke\\Documents\\New project\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "C:\\Users\\linke\\Documents\\New project\\DIRECTIONAL_REGIME_CANDIDATE_PILOT_SERIES\\directional_regime_pilot.py": "f68ea487f389c3ec01366c543be3a1dc81dca5f5c8833599fa6e15e7d1fddde4"
+  },
+  "old_file_count": 32754,
+  "old_all_SHA_initial_final_PASS": true,
+  "current_sources_initial_final_PASS": true,
+  "saved_split_SHA": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7",
+  "source_files": {
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\identity_split_audit.py": "e1dd2caffed438e90dde2f51d477016a8fedd855538bd97b0e36fdd635981454",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\README.md": "63abf675c0ef19ee8f794160ad8ce9200a8a6347cb8d1d349f07b96b53a2b13b",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\DESIGN.md": "0c84308c180fef93b030699ca94e7b081e6ebfb8bef7dcf0f7cb898dc1d037ee",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\protocol.json": "776d20297cff25b3eb8cfd6caeea743eef53392c6403bb363e732fd813330280"
+  },
+  "output_allocation_bytes": 3932200,
+  "limitations": [
+    "Frozen F16 already saw this original FIT pool; new-head adaptation transfer only.",
+    "Target-track disjoint is not full neighboring-pedestrian/context independence; simultaneous sequence intervals reported.",
+    "123-style ambiguous start-time records remain tracked; no fictitious exact interval identity.",
+    "Only3scene families, highly imbalanced, same split reused3modelseeds, no independent generalization/SOTA or causal shared-interference claim."
+  ],
+  "resource": {
+    "peak_RSS_GiB": 0.07199478149414062,
+    "peak_private_GiB": 0.7788162231445312,
+    "min_physical_GiB": 18.083431243896484,
+    "min_commit_GiB": 18.252620697021484
+  },
+  "process_budget_GiB": 6,
+  "system_reserve_each_GiB": 6,
+  "next": "Implement precise first paired training/preflight; no training worker or ETA yet"
+}

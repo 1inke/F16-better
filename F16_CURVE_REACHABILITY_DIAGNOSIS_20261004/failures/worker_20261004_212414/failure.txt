@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\F16_CURVE_REACHABILITY_DIAGNOSIS_20261004\independent_worker.py", line 17, in <module>
+    try:d.run();state.update(status='SUCCESS',finished_at=datetime.now().astimezone().isoformat())
+  File "C:\Users\linke\Documents\New project\F16_CURVE_REACHABILITY_DIAGNOSIS_20261004\diagnosis.py", line 340, in run
+    z=compute(base,gt,L[idx]);learned=replay(h,models,data,idx);a=audit(base,gt,L[idx],z)
+  File "C:\Users\linke\Documents\New project\F16_CURVE_REACHABILITY_DIAGNOSIS_20261004\diagnosis.py", line 174, in audit
+    assert float_error<2e-5 and np.max(np.abs(pr.sum(-1)))<6e-6
+AssertionError

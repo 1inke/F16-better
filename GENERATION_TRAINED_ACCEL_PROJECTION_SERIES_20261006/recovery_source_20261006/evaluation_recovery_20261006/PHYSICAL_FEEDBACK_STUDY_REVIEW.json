@@ -1,0 +1,59 @@
+{
+  "status": "THREE_FORMAL_REVIEW_COMPLETE_ALL_MAJOR_FAIL",
+  "completed_formal": 3,
+  "training_runs": 18,
+  "policies": 54,
+  "epochs_total": 1440,
+  "aggregate_rows": 72,
+  "CI_rows": 288,
+  "seed_group_quality_rows": 216,
+  "seed_group_motion_rows": 216,
+  "CI_interpretation": "Exploratory only, same windows/seeds and three scene-families; no claim reliable correlation-corrected groupCI/independent replication.",
+  "no_new_baseline": true,
+  "studies": [
+    {
+      "experiment": "PhysicalAccelProtection",
+      "factor": "originaltotal vs+.1physicalaccelerationP",
+      "params": 45798,
+      "major": "FAIL",
+      "sidecar": "PHYSICAL_FEEDBACK_REVIEW_STUDY1.json",
+      "aggregate_rows": 24,
+      "CI_rows": 96,
+      "seed_group_quality_rows": 72,
+      "seed_group_motion_rows": 72
+    },
+    {
+      "experiment": "CandidateRoutedMapping",
+      "factor": "uniform vs fixedFITmedian route; BOTH+.1P",
+      "params": 91596,
+      "major": "FAIL",
+      "sidecar": "PHYSICAL_FEEDBACK_REVIEW_STUDY2.json",
+      "aggregate_rows": 24,
+      "CI_rows": 96,
+      "seed_group_quality_rows": 72,
+      "seed_group_motion_rows": 72
+    },
+    {
+      "experiment": "TrainedAccelProjection",
+      "factor": "uniformhead unprojected vs training-forward endpointaccelprojection; BOTHfloat64 and+.1P",
+      "params": 91596,
+      "major": "FAIL",
+      "sidecar": "PHYSICAL_FEEDBACK_REVIEW_STUDY3.json",
+      "aggregate_rows": 24,
+      "CI_rows": 96,
+      "seed_group_quality_rows": 72,
+      "seed_group_motion_rows": 72
+    }
+  ],
+  "main_branch": "Constrained projected physical motion protected, FIT complete coverage improves, CALfinal transfer remains poor and strict overall/changeDEV not stably improved. Not terminal loss/credit/motion allaligned proof.",
+  "counterevidence": [
+    "CALconstrained projected change248/252/248 beatsnative243, but was CALselected and repeatsCAL; not universal failure.",
+    "DEVoverall projected736/735/735 exceedsnative733 modestly, changeseed3 falls43to42; allADE/FDEjointkeyCIs crosszero.",
+    "Projected final accmean FITCALwithin1%, but DEVchange speedp95 violates1% allseed; cannot claim ALLmotion resolved.",
+    "Earlier legalnewhead families freeincrement/timequery/velocitybasis/state/discrepancy/normalization/conditioning/mode/social andsoftset-energy-mixture failure preserve."
+  ],
+  "next_research_status": "STOP_NEXT_PROTOCOL_DECISION_WAIT_HUMAN_NO_NEW_TRAINING",
+  "proposed_next_scope": "Seek explicit approval to preregister grouped pedestrian/scene FIT-internal adaptation validation against matched random-window control using ONLYexistingFITpool; keep originalCAL untouched, F16native files anddecoder/scorer frozen, no test/fold/external data or newloss. Exact split/statistics/LR-budget design and resourcepreflight before launch, not alreadyauthorized/started.",
+  "reason": "Repeated single-scene CAL selected checkpoints and correlated windows do not identify a reliable next shared-headarchitecture factor; fourthlocalprojection/routing/coeff/LR/width/epoch variant rejected. Validationprotocol change must be explicit rather than silently overriding fixedFIT/CAL commitments.",
+  "same_assistant_inline_ARS_not_independent_external_review": true
+}

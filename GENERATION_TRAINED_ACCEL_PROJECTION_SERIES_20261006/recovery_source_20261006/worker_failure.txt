@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006\recovery_source_20261006\independent_worker.py", line 16, in <module>
+    sys.argv=[str(HERE/'run_head.py'),'--action','run','--device','cuda:0'];h.main()
+  File "C:\Users\linke\Documents\New project\GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006\recovery_source_20261006\run_head.py", line 227, in main
+    stage('EVALUATE');evaluate(device)
+  File "C:\Users\linke\Documents\New project\GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006\recovery_source_20261006\run_head.py", line 211, in evaluate
+    c.evaluate(device);temporal_projection_outputs(device)
+  File "C:\Users\linke\Documents\New project\GENERATION_SET_CONTEXT_SERIES\run_context.py", line 147, in evaluate
+    data=p.load_npz(path);assert np.array_equal(data['sample_id'],cache['sample_id']) and np.isfinite(data['trajectory']).all()
+  File "C:\Users\linke\Documents\New project\GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006\recovery_source_20261006\run_head.py", line 90, in load_cache
+    assert Path(path) in (p.TRAIN_CACHE,p.DEV_CACHE)
+AssertionError

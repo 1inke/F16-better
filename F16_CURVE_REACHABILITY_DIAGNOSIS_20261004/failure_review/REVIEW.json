@@ -1,0 +1,60 @@
+{
+  "status": "FAILURE_DIAGNOSIS_ONLY_NOT_COMPLETION",
+  "reviewed_at": "2026-10-04T21:50:37.231107+08:00",
+  "failed_block": "FIT_10944_11008",
+  "rows": 64,
+  "immutable_computation_seconds": 0.17821859999094158,
+  "model_creation": false,
+  "model_forward": false,
+  "model_optimizer": false,
+  "DEV_access": false,
+  "scientific_sources_modified": false,
+  "scientific_protocol_or_tolerance_changed": false,
+  "limit_formula_saved_blocks_exact_max_error": 0,
+  "failed_block_reproduced_assertion": "AssertionError",
+  "float32_vs_float64_path_max_m": 0.000001116892574870576,
+  "float_path_threshold_m": 0.00002,
+  "float_path_clause_pass": true,
+  "profile_zero_sum_max": 0.000006079673767089844,
+  "zero_sum_threshold": 0.000006,
+  "zero_sum_clause_pass": false,
+  "max_zero_sum_sample_id": 11422,
+  "max_zero_sum_candidate_slot": 4,
+  "max_zero_sum_parameters": [
+    -0.999999,
+    -0.999999,
+    -0.21538467691502747,
+    -0.999999,
+    0.49494726304170156,
+    0.499999
+  ],
+  "endpoint_decomposition_max_m": 0.0000011168925762028437,
+  "scientific_done_blocks": 171,
+  "scientific_rows_saved": 10944,
+  "done_output_files_verified": 342,
+  "done_output_SHA_mismatch": [],
+  "saved_source_identity_exact": true,
+  "synthetic_resume_fixture_excluded": true,
+  "old_files_verified": 21852,
+  "old_SHA_mismatch": [],
+  "source_files_verified": 295,
+  "source_SHA_mismatch": [],
+  "preservation_hash_seconds": 23.80789170000935,
+  "full_population_arithmetic_audit_completed": false,
+  "full_population_frozen_replay_audit_completed": false,
+  "population_classification_conclusion": null,
+  "automatic_restart": false,
+  "interpretation": "Numeric audit failure is not evidence of model quality or RAM failure. Single-block fitting is a failure reproduction, not a completed diagnosis or deployable result.",
+  "supplemental_infrastructure_failures": [
+    {
+      "environment": "C:/coding_toobox/python.exe (NOT production astra2)",
+      "error": "Sandbox import torch/dill: no usable temporary directory; before science computation."
+    },
+    {
+      "environment": "C:/coding_toobox/python.exe (NOT production astra2)",
+      "error": "OMP Error15 duplicate runtime on read-only import; no KMP_DUPLICATE_LIB_OK workaround used, no scientific computation."
+    }
+  ],
+  "correct_environment": "C:/coding_toobox/envs/astra2/python.exe",
+  "pending_decision": "Human approval required before a justified numeric-audit implementation repair and a SHA-verified resume; do not loosen candidate quality or change fitting protocol automatically."
+}

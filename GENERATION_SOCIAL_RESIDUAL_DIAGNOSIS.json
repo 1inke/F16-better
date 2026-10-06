@@ -1,0 +1,36 @@
+{
+  "status": "PASS_FEASIBILITY_ONLY",
+  "ridge_fixed": 0.001,
+  "feature_order": "past16+lasttoken96+meantoken96",
+  "fit_n": 25912,
+  "cal_n": 2879,
+  "fit_only_transform": true,
+  "no_gt_dev_test": true,
+  "records": {
+    "fit": {
+      "n": 25912,
+      "raw_standardized_social_rms": 0.9999999999999996,
+      "residual_rms": 0.08754521550521763,
+      "residual_scaled_rms": 0.9999999999999999,
+      "scaled_abs_p99": 3.115738667941466,
+      "finite": true
+    },
+    "cal": {
+      "n": 2879,
+      "raw_standardized_social_rms": 1.0014316523760802,
+      "residual_rms": 0.08954563255665783,
+      "residual_scaled_rms": 1.0255333787548297,
+      "scaled_abs_p99": 3.117992471707121,
+      "finite": true
+    }
+  },
+  "fit_residual_std_min": 0.04363758371664135,
+  "fit_residual_std_max": 0.13263417226040947,
+  "source_hashes": {
+    "C:\\Users\\linke\\Documents\\New project\\generation_social_residual_diagnosis.py": "4ffc5c2cf692d76e99ce7af458d9873942b6aad8fba96043048886ccdf7e8f70",
+    "C:\\Users\\linke\\Documents\\New project\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_DECODER_SERIES\\train_encoder.npz": "f6c232e4b05e4e8db2a01c7fd0880beecd835b59352b81ba08132c8b610e87f0",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_SOCIAL_RESIDUAL_TRANSFORM.npz": "55cfac8e1a7535fcc372b267638a5167df6fcaa015df91337be415ba43beb0f8"
+  },
+  "note": "Residualization removes FIT-linear predictable social components, may remove useful signal/amplify noise; does not create information or prove redundancy causes prediction errors. Full and residual inputs both nonzero; no CAL selection of ridge/scalers/features."
+}

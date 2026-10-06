@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE_AUDITED_GATE_FAIL",
+  "cycle": 3,
+  "experiment_in_cycle": 2,
+  "completed_in_cycle": 2,
+  "pid": 21712,
+  "parent_pid": 2728,
+  "windows_task": "Trajectory-AnchorFeedback-Cycle3",
+  "launched_at": "2026-10-01T23:38:57.725732+08:00",
+  "estimate_minutes_range": [
+    30,
+    40
+  ],
+  "planning_minutes": 35,
+  "first_progress_query_at": "2026-10-01T23:59:58+08:00",
+  "first_progress_query_done": true,
+  "next_review_at": null,
+  "analysis_deadline": null,
+  "startup_confirmed": true,
+  "startup_progress": "realPID21712 parent2728 Windowsservice;TRAIN zero seed1;stderr empty",
+  "new_trainings": 6,
+  "epochs_each": 80,
+  "trainable_parameters_each": 25926,
+  "paired_full_init_exact": true,
+  "native_identity_exact": true,
+  "internal_arm_mapping": {
+    "zero": "native_context_mode_features_plus_zero6",
+    "mean_std": "same_native_features_plus_native3anchor_geometry6"
+  },
+  "scope": "new3anchorbranch only;originalwholedecoder/F16/scorer frozen;K20/nativevelocityclip/no GT or logits forward/no test",
+  "resume": "botharmparameters/boolbuffers/optimizer/RNG/history/calibrationEXACT",
+  "extra_check": "native mode features equal both; geometry6 columns gradients zero(control)/positive(treatment)",
+  "progress_checked_at": "2026-10-02T00:02:30+08:00",
+  "progress": "samePID21712 realactive parent2728/OSTaskRunning;zero3complete;mean_stdseed1epoch15/80;255/480epochs53%;stderr empty",
+  "remaining_estimate_minutes": [
+    22,
+    24
+  ],
+  "finished_at": "2026-10-02T00:24:04.343780+08:00",
+  "audit": "18 SHA/IDs/finite K20/all saved metrics independent recompute PASS; builtin frozen18 PASS/SUCCESS",
+  "verdict": "ANCHOR_FEEDBACK_GATE_FAIL",
+  "result_analysis": "RESULT_ANALYSIS.md"
+}

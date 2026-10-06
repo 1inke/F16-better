@@ -1,0 +1,139 @@
+{
+  "status": "ANALYZED",
+  "production_started": true,
+  "formal_trial_started": true,
+  "study": "candidate_state_20261005",
+  "experiment_in_study": 1,
+  "completed_in_study": 1,
+  "review_after": 3,
+  "human_continuation_authorized": true,
+  "design": "DESIGN.md",
+  "task_name": "Trajectory-CandidateState-20261005",
+  "worker_pid": 40032,
+  "parent_pid": 2728,
+  "parent_process_name": "svchost.exe",
+  "started_at": "2026-10-05T07:29:14.432899+08:00",
+  "sole_startup_checked_at": "2026-10-05T07:30:05.5913762+08:00",
+  "sole_startup_confirmation_count": 1,
+  "sole_startup_observed_training_epoch": false,
+  "sole_startup": {
+    "checked_at": "2026-10-05T07:30:05.5913762+08:00",
+    "worker": {
+      "pid": 40032,
+      "parent_pid": 2728,
+      "started_at": "2026-10-05T07:29:14.432899+08:00",
+      "status": "RUNNING",
+      "launcher": "Windows Task Scheduler on-demand, no triggers"
+    },
+    "actual_process": {
+      "ProcessId": 40032,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_CANDIDATE_STATE_SERIES_20261005\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": null,
+    "trainings": [
+      {
+        "arm": "zero",
+        "complete": false,
+        "last_completed_epoch": 0,
+        "seed": 1
+      },
+      {
+        "arm": "zero",
+        "complete": false,
+        "last_completed_epoch": 0,
+        "seed": 2
+      },
+      {
+        "arm": "zero",
+        "complete": false,
+        "last_completed_epoch": 0,
+        "seed": 3
+      },
+      {
+        "arm": "mean_std",
+        "complete": false,
+        "last_completed_epoch": 0,
+        "seed": 1
+      },
+      {
+        "arm": "mean_std",
+        "complete": false,
+        "last_completed_epoch": 0,
+        "seed": 2
+      },
+      {
+        "arm": "mean_std",
+        "complete": false,
+        "last_completed_epoch": 0,
+        "seed": 3
+      }
+    ],
+    "stderr_bytes": 0
+  },
+  "query_at": null,
+  "next_review_at": null,
+  "analysis_deadline": null,
+  "progress_fraction": 0.5,
+  "first_progress_query_done": true,
+  "ETA_minutes": [
+    150,
+    240
+  ],
+  "planning_minutes": 180,
+  "benchmark_compute_minutes": 148.85300709095463,
+  "benchmark_not_production_guarantee": true,
+  "scientific_scope": "FIT-standardized native-predicted state32 masked versus actual; both common learned sigmoid persistent newhead. All original F16/wholedecoder/scorer, nativeK20, loss/guards/LR/order/FITCAL/budget fixed. No GT/group/logit/new future observations in forward.",
+  "source_count": 364,
+  "old_files_locked": 27838,
+  "preflight": "PASS_ACTUAL_GPU8FIT_BOTH_FROZEN_PAIRED_NATIVE_IDENTITY_FINITE_SPLIT_FIT_SCALERS",
+  "resume": "PASS_BOTH_ACTUAL2EPOCH_PARAMS_ALLBUFFERS_OPTIMIZER_ALL_RNG_HISTORY_CALIBRATION_EXACT_COMPLETED_SHA_SKIP",
+  "prelaunch_review": "prelaunch_review/REVIEW.json",
+  "field_interpretation": "prelaunch_review/FIELD_INTERPRETATION.md",
+  "resource": {
+    "host_available_RAM_GB_approx": 17,
+    "process_budget_GiB": 6,
+    "physical_and_commit_each_reserve_GiB": 6,
+    "preflight_peak_RSS_GiB": 2.297313690185547,
+    "preflight_peak_private_GiB": 3.213520050048828,
+    "preflight_min_physical_GiB": 15.495227813720703,
+    "preflight_min_commit_GiB": 14.313545227050781
+  },
+  "previous_response_study": "../GENERATION_PERSISTENT_RESPONSE_SERIES_20261005/RESPONSE_STUDY_REVIEW.md",
+  "previous_three_reviewed": true,
+  "historical_cycle_reset": false,
+  "review_every_three_formal": true,
+  "stop_on_substantive_obstruction": true,
+  "automation_id": "automation",
+  "automation_status": "ACTIVE_NEXT_DESIGN_IMPLEMENTATION_2026-10-05T09:45HK",
+  "completion_required": "Worker and results exit SUCCESS;18policy SHA/1516uniqueIDs finite20x12x2/6complete80epoch histories/allstoredmetrics/nativeALLgroup/perseed/bootstrapCI/qualitycluster/globalmotion/temporal/pulse/frozen/source364/all27838oldSHA. Saved arithmetic not all model replay; no major until full registered plus correlation gates.",
+  "waiting_policy": "ANALYZED: no completed40032/task/half/deadline queries. Next newfolder design implementation at09:45, not nextworker/completionETA. Current study1/3; no newformal until actual gates/solelaunch.",
+  "counter_reset_only_verified_production_launch": true,
+  "first_progress_query_done_at": "2026-10-05T09:05:10.0599394+08:00",
+  "first_progress_query_count": 1,
+  "scheduled_half_query_at": "2026-10-05T08:59:15+08:00",
+  "finished_at": "2026-10-05T07:52:55.345882+08:00",
+  "production_actual_seconds": 1420.912983,
+  "verdict": "CANDIDATE_STATE_GATE_FAIL",
+  "completion_review": "completion_review/REVIEW.json",
+  "result_analysis": "RESULT_ANALYSIS.md",
+  "completion_audit_verified": true,
+  "active_worker": false,
+  "completion_actual_resource": {
+    "status": "SUCCESS",
+    "peak_RSS_GiB": 2.5793113708496094,
+    "peak_private_GiB": 3.3632850646972656,
+    "min_physical_GiB": 15.411434173583984,
+    "min_commit_GiB": 13.749252319335938,
+    "checks": 103632,
+    "process_budget_GiB": 6,
+    "system_reserve_GiB": 6,
+    "time": 1791157975.344375
+  },
+  "next_design": "../GENERATION_OBSERVED_DISCREPANCY_SERIES_20261005/DESIGN.md",
+  "next_implementation_at": "2026-10-05T09:45:00+08:00",
+  "next_production_started": false
+}

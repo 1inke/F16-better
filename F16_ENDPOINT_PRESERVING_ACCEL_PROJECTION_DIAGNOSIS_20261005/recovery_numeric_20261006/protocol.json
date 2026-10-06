@@ -1,0 +1,16 @@
+{
+  "scope": "FROZEN_FIT_CAL_ENDPOINT_ACCEL_PROJECTION_DIAGNOSTIC_ONLY",
+  "checkpoints": "six uniform/routed final existing heads; no optimizer",
+  "FIT": 25912,
+  "CAL": 2879,
+  "jobs": 14,
+  "source": "original immutable outputs float32; projected saved coordinates float64",
+  "projection": "REPAIR_DESIGN.md formula; independent strict actual Mproject <= 1.01 Mnative with no epsilon or floor",
+  "numerical_coordinate_endpoint_reference_tolerance_m": 0.00002,
+  "quality": "same candidate ADE <= .2 AND FDE <= .4; .3/.5 sensitivity only",
+  "GT_free_complete_link": [0.10, 0.20],
+  "motion": "dt=.4 ALL K pooled speedp95 accelmean/p95 jerkmean/p95 absolute 1% gates",
+  "formal_study_completed": "2/3 unchanged",
+  "RAM": "6GiB process; physical and commit each reserve6GiB; head batch128; metrics256",
+  "no": ["DEV", "test", "otherfold", "newdata", "training", "optimizer", "GT-forward", "loss-change", "scorer-training", "unfreeze"]
+}

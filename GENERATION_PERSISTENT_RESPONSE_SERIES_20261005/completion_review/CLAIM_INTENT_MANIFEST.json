@@ -1,0 +1,11 @@
+{
+  "scope":"Local controlled technical experiment; exploratory repeated ETH DEV. No external review.",
+  "claims":[
+    {"id":"C1","intent":"Validate current worker and saved scientific audits, without claiming all-model replay","sources":["independent_worker_state.json","results/independent_audit.json","results/saved_metrics_recompute.json"]},
+    {"id":"C2","intent":"Quantify change errors, native and freshcontrol CIs, and unchanged major gates","sources":["results/summary.json"]},
+    {"id":"C3","intent":"Quantify samepath quality coverage, effectivegood clusters and motion harm","sources":["results/quality/summary.json","results/quality/*_quality.npz"]},
+    {"id":"C4","intent":"Review all three hypotheses, all policygroups and CIs, FIT-CAL history and repeatedcontrols","sources":["../GENERATION_TIME_RESPONSE_SERIES_20261004/results","../GENERATION_PULSE_RESPONSE_SERIES_20261004/results","results"]},
+    {"id":"C5","intent":"Choose next identifiable legal direction only after review; no claim of decoder rootcause or intent","sources":["DESIGN.md","../F16_HEAD_LEARNING_DIAGNOSIS_20261005/RESULT_ANALYSIS.md","../F16_CURVE_REACHABILITY_DIAGNOSIS_20261004/recovery_numeric_20261004/RESULT_ANALYSIS.md"]}
+  ],
+  "adversarial_checkpoints":"Prelaunch DESIGN checkpoint1; completion checkpoints2 and3 inline by same assistant, not external assessors"
+}

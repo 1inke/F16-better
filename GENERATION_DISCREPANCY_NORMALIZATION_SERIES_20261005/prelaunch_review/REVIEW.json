@@ -1,0 +1,58 @@
+{
+  "status": "PASS_ACTUAL_GATES_CURRENT_SOURCE_LOCK",
+  "source_count": 402,
+  "old_files": 29191,
+  "params_both": 45798,
+  "both_active_state": true,
+  "previous_centered_control_sameweights_forward_exact": true,
+  "centered_coordinates": 30,
+  "registered_raw_vs_centeredFIT_scalers": true,
+  "last2_unchanged": true,
+  "actual_GPU8_FIT_passed": true,
+  "actual_both2epoch_resume_exact": true,
+  "benchmark": {
+    "status": "PASS_THROUGHPUT_ONLY",
+    "records": [
+      {
+        "arm": "zero",
+        "step128_seconds": 0.019050703129323665,
+        "CAL2879_seconds": 0.07629150000866503,
+        "measured_steps": 32,
+        "warmup_steps": 4
+      },
+      {
+        "arm": "mean_std",
+        "step128_seconds": 0.018541687504693982,
+        "CAL2879_seconds": 0.06912470003589988,
+        "measured_steps": 32,
+        "warmup_steps": 4
+      }
+    ],
+    "compute_minutes": 31.10668599500059,
+    "not_production_guarantee": true,
+    "not_gpu_isolation_guaranteed": true,
+    "saved_model": false
+  },
+  "memory_preflight": {
+    "peak_RSS_GiB": 2.29754638671875,
+    "peak_private_GiB": 3.2116470336914062,
+    "min_physical_GiB": 13.468997955322266,
+    "min_commit_GiB": 11.753311157226562,
+    "checks": 470
+  },
+  "memory_latest": {
+    "status": "BENCHMARK_PASS",
+    "peak_RSS_GiB": 2.0939369201660156,
+    "peak_private_GiB": 2.861114501953125,
+    "min_physical_GiB": 14.054847717285156,
+    "min_commit_GiB": 12.913326263427734,
+    "checks": 99,
+    "process_budget_GiB": 6,
+    "system_reserve_GiB": 6,
+    "time": 1791170575.1632903
+  },
+  "scientific_scope": "samecenteredstate32_raw_vs_centeredFITaffine_normalization_only; wholeoldF16decoderScorer fixed",
+  "independent_external_review": false,
+  "no_model_forward_this_review": true,
+  "design_only_status_is_preregistration_snapshot": true
+}

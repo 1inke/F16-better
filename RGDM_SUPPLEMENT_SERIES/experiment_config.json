@@ -1,0 +1,37 @@
+{
+  "protocol": "rgdm_factorial_2x2_v1",
+  "baseline": "c00_g0_s0",
+  "conditions": {
+    "s_only_g0_s1": "rgdm_b4_full",
+    "g_only_g1_s0": "rgdm_g4_generation",
+    "joint_g1_s1": "rgdm_ab_joint"
+  },
+  "dataset": "ETH",
+  "generator_seed": 1,
+  "validation_fraction": 0.05,
+  "validation_seed": 20260830,
+  "validation_split_mode": "scene_tail",
+  "epochs": 12,
+  "validation_frequency": 1,
+  "batch_size": 64,
+  "learning_rate": 0.0003,
+  "weight_decay_source": "official locked config",
+  "scheduler": "monotonic_cosine",
+  "warmup_epochs": 1.0,
+  "ema_decay": 0.0,
+  "oracle_coverage_weight": 0.2,
+  "oracle_coverage_temperature": 0.1,
+  "oracle_coverage_fde_weight": 0.25,
+  "checkpoint_views": [
+    "best_original_ade",
+    "best_oracle_combo",
+    "final"
+  ],
+  "gate_loss_weight": 0.0,
+  "rank_loss_weight": 0.0,
+  "bootstrap_repetitions": 10000,
+  "bootstrap_seed": 20260929,
+  "test_access_authorized": false,
+  "automatic_seed_or_fold_expansion": false
+}
+

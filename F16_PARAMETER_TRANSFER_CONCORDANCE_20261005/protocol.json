@@ -1,0 +1,58 @@
+{
+  "status": "PREREGISTERED_IMPLEMENTATION_PENDING_NOT_PREFLIGHT_PASS",
+  "formal_trial": false,
+  "checkpoint_families": [
+    "raw",
+    "centered_raw",
+    "centered_own"
+  ],
+  "policies": [
+    "constrained",
+    "final"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "checkpoint_jobs": 18,
+  "FIT": 25912,
+  "CAL": 2879,
+  "batch_max": 128,
+  "groups": [
+    "stable",
+    "transition",
+    "change"
+  ],
+  "overall": "N-weighted combination; actual direct gradient smoke",
+  "quality": "same original weighted hardmin(mean12Euclidean+.5endpointEuclidean), original fullFIT class weights",
+  "optimizer": false,
+  "weight_buffer_update": false,
+  "new_loss_training": false,
+  "DEV": false,
+  "old_F16_decoder_scorer_requires_grad": false,
+  "permitted_newhead_derivative": true,
+  "newhead_parameter_count": 45798,
+  "gradient_accumulation": "CPUfloat64 of float32 forward/backward",
+  "chunk_vector_absolute_tolerance": 0.000001,
+  "chunk_vector_relative_tolerance": 0.0002,
+  "chunk_sizes_preflight": [
+    31,
+    64,
+    128
+  ],
+  "zero_norm_threshold": 1e-10,
+  "finite_difference_dtype": "float64 isolated numerical copy, not productionfloat32bitwise",
+  "finite_difference_epsilons": [
+    0.0001,
+    0.00001
+  ],
+  "finite_difference_absolute_tolerance": 1e-7,
+  "finite_difference_relative_tolerance": 0.001,
+  "cosine_zero_norm_result": "UNDETERMINED",
+  "process_budget_GiB": 6,
+  "system_physical_and_commit_reserve_each_GiB": 6,
+  "progress_fraction": 0.5,
+  "source_SHA_inheritance": true,
+  "stop_on_obstruction": true
+}

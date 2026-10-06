@@ -1,0 +1,24 @@
+{
+  "status": "PASS_METADATA_WITH_EXPLICIT_AMBIGUITIES",
+  "sha256": "9e0e2f581d05487e4905fc2fe34c963458cace0254daf5289e12aaea9ac49591",
+  "n": 30307,
+  "scene_family_counts": {
+    "hotel": 877,
+    "university": 21217,
+    "zara": 8213
+  },
+  "unique_track_time_n": 30173,
+  "no_other_fold_or_heldtest": true,
+  "source_files": [
+    "biwi_hotel_train.txt",
+    "crowds_zara01_train.txt",
+    "crowds_zara02_train.txt",
+    "crowds_zara03_train.txt",
+    "students001_train.txt",
+    "students003_train.txt",
+    "uni_examples_train.txt"
+  ],
+  "method": "Exact rounded4 world-XY full20-window source fingerprint; metadata only, not probe input. All zara recordings grouped together; all university/students grouped together.",
+  "split_strategy": "Leave-one-verified-scene-family-out within original FIT. Coarsest scene-family grouping prevents all same-scene time/track window overlap across folds.",
+  "limitations": "At most three scene families: too few for reliable cluster CIs or formal Holm/permutation p values; those are withheld. Frozen F16 previously trained on these data. This is exploratory probe transfer, not independent native generalization. Unverified family rows excluded from grouped OOF only, retained descriptively. Ambiguous track/time never treated as independent identities."
+}

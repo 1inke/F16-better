@@ -1,0 +1,57 @@
+{
+  "formal_trial": false,
+  "diagnostic_only": true,
+  "checkpoint_count": 18,
+  "splits": {
+    "FIT": 25912,
+    "CAL": 2879
+  },
+  "main_change": {
+    "FIT": 6410,
+    "CAL": 700
+  },
+  "checkpoint_pairs": [
+    "native_to_constrained",
+    "constrained_to_final",
+    "native_to_final"
+  ],
+  "J_joint": "minK max(ADE/.2,FDE/.4)",
+  "quality": "original weighted hardminADE+.5FDE",
+  "total": "original terms with fullsplit population denominators, eval only",
+  "component_names": [
+    "primary",
+    "diversity",
+    "residual",
+    "smoothness",
+    "protection",
+    "total"
+  ],
+  "physical_gradients": [
+    "speed_p95",
+    "accel_mean",
+    "accel_p95",
+    "jerk_mean",
+    "jerk_p95"
+  ],
+  "candidate_witness": "OLD_GAUSSIAN_PULSE_GT_ASSISTED_EXISTING_SAVED_NOT_CURRENT_HEAD_LEARNABILITY",
+  "batch_cpu": 128,
+  "batch_gpu": 128,
+  "nearzero_norm": 1e-10,
+  "change_delta_margin": 1e-8,
+  "chunk_grad_atol": 0.000001,
+  "chunk_grad_rtol": 0.0002,
+  "FD_eps": [
+    0.0001,
+    0.00001
+  ],
+  "FD_atol": 1e-7,
+  "FD_rtol": 0.001,
+  "optimizer": false,
+  "newtraining": false,
+  "newloss_training": false,
+  "DEV": false,
+  "process_budget_GiB": 6,
+  "system_reserve_each_GiB": 6,
+  "progress_fraction": 0.5,
+  "stop_on_obstruction": true
+}

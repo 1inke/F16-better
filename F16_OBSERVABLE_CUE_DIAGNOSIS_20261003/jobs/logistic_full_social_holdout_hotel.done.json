@@ -1,0 +1,38 @@
+{
+  "status": "SUCCESS",
+  "predictions": "jobs/logistic_full_social_holdout_hotel.predictions.npz",
+  "metrics": {
+    "n": 825,
+    "prevalence": 0.05090909090909091,
+    "AUPRC": 0.2093935945554187,
+    "AUROC": 0.8485981876786474,
+    "Brier": 0.08829856561023834,
+    "log_loss": 0.29200660351830915
+  },
+  "probe": "social",
+  "mode": "full",
+  "reader": "L2_logistic",
+  "heldout_scene_family": "hotel",
+  "C": 0.1,
+  "selection": {
+    "inner_groups": 2,
+    "Cs": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_log_losses": [
+      0.5774416236396241,
+      0.5866766535270644,
+      0.5967462545134324
+    ],
+    "selection": "FIT inner scene-family held-out log loss; no CAL/DEV choice"
+  },
+  "train_n": 24392,
+  "input_dim": 96,
+  "transformed_dim": 96,
+  "hashes": {
+    "jobs/logistic_full_social_holdout_hotel.predictions.npz": "dacc09051f355083cee618a89000b3b21f4a19db010aca4b02b502bb0ea7b955",
+    "jobs/logistic_full_social_holdout_hotel.joblib": "8049a822c4a5743c0d1c496e13534ffb23a8b5a4a031066ba526e675bd7d9f47"
+  }
+}

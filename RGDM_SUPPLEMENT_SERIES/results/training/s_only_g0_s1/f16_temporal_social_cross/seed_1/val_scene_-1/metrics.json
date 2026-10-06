@@ -1,0 +1,161 @@
+{
+  "variant": "f16_temporal_social_cross",
+  "decoder_experiment": "rgdm_b4_full",
+  "seed": 1,
+  "validation_scene_id": -1,
+  "epochs": 12,
+  "scheduler": "monotonic_cosine",
+  "elapsed_seconds": 344.321329300059,
+  "split": {
+    "strategy": "scene_tail_holdout_within_training_scenes",
+    "validation_fraction": 0.05,
+    "validation_seed": 20260830,
+    "scene_counts": {
+      "1": 877,
+      "2": 21217,
+      "3": 3736,
+      "4": 4477
+    },
+    "train_samples": 28791,
+    "validation_samples": 1516,
+    "target_test_accessed": false,
+    "data_path": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy",
+    "num_path": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_train.npy"
+  },
+  "locked_backend": {
+    "decoder_class": "RGDMSupplementDecoder",
+    "decoder_fingerprint": "8fce7a888f01c64f",
+    "num_modes": 20,
+    "decoder_experiment": "rgdm_b4_full",
+    "encoder_experiment": "none",
+    "classification_weight": 0.5,
+    "loss_class": "ModeQueryLoss",
+    "fusion_alpha": 0.3,
+    "oracle_coverage_weight": 0.2,
+    "oracle_coverage_temperature": 0.1,
+    "oracle_coverage_fde_weight": 0.25,
+    "oracle_coverage_warmup_epochs": 0.0,
+    "oracle_coverage_normalized": false,
+    "scene_sampling": "none",
+    "motion_difficulty_sampling": false,
+    "motion_difficulty_strength": 0.8,
+    "ema_decay": 0.0,
+    "augmentation": {
+      "rotation": false,
+      "reflection": true,
+      "speed_min": 0.9,
+      "speed_max": 1.1,
+      "probability": 0.5,
+      "curvature_max": 0.0
+    },
+    "future_difficulty_weight": 0.0,
+    "focal_heading_normalize": true,
+    "velocity_loss_weight": 0.0,
+    "acceleration_loss_weight": 0.0,
+    "masked_history_weight": 0.0,
+    "masked_history_probability": 0.15,
+    "equivariance_weight": 0.0,
+    "training_only_auxiliary_parameters": 0,
+    "checkpoint_criterion": "oracle_combo",
+    "hierarchical_decoder": {
+      "cv_reference": false,
+      "anchor_steps": [
+        4,
+        8,
+        12
+      ],
+      "top_m": 20,
+      "use_refiner": true
+    },
+    "parameter_counts": {
+      "total": 391014,
+      "trainable": 44744,
+      "decoder": 123855
+    }
+  },
+  "verifier_checkpoint": null,
+  "evaluation": {
+    "samples": 1516,
+    "original": {
+      "ade": 0.5496580004692078,
+      "fde": 1.2043365240097046,
+      "hit_best_ade": 0.2091029023746702,
+      "regret": 0.33009248971939087,
+      "regret_p95": 0.9770271629095078,
+      "active_modes": 10
+    },
+    "oracle": {
+      "min_ade_20": 0.2195655256509781,
+      "same_path_fde": 0.46477386355400085,
+      "min_fde_20": 0.39603129029273987
+    },
+    "fusion_alpha": 0.3,
+    "fused": null,
+    "proposal_diagnostics": {
+      "coarse_min_ade_20": 0.22907444834709167,
+      "coarse_same_path_fde": 0.4865551292896271,
+      "coarse_min_fde_20": 0.42126622796058655,
+      "refinement_min_ade_delta": -0.009508922696113586,
+      "refinement_min_fde_delta": -0.02523493766784668,
+      "top_m_coarse_oracle_ade_recall": 1.0,
+      "anchor_correction_mean": [
+        0.09042531251907349,
+        0.17168717086315155,
+        0.3208378553390503
+      ],
+      "anchor_correction_p95": [
+        0.1894418016076088,
+        0.283184877038002,
+        0.553318566083908
+      ],
+      "anchor_correction_max": [
+        0.20600661635398865,
+        0.33111149072647095,
+        0.6862929463386536
+      ]
+    }
+  },
+  "evaluation_best_selected": {
+    "samples": 1516,
+    "original": {
+      "ade": 0.5392833948135376,
+      "fde": 1.1874721050262451,
+      "hit_best_ade": 0.2011873350923483,
+      "regret": 0.3197178542613983,
+      "regret_p95": 0.928478017449379,
+      "active_modes": 5
+    },
+    "oracle": {
+      "min_ade_20": 0.2195655256509781,
+      "same_path_fde": 0.46477386355400085,
+      "min_fde_20": 0.39603129029273987
+    },
+    "fusion_alpha": 0.3,
+    "fused": null,
+    "proposal_diagnostics": {
+      "coarse_min_ade_20": 0.22907444834709167,
+      "coarse_same_path_fde": 0.4865551292896271,
+      "coarse_min_fde_20": 0.42126622796058655,
+      "refinement_min_ade_delta": -0.009508922696113586,
+      "refinement_min_fde_delta": -0.02523493766784668,
+      "top_m_coarse_oracle_ade_recall": 1.0,
+      "anchor_correction_mean": [
+        0.09042531251907349,
+        0.17168717086315155,
+        0.3208378553390503
+      ],
+      "anchor_correction_p95": [
+        0.1894418016076088,
+        0.283184877038002,
+        0.553318566083908
+      ],
+      "anchor_correction_max": [
+        0.20600661635398865,
+        0.33111149072647095,
+        0.6862929463386536
+      ]
+    }
+  },
+  "evaluation_test_best_selected": null,
+  "best_checkpoint_score": 0.417581170797348
+}

@@ -1,0 +1,59 @@
+{
+  "status": "PASS_SAVED_OUTPUT_VISUAL_REVIEW",
+  "IDs": 1516,
+  "K": 20,
+  "prediction_sources": 7,
+  "all_6_constrained_outputs": true,
+  "exclusions": 0,
+  "all_classes_match_completed_review": true,
+  "old_visualizer_native_exact_identity": true,
+  "saved_min_metric_max_error": 0.0,
+  "display_coordinate_decimals": 6,
+  "web_metric_max_error": 1.7504333467144306e-06,
+  "checks": [
+    {
+      "model": "native",
+      "finite_coordinates": 727680,
+      "max_web_metric_error": 1.4915564499062839e-06
+    },
+    {
+      "model": "fixed1",
+      "finite_coordinates": 727680,
+      "max_web_metric_error": 1.4784179720450652e-06
+    },
+    {
+      "model": "learned1",
+      "finite_coordinates": 727680,
+      "max_web_metric_error": 1.4747870791254059e-06
+    },
+    {
+      "model": "fixed2",
+      "finite_coordinates": 727680,
+      "max_web_metric_error": 1.7504333467144306e-06
+    },
+    {
+      "model": "learned2",
+      "finite_coordinates": 727680,
+      "max_web_metric_error": 1.6618540126245307e-06
+    },
+    {
+      "model": "fixed3",
+      "finite_coordinates": 727680,
+      "max_web_metric_error": 1.7356915424926456e-06
+    },
+    {
+      "model": "learned3",
+      "finite_coordinates": 727680,
+      "max_web_metric_error": 1.6366258517308552e-06
+    }
+  ],
+  "old_input_folder_files_SHA_before_after": 675,
+  "old_SHA_scope": "Old visualization + pulse experiment files and three directly-read prior inputs; not all-history manifest rerun",
+  "training": false,
+  "model_forward": false,
+  "optimizer": false,
+  "test_or_raw_data_read": false,
+  "selection": "Native argmax unchanged. New paths inherit same slot and are NOT rescored.",
+  "classification": "Exists SAME candidate ADE<=.2 AND FDE<=.4; .3/.5 sensitivity separately",
+  "oracle": "Closest threshold path argmin max(ADE/threshold,FDE/threshold) is GT-assisted, not deployment"
+}

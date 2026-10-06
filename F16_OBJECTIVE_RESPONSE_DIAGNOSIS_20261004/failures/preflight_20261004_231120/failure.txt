@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\F16_OBJECTIVE_RESPONSE_DIAGNOSIS_20261004\diagnosis.py", line 300, in <module>
+    try:preflight() if a.action=='preflight' else run()
+  File "C:\Users\linke\Documents\New project\F16_OBJECTIVE_RESPONSE_DIAGNOSIS_20261004\diagnosis.py", line 230, in preflight
+    t=time.perf_counter();old=snapshot();hash_seconds=verify(old,'PREFLIGHT_OLD_SHA');d=load_data();locks=sources();verify(locks,'PREFLIGHT_SOURCE_SHA')
+  File "C:\Users\linke\Documents\New project\F16_OBJECTIVE_RESPONSE_DIAGNOSIS_20261004\diagnosis.py", line 92, in load_data
+    t=time.perf_counter();guard.check()
+  File "C:\Users\linke\Documents\New project\F16_OBJECTIVE_RESPONSE_DIAGNOSIS_20261004\diagnosis.py", line 48, in check
+    assert min(s.avail_phys,s.avail_page)>=6*GIB,'6GiB reserve'
+AssertionError: 6GiB reserve

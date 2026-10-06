@@ -1,0 +1,13 @@
+{
+  "stage": "Supplementary review only",
+  "production_failure": false,
+  "error": "Supplement expected complete.json.status=SUCCESS; actual production checkpoint completion schema is COMPLETE. Worker and result exit remain SUCCESS.",
+  "actual_passed_before_failure": {
+    "old_files": 27164,
+    "scientific_sources": 347,
+    "model_SHA": 18
+  },
+  "trace": "review_saved.py line65 assert complete['status']=='SUCCESS' and complete['epochs']==80 and len(hist)==80 -> AssertionError",
+  "repair": "Only supplemental status schema check aligned to COMPLETE; preserve original source. Reuse already completed full before-SHA pass; independently verify all again at end.",
+  "earlier_sandbox_temp_import_failure": "Read-only diagnostic run_head import failed in scipy tempfile initialization (no writable default TEMP). No forward/optimizer, no production failure; saved review uses NumPy/JSON without model imports."
+}

@@ -1,0 +1,5 @@
+# Physical acceleration protection: 阶段二
+
+GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005 是已完成loss→coverage/credit/motion诊断后预注册的单因素训练研究。完整定义见DESIGN.md，protocol.json固定数值。当前仅设计，runtime_state.json为实际状态；没有worker/preflight/正式训练。18:20HK为实现节点，不是生产ETA。
+
+唯一因素为原total上是否添加native-relative ALLK物理accelmean保护；固定raw active state/persistent45798head，原quality hardwinner和原其它loss、scorer、wholeolddecoder、数据及全部motion/major标准不动。约17GBavailableRAM/process6GiB/systemreserveeach6GiB。具体人类两阶段分支授权不扩大unfreeze/scorer/eventdata/externaldelete范围。

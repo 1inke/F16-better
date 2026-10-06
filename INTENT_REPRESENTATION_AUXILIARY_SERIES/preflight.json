@@ -1,0 +1,21 @@
+{
+  "protocol": "ira1_matched_representation_gradient_validation_only_v1",
+  "causal_contrast": "joint_intent_gradient_minus_detached_intent_gradient",
+  "source_checkpoint": "C:\\Users\\linke\\Documents\\New project\\E2_F16_END_TO_END_COMPARISON_SERIES\\EXP_173_E2_F16_END_TO_END\\results\\eth\\v2\\e3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth",
+  "source_sha256": "691e9f9ff6b7dc1df1c7d5f4901d97ea9885fac891099c84044bf56dd98d2341",
+  "split_sha256": "1f53e20b1d2462df27c6fe9d2032973fd92304f7616f7f0dd6f80da01de8197e",
+  "stats_sha256": "a77c5cd85048cb1d2f82aa11008c00f3008a732ddabb2c6315d18f871e36ba02",
+  "config_sha256": "d0a826f632b728110dd22c16a7449d97dd153ba60f219a01548d1482da4cdfd3",
+  "test_paths_passed_to_training_or_analysis": false,
+  "inference_candidate_generator": "unchanged_C00",
+  "inference_score_head": "unchanged_C00",
+  "auxiliary_head_used_at_inference": false,
+  "flow_layers": 6,
+  "flow_hidden_dim": 96,
+  "intent_nll_weight": 0.05,
+  "oracle_coverage_weight": 0.2,
+  "arms": [
+    "ira0_detached_intent_aux",
+    "ira1_joint_intent_aux"
+  ]
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\GENERATION_GROUPED_TRANSFER_SERIES_20261006\experiment1_target_track\preflight.py", line 79, in <module>
+    try:main()
+  File "C:\Users\linke\Documents\New project\GENERATION_GROUPED_TRANSFER_SERIES_20261006\experiment1_target_track\preflight.py", line 22, in main
+    cache,values,splits=h.load_data();stat=prepare(cache,values,splits);Class=h.initialize_classes();device=torch.device('cuda:0')
+  File "C:\Users\linke\Documents\New project\GENERATION_GROUPED_TRANSFER_SERIES_20261006\experiment1_target_track\prepare_statistics.py", line 17, in prepare
+    error=max(float(abs(a[0]-b[0]).max()),float(abs(a[1]-b[1]).max()));assert error<1e-11
+AssertionError

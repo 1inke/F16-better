@@ -1,0 +1,239 @@
+{
+  "name": "F16_CUE_RESPONSE_CONCORDANCE_20261004",
+  "status": "ANALYZED",
+  "formal_trial": false,
+  "recovery_folder": "F16_CUE_RESPONSE_CONCORDANCE_20261004/recovery_memory_20261004",
+  "runtime_state": "F16_CUE_RESPONSE_CONCORDANCE_20261004/recovery_memory_20261004/runtime_state.json",
+  "human_authorization": "2026-10-04 optimize memory, estimate workload within about17GB available RAM, resume same protocol",
+  "optimizer": false,
+  "model_forward": false,
+  "scientific_protocol_unchanged": true,
+  "old_results_preserved": true,
+  "chunk_rows": 256,
+  "process_budget_GiB": 6,
+  "minimum_system_reserve_GiB": 6,
+  "response_study_completed": 2,
+  "first_progress_query_done": true,
+  "worker_pid": 6952,
+  "query_at": "2026-10-04T17:41:55.000+08:00",
+  "analysis_deadline": null,
+  "full_size_preflight_required": true,
+  "preflight": "PASS_FULL_SIZE_MEMORY_AND_EXACT_ARITHMETIC",
+  "analysis_job_resume": "PASS_SHA_VERIFIED_SKIP_AND_SOURCE_MISMATCH_REJECT",
+  "task_name": "Trajectory-CueConcordance-MemoryRecovery-20261004",
+  "old_files_locked": 21780,
+  "source_files_locked": 278,
+  "planning_minutes": 8,
+  "eta_minutes": [
+    6,
+    12
+  ],
+  "progress_time_fraction": 0.5,
+  "parent_pid": 2728,
+  "started_at": "2026-10-04T17:37:54.300069+08:00",
+  "next_review_at": null,
+  "launch_confirmation_count": 1,
+  "startup_confirmation": {
+    "checked_at": "2026-10-04T17:38:13.7909388+08:00",
+    "worker": {
+      "status": "RUNNING",
+      "pid": 6952,
+      "parent_pid": 2728,
+      "started_at": "2026-10-04T17:37:54.300069+08:00",
+      "task": "Trajectory-CueConcordance-MemoryRecovery-20261004",
+      "launcher": "Windows Task Scheduler on demand, no triggers",
+      "optimizer": false,
+      "model_forward": false
+    },
+    "actual_process": {
+      "ProcessId": 6952,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\F16_CUE_RESPONSE_CONCORDANCE_20261004\\recovery_memory_20261004\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": null,
+    "progress": {
+      "stage": "INITIAL_OLD_AND_SOURCE_SHA",
+      "at": "2026-10-04T17:38:10.219301+08:00",
+      "files_done": 4000,
+      "files_total": 21803
+    },
+    "stderr_bytes": 0
+  },
+  "current_stage": "ANALYZED_SAVED_DATA_CONCORDANCE",
+  "completed_analysis_jobs": 9,
+  "total_analysis_jobs": 9,
+  "memory_preflight": {
+    "peak_rss_bytes": 572166144,
+    "peak_private_bytes": 2100985856,
+    "process_budget_bytes": 6442450944,
+    "minimum_system_reserve_bytes": 6442450944,
+    "full_FIT_compute_audit_seconds": 69.23163569997996,
+    "full_FIT_rows": 25912,
+    "all_columns_and_summary_exact": true,
+    "metric_max_error": 0
+  },
+  "after_analysis": "Current diagnostic complete; no completed-PID/old-node checks or automatic formal third training. Next proposed FIT/CAL-only same-bound reachability-vs-learning diagnostic requires solver/data/resource preflight; GT-assisted fit is not deployable benefit. Stop meaningful obstruction for direct human decision.",
+  "early_wakeup_policy": "No PID/task/log/results query before scheduled50% time node; one query then corrected completion/design node. ANALYZED with no new request stays quiet.",
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "local_halfway_target": "2026-10-04T17:41:55.000+08:00",
+    "reschedule_after_halfway": false,
+    "no_daily_repeat_of_completed_check": true,
+    "quiet_before_deadline": true,
+    "local_completion_target": null,
+    "halfway_done": true,
+    "completed": true,
+    "quiet_when_analyzed": true,
+    "waiting_for_human_discussion": true
+  },
+  "halfway_check": {
+    "checked_at": "2026-10-04T17:43:20.0069193+08:00",
+    "worker": {
+      "status": "RUNNING",
+      "pid": 6952,
+      "parent_pid": 2728,
+      "started_at": "2026-10-04T17:37:54.300069+08:00",
+      "task": "Trajectory-CueConcordance-MemoryRecovery-20261004",
+      "launcher": "Windows Task Scheduler on demand, no triggers",
+      "optimizer": false,
+      "model_forward": false
+    },
+    "actual_process": {
+      "ProcessId": 6952,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\F16_CUE_RESPONSE_CONCORDANCE_20261004\\recovery_memory_20261004\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": null,
+    "progress": {
+      "stage": "JOB_ANALYSIS",
+      "at": "2026-10-04T17:43:11.821413+08:00",
+      "active_job": "DEV_learned3",
+      "completed_jobs": 8,
+      "total_jobs": 9,
+      "job_seconds": [
+        132.35226010001497,
+        14.435733399994206,
+        5.764215499977581,
+        7.938143500010483,
+        6.511586000036914,
+        7.893288199964445,
+        7.056366999982856,
+        8.32703569997102
+      ]
+    },
+    "stderr_bytes": 0,
+    "scheduled_at": "2026-10-04T17:41:55.000+08:00",
+    "check_count": 1,
+    "remaining_minutes": [
+      2,
+      4
+    ],
+    "basis": "8 of9 scientific analysis jobs finished, active DEV_learned3; remaining final job/save/arithmetic plus final21780old+278source SHA/IO. Same realPID/task andstderr0; no completion or scientific outcome claim."
+  },
+  "active_job": null,
+  "remaining_minutes": [
+    0,
+    0
+  ],
+  "worker_status": "SUCCESS",
+  "finished_at": "2026-10-04T17:45:38.033655+08:00",
+  "analyzed_at": "2026-10-04T18:05:15+08:00",
+  "completion_check_done": true,
+  "completion_check": {
+    "checked_at": "2026-10-04T17:48:16.2371091+08:00",
+    "worker": {
+      "status": "SUCCESS",
+      "pid": 6952,
+      "parent_pid": 2728,
+      "started_at": "2026-10-04T17:37:54.300069+08:00",
+      "task": "Trajectory-CueConcordance-MemoryRecovery-20261004",
+      "launcher": "Windows Task Scheduler on demand, no triggers",
+      "optimizer": false,
+      "model_forward": false,
+      "finished_at": "2026-10-04T17:45:38.033655+08:00"
+    },
+    "actual_process": null,
+    "task_state": "Ready",
+    "triggers": 0,
+    "exit_state": {
+      "status": "SUCCESS",
+      "at": "2026-10-04T17:45:37.931591+08:00",
+      "worker_pid": 6952,
+      "result_status": "PASS_FROZEN_SAVED_DATA_CONCORDANCE",
+      "arithmetic_audit": "PASS"
+    },
+    "progress": {
+      "stage": "COMPLETE_AWAITING_INTERPRETATION",
+      "at": "2026-10-04T17:45:37.948301+08:00",
+      "completed_jobs": 9,
+      "total_jobs": 9
+    },
+    "stderr_bytes": 0
+  },
+  "completion_status": "PASS_FROZEN_SAVED_DATA_CONCORDANCE",
+  "completion_audit": {
+    "worker_old_files_SHA_unchanged": 21780,
+    "source_SHA_worker_and_supplement": 278,
+    "done_jobs": 9,
+    "new_output_SHA_reverified": 27,
+    "saved_arithmetic_max_error": 0,
+    "supplement": "completion_review/REVIEW.json",
+    "all_models_replayed": false
+  },
+  "analysis": "RESULT_ANALYSIS.md",
+  "analysis_json": "RESULT_ANALYSIS.json",
+  "next_design": "completion_review/NEXT_DESIGN.md",
+  "next_design_status": "DESIGN_ONLY_NOT_LAUNCHED",
+  "next_worker_running": false,
+  "findings": {
+    "FIT_first_compatible_n": 998,
+    "FIT_no_good": 791,
+    "FIT_coarse_response_path_wrong": 576,
+    "CAL_first_compatible_n": 137,
+    "CAL_no_good": 106,
+    "CAL_coarse_response_path_wrong": 77,
+    "DEV_handcue_n": 274,
+    "DEV_first_compatible_n": 64,
+    "DEV_any_later_only_n": 4,
+    "DEV_generic_n": 94,
+    "DEV_unmatched_n": 111,
+    "DEV_ambiguous_n": 1,
+    "DEV_no_good": 228,
+    "DEV_good_miss": 41,
+    "DEV_selected_good": 5
+  },
+  "actual_resource": {
+    "lifetime_peak_RSS_bytes": 571166720,
+    "lifetime_peak_private_bytes": 2099978240,
+    "min_system_available_bytes": 18207293440,
+    "min_system_commit_available_bytes": 19087712256,
+    "actual_elapsed_minutes": 7.7288930833,
+    "persistent_human_available_RAM_GB": 17,
+    "process_budget_GiB": 6,
+    "system_reserve_GiB": 6
+  },
+  "next_planning_node": {
+    "status": "PROPOSED_ON_NEXT_AUTHORIZED_ADVANCE_NOT_SCHEDULED",
+    "implementation_preflight_minutes": [
+      20,
+      35
+    ],
+    "diagnostic_provisional_minutes": [
+      15,
+      40
+    ],
+    "require_actual_benchmark": true,
+    "progress_time_fraction": 0.5
+  },
+  "supplement_failure_provenance": [
+    "completion_review/supplement_path_failure.json",
+    "completion_review/supplement_mask_failure.json"
+  ]
+}

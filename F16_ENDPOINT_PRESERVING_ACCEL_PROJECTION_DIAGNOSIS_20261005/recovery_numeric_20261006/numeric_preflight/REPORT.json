@@ -1,0 +1,733 @@
+{
+  "status": "PASS_NUMERIC_REPAIR_SYNTHETIC_ONLY",
+  "at": "2026-10-06T00:35:12.990203+08:00",
+  "seconds": 0.4540759000228718,
+  "rows": [
+    {
+      "device": "cpu",
+      "fixture": "identity",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0
+      ],
+      "mp": [
+        0.0
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 0.0,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 0.0,
+      "roundoff_reserve_max": 0.0
+    },
+    {
+      "device": "cpu",
+      "fixture": "static_constant_drift_D0",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0
+      ],
+      "mp": [
+        0.0
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 0.0,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 0.0,
+      "roundoff_reserve_max": 6.821210110831418e-13
+    },
+    {
+      "device": "cpu",
+      "fixture": "static_varying_Dpositive",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0
+      ],
+      "mp": [
+        0.0
+      ],
+      "endpoint_error": 2.3283064365386963e-09,
+      "reference_error": 2.3283064226609085e-09,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 0.0,
+      "roundoff_reserve_max": 1.3642420221662836e-12
+    },
+    {
+      "device": "cpu",
+      "fixture": "constant_velocity_D0",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0
+      ],
+      "mp": [
+        0.0
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 0.0,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 0.0,
+      "roundoff_reserve_max": 4.945377425643984e-12
+    },
+    {
+      "device": "cpu",
+      "fixture": "curved_varying",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.012499999932267448
+      ],
+      "mp": [
+        0.012588698577410382
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 1.1460221660541947e-11,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 1.7508666565191344e-10,
+      "roundoff_reserve_max": 5.6274984367271264e-12
+    },
+    {
+      "device": "cpu",
+      "fixture": "aligned_tight",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.012500001056733627
+      ],
+      "mp": [
+        0.012625001066516529
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 2.2591789550219232e-12,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 1.2551027231411105e-10,
+      "roundoff_reserve_max": 7.844392347434136e-13
+    },
+    {
+      "device": "cpu",
+      "fixture": "opposite",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.012500001056733627
+      ],
+      "mp": [
+        0.012375001046950728
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 2.259185893915827e-12,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 1.2551027231411105e-10,
+      "roundoff_reserve_max": 7.844392347434136e-13
+    },
+    {
+      "device": "cpu",
+      "fixture": "fixed_random64",
+      "windows": 64,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6278043344771936,
+        0.6647436974340503,
+        0.6477076362029522,
+        0.6205684476986133,
+        0.6430357297507656,
+        0.6572137825256708,
+        0.6444959112084953,
+        0.6102455978811455,
+        0.654529431759579,
+        0.6772413603955502,
+        0.6284057778206147,
+        0.6578419848052512,
+        0.6212760804211802,
+        0.684096144331574,
+        0.658109686735651,
+        0.6227806626575769,
+        0.6575665203023086,
+        0.6437345857449696,
+        0.6471524400673067,
+        0.6539693291152965,
+        0.6556953981413556,
+        0.6881302320879766,
+        0.6866419856514623,
+        0.6425569220719275,
+        0.6529982477706409,
+        0.6645380149514637,
+        0.6236347480596682,
+        0.6435980331895529,
+        0.6465767156120865,
+        0.6819212316582729,
+        0.6474372274333157,
+        0.6745639017681754,
+        0.6068060638957579,
+        0.663634065911151,
+        0.6510660341824381,
+        0.6493071443905801,
+        0.6527663294710162,
+        0.6144207203208293,
+        0.6383761235621461,
+        0.5962357457393613,
+        0.6593451396443428,
+        0.6239061720134244,
+        0.6497691218017004,
+        0.6600342533663816,
+        0.6575049230456187,
+        0.6432451509400537,
+        0.6389173760089009,
+        0.6778008198348197,
+        0.6468064116915458,
+        0.6462230181346823,
+        0.6411453956124084,
+        0.6400688807721273,
+        0.6345856430107036,
+        0.6611995040370682,
+        0.6497076891485793,
+        0.6258305357755285,
+        0.6535665028080463,
+        0.6739766162132902,
+        0.652234099824857,
+        0.683010928154735
+      ],
+      "mp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6283658091509108,
+        0.6651751112008302,
+        0.6480899145400167,
+        0.6211212719169107,
+        0.6434821464104552,
+        0.6575148456372096,
+        0.6446666852497824,
+        0.6104603376037931,
+        0.6547600335665448,
+        0.6771948977322123,
+        0.6283705678619695,
+        0.6584914190794899,
+        0.6217114317579917,
+        0.6844901829049315,
+        0.6573964067964636,
+        0.6225622239663023,
+        0.6577002839947131,
+        0.6441128736858273,
+        0.6465950536048514,
+        0.653871611496169,
+        0.6558736938536726,
+        0.6883132775276216,
+        0.6866483055715148,
+        0.6424695234077673,
+        0.6537216015667948,
+        0.6642856288265452,
+        0.623376150970695,
+        0.6438098869578257,
+        0.6466784080550654,
+        0.6813106819257733,
+        0.6482099935764353,
+        0.6741588060661688,
+        0.6079421287858883,
+        0.6636501331833503,
+        0.6515358355120417,
+        0.6498953084198751,
+        0.6530091970676055,
+        0.6144867167148466,
+        0.6384147978412189,
+        0.596110061983252,
+        0.6596410163281061,
+        0.6236075653595115,
+        0.6507177505084382,
+        0.6607563879092015,
+        0.6573898194679478,
+        0.6430963706946218,
+        0.6391019086255634,
+        0.6781448782783118,
+        0.6475869875557304,
+        0.6463968599688247,
+        0.640745756960562,
+        0.6404951535082869,
+        0.6342311282302626,
+        0.6607872788751658,
+        0.650510147962573,
+        0.6258856400585799,
+        0.6534775544714035,
+        0.6741265083704312,
+        0.6521589708614476,
+        0.6833283304412023
+      ],
+      "endpoint_error": 9.080395102500916e-09,
+      "reference_error": 9.080395102500916e-09,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 1.3358990996747977e-11,
+      "roundoff_reserve_max": 3.3714210148141912e-12
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "identity",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0
+      ],
+      "mp": [
+        0.0
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 0.0,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 0.0,
+      "roundoff_reserve_max": 0.0
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "static_constant_drift_D0",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0
+      ],
+      "mp": [
+        0.0
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 0.0,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 0.0,
+      "roundoff_reserve_max": 6.821210110831418e-13
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "static_varying_Dpositive",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0
+      ],
+      "mp": [
+        0.0
+      ],
+      "endpoint_error": 2.3283064365386963e-09,
+      "reference_error": 2.3283064226609085e-09,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 0.0,
+      "roundoff_reserve_max": 1.3642420221662836e-12
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "constant_velocity_D0",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0
+      ],
+      "mp": [
+        0.0
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 0.0,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 0.0,
+      "roundoff_reserve_max": 4.9453774256439845e-12
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "curved_varying",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.012499999932267448
+      ],
+      "mp": [
+        0.012588698577410382
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 1.1460221660541947e-11,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 1.7508666565191344e-10,
+      "roundoff_reserve_max": 5.6274984367271264e-12
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "aligned_tight",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.012500001056733627
+      ],
+      "mp": [
+        0.012625001066516529
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 2.2591789550219232e-12,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 1.2551027231411105e-10,
+      "roundoff_reserve_max": 7.844392347434136e-13
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "opposite",
+      "windows": 1,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.012500001056733627
+      ],
+      "mp": [
+        0.012375001046950728
+      ],
+      "endpoint_error": 0.0,
+      "reference_error": 2.259185893915827e-12,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 1.2551027231411105e-10,
+      "roundoff_reserve_max": 7.844392347434136e-13
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "fixed_random64",
+      "windows": 64,
+      "flags": {
+        "strict_guard": true,
+        "endpoint": true,
+        "reference": true,
+        "clip": true
+      },
+      "mb": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6278043344771936,
+        0.6647436974340503,
+        0.6477076362029522,
+        0.6205684476986133,
+        0.6430357297507656,
+        0.6572137825256708,
+        0.6444959112084953,
+        0.6102455978811455,
+        0.654529431759579,
+        0.6772413603955502,
+        0.6284057778206147,
+        0.6578419848052512,
+        0.6212760804211802,
+        0.684096144331574,
+        0.658109686735651,
+        0.6227806626575769,
+        0.6575665203023086,
+        0.6437345857449696,
+        0.6471524400673067,
+        0.6539693291152965,
+        0.6556953981413556,
+        0.6881302320879766,
+        0.6866419856514623,
+        0.6425569220719275,
+        0.6529982477706409,
+        0.6645380149514637,
+        0.6236347480596682,
+        0.6435980331895529,
+        0.6465767156120865,
+        0.6819212316582729,
+        0.6474372274333157,
+        0.6745639017681754,
+        0.6068060638957579,
+        0.663634065911151,
+        0.6510660341824381,
+        0.6493071443905801,
+        0.6527663294710162,
+        0.6144207203208293,
+        0.6383761235621461,
+        0.5962357457393613,
+        0.6593451396443428,
+        0.6239061720134244,
+        0.6497691218017004,
+        0.6600342533663816,
+        0.6575049230456187,
+        0.6432451509400537,
+        0.6389173760089009,
+        0.6778008198348197,
+        0.6468064116915458,
+        0.6462230181346823,
+        0.6411453956124084,
+        0.6400688807721273,
+        0.6345856430107036,
+        0.6611995040370682,
+        0.6497076891485793,
+        0.6258305357755285,
+        0.6535665028080463,
+        0.6739766162132902,
+        0.652234099824857,
+        0.683010928154735
+      ],
+      "mp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6283658091509108,
+        0.6651751112008302,
+        0.6480899145400166,
+        0.6211212719169107,
+        0.6434821464104552,
+        0.6575148456372096,
+        0.6446666852497824,
+        0.6104603376037931,
+        0.6547600335665448,
+        0.6771948977322123,
+        0.6283705678619695,
+        0.6584914190794899,
+        0.6217114317579917,
+        0.6844901829049315,
+        0.6573964067964636,
+        0.6225622239663023,
+        0.6577002839947133,
+        0.6441128736858273,
+        0.6465950536048514,
+        0.653871611496169,
+        0.6558736938536726,
+        0.6883132775276214,
+        0.6866483055715148,
+        0.6424695234077673,
+        0.6537216015667948,
+        0.6642856288265452,
+        0.623376150970695,
+        0.6438098869578257,
+        0.6466784080550654,
+        0.6813106819257733,
+        0.6482099935764353,
+        0.6741588060661688,
+        0.6079421287858883,
+        0.6636501331833503,
+        0.6515358355120417,
+        0.6498953084198751,
+        0.6530091970676055,
+        0.6144867167148466,
+        0.6384147978412187,
+        0.5961100619832519,
+        0.6596410163281061,
+        0.6236075653595115,
+        0.6507177505084382,
+        0.6607563879092015,
+        0.6573898194679478,
+        0.6430963706946218,
+        0.6391019086255633,
+        0.6781448782783118,
+        0.6475869875557304,
+        0.6463968599688247,
+        0.640745756960562,
+        0.6404951535082868,
+        0.6342311282302626,
+        0.6607872788751658,
+        0.6505101479625731,
+        0.62588564005858,
+        0.6534775544714035,
+        0.6741265083704312,
+        0.6521589708614476,
+        0.6833283304412023
+      ],
+      "endpoint_error": 9.080395102500916e-09,
+      "reference_error": 9.080395102500916e-09,
+      "clip_excess": 0.0,
+      "alpha_roundoff_difference": 1.3358990996747977e-11,
+      "roundoff_reserve_max": 3.3714210148141916e-12
+    }
+  ],
+  "failed_count": 0,
+  "source_hashes": {
+    "C:\\Users\\linke\\Documents\\New project\\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\\recovery_numeric_20261006\\README.md": "637fae17ee736eafcce98aa9620dc1cfdf870fbe1fa1e2ae264a1639a499a6d5",
+    "C:\\Users\\linke\\Documents\\New project\\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\\recovery_numeric_20261006\\REPAIR_DESIGN.md": "87868e6d566a58119037311af9e1eaed8c1edd5a3446e9e68b17c512e281cb2d",
+    "C:\\Users\\linke\\Documents\\New project\\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\\recovery_numeric_20261006\\projection.py": "4c0bbaf08153c8487b929d1e3d56334a70f4e3f8394e2a84d6aa835de52f338a",
+    "C:\\Users\\linke\\Documents\\New project\\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\\recovery_numeric_20261006\\numeric_preflight.py": "a52dd12cac3f722550be8517c4c1e7eafdc29d367252d00ae263e03f5fedc77f"
+  },
+  "source_after": {
+    "C:\\Users\\linke\\Documents\\New project\\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\\recovery_numeric_20261006\\README.md": "637fae17ee736eafcce98aa9620dc1cfdf870fbe1fa1e2ae264a1639a499a6d5",
+    "C:\\Users\\linke\\Documents\\New project\\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\\recovery_numeric_20261006\\REPAIR_DESIGN.md": "87868e6d566a58119037311af9e1eaed8c1edd5a3446e9e68b17c512e281cb2d",
+    "C:\\Users\\linke\\Documents\\New project\\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\\recovery_numeric_20261006\\projection.py": "4c0bbaf08153c8487b929d1e3d56334a70f4e3f8394e2a84d6aa835de52f338a",
+    "C:\\Users\\linke\\Documents\\New project\\F16_ENDPOINT_PRESERVING_ACCEL_PROJECTION_DIAGNOSIS_20261005\\recovery_numeric_20261006\\numeric_preflight.py": "a52dd12cac3f722550be8517c4c1e7eafdc29d367252d00ae263e03f5fedc77f"
+  },
+  "parent_failed4_sources_unchanged": true,
+  "fixture_sha": "fcfd688cd701d589775c710332206889ddc65967d23421c2edccc678e351d75c",
+  "resource": [
+    {
+      "peak_RSS_GiB": 0.4677467346191406,
+      "peak_private_GiB": 1.5580482482910156,
+      "physical_available_GiB": 18.701026916503906,
+      "commit_available_GiB": 18.738117218017578
+    },
+    {
+      "peak_RSS_GiB": 0.4716033935546875,
+      "peak_private_GiB": 1.5900764465332031,
+      "physical_available_GiB": 18.6944580078125,
+      "commit_available_GiB": 18.70510482788086
+    },
+    {
+      "peak_RSS_GiB": 0.4716300964355469,
+      "peak_private_GiB": 1.5900764465332031,
+      "physical_available_GiB": 18.694454193115234,
+      "commit_available_GiB": 18.70510482788086
+    },
+    {
+      "peak_RSS_GiB": 0.4717140197753906,
+      "peak_private_GiB": 1.5900764465332031,
+      "physical_available_GiB": 18.694454193115234,
+      "commit_available_GiB": 18.70510482788086
+    },
+    {
+      "peak_RSS_GiB": 0.4717254638671875,
+      "peak_private_GiB": 1.5900764465332031,
+      "physical_available_GiB": 18.694454193115234,
+      "commit_available_GiB": 18.70510482788086
+    },
+    {
+      "peak_RSS_GiB": 0.47174072265625,
+      "peak_private_GiB": 1.5900764465332031,
+      "physical_available_GiB": 18.694454193115234,
+      "commit_available_GiB": 18.70510482788086
+    },
+    {
+      "peak_RSS_GiB": 0.47174072265625,
+      "peak_private_GiB": 1.5900764465332031,
+      "physical_available_GiB": 18.694454193115234,
+      "commit_available_GiB": 18.70510482788086
+    },
+    {
+      "peak_RSS_GiB": 0.4717559814453125,
+      "peak_private_GiB": 1.5900764465332031,
+      "physical_available_GiB": 18.694454193115234,
+      "commit_available_GiB": 18.70510482788086
+    },
+    {
+      "peak_RSS_GiB": 0.47475433349609375,
+      "peak_private_GiB": 1.5910148620605469,
+      "physical_available_GiB": 18.694541931152344,
+      "commit_available_GiB": 18.70510482788086
+    },
+    {
+      "peak_RSS_GiB": 0.9521942138671875,
+      "peak_private_GiB": 2.301044464111328,
+      "physical_available_GiB": 18.211345672607422,
+      "commit_available_GiB": 17.987842559814453
+    },
+    {
+      "peak_RSS_GiB": 0.9521942138671875,
+      "peak_private_GiB": 2.301044464111328,
+      "physical_available_GiB": 18.211345672607422,
+      "commit_available_GiB": 17.987842559814453
+    },
+    {
+      "peak_RSS_GiB": 0.9821968078613281,
+      "peak_private_GiB": 2.3346824645996094,
+      "physical_available_GiB": 18.1846923828125,
+      "commit_available_GiB": 17.9534912109375
+    },
+    {
+      "peak_RSS_GiB": 0.9822158813476562,
+      "peak_private_GiB": 2.3346824645996094,
+      "physical_available_GiB": 18.184730529785156,
+      "commit_available_GiB": 17.953712463378906
+    },
+    {
+      "peak_RSS_GiB": 0.9822502136230469,
+      "peak_private_GiB": 2.334716796875,
+      "physical_available_GiB": 18.181625366210938,
+      "commit_available_GiB": 17.953712463378906
+    },
+    {
+      "peak_RSS_GiB": 0.9822654724121094,
+      "peak_private_GiB": 2.334716796875,
+      "physical_available_GiB": 18.181346893310547,
+      "commit_available_GiB": 17.953712463378906
+    },
+    {
+      "peak_RSS_GiB": 0.982269287109375,
+      "peak_private_GiB": 2.334716796875,
+      "physical_available_GiB": 18.181346893310547,
+      "commit_available_GiB": 17.953712463378906
+    },
+    {
+      "peak_RSS_GiB": 0.9835777282714844,
+      "peak_private_GiB": 2.3360366821289062,
+      "physical_available_GiB": 18.181346893310547,
+      "commit_available_GiB": 17.952678680419922
+    }
+  ],
+  "model_replay": false,
+  "production_started": false,
+  "all_prior_SHA_audit": false
+}

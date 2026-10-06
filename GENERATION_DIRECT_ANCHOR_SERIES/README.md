@@ -1,0 +1,11 @@
+# Current scientific protocol v2: native-preserving direct anchor branch
+
+The earlier GENERATION_DIRECT_ANCHOR_DESIGN.md is the historical absolute-head proposal. Ridge initialization and matched seed7 20-epoch fit-only teacher fitting failed engineering fidelity (cal teacherADE .405/.331m, both cal protected guards infeasible). These artifacts remain preserved under initial/ and teacher_feasibility/, are not loaded in production, and are not cycle experiments or favorable GT results.
+
+Current protocol.json/run_head.py implements a new25158parameter128->128->64->6 three-anchor correction branch. Control input=context64+original modeMLP64; treatment=context64+fixed raw query64. All original decoder, F16 and scorer tensors are frozen. Both newheads fully paired identical initialized, outputlayer zero, so forward output is exactly native K20 initially. Output is native plus interpolated learned anchor corrections with unchanged common velocity clip. This is a generation-side correction parameterization, NOT an absolute independent generator, learned intention or ranking improvement. Equal parameters do not prove equal effective functional capacity.
+
+Sixfresh80epoch trainings, original fit25912/cal2879/loss/protection.1/selection unchanged. Actual GPU preflight and both-arm interrupted/continuous parameters, boolean buffers, optimizer, RNG, history and calibration EXACT. Historical resume checker bool-subtraction formatting failure repaired by exact tensor comparison, not a training failure. Explicit native_fallback buffer ensures epoch0 infeasible fallback is labeled and not a learned model success.
+
+Independent Windows on-demand task Trajectory-DirectAnchor-Cycle3 started22:56:51HK,PID10416,parent2728service. Estimated25–35min planning30, one60%check23:14:52, initialanalysis23:26:52. Computer awake/login; automated analysis requires app available. Source/hash verified skipping and exact optimizer/RNG resume; no duplicate worker. All original5%/1%/3seed/CI/samepath/coverage/dup/hardmotion/motiondistribution criteria remain;18policysha/IDsfiniteK20/recomputedmetrics/frozen/SUCCESS required. No dev checkpoint selection, test or F16 unfreezing.
+
+Cycle3 experiment1; consolidate after three new completed experiments. Prior cycle2 reviewed and preserved. Use start_independent.ps1 for launch/recovery; no recurring OS task trigger.

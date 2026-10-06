@@ -1,0 +1,173 @@
+{
+  "status": "PASS_DESCRIPTIVE_ONLY",
+  "secondary": [
+    {
+      "probe": "R2",
+      "target": "kind",
+      "n": 10237,
+      "accuracy": 0.483540099638566,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    },
+    {
+      "probe": "R2",
+      "target": "onset_bin",
+      "n": 10237,
+      "accuracy": 0.43245091335352154,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    },
+    {
+      "probe": "R2",
+      "target": "direction",
+      "n": 5751,
+      "accuracy": 0.5402538688923666,
+      "classes": [
+        -1,
+        1
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    },
+    {
+      "probe": "E2_motion",
+      "target": "kind",
+      "n": 10237,
+      "accuracy": 0.569795838624597,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    },
+    {
+      "probe": "E2_motion",
+      "target": "onset_bin",
+      "n": 10237,
+      "accuracy": 0.4614633193318355,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    },
+    {
+      "probe": "E2_motion",
+      "target": "direction",
+      "n": 5751,
+      "accuracy": 0.6007650843331594,
+      "classes": [
+        -1,
+        1
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    },
+    {
+      "probe": "E3",
+      "target": "kind",
+      "n": 10237,
+      "accuracy": 0.5730194392888541,
+      "classes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    },
+    {
+      "probe": "E3",
+      "target": "onset_bin",
+      "n": 10237,
+      "accuracy": 0.49496922926638665,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    },
+    {
+      "probe": "E3",
+      "target": "direction",
+      "n": 5751,
+      "accuracy": 0.6155451225873761,
+      "classes": [
+        -1,
+        1
+      ],
+      "C_fixed": 1.0,
+      "conditioning": "Actual future event positives only; not deployable event detection+timing accuracy"
+    }
+  ],
+  "label_randomization": [
+    {
+      "probe": "R1",
+      "metrics": {
+        "n": 25217,
+        "prevalence": 0.40595629932188604,
+        "AUPRC": 0.3191266244355076,
+        "AUROC": 0.35804175030417296,
+        "Brier": 0.3226230889784693,
+        "log_loss": 0.8797049882636451
+      },
+      "role": "Destructive within-training-scene label randomization sanity control, NOT an exchangeability-validated permutation p value"
+    },
+    {
+      "probe": "R2",
+      "metrics": {
+        "n": 25217,
+        "prevalence": 0.40595629932188604,
+        "AUPRC": 0.33363298813491044,
+        "AUROC": 0.4105608819965483,
+        "Brier": 0.3081274365407156,
+        "log_loss": 0.8543353847411594
+      },
+      "role": "Destructive within-training-scene label randomization sanity control, NOT an exchangeability-validated permutation p value"
+    },
+    {
+      "probe": "E2_motion",
+      "metrics": {
+        "n": 25217,
+        "prevalence": 0.40595629932188604,
+        "AUPRC": 0.3382429893252555,
+        "AUROC": 0.3727885886857968,
+        "Brier": 0.3188505090497007,
+        "log_loss": 0.9053614050947355
+      },
+      "role": "Destructive within-training-scene label randomization sanity control, NOT an exchangeability-validated permutation p value"
+    },
+    {
+      "probe": "E3",
+      "metrics": {
+        "n": 25217,
+        "prevalence": 0.40595629932188604,
+        "AUPRC": 0.31999372658202313,
+        "AUROC": 0.35311301721953386,
+        "Brier": 0.3145210303420286,
+        "log_loss": 0.8692150065465389
+      },
+      "role": "Destructive within-training-scene label randomization sanity control, NOT an exchangeability-validated permutation p value"
+    }
+  ],
+  "group_permutation_inference": "WITHHELD: variable-size correlated scene families and only three groups; formal exchangeability not established"
+}

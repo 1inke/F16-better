@@ -1,0 +1,80 @@
+{
+  "scheduled_at": "2026-10-05T22:12:23.100127+08:00",
+  "checked_at": "2026-10-05T22:17:26.4450418+08:00",
+  "first_progress_query_done": true,
+  "progress_query_count": 1,
+  "observed_check": {
+    "checked_at": "2026-10-05T22:17:26.4450418+08:00",
+    "worker": {
+      "pid": 45388,
+      "parent_pid": 2728,
+      "started_at": "2026-10-05T21:22:23.100127+08:00",
+      "status": "RUNNING",
+      "launcher": "Windows Task Scheduler on-demand, no triggers"
+    },
+    "actual_process": {
+      "ProcessId": 45388,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_CANDIDATE_ROUTED_MAPPING_SERIES_20261005\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": {
+      "status": "FAILURE",
+      "time": 1791205312.411562
+    },
+    "trainings": [
+      {
+        "arm": "zero",
+        "complete": true,
+        "seed": 1,
+        "last_completed_epoch": "80"
+      },
+      {
+        "arm": "zero",
+        "complete": true,
+        "seed": 2,
+        "last_completed_epoch": "80"
+      },
+      {
+        "arm": "zero",
+        "complete": true,
+        "seed": 3,
+        "last_completed_epoch": "80"
+      },
+      {
+        "arm": "mean_std",
+        "complete": true,
+        "seed": 1,
+        "last_completed_epoch": "80"
+      },
+      {
+        "arm": "mean_std",
+        "complete": true,
+        "seed": 2,
+        "last_completed_epoch": "80"
+      },
+      {
+        "arm": "mean_std",
+        "complete": false,
+        "seed": 3,
+        "last_completed_epoch": "20"
+      }
+    ],
+    "stderr_bytes": 0
+  },
+  "stdout_tail": "[seed2/balanced_protected] epoch55/80 feasible=False change_key=2.1060\r\n[seed2/balanced_protected] epoch60/80 feasible=False change_key=2.1147\r\n[seed2/balanced_protected] epoch65/80 feasible=False change_key=2.1414\r\n[seed2/balanced_protected] epoch70/80 feasible=False change_key=2.1495\r\n[seed2/balanced_protected] epoch75/80 feasible=False change_key=2.1521\r\n[seed2/balanced_protected] epoch80/80 feasible=False change_key=2.1642\r\n[TRAIN] mean_std seed3\r\n[seed3/balanced_protected] epoch1/80 feasible=True change_key=2.0000\r\n[seed3/balanced_protected] epoch5/80 feasible=True change_key=1.9995\r\n[seed3/balanced_protected] epoch10/80 feasible=True change_key=2.0196\r\n[seed3/balanced_protected] epoch15/80 feasible=True change_key=2.0250\r\n[seed3/balanced_protected] epoch20/80 feasible=True change_key=2.0318\r\n",
+  "stage": "TRAIN mean_std seed3",
+  "completed_trainings": 5,
+  "completed_epochs": 420,
+  "remaining_epochs": 60,
+  "scientific_completion_claimed": false,
+  "root_exit_attribution": "Oldpreflight1 metadataTypeError21:01,not newproduction failure",
+  "next_review_at": "2026-10-05T22:40:00+08:00",
+  "remaining_estimate_minutes": [
+    16,
+    22
+  ],
+  "reason": "60 remaining epochs plus CAL/18policy evaluation, quality clusters/global motion/groupCI,36FITCALphysicalpopulations,dualexpert route/mix and final510source+31037oldSHA.87.5%epoch fraction is not total work fraction."
+}

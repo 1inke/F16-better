@@ -1,0 +1,72 @@
+{
+  "status": "PASS_ADDITIVE_PRELAUNCH_REVIEW",
+  "checked_at": "2026-10-04T21:21:48.762868+08:00",
+  "registered_source_files_SHA_unchanged": 295,
+  "scientific_blocks_completed_before_launch": 0,
+  "planned_scientific_blocks": 450,
+  "learned_replay_models_metadata": [
+    {
+      "seed": 1,
+      "path": "C:\\Users\\linke\\Documents\\New project\\GENERATION_PULSE_RESPONSE_SERIES_20261004\\results\\models\\mean_std\\seed_1\\balanced_protected\\constrained.pth",
+      "sha": "20eecdebe320066911aa577c628873fa4dd1d94331f31cebd1470b51e51525e3",
+      "epoch": 34,
+      "input_dim": 940,
+      "state_dict_entries": 49,
+      "metadata_read_only": true,
+      "new_model_forward": false
+    },
+    {
+      "seed": 2,
+      "path": "C:\\Users\\linke\\Documents\\New project\\GENERATION_PULSE_RESPONSE_SERIES_20261004\\results\\models\\mean_std\\seed_2\\balanced_protected\\constrained.pth",
+      "sha": "86080bc60317ac4899bccadb66761757d2080d4e214667ebf6ec357fbbe08106",
+      "epoch": 26,
+      "input_dim": 940,
+      "state_dict_entries": 49,
+      "metadata_read_only": true,
+      "new_model_forward": false
+    },
+    {
+      "seed": 3,
+      "path": "C:\\Users\\linke\\Documents\\New project\\GENERATION_PULSE_RESPONSE_SERIES_20261004\\results\\models\\mean_std\\seed_3\\balanced_protected\\constrained.pth",
+      "sha": "95d3ae91cde9d9bd92759a2bbef88acd9547ff8a417054f9c37b09b99e02bbee",
+      "epoch": 18,
+      "input_dim": 940,
+      "state_dict_entries": 49,
+      "metadata_read_only": true,
+      "new_model_forward": false
+    }
+  ],
+  "original_preflight_metadata_omission": "The existing preflight models field was empty after model cleanup; preserve it unchanged. This supplement reads the three locked checkpoints, not a repeat of the model-forward preflight.",
+  "preflight_SHA": "189e385cabd003fa7d2445c93e2093cbd6af10817d9fb3da0ed9c5de7b2927a2",
+  "protocol_SHA": "8471913fe2ef79af5f61b299714e4089207313dd67ca0a281ab1bd6611177457",
+  "review_source_SHA": "1c8a314850a1ac9222d023e971276507b47ab0586f161b4a8978b949f926c0ce",
+  "memory_before": {
+    "rss_bytes": 54214656,
+    "private_bytes": 35586048,
+    "lifetime_peak_rss_bytes": 55312384,
+    "lifetime_peak_private_bytes": 36188160,
+    "physical_available_bytes": 17694609408,
+    "physical_total_bytes": 33943089152,
+    "system_commit_available_bytes": 18966728704,
+    "pointer_bits": 64
+  },
+  "memory_after": {
+    "rss_bytes": 510189568,
+    "private_bytes": 934871040,
+    "lifetime_peak_rss_bytes": 514801664,
+    "lifetime_peak_private_bytes": 939565056,
+    "physical_available_bytes": 17189502976,
+    "physical_total_bytes": 33943089152,
+    "system_commit_available_bytes": 18080477184,
+    "pointer_bits": 64
+  },
+  "old_full_manifest_count": 21852,
+  "full_old_files_prelaunch_rehashed": false,
+  "full_old_hash_check": "Independent worker must verify every registered old file before scientific computation and after final saved-output audit.",
+  "model_training": false,
+  "model_forward_this_review": false,
+  "scientific_protocol_changed": false,
+  "existing_preflight_or_results_edited": false,
+  "resume": "Existing done-SHA skip and bad-source-reject PASS; not optimizer/RNG training resume.",
+  "inline_adversarial_gate": "PASS_WITH_LIMITATIONS: successful GT-assisted construction witnesses feasibility, failure under the fixed local budget stays unresolved. Oracle fitting is not deployed model quality or causal root-cause evidence. No new outcomes reviewed to alter the protocol."
+}

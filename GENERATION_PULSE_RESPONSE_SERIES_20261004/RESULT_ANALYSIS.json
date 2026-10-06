@@ -1,0 +1,212 @@
+{
+  "verdict": "PULSE_RESPONSE_GATE_FAIL",
+  "major": false,
+  "finish": "2026-10-04T14:27:33.339346+08:00",
+  "elapsed_minutes": 85.00058333333334,
+  "change": {
+    "native_ADE": 0.3721747398376465,
+    "native_FDE": 0.6963264346122742,
+    "fixed_ADE": 0.365773469209671,
+    "fixed_FDE": 0.6862253546714783,
+    "learned_ADE": 0.3649151027202606,
+    "learned_FDE": 0.6860807538032532,
+    "gain_pct": [
+      1.950599097765937,
+      1.4713904714426018
+    ],
+    "gain_vs_control_pct": [
+      0.23467161007195703,
+      0.021071921525595005
+    ]
+  },
+  "gates": {
+    "change_ade_fde_gain_5pct": false,
+    "protected_groups_guard": true,
+    "each_seed_change_improves": true,
+    "native_and_zero_ci": false,
+    "all_seed_feasible": true,
+    "coverage_guard": true,
+    "duplicate_guard": true,
+    "kinematic_guard": true,
+    "same_path_joint_guard": true,
+    "motion_distribution_no_harm_1pct": false
+  },
+  "change_CIs": [
+    {
+      "policy": "constrained",
+      "reference": "native",
+      "group": "change",
+      "metric": "minade20",
+      "delta": -0.007259685935950957,
+      "ci_low": -0.013993967355121768,
+      "ci_high": -0.0026827418692242943
+    },
+    {
+      "policy": "constrained",
+      "reference": "native",
+      "group": "change",
+      "metric": "minfde20",
+      "delta": -0.010245612876765396,
+      "ci_low": -0.02596456608519248,
+      "ci_high": 0.0009262714342190351
+    },
+    {
+      "policy": "constrained",
+      "reference": "native",
+      "group": "change",
+      "metric": "joint_oracle",
+      "delta": -0.013132047392594975,
+      "ci_low": -0.02782669105470982,
+      "ci_high": -0.003890471910481499
+    },
+    {
+      "policy": "constrained",
+      "reference": "zero",
+      "group": "change",
+      "metric": "minade20",
+      "delta": -0.0008583855334953342,
+      "ci_low": -0.006020102420228745,
+      "ci_high": 0.004004526619419389
+    },
+    {
+      "policy": "constrained",
+      "reference": "zero",
+      "group": "change",
+      "metric": "minfde20",
+      "delta": -0.00014459207843326487,
+      "ci_low": -0.010456605318875257,
+      "ci_high": 0.007591198445945107
+    },
+    {
+      "policy": "constrained",
+      "reference": "zero",
+      "group": "change",
+      "metric": "joint_oracle",
+      "delta": -0.002892760184046399,
+      "ci_low": -0.013651138220834358,
+      "ci_high": 0.005921163855424018
+    }
+  ],
+  "motion": [
+    {
+      "policy": "constrained",
+      "group": "overall",
+      "ade_gain_pct": 0.5344255698555123,
+      "fde_gain_pct": 0.18812248658680586,
+      "accelmean_harm_pct": 14.600318865536789,
+      "jerkmean_harm_pct": 1.4097915775532543,
+      "jerkp95_harm_pct": 0.22005708841525973
+    },
+    {
+      "policy": "constrained",
+      "group": "stable",
+      "ade_gain_pct": 0.14409736694811492,
+      "fde_gain_pct": -0.19060723266599577,
+      "accelmean_harm_pct": 12.056799433007237,
+      "jerkmean_harm_pct": 1.1246869678797955,
+      "jerkp95_harm_pct": 0.20648765488069376
+    },
+    {
+      "policy": "constrained",
+      "group": "transition",
+      "ade_gain_pct": -0.18081871446138376,
+      "fde_gain_pct": -0.4371117145939518,
+      "accelmean_harm_pct": 18.75096573012125,
+      "jerkmean_harm_pct": 1.8362573528307058,
+      "jerkp95_harm_pct": 0.2447927900272484
+    },
+    {
+      "policy": "constrained",
+      "group": "change",
+      "ade_gain_pct": 1.950599097765937,
+      "fde_gain_pct": 1.4713904714426018,
+      "accelmean_harm_pct": 23.79243746819837,
+      "jerkmean_harm_pct": 2.4786288070793416,
+      "jerkp95_harm_pct": 0.273969646823935
+    }
+  ],
+  "samepath": {
+    "thresholds": [
+      0.2,
+      0.4
+    ],
+    "clear_n": 469,
+    "native_count": 92,
+    "learned_counts": [
+      88,
+      88,
+      88
+    ],
+    "rescued": [
+      8,
+      4,
+      5
+    ],
+    "lost": [
+      12,
+      8,
+      9
+    ],
+    "overall_native": 733,
+    "overall_learned": [
+      723,
+      728,
+      727
+    ]
+  },
+  "temporal": {
+    "native": [
+      0.1579677164554596,
+      0.38998469710350037,
+      0.5751160383224487
+    ],
+    "learned_mean": [
+      0.15317312876383463,
+      0.3854873776435852,
+      0.572836716969808
+    ],
+    "native_onset_given_detected": 1.8291139240506329,
+    "learned_onset_given_detected": 1.7165155640024656,
+    "native_detection": 0.673773987206823,
+    "learned_detection": 0.6709310589907606
+  },
+  "completion_audit": {
+    "status": "PASS",
+    "trainings": 6,
+    "epochs_each": 80,
+    "policy_entries": 18,
+    "IDs": 1516,
+    "K": 20,
+    "source_SHA": 256,
+    "old_SHA": 19558,
+    "saved_metrics_max_error": 0,
+    "registered_group_CIs_recomputed": true,
+    "original_F16_decoder_scorer_frozen": true,
+    "worker_and_results_exit_SUCCESS": true,
+    "supplement_inputs_before_after": 839,
+    "supplement_minmetric_max_error": 0,
+    "old_SHA_scope": "Completed worker audit; not rerun by saved-output completion supplement."
+  },
+  "study": {
+    "completed": 2,
+    "review_after": 3,
+    "next_trial_requires_human_decision": true,
+    "historical_cycle_reset": false
+  },
+  "evidence": {
+    "formal": "results/summary.json",
+    "integrity": "results/independent_audit.json",
+    "recompute": "results/saved_metrics_recompute.json",
+    "supplement": "completion_review/REVIEW.json",
+    "pulse": "results/pulse/summary.json"
+  },
+  "limitations": [
+    "Three paired seeds and repeated ETH DEV exploratory, correlated scene windows; no SOTA/independent generalization/causal root-cause claim.",
+    "minADE and minFDE may belong to different candidates; same-path coverage separately checks one candidate.",
+    "Constrained official policy; final and legacy are descriptive, not selected via DEV.",
+    "Gaussian center/span are response shape parameters, not semantic event onset/duration.",
+    "GT-assisted joint oracle is not frozen scorer argmax deployment.",
+    "Nominal matching does not equal effective capacity; learned-clock and optimization differ.",
+    "No automatic third training or scope expansion."
+  ]
+}

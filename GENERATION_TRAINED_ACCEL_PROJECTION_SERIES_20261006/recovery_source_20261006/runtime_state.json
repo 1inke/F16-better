@@ -1,0 +1,227 @@
+{
+  "status": "EVALUATION_FAILURE_RECOVERED_ANALYZED_MAJOR_FAIL_THREE_REVIEW_COMPLETE",
+  "production_started": true,
+  "formal_trial_started": true,
+  "study": "physical_accel_feedback_20261005",
+  "experiment": "GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006",
+  "recovery_folder": "C:/Users/linke/Documents/New project/GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006/recovery_source_20261006",
+  "worker_pid": 31532,
+  "parent_pid": 2728,
+  "task_name": "Trajectory-TrainedAccelProjection-SourceRecovery-20261006",
+  "task_triggers": 0,
+  "started_at": "2026-10-06T02:15:03.676192+08:00",
+  "startup_checked_at": "2026-10-06T02:15:21.6468215+08:00",
+  "sole_startup_confirmation_count": 1,
+  "observed_training_epoch": true,
+  "observed_worker_stage": "EVALUATE_LOADER_ASSERTION_FAILURE_PRESERVED",
+  "preflight_progress_is_old_not_production": true,
+  "startup": {
+    "checked_at": "2026-10-06T02:15:21.6468215+08:00",
+    "worker": {
+      "pid": 31532,
+      "parent_pid": 2728,
+      "status": "RUNNING",
+      "started_at": "2026-10-06T02:15:03.676192+08:00",
+      "stage": "INITIAL_SOURCE_OLD_SHA"
+    },
+    "progress": {
+      "stage": "PREFLIGHT_GPU",
+      "at": "2026-10-06T02:10:35.190864+08:00"
+    },
+    "actual_process": {
+      "ProcessId": 31532,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006\\recovery_source_20261006\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": null,
+    "trainings": [
+      {
+        "arm": "zero",
+        "seed": 1,
+        "last_completed_epoch": 0,
+        "complete": false
+      },
+      {
+        "arm": "zero",
+        "seed": 2,
+        "last_completed_epoch": 0,
+        "complete": false
+      },
+      {
+        "arm": "zero",
+        "seed": 3,
+        "last_completed_epoch": 0,
+        "complete": false
+      },
+      {
+        "arm": "mean_std",
+        "seed": 1,
+        "last_completed_epoch": 0,
+        "complete": false
+      },
+      {
+        "arm": "mean_std",
+        "seed": 2,
+        "last_completed_epoch": 0,
+        "complete": false
+      },
+      {
+        "arm": "mean_std",
+        "seed": 3,
+        "last_completed_epoch": 0,
+        "complete": false
+      }
+    ],
+    "stderr_bytes": 0
+  },
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "progress_fraction": 0.5,
+  "ETA_minutes": [
+    45,
+    80
+  ],
+  "planning_minutes": 60,
+  "query_at": null,
+  "automation_query_ceil": "2026-10-06T02:45:04.000+08:00",
+  "analysis_deadline": null,
+  "automation_analysis_ceil": "2026-10-06T03:10:00+08:00",
+  "next_review_at": null,
+  "formal_completed": 3,
+  "formal_total": 3,
+  "experiment_in_study": 3,
+  "source_count": 541,
+  "old_files": 31968,
+  "final_preflight": "PASS_ACTUAL_GPU8FIT_AND_ACTIVE_ACTUAL_HEAD128_FROZEN_PAIRED_K20_BOUND_SPLIT_SOURCE_ALL_OLD_SHA",
+  "active_head_test": {
+    "active_windows": 128,
+    "alpha_min": 0.01413934473431195,
+    "alpha_max": 0.26281775457492246,
+    "not_training_result": true
+  },
+  "resume": "BOTH_REAL_FIT_CAL_SUBSET_2EPOCH_PARAMS_BUFFERS_OPTIMIZER_ALLRNG_HISTORYCAL_OBJECTIVE_TRACE_EXACT",
+  "benchmark_compute_minutes": 33.15742269009206,
+  "benchmark_records": [
+    {
+      "arm": "zero",
+      "step128_seconds": 0.017970500004594214,
+      "CAL2879_seconds": 0.07238189998315647,
+      "measured_steps": 32,
+      "warmup_steps": 4
+    },
+    {
+      "arm": "mean_std",
+      "step128_seconds": 0.0220530156238965,
+      "CAL2879_seconds": 0.09220009995624423,
+      "measured_steps": 32,
+      "warmup_steps": 4
+    }
+  ],
+  "benchmark_not_production_guarantee": true,
+  "process_budget_GiB": 6,
+  "system_reserve_each_GiB": 6,
+  "human_approximately17GB_available_persistent": true,
+  "human_latest": "继续，然后长时间自动进行",
+  "scope": "Sole training-forward projection vsunprojected; BOTH91596uniformdualrawstate heads,float64cumsum,oldtotal+.1P,oldFITCAL/LR80budget/K20/F16 wholedecoder scorerfixed. Noassignment/eventsupervision/oldunfreeze/scorer/newdata.",
+  "completion_required": "Worker AND results exit SUCCESS/all18SHA1516IDsfiniteK20/six80history/allstoredmetrics-nativeALLgroups-perseed-bootstrapCI/fullGTfreecomplete-linkquality/pooledALLgroupfive_motion/temporal_projectionstrictendpointphysics/36FITCALoriginaltotalP/80trace/frozen/source541-old31968SHA. Savedmath notallmodelgradientreplay.",
+  "mandatory_next": "At complete formal3/3 firstfullthree physicalfeedback review; then chooseidentifiable lawfulmajor direction,no fourthlocalprojectioncoeffwidthLRepoch sweep.",
+  "stop_on_substantive_obstruction": true,
+  "automation_id": "automation",
+  "waiting_policy": "ANALYZED and no new human decision: DONT_NOTIFY. No PID/task/log/results/resources queries; never repeat03:28half/03:34completion oroldworkers. Do not ask repeatedly or start fourthlocalvariant. Await directhuman protocol decision; goalnotcomplete orhumanpaused.",
+  "failure_parent_preserved": "../failures/preflight_1791222401792826400",
+  "parent_source_transition": "PARENT_SOURCE_TRANSITION.json",
+  "prelaunch_review": "prelaunch_review/REVIEW.json",
+  "new_source_locked": true,
+  "halfway_checked_at": "2026-10-06T02:46:12.7477981+08:00",
+  "last_progress_snapshot": {
+    "checked_at": "2026-10-06T02:46:12.7477981+08:00",
+    "worker": {
+      "pid": 31532,
+      "parent_pid": 2728,
+      "status": "RUNNING",
+      "started_at": "2026-10-06T02:15:03.676192+08:00",
+      "stage": "INITIAL_SOURCE_OLD_SHA"
+    },
+    "progress": {
+      "stage": "TRAIN",
+      "at": "2026-10-06T02:42:01.389117+08:00",
+      "arm": "mean_std",
+      "seed": 2
+    },
+    "actual_process": {
+      "ProcessId": 31532,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006\\recovery_source_20261006\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": null,
+    "trainings": [
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "arm": "zero",
+        "seed": 1
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "arm": "zero",
+        "seed": 2
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "arm": "zero",
+        "seed": 3
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "arm": "mean_std",
+        "seed": 1
+      },
+      {
+        "last_completed_epoch": "45",
+        "complete": false,
+        "arm": "mean_std",
+        "seed": 2
+      },
+      {
+        "last_completed_epoch": 0,
+        "complete": false,
+        "arm": "mean_std",
+        "seed": 3
+      }
+    ],
+    "stderr_bytes": 0
+  },
+  "worker_envelope_stage_is_stale": "INITIAL_SOURCE_OLD_SHA",
+  "latest_completed_epochs": 480,
+  "latest_complete_trainings": 6,
+  "remaining_epochs": 0,
+  "remaining_estimate_minutes": [
+    12,
+    22
+  ],
+  "estimate_basis": "115 projected epochs plus CAL/checkpoint IO,18policy prediction/fullqualityclusters/globalmotion/CI,36FITCAL physicalpopulation and final541sources31968oldSHA; epoch76.04% is not totalworkpercentage.",
+  "production_worker_finished_at": "2026-10-06T02:56:56.057522+08:00",
+  "production_worker_status": "FAILURE",
+  "completion_checked_at": "2026-10-06T03:10:38.2532615+08:00",
+  "completion_query_done": true,
+  "old_completion_node_superseded": true,
+  "evaluation_recovery": "C:/Users/linke/Documents/New project/GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006/recovery_source_20261006/evaluation_recovery_20261006",
+  "evaluation_runtime_state": "C:/Users/linke/Documents/New project/GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006/recovery_source_20261006/evaluation_recovery_20261006/runtime_state.json",
+  "recovery_worker_pid": 11344,
+  "recovery_task_name": "Trajectory-TrainedAccelProjection-EvaluationRecovery-20261006",
+  "latest_source_and_old_SHA": "Evaluationpreflight541originalsources31968old initial/final and69completedartifactsPASS; this is not recoveredworker final completion yet.",
+  "completion_not_claimed": false,
+  "evaluation_worker_status": "SUCCESS",
+  "recovery_finished_at": "2026-10-06T03:25:46.554410+08:00",
+  "result_analysis": "C:/Users/linke/Documents/New project/GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006/recovery_source_20261006/evaluation_recovery_20261006/RESULT_ANALYSIS.md",
+  "fullthree_review": "C:/Users/linke/Documents/New project/GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006/recovery_source_20261006/evaluation_recovery_20261006/PHYSICAL_FEEDBACK_STUDY_REVIEW.md"
+}

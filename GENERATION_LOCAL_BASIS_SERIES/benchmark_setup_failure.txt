@@ -1,0 +1,1 @@
+Read-only timing command initially used a relative preflight.json path after backend changed working directory; FileNotFoundError before any optimizer step. Corrected command used absolute h.HERE/preflight.json and completed. This was benchmark setup only, not production training or scientific-protocol failure. No measurements/parameters selected from dev or CAL performance.

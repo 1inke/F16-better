@@ -1,0 +1,12 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_HEAD_LEARNING_DIAGNOSIS_20261005\\diagnosis.py\", line 354, in main\n    if args.preflight:preflight(device)\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_HEAD_LEARNING_DIAGNOSIS_20261005\\diagnosis.py\", line 275, in preflight\n    locks=sources();resume_test(d,locks,device)\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_HEAD_LEARNING_DIAGNOSIS_20261005\\diagnosis.py\", line 227, in resume_test\n    epoch_step(model,opt,d,gen);history.append(evaluate(model,d,'CAL'))\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_HEAD_LEARNING_DIAGNOSIS_20261005\\diagnosis.py\", line 197, in epoch_step\n    guard.check();loss,_,_=forward_loss(model,batch(d,'FIT',ix),d);assert torch.isfinite(loss)\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_HEAD_LEARNING_DIAGNOSIS_20261005\\diagnosis.py\", line 41, in check\n    if max(v.rss,v.private)>6*2**30 or min(s.avail_phys,s.avail_page)<6*2**30:raise MemoryError('6GiB process or system reserve obstruction; STOP human')\nMemoryError: 6GiB process or system reserve obstruction; STOP human\n",
+  "source_sha": "14b922bf1f71ff4aa0b3f29784cefd54fe2941fb06d8eea9e7e2ba7e13c6ba68",
+  "preflight": true,
+  "resource": {
+    "rss": 2201956352,
+    "private": 3062632448,
+    "physical": 10186878976,
+    "commit": 5836451840
+  },
+  "stop_wait_human": true
+}

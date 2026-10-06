@@ -1,0 +1,44 @@
+{
+  "method": "Regime-Aware Gated Delta Memory supplement",
+  "short_name": "RGDM",
+  "baseline_identity": "EXP-173/C00 F16 H3-to-V2, 20 candidates",
+  "status": "FACTORIAL_COMPLETE_STOP_OR_REDESIGN_AFTER_SEED1",
+  "inference_inputs": [
+    "observed trajectory",
+    "F16 encoded history/social tokens",
+    "C00 mode features",
+    "V2-corrected candidate anchors"
+  ],
+  "future_target_policy": "Future GT is forbidden in inference. It may only form an optional training-only gate target and ranking loss.",
+  "initialization_contract": "All RGDM variants are exact identity maps relative to the loaded C00 checkpoint before training.",
+  "selection_order": [
+    "rgdm_b1_history_gate",
+    "rgdm_b2_memory",
+    "rgdm_b3_candidate_query",
+    "rgdm_b4_full"
+  ],
+  "deferred_variants": [
+    "rgdm_g4_generation",
+    "rgdm_ab_joint"
+  ],
+  "default_auxiliary_weights": {
+    "gate_loss": 0.0,
+    "rank_loss": 0.0
+  },
+  "experiment_started": true,
+  "completed_conditions": [
+    "s_only_g0_s1",
+    "g_only_g1_s0",
+    "joint_g1_s1"
+  ],
+  "pending_conditions": [],
+  "first_experiment_verdict": "STOP_OR_REDESIGN_AFTER_SEED1",
+  "test_data_authorized": false,
+  "first_experiment": {
+    "design": "2x2 generation RGDM x selection RGDM",
+    "new_training_runs": 3,
+    "epochs_per_run": 12,
+    "validation_only": true,
+    "estimated_total_minutes": "13-24 normally; reserve 25-35 if GPU is busy"
+  }
+}

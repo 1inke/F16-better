@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-10-06T03:29:33.2796765+08:00",
+  "worker": {
+    "pid": 11344,
+    "parent_pid": 2728,
+    "status": "SUCCESS",
+    "evaluation_only": true,
+    "started_at": "2026-10-06T03:22:48.132944+08:00",
+    "finished_at": "2026-10-06T03:25:46.554410+08:00"
+  },
+  "progress": {
+    "stage": "SUCCESS",
+    "at": "2026-10-06T03:25:46.553410+08:00"
+  },
+  "actual_process": null,
+  "task_state": "Ready",
+  "triggers": 0,
+  "exit_state": {
+    "status": "SUCCESS",
+    "evaluation_only": true,
+    "no_optimizer": true,
+    "no_training": true,
+    "six_completed_trainings_reused_SHA_exact": true,
+    "source541_and_old31968_unchanged": true,
+    "frozen_all_weights_bool_scalers_exact": true,
+    "metric_audit": "PASS",
+    "quality_audit": {
+      "status": "PASS",
+      "quality_predictions": 18,
+      "pooled_motion_pass": true
+    },
+    "physical_audit": "PASS",
+    "finished_at": "2026-10-06T03:25:46.551408+08:00"
+  },
+  "trainings": [
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "seed": 1,
+      "arm": "zero"
+    },
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "seed": 2,
+      "arm": "zero"
+    },
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "seed": 3,
+      "arm": "zero"
+    },
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "seed": 1,
+      "arm": "mean_std"
+    },
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "seed": 2,
+      "arm": "mean_std"
+    },
+    {
+      "last_completed_epoch": "80",
+      "complete": true,
+      "seed": 3,
+      "arm": "mean_std"
+    }
+  ],
+  "stderr_bytes": 0
+}

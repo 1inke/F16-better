@@ -1,0 +1,48 @@
+{
+  "status": "PREREGISTERED_FROZEN_DIAGNOSIS",
+  "formal_trial": false,
+  "FIT": 25912,
+  "CAL": 2879,
+  "checkpoint_families": [
+    "raw",
+    "centered_raw",
+    "centered_own"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "policies": [
+    "constrained",
+    "final"
+  ],
+  "jobs": 38,
+  "checkpoint_count": 18,
+  "batch_size": 128,
+  "metric_chunk": 256,
+  "quality": {
+    "ADE": 0.2,
+    "FDE": 0.4,
+    "same_candidate": true
+  },
+  "sensitivity": {
+    "ADE": 0.3,
+    "FDE": 0.5
+  },
+  "clustering": {
+    "method": "complete",
+    "meanpath": 0.1,
+    "endpoint": 0.2,
+    "GT_free": true
+  },
+  "dt": 0.4,
+  "process_budget_GiB": 6,
+  "system_physical_and_commit_reserve_each_GiB": 6,
+  "future_forward": false,
+  "optimizer": false,
+  "DEV_forward": false,
+  "old_sha_inheritance": true,
+  "progress_fraction": 0.5,
+  "stop_on_obstruction": true
+}

@@ -1,0 +1,28 @@
+{
+  "status": "STOP_RESOURCE_WAITING_HUMAN",
+  "failure": "failures/preflight_20261004_231120/failure.txt",
+  "reason": "At preflight load_data entry, system physical or commit headroom was below unchanged 6GiB reserve; guard rejected before scientific computation",
+  "subsequent_read_only_memory_check": {
+    "physical_available_GiB": 4.716083526611328,
+    "physical_total_GiB": 31.61196517944336,
+    "commit_available_GiB": 5.631641387939453,
+    "commit_limit_GiB": 48.61196517944336,
+    "load_percent": 85,
+    "scope": "live after preflight process exited; not exact at failure instant or identification of a particular application's cause"
+  },
+  "prior_files_manifest_count": 23614,
+  "initial_prior_SHA_loop_completed": true,
+  "final_prior_SHA_audit": "NOT_REACHED",
+  "scientific_blocks_completed": 0,
+  "scientific_input_loaded": false,
+  "preflight_pass": false,
+  "model_forward": false,
+  "model_training": false,
+  "production_launch_count": 0,
+  "production_worker_pid": null,
+  "automatic_retry": false,
+  "reserve_lowered": false,
+  "OS_pagefile_or_user_program_changed": false,
+  "formal_response_completed": 2,
+  "next_step": "Wait for direct human decision or resources restored; rerun exact validation only after new continue authorization. No half/completion worker schedule exists."
+}

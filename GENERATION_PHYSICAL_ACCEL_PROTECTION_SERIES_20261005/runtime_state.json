@@ -1,0 +1,157 @@
+{
+  "status": "ANALYZED",
+  "production_started": true,
+  "preflight_started": true,
+  "formal_trial_started": true,
+  "study": "physical_accel_feedback_20261005",
+  "experiment": "GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005",
+  "worker_pid": 39304,
+  "human_authorized": "2026-10-05 human explicit two-stage conditional loss/credit/motion research and continued branch experiments",
+  "implementation_at": "2026-10-05T18:20:00+08:00",
+  "node_type": "ONE_50PERCENT_ELAPSED_TIME_COUNT1_THEN_REAL_COMPLETION",
+  "scope": "SOLE originaltotal vs originaltotal+.1 FIT-scaled classbatch ALLK physical accelmean hinge on BOTHactive rawpersistent45798; nootherlossassignment/eventsupervision/scorer/F16-olddecoderunfreeze/newdata. GT/groups/logits not forward; alloriginalloss calguards budget and majorcriteria unchanged.",
+  "source_locked": true,
+  "process_budget_GiB": 6,
+  "system_reserve_each_GiB": 6,
+  "stop_on_substantive_obstruction": true,
+  "first_progress_query_done": true,
+  "automation_id": "automation",
+  "automation_run_count": 1,
+  "waiting_policy": "ANALYZED; no completed39304/task/log/results rechecks, no oldworker query/retraining. Candidate routed mapping design only; next20:45HK implementation gates, not worker/completionETA. Runtime nextdesign controls schedule; no scientificsource changes.",
+  "evidence": "../F16_LOSS_QUALITY_CREDIT_MOTION_DIAGNOSIS_20261005/RESULT_ANALYSIS.md",
+  "implementation_started_at": "2026-10-05T18:20:01.975+08:00",
+  "parent_pid": 2728,
+  "process_create_time": 1791197740.998,
+  "task_name": "Trajectory-PhysicalAccelProtection-20261005",
+  "task_triggers": 0,
+  "started_at": "2026-10-05T18:55:41.279151+08:00",
+  "startup_checked_at": "2026-10-05T18:55:51.7991296+08:00",
+  "sole_startup_confirmation_count": 1,
+  "startup": {
+    "checked_at": "2026-10-05T18:55:51.7991296+08:00",
+    "worker": {
+      "pid": 39304,
+      "parent_pid": 2728,
+      "started_at": "2026-10-05T18:55:41.279151+08:00",
+      "status": "RUNNING",
+      "launcher": "Windows Task Scheduler on-demand, no triggers"
+    },
+    "actual_python": {
+      "pid": 39304,
+      "parent_pid": 2728,
+      "creation_time": "2026-10-05T18:55:40.9986530+08:00",
+      "command_line": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "task_triggers": 0,
+    "trainings": [
+      {
+        "arm": "zero",
+        "seed": 1,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "zero",
+        "seed": 2,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "zero",
+        "seed": 3,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "mean_std",
+        "seed": 1,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "mean_std",
+        "seed": 2,
+        "last_completed_epoch": 0
+      },
+      {
+        "arm": "mean_std",
+        "seed": 3,
+        "last_completed_epoch": 0
+      }
+    ],
+    "stderr_bytes": 0,
+    "sole_startup_confirmation_count": 1,
+    "observed_training_epoch": false,
+    "precise_worker_stage_not_exposed": true
+  },
+  "study_completed": 1,
+  "study_size": 3,
+  "experiment_in_study": 1,
+  "historical_cycle_not_reset": true,
+  "query_at": null,
+  "automation_query_ceil": null,
+  "next_review_at": null,
+  "analysis_deadline": null,
+  "first_progress_query_count": 1,
+  "progress_fraction": 0.5,
+  "ETA_minutes": [
+    60,
+    100
+  ],
+  "planning_minutes": 80,
+  "benchmark_compute_minutes": 45.72720241027855,
+  "estimate_basis": "Actual36step FIT128 .0261206/.0295825s CAL2879 .0459343/.0781351s ->45.7272min compute. Include batch diagnostics/log/checkpoint I/O,18policy evaluation/qualityclusters-globalmotion/CI,36 FITCAL physical original-objective population audits, source484/all30298old SHA. Non-isolated current GPU, prior22–269min variation unexplained; not production guarantee.",
+  "preflight": "PASS_ACTUAL_GPU8FIT_BOTH_RAWSTATE_CLOCK_FROZEN_PAIRED_IDENTITY_FINITEK20_BOUND_SPLIT_ORIGINALLOSS_GRAD_EXACT_FIT_ONLY_PHYSICAL_STATS_NUMPY_FD_REJECTS",
+  "preflight_review": "prelaunch_review/REVIEW.json",
+  "source_count": 484,
+  "old_files_locked": 30298,
+  "physical_scales": [
+    0.09080201387405396,
+    0.08501017838716507,
+    0.08605678379535675
+  ],
+  "natural_first8_physical_hinge_active_steps": {
+    "zero": 0,
+    "mean_std": 0
+  },
+  "synthetic_only_physical_parameter_P_gradient_norm": 0.3815271880550469,
+  "synthetic_treatment_gradient_decomposition_max": 1.862645149230957e-8,
+  "both_real_FITCAL_subset_2epoch_continuous_interrupted": "EXACT_params_allboolscalerbuffers_optimizer_torchCUDAloadernumpyPythonRNG_history_calibration_and_added_trace",
+  "completed_seed_SHA_skip": true,
+  "no_full25912_twoepoch_claim": true,
+  "preflight_memory": {
+    "peak_RSS_GiB": 2.3714027404785156,
+    "peak_private_GiB": 3.3063087463378906,
+    "min_physical_GiB": 15.875877380371094,
+    "min_commit_GiB": 15.605045318603516,
+    "checks": 194
+  },
+  "benchmark_memory": {
+    "peak_RSS_GiB": 2.1794662475585938,
+    "peak_private_GiB": 2.9608230590820312,
+    "min_physical_GiB": 16.243057250976562,
+    "min_commit_GiB": 16.017383575439453
+  },
+  "production_memory_not_observed": false,
+  "one_model_batch128": true,
+  "automation_status": "ACTIVE_NEXT_SINGLE_IMPLEMENTATION20_45_COUNT1_NO_COMPLETED_WORKER_QUERIES",
+  "completion_required": "worker and exit doubleSUCCESS/18policySHA18unique1516IDsfiniteK20/six80history/allstoredsample-nativeALLgroup-perseed-bootstrapCI/GT-freefullK20complete-link.10/.20/pooledallgroup5motion1%/temporalpulse/physical_population36 FITCAL originaltotal P and training80epoch traces/source484+all30298oldSHA/frozenweightsboolscalers exact. Savedmath not allmodels replay.",
+  "worker_status": "SUCCESS",
+  "exit_status": "SUCCESS",
+  "finished_at": "2026-10-05T19:59:21.969362+08:00",
+  "elapsed_seconds": 3820.690211,
+  "first_progress_checked_at": "2026-10-05T20:20:15.8592548+08:00",
+  "first_query_note": "Delayed first check triggered by human continue request; found complete. Not an ontime19:35 halfway running observation; no repeated check.",
+  "production_memory": {
+    "peak_RSS_GiB": 2.658721923828125,
+    "peak_private_GiB": 3.4631195068359375,
+    "min_physical_GiB": 16.09893798828125,
+    "min_commit_GiB": 15.410789489746094
+  },
+  "completion_review": "completion_review/REVIEW.json",
+  "result_analysis": "RESULT_ANALYSIS.md",
+  "completion_review_status": "PASS_SAVED_NUMPY_POPULATION_MAX0_36OUTPUT18MODEL484SOURCE30298OLD_BEFOREAFTER_NO_FORWARD",
+  "major_pass": false,
+  "gates_failed": [
+    "changeADE_FDE5pct",
+    "native_fresh_ADE_FDE_joint_CI",
+    "allseed_allgroup_motion1pct"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "LOCKED_BEFORE_OUTCOMES_EXPLORATORY_DIAGNOSTIC",
+  "FIT": 25912, "CAL": 2879, "DEV_access": false, "K": 20, "T": 12,
+  "quality": [[0.2,0.4],[0.3,0.5]],
+  "dedup": [[0.1,0.2],[0.05,0.1],[0.2,0.4]],
+  "batch_rows": 64, "iterations": 32, "starts": 2,
+  "grid_centers": [0.1,0.3,0.5,0.7,0.9],
+  "grid_spans": [0.08,0.2,0.4],
+  "include_fixed_profile": [0.5,0.275],
+  "parameter_margin": 0.000001, "witness_margin_m": 0.00002,
+  "lowerbound_margin_m": 0.00002,
+  "endpoint_squared_error_weight": 3.0,
+  "LM_initial_damping": 0.001,
+  "line_search": [1.0,0.5,0.25],
+  "superset_iterations": 64, "superset_step": 0.014,
+  "learned_replay": "mean_std seeds1,2,3 immutable constrained checkpoints",
+  "model_training": false, "model_optimizer": false,
+  "posthoc_numeric_curve_fitting": true,
+  "process_budget_GiB": 6, "system_reserve_GiB": 6,
+  "benchmark_FIT_rows": 256, "benchmark_indices": "linspace(0,25911,256) independent of GT outcomes",
+  "inference": "Successful construction is a witness. Budget exhausted/local failure is unresolved, never pulse-infeasibility. Necessary lowerbound certification applies only to wider per-step coordinate box. No SOTA, psychological intention, model improvement, causal mechanism or independent generalization claim."
+}

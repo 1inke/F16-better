@@ -1,0 +1,149 @@
+{
+  "seed": 2026,
+  "future_indices": [
+    53,
+    57,
+    61,
+    65,
+    69,
+    73,
+    77,
+    81,
+    85,
+    89,
+    93,
+    97
+  ],
+  "groups": {
+    "dense": {
+      "train": {
+        "scanned_scenarios": 43648,
+        "group": "dense",
+        "split": "train",
+        "num_targets": 8000,
+        "unique_scenarios": 5406,
+        "neighbor_cohorts": {
+          "S0": 6654,
+          "S2+": 179,
+          "S1": 1167
+        },
+        "mean_neighbor_count_6m": 0.730375,
+        "p90_neighbor_count_6m": 2.0,
+        "n9_truncation_rate": 0.002125,
+        "motion_cohorts": {
+          "near_stationary": 3004,
+          "accelerating": 5511,
+          "turning": 1689,
+          "high_curvature": 3899
+        }
+      },
+      "val": {
+        "scanned_scenarios": 11648,
+        "group": "dense",
+        "split": "val",
+        "num_targets": 2000,
+        "unique_scenarios": 1397,
+        "neighbor_cohorts": {
+          "S0": 1691,
+          "S1": 284,
+          "S2+": 25
+        },
+        "mean_neighbor_count_6m": 0.674,
+        "p90_neighbor_count_6m": 2.0,
+        "n9_truncation_rate": 0.001,
+        "motion_cohorts": {
+          "near_stationary": 742,
+          "accelerating": 1368,
+          "turning": 475,
+          "high_curvature": 997
+        }
+      }
+    },
+    "joint": {
+      "train": {
+        "scanned_scenarios": 105344,
+        "group": "joint",
+        "split": "train",
+        "num_targets": 200,
+        "unique_scenarios": 55,
+        "neighbor_cohorts": {
+          "S2": 177,
+          "S3": 23
+        },
+        "mean_neighbor_count_6m": 6.165,
+        "p90_neighbor_count_6m": 9.0,
+        "n9_truncation_rate": 0.115,
+        "motion_cohorts": {
+          "near_stationary": 126,
+          "accelerating": 130,
+          "turning": 45,
+          "high_curvature": 143
+        }
+      },
+      "val": {
+        "scanned_scenarios": 20864,
+        "group": "joint",
+        "split": "val",
+        "num_targets": 20,
+        "unique_scenarios": 6,
+        "neighbor_cohorts": {
+          "S2": 20
+        },
+        "mean_neighbor_count_6m": 5.75,
+        "p90_neighbor_count_6m": 6.100000000000001,
+        "n9_truncation_rate": 0.0,
+        "motion_cohorts": {
+          "near_stationary": 8,
+          "accelerating": 14,
+          "turning": 4,
+          "high_curvature": 11
+        }
+      }
+    },
+    "temporal": {
+      "train": {
+        "scanned_scenarios": 43648,
+        "group": "temporal",
+        "split": "train",
+        "num_targets": 8000,
+        "unique_scenarios": 5405,
+        "neighbor_cohorts": {
+          "S0": 7046,
+          "S1": 869,
+          "S2": 74,
+          "S3": 11
+        },
+        "mean_neighbor_count_6m": 0.53525,
+        "p90_neighbor_count_6m": 2.0,
+        "n9_truncation_rate": 0.001375,
+        "motion_cohorts": {
+          "near_stationary": 3002,
+          "accelerating": 6543,
+          "turning": 1688,
+          "high_curvature": 4008
+        }
+      },
+      "val": {
+        "scanned_scenarios": 11648,
+        "group": "temporal",
+        "split": "val",
+        "num_targets": 2000,
+        "unique_scenarios": 1391,
+        "neighbor_cohorts": {
+          "S1": 215,
+          "S0": 1781,
+          "S2": 4
+        },
+        "mean_neighbor_count_6m": 0.497,
+        "p90_neighbor_count_6m": 2.0,
+        "n9_truncation_rate": 0.0,
+        "motion_cohorts": {
+          "near_stationary": 740,
+          "accelerating": 1660,
+          "turning": 477,
+          "high_curvature": 1010
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3995 @@
+{
+  "status": "PASS_SAVED_OUTPUT_ARITHMETIC_ONLY",
+  "no_training": true,
+  "no_new_heldtest_array_read": true,
+  "n_dev": 1516,
+  "source_hashes_before_after_unchanged": {
+    "C:\\Users\\linke\\Documents\\New project\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\candidate_audit.npz": "c6cd350ea2c531080051f43a1c661ebdada7714778de33970ec7d3a4489c5b55",
+    "C:\\Users\\linke\\Documents\\New project\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\features\\dev.npz": "9ef4ac6375e9574a2eeda4aa4c356d15ecab42cd8a7c025805e44c72ebfe7f24",
+    "C:\\Users\\linke\\Documents\\New project\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\labels\\dev.npz": "995a86758390a4ff33b174943458b38de8608620dec4bc44ad05affc9f96366d",
+    "C:\\Users\\linke\\Documents\\New project\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\candidate_audit.json": "bcd5fcf72700a60f8424cb718043f34a0f9cc2d30d0683f203c967b8d88b9332",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\summary.json": "7eaec9e15e8983c8dc4a7a0c57ae12d8ff33ce32298eb8551098f0d657a492b6"
+  },
+  "thresholds": {
+    "0.2/0.4": {
+      "selected": {
+        "all": {
+          "n": 1516,
+          "failed_n": 1235,
+          "mean_ADE": 0.5424318914937524,
+          "mean_FDE": 1.1973156717376745,
+          "categories": {
+            "both_pass": {
+              "n": 281,
+              "pct_population": 18.535620052770447,
+              "pct_among_failed": null,
+              "mean_ADE": 0.055282139075170954,
+              "mean_FDE": 0.1072847628452255,
+              "contribution_ADE": 0.010246887256017835,
+              "contribution_FDE": 0.01988589601550684
+            },
+            "ADE_only_fail": {
+              "n": 33,
+              "pct_population": 2.1767810026385224,
+              "pct_among_failed": 2.672064777327935,
+              "mean_ADE": 0.26863951845602557,
+              "mean_FDE": 0.30394004228891747,
+              "contribution_ADE": 0.005847694003330371,
+              "contribution_FDE": 0.006616109099956647
+            },
+            "FDE_only_fail": {
+              "n": 49,
+              "pct_population": 3.232189973614776,
+              "pct_among_failed": 3.967611336032389,
+              "mean_ADE": 0.1664242493558903,
+              "mean_FDE": 0.514859277983101,
+              "contribution_ADE": 0.00537914790134474,
+              "contribution_FDE": 0.016641229961195218
+            },
+            "both_fail": {
+              "n": 1153,
+              "pct_population": 76.05540897097626,
+              "pct_among_failed": 93.36032388663968,
+              "mean_ADE": 0.6849718769270755,
+              "mean_FDE": 1.5175415559220293,
+              "contribution_ADE": 0.5209581623330595,
+              "contribution_FDE": 1.1541724366610158
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 464,
+          "mean_ADE": 0.928664225028522,
+          "mean_FDE": 2.134401888608424,
+          "categories": {
+            "both_pass": {
+              "n": 5,
+              "pct_population": 1.0660980810234542,
+              "pct_among_failed": null,
+              "mean_ADE": 0.13827801793813704,
+              "mean_FDE": 0.312760066986084,
+              "contribution_ADE": 0.0014741792957157468,
+              "contribution_FDE": 0.0033343290723463113
+            },
+            "ADE_only_fail": {
+              "n": 3,
+              "pct_population": 0.6396588486140725,
+              "pct_among_failed": 0.646551724137931,
+              "mean_ADE": 0.31109795967737836,
+              "mean_FDE": 0.3054547806580861,
+              "contribution_ADE": 0.0019899656269341897,
+              "contribution_FDE": 0.0019538685329941546
+            },
+            "FDE_only_fail": {
+              "n": 11,
+              "pct_population": 2.345415778251599,
+              "pct_among_failed": 2.3706896551724137,
+              "mean_ADE": 0.16100079837170514,
+              "mean_FDE": 0.6319466206160459,
+              "contribution_ADE": 0.003776138128121016,
+              "contribution_FDE": 0.014821775750056512
+            },
+            "both_fail": {
+              "n": 450,
+              "pct_population": 95.94882729211088,
+              "pct_among_failed": 96.98275862068965,
+              "mean_ADE": 0.9603285084168116,
+              "mean_FDE": 2.203562018341488,
+              "contribution_ADE": 0.921423941977751,
+              "contribution_FDE": 2.1142919152530273
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 727,
+          "mean_ADE": 0.36484916126495226,
+          "mean_FDE": 0.7638244517757558,
+          "categories": {
+            "both_pass": {
+              "n": 273,
+              "pct_population": 27.3,
+              "pct_among_failed": null,
+              "mean_ADE": 0.05333621215054786,
+              "mean_FDE": 0.10104937120528394,
+              "contribution_ADE": 0.014560785917099566,
+              "contribution_FDE": 0.027586478339042514
+            },
+            "ADE_only_fail": {
+              "n": 27,
+              "pct_population": 2.7,
+              "pct_among_failed": 3.7138927097661623,
+              "mean_ADE": 0.26058798531691235,
+              "mean_FDE": 0.3215078441081224,
+              "contribution_ADE": 0.007035875603556633,
+              "contribution_FDE": 0.008680711790919305
+            },
+            "FDE_only_fail": {
+              "n": 35,
+              "pct_population": 3.5,
+              "pct_among_failed": 4.814305364511692,
+              "mean_ADE": 0.16884954954896655,
+              "mean_FDE": 0.4811944365501404,
+              "contribution_ADE": 0.005909734234213829,
+              "contribution_FDE": 0.016841805279254912
+            },
+            "both_fail": {
+              "n": 665,
+              "pct_population": 66.5,
+              "pct_among_failed": 91.47180192572215,
+              "mean_ADE": 0.5072823541504996,
+              "mean_FDE": 1.0687450471677278,
+              "contribution_ADE": 0.33734276551008224,
+              "contribution_FDE": 0.710715456366539
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 44,
+          "mean_ADE": 0.46668222768509643,
+          "mean_FDE": 1.0696089536427182,
+          "categories": {
+            "both_pass": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": null,
+              "mean_ADE": 0.09403502444426219,
+              "mean_FDE": 0.3322465618451436,
+              "contribution_ADE": 0.006002235602825246,
+              "contribution_FDE": 0.021207227351817678
+            },
+            "ADE_only_fail": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": 6.818181818181818,
+              "mean_ADE": 0.2986448754866918,
+              "mean_FDE": 0.1443150875469049,
+              "contribution_ADE": 0.019062438860852668,
+              "contribution_FDE": 0.009211601332781162
+            },
+            "FDE_only_fail": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": 6.818181818181818,
+              "mean_ADE": 0.1580150673786799,
+              "mean_FDE": 0.4782955050468445,
+              "contribution_ADE": 0.010086068130554036,
+              "contribution_FDE": 0.03052950032213901
+            },
+            "both_fail": {
+              "n": 38,
+              "pct_population": 80.85106382978724,
+              "pct_among_failed": 86.36363636363636,
+              "mean_ADE": 0.5337363105071219,
+              "mean_FDE": 1.2475539304708179,
+              "contribution_ADE": 0.4315314850908645,
+              "contribution_FDE": 1.0086606246359804
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 7,
+          "mean_ADE": 0.035963137983344495,
+          "mean_FDE": 0.07196970408240676,
+          "categories": {
+            "both_pass": {
+              "n": 189,
+              "pct_population": 96.42857142857143,
+              "pct_among_failed": null,
+              "mean_ADE": 0.018897508490318186,
+              "mean_FDE": 0.03886207215556944,
+              "contribution_ADE": 0.01822259747280682,
+              "contribution_FDE": 0.03747414100715624
+            },
+            "ADE_only_fail": {
+              "n": 1,
+              "pct_population": 0.5102040816326531,
+              "pct_among_failed": 14.285714285714286,
+              "mean_ADE": 0.2236139178276062,
+              "mean_FDE": 0.39794430136680603,
+              "contribution_ADE": 0.0011408873358551338,
+              "contribution_FDE": 0.00203032806819799
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 6,
+              "pct_population": 3.061224489795918,
+              "pct_among_failed": 85.71428571428571,
+              "mean_ADE": 0.5422553370396296,
+              "mean_FDE": 1.0605310102303822,
+              "contribution_ADE": 0.016599653174682538,
+              "contribution_FDE": 0.03246523500705252
+            }
+          }
+        }
+      },
+      "independent_minima": {
+        "all": {
+          "n": 1516,
+          "failed_n": 727,
+          "mean_ADE": 0.2191542476482596,
+          "mean_FDE": 0.3997248127014432,
+          "categories": {
+            "both_pass": {
+              "n": 789,
+              "pct_population": 52.04485488126649,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10718818189793458,
+              "mean_FDE": 0.1880352010569994,
+              "contribution_ADE": 0.05578593371864801,
+              "contribution_FDE": 0.097862647515813
+            },
+            "ADE_only_fail": {
+              "n": 191,
+              "pct_population": 12.598944591029024,
+              "pct_among_failed": 26.27235213204952,
+              "mean_ADE": 0.26561521305775765,
+              "mean_FDE": 0.2814172123368654,
+              "contribution_ADE": 0.03346471351849058,
+              "contribution_FDE": 0.035455598651940166
+            },
+            "FDE_only_fail": {
+              "n": 77,
+              "pct_population": 5.079155672823219,
+              "pct_among_failed": 10.591471801925723,
+              "mean_ADE": 0.17084575347699127,
+              "mean_FDE": 0.47278110895838055,
+              "contribution_ADE": 0.008677521779504175,
+              "contribution_FDE": 0.02401328851569611
+            },
+            "both_fail": {
+              "n": 459,
+              "pct_population": 30.277044854881268,
+              "pct_among_failed": 63.13617606602476,
+              "mean_ADE": 0.4003894013192399,
+              "mean_FDE": 0.8005843343687993,
+              "contribution_ADE": 0.12122607863161683,
+              "contribution_FDE": 0.24239327801799396
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 364,
+          "mean_ADE": 0.3578321542471711,
+          "mean_FDE": 0.6714842423741052,
+          "categories": {
+            "both_pass": {
+              "n": 105,
+              "pct_population": 22.388059701492537,
+              "pct_among_failed": null,
+              "mean_ADE": 0.145516075193882,
+              "mean_FDE": 0.2554156312807685,
+              "contribution_ADE": 0.03257822578967507,
+              "contribution_FDE": 0.0571826040180825
+            },
+            "ADE_only_fail": {
+              "n": 71,
+              "pct_population": 15.138592750533048,
+              "pct_among_failed": 19.505494505494507,
+              "mean_ADE": 0.30027004299869,
+              "mean_FDE": 0.28098532588968816,
+              "contribution_ADE": 0.045456658961422154,
+              "contribution_FDE": 0.042537224175197993
+            },
+            "FDE_only_fail": {
+              "n": 26,
+              "pct_population": 5.543710021321962,
+              "pct_among_failed": 7.142857142857143,
+              "mean_ADE": 0.16825679345772818,
+              "mean_FDE": 0.4921084951895934,
+              "contribution_ADE": 0.00932766872047107,
+              "contribution_FDE": 0.027281067963602194
+            },
+            "both_fail": {
+              "n": 267,
+              "pct_population": 56.92963752665245,
+              "pct_among_failed": 73.35164835164835,
+              "mean_ADE": 0.47509454218635844,
+              "mean_FDE": 0.9564145669508516,
+              "contribution_ADE": 0.2704696007756028,
+              "contribution_FDE": 0.5444833462172226
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 344,
+          "mean_ADE": 0.1552127237995155,
+          "mean_FDE": 0.2737942439783074,
+          "categories": {
+            "both_pass": {
+              "n": 656,
+              "pct_population": 65.6,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10041331409025234,
+              "mean_FDE": 0.1747763720681311,
+              "contribution_ADE": 0.06587113404320553,
+              "contribution_FDE": 0.114653300076694
+            },
+            "ADE_only_fail": {
+              "n": 113,
+              "pct_population": 11.3,
+              "pct_among_failed": 32.848837209302324,
+              "mean_ADE": 0.24309466700110816,
+              "mean_FDE": 0.2834337426398971,
+              "contribution_ADE": 0.027469697371125222,
+              "contribution_FDE": 0.032028012918308375
+            },
+            "FDE_only_fail": {
+              "n": 45,
+              "pct_population": 4.5,
+              "pct_among_failed": 13.081395348837209,
+              "mean_ADE": 0.17247996280590694,
+              "mean_FDE": 0.46100252204471165,
+              "contribution_ADE": 0.007761598326265812,
+              "contribution_FDE": 0.020745113492012024
+            },
+            "both_fail": {
+              "n": 186,
+              "pct_population": 18.6,
+              "pct_among_failed": 54.06976744186046,
+              "mean_ADE": 0.2909155594565535,
+              "mean_FDE": 0.5718699865123277,
+              "contribution_ADE": 0.054110294058918956,
+              "contribution_FDE": 0.10636781749129295
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 19,
+          "mean_ADE": 0.195783729645166,
+          "mean_FDE": 0.36728643411968614,
+          "categories": {
+            "both_pass": {
+              "n": 28,
+              "pct_population": 59.57446808510638,
+              "pct_among_failed": null,
+              "mean_ADE": 0.12218405638954469,
+              "mean_FDE": 0.24599400974277938,
+              "contribution_ADE": 0.07279050167887768,
+              "contribution_FDE": 0.1465496228254856
+            },
+            "ADE_only_fail": {
+              "n": 7,
+              "pct_population": 14.893617021276595,
+              "pct_among_failed": 36.8421052631579,
+              "mean_ADE": 0.2776621814285006,
+              "mean_FDE": 0.2532452142664364,
+              "contribution_ADE": 0.04135394191488306,
+              "contribution_FDE": 0.037717372337554365
+            },
+            "FDE_only_fail": {
+              "n": 6,
+              "pct_population": 12.76595744680851,
+              "pct_among_failed": 31.57894736842105,
+              "mean_ADE": 0.16980801026026407,
+              "mean_FDE": 0.4773685038089752,
+              "contribution_ADE": 0.02167761833109754,
+              "contribution_FDE": 0.06094066006072024
+            },
+            "both_fail": {
+              "n": 6,
+              "pct_population": 12.76595744680851,
+              "pct_among_failed": 31.57894736842105,
+              "mean_ADE": 0.4696997304757436,
+              "mean_FDE": 0.9562837680180868,
+              "contribution_ADE": 0.05996166772030769,
+              "contribution_FDE": 0.12207877889592597
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 3,
+          "mean_ADE": 0.017580646368180762,
+          "mean_FDE": 0.034795094765954396,
+          "categories": {
+            "both_pass": {
+              "n": 193,
+              "pct_population": 98.46938775510205,
+              "pct_among_failed": null,
+              "mean_ADE": 0.014214868095119538,
+              "mean_FDE": 0.028490855237752577,
+              "contribution_ADE": 0.013997293583459544,
+              "contribution_FDE": 0.02805477071880738
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 1,
+              "pct_population": 0.5102040816326531,
+              "pct_among_failed": 33.333333333333336,
+              "mean_ADE": 0.16791820526123047,
+              "mean_FDE": 0.4122667908668518,
+              "contribution_ADE": 0.0008567255370470942,
+              "contribution_FDE": 0.002103401994218632
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 66.66666666666667,
+              "mean_ADE": 0.2672094702720642,
+              "mean_FDE": 0.4544183611869812,
+              "contribution_ADE": 0.0027266272476741244,
+              "contribution_FDE": 0.0046369220529283795
+            }
+          }
+        }
+      },
+      "minADE_same_trajectory": {
+        "all": {
+          "n": 1516,
+          "failed_n": 808,
+          "mean_ADE": 0.2191542476482596,
+          "mean_FDE": 0.46576239405281517,
+          "categories": {
+            "both_pass": {
+              "n": 708,
+              "pct_population": 46.70184696569921,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10088696009361074,
+              "mean_FDE": 0.1795470745060287,
+              "contribution_ADE": 0.04711607371126412,
+              "contribution_FDE": 0.08385179996719547
+            },
+            "ADE_only_fail": {
+              "n": 118,
+              "pct_population": 7.783641160949868,
+              "pct_among_failed": 14.603960396039604,
+              "mean_ADE": 0.257374541865567,
+              "mean_FDE": 0.2814661827475085,
+              "contribution_ADE": 0.020033110778454426,
+              "contribution_FDE": 0.02190831765448945
+            },
+            "FDE_only_fail": {
+              "n": 158,
+              "pct_population": 10.422163588390502,
+              "pct_among_failed": 19.554455445544555,
+              "mean_ADE": 0.16644703030963487,
+              "mean_FDE": 0.5015498107369942,
+              "contribution_ADE": 0.017347381786888067,
+              "contribution_FDE": 0.05227234175227248
+            },
+            "both_fail": {
+              "n": 532,
+              "pct_population": 35.09234828496042,
+              "pct_among_failed": 65.84158415841584,
+              "mean_ADE": 0.38372376872072544,
+              "mean_FDE": 0.8769146258893766,
+              "contribution_ADE": 0.134657681371653,
+              "contribution_FDE": 0.30772993467885773
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 388,
+          "mean_ADE": 0.3578321542471711,
+          "mean_FDE": 0.7946700219795712,
+          "categories": {
+            "both_pass": {
+              "n": 81,
+              "pct_population": 17.270788912579956,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14280430843800673,
+              "mean_FDE": 0.25830094550770744,
+              "contribution_ADE": 0.024663430668397754,
+              "contribution_FDE": 0.04461061105783433
+            },
+            "ADE_only_fail": {
+              "n": 40,
+              "pct_population": 8.528784648187633,
+              "pct_among_failed": 10.309278350515465,
+              "mean_ADE": 0.2951828893274069,
+              "mean_FDE": 0.28862328408285975,
+              "contribution_ADE": 0.02517551294903257,
+              "contribution_FDE": 0.024616058343953924
+            },
+            "FDE_only_fail": {
+              "n": 50,
+              "pct_population": 10.660980810234541,
+              "pct_among_failed": 12.88659793814433,
+              "mean_ADE": 0.1617343108355999,
+              "mean_FDE": 0.526574576497078,
+              "contribution_ADE": 0.01724246384174839,
+              "contribution_FDE": 0.05613801455192729
+            },
+            "both_fail": {
+              "n": 298,
+              "pct_population": 63.53944562899787,
+              "pct_among_failed": 76.80412371134021,
+              "mean_ADE": 0.45759094041465914,
+              "mean_FDE": 1.0533698105172022,
+              "contribution_ADE": 0.29075074678799234,
+              "contribution_FDE": 0.6693053380258556
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 395,
+          "mean_ADE": 0.1552127237995155,
+          "mean_FDE": 0.3110341107118584,
+          "categories": {
+            "both_pass": {
+              "n": 605,
+              "pct_population": 60.5,
+              "pct_among_failed": null,
+              "mean_ADE": 0.09494991917086165,
+              "mean_FDE": 0.16634989687475407,
+              "contribution_ADE": 0.0574447010983713,
+              "contribution_FDE": 0.1006416876092262
+            },
+            "ADE_only_fail": {
+              "n": 75,
+              "pct_population": 7.5,
+              "pct_among_failed": 18.9873417721519,
+              "mean_ADE": 0.23831999560197195,
+              "mean_FDE": 0.27850148690243565,
+              "contribution_ADE": 0.017873999670147897,
+              "contribution_FDE": 0.02088761151768267
+            },
+            "FDE_only_fail": {
+              "n": 96,
+              "pct_population": 9.6,
+              "pct_among_failed": 24.303797468354432,
+              "mean_ADE": 0.16862532574062547,
+              "mean_FDE": 0.4850961280365785,
+              "contribution_ADE": 0.016188031271100044,
+              "contribution_FDE": 0.046569228291511534
+            },
+            "both_fail": {
+              "n": 224,
+              "pct_population": 22.4,
+              "pct_among_failed": 56.70886075949367,
+              "mean_ADE": 0.2844017489281084,
+              "mean_FDE": 0.6381052825599909,
+              "contribution_ADE": 0.06370599175989627,
+              "contribution_FDE": 0.14293558329343795
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 25,
+          "mean_ADE": 0.195783729645166,
+          "mean_FDE": 0.47577528433596833,
+          "categories": {
+            "both_pass": {
+              "n": 22,
+              "pct_population": 46.808510638297875,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10982353020120751,
+              "mean_FDE": 0.25251202522353694,
+              "contribution_ADE": 0.051406758817586495,
+              "contribution_FDE": 0.11819711818974069
+            },
+            "ADE_only_fail": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": 12.0,
+              "mean_ADE": 0.22962689896424612,
+              "mean_FDE": 0.2601555610696475,
+              "contribution_ADE": 0.014657036104100817,
+              "contribution_FDE": 0.016605674110828562
+            },
+            "FDE_only_fail": {
+              "n": 12,
+              "pct_population": 25.53191489361702,
+              "pct_among_failed": 48.0,
+              "mean_ADE": 0.16865699800352255,
+              "mean_FDE": 0.5289094150066376,
+              "contribution_ADE": 0.043061361192388736,
+              "contribution_FDE": 0.13504070170382235
+            },
+            "both_fail": {
+              "n": 10,
+              "pct_population": 21.27659574468085,
+              "pct_among_failed": 40.0,
+              "mean_ADE": 0.40729529559612276,
+              "mean_FDE": 0.9678794145584106,
+              "contribution_ADE": 0.08665857353108994,
+              "contribution_FDE": 0.20593179033157674
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 3,
+          "mean_ADE": 0.017580646368180762,
+          "mean_FDE": 0.03503893075343958,
+          "categories": {
+            "both_pass": {
+              "n": 193,
+              "pct_population": 98.46938775510205,
+              "pct_among_failed": null,
+              "mean_ADE": 0.014214868095119538,
+              "mean_FDE": 0.02873848142193442,
+              "contribution_ADE": 0.013997293583459544,
+              "contribution_FDE": 0.028298606706292567
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 1,
+              "pct_population": 0.5102040816326531,
+              "pct_among_failed": 33.333333333333336,
+              "mean_ADE": 0.16791820526123047,
+              "mean_FDE": 0.4122667908668518,
+              "contribution_ADE": 0.0008567255370470942,
+              "contribution_FDE": 0.002103401994218632
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 66.66666666666667,
+              "mean_ADE": 0.2672094702720642,
+              "mean_FDE": 0.4544183611869812,
+              "contribution_ADE": 0.0027266272476741244,
+              "contribution_FDE": 0.0046369220529283795
+            }
+          }
+        }
+      },
+      "minFDE_same_trajectory": {
+        "all": {
+          "n": 1516,
+          "failed_n": 795,
+          "mean_ADE": 0.24211135598932856,
+          "mean_FDE": 0.3997248127014432,
+          "categories": {
+            "both_pass": {
+              "n": 721,
+              "pct_population": 47.559366754617415,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10346902973869823,
+              "mean_FDE": 0.17789050231679812,
+              "contribution_ADE": 0.04920921533087165,
+              "contribution_FDE": 0.08460359641847721
+            },
+            "ADE_only_fail": {
+              "n": 259,
+              "pct_population": 17.0844327176781,
+              "pct_among_failed": 32.57861635220126,
+              "mean_ADE": 0.28022911511793097,
+              "mean_FDE": 0.28514057536641835,
+              "contribution_ADE": 0.047875554627667634,
+              "contribution_FDE": 0.04871464974927595
+            },
+            "FDE_only_fail": {
+              "n": 58,
+              "pct_population": 3.825857519788918,
+              "pct_among_failed": 7.29559748427673,
+              "mean_ADE": 0.16917067650577117,
+              "mean_FDE": 0.4678066521883011,
+              "contribution_ADE": 0.006472229048373831,
+              "contribution_FDE": 0.017897615980818907
+            },
+            "both_fail": {
+              "n": 478,
+              "pct_population": 31.53034300791557,
+              "pct_among_failed": 60.125786163522015,
+              "mean_ADE": 0.43943181001117537,
+              "mean_FDE": 0.7881580942220767,
+              "contribution_ADE": 0.13855435698241547,
+              "contribution_FDE": 0.24850895055287117
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 382,
+          "mean_ADE": 0.4027903993755007,
+          "mean_FDE": 0.6714842423741052,
+          "categories": {
+            "both_pass": {
+              "n": 87,
+              "pct_population": 18.550106609808104,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14981249968210855,
+              "mean_FDE": 0.2494003033458159,
+              "contribution_ADE": 0.027790378405849563,
+              "contribution_FDE": 0.04626402215583365
+            },
+            "ADE_only_fail": {
+              "n": 89,
+              "pct_population": 18.976545842217483,
+              "pct_among_failed": 23.298429319371728,
+              "mean_ADE": 0.32429822542694176,
+              "mean_FDE": 0.281694079006321,
+              "contribution_ADE": 0.061540601413641406,
+              "contribution_FDE": 0.05345580603744684
+            },
+            "FDE_only_fail": {
+              "n": 21,
+              "pct_population": 4.477611940298507,
+              "pct_among_failed": 5.49738219895288,
+              "mean_ADE": 0.16676747160298483,
+              "mean_FDE": 0.48819961718150545,
+              "contribution_ADE": 0.007467200221029172,
+              "contribution_FDE": 0.021859684351410693
+            },
+            "both_fail": {
+              "n": 272,
+              "pct_population": 57.995735607675904,
+              "pct_among_failed": 71.20418848167539,
+              "mean_ADE": 0.5276115840739187,
+              "mean_FDE": 0.9481813172426294,
+              "contribution_ADE": 0.30599221933498055,
+              "contribution_FDE": 0.5499047298294141
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 388,
+          "mean_ADE": 0.16768747801939027,
+          "mean_FDE": 0.2737942439783074,
+          "categories": {
+            "both_pass": {
+              "n": 612,
+              "pct_population": 61.2,
+              "pct_among_failed": null,
+              "mean_ADE": 0.0965751571545767,
+              "mean_FDE": 0.16522352010299096,
+              "contribution_ADE": 0.05910399617860094,
+              "contribution_FDE": 0.10111679430303047
+            },
+            "ADE_only_fail": {
+              "n": 157,
+              "pct_population": 15.7,
+              "pct_among_failed": 40.4639175257732,
+              "mean_ADE": 0.2550133653696935,
+              "mean_FDE": 0.2902198642800758,
+              "contribution_ADE": 0.040037098363041874,
+              "contribution_FDE": 0.045564518691971895
+            },
+            "FDE_only_fail": {
+              "n": 34,
+              "pct_population": 3.4,
+              "pct_among_failed": 8.762886597938145,
+              "mean_ADE": 0.1712781561209875,
+              "mean_FDE": 0.45733271100941825,
+              "contribution_ADE": 0.005823457308113575,
+              "contribution_FDE": 0.01554931217432022
+            },
+            "both_fail": {
+              "n": 197,
+              "pct_population": 19.7,
+              "pct_among_failed": 50.77319587628866,
+              "mean_ADE": 0.3183904881707303,
+              "mean_FDE": 0.56631278583241,
+              "contribution_ADE": 0.06272292616963386,
+              "contribution_FDE": 0.11156361880898476
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 25,
+          "mean_ADE": 0.22222639049621337,
+          "mean_FDE": 0.36728643411968614,
+          "categories": {
+            "both_pass": {
+              "n": 22,
+              "pct_population": 46.808510638297875,
+              "pct_among_failed": null,
+              "mean_ADE": 0.11197667230259288,
+              "mean_FDE": 0.24747415801340883,
+              "contribution_ADE": 0.052414612567171136,
+              "contribution_FDE": 0.11583896758074456
+            },
+            "ADE_only_fail": {
+              "n": 13,
+              "pct_population": 27.659574468085108,
+              "pct_among_failed": 52.0,
+              "mean_ADE": 0.2830538761157256,
+              "mean_FDE": 0.2473936381821449,
+              "contribution_ADE": 0.07829149764903048,
+              "contribution_FDE": 0.0684280275822954
+            },
+            "FDE_only_fail": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": 12.0,
+              "mean_ADE": 0.16210834185282388,
+              "mean_FDE": 0.4437605639298757,
+              "contribution_ADE": 0.010347340969329185,
+              "contribution_FDE": 0.028325142378502702
+            },
+            "both_fail": {
+              "n": 9,
+              "pct_population": 19.148936170212767,
+              "pct_among_failed": 36.0,
+              "mean_ADE": 0.42390312751134235,
+              "mean_FDE": 0.8078479932414161,
+              "contribution_ADE": 0.08117293931068258,
+              "contribution_FDE": 0.15469429657814351
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 3,
+          "mean_ADE": 0.017751069114619523,
+          "mean_FDE": 0.034795094765954396,
+          "categories": {
+            "both_pass": {
+              "n": 193,
+              "pct_population": 98.46938775510205,
+              "pct_among_failed": null,
+              "mean_ADE": 0.014387939899793097,
+              "mean_FDE": 0.028490855237752577,
+              "contribution_ADE": 0.014167716329898305,
+              "contribution_FDE": 0.02805477071880738
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 1,
+              "pct_population": 0.5102040816326531,
+              "pct_among_failed": 33.333333333333336,
+              "mean_ADE": 0.16791820526123047,
+              "mean_FDE": 0.4122667908668518,
+              "contribution_ADE": 0.0008567255370470942,
+              "contribution_FDE": 0.002103401994218632
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 66.66666666666667,
+              "mean_ADE": 0.2672094702720642,
+              "mean_FDE": 0.4544183611869812,
+              "contribution_ADE": 0.0027266272476741244,
+              "contribution_FDE": 0.0046369220529283795
+            }
+          }
+        }
+      },
+      "samepath_coverage": {
+        "all": {
+          "n": 1516,
+          "samepath_good_n": 733,
+          "independent_both_pass_n": 789,
+          "split_candidate_tradeoff_n": 56,
+          "no_samepath_good_n": 783
+        },
+        "clear_event": {
+          "n": 469,
+          "samepath_good_n": 92,
+          "independent_both_pass_n": 105,
+          "split_candidate_tradeoff_n": 13,
+          "no_samepath_good_n": 377
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "samepath_good_n": 619,
+          "independent_both_pass_n": 656,
+          "split_candidate_tradeoff_n": 37,
+          "no_samepath_good_n": 381
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "samepath_good_n": 22,
+          "independent_both_pass_n": 28,
+          "split_candidate_tradeoff_n": 6,
+          "no_samepath_good_n": 25
+        },
+        "near_static": {
+          "n": 196,
+          "samepath_good_n": 193,
+          "independent_both_pass_n": 193,
+          "split_candidate_tradeoff_n": 0,
+          "no_samepath_good_n": 3
+        }
+      }
+    },
+    "0.3/0.5": {
+      "selected": {
+        "all": {
+          "n": 1516,
+          "failed_n": 1145,
+          "mean_ADE": 0.5424318914937524,
+          "mean_FDE": 1.1973156717376745,
+          "categories": {
+            "both_pass": {
+              "n": 371,
+              "pct_population": 24.472295514511874,
+              "pct_among_failed": null,
+              "mean_ADE": 0.09306246192242217,
+              "mean_FDE": 0.18065196580336382,
+              "contribution_ADE": 0.02277452069473524,
+              "contribution_FDE": 0.044209682924174126
+            },
+            "ADE_only_fail": {
+              "n": 25,
+              "pct_population": 1.6490765171503958,
+              "pct_among_failed": 2.183406113537118,
+              "mean_ADE": 0.36101011753082274,
+              "mean_FDE": 0.4038538283109665,
+              "contribution_ADE": 0.0059533330727378425,
+              "contribution_FDE": 0.006659858646289025
+            },
+            "FDE_only_fail": {
+              "n": 137,
+              "pct_population": 9.036939313984169,
+              "pct_among_failed": 11.965065502183407,
+              "mean_ADE": 0.24253248064404856,
+              "mean_FDE": 0.6512905011211869,
+              "contribution_ADE": 0.02191751309250307,
+              "contribution_FDE": 0.05885672734406504
+            },
+            "both_fail": {
+              "n": 983,
+              "pct_population": 64.84168865435356,
+              "pct_among_failed": 85.85152838427948,
+              "mean_ADE": 0.7584418833619581,
+              "mean_FDE": 1.6772996283620445,
+              "contribution_ADE": 0.49178652463377626,
+              "contribution_FDE": 1.0875894028231463
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 460,
+          "mean_ADE": 0.928664225028522,
+          "mean_FDE": 2.134401888608424,
+          "categories": {
+            "both_pass": {
+              "n": 9,
+              "pct_population": 1.9189765458422174,
+              "pct_among_failed": null,
+              "mean_ADE": 0.17032077494594786,
+              "mean_FDE": 0.36547838648160297,
+              "contribution_ADE": 0.0032684157239094474,
+              "contribution_FDE": 0.007013444516704535
+            },
+            "ADE_only_fail": {
+              "n": 5,
+              "pct_population": 1.0660980810234542,
+              "pct_among_failed": 1.0869565217391304,
+              "mean_ADE": 0.33666679859161375,
+              "mean_FDE": 0.37542938590049746,
+              "contribution_ADE": 0.0035891982792282916,
+              "contribution_FDE": 0.0040024454786833415
+            },
+            "FDE_only_fail": {
+              "n": 30,
+              "pct_population": 6.3965884861407245,
+              "pct_among_failed": 6.521739130434782,
+              "mean_ADE": 0.2232449101905028,
+              "mean_FDE": 0.7564777274926503,
+              "contribution_ADE": 0.014280058221140904,
+              "contribution_FDE": 0.04838876721701388
+            },
+            "both_fail": {
+              "n": 425,
+              "pct_population": 90.6183368869936,
+              "pct_among_failed": 92.3913043478261,
+              "mean_ADE": 1.001482242976918,
+              "mean_FDE": 2.289820474175846,
+              "contribution_ADE": 0.9075265528042433,
+              "contribution_FDE": 2.0749972313960225
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 646,
+          "mean_ADE": 0.36484916126495226,
+          "mean_FDE": 0.7638244517757558,
+          "categories": {
+            "both_pass": {
+              "n": 354,
+              "pct_population": 35.4,
+              "pct_among_failed": null,
+              "mean_ADE": 0.08971459481018032,
+              "mean_FDE": 0.17277424652418805,
+              "contribution_ADE": 0.03175896656280384,
+              "contribution_FDE": 0.06116208326956257
+            },
+            "ADE_only_fail": {
+              "n": 19,
+              "pct_population": 1.9,
+              "pct_among_failed": 2.9411764705882355,
+              "mean_ADE": 0.3626261431919901,
+              "mean_FDE": 0.4229434932533063,
+              "contribution_ADE": 0.006889896720647812,
+              "contribution_FDE": 0.00803592637181282
+            },
+            "FDE_only_fail": {
+              "n": 97,
+              "pct_population": 9.7,
+              "pct_among_failed": 15.01547987616099,
+              "mean_ADE": 0.24818017740839535,
+              "mean_FDE": 0.6183982325583389,
+              "contribution_ADE": 0.02407347720861435,
+              "contribution_FDE": 0.05998462855815887
+            },
+            "both_fail": {
+              "n": 530,
+              "pct_population": 53.0,
+              "pct_among_failed": 82.04334365325077,
+              "mean_ADE": 0.5700506052318609,
+              "mean_FDE": 1.1974373841060781,
+              "contribution_ADE": 0.3021268207728863,
+              "contribution_FDE": 0.6346418135762215
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 39,
+          "mean_ADE": 0.46668222768509643,
+          "mean_FDE": 1.0696089536427182,
+          "categories": {
+            "both_pass": {
+              "n": 8,
+              "pct_population": 17.02127659574468,
+              "pct_among_failed": null,
+              "mean_ADE": 0.15428997948765755,
+              "mean_FDE": 0.321311320643872,
+              "contribution_ADE": 0.02626212416811192,
+              "contribution_FDE": 0.054691288620233536
+            },
+            "ADE_only_fail": {
+              "n": 1,
+              "pct_population": 2.127659574468085,
+              "pct_among_failed": 2.5641025641025643,
+              "mean_ADE": 0.4520222246646881,
+              "mean_FDE": 0.18327240645885468,
+              "contribution_ADE": 0.009617494141801875,
+              "contribution_FDE": 0.0038994129033798866
+            },
+            "FDE_only_fail": {
+              "n": 10,
+              "pct_population": 21.27659574468085,
+              "pct_among_failed": 25.641025641025642,
+              "mean_ADE": 0.245612533390522,
+              "mean_FDE": 0.6547838270664215,
+              "contribution_ADE": 0.05225798582777064,
+              "contribution_FDE": 0.13931570788647266
+            },
+            "both_fail": {
+              "n": 28,
+              "pct_population": 59.57446808510638,
+              "pct_among_failed": 71.7948717948718,
+              "mean_ADE": 0.6354141895260129,
+              "mean_FDE": 1.4632149849619185,
+              "contribution_ADE": 0.378544623547412,
+              "contribution_FDE": 0.8717025442326323
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 6,
+          "mean_ADE": 0.035963137983344495,
+          "mean_FDE": 0.07196970408240676,
+          "categories": {
+            "both_pass": {
+              "n": 190,
+              "pct_population": 96.93877551020408,
+              "pct_among_failed": null,
+              "mean_ADE": 0.019974963276303912,
+              "mean_FDE": 0.04075197862510226,
+              "contribution_ADE": 0.019363484808661957,
+              "contribution_FDE": 0.03950446907535424
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 6,
+              "pct_population": 3.061224489795918,
+              "pct_among_failed": 100.0,
+              "mean_ADE": 0.5422553370396296,
+              "mean_FDE": 1.0605310102303822,
+              "contribution_ADE": 0.016599653174682538,
+              "contribution_FDE": 0.03246523500705252
+            }
+          }
+        }
+      },
+      "independent_minima": {
+        "all": {
+          "n": 1516,
+          "failed_n": 416,
+          "mean_ADE": 0.2191542476482596,
+          "mean_FDE": 0.3997248127014432,
+          "categories": {
+            "both_pass": {
+              "n": 1100,
+              "pct_population": 72.55936675461741,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14047809991350566,
+              "mean_FDE": 0.2389258114671578,
+              "contribution_ADE": 0.10193001972615846,
+              "contribution_FDE": 0.17336305581390077
+            },
+            "ADE_only_fail": {
+              "n": 69,
+              "pct_population": 4.5514511873350925,
+              "pct_among_failed": 16.58653846153846,
+              "mean_ADE": 0.37975101151328156,
+              "mean_FDE": 0.3428973362011754,
+              "contribution_ADE": 0.017284181922438278,
+              "contribution_FDE": 0.015606804879868801
+            },
+            "FDE_only_fail": {
+              "n": 135,
+              "pct_population": 8.905013192612138,
+              "pct_among_failed": 32.45192307692308,
+              "mean_ADE": 0.2411741002842232,
+              "mean_FDE": 0.5910929940364978,
+              "contribution_ADE": 0.021476585447473703,
+              "contribution_FDE": 0.05263690909955621
+            },
+            "both_fail": {
+              "n": 212,
+              "pct_population": 13.984168865435356,
+              "pct_among_failed": 50.96153846153846,
+              "mean_ADE": 0.5610877650807489,
+              "mean_FDE": 1.1306931747580475,
+              "contribution_ADE": 0.07846346055218915,
+              "contribution_FDE": 0.15811804290811746
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 270,
+          "mean_ADE": 0.3578321542471711,
+          "mean_FDE": 0.6714842423741052,
+          "categories": {
+            "both_pass": {
+              "n": 199,
+              "pct_population": 42.430703624733475,
+              "pct_among_failed": null,
+              "mean_ADE": 0.18589223004016445,
+              "mean_FDE": 0.3108276999532128,
+              "contribution_ADE": 0.07887538118974995,
+              "contribution_FDE": 0.13188638015072357
+            },
+            "ADE_only_fail": {
+              "n": 46,
+              "pct_population": 9.808102345415778,
+              "pct_among_failed": 17.037037037037038,
+              "mean_ADE": 0.39706727538419806,
+              "mean_FDE": 0.34857600579119247,
+              "contribution_ADE": 0.038944764749836054,
+              "contribution_FDE": 0.034188691399562585
+            },
+            "FDE_only_fail": {
+              "n": 58,
+              "pct_population": 12.366737739872068,
+              "pct_among_failed": 21.48148148148148,
+              "mean_ADE": 0.24584378199330692,
+              "mean_FDE": 0.6241874119331097,
+              "contribution_ADE": 0.0304028557688951,
+              "contribution_FDE": 0.0771916202390626
+            },
+            "both_fail": {
+              "n": 166,
+              "pct_population": 35.39445628997868,
+              "pct_among_failed": 61.48148148148148,
+              "mean_ADE": 0.5922089912087084,
+              "mean_FDE": 1.2098435615918723,
+              "contribution_ADE": 0.20960915253868997,
+              "contribution_FDE": 0.42821755058475647
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 136,
+          "mean_ADE": 0.1552127237995155,
+          "mean_FDE": 0.2737942439783074,
+          "categories": {
+            "both_pass": {
+              "n": 864,
+              "pct_population": 86.4,
+              "pct_among_failed": null,
+              "mean_ADE": 0.12994843387719743,
+              "mean_FDE": 0.2208149326895889,
+              "contribution_ADE": 0.11227544686989858,
+              "contribution_FDE": 0.19078410184380482
+            },
+            "ADE_only_fail": {
+              "n": 20,
+              "pct_population": 2.0,
+              "pct_among_failed": 14.705882352941176,
+              "mean_ADE": 0.34876750111579896,
+              "mean_FDE": 0.34620257848873737,
+              "contribution_ADE": 0.006975350022315979,
+              "contribution_FDE": 0.006924051569774747
+            },
+            "FDE_only_fail": {
+              "n": 73,
+              "pct_population": 7.3,
+              "pct_among_failed": 53.6764705882353,
+              "mean_ADE": 0.23859363549376186,
+              "mean_FDE": 0.5659514747253837,
+              "contribution_ADE": 0.017417335391044616,
+              "contribution_FDE": 0.041314457654953
+            },
+            "both_fail": {
+              "n": 43,
+              "pct_population": 4.3,
+              "pct_among_failed": 31.61764705882353,
+              "mean_ADE": 0.4312695701454961,
+              "mean_FDE": 0.8086426258087158,
+              "contribution_ADE": 0.018544591516256332,
+              "contribution_FDE": 0.03477163290977478
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 10,
+          "mean_ADE": 0.195783729645166,
+          "mean_FDE": 0.36728643411968614,
+          "categories": {
+            "both_pass": {
+              "n": 37,
+              "pct_population": 78.72340425531915,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14210565559364655,
+              "mean_FDE": 0.27512374268593015,
+              "contribution_ADE": 0.11187040972265791,
+              "contribution_FDE": 0.21658677615700883
+            },
+            "ADE_only_fail": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": 30.0,
+              "mean_ADE": 0.32079170147577923,
+              "mean_FDE": 0.23378945390383402,
+              "contribution_ADE": 0.02047606605164548,
+              "contribution_FDE": 0.014922731100244726
+            },
+            "FDE_only_fail": {
+              "n": 4,
+              "pct_population": 8.51063829787234,
+              "pct_among_failed": 40.0,
+              "mean_ADE": 0.22055719792842865,
+              "mean_FDE": 0.5700566619634628,
+              "contribution_ADE": 0.01877082535561095,
+              "contribution_FDE": 0.04851546059263513
+            },
+            "both_fail": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": 30.0,
+              "mean_ADE": 0.6997740467389425,
+              "mean_FDE": 1.3670963048934937,
+              "contribution_ADE": 0.04466642851525165,
+              "contribution_FDE": 0.08726146626979747
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 0,
+          "mean_ADE": 0.017580646368180762,
+          "mean_FDE": 0.034795094765954396,
+          "categories": {
+            "both_pass": {
+              "n": 196,
+              "pct_population": 100.0,
+              "pct_among_failed": null,
+              "mean_ADE": 0.017580646368180762,
+              "mean_FDE": 0.034795094765954396,
+              "contribution_ADE": 0.017580646368180762,
+              "contribution_FDE": 0.034795094765954396
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            }
+          }
+        }
+      },
+      "minADE_same_trajectory": {
+        "all": {
+          "n": 1516,
+          "failed_n": 527,
+          "mean_ADE": 0.2191542476482596,
+          "mean_FDE": 0.46576239405281517,
+          "categories": {
+            "both_pass": {
+              "n": 989,
+              "pct_population": 65.23746701846966,
+              "pct_among_failed": null,
+              "mean_ADE": 0.13191170307607047,
+              "mean_FDE": 0.23976534205562194,
+              "contribution_ADE": 0.08605585378775309,
+              "contribution_FDE": 0.15641683594525732
+            },
+            "ADE_only_fail": {
+              "n": 34,
+              "pct_population": 2.242744063324538,
+              "pct_among_failed": 6.451612903225806,
+              "mean_ADE": 0.37225961071603436,
+              "mean_FDE": 0.3435752522748183,
+              "contribution_ADE": 0.008348830319488897,
+              "contribution_FDE": 0.007705513573445792
+            },
+            "FDE_only_fail": {
+              "n": 246,
+              "pct_population": 16.226912928759894,
+              "pct_among_failed": 46.67931688804554,
+              "mean_ADE": 0.23017780122354747,
+              "mean_FDE": 0.6416680403356629,
+              "contribution_ADE": 0.03735075138587907,
+              "contribution_FDE": 0.10412291419694795
+            },
+            "both_fail": {
+              "n": 247,
+              "pct_population": 16.29287598944591,
+              "pct_among_failed": 46.86907020872865,
+              "mean_ADE": 0.5364234786525912,
+              "mean_FDE": 1.212291374862918,
+              "contribution_ADE": 0.08739881215513853,
+              "contribution_FDE": 0.1975171303371641
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 309,
+          "mean_ADE": 0.3578321542471711,
+          "mean_FDE": 0.7946700219795712,
+          "categories": {
+            "both_pass": {
+              "n": 160,
+              "pct_population": 34.11513859275053,
+              "pct_among_failed": null,
+              "mean_ADE": 0.18028391879051925,
+              "mean_FDE": 0.3300294325570576,
+              "contribution_ADE": 0.06150410875582746,
+              "contribution_FDE": 0.11258999831370835
+            },
+            "ADE_only_fail": {
+              "n": 23,
+              "pct_population": 4.904051172707889,
+              "pct_among_failed": 7.44336569579288,
+              "mean_ADE": 0.3850707852322122,
+              "mean_FDE": 0.3438151367008686,
+              "contribution_ADE": 0.01888406835893578,
+              "contribution_FDE": 0.01686087024332618
+            },
+            "FDE_only_fail": {
+              "n": 97,
+              "pct_population": 20.68230277185501,
+              "pct_among_failed": 31.3915857605178,
+              "mean_ADE": 0.230990372444551,
+              "mean_FDE": 0.6748175971286813,
+              "contribution_ADE": 0.04777412820281759,
+              "contribution_FDE": 0.13956781859591064
+            },
+            "both_fail": {
+              "n": 189,
+              "pct_population": 40.298507462686565,
+              "pct_among_failed": 61.16504854368932,
+              "mean_ADE": 0.5699214769734277,
+              "mean_FDE": 1.304394053088294,
+              "contribution_ADE": 0.22966984892959025,
+              "contribution_FDE": 0.525651334826626
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 202,
+          "mean_ADE": 0.1552127237995155,
+          "mean_FDE": 0.3110341107118584,
+          "categories": {
+            "both_pass": {
+              "n": 798,
+              "pct_population": 79.8,
+              "pct_among_failed": null,
+              "mean_ADE": 0.1222695490085102,
+              "mean_FDE": 0.2197203540562621,
+              "contribution_ADE": 0.09757110010879114,
+              "contribution_FDE": 0.17533684253689716
+            },
+            "ADE_only_fail": {
+              "n": 11,
+              "pct_population": 1.1,
+              "pct_among_failed": 5.445544554455446,
+              "mean_ADE": 0.34547260945493524,
+              "mean_FDE": 0.34307367574762215,
+              "contribution_ADE": 0.003800198704004288,
+              "contribution_FDE": 0.003773810433223844
+            },
+            "FDE_only_fail": {
+              "n": 139,
+              "pct_population": 13.9,
+              "pct_among_failed": 68.81188118811882,
+              "mean_ADE": 0.2310912385046911,
+              "mean_FDE": 0.6189456401969031,
+              "contribution_ADE": 0.03212168215215206,
+              "contribution_FDE": 0.08603344398736953
+            },
+            "both_fail": {
+              "n": 52,
+              "pct_population": 5.2,
+              "pct_among_failed": 25.742574257425744,
+              "mean_ADE": 0.4176873622032312,
+              "mean_FDE": 0.8825002645070736,
+              "contribution_ADE": 0.021719742834568023,
+              "contribution_FDE": 0.045890013754367825
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 16,
+          "mean_ADE": 0.195783729645166,
+          "mean_FDE": 0.47577528433596833,
+          "categories": {
+            "both_pass": {
+              "n": 31,
+              "pct_population": 65.95744680851064,
+              "pct_among_failed": null,
+              "mean_ADE": 0.1304563621599828,
+              "mean_FDE": 0.28988295312850704,
+              "contribution_ADE": 0.08604568567998866,
+              "contribution_FDE": 0.19119939461667487
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 10,
+              "pct_population": 21.27659574468085,
+              "pct_among_failed": 62.5,
+              "mean_ADE": 0.20959908217191697,
+              "mean_FDE": 0.6359587013721466,
+              "contribution_ADE": 0.044595549398280206,
+              "contribution_FDE": 0.13531036199407376
+            },
+            "both_fail": {
+              "n": 6,
+              "pct_population": 12.76595744680851,
+              "pct_among_failed": 37.5,
+              "mean_ADE": 0.5102828741073608,
+              "mean_FDE": 1.1692466338475545,
+              "contribution_ADE": 0.06514249456689712,
+              "contribution_FDE": 0.14926552772521973
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 0,
+          "mean_ADE": 0.017580646368180762,
+          "mean_FDE": 0.03503893075343958,
+          "categories": {
+            "both_pass": {
+              "n": 196,
+              "pct_population": 100.0,
+              "pct_among_failed": null,
+              "mean_ADE": 0.017580646368180762,
+              "mean_FDE": 0.03503893075343958,
+              "contribution_ADE": 0.017580646368180762,
+              "contribution_FDE": 0.03503893075343958
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            }
+          }
+        }
+      },
+      "minFDE_same_trajectory": {
+        "all": {
+          "n": 1516,
+          "failed_n": 464,
+          "mean_ADE": 0.24211135598932856,
+          "mean_FDE": 0.3997248127014432,
+          "categories": {
+            "both_pass": {
+              "n": 1052,
+              "pct_population": 69.39313984168865,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14371654089449945,
+              "mean_FDE": 0.23284826112710033,
+              "contribution_ADE": 0.09972942019855766,
+              "contribution_FDE": 0.16158071946286912
+            },
+            "ADE_only_fail": {
+              "n": 117,
+              "pct_population": 7.717678100263853,
+              "pct_among_failed": 25.21551724137931,
+              "mean_ADE": 0.4010426167748932,
+              "mean_FDE": 0.3548883598807276,
+              "contribution_ADE": 0.03095117820756102,
+              "contribution_FDE": 0.027389141230900478
+            },
+            "FDE_only_fail": {
+              "n": 95,
+              "pct_population": 6.266490765171504,
+              "pct_among_failed": 20.474137931034484,
+              "mean_ADE": 0.24368291199207306,
+              "mean_FDE": 0.5900026082992553,
+              "contribution_ADE": 0.015270367176284261,
+              "contribution_FDE": 0.03697245896334384
+            },
+            "both_fail": {
+              "n": 252,
+              "pct_population": 16.622691292875988,
+              "pct_among_failed": 54.310344827586206,
+              "mean_ADE": 0.5784886978448384,
+              "mean_FDE": 1.0454534105365239,
+              "contribution_ADE": 0.09616039040692563,
+              "contribution_FDE": 0.17378249304432983
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 292,
+          "mean_ADE": 0.4027903993755007,
+          "mean_FDE": 0.6714842423741052,
+          "categories": {
+            "both_pass": {
+              "n": 177,
+              "pct_population": 37.73987206823028,
+              "pct_among_failed": null,
+              "mean_ADE": 0.1926226572128339,
+              "mean_FDE": 0.3069229774113934,
+              "contribution_ADE": 0.07269554440654925,
+              "contribution_FDE": 0.11583233902306318
+            },
+            "ADE_only_fail": {
+              "n": 68,
+              "pct_population": 14.498933901918976,
+              "pct_among_failed": 23.28767123287671,
+              "mean_ADE": 0.43025778365485806,
+              "mean_FDE": 0.34652708169511137,
+              "contribution_ADE": 0.062382791659979425,
+              "contribution_FDE": 0.05024273252722297
+            },
+            "FDE_only_fail": {
+              "n": 40,
+              "pct_population": 8.528784648187633,
+              "pct_among_failed": 13.698630136986301,
+              "mean_ADE": 0.24668172597885132,
+              "mean_FDE": 0.6260072812438011,
+              "contribution_ADE": 0.021038953175168556,
+              "contribution_FDE": 0.053390812899258094
+            },
+            "both_fail": {
+              "n": 184,
+              "pct_population": 39.23240938166311,
+              "pct_among_failed": 63.013698630136986,
+              "mean_ADE": 0.6287483078954013,
+              "mean_FDE": 1.1521554884055387,
+              "contribution_ADE": 0.24667311013380347,
+              "contribution_FDE": 0.452018357924561
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 161,
+          "mean_ADE": 0.16768747801939027,
+          "mean_FDE": 0.2737942439783074,
+          "categories": {
+            "both_pass": {
+              "n": 839,
+              "pct_population": 83.9,
+              "pct_among_failed": null,
+              "mean_ADE": 0.13283945717576878,
+              "mean_FDE": 0.21542587208517058,
+              "contribution_ADE": 0.11145230457047,
+              "contribution_FDE": 0.18074230667945812
+            },
+            "ADE_only_fail": {
+              "n": 45,
+              "pct_population": 4.5,
+              "pct_among_failed": 27.950310559006212,
+              "mean_ADE": 0.35937136544121634,
+              "mean_FDE": 0.37701881631380985,
+              "contribution_ADE": 0.016171711444854735,
+              "contribution_FDE": 0.01696584673412144
+            },
+            "FDE_only_fail": {
+              "n": 52,
+              "pct_population": 5.2,
+              "pct_among_failed": 32.298136645962735,
+              "mean_ADE": 0.24161021841260102,
+              "mean_FDE": 0.5648758239470996,
+              "contribution_ADE": 0.012563731357455253,
+              "contribution_FDE": 0.029373542845249175
+            },
+            "both_fail": {
+              "n": 64,
+              "pct_population": 6.4,
+              "pct_among_failed": 39.75155279503105,
+              "mean_ADE": 0.4296832913532853,
+              "mean_FDE": 0.7298835581168532,
+              "contribution_ADE": 0.02749973064661026,
+              "contribution_FDE": 0.04671254771947861
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 11,
+          "mean_ADE": 0.22222639049621337,
+          "mean_FDE": 0.36728643411968614,
+          "categories": {
+            "both_pass": {
+              "n": 36,
+              "pct_population": 76.59574468085107,
+              "pct_among_failed": null,
+              "mean_ADE": 0.15675794788532788,
+              "mean_FDE": 0.27468602845652235,
+              "contribution_ADE": 0.1200699175291873,
+              "contribution_FDE": 0.21039780903052777
+            },
+            "ADE_only_fail": {
+              "n": 4,
+              "pct_population": 8.51063829787234,
+              "pct_among_failed": 36.36363636363637,
+              "mean_ADE": 0.373186357319355,
+              "mean_FDE": 0.24806245416402817,
+              "contribution_ADE": 0.03176054104845574,
+              "contribution_FDE": 0.021111698226725803
+            },
+            "FDE_only_fail": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": 27.272727272727273,
+              "mean_ADE": 0.23962541421254477,
+              "mean_FDE": 0.5454712311426798,
+              "contribution_ADE": 0.015295239205056049,
+              "contribution_FDE": 0.0348173126261285
+            },
+            "both_fail": {
+              "n": 4,
+              "pct_population": 8.51063829787234,
+              "pct_among_failed": 36.36363636363637,
+              "mean_ADE": 0.6474331393837929,
+              "mean_FDE": 1.1862754672765732,
+              "contribution_ADE": 0.05510069271351429,
+              "contribution_FDE": 0.1009596142363041
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 0,
+          "mean_ADE": 0.017751069114619523,
+          "mean_FDE": 0.034795094765954396,
+          "categories": {
+            "both_pass": {
+              "n": 196,
+              "pct_population": 100.0,
+              "pct_among_failed": null,
+              "mean_ADE": 0.017751069114619523,
+              "mean_FDE": 0.034795094765954396,
+              "contribution_ADE": 0.017751069114619523,
+              "contribution_FDE": 0.034795094765954396
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            }
+          }
+        }
+      },
+      "samepath_coverage": {
+        "all": {
+          "n": 1516,
+          "samepath_good_n": 1063,
+          "independent_both_pass_n": 1100,
+          "split_candidate_tradeoff_n": 37,
+          "no_samepath_good_n": 453
+        },
+        "clear_event": {
+          "n": 469,
+          "samepath_good_n": 184,
+          "independent_both_pass_n": 199,
+          "split_candidate_tradeoff_n": 15,
+          "no_samepath_good_n": 285
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "samepath_good_n": 843,
+          "independent_both_pass_n": 864,
+          "split_candidate_tradeoff_n": 21,
+          "no_samepath_good_n": 157
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "samepath_good_n": 36,
+          "independent_both_pass_n": 37,
+          "split_candidate_tradeoff_n": 1,
+          "no_samepath_good_n": 11
+        },
+        "near_static": {
+          "n": 196,
+          "samepath_good_n": 196,
+          "independent_both_pass_n": 196,
+          "split_candidate_tradeoff_n": 0,
+          "no_samepath_good_n": 0
+        }
+      }
+    },
+    "0.5/1": {
+      "selected": {
+        "all": {
+          "n": 1516,
+          "failed_n": 740,
+          "mean_ADE": 0.5424318914937524,
+          "mean_FDE": 1.1973156717376745,
+          "categories": {
+            "both_pass": {
+              "n": 776,
+              "pct_population": 51.187335092348285,
+              "pct_among_failed": null,
+              "mean_ADE": 0.22003482435481891,
+              "mean_FDE": 0.4675145904820403,
+              "contribution_ADE": 0.11262996286236114,
+              "contribution_FDE": 0.23930826003566177
+            },
+            "ADE_only_fail": {
+              "n": 22,
+              "pct_population": 1.4511873350923483,
+              "pct_among_failed": 2.972972972972973,
+              "mean_ADE": 0.5659866007891569,
+              "mean_FDE": 0.8938977447423068,
+              "contribution_ADE": 0.008213525868971934,
+              "contribution_FDE": 0.012972130860376484
+            },
+            "FDE_only_fail": {
+              "n": 92,
+              "pct_population": 6.068601583113456,
+              "pct_among_failed": 12.432432432432432,
+              "mean_ADE": 0.42669862282017,
+              "mean_FDE": 1.1381536333457283,
+              "contribution_ADE": 0.025894639379588153,
+              "contribution_FDE": 0.0690700094114822
+            },
+            "both_fail": {
+              "n": 626,
+              "pct_population": 41.29287598944591,
+              "pct_among_failed": 84.5945945945946,
+              "mean_ADE": 0.9582615739430863,
+              "mean_FDE": 2.121347206850021,
+              "contribution_ADE": 0.3956937633828312,
+              "contribution_FDE": 0.875965271430154
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 401,
+          "mean_ADE": 0.928664225028522,
+          "mean_FDE": 2.134401888608424,
+          "categories": {
+            "both_pass": {
+              "n": 68,
+              "pct_population": 14.498933901918976,
+              "pct_among_failed": null,
+              "mean_ADE": 0.2801181715639198,
+              "mean_FDE": 0.6708733676110997,
+              "contribution_ADE": 0.040614148542316736,
+              "contribution_FDE": 0.09726948613551126
+            },
+            "ADE_only_fail": {
+              "n": 6,
+              "pct_population": 1.279317697228145,
+              "pct_among_failed": 1.4962593516209477,
+              "mean_ADE": 0.5851231118043264,
+              "mean_FDE": 0.8585936625798544,
+              "contribution_ADE": 0.007485583519884772,
+              "contribution_FDE": 0.010984140672663381
+            },
+            "FDE_only_fail": {
+              "n": 40,
+              "pct_population": 8.528784648187633,
+              "pct_among_failed": 9.975062344139651,
+              "mean_ADE": 0.40642098858952524,
+              "mean_FDE": 1.2022342026233672,
+              "contribution_ADE": 0.03466277088183584,
+              "contribution_FDE": 0.10253596610860276
+            },
+            "both_fail": {
+              "n": 355,
+              "pct_population": 75.69296375266525,
+              "pct_among_failed": 88.5286783042394,
+              "mean_ADE": 1.11754340185246,
+              "mean_FDE": 2.5413356807869927,
+              "contribution_ADE": 0.8459017220844847,
+              "contribution_FDE": 1.9236122956916468
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 316,
+          "mean_ADE": 0.36484916126495226,
+          "mean_FDE": 0.7638244517757558,
+          "categories": {
+            "both_pass": {
+              "n": 684,
+              "pct_population": 68.4,
+              "pct_among_failed": null,
+              "mean_ADE": 0.21302771223749833,
+              "mean_FDE": 0.4444980288042867,
+              "contribution_ADE": 0.14571095517044888,
+              "contribution_FDE": 0.30403665170213207
+            },
+            "ADE_only_fail": {
+              "n": 16,
+              "pct_population": 1.6,
+              "pct_among_failed": 5.063291139240507,
+              "mean_ADE": 0.5588104091584682,
+              "mean_FDE": 0.9071367755532265,
+              "contribution_ADE": 0.008940966546535492,
+              "contribution_FDE": 0.014514188408851623
+            },
+            "FDE_only_fail": {
+              "n": 46,
+              "pct_population": 4.6,
+              "pct_among_failed": 14.556962025316455,
+              "mean_ADE": 0.4453912500454032,
+              "mean_FDE": 1.078750887642736,
+              "contribution_ADE": 0.020487997502088545,
+              "contribution_FDE": 0.04962254083156586
+            },
+            "both_fail": {
+              "n": 254,
+              "pct_population": 25.4,
+              "pct_among_failed": 80.37974683544304,
+              "mean_ADE": 0.7468867797081865,
+              "mean_FDE": 1.5576813812330952,
+              "contribution_ADE": 0.18970924204587936,
+              "contribution_FDE": 0.39565107083320616
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 23,
+          "mean_ADE": 0.46668222768509643,
+          "mean_FDE": 1.0696089536427182,
+          "categories": {
+            "both_pass": {
+              "n": 24,
+              "pct_population": 51.06382978723404,
+              "pct_among_failed": null,
+              "mean_ADE": 0.24950136927266917,
+              "mean_FDE": 0.54730339643235,
+              "contribution_ADE": 0.12740495452221404,
+              "contribution_FDE": 0.279474074773966
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 6,
+              "pct_population": 12.76595744680851,
+              "pct_among_failed": 26.08695652173913,
+              "mean_ADE": 0.41857270896434784,
+              "mean_FDE": 1.1663708885510762,
+              "contribution_ADE": 0.05343481391034228,
+              "contribution_FDE": 0.1488984113043927
+            },
+            "both_fail": {
+              "n": 17,
+              "pct_population": 36.170212765957444,
+              "pct_among_failed": 73.91304347826087,
+              "mean_ADE": 0.7902703285217285,
+              "mean_FDE": 1.772830233854406,
+              "contribution_ADE": 0.2858424592525401,
+              "contribution_FDE": 0.6412364675643596
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 4,
+          "mean_ADE": 0.035963137983344495,
+          "mean_FDE": 0.07196970408240676,
+          "categories": {
+            "both_pass": {
+              "n": 192,
+              "pct_population": 97.95918367346938,
+              "pct_among_failed": null,
+              "mean_ADE": 0.023871032819442917,
+              "mean_FDE": 0.04768126491641548,
+              "contribution_ADE": 0.023383868884352246,
+              "contribution_FDE": 0.04670817787730496
+            },
+            "ADE_only_fail": {
+              "n": 1,
+              "pct_population": 0.5102040816326531,
+              "pct_among_failed": 25.0,
+              "mean_ADE": 0.5031953454017639,
+              "mean_FDE": 0.9100722074508667,
+              "contribution_ADE": 0.0025673231908253263,
+              "contribution_FDE": 0.004643225548218707
+            },
+            "FDE_only_fail": {
+              "n": 1,
+              "pct_population": 0.5102040816326531,
+              "pct_among_failed": 25.0,
+              "mean_ADE": 0.4887635409832001,
+              "mean_FDE": 1.0697492361068726,
+              "contribution_ADE": 0.002493691535628572,
+              "contribution_FDE": 0.005457904265851391
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 50.0,
+              "mean_ADE": 0.7367889285087585,
+              "mean_FDE": 1.485718846321106,
+              "contribution_ADE": 0.007518254372538353,
+              "contribution_FDE": 0.015160396391031693
+            }
+          }
+        }
+      },
+      "independent_minima": {
+        "all": {
+          "n": 1516,
+          "failed_n": 107,
+          "mean_ADE": 0.2191542476482596,
+          "mean_FDE": 0.3997248127014432,
+          "categories": {
+            "both_pass": {
+              "n": 1409,
+              "pct_population": 92.94195250659631,
+              "pct_among_failed": null,
+              "mean_ADE": 0.1783560965427662,
+              "mean_FDE": 0.31357678655213,
+              "contribution_ADE": 0.16576763854139684,
+              "contribution_FDE": 0.29144438802899153
+            },
+            "ADE_only_fail": {
+              "n": 26,
+              "pct_population": 1.7150395778364116,
+              "pct_among_failed": 24.299065420560748,
+              "mean_ADE": 0.581393090578226,
+              "mean_FDE": 0.6737800082908227,
+              "contribution_ADE": 0.009971121606222872,
+              "contribution_FDE": 0.011555593809737065
+            },
+            "FDE_only_fail": {
+              "n": 14,
+              "pct_population": 0.9234828496042217,
+              "pct_among_failed": 13.08411214953271,
+              "mean_ADE": 0.4321373850107193,
+              "mean_FDE": 1.1183132869856698,
+              "contribution_ADE": 0.0039907146373021575,
+              "contribution_FDE": 0.0103274314101579
+            },
+            "both_fail": {
+              "n": 67,
+              "pct_population": 4.419525065963061,
+              "pct_among_failed": 62.61682242990654,
+              "mean_ADE": 0.8920590397137315,
+              "mean_FDE": 1.9549023517921789,
+              "contribution_ADE": 0.03942477286333774,
+              "contribution_FDE": 0.08639739945255671
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 92,
+          "mean_ADE": 0.3578321542471711,
+          "mean_FDE": 0.6714842423741052,
+          "categories": {
+            "both_pass": {
+              "n": 377,
+              "pct_population": 80.38379530916845,
+              "pct_among_failed": null,
+              "mean_ADE": 0.2547677266226207,
+              "mean_FDE": 0.4452234806853596,
+              "contribution_ADE": 0.20479196788214926,
+              "contribution_FDE": 0.3578875313824746
+            },
+            "ADE_only_fail": {
+              "n": 22,
+              "pct_population": 4.690831556503198,
+              "pct_among_failed": 23.91304347826087,
+              "mean_ADE": 0.5817106637087736,
+              "mean_FDE": 0.6296945380216296,
+              "contribution_ADE": 0.02728706738079535,
+              "contribution_FDE": 0.029537910099095628
+            },
+            "FDE_only_fail": {
+              "n": 13,
+              "pct_population": 2.771855010660981,
+              "pct_among_failed": 14.130434782608695,
+              "mean_ADE": 0.4292970597743988,
+              "mean_FDE": 1.1263590042407696,
+              "contribution_ADE": 0.011899492061976939,
+              "contribution_FDE": 0.031221038497078902
+            },
+            "both_fail": {
+              "n": 57,
+              "pct_population": 12.153518123667377,
+              "pct_among_failed": 61.95652173913044,
+              "mean_ADE": 0.9367956320444742,
+              "mean_FDE": 2.080366851990683,
+              "contribution_ADE": 0.11385362692224954,
+              "contribution_FDE": 0.25283776239545613
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 12,
+          "mean_ADE": 0.1552127237995155,
+          "mean_FDE": 0.2737942439783074,
+          "categories": {
+            "both_pass": {
+              "n": 988,
+              "pct_population": 98.8,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14995323273170408,
+              "mean_FDE": 0.26398711188727314,
+              "contribution_ADE": 0.14815379393892364,
+              "contribution_FDE": 0.26081926654462584
+            },
+            "ADE_only_fail": {
+              "n": 4,
+              "pct_population": 0.4,
+              "pct_among_failed": 33.333333333333336,
+              "mean_ADE": 0.5796464383602142,
+              "mean_FDE": 0.9162500947713852,
+              "contribution_ADE": 0.0023185857534408568,
+              "contribution_FDE": 0.0036650003790855406
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 8,
+              "pct_population": 0.8,
+              "pct_among_failed": 66.66666666666667,
+              "mean_ADE": 0.5925430133938789,
+              "mean_FDE": 1.1637471318244934,
+              "contribution_ADE": 0.004740344107151032,
+              "contribution_FDE": 0.009309977054595948
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 3,
+          "mean_ADE": 0.195783729645166,
+          "mean_FDE": 0.36728643411968614,
+          "categories": {
+            "both_pass": {
+              "n": 44,
+              "pct_population": 93.61702127659575,
+              "pct_among_failed": null,
+              "mean_ADE": 0.16142075347968124,
+              "mean_FDE": 0.2991175792941993,
+              "contribution_ADE": 0.15111730112991434,
+              "contribution_FDE": 0.2800249678498887
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 1,
+              "pct_population": 2.127659574468085,
+              "pct_among_failed": 33.333333333333336,
+              "mean_ADE": 0.46906161308288574,
+              "mean_FDE": 1.0137189626693726,
+              "contribution_ADE": 0.009980034320912462,
+              "contribution_FDE": 0.021568488567433458
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 4.25531914893617,
+              "pct_among_failed": 66.66666666666667,
+              "mean_ADE": 0.8151302635669708,
+              "mean_FDE": 1.5437849760055542,
+              "contribution_ADE": 0.034686394194339186,
+              "contribution_FDE": 0.06569297770236401
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 0,
+          "mean_ADE": 0.017580646368180762,
+          "mean_FDE": 0.034795094765954396,
+          "categories": {
+            "both_pass": {
+              "n": 196,
+              "pct_population": 100.0,
+              "pct_among_failed": null,
+              "mean_ADE": 0.017580646368180762,
+              "mean_FDE": 0.034795094765954396,
+              "contribution_ADE": 0.017580646368180762,
+              "contribution_FDE": 0.034795094765954396
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            }
+          }
+        }
+      },
+      "minADE_same_trajectory": {
+        "all": {
+          "n": 1516,
+          "failed_n": 137,
+          "mean_ADE": 0.2191542476482596,
+          "mean_FDE": 0.46576239405281517,
+          "categories": {
+            "both_pass": {
+              "n": 1379,
+              "pct_population": 90.96306068601584,
+              "pct_among_failed": null,
+              "mean_ADE": 0.1739246012366757,
+              "mean_FDE": 0.3550481838920227,
+              "contribution_ADE": 0.15820714057082835,
+              "contribution_FDE": 0.3229626949782977
+            },
+            "ADE_only_fail": {
+              "n": 17,
+              "pct_population": 1.121372031662269,
+              "pct_among_failed": 12.408759124087592,
+              "mean_ADE": 0.571444900596843,
+              "mean_FDE": 0.7284098670763128,
+              "contribution_ADE": 0.006408023291653253,
+              "contribution_FDE": 0.008168184525262082
+            },
+            "FDE_only_fail": {
+              "n": 44,
+              "pct_population": 2.9023746701846966,
+              "pct_among_failed": 32.11678832116788,
+              "mean_ADE": 0.39799177985299716,
+              "mean_FDE": 1.2640074518593876,
+              "contribution_ADE": 0.01155121260787063,
+              "contribution_FDE": 0.03668623211201388
+            },
+            "both_fail": {
+              "n": 76,
+              "pct_population": 5.013192612137203,
+              "pct_among_failed": 55.47445255474452,
+              "mean_ADE": 0.8574949040224678,
+              "mean_FDE": 1.9537506338797117,
+              "contribution_ADE": 0.04298787117790735,
+              "contribution_FDE": 0.09794528243724149
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 117,
+          "mean_ADE": 0.3578321542471711,
+          "mean_FDE": 0.7946700219795712,
+          "categories": {
+            "both_pass": {
+              "n": 352,
+              "pct_population": 75.05330490405117,
+              "pct_among_failed": null,
+              "mean_ADE": 0.2453621245962991,
+              "mean_FDE": 0.5116107820120471,
+              "contribution_ADE": 0.1841523834923183,
+              "contribution_FDE": 0.3839808001455023
+            },
+            "ADE_only_fail": {
+              "n": 14,
+              "pct_population": 2.985074626865672,
+              "pct_among_failed": 11.965811965811966,
+              "mean_ADE": 0.5781898668834141,
+              "mean_FDE": 0.6908623427152634,
+              "contribution_ADE": 0.017259399011445197,
+              "contribution_FDE": 0.020622756498963085
+            },
+            "FDE_only_fail": {
+              "n": 38,
+              "pct_population": 8.102345415778252,
+              "pct_among_failed": 32.47863247863248,
+              "mean_ADE": 0.4016007067341554,
+              "mean_FDE": 1.2909541255549382,
+              "contribution_ADE": 0.0325390764518079,
+              "contribution_FDE": 0.10459756241170073
+            },
+            "both_fail": {
+              "n": 65,
+              "pct_population": 13.859275053304904,
+              "pct_among_failed": 55.55555555555556,
+              "mean_ADE": 0.893851192180927,
+              "mean_FDE": 2.059767930324261,
+              "contribution_ADE": 0.12388129529159969,
+              "contribution_FDE": 0.28546890292340504
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 14,
+          "mean_ADE": 0.1552127237995155,
+          "mean_FDE": 0.3110341107118584,
+          "categories": {
+            "both_pass": {
+              "n": 986,
+              "pct_population": 98.6,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14939707748140407,
+              "mean_FDE": 0.298802489851162,
+              "contribution_ADE": 0.14730551839666442,
+              "contribution_FDE": 0.2946192549932457
+            },
+            "ADE_only_fail": {
+              "n": 3,
+              "pct_population": 0.3,
+              "pct_among_failed": 21.428571428571427,
+              "mean_ADE": 0.5399683912595113,
+              "mean_FDE": 0.9036316474278768,
+              "contribution_ADE": 0.001619905173778534,
+              "contribution_FDE": 0.00271089494228363
+            },
+            "FDE_only_fail": {
+              "n": 2,
+              "pct_population": 0.2,
+              "pct_among_failed": 14.285714285714286,
+              "mean_ADE": 0.42413777112960815,
+              "mean_FDE": 1.1189956068992615,
+              "contribution_ADE": 0.0008482755422592163,
+              "contribution_FDE": 0.002237991213798523
+            },
+            "both_fail": {
+              "n": 9,
+              "pct_population": 0.9,
+              "pct_among_failed": 64.28571428571429,
+              "mean_ADE": 0.6043360763125949,
+              "mean_FDE": 1.2739966180589464,
+              "contribution_ADE": 0.005439024686813354,
+              "contribution_FDE": 0.011465969562530518
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 6,
+          "mean_ADE": 0.195783729645166,
+          "mean_FDE": 0.47577528433596833,
+          "categories": {
+            "both_pass": {
+              "n": 41,
+              "pct_population": 87.23404255319149,
+              "pct_among_failed": null,
+              "mean_ADE": 0.15046436221497814,
+              "mean_FDE": 0.36354134940519567,
+              "contribution_ADE": 0.1312561457620022,
+              "contribution_FDE": 0.31713181543857494
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 4,
+              "pct_population": 8.51063829787234,
+              "pct_among_failed": 66.66666666666667,
+              "mean_ADE": 0.35063397884368896,
+              "mean_FDE": 1.08051997423172,
+              "contribution_ADE": 0.02984118968882459,
+              "contribution_FDE": 0.09195914674312511
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 4.25531914893617,
+              "pct_among_failed": 33.333333333333336,
+              "mean_ADE": 0.8151302635669708,
+              "mean_FDE": 1.5670815706253052,
+              "contribution_ADE": 0.034686394194339186,
+              "contribution_FDE": 0.06668432215426831
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 0,
+          "mean_ADE": 0.017580646368180762,
+          "mean_FDE": 0.03503893075343958,
+          "categories": {
+            "both_pass": {
+              "n": 196,
+              "pct_population": 100.0,
+              "pct_among_failed": null,
+              "mean_ADE": 0.017580646368180762,
+              "mean_FDE": 0.03503893075343958,
+              "contribution_ADE": 0.017580646368180762,
+              "contribution_FDE": 0.03503893075343958
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            }
+          }
+        }
+      },
+      "minFDE_same_trajectory": {
+        "all": {
+          "n": 1516,
+          "failed_n": 142,
+          "mean_ADE": 0.24211135598932856,
+          "mean_FDE": 0.3997248127014432,
+          "categories": {
+            "both_pass": {
+              "n": 1374,
+              "pct_population": 90.63324538258576,
+              "pct_among_failed": null,
+              "mean_ADE": 0.1892612621373208,
+              "mean_FDE": 0.3060860812414383,
+              "contribution_ADE": 0.17153362412709683,
+              "contribution_FDE": 0.27741574909349354
+            },
+            "ADE_only_fail": {
+              "n": 61,
+              "pct_population": 4.0237467018469655,
+              "pct_among_failed": 42.95774647887324,
+              "mean_ADE": 0.6024347289663846,
+              "mean_FDE": 0.6358310957668257,
+              "contribution_ADE": 0.02424044753756561,
+              "contribution_FDE": 0.025584232745235073
+            },
+            "FDE_only_fail": {
+              "n": 8,
+              "pct_population": 0.5277044854881267,
+              "pct_among_failed": 5.633802816901408,
+              "mean_ADE": 0.43169577419757843,
+              "mean_FDE": 1.1518081575632095,
+              "contribution_ADE": 0.002278077964103316,
+              "contribution_FDE": 0.006078143311679206
+            },
+            "both_fail": {
+              "n": 73,
+              "pct_population": 4.8153034300791555,
+              "pct_among_failed": 51.40845070422535,
+              "mean_ADE": 0.9149829704467565,
+              "mean_FDE": 1.8824709359913656,
+              "contribution_ADE": 0.04405920636056281,
+              "contribution_FDE": 0.09064668755103542
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 122,
+          "mean_ADE": 0.4027903993755007,
+          "mean_FDE": 0.6714842423741052,
+          "categories": {
+            "both_pass": {
+              "n": 347,
+              "pct_population": 73.98720682302772,
+              "pct_among_failed": null,
+              "mean_ADE": 0.2711829123991711,
+              "mean_FDE": 0.4316178779104343,
+              "contribution_ADE": 0.20064066226548477,
+              "contribution_FDE": 0.3193420120147563
+            },
+            "ADE_only_fail": {
+              "n": 52,
+              "pct_population": 11.087420042643924,
+              "pct_among_failed": 42.622950819672134,
+              "mean_ADE": 0.6068481711240915,
+              "mean_FDE": 0.6140601619218404,
+              "contribution_ADE": 0.06728380575363062,
+              "contribution_FDE": 0.06808342946681387
+            },
+            "FDE_only_fail": {
+              "n": 7,
+              "pct_population": 1.492537313432836,
+              "pct_among_failed": 5.737704918032787,
+              "mean_ADE": 0.4263577972139631,
+              "mean_FDE": 1.1715351854051863,
+              "contribution_ADE": 0.006363549212148703,
+              "contribution_FDE": 0.017485599782166957
+            },
+            "both_fail": {
+              "n": 63,
+              "pct_population": 13.432835820895523,
+              "pct_among_failed": 51.63934426229508,
+              "mean_ADE": 0.9566288448515392,
+              "mean_FDE": 1.9844893860438513,
+              "contribution_ADE": 0.12850238214423662,
+              "contribution_FDE": 0.2665732011103681
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 17,
+          "mean_ADE": 0.16768747801939027,
+          "mean_FDE": 0.2737942439783074,
+          "categories": {
+            "both_pass": {
+              "n": 983,
+              "pct_population": 98.3,
+              "pct_among_failed": null,
+              "mean_ADE": 0.16038356660623654,
+              "mean_FDE": 0.2620851459835918,
+              "contribution_ADE": 0.15765704597393052,
+              "contribution_FDE": 0.25762969850187073
+            },
+            "ADE_only_fail": {
+              "n": 9,
+              "pct_population": 0.9,
+              "pct_among_failed": 52.94117647058823,
+              "mean_ADE": 0.5769348409440782,
+              "mean_FDE": 0.7616187135378519,
+              "contribution_ADE": 0.0051924135684967045,
+              "contribution_FDE": 0.0068545684218406676
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 8,
+              "pct_population": 0.8,
+              "pct_among_failed": 47.05882352941177,
+              "mean_ADE": 0.6047523096203804,
+              "mean_FDE": 1.1637471318244934,
+              "contribution_ADE": 0.004838018476963043,
+              "contribution_FDE": 0.009309977054595948
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 3,
+          "mean_ADE": 0.22222639049621337,
+          "mean_FDE": 0.36728643411968614,
+          "categories": {
+            "both_pass": {
+              "n": 44,
+              "pct_population": 93.61702127659575,
+              "pct_among_failed": null,
+              "mean_ADE": 0.18835130909627135,
+              "mean_FDE": 0.2991175792941993,
+              "contribution_ADE": 0.17632888511140296,
+              "contribution_FDE": 0.2800249678498887
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 1,
+              "pct_population": 2.127659574468085,
+              "pct_among_failed": 33.333333333333336,
+              "mean_ADE": 0.46906161308288574,
+              "mean_FDE": 1.0137189626693726,
+              "contribution_ADE": 0.009980034320912462,
+              "contribution_FDE": 0.021568488567433458
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 4.25531914893617,
+              "pct_among_failed": 66.66666666666667,
+              "mean_ADE": 0.8440605700016022,
+              "mean_FDE": 1.5437849760055542,
+              "contribution_ADE": 0.03591747106389796,
+              "contribution_FDE": 0.06569297770236401
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 0,
+          "mean_ADE": 0.017751069114619523,
+          "mean_FDE": 0.034795094765954396,
+          "categories": {
+            "both_pass": {
+              "n": 196,
+              "pct_population": 100.0,
+              "pct_among_failed": null,
+              "mean_ADE": 0.017751069114619523,
+              "mean_FDE": 0.034795094765954396,
+              "contribution_ADE": 0.017751069114619523,
+              "contribution_FDE": 0.034795094765954396
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "both_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": null,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            }
+          }
+        }
+      },
+      "samepath_coverage": {
+        "all": {
+          "n": 1516,
+          "samepath_good_n": 1402,
+          "independent_both_pass_n": 1409,
+          "split_candidate_tradeoff_n": 7,
+          "no_samepath_good_n": 114
+        },
+        "clear_event": {
+          "n": 469,
+          "samepath_good_n": 371,
+          "independent_both_pass_n": 377,
+          "split_candidate_tradeoff_n": 6,
+          "no_samepath_good_n": 98
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "samepath_good_n": 987,
+          "independent_both_pass_n": 988,
+          "split_candidate_tradeoff_n": 1,
+          "no_samepath_good_n": 13
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "samepath_good_n": 44,
+          "independent_both_pass_n": 44,
+          "split_candidate_tradeoff_n": 0,
+          "no_samepath_good_n": 3
+        },
+        "near_static": {
+          "n": 196,
+          "samepath_good_n": 196,
+          "independent_both_pass_n": 196,
+          "split_candidate_tradeoff_n": 0,
+          "no_samepath_good_n": 0
+        }
+      }
+    },
+    "0.2/0.35": {
+      "selected": {
+        "all": {
+          "n": 1516,
+          "failed_n": 1255,
+          "mean_ADE": 0.5424318914937524,
+          "mean_FDE": 1.1973156717376745,
+          "categories": {
+            "both_pass": {
+              "n": 261,
+              "pct_population": 17.21635883905013,
+              "pct_among_failed": null,
+              "mean_ADE": 0.048418635543492905,
+              "mean_FDE": 0.08712630579604899,
+              "contribution_ADE": 0.008335926040139609,
+              "contribution_FDE": 0.014999977449055929
+            },
+            "ADE_only_fail": {
+              "n": 19,
+              "pct_population": 1.2532981530343008,
+              "pct_among_failed": 1.5139442231075697,
+              "mean_ADE": 0.26810924316707413,
+              "mean_FDE": 0.2533135521960886,
+              "contribution_ADE": 0.003360208192727182,
+              "contribution_FDE": 0.0031747740710591577
+            },
+            "FDE_only_fail": {
+              "n": 69,
+              "pct_population": 4.5514511873350925,
+              "pct_among_failed": 5.49800796812749,
+              "mean_ADE": 0.16017109306826108,
+              "mean_FDE": 0.4729732922885729,
+              "contribution_ADE": 0.007290109117222964,
+              "contribution_FDE": 0.021527148527646128
+            },
+            "both_fail": {
+              "n": 1167,
+              "pct_population": 76.97889182058047,
+              "pct_among_failed": 92.98804780876495,
+              "mean_ADE": 0.6799859490880827,
+              "mean_FDE": 1.5038067505414812,
+              "contribution_ADE": 0.5234456481436627,
+              "contribution_FDE": 1.1576137716899133
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 466,
+          "mean_ADE": 0.928664225028522,
+          "mean_FDE": 2.134401888608424,
+          "categories": {
+            "both_pass": {
+              "n": 3,
+              "pct_population": 0.6396588486140725,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14677528540293375,
+              "mean_FDE": 0.282693753639857,
+              "contribution_ADE": 0.0009388611006584249,
+              "contribution_FDE": 0.0018082756096366118
+            },
+            "ADE_only_fail": {
+              "n": 2,
+              "pct_population": 0.42643923240938164,
+              "pct_among_failed": 0.4291845493562232,
+              "mean_ADE": 0.31694306433200836,
+              "mean_FDE": 0.2828320562839508,
+              "contribution_ADE": 0.0013515695707121893,
+              "contribution_FDE": 0.0012061068498249502
+            },
+            "FDE_only_fail": {
+              "n": 13,
+              "pct_population": 2.771855010660981,
+              "pct_among_failed": 2.7896995708154506,
+              "mean_ADE": 0.1555440781208185,
+              "mean_FDE": 0.5897793769836426,
+              "contribution_ADE": 0.004311456323178338,
+              "contribution_FDE": 0.016347829212766212
+            },
+            "both_fail": {
+              "n": 451,
+              "pct_population": 96.16204690831556,
+              "pct_among_failed": 96.78111587982832,
+              "mean_ADE": 0.9588630521905396,
+              "mean_FDE": 2.199453677346067,
+              "contribution_ADE": 0.922062338033973,
+              "contribution_FDE": 2.1150396769361963
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 744,
+          "mean_ADE": 0.36484916126495226,
+          "mean_FDE": 0.7638244517757558,
+          "categories": {
+            "both_pass": {
+              "n": 256,
+              "pct_population": 25.6,
+              "pct_among_failed": null,
+              "mean_ADE": 0.046826404655803344,
+              "mean_FDE": 0.08314012346636446,
+              "contribution_ADE": 0.011987559591885657,
+              "contribution_FDE": 0.0212838716073893
+            },
+            "ADE_only_fail": {
+              "n": 14,
+              "pct_population": 1.4,
+              "pct_among_failed": 1.881720430107527,
+              "mean_ADE": 0.2545896332178797,
+              "mean_FDE": 0.2724534368940762,
+              "contribution_ADE": 0.003564254865050316,
+              "contribution_FDE": 0.003814348116517067
+            },
+            "FDE_only_fail": {
+              "n": 52,
+              "pct_population": 5.2,
+              "pct_among_failed": 6.989247311827957,
+              "mean_ADE": 0.16313385691207188,
+              "mean_FDE": 0.44508484636361784,
+              "contribution_ADE": 0.008482960559427738,
+              "contribution_FDE": 0.023144412010908128
+            },
+            "both_fail": {
+              "n": 678,
+              "pct_population": 67.8,
+              "pct_among_failed": 91.12903225806451,
+              "mean_ADE": 0.5026760859123726,
+              "mean_FDE": 1.0554304130397363,
+              "contribution_ADE": 0.34081438624858856,
+              "contribution_FDE": 0.7155818200409413
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 45,
+          "mean_ADE": 0.46668222768509643,
+          "mean_FDE": 1.0696089536427182,
+          "categories": {
+            "both_pass": {
+              "n": 2,
+              "pct_population": 4.25531914893617,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10468921437859535,
+              "mean_FDE": 0.3040064722299576,
+              "contribution_ADE": 0.004454860186323207,
+              "contribution_FDE": 0.012936445626806705
+            },
+            "ADE_only_fail": {
+              "n": 3,
+              "pct_population": 6.382978723404255,
+              "pct_among_failed": 6.666666666666667,
+              "mean_ADE": 0.2986448754866918,
+              "mean_FDE": 0.1443150875469049,
+              "contribution_ADE": 0.019062438860852668,
+              "contribution_FDE": 0.009211601332781162
+            },
+            "FDE_only_fail": {
+              "n": 4,
+              "pct_population": 8.51063829787234,
+              "pct_among_failed": 8.88888888888889,
+              "mean_ADE": 0.1366929616779089,
+              "mean_FDE": 0.4559033140540123,
+              "contribution_ADE": 0.011633443547056076,
+              "contribution_FDE": 0.038800282047149984
+            },
+            "both_fail": {
+              "n": 38,
+              "pct_population": 80.85106382978724,
+              "pct_among_failed": 84.44444444444444,
+              "mean_ADE": 0.5337363105071219,
+              "mean_FDE": 1.2475539304708179,
+              "contribution_ADE": 0.4315314850908645,
+              "contribution_FDE": 1.0086606246359804
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 8,
+          "mean_ADE": 0.035963137983344495,
+          "mean_FDE": 0.07196970408240676,
+          "categories": {
+            "both_pass": {
+              "n": 188,
+              "pct_population": 95.91836734693878,
+              "pct_among_failed": null,
+              "mean_ADE": 0.018180365879782178,
+              "mean_FDE": 0.03716943051140914,
+              "contribution_ADE": 0.01743831012958699,
+              "contribution_FDE": 0.03565231089869856
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 1,
+              "pct_population": 0.5102040816326531,
+              "pct_among_failed": 12.5,
+              "mean_ADE": 0.15372031927108765,
+              "mean_FDE": 0.3570787012577057,
+              "contribution_ADE": 0.000784287343219835,
+              "contribution_FDE": 0.001821830108457682
+            },
+            "both_fail": {
+              "n": 7,
+              "pct_population": 3.5714285714285716,
+              "pct_among_failed": 87.5,
+              "mean_ADE": 0.49673513429505484,
+              "mean_FDE": 0.9658757661070142,
+              "contribution_ADE": 0.017740540510537674,
+              "contribution_FDE": 0.03449556307525051
+            }
+          }
+        }
+      },
+      "independent_minima": {
+        "all": {
+          "n": 1516,
+          "failed_n": 812,
+          "mean_ADE": 0.2191542476482596,
+          "mean_FDE": 0.3997248127014432,
+          "categories": {
+            "both_pass": {
+              "n": 704,
+              "pct_population": 46.437994722955146,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10049987764862388,
+              "mean_FDE": 0.16591710127113402,
+              "contribution_ADE": 0.04667012787904433,
+              "contribution_FDE": 0.07704857473276935
+            },
+            "ADE_only_fail": {
+              "n": 139,
+              "pct_population": 9.168865435356201,
+              "pct_among_failed": 17.11822660098522,
+              "mean_ADE": 0.26706359315690376,
+              "mean_FDE": 0.2472369768556288,
+              "contribution_ADE": 0.024486701483383656,
+              "contribution_FDE": 0.02266882571433536
+            },
+            "FDE_only_fail": {
+              "n": 162,
+              "pct_population": 10.686015831134565,
+              "pct_among_failed": 19.950738916256157,
+              "mean_ADE": 0.16651039920103403,
+              "mean_FDE": 0.41949555388203374,
+              "contribution_ADE": 0.017793327619107856,
+              "contribution_FDE": 0.04482736129873975
+            },
+            "both_fail": {
+              "n": 511,
+              "pct_population": 33.70712401055409,
+              "pct_among_failed": 62.93103448275862,
+              "mean_ADE": 0.38628062906213934,
+              "mean_FDE": 0.7570507969641639,
+              "contribution_ADE": 0.13020409066672375,
+              "contribution_FDE": 0.25518005095559876
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 382,
+          "mean_ADE": 0.3578321542471711,
+          "mean_FDE": 0.6714842423741052,
+          "categories": {
+            "both_pass": {
+              "n": 87,
+              "pct_population": 18.550106609808104,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14123848637287645,
+              "mean_FDE": 0.2313999085976132,
+              "contribution_ADE": 0.02619988979624787,
+              "contribution_FDE": 0.042924929739855754
+            },
+            "ADE_only_fail": {
+              "n": 51,
+              "pct_population": 10.874200426439232,
+              "pct_among_failed": 13.350785340314136,
+              "mean_ADE": 0.30447131395339966,
+              "mean_FDE": 0.24568472992555768,
+              "contribution_ADE": 0.03310882092030572,
+              "contribution_FDE": 0.02671624994926107
+            },
+            "FDE_only_fail": {
+              "n": 44,
+              "pct_population": 9.381663113006397,
+              "pct_among_failed": 11.518324607329843,
+              "mean_ADE": 0.16741173206405205,
+              "mean_FDE": 0.4427652298049493,
+              "contribution_ADE": 0.015706004713898273,
+              "contribution_FDE": 0.041538742241828935
+            },
+            "both_fail": {
+              "n": 287,
+              "pct_population": 61.19402985074627,
+              "pct_among_failed": 75.13089005235602,
+              "mean_ADE": 0.46216508294439484,
+              "mean_FDE": 0.9156192553583338,
+              "contribution_ADE": 0.2828174388167192,
+              "contribution_FDE": 0.5603043204431595
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 407,
+          "mean_ADE": 0.1552127237995155,
+          "mean_FDE": 0.2737942439783074,
+          "categories": {
+            "both_pass": {
+              "n": 593,
+              "pct_population": 59.3,
+              "pct_among_failed": null,
+              "mean_ADE": 0.09391989175805078,
+              "mean_FDE": 0.1539169287098109,
+              "contribution_ADE": 0.05569449581252411,
+              "contribution_FDE": 0.09127273872491787
+            },
+            "ADE_only_fail": {
+              "n": 82,
+              "pct_population": 8.2,
+              "pct_among_failed": 20.147420147420146,
+              "mean_ADE": 0.24214427572924915,
+              "mean_FDE": 0.24949505000670508,
+              "contribution_ADE": 0.019855830609798432,
+              "contribution_FDE": 0.02045859410054982
+            },
+            "FDE_only_fail": {
+              "n": 108,
+              "pct_population": 10.8,
+              "pct_among_failed": 26.535626535626534,
+              "mean_ADE": 0.1660947829346966,
+              "mean_FDE": 0.40857106336840876,
+              "contribution_ADE": 0.01793823655694723,
+              "contribution_FDE": 0.04412567484378815
+            },
+            "both_fail": {
+              "n": 217,
+              "pct_population": 21.7,
+              "pct_among_failed": 53.31695331695332,
+              "mean_ADE": 0.28444313742048727,
+              "mean_FDE": 0.543489568244477,
+              "contribution_ADE": 0.06172416082024574,
+              "contribution_FDE": 0.11793723630905151
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 23,
+          "mean_ADE": 0.195783729645166,
+          "mean_FDE": 0.36728643411968614,
+          "categories": {
+            "both_pass": {
+              "n": 24,
+              "pct_population": 51.06382978723404,
+              "pct_among_failed": null,
+              "mean_ADE": 0.11540290573611856,
+              "mean_FDE": 0.2250461884153386,
+              "contribution_ADE": 0.05892914335461373,
+              "contribution_FDE": 0.11491720259506652
+            },
+            "ADE_only_fail": {
+              "n": 6,
+              "pct_population": 12.76595744680851,
+              "pct_among_failed": 26.08695652173913,
+              "mean_ADE": 0.2896619712313016,
+              "mean_FDE": 0.22957074269652367,
+              "contribution_ADE": 0.03697812398697468,
+              "contribution_FDE": 0.02930690332296047
+            },
+            "FDE_only_fail": {
+              "n": 10,
+              "pct_population": 21.27659574468085,
+              "pct_among_failed": 43.47826086956522,
+              "mean_ADE": 0.16703319028019906,
+              "mean_FDE": 0.4350934773683548,
+              "contribution_ADE": 0.0355389766553615,
+              "contribution_FDE": 0.09257308029113932
+            },
+            "both_fail": {
+              "n": 7,
+              "pct_population": 14.893617021276595,
+              "pct_among_failed": 30.434782608695652,
+              "mean_ADE": 0.4319802607808794,
+              "mean_FDE": 0.8761420931134906,
+              "contribution_ADE": 0.06433748564821609,
+              "contribution_FDE": 0.13048924791051986
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 4,
+          "mean_ADE": 0.017580646368180762,
+          "mean_FDE": 0.034795094765954396,
+          "categories": {
+            "both_pass": {
+              "n": 192,
+              "pct_population": 97.95918367346938,
+              "pct_among_failed": null,
+              "mean_ADE": 0.013488277203578036,
+              "mean_FDE": 0.026779460206398653,
+              "contribution_ADE": 0.01321300624023971,
+              "contribution_FDE": 0.0262329406103497
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 50.0,
+              "mean_ADE": 0.16081926226615906,
+              "mean_FDE": 0.38467274606227875,
+              "contribution_ADE": 0.001641012880266929,
+              "contribution_FDE": 0.0039252321026763135
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 50.0,
+              "mean_ADE": 0.2672094702720642,
+              "mean_FDE": 0.4544183611869812,
+              "contribution_ADE": 0.0027266272476741244,
+              "contribution_FDE": 0.0046369220529283795
+            }
+          }
+        }
+      },
+      "minADE_same_trajectory": {
+        "all": {
+          "n": 1516,
+          "failed_n": 886,
+          "mean_ADE": 0.2191542476482596,
+          "mean_FDE": 0.46576239405281517,
+          "categories": {
+            "both_pass": {
+              "n": 630,
+              "pct_population": 41.556728232189975,
+              "pct_among_failed": null,
+              "mean_ADE": 0.09409109798762652,
+              "mean_FDE": 0.15565396345969815,
+              "contribution_ADE": 0.03910118188140152,
+              "contribution_FDE": 0.06468469457757904
+            },
+            "ADE_only_fail": {
+              "n": 86,
+              "pct_population": 5.672823218997362,
+              "pct_among_failed": 9.706546275395034,
+              "mean_ADE": 0.25572107957546103,
+              "mean_FDE": 0.24703885127552028,
+              "contribution_ADE": 0.014506604778027472,
+              "contribution_FDE": 0.014014077315102073
+            },
+            "FDE_only_fail": {
+              "n": 236,
+              "pct_population": 15.567282321899736,
+              "pct_among_failed": 26.636568848758465,
+              "mean_ADE": 0.16292036780929667,
+              "mean_FDE": 0.4589076350300999,
+              "contribution_ADE": 0.02536227361675067,
+              "contribution_FDE": 0.0714394471418889
+            },
+            "both_fail": {
+              "n": 564,
+              "pct_population": 37.20316622691293,
+              "pct_among_failed": 63.6568848758465,
+              "mean_ADE": 0.37680714194339215,
+              "mean_FDE": 0.8483798746944319,
+              "contribution_ADE": 0.14018418737207994,
+              "contribution_FDE": 0.31562417501824513
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 408,
+          "mean_ADE": 0.3578321542471711,
+          "mean_FDE": 0.7946700219795712,
+          "categories": {
+            "both_pass": {
+              "n": 61,
+              "pct_population": 13.00639658848614,
+              "pct_among_failed": null,
+              "mean_ADE": 0.13784737946068654,
+              "mean_FDE": 0.22115215094240961,
+              "contribution_ADE": 0.01792897685949228,
+              "contribution_FDE": 0.028763925815537286
+            },
+            "ADE_only_fail": {
+              "n": 27,
+              "pct_population": 5.756929637526652,
+              "pct_among_failed": 6.617647058823529,
+              "mean_ADE": 0.29939943386448753,
+              "mean_FDE": 0.24933077601922882,
+              "contribution_ADE": 0.017236214742731692,
+              "contribution_FDE": 0.01435379734012618
+            },
+            "FDE_only_fail": {
+              "n": 70,
+              "pct_population": 14.925373134328359,
+              "pct_among_failed": 17.15686274509804,
+              "mean_ADE": 0.1606453482593809,
+              "mean_FDE": 0.482297488621303,
+              "contribution_ADE": 0.023976917650653864,
+              "contribution_FDE": 0.07198469979422432
+            },
+            "both_fail": {
+              "n": 311,
+              "pct_population": 66.31130063965885,
+              "pct_among_failed": 76.22549019607843,
+              "mean_ADE": 0.4504361128692075,
+              "mean_FDE": 1.0248141605946028,
+              "contribution_ADE": 0.29869004499429325,
+              "contribution_FDE": 0.6795675990296833
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 448,
+          "mean_ADE": 0.1552127237995155,
+          "mean_FDE": 0.3110341107118584,
+          "categories": {
+            "both_pass": {
+              "n": 552,
+              "pct_population": 55.2,
+              "pct_among_failed": null,
+              "mean_ADE": 0.08886196730283859,
+              "mean_FDE": 0.1465741446835096,
+              "contribution_ADE": 0.0490518059511669,
+              "contribution_FDE": 0.0809089278652973
+            },
+            "ADE_only_fail": {
+              "n": 57,
+              "pct_population": 5.7,
+              "pct_among_failed": 12.723214285714286,
+              "mean_ADE": 0.23552650657662175,
+              "mean_FDE": 0.24786378276583396,
+              "contribution_ADE": 0.01342501087486744,
+              "contribution_FDE": 0.014128235617652536
+            },
+            "FDE_only_fail": {
+              "n": 149,
+              "pct_population": 14.9,
+              "pct_among_failed": 33.25892857142857,
+              "mean_ADE": 0.16497266052553317,
+              "mean_FDE": 0.4449797854727547,
+              "contribution_ADE": 0.024580926418304443,
+              "contribution_FDE": 0.06630198803544045
+            },
+            "both_fail": {
+              "n": 242,
+              "pct_population": 24.2,
+              "pct_among_failed": 54.017857142857146,
+              "mean_ADE": 0.28163215105444933,
+              "mean_FDE": 0.6185742115432565,
+              "contribution_ADE": 0.06815498055517674,
+              "contribution_FDE": 0.1496949591934681
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 30,
+          "mean_ADE": 0.195783729645166,
+          "mean_FDE": 0.47577528433596833,
+          "categories": {
+            "both_pass": {
+              "n": 17,
+              "pct_population": 36.170212765957444,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10687621376093696,
+              "mean_FDE": 0.2154581121662084,
+              "contribution_ADE": 0.03865735391353039,
+              "contribution_FDE": 0.07793165759203281
+            },
+            "ADE_only_fail": {
+              "n": 2,
+              "pct_population": 4.25531914893617,
+              "pct_among_failed": 6.666666666666667,
+              "mean_ADE": 0.241608627140522,
+              "mean_FDE": 0.19258731976151466,
+              "contribution_ADE": 0.010281218176192425,
+              "contribution_FDE": 0.008195205096234667
+            },
+            "FDE_only_fail": {
+              "n": 17,
+              "pct_population": 36.170212765957444,
+              "pct_among_failed": 56.666666666666664,
+              "mean_ADE": 0.15430035332546516,
+              "mean_FDE": 0.48466997812776,
+              "contribution_ADE": 0.05581076609644484,
+              "contribution_FDE": 0.17530616230153023
+            },
+            "both_fail": {
+              "n": 11,
+              "pct_population": 23.404255319148938,
+              "pct_among_failed": 36.666666666666664,
+              "mean_ADE": 0.38896512714299286,
+              "mean_FDE": 0.9158260172063654,
+              "contribution_ADE": 0.09103439145899833,
+              "contribution_FDE": 0.21434225934617063
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 4,
+          "mean_ADE": 0.017580646368180762,
+          "mean_FDE": 0.03503893075343958,
+          "categories": {
+            "both_pass": {
+              "n": 192,
+              "pct_population": 97.95918367346938,
+              "pct_among_failed": null,
+              "mean_ADE": 0.013488277203578036,
+              "mean_FDE": 0.02702837611028978,
+              "contribution_ADE": 0.01321300624023971,
+              "contribution_FDE": 0.026476776597834886
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 50.0,
+              "mean_ADE": 0.16081926226615906,
+              "mean_FDE": 0.38467274606227875,
+              "contribution_ADE": 0.001641012880266929,
+              "contribution_FDE": 0.0039252321026763135
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 50.0,
+              "mean_ADE": 0.2672094702720642,
+              "mean_FDE": 0.4544183611869812,
+              "contribution_ADE": 0.0027266272476741244,
+              "contribution_FDE": 0.0046369220529283795
+            }
+          }
+        }
+      },
+      "minFDE_same_trajectory": {
+        "all": {
+          "n": 1516,
+          "failed_n": 862,
+          "mean_ADE": 0.24211135598932856,
+          "mean_FDE": 0.3997248127014432,
+          "categories": {
+            "both_pass": {
+              "n": 654,
+              "pct_population": 43.13984168865435,
+              "pct_among_failed": null,
+              "mean_ADE": 0.09755593230477919,
+              "mean_FDE": 0.1580351097337935,
+              "contribution_ADE": 0.04208547475417255,
+              "contribution_FDE": 0.0681760961516497
+            },
+            "ADE_only_fail": {
+              "n": 189,
+              "pct_population": 12.467018469656992,
+              "pct_among_failed": 21.925754060324827,
+              "mean_ADE": 0.2812249468905585,
+              "mean_FDE": 0.25299797519528994,
+              "contribution_ADE": 0.035060366070128995,
+              "contribution_FDE": 0.03154130429545501
+            },
+            "FDE_only_fail": {
+              "n": 125,
+              "pct_population": 8.24538258575198,
+              "pct_among_failed": 14.501160092807424,
+              "mean_ADE": 0.16489191961288452,
+              "mean_FDE": 0.4162950098514557,
+              "contribution_ADE": 0.013595969625072932,
+              "contribution_FDE": 0.03432511624764641
+            },
+            "both_fail": {
+              "n": 548,
+              "pct_population": 36.147757255936675,
+              "pct_among_failed": 63.57308584686775,
+              "mean_ADE": 0.41875224642074893,
+              "mean_FDE": 0.734989709390776,
+              "contribution_ADE": 0.1513695455399541,
+              "contribution_FDE": 0.26568229600669213
+            }
+          }
+        },
+        "clear_event": {
+          "n": 469,
+          "failed_n": 398,
+          "mean_ADE": 0.4027903993755007,
+          "mean_FDE": 0.6714842423741052,
+          "categories": {
+            "both_pass": {
+              "n": 71,
+              "pct_population": 15.138592750533048,
+              "pct_among_failed": null,
+              "mean_ADE": 0.14652222352968136,
+              "mean_FDE": 0.22167531545208374,
+              "contribution_ADE": 0.02218140270918417,
+              "contribution_FDE": 0.03355852323475041
+            },
+            "ADE_only_fail": {
+              "n": 67,
+              "pct_population": 14.285714285714286,
+              "pct_among_failed": 16.834170854271356,
+              "mean_ADE": 0.32755646576632313,
+              "mean_FDE": 0.25257859518056486,
+              "contribution_ADE": 0.04679378082376045,
+              "contribution_FDE": 0.03608265645436641
+            },
+            "FDE_only_fail": {
+              "n": 37,
+              "pct_population": 7.889125799573561,
+              "pct_among_failed": 9.296482412060302,
+              "mean_ADE": 0.16574936501077703,
+              "mean_FDE": 0.43813705283242305,
+              "contribution_ADE": 0.013076175917694563,
+              "contribution_FDE": 0.03456518327249393
+            },
+            "both_fail": {
+              "n": 294,
+              "pct_population": 62.6865671641791,
+              "pct_among_failed": 73.86934673366834,
+              "mean_ADE": 0.5116551351182315,
+              "mean_FDE": 0.9049432838246936,
+              "contribution_ADE": 0.3207390399248615,
+              "contribution_FDE": 0.5672778794124945
+            }
+          }
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "failed_n": 436,
+          "mean_ADE": 0.16768747801939027,
+          "mean_FDE": 0.2737942439783074,
+          "categories": {
+            "both_pass": {
+              "n": 564,
+              "pct_population": 56.4,
+              "pct_among_failed": null,
+              "mean_ADE": 0.09113999428178006,
+              "mean_FDE": 0.14770804971768414,
+              "contribution_ADE": 0.05140295677492395,
+              "contribution_FDE": 0.08330734004077385
+            },
+            "ADE_only_fail": {
+              "n": 111,
+              "pct_population": 11.1,
+              "pct_among_failed": 25.458715596330276,
+              "mean_ADE": 0.2518125861077695,
+              "mean_FDE": 0.2560720070693138,
+              "contribution_ADE": 0.027951197057962417,
+              "contribution_FDE": 0.028423992784693836
+            },
+            "FDE_only_fail": {
+              "n": 82,
+              "pct_population": 8.2,
+              "pct_among_failed": 18.807339449541285,
+              "mean_ADE": 0.16493288672915318,
+              "mean_FDE": 0.406814224836303,
+              "contribution_ADE": 0.013524496711790561,
+              "contribution_FDE": 0.03335876643657684
+            },
+            "both_fail": {
+              "n": 243,
+              "pct_population": 24.3,
+              "pct_among_failed": 55.73394495412844,
+              "mean_ADE": 0.3078552570975857,
+              "mean_FDE": 0.5296466860751556,
+              "contribution_ADE": 0.07480882747471332,
+              "contribution_FDE": 0.12870414471626282
+            }
+          }
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "failed_n": 28,
+          "mean_ADE": 0.22222639049621337,
+          "mean_FDE": 0.36728643411968614,
+          "categories": {
+            "both_pass": {
+              "n": 19,
+              "pct_population": 40.42553191489362,
+              "pct_among_failed": null,
+              "mean_ADE": 0.10502868851548747,
+              "mean_FDE": 0.22677233305416608,
+              "contribution_ADE": 0.042458405995622596,
+              "contribution_FDE": 0.09167392187296076
+            },
+            "ADE_only_fail": {
+              "n": 11,
+              "pct_population": 23.404255319148938,
+              "pct_among_failed": 39.285714285714285,
+              "mean_ADE": 0.29582133618268097,
+              "mean_FDE": 0.22453260455619206,
+              "contribution_ADE": 0.06923478080871258,
+              "contribution_FDE": 0.05255018404506622
+            },
+            "FDE_only_fail": {
+              "n": 6,
+              "pct_population": 12.76595744680851,
+              "pct_among_failed": 21.428571428571427,
+              "mean_ADE": 0.15904445573687553,
+              "mean_FDE": 0.41117314000924426,
+              "contribution_ADE": 0.020303547540877726,
+              "contribution_FDE": 0.052490188086286506
+            },
+            "both_fail": {
+              "n": 11,
+              "pct_population": 23.404255319148938,
+              "pct_among_failed": 39.285714285714285,
+              "mean_ADE": 0.3855267126451839,
+              "mean_FDE": 0.7288082350384105,
+              "contribution_ADE": 0.0902296561510005,
+              "contribution_FDE": 0.17057214011537267
+            }
+          }
+        },
+        "near_static": {
+          "n": 196,
+          "failed_n": 4,
+          "mean_ADE": 0.017751069114619523,
+          "mean_FDE": 0.034795094765954396,
+          "categories": {
+            "both_pass": {
+              "n": 192,
+              "pct_population": 97.95918367346938,
+              "pct_among_failed": null,
+              "mean_ADE": 0.013662250423900938,
+              "mean_FDE": 0.026779460206398653,
+              "contribution_ADE": 0.01338342898667847,
+              "contribution_FDE": 0.0262329406103497
+            },
+            "ADE_only_fail": {
+              "n": 0,
+              "pct_population": 0.0,
+              "pct_among_failed": 0.0,
+              "mean_ADE": null,
+              "mean_FDE": null,
+              "contribution_ADE": 0.0,
+              "contribution_FDE": 0.0
+            },
+            "FDE_only_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 50.0,
+              "mean_ADE": 0.16081926226615906,
+              "mean_FDE": 0.38467274606227875,
+              "contribution_ADE": 0.001641012880266929,
+              "contribution_FDE": 0.0039252321026763135
+            },
+            "both_fail": {
+              "n": 2,
+              "pct_population": 1.0204081632653061,
+              "pct_among_failed": 50.0,
+              "mean_ADE": 0.2672094702720642,
+              "mean_FDE": 0.4544183611869812,
+              "contribution_ADE": 0.0027266272476741244,
+              "contribution_FDE": 0.0046369220529283795
+            }
+          }
+        }
+      },
+      "samepath_coverage": {
+        "all": {
+          "n": 1516,
+          "samepath_good_n": 658,
+          "independent_both_pass_n": 704,
+          "split_candidate_tradeoff_n": 46,
+          "no_samepath_good_n": 858
+        },
+        "clear_event": {
+          "n": 469,
+          "samepath_good_n": 73,
+          "independent_both_pass_n": 87,
+          "split_candidate_tradeoff_n": 14,
+          "no_samepath_good_n": 396
+        },
+        "no_clear_event": {
+          "n": 1000,
+          "samepath_good_n": 566,
+          "independent_both_pass_n": 593,
+          "split_candidate_tradeoff_n": 27,
+          "no_samepath_good_n": 434
+        },
+        "boundary_uncertain": {
+          "n": 47,
+          "samepath_good_n": 19,
+          "independent_both_pass_n": 24,
+          "split_candidate_tradeoff_n": 5,
+          "no_samepath_good_n": 28
+        },
+        "near_static": {
+          "n": 196,
+          "samepath_good_n": 192,
+          "independent_both_pass_n": 192,
+          "split_candidate_tradeoff_n": 0,
+          "no_samepath_good_n": 4
+        }
+      }
+    }
+  },
+  "group_average_attribution": {
+    "selected": {
+      "clear_event": {
+        "n": 469,
+        "weight": 0.30936675461741425,
+        "mean_ADE": 0.928664225028522,
+        "mean_FDE": 2.134401888608424,
+        "contribution_ADE": 0.28729783742636994,
+        "contribution_FDE": 0.6603129853280679,
+        "share_total_ADE": 0.5296477621092803,
+        "share_total_FDE": 0.5514944812922644
+      },
+      "no_clear_event": {
+        "n": 1000,
+        "weight": 0.6596306068601583,
+        "mean_ADE": 0.36484916126495226,
+        "mean_FDE": 0.7638244517757558,
+        "contribution_ADE": 0.24066567365762023,
+        "contribution_FDE": 0.5038419866594694,
+        "share_total_ADE": 0.4436790635500313,
+        "share_total_FDE": 0.4208096482427557
+      },
+      "boundary_uncertain": {
+        "n": 47,
+        "weight": 0.03100263852242744,
+        "mean_ADE": 0.46668222768509643,
+        "mean_FDE": 1.0696089536427182,
+        "contribution_ADE": 0.014468380409762224,
+        "contribution_FDE": 0.033160699750137045,
+        "share_total_ADE": 0.026673174340688388,
+        "share_total_FDE": 0.027695870464979917
+      },
+      "near_static": {
+        "n": 196,
+        "weight": 0.12928759894459102,
+        "mean_ADE": 0.035963137983344495,
+        "mean_FDE": 0.07196970408240676,
+        "contribution_ADE": 0.004649587760379631,
+        "contribution_FDE": 0.0093047902375671,
+        "share_total_ADE": 0.008571744827863213,
+        "share_total_FDE": 0.007771375968096182
+      }
+    },
+    "independent_minima": {
+      "clear_event": {
+        "n": 469,
+        "weight": 0.30936675461741425,
+        "mean_ADE": 0.3578321542471711,
+        "mean_FDE": 0.6714842423741052,
+        "contribution_ADE": 0.1107013722572053,
+        "contribution_FDE": 0.20773490084001012,
+        "share_total_ADE": 0.5051299413319148,
+        "share_total_FDE": 0.5196947856103407
+      },
+      "no_clear_event": {
+        "n": 1000,
+        "weight": 0.6596306068601583,
+        "mean_ADE": 0.1552127237995155,
+        "mean_FDE": 0.2737942439783074,
+        "contribution_ADE": 0.10238306319229255,
+        "contribution_FDE": 0.18060306331022913,
+        "share_total_ADE": 0.46717352864917483,
+        "share_total_FDE": 0.45181849505330207
+      },
+      "boundary_uncertain": {
+        "n": 47,
+        "weight": 0.03100263852242744,
+        "mean_ADE": 0.195783729645166,
+        "mean_FDE": 0.36728643411968614,
+        "contribution_ADE": 0.006069812198761742,
+        "contribution_FDE": 0.01138684855120399,
+        "share_total_ADE": 0.027696530018910384,
+        "share_total_FDE": 0.02848671933635727
+      },
+      "near_static": {
+        "n": 196,
+        "weight": 0.12928759894459102,
+        "mean_ADE": 0.017580646368180762,
+        "mean_FDE": 0.034795094765954396,
+        "contribution_ADE": 0.0022729595568360354,
+        "contribution_FDE": 0.00449857425733975,
+        "share_total_ADE": 0.010371505828552832,
+        "share_total_FDE": 0.01125417816056308
+      }
+    },
+    "minADE_same_trajectory": {
+      "clear_event": {
+        "n": 469,
+        "weight": 0.30936675461741425,
+        "mean_ADE": 0.3578321542471711,
+        "mean_FDE": 0.7946700219795712,
+        "contribution_ADE": 0.1107013722572053,
+        "contribution_FDE": 0.24584448569156916,
+        "share_total_ADE": 0.5051299413319148,
+        "share_total_FDE": 0.5278324073190238
+      },
+      "no_clear_event": {
+        "n": 1000,
+        "weight": 0.6596306068601583,
+        "mean_ADE": 0.1552127237995155,
+        "mean_FDE": 0.3110341107118584,
+        "contribution_ADE": 0.10238306319229255,
+        "contribution_FDE": 0.2051676192030728,
+        "share_total_ADE": 0.46717352864917483,
+        "share_total_FDE": 0.4404984640726658
+      },
+      "boundary_uncertain": {
+        "n": 47,
+        "weight": 0.03100263852242744,
+        "mean_ADE": 0.195783729645166,
+        "mean_FDE": 0.47577528433596833,
+        "contribution_ADE": 0.006069812198761742,
+        "contribution_FDE": 0.014750289158173162,
+        "share_total_ADE": 0.027696530018910384,
+        "share_total_FDE": 0.03166912860831043
+      },
+      "near_static": {
+        "n": 196,
+        "weight": 0.12928759894459102,
+        "mean_ADE": 0.017580646368180762,
+        "mean_FDE": 0.03503893075343958,
+        "contribution_ADE": 0.0022729595568360354,
+        "contribution_FDE": 0.004530099226697993,
+        "share_total_ADE": 0.010371505828552832,
+        "share_total_FDE": 0.009726202210701241
+      }
+    },
+    "minFDE_same_trajectory": {
+      "clear_event": {
+        "n": 469,
+        "weight": 0.30936675461741425,
+        "mean_ADE": 0.4027903993755007,
+        "mean_FDE": 0.6714842423741052,
+        "contribution_ADE": 0.12460995864585081,
+        "contribution_FDE": 0.20773490084001012,
+        "share_total_ADE": 0.514680354982371,
+        "share_total_FDE": 0.5196947856103407
+      },
+      "no_clear_event": {
+        "n": 1000,
+        "weight": 0.6596306068601583,
+        "mean_ADE": 0.16768747801939027,
+        "mean_FDE": 0.2737942439783074,
+        "contribution_ADE": 0.11061179288877986,
+        "contribution_FDE": 0.18060306331022913,
+        "share_total_ADE": 0.4568632992731462,
+        "share_total_FDE": 0.45181849505330207
+      },
+      "boundary_uncertain": {
+        "n": 47,
+        "weight": 0.03100263852242744,
+        "mean_ADE": 0.22222639049621337,
+        "mean_FDE": 0.36728643411968614,
+        "contribution_ADE": 0.006889604454697908,
+        "contribution_FDE": 0.01138684855120399,
+        "share_total_ADE": 0.028456345744482876,
+        "share_total_FDE": 0.02848671933635727
+      },
+      "near_static": {
+        "n": 196,
+        "weight": 0.12928759894459102,
+        "mean_ADE": 0.017751069114619523,
+        "mean_FDE": 0.034795094765954396,
+        "contribution_ADE": 0.0022949931045286457,
+        "contribution_FDE": 0.00449857425733975,
+        "share_total_ADE": 0.009479080793838522,
+        "share_total_FDE": 0.01125417816056308
+      }
+    }
+  },
+  "existing_five_fold_saved_summary": {
+    "rows": [
+      {
+        "fold": "eth",
+        "seed": 1,
+        "test_samples": 364,
+        "min_ade_20": 0.4085031747817993,
+        "min_fde_20": 0.5995822548866272,
+        "same_path_fde": 0.7418616414070129,
+        "top1_ade": 0.9363165497779846,
+        "top1_fde": 1.8343687057495117,
+        "parameters": 355048
+      },
+      {
+        "fold": "hotel",
+        "seed": 1,
+        "test_samples": 1197,
+        "min_ade_20": 0.142722949385643,
+        "min_fde_20": 0.21431824564933777,
+        "same_path_fde": 0.24435743689537048,
+        "top1_ade": 0.31312182545661926,
+        "top1_fde": 0.6204645037651062,
+        "parameters": 355048
+      },
+      {
+        "fold": "univ",
+        "seed": 1,
+        "test_samples": 24334,
+        "min_ade_20": 0.23388388752937317,
+        "min_fde_20": 0.43082788586616516,
+        "same_path_fde": 0.497356116771698,
+        "top1_ade": 0.5795652270317078,
+        "top1_fde": 1.2499257326126099,
+        "parameters": 355048
+      },
+      {
+        "fold": "zara01",
+        "seed": 1,
+        "test_samples": 2356,
+        "min_ade_20": 0.18056842684745789,
+        "min_fde_20": 0.33199864625930786,
+        "same_path_fde": 0.38449662923812866,
+        "top1_ade": 0.4242702126502991,
+        "top1_fde": 0.9379250407218933,
+        "parameters": 355048
+      },
+      {
+        "fold": "zara02",
+        "seed": 1,
+        "test_samples": 5910,
+        "min_ade_20": 0.13431595265865326,
+        "min_fde_20": 0.24097761511802673,
+        "same_path_fde": 0.2851630747318268,
+        "top1_ade": 0.32397758960723877,
+        "top1_fde": 0.7286272644996643,
+        "parameters": 355048
+      }
+    ],
+    "macro": {
+      "min_ade_20": 0.21999887824058534,
+      "min_fde_20": 0.36354092955589296,
+      "same_path_fde": 0.4306469798088074,
+      "top1_ade": 0.5154502809047699,
+      "top1_fde": 1.0742622494697571
+    },
+    "micro": {
+      "min_ade_20": 0.21164753780744733,
+      "min_fde_20": 0.38537862391097216,
+      "same_path_fde": 0.44660241401330575,
+      "top1_ade": 0.5191023230983642,
+      "top1_fde": 1.1223921292242236
+    },
+    "parameters": 355048,
+    "seed_count": 1,
+    "total_sample_count": 34161,
+    "caveat": "Existing reported aggregates only; not a new held-test evaluation or independent confirmation."
+  },
+  "proposed_targets_not_adopted_or_preregistered": {
+    "0.2/0.35": {
+      "ADE_reduction_from_existing_macro_pct": 9.090445551597337,
+      "FDE_reduction_from_existing_macro_pct": 3.7247331607020873
+    },
+    "0.2/0.33": {
+      "ADE_reduction_from_existing_macro_pct": 9.090445551597337,
+      "FDE_reduction_from_existing_macro_pct": 9.226176980090539
+    },
+    "0.18/0.3": {
+      "ADE_reduction_from_existing_macro_pct": 18.181400996437613,
+      "FDE_reduction_from_existing_macro_pct": 17.478342709173223
+    },
+    "0.176/0.308": {
+      "ADE_reduction_from_existing_macro_pct": 19.99959208540566,
+      "FDE_reduction_from_existing_macro_pct": 15.277765181417834
+    }
+  },
+  "limitations": [
+    "DEV counts are exploratory single-checkpoint descriptions, not five-fold proportions.",
+    "Independent minima can be from different candidates.",
+    "Samepath thresholds are diagnostic, not benchmark SOTA rules.",
+    "No posthoc bad-sample exclusion or formal-gate relaxation.",
+    "Old formal summaries are historical aggregate evidence, not new SOTA audit."
+  ]
+}

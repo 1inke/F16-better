@@ -1,0 +1,137 @@
+{
+  "verdict": "STOP_OR_REDESIGN_REGIME_ADAPTIVE_SELECTION",
+  "gates": {
+    "primary_gain_at_least_1pct": false,
+    "beats_constant_and_shuffled": false,
+    "fde_not_materially_worse": false,
+    "stable_not_materially_harmed": false,
+    "effect_concentrated_high_p": false
+  },
+  "primary_gain_fraction": -0.005077898680371563,
+  "native_macro_selected_ade": 0.5159788747268051,
+  "native_macro_selected_fde": 1.0648011958528163,
+  "comparisons": [
+    {
+      "comparison": "constant_gate",
+      "metric": "selected_ade",
+      "macro_delta": -0.00245227043874774,
+      "ci_lower": -0.0036845421746560386,
+      "ci_upper": -0.0012477021230065822
+    },
+    {
+      "comparison": "constant_gate",
+      "metric": "selected_fde",
+      "macro_delta": -0.00026547335132615855,
+      "ci_lower": -0.002803021724143735,
+      "ci_upper": 0.002202934370970913
+    },
+    {
+      "comparison": "shuffled_d1",
+      "metric": "selected_ade",
+      "macro_delta": 0.0002282823571549474,
+      "ci_lower": -0.0013020350968502368,
+      "ci_upper": 0.0017688085430328702
+    },
+    {
+      "comparison": "shuffled_d1",
+      "metric": "selected_fde",
+      "macro_delta": 0.004798734607544468,
+      "ci_lower": 0.0017049563792986822,
+      "ci_upper": 0.00805054015270927
+    },
+    {
+      "comparison": "d0_motion_gate",
+      "metric": "selected_ade",
+      "macro_delta": 0.002121878506462392,
+      "ci_lower": 0.0008205105130107643,
+      "ci_upper": 0.0034244085512140634
+    },
+    {
+      "comparison": "d0_motion_gate",
+      "metric": "selected_fde",
+      "macro_delta": 0.010045415815682447,
+      "ci_lower": 0.00741206093427655,
+      "ci_upper": 0.012677872504968424
+    },
+    {
+      "comparison": "d1_social_gate",
+      "metric": "selected_ade",
+      "macro_delta": 0.0026200884470748476,
+      "ci_lower": 0.0004519035141664581,
+      "ci_upper": 0.00473669676615497
+    },
+    {
+      "comparison": "d1_social_gate",
+      "metric": "selected_fde",
+      "macro_delta": 0.011251897667901255,
+      "ci_lower": 0.006677533983396836,
+      "ci_upper": 0.015750626034269532
+    },
+    {
+      "comparison": "d1_vs_constant",
+      "metric": "selected_ade",
+      "macro_delta": 0.005072358885822586,
+      "ci_lower": 0.003069156795474212,
+      "ci_upper": 0.007181267536004872
+    },
+    {
+      "comparison": "d1_vs_constant",
+      "metric": "selected_fde",
+      "macro_delta": 0.011517371019227413,
+      "ci_lower": 0.0071985612739522845,
+      "ci_upper": 0.01598750324168832
+    },
+    {
+      "comparison": "d1_vs_shuffled",
+      "metric": "selected_ade",
+      "macro_delta": 0.0023918060899199,
+      "ci_lower": 0.0005799566843956449,
+      "ci_upper": 0.004101840960867998
+    },
+    {
+      "comparison": "d1_vs_shuffled",
+      "metric": "selected_fde",
+      "macro_delta": 0.006453163060356789,
+      "ci_lower": 0.0023920726443193686,
+      "ci_upper": 0.010344271603323341
+    },
+    {
+      "comparison": "d1_vs_d0",
+      "metric": "selected_ade",
+      "macro_delta": 0.0004982099406124552,
+      "ci_lower": -0.001456310533626795,
+      "ci_upper": 0.0023665005193110288
+    },
+    {
+      "comparison": "d1_vs_d0",
+      "metric": "selected_fde",
+      "macro_delta": 0.0012064818522188095,
+      "ci_lower": -0.0027482572597784002,
+      "ci_upper": 0.005126368449639317
+    },
+    {
+      "comparison": "d1_vs_native_stable",
+      "metric": "selected_ade",
+      "macro_delta": 0.0037391961126191898,
+      "ci_lower": 0.0005457950631237386,
+      "ci_upper": 0.007260958143098685
+    },
+    {
+      "comparison": "d1_vs_native_high",
+      "metric": "selected_ade",
+      "macro_delta": 0.006667760843991992,
+      "ci_lower": -0.0005419126362345679,
+      "ci_upper": 0.014511069098354553
+    },
+    {
+      "comparison": "d1_vs_native_low",
+      "metric": "selected_ade",
+      "macro_delta": -0.001486126989094058,
+      "ci_lower": -0.0020765988998302978,
+      "ci_upper": -0.0008986728955676407
+    }
+  ],
+  "test_accessed": true,
+  "test_used_for_selection": false,
+  "seed_scope": "one fixed seed-1 generator per fold; three seeds apply only to detector and reranker"
+}

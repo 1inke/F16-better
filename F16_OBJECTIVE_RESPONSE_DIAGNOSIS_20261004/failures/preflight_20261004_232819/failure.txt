@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\F16_OBJECTIVE_RESPONSE_DIAGNOSIS_20261004\diagnosis.py", line 319, in <module>
+    try:preflight() if a.action=='preflight' else run()
+  File "C:\Users\linke\Documents\New project\F16_OBJECTIVE_RESPONSE_DIAGNOSIS_20261004\diagnosis.py", line 246, in preflight
+    z=getblock(job);start=time.perf_counter();o=calculate(d,job,z);audit(d,job,z,o);timings.append(time.perf_counter()-start)
+  File "C:\Users\linke\Documents\New project\F16_OBJECTIVE_RESPONSE_DIAGNOSIS_20261004\diagnosis.py", line 89, in getblock
+    done=read(PREV/'chunks'/(name(job)+'.done.json'));assert done['status']=='SUCCESS'
+  File "C:\Users\linke\Documents\New project\F16_OBJECTIVE_RESPONSE_DIAGNOSIS_20261004\diagnosis.py", line 19, in read
+    def read(p):return json.loads(Path(p).read_text(encoding='utf-8-sig'))
+  File "C:\coding_toobox\envs\astra2\lib\pathlib.py", line 1134, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+  File "C:\coding_toobox\envs\astra2\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\linke\\Documents\\New project\\F16_CURVE_REACHABILITY_DIAGNOSIS_20261004\\recovery_numeric_20261004\\chunks\\FIT_12000_12064.done.json'

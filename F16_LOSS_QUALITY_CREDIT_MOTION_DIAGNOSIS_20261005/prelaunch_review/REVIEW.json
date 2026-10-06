@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "at": "2026-10-05T17:24:10.076370+08:00",
+  "source_count": 459,
+  "old_files_locked": 30071,
+  "models": 18,
+  "current_source_resource": {
+    "status": "PASS_CURRENT_SOURCE_RESOURCE",
+    "source_count": 459,
+    "memory": {
+      "peak_RSS_GiB": 0.552947998046875,
+      "peak_private_GiB": 0.9146194458007812,
+      "min_physical_GiB": 18.061477661132812,
+      "min_commit_GiB": 18.189449310302734,
+      "checks": 2
+    },
+    "at": "2026-10-05T17:24:10.076370+08:00"
+  },
+  "actual_preflight": "PASS_AST_ORIGINAL_LOSS_GRAD_FROZEN_GPU_CACHE_FINITE_K20_BOUNDS_CHUNK31_64_128_FD_TWOEPS_CREDIT_SAMEPATH_CLUSTER_QUANTILE_SHA_RESUME_FIXTURE",
+  "FD_max_absolute_error": 0.000004375149744164156,
+  "all_FD_within_preregistered_tolerance": true,
+  "preflight_memory": {
+    "peak_RSS_GiB": 2.225574493408203,
+    "peak_private_GiB": 3.800518035888672,
+    "min_physical_GiB": 16.18716812133789,
+    "min_commit_GiB": 15.220077514648438,
+    "checks": 222
+  },
+  "source_final_and_all_old_final_SHA": "PASS_IN_ACTUAL_PREFLIGHT_NOT_DUPLICATED_CURRENT_CPU_REVIEW",
+  "estimate": {
+    "ETA_minutes": [
+      12,
+      25
+    ],
+    "planning_minutes": 18,
+    "one_half_elapsed_minutes": 9,
+    "nominal_compute_minutes": 5.072454650706322,
+    "basis": "Actual CPU snapshot128 with direct credit+clustering .0566-.0583s and GPU128 eleven-component backward .0557-.0654s, plus450 old witness loads, compression/save155outputs, full38saved geometry audit, delta arithmetic and initial/finalSHA; no production guarantee."
+  },
+  "scope": "Frozen diagnostic/no optimizer/new model training or loss; oldF16decoderScorer and18heads values/buffers exactfixed. FITCAL only noDEV. Newhead45798 numerical derivatives only.",
+  "fixture_failure_preserved": "failures/preflight1_exact_cos_fixture; secondpreflight all loops PASS; old preflight_stderr contains retained first failure not production failure",
+  "review_cli_note": "Readonly current review first attempted hashlib.file_digest unavailable on Python3.10; no files modified; retried existing streaming c.sha PASS.",
+  "interpretation": "DECISION_PLAN.md human two-stage branches with counterclaims; evidence priorities not uniquely proved loss/head roots; currentprimary is best-candidate mean-timeADE+.5FDE not ALLcandidate average.",
+  "no_external_review": true
+}

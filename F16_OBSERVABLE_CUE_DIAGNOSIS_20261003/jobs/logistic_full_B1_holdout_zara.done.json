@@ -1,0 +1,38 @@
+{
+  "status": "SUCCESS",
+  "predictions": "jobs/logistic_full_B1_holdout_zara.predictions.npz",
+  "metrics": {
+    "n": 7668,
+    "prevalence": 0.19444444444444445,
+    "AUPRC": 0.17723079773092504,
+    "AUROC": 0.48589480870979473,
+    "Brier": 0.260109226718185,
+    "log_loss": 0.713484761687978
+  },
+  "probe": "B1",
+  "mode": "full",
+  "reader": "L2_logistic",
+  "heldout_scene_family": "zara",
+  "C": 0.1,
+  "selection": {
+    "inner_groups": 2,
+    "Cs": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_log_losses": [
+      1.5775368482826186,
+      1.5890986943589513,
+      1.5898408230569636
+    ],
+    "selection": "FIT inner scene-family held-out log loss; no CAL/DEV choice"
+  },
+  "train_n": 17549,
+  "input_dim": 3,
+  "transformed_dim": 3,
+  "hashes": {
+    "jobs/logistic_full_B1_holdout_zara.predictions.npz": "85fecf9a540cdde81e5bc96ecd327cd7976931f9a524b1cb544c766883b90bb4",
+    "jobs/logistic_full_B1_holdout_zara.joblib": "c49490cb6cabded4d9bd4daace4165f8647fcc2e9a117c77dfdd36296ff79b2f"
+  }
+}

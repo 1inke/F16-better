@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\GENERATION_BALANCE_REPLICATION_SERIES\run_replication.py", line 156, in <module>
+    try:main()
+  File "C:\Users\linke\Documents\New project\GENERATION_BALANCE_REPLICATION_SERIES\run_replication.py", line 150, in main
+    print('[DEV] lock all12 checkpoints before evaluation',flush=True);evaluate(json.loads((HERE/'protocol.json').read_text()),device)
+  File "C:\Users\linke\Documents\New project\GENERATION_BALANCE_REPLICATION_SERIES\run_replication.py", line 127, in evaluate
+    (RESULTS/'summary.json').write_text(json.dumps(summary,indent=2))
+  File "C:\coding_toobox\envs\astra2\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool_ is not JSON serializable

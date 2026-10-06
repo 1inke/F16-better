@@ -1,0 +1,84 @@
+{
+  "status": "ANALYZED_DIAGNOSTIC_ONLY",
+  "analysis_finished_at": "2026-10-04T23:59:00+08:00",
+  "scope": {
+    "FIT": 25912,
+    "CAL": 2879,
+    "DEV": false,
+    "model_forward": false,
+    "optimizer": false,
+    "formal_response_study_completed": 2
+  },
+  "quality_criterion": {
+    "same_complete_candidate": true,
+    "ADE_m_max": 0.2,
+    "FDE_m_max": 0.4
+  },
+  "coarse_response_covered_path_failure": {
+    "FIT": {
+      "n": 576,
+      "native_good": 0,
+      "actual_selected_seed_good": [
+        27,
+        16,
+        17
+      ],
+      "GT_assisted_single_witness_good": 576,
+      "original_total_loss_lower": 576,
+      "initial_native_quality_direction_zero": 456,
+      "initial_native_quality_direction_negative": 120
+    },
+    "CAL": {
+      "n": 77,
+      "native_good": 0,
+      "actual_selected_seed_good": [
+        3,
+        3,
+        1
+      ],
+      "GT_assisted_single_witness_good": 77,
+      "original_total_loss_lower": 77,
+      "initial_native_quality_direction_zero": 64,
+      "initial_native_quality_direction_negative": 13
+    }
+  },
+  "interpretation": "The original output-space objective rewards the hypothetical good candidate; initial hard-winner quality feedback is not assigned to many alternative witness slots. This is not a proof of a parameter-learning blockage, decoder root cause, deployability, or past-only learnability.",
+  "counterevidence": "Actual selected CAL quality improves slightly but protected damage increases total objective. Prior set-supervision and flexible-response failures remain negative evidence; do not remove protection or repeat local coefficient/epoch sweeps.",
+  "limitations": [
+    "GT witness uses future answers posthoc, never inference input",
+    "Population coordinate-gradient contributions are not actual minibatch gradients or head Jacobians",
+    "Three seeds share IDs, not independent sample counts",
+    "Training GT quality winner is not deployed logit argmax",
+    "Raw good candidate counts not new GT-independent clustering",
+    "Three scenes, overlapping windows, F16 seen data, CAL checkpoint selection and CAL single-family limitations",
+    "No major, intent, SOTA, new baseline or causal-root conclusion"
+  ],
+  "audit": {
+    "worker": "SUCCESS",
+    "exit": "SUCCESS",
+    "blocks": 450,
+    "output_SHA": 900,
+    "old_file_SHA_unchanged": 23614,
+    "source_SHA_unchanged": 319,
+    "worker_numpy_max_error": 1.7763568394002505e-15,
+    "completion_review": "PASS",
+    "independent_group_summary_max_error": 0,
+    "peak_RSS_GiB": 0.74041748046875,
+    "peak_private_GiB": 1.124755859375,
+    "min_physical_GiB": 17.1915283203125,
+    "min_commit_GiB": 14.397083282470703
+  },
+  "next": {
+    "proposal_only": "Discuss real response-head parameter-gradient and fixed FIT tinyset learning checks before adding curve freedom.",
+    "waiting_human": true,
+    "automatic_training": false
+  },
+  "evidence": [
+    "RESULT.json",
+    "ARITHMETIC_AUDIT.json",
+    "RESOURCE_USAGE.json",
+    "completion_review/REVIEW.json",
+    "completion_review/ADVERSARIAL_REVIEW.md",
+    "RESULT_ANALYSIS.md"
+  ]
+}

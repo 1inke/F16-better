@@ -1,0 +1,66 @@
+{
+  "status": "PASS_ALL_NATIVE_1516_K20",
+  "n": 1516,
+  "K": 20,
+  "source": "native original logit argmax",
+  "rows": [
+    {
+      "group": "all",
+      "n": 1516,
+      "mean_oracle_ADE": 0.2191542536020279,
+      "mean_oracle_FDE": 0.3997247815132141,
+      "mean_selected_ADE": 0.5424318909645081,
+      "mean_selected_FDE": 1.1973156929016113,
+      "SAMEPATH_20_40_rate": 0.48350923482849606,
+      "selected_20_40_rate": 0.1853562005277045,
+      "event_type_time_coverage_rate": 0.2552770448548813
+    },
+    {
+      "group": "clear_event",
+      "n": 469,
+      "mean_oracle_ADE": 0.357832133769989,
+      "mean_oracle_FDE": 0.6714841723442078,
+      "mean_selected_ADE": 0.9286641478538513,
+      "mean_selected_FDE": 2.13440203666687,
+      "SAMEPATH_20_40_rate": 0.19616204690831557,
+      "selected_20_40_rate": 0.010660980810234541,
+      "event_type_time_coverage_rate": 0.8251599147121536
+    },
+    {
+      "group": "no_clear_event",
+      "n": 1000,
+      "mean_oracle_ADE": 0.15521274507045746,
+      "mean_oracle_FDE": 0.2737942636013031,
+      "mean_selected_ADE": 0.36484917998313904,
+      "mean_selected_FDE": 0.763824462890625,
+      "SAMEPATH_20_40_rate": 0.619,
+      "selected_20_40_rate": 0.273,
+      "event_type_time_coverage_rate": 0.0
+    },
+    {
+      "group": "boundary_uncertain",
+      "n": 47,
+      "mean_oracle_ADE": 0.19578373432159424,
+      "mean_oracle_FDE": 0.36728644371032715,
+      "mean_selected_ADE": 0.46668222546577454,
+      "mean_selected_FDE": 1.0696089267730713,
+      "SAMEPATH_20_40_rate": 0.46808510638297873,
+      "selected_20_40_rate": 0.06382978723404255,
+      "event_type_time_coverage_rate": 0.0
+    },
+    {
+      "group": "near_static",
+      "n": 196,
+      "mean_oracle_ADE": 0.01758064329624176,
+      "mean_oracle_FDE": 0.034795090556144714,
+      "mean_selected_ADE": 0.035963140428066254,
+      "mean_selected_FDE": 0.07196970283985138,
+      "SAMEPATH_20_40_rate": 0.9846938775510204,
+      "selected_20_40_rate": 0.9642857142857143,
+      "event_type_time_coverage_rate": 0.00510204081632653
+    }
+  ],
+  "independent_minima_not_samepath": true,
+  "event_type_time_tolerance_steps": 2,
+  "limitation": "Event type/timing matches are not complete path accuracy. One realized GT cannot establish impossible futures or invalidate all alternative candidates."
+}

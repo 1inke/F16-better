@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "C:\Users\linke\Documents\New project\GENERATION_CANDIDATE_ROUTED_MAPPING_SERIES_20261005\run_head.py", line 190, in main
+    c.main()
+  File "C:\Users\linke\Documents\New project\GENERATION_SET_CONTEXT_SERIES\run_context.py", line 156, in main
+    if args.action=='preflight':preflight(device);return
+  File "C:\Users\linke\Documents\New project\GENERATION_CANDIDATE_ROUTED_MAPPING_SERIES_20261005\run_head.py", line 149, in preflight
+    return preflight_impl.run(sys.modules[__name__],device)
+  File "C:\Users\linke\Documents\New project\GENERATION_CANDIDATE_ROUTED_MAPPING_SERIES_20261005\preflight_impl.py", line 112, in run
+    h.m.write_json(h.HERE/'preflight.json',record);h.guard.save('PREFLIGHT_PASS')
+  File "C:\Users\linke\Documents\New project\GENERATION_PROTECTED_BALANCE_SERIES\run_protected.py", line 29, in write_json
+    path.write_text(json.dumps(value,indent=2,default=convert),encoding='utf-8')
+  File "C:\coding_toobox\envs\astra2\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "C:\coding_toobox\envs\astra2\lib\json\encoder.py", line 438, in _iterencode
+    o = _default(o)
+  File "C:\Users\linke\Documents\New project\GENERATION_PROTECTED_BALANCE_SERIES\run_protected.py", line 28, in convert
+    raise TypeError(type(x).__name__)
+TypeError: Tensor

@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "scope": "CPU saved outputs and labels only; no torch/model forward/backward/optimizer; same assistant not external reviewer",
+  "jobs": 57,
+  "outputs": 114,
+  "models": 18,
+  "records_exact": 216,
+  "full_complete_link_reconstructed": true,
+  "all_quality_columns_EXACT": true,
+  "all_group_pooled_motion_EXACT": true,
+  "bootstrap_reconstructed": 180,
+  "bootstrap_max_error": 0.0,
+  "legacy_minADE_FDE_max_error": 0.0,
+  "strict_perwindow_accel_and_endpoint_PASS": true,
+  "sources": 565,
+  "old_files": 32754,
+  "old_source_output_model_SHA_before_after": true,
+  "histories": [
+    {
+      "arm": "random",
+      "seed": 1,
+      "epochs": 80,
+      "constrained_epoch": 8,
+      "legacy_epoch": 36,
+      "initial_loss": 0.37006123563663723,
+      "final_loss": 0.30031158083339493
+    },
+    {
+      "arm": "random",
+      "seed": 2,
+      "epochs": 80,
+      "constrained_epoch": 9,
+      "legacy_epoch": 7,
+      "initial_loss": 0.3701493398267895,
+      "final_loss": 0.3005526672656854
+    },
+    {
+      "arm": "random",
+      "seed": 3,
+      "epochs": 80,
+      "constrained_epoch": 8,
+      "legacy_epoch": 8,
+      "initial_loss": 0.37003815851864197,
+      "final_loss": 0.30253699549507224
+    },
+    {
+      "arm": "grouped",
+      "seed": 1,
+      "epochs": 80,
+      "constrained_epoch": 7,
+      "legacy_epoch": 24,
+      "initial_loss": 0.36921777686157065,
+      "final_loss": 0.2984124538736972
+    },
+    {
+      "arm": "grouped",
+      "seed": 2,
+      "epochs": 80,
+      "constrained_epoch": 7,
+      "legacy_epoch": 4,
+      "initial_loss": 0.3692602475385162,
+      "final_loss": 0.3000047045919899
+    },
+    {
+      "arm": "grouped",
+      "seed": 3,
+      "epochs": 80,
+      "constrained_epoch": 8,
+      "legacy_epoch": 3,
+      "initial_loss": 0.36916215844251093,
+      "final_loss": 0.2989333357510386
+    }
+  ],
+  "resource": {
+    "peak_RSS_GiB": 0.22226715087890625,
+    "peak_private_GiB": 0.20425796508789062,
+    "min_physical_GiB": 17.900146484375,
+    "min_commit_GiB": 18.78234100341797,
+    "checks": 790
+  },
+  "elapsed_seconds": 152.92395249998663
+}

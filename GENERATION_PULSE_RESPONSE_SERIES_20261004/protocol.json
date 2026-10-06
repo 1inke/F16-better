@@ -1,0 +1,34 @@
+{
+  "protocol": "endpoint_consistent_fixed_vs_learned_pulse_clock_v1",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "epochs": 80,
+  "velocity_residual_scale": 1.5,
+  "protection_weight": 0.1,
+  "guard_fraction": 0.01,
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 20261001,
+  "test_access": "forbidden",
+  "set_context": "mean_std",
+  "study": "time_response_20261004",
+  "experiment_in_study": 2,
+  "zero_label": "fixed_pulse_center_span",
+  "mean_std_label": "candidate_observation_learned_pulse_center_span",
+  "initialization": "fresh_fullpaired_weights_buffers_lastzero_nativeidentity_no_warmstart",
+  "factor": "last_two_clock_codes_times_zero_vs_identity_in_shared_endpoint_consistent_pulse_parameterization",
+  "pulse_center_range": [
+    0.05,
+    0.95
+  ],
+  "pulse_span_range": [
+    0.05,
+    0.5
+  ],
+  "amplitude_drift_partition": 0.5,
+  "future_observations": false,
+  "progress_fraction": 0.5,
+  "after_analysis": "report_to_human_no_blind_followon"
+}

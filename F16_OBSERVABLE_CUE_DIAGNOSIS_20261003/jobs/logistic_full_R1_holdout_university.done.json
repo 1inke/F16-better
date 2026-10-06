@@ -1,0 +1,38 @@
+{
+  "status": "SUCCESS",
+  "predictions": "jobs/logistic_full_R1_holdout_university.predictions.npz",
+  "metrics": {
+    "n": 16724,
+    "prevalence": 0.5204496531930161,
+    "AUPRC": 0.5652686700446322,
+    "AUROC": 0.5368522555628392,
+    "Brier": 0.36163506943992646,
+    "log_loss": 0.9874925107674843
+  },
+  "probe": "R1",
+  "mode": "full",
+  "reader": "L2_logistic",
+  "heldout_scene_family": "university",
+  "C": 0.1,
+  "selection": {
+    "inner_groups": 2,
+    "Cs": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_log_losses": [
+      0.6143819424711598,
+      0.6672009634332827,
+      0.7003256850139403
+    ],
+    "selection": "FIT inner scene-family held-out log loss; no CAL/DEV choice"
+  },
+  "train_n": 8493,
+  "input_dim": 49,
+  "transformed_dim": 49,
+  "hashes": {
+    "jobs/logistic_full_R1_holdout_university.predictions.npz": "351ce21185ff9c97d60f351cc00a02a242eace972713a10728b97bf2d18ced63",
+    "jobs/logistic_full_R1_holdout_university.joblib": "61418efb9c208bb2f449edb3910911ba19aa7a1b3d39b830dd98a47cfd8d6b11"
+  }
+}

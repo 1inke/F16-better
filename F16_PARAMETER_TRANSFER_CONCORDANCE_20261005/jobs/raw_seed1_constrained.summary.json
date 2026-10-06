@@ -1,0 +1,1468 @@
+{
+  "layout": [
+    {
+      "name": "head.0.weight",
+      "start": 0,
+      "stop": 24576,
+      "shape": [
+        128,
+        192
+      ]
+    },
+    {
+      "name": "head.0.bias",
+      "start": 24576,
+      "stop": 24704,
+      "shape": [
+        128
+      ]
+    },
+    {
+      "name": "head.2.weight",
+      "start": 24704,
+      "stop": 32896,
+      "shape": [
+        64,
+        128
+      ]
+    },
+    {
+      "name": "head.2.bias",
+      "start": 32896,
+      "stop": 32960,
+      "shape": [
+        64
+      ]
+    },
+    {
+      "name": "head.4.weight",
+      "start": 32960,
+      "stop": 33344,
+      "shape": [
+        6,
+        64
+      ]
+    },
+    {
+      "name": "head.4.bias",
+      "start": 33344,
+      "stop": 33350,
+      "shape": [
+        6
+      ]
+    },
+    {
+      "name": "query.weight",
+      "start": 33350,
+      "stop": 37446,
+      "shape": [
+        32,
+        128
+      ]
+    },
+    {
+      "name": "query.bias",
+      "start": 37446,
+      "stop": 37478,
+      "shape": [
+        32
+      ]
+    },
+    {
+      "name": "key.weight",
+      "start": 37478,
+      "stop": 40550,
+      "shape": [
+        32,
+        96
+      ]
+    },
+    {
+      "name": "key.bias",
+      "start": 40550,
+      "stop": 40582,
+      "shape": [
+        32
+      ]
+    },
+    {
+      "name": "value.weight",
+      "start": 40582,
+      "stop": 43654,
+      "shape": [
+        32,
+        96
+      ]
+    },
+    {
+      "name": "value.bias",
+      "start": 43654,
+      "stop": 43686,
+      "shape": [
+        32
+      ]
+    },
+    {
+      "name": "state_encoder.0.weight",
+      "start": 43686,
+      "stop": 44710,
+      "shape": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "state_encoder.0.bias",
+      "start": 44710,
+      "stop": 44742,
+      "shape": [
+        32
+      ]
+    },
+    {
+      "name": "state_encoder.2.weight",
+      "start": 44742,
+      "stop": 45766,
+      "shape": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "state_encoder.2.bias",
+      "start": 45766,
+      "stop": 45798,
+      "shape": [
+        32
+      ]
+    }
+  ],
+  "parameter_names": [
+    "head.0.weight",
+    "head.0.bias",
+    "head.2.weight",
+    "head.2.bias",
+    "head.4.weight",
+    "head.4.bias",
+    "query.weight",
+    "query.bias",
+    "key.weight",
+    "key.bias",
+    "value.weight",
+    "value.bias",
+    "state_encoder.0.weight",
+    "state_encoder.0.bias",
+    "state_encoder.2.weight",
+    "state_encoder.2.bias"
+  ],
+  "summary": {
+    "stable__stable": {
+      "all": {
+        "FITnorm": 0.08514265461168632,
+        "CALnorm": 0.10345846523112844,
+        "dot": 0.005589745470460317,
+        "cos": 0.6345689450859534,
+        "CAL_directional_derivative": -0.06565152914192895,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.005702012109381563,
+          "CALnorm": 0.01106100094341748,
+          "dot": 5.3395067962779786e-05,
+          "cos": 0.8466006137345096,
+          "CAL_directional_derivative": -0.009364250187215225,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.000576996194223608,
+          "CALnorm": 0.0012038969089439191,
+          "dot": -4.058028038050368e-08,
+          "cos": -0.05841882200862242,
+          "CAL_directional_derivative": 7.033023924032552e-05,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "key": {
+          "FITnorm": 0.0005640260262022342,
+          "CALnorm": 0.0008639434382138397,
+          "dot": 2.091275317161188e-07,
+          "cos": 0.42916743133463364,
+          "CAL_directional_derivative": -0.00037077638619664537,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.008761708938756324,
+          "CALnorm": 0.012835962128724433,
+          "dot": 7.884988853437504e-05,
+          "cos": 0.70110624362707,
+          "CAL_directional_derivative": -0.008999373191409317,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.08449461579731281,
+          "CALnorm": 0.10205072560402724,
+          "dot": 0.00545733196671183,
+          "cos": 0.6329002102858692,
+          "CAL_directional_derivative": -0.06458792569461437,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.07241500381827227,
+          "CALnorm": 0.0876700547574095,
+          "dot": 0.0039979537261492296,
+          "cos": 0.629735138910852,
+          "CAL_directional_derivative": -0.055208914110979265,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "A2": {
+          "FITnorm": 0.03355895196730762,
+          "CALnorm": 0.030499624948926992,
+          "dot": 0.0006024312040972246,
+          "cos": 0.5885787393812377,
+          "CAL_directional_derivative": -0.017951430804039995,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.000282428480717332,
+          "CALnorm": 0.0003570445986057226,
+          "dot": 6.005997672504988e-08,
+          "cos": 0.5955993324551309,
+          "CAL_directional_derivative": -0.00021265552458627854,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        }
+      }
+    },
+    "stable__transition": {
+      "all": {
+        "FITnorm": 0.08514265461168632,
+        "CALnorm": 0.14920777122433446,
+        "dot": -0.003914669391756237,
+        "cos": -0.30814594730879413,
+        "CAL_directional_derivative": 0.04597777000975638,
+        "status": "LOCAL_PRIMARY_CONFLICT"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.005702012109381563,
+          "CALnorm": 0.02015490439561065,
+          "dot": 3.7285531151945445e-06,
+          "cos": 0.03244378065027987,
+          "CAL_directional_derivative": -0.0006539012972385535,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.000576996194223608,
+          "CALnorm": 0.0028245529694401425,
+          "dot": -2.2575413855170437e-07,
+          "cos": -0.13852018037731065,
+          "CAL_directional_derivative": 0.0003912575868121169,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "key": {
+          "FITnorm": 0.0005640260262022342,
+          "CALnorm": 0.0028652687340000797,
+          "dot": -3.248456078665185e-07,
+          "cos": -0.20100760734237816,
+          "CAL_directional_derivative": 0.000575940812614281,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "value": {
+          "FITnorm": 0.008761708938756324,
+          "CALnorm": 0.018516485376919897,
+          "dot": 3.0510643379298855e-06,
+          "cos": 0.018806327173269025,
+          "CAL_directional_derivative": -0.00034822708209740727,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.08449461579731281,
+          "CALnorm": 0.14662090822058163,
+          "dot": -0.003920898409462925,
+          "cos": -0.31649047852319756,
+          "CAL_directional_derivative": 0.04640412140423771,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "D2": {
+          "FITnorm": 0.07241500381827227,
+          "CALnorm": 0.12267958305321747,
+          "dot": -0.0028907470602590173,
+          "cos": -0.32539377733467995,
+          "CAL_directional_derivative": 0.039919172931530016,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "A2": {
+          "FITnorm": 0.03355895196730762,
+          "CALnorm": 0.04361095292845013,
+          "dot": -0.0009348118935319076,
+          "cos": -0.6387343366865522,
+          "CAL_directional_derivative": 0.027855813091022044,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "clock2": {
+          "FITnorm": 0.000282428480717332,
+          "CALnorm": 0.0019994232028100654,
+          "dot": 3.9019003222087674e-07,
+          "cos": 0.6909759843439859,
+          "CAL_directional_derivative": -0.0013815534156818897,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        }
+      }
+    },
+    "stable__change": {
+      "all": {
+        "FITnorm": 0.08514265461168632,
+        "CALnorm": 0.17928801899415656,
+        "dot": -0.00914461190191664,
+        "cos": -0.5990551739443696,
+        "CAL_directional_derivative": 0.10740341540468588,
+        "status": "LOCAL_PRIMARY_CONFLICT"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.005702012109381563,
+          "CALnorm": 0.023039846527695577,
+          "dot": 4.478468572599215e-05,
+          "cos": 0.3408959281337934,
+          "CAL_directional_derivative": -0.00785418986611894,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.000576996194223608,
+          "CALnorm": 0.009248600678762176,
+          "dot": 3.0251858674015003e-06,
+          "cos": 0.5668955992872363,
+          "CAL_directional_derivative": -0.005242991024355224,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "key": {
+          "FITnorm": 0.0005640260262022342,
+          "CALnorm": 0.004628776914832435,
+          "dot": 6.993866109921648e-07,
+          "cos": 0.2678871730395304,
+          "CAL_directional_derivative": -0.0012399899623451,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.008761708938756324,
+          "CALnorm": 0.02952605633056333,
+          "dot": 1.2913282068990396e-05,
+          "cos": 0.0499162983272891,
+          "CAL_directional_derivative": -0.0014738314362247422,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.08449461579731281,
+          "CALnorm": 0.17502745223007507,
+          "dot": -0.009206034442190005,
+          "cos": -0.6224971805948921,
+          "CAL_directional_derivative": 0.1089540955399289,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "D2": {
+          "FITnorm": 0.07241500381827227,
+          "CALnorm": 0.14298663795818,
+          "dot": -0.007418005528387557,
+          "cos": -0.7164124755618524,
+          "CAL_directional_derivative": 0.10243741127188606,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "A2": {
+          "FITnorm": 0.03355895196730762,
+          "CALnorm": 0.06078630506776452,
+          "dot": -0.0016362486925714497,
+          "cos": -0.8021123029476978,
+          "CAL_directional_derivative": 0.04875744314558591,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "clock2": {
+          "FITnorm": 0.000282428480717332,
+          "CALnorm": 0.003391816143624433,
+          "dot": -8.309906782214855e-08,
+          "cos": -0.08674717875875824,
+          "CAL_directional_derivative": 0.0002942304813278307,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "stable__overall": {
+      "all": {
+        "FITnorm": 0.08514265461168632,
+        "CALnorm": 0.08935434720384108,
+        "dot": -0.00011879684698717376,
+        "cos": -0.015615001888661682,
+        "CAL_directional_derivative": 0.0013952683003481102,
+        "status": "LOCAL_PRIMARY_CONFLICT"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.005702012109381563,
+          "CALnorm": 0.00998430237403993,
+          "dot": 4.019169765100617e-05,
+          "cos": 0.705976898973706,
+          "CAL_directional_derivative": -0.0070486868284405195,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.000576996194223608,
+          "CALnorm": 0.001889606601627819,
+          "dot": 6.634087223236127e-07,
+          "cos": 0.6084667220970275,
+          "CAL_directional_derivative": -0.0011497627349453827,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "key": {
+          "FITnorm": 0.0005640260262022342,
+          "CALnorm": 0.0012655655657047838,
+          "dot": 2.0888531344658563e-07,
+          "cos": 0.2926335474295,
+          "CAL_directional_derivative": -0.0003703469409968128,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.008761708938756324,
+          "CALnorm": 0.011053593022706518,
+          "dot": 4.586271683993948e-05,
+          "cos": 0.47355179344781195,
+          "CAL_directional_derivative": -0.0052344487999448925,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.08449461579731281,
+          "CALnorm": 0.08807473464227222,
+          "dot": -0.0002057235555138837,
+          "cos": -0.027644175580275224,
+          "CAL_directional_derivative": 0.002434753428637122,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "D2": {
+          "FITnorm": 0.07241500381827227,
+          "CALnorm": 0.07798348990177803,
+          "dot": -0.0003186474494751761,
+          "cos": -0.05642599447173345,
+          "CAL_directional_derivative": 0.0044002959700842085,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "A2": {
+          "FITnorm": 0.03355895196730762,
+          "CALnorm": 0.02532181720984666,
+          "dot": -0.0002857454136663159,
+          "cos": -0.33626062012748004,
+          "CAL_directional_derivative": 0.008514729957737735,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "clock2": {
+          "FITnorm": 0.000282428480717332,
+          "CALnorm": 0.0011077286802905163,
+          "dot": 9.909867924546449e-08,
+          "cos": 0.31675682149002593,
+          "CAL_directional_derivative": -0.0003508806158421651,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        }
+      }
+    },
+    "transition__stable": {
+      "all": {
+        "FITnorm": 0.05900748720774067,
+        "CALnorm": 0.10345846523112844,
+        "dot": -0.0010370324852120882,
+        "cos": -0.1698709863541342,
+        "CAL_directional_derivative": 0.017574591535496686,
+        "status": "LOCAL_PRIMARY_CONFLICT"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.010691302059378988,
+          "CALnorm": 0.01106100094341748,
+          "dot": 2.3033642871453467e-05,
+          "cos": 0.194776967437153,
+          "CAL_directional_derivative": -0.002154428220578345,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.0012434686070438628,
+          "CALnorm": 0.0012038969089439191,
+          "dot": 3.959526960142054e-07,
+          "cos": 0.2644960432658934,
+          "CAL_directional_derivative": -0.0003184259689157061,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "key": {
+          "FITnorm": 0.001197818771603168,
+          "CALnorm": 0.0008639434382138397,
+          "dot": 5.857223183647597e-07,
+          "cos": 0.5659985875560474,
+          "CAL_directional_derivative": -0.0004889907657573485,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.009894494859705843,
+          "CALnorm": 0.012835962128724433,
+          "dot": 3.6351191268461306e-05,
+          "cos": 0.28621776983108055,
+          "CAL_directional_derivative": -0.0036738804541197167,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.05715503122500891,
+          "CALnorm": 0.10205072560402724,
+          "dot": -0.0010973989943663827,
+          "cos": -0.1881455689088583,
+          "CAL_directional_derivative": 0.0192003918263315,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "D2": {
+          "FITnorm": 0.04373855967443548,
+          "CALnorm": 0.0876700547574095,
+          "dot": -0.0012976482298585608,
+          "cos": -0.338408469172432,
+          "CAL_directional_derivative": 0.029668289022718237,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "A2": {
+          "FITnorm": 0.01877287232351639,
+          "CALnorm": 0.030499624948926992,
+          "dot": -8.203835443358372e-05,
+          "cos": -0.14328202643819304,
+          "CAL_directional_derivative": 0.00437004806828713,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "clock2": {
+          "FITnorm": 0.0006921393010341307,
+          "CALnorm": 0.0003570445986057226,
+          "dot": -4.065003574632946e-08,
+          "cos": -0.16449206564007882,
+          "CAL_directional_derivative": 5.873100355028811e-05,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "transition__transition": {
+      "all": {
+        "FITnorm": 0.05900748720774067,
+        "CALnorm": 0.14920777122433446,
+        "dot": 0.001850254547850473,
+        "cos": 0.21015170422322463,
+        "CAL_directional_derivative": -0.031356267406142904,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.010691302059378988,
+          "CALnorm": 0.02015490439561065,
+          "dot": 7.341455302548052e-05,
+          "cos": 0.34069896701245717,
+          "CAL_directional_derivative": -0.006866755107819381,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.0012434686070438628,
+          "CALnorm": 0.0028245529694401425,
+          "dot": 3.756250108390776e-07,
+          "cos": 0.10694733153944724,
+          "CAL_directional_derivative": -0.0003020784028734451,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "key": {
+          "FITnorm": 0.001197818771603168,
+          "CALnorm": 0.0028652687340000797,
+          "dot": 1.3836941668257222e-06,
+          "cos": 0.4031657536843045,
+          "CAL_directional_derivative": -0.0011551782286512151,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.009894494859705843,
+          "CALnorm": 0.018516485376919897,
+          "dot": 5.017479109966773e-05,
+          "cos": 0.27386301764614646,
+          "CAL_directional_derivative": -0.005070980561524027,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.05715503122500891,
+          "CALnorm": 0.14662090822058163,
+          "dot": 0.0017249058845476538,
+          "cos": 0.20583301336221024,
+          "CAL_directional_derivative": -0.03017942336094638,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.04373855967443548,
+          "CALnorm": 0.12267958305321747,
+          "dot": 0.0008420048935708624,
+          "cos": 0.1569198364374303,
+          "CAL_directional_derivative": -0.01925086010692303,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "A2": {
+          "FITnorm": 0.01877287232351639,
+          "CALnorm": 0.04361095292845013,
+          "dot": 0.00032431667132152046,
+          "cos": 0.3961347769013068,
+          "CAL_directional_derivative": -0.017275815108764983,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.0006921393010341307,
+          "CALnorm": 0.0019994232028100654,
+          "dot": -7.42252794351792e-08,
+          "cos": -0.053635656843877076,
+          "CAL_directional_derivative": 0.00010724037679160631,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "transition__change": {
+      "all": {
+        "FITnorm": 0.05900748720774067,
+        "CALnorm": 0.17928801899415656,
+        "dot": 0.0019012738988644163,
+        "cos": 0.1797158149627651,
+        "CAL_directional_derivative": -0.032220892446594554,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.010691302059378988,
+          "CALnorm": 0.023039846527695577,
+          "dot": -1.0114703128445352e-05,
+          "cos": -0.04106227043519195,
+          "CAL_directional_derivative": 0.0009460684089055539,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "query": {
+          "FITnorm": 0.0012434686070438628,
+          "CALnorm": 0.009248600678762176,
+          "dot": 1.8245827651296353e-06,
+          "cos": 0.1586546167176406,
+          "CAL_directional_derivative": -0.0014673331958635237,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "key": {
+          "FITnorm": 0.001197818771603168,
+          "CALnorm": 0.004628776914832435,
+          "dot": 1.128196142681017e-06,
+          "cos": 0.20348258460832325,
+          "CAL_directional_derivative": -0.0009418754902054443,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.009894494859705843,
+          "CALnorm": 0.02952605633056333,
+          "dot": 4.044340221541874e-05,
+          "cos": 0.13843586266458857,
+          "CAL_directional_derivative": -0.0040874650792047705,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.05715503122500891,
+          "CALnorm": 0.17502745223007507,
+          "dot": 0.0018679924208696327,
+          "cos": 0.18673016131152,
+          "CAL_directional_derivative": -0.03268290438886628,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.04373855967443548,
+          "CALnorm": 0.14298663795818,
+          "dot": 0.0016369074819241782,
+          "cos": 0.26173644632485016,
+          "CAL_directional_derivative": -0.03742481449111196,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "A2": {
+          "FITnorm": 0.01877287232351639,
+          "CALnorm": 0.06078630506776452,
+          "dot": 0.0003705468317236536,
+          "cos": 0.3247182011728195,
+          "CAL_directional_derivative": -0.01973841963754674,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.0006921393010341307,
+          "CALnorm": 0.003391816143624433,
+          "dot": -1.8415126496534317e-07,
+          "cos": -0.0784420425086472,
+          "CAL_directional_derivative": 0.00026606098611970356,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "transition__overall": {
+      "all": {
+        "FITnorm": 0.05900748720774067,
+        "CALnorm": 0.08935434720384108,
+        "dot": 0.00032324098409872864,
+        "cos": 0.06130608923932302,
+        "CAL_directional_derivative": -0.005477965583600136,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.010691302059378988,
+          "CALnorm": 0.00998430237403993,
+          "dot": 2.6243599085161097e-05,
+          "cos": 0.24585274954691005,
+          "CAL_directional_derivative": -0.002454668190965458,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.0012434686070438628,
+          "CALnorm": 0.001889606601627819,
+          "dot": 7.387627061316139e-07,
+          "cos": 0.31441173019962737,
+          "CAL_directional_derivative": -0.0005941144810144406,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "key": {
+          "FITnorm": 0.001197818771603168,
+          "CALnorm": 0.0012655655657047838,
+          "dot": 8.961167426197925e-07,
+          "cos": 0.5911379306384681,
+          "CAL_directional_derivative": -0.0007481238095980281,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.009894494859705843,
+          "CALnorm": 0.011053593022706518,
+          "dot": 4.043835554569894e-05,
+          "cos": 0.3697399589948842,
+          "CAL_directional_derivative": -0.004086955030961646,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.05715503122500891,
+          "CALnorm": 0.08807473464227222,
+          "dot": 0.00025492415001911574,
+          "cos": 0.050641337824732784,
+          "CAL_directional_derivative": -0.004460222390843004,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.04373855967443548,
+          "CALnorm": 0.07798348990177803,
+          "dot": -0.00010552401668160127,
+          "cos": -0.030937425444475357,
+          "CAL_directional_derivative": 0.0024126084047362546,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "A2": {
+          "FITnorm": 0.01877287232351639,
+          "CALnorm": 0.02532181720984666,
+          "dot": 0.0001189002585905056,
+          "cos": 0.2501250585138907,
+          "CAL_directional_derivative": -0.0063336210112909415,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.0006921393010341307,
+          "CALnorm": 0.0011077286802905163,
+          "dot": -8.305132695471042e-08,
+          "cos": -0.10832274715401242,
+          "CAL_directional_derivative": 0.00011999221375035746,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "change__stable": {
+      "all": {
+        "FITnorm": 0.17646739568571765,
+        "CALnorm": 0.10345846523112844,
+        "dot": -0.003343121410196397,
+        "cos": -0.18311403852881372,
+        "CAL_directional_derivative": 0.018944697388464785,
+        "status": "LOCAL_PRIMARY_CONFLICT"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.013731641277422045,
+          "CALnorm": 0.01106100094341748,
+          "dot": 5.911115929512422e-05,
+          "cos": 0.38918186777504116,
+          "CAL_directional_derivative": -0.0043047410066207065,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.006405494181458549,
+          "CALnorm": 0.0012038969089439191,
+          "dot": -1.826390338636189e-06,
+          "cos": -0.23683815036511346,
+          "CAL_directional_derivative": 0.0002851287171445552,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "key": {
+          "FITnorm": 0.00517779818175226,
+          "CALnorm": 0.0008639434382138397,
+          "dot": -1.230483243588926e-06,
+          "cos": -0.27507129677313225,
+          "CAL_directional_derivative": 0.00023764604188811938,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "value": {
+          "FITnorm": 0.023249368419951493,
+          "CALnorm": 0.012835962128724433,
+          "dot": 5.581033830139147e-05,
+          "cos": 0.18701440867940372,
+          "CAL_directional_derivative": -0.0024005098673346202,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.17419474930743897,
+          "CALnorm": 0.10205072560402724,
+          "dot": -0.003454986034210685,
+          "cos": -0.19435474102297629,
+          "CAL_directional_derivative": 0.01983404234597753,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "D2": {
+          "FITnorm": 0.1436880586420616,
+          "CALnorm": 0.0876700547574095,
+          "dot": -0.003326697334524318,
+          "cos": -0.2640835413971067,
+          "CAL_directional_derivative": 0.023152218534814962,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "A2": {
+          "FITnorm": 0.07147546001612515,
+          "CALnorm": 0.030499624948926992,
+          "dot": -0.0005618092220319161,
+          "cos": -0.2577136404217656,
+          "CAL_directional_derivative": 0.007860169377086482,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "clock2": {
+          "FITnorm": 0.005359294358706311,
+          "CALnorm": 0.0003570445986057226,
+          "dot": -1.0703062062248383e-06,
+          "cos": -0.5593426878232793,
+          "CAL_directional_derivative": 0.0001997102854569088,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "change__transition": {
+      "all": {
+        "FITnorm": 0.17646739568571765,
+        "CALnorm": 0.14920777122433446,
+        "dot": 0.006276554004529341,
+        "cos": 0.23837754915825735,
+        "CAL_directional_derivative": -0.0355677828198228,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.013731641277422045,
+          "CALnorm": 0.02015490439561065,
+          "dot": -0.00015898602038940573,
+          "cos": -0.5744546465818495,
+          "CAL_directional_derivative": 0.011578078481471481,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "query": {
+          "FITnorm": 0.006405494181458549,
+          "CALnorm": 0.0028245529694401425,
+          "dot": -7.501881900538094e-06,
+          "cos": -0.41463681355410187,
+          "CAL_directional_derivative": 0.001171163642963437,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "key": {
+          "FITnorm": 0.00517779818175226,
+          "CALnorm": 0.0028652687340000797,
+          "dot": -9.98292577767215e-06,
+          "cos": -0.6728950952849677,
+          "CAL_directional_derivative": 0.0019280252777820223,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "value": {
+          "FITnorm": 0.023249368419951493,
+          "CALnorm": 0.018516485376919897,
+          "dot": -7.984456678294338e-05,
+          "cos": -0.18547084592283916,
+          "CAL_directional_derivative": 0.003434268206375215,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "head": {
+          "FITnorm": 0.17419474930743897,
+          "CALnorm": 0.14662090822058163,
+          "dot": 0.006532869399379921,
+          "cos": 0.25578378565669746,
+          "CAL_directional_derivative": -0.03750325096108356,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.1436880586420616,
+          "CALnorm": 0.12267958305321747,
+          "dot": 0.005706216984472499,
+          "cos": 0.3237094021726381,
+          "CAL_directional_derivative": -0.03971253448894553,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "A2": {
+          "FITnorm": 0.07147546001612515,
+          "CALnorm": 0.04361095292845013,
+          "dot": 0.0012637175812567096,
+          "cos": 0.40541283320696153,
+          "CAL_directional_derivative": -0.017680439985578406,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.005359294358706311,
+          "CALnorm": 0.0019994232028100654,
+          "dot": -6.195367938816492e-06,
+          "cos": -0.5781689505073134,
+          "CAL_directional_derivative": 0.0011560044147886667,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "change__change": {
+      "all": {
+        "FITnorm": 0.17646739568571765,
+        "CALnorm": 0.17928801899415656,
+        "dot": 0.016423004717437045,
+        "cos": 0.5190830797132838,
+        "CAL_directional_derivative": -0.0930653770551805,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.013731641277422045,
+          "CALnorm": 0.023039846527695577,
+          "dot": 5.342777076547321e-05,
+          "cos": 0.1688748680162381,
+          "CAL_directional_derivative": -0.0038908510414789725,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.006405494181458549,
+          "CALnorm": 0.009248600678762176,
+          "dot": 1.3241037956105598e-06,
+          "cos": 0.02235081484633476,
+          "CAL_directional_derivative": -0.00020671376135869936,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "key": {
+          "FITnorm": 0.00517779818175226,
+          "CALnorm": 0.004628776914832435,
+          "dot": 8.608927894772612e-06,
+          "cos": 0.3592011358728111,
+          "CAL_directional_derivative": -0.0016626619255096567,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.023249368419951493,
+          "CALnorm": 0.02952605633056333,
+          "dot": -0.0002240222473272104,
+          "cos": -0.32634318372238863,
+          "CAL_directional_derivative": 0.009635627225682623,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "head": {
+          "FITnorm": 0.17419474930743897,
+          "CALnorm": 0.17502745223007507,
+          "dot": 0.016583666162308414,
+          "cos": 0.5439253695217723,
+          "CAL_directional_derivative": -0.09520187163069793,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.1436880586420616,
+          "CALnorm": 0.14298663795818,
+          "dot": 0.013157286303690537,
+          "cos": 0.6403983337420958,
+          "CAL_directional_derivative": -0.09156840469580277,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "A2": {
+          "FITnorm": 0.07147546001612515,
+          "CALnorm": 0.06078630506776452,
+          "dot": 0.0027911613130177306,
+          "cos": 0.6424247030361895,
+          "CAL_directional_derivative": -0.03905062398182584,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.005359294358706311,
+          "CALnorm": 0.003391816143624433,
+          "dot": -4.468436198281113e-06,
+          "cos": -0.24581911293196024,
+          "CAL_directional_derivative": 0.0008337732356540603,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "change__overall": {
+      "all": {
+        "FITnorm": 0.17646739568571765,
+        "CALnorm": 0.08935434720384108,
+        "dot": 0.0036146275500074337,
+        "cos": 0.22923630081826724,
+        "CAL_directional_derivative": -0.02048326001503961,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.013731641277422045,
+          "CALnorm": 0.00998430237403993,
+          "dot": 8.943408101100965e-06,
+          "cos": 0.06523232744170233,
+          "CAL_directional_derivative": -0.0006512992817403387,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.006405494181458549,
+          "CALnorm": 0.001889606601627819,
+          "dot": -2.329923048567451e-06,
+          "cos": -0.19249415152576504,
+          "CAL_directional_derivative": 0.0003637382194978313,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "key": {
+          "FITnorm": 0.00517779818175226,
+          "CALnorm": 0.0012655655657047838,
+          "dot": -7.959522241712521e-07,
+          "cos": -0.12146669985031698,
+          "CAL_directional_derivative": 0.0001537240727103596,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "value": {
+          "FITnorm": 0.023249368419951493,
+          "CALnorm": 0.011053593022706518,
+          "dot": -4.2572631067949604e-05,
+          "cos": -0.16565931499038064,
+          "CAL_directional_derivative": 0.0018311306483240128,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "head": {
+          "FITnorm": 0.17419474930743897,
+          "CALnorm": 0.08807473464227222,
+          "dot": 0.003651382648247016,
+          "cos": 0.23799670475072585,
+          "CAL_directional_derivative": -0.02096149661665539,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.1436880586420616,
+          "CALnorm": 0.07798348990177803,
+          "dot": 0.0027017796950638555,
+          "cos": 0.24111631053152782,
+          "CAL_directional_derivative": -0.018803091367489373,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "A2": {
+          "FITnorm": 0.07147546001612515,
+          "CALnorm": 0.02532181720984666,
+          "dot": 0.0006617818289762908,
+          "cos": 0.3656478378201185,
+          "CAL_directional_derivative": -0.009258867712456697,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.005359294358706311,
+          "CALnorm": 0.0011077286802905163,
+          "dot": -3.0429462722993146e-06,
+          "cos": -0.5125701048984573,
+          "CAL_directional_derivative": 0.0005677886058555396,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "overall__stable": {
+      "all": {
+        "FITnorm": 0.046027581293724494,
+        "CALnorm": 0.10345846523112844,
+        "dot": 0.002158548796282298,
+        "cos": 0.45329161500288945,
+        "CAL_directional_derivative": -0.0468968547903385,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.0057023447894246765,
+          "CALnorm": 0.01106100094341748,
+          "dot": 4.9212989358432516e-05,
+          "cos": 0.780246526182068,
+          "CAL_directional_derivative": -0.008630307562198064,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.0016839212611603905,
+          "CALnorm": 0.0012038969089439191,
+          "dot": -4.0188627675893146e-07,
+          "cos": -0.1982403687198883,
+          "CAL_directional_derivative": 0.00023866096712977632,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "key": {
+          "FITnorm": 0.0014006078106192994,
+          "CALnorm": 0.0008639434382138397,
+          "dot": -7.758473938111123e-08,
+          "cos": -0.064117185652355,
+          "CAL_directional_derivative": 5.5393621821090654e-05,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "value": {
+          "FITnorm": 0.008715670970277357,
+          "CALnorm": 0.012835962128724433,
+          "dot": 6.53172667708898e-05,
+          "cos": 0.583846592003631,
+          "CAL_directional_derivative": -0.007494232743943433,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.04478014392716763,
+          "CALnorm": 0.10205072560402724,
+          "dot": 0.002044498011169113,
+          "cos": 0.44738880269731673,
+          "CAL_directional_derivative": -0.04565635194237815,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.03298115919560011,
+          "CALnorm": 0.0876700547574095,
+          "dot": 0.0012099478508477996,
+          "cos": 0.41845567194045424,
+          "CAL_directional_derivative": -0.0366860316725682,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "A2": {
+          "FITnorm": 0.015389449735451885,
+          "CALnorm": 0.030499624948926992,
+          "dot": 0.00018826758326398392,
+          "cos": 0.4011048906443861,
+          "CAL_directional_derivative": -0.012233548729834152,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.0014163010699234754,
+          "CALnorm": 0.0003570445986057226,
+          "dot": -2.3812766808322783e-07,
+          "cos": -0.47090338078348726,
+          "CAL_directional_derivative": 0.00016813350857391795,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "overall__transition": {
+      "all": {
+        "FITnorm": 0.046027581293724494,
+        "CALnorm": 0.14920777122433446,
+        "dot": -0.000331039463315647,
+        "cos": -0.048202567595656526,
+        "CAL_directional_derivative": 0.007192197678238237,
+        "status": "LOCAL_PRIMARY_CONFLICT"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.0057023447894246765,
+          "CALnorm": 0.02015490439561065,
+          "dot": -2.3678828815685435e-05,
+          "cos": -0.2060278840425822,
+          "CAL_directional_derivative": 0.004152472305708202,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "query": {
+          "FITnorm": 0.0016839212611603905,
+          "CALnorm": 0.0028245529694401425,
+          "dot": -1.9148476912239184e-06,
+          "cos": -0.40258976675061775,
+          "CAL_directional_derivative": 0.0011371361211416717,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "key": {
+          "FITnorm": 0.0014006078106192994,
+          "CALnorm": 0.0028652687340000797,
+          "dot": -2.399108803471795e-06,
+          "cos": -0.5978166956336177,
+          "CAL_directional_derivative": 0.0017129054866622468,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "value": {
+          "FITnorm": 0.008715670970277357,
+          "CALnorm": 0.018516485376919897,
+          "dot": -8.769639446831521e-06,
+          "cos": -0.054340340462136774,
+          "CAL_directional_derivative": 0.0010061921195440042,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "head": {
+          "FITnorm": 0.04478014392716763,
+          "CALnorm": 0.14662090822058163,
+          "dot": -0.00029427703855843424,
+          "cos": -0.04482032346064756,
+          "CAL_directional_derivative": 0.006571596532540387,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "D2": {
+          "FITnorm": 0.03298115919560011,
+          "CALnorm": 0.12267958305321747,
+          "dot": -7.6060318277676e-05,
+          "cos": -0.018798358655984202,
+          "CAL_directional_derivative": 0.0023061748020009837,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "A2": {
+          "FITnorm": 0.015389449735451885,
+          "CALnorm": 0.04361095292845013,
+          "dot": -0.0001588713270324088,
+          "cos": -0.23671558669052187,
+          "CAL_directional_derivative": 0.010323392308590806,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "clock2": {
+          "FITnorm": 0.0014163010699234754,
+          "CALnorm": 0.0019994232028100654,
+          "dot": -1.324516440564661e-06,
+          "cos": -0.46773195600053324,
+          "CAL_directional_derivative": 0.0009351941255232028,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "overall__change": {
+      "all": {
+        "FITnorm": 0.046027581293724494,
+        "CALnorm": 0.17928801899415656,
+        "dot": -0.0007838688826750675,
+        "cos": -0.09498915016969238,
+        "CAL_directional_derivative": 0.017030416559862597,
+        "status": "LOCAL_PRIMARY_CONFLICT"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.0057023447894246765,
+          "CALnorm": 0.023039846527695577,
+          "dot": 3.680393140113419e-05,
+          "cos": 0.2801309909246046,
+          "CAL_directional_derivative": -0.0064541750385541715,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.0016839212611603905,
+          "CALnorm": 0.009248600678762176,
+          "dot": 2.383088904734382e-06,
+          "cos": 0.15301796985082383,
+          "CAL_directional_derivative": -0.0014152020998251396,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "key": {
+          "FITnorm": 0.0014006078106192994,
+          "CALnorm": 0.004628776914832435,
+          "dot": 2.7350517064065913e-06,
+          "cos": 0.4218739865376438,
+          "CAL_directional_derivative": -0.001952760569853775,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.008715670970277357,
+          "CALnorm": 0.02952605633056333,
+          "dot": -4.062457257790315e-05,
+          "cos": -0.15786379324946334,
+          "CAL_directional_derivative": 0.004661095252040058,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "head": {
+          "FITnorm": 0.04478014392716763,
+          "CALnorm": 0.17502745223007507,
+          "dot": -0.0007851663821094374,
+          "cos": -0.10017746561240831,
+          "CAL_directional_derivative": 0.017533806577005786,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "D2": {
+          "FITnorm": 0.03298115919560011,
+          "CALnorm": 0.14298663795818,
+          "dot": -0.0006592109474648404,
+          "cos": -0.13978579492240806,
+          "CAL_directional_derivative": 0.019987500850266758,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "A2": {
+          "FITnorm": 0.015389449735451885,
+          "CALnorm": 0.06078630506776452,
+          "dot": -0.00017113007726348207,
+          "cos": -0.18293529691061008,
+          "CAL_directional_derivative": 0.011119960765670426,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "clock2": {
+          "FITnorm": 0.0014163010699234754,
+          "CALnorm": 0.003391816143624433,
+          "dot": -1.1865506076414547e-06,
+          "cos": -0.24700081140236077,
+          "CAL_directional_derivative": 0.0008377813396028611,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    },
+    "overall__overall": {
+      "all": {
+        "FITnorm": 0.046027581293724494,
+        "CALnorm": 0.08935434720384108,
+        "dot": 0.0008862364605923943,
+        "cos": 0.2154843694380168,
+        "CAL_directional_derivative": -0.019254465163765316,
+        "status": "LOCAL_PRIMARY_ALIGNED"
+      },
+      "branches": {
+        "state_encoder": {
+          "FITnorm": 0.0057023447894246765,
+          "CALnorm": 0.00998430237403993,
+          "dot": 2.9890769325698643e-05,
+          "cos": 0.5250079680231482,
+          "CAL_directional_derivative": -0.005241838301523398,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "query": {
+          "FITnorm": 0.0016839212611603905,
+          "CALnorm": 0.001889606601627819,
+          "dot": -6.317996341059203e-08,
+          "cos": -0.01985574524849003,
+          "CAL_directional_derivative": 3.7519547301786964e-05,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        },
+        "key": {
+          "FITnorm": 0.0014006078106192994,
+          "CALnorm": 0.0012655655657047838,
+          "dot": 8.698073987453007e-08,
+          "cos": 0.04907066051928048,
+          "CAL_directional_derivative": -6.21021382395906e-05,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "value": {
+          "FITnorm": 0.008715670970277357,
+          "CALnorm": 0.011053593022706518,
+          "dot": 2.298616043245021e-05,
+          "cos": 0.2385954384862938,
+          "CAL_directional_derivative": -0.0026373368741016995,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "head": {
+          "FITnorm": 0.04478014392716763,
+          "CALnorm": 0.08807473464227222,
+          "dot": 0.0008333357300577807,
+          "cos": 0.21129205864821626,
+          "CAL_directional_derivative": -0.018609491997461064,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "D2": {
+          "FITnorm": 0.03298115919560011,
+          "CALnorm": 0.07798348990177803,
+          "dot": 0.00046781502009557506,
+          "cos": 0.18188864137655125,
+          "CAL_directional_derivative": -0.01418431102803641,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "A2": {
+          "FITnorm": 0.015389449735451885,
+          "CALnorm": 0.02532181720984666,
+          "dot": 2.3232563951686928e-05,
+          "cos": 0.05961824403132009,
+          "CAL_directional_derivative": -0.001509642277733119,
+          "status": "LOCAL_PRIMARY_ALIGNED"
+        },
+        "clock2": {
+          "FITnorm": 0.0014163010699234754,
+          "CALnorm": 0.0011077286802905163,
+          "dot": -7.117401818619017e-07,
+          "cos": -0.4536621028429093,
+          "CAL_directional_derivative": 0.0005025345224799965,
+          "status": "LOCAL_PRIMARY_CONFLICT"
+        }
+      }
+    }
+  },
+  "model": {
+    "family": "raw",
+    "seed": 1,
+    "policy": "constrained",
+    "path": "C:\\Users\\linke\\Documents\\New project\\GENERATION_CANDIDATE_STATE_SERIES_20261005\\results\\models\\mean_std\\seed_1\\balanced_protected\\constrained.pth",
+    "sha256": "c4fb1bba52406667fcd447e2ade3662dc0842f59d09cc380000fed64212ed1b7"
+  },
+  "counts": {
+    "FIT": [
+      14726,
+      4776,
+      6410
+    ],
+    "CAL": [
+      1535,
+      644,
+      700
+    ]
+  },
+  "info": {
+    "epoch": 29,
+    "family": "raw",
+    "selection_policy": "constrained",
+    "fallback": false,
+    "config": {
+      "protocol": "native_candidate_state32_inputmask_v1",
+      "seed": 1,
+      "epochs": 80,
+      "batch_size": 128,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.0001,
+      "hidden": 128,
+      "dropout": 0.1,
+      "calibration_fraction": 0.1,
+      "fde_loss_weight": 0.5,
+      "diversity_weight": 0.05,
+      "diversity_reference_fraction": 0.5,
+      "diversity_distance_cap_m": 0.3,
+      "residual_weight": 0.01,
+      "smoothness_weight": 0.01,
+      "velocity_residual_scale": 1.5,
+      "calibration_top3_weight": 0.1,
+      "bootstrap_repetitions": 5000,
+      "bootstrap_seed": 20261001,
+      "test_access": "forbidden",
+      "seeds": [
+        1,
+        2,
+        3
+      ],
+      "protection_weight": 0.1,
+      "guard_fraction": 0.01,
+      "set_context": "mean_std",
+      "study": "candidate_state_20261005",
+      "experiment_in_study": 1,
+      "zero_label": "FIT_standardized_native_state32_masked_zero",
+      "mean_std_label": "actual_FIT_standardized_native_state32",
+      "factor": "candidate_state_input_availability_only",
+      "pulse_center_range": [
+        0.05,
+        0.95
+      ],
+      "pulse_span_range": [
+        0.05,
+        0.5
+      ],
+      "both_clock_active": true,
+      "future_observations": false,
+      "progress_fraction": 0.5,
+      "after_analysis": "Every3newformal fullreview; substantiveobstruction STOP human; autonomous lawfulnewhead continuation",
+      "process_budget_GiB": 6,
+      "system_reserve_GiB": 6,
+      "host_available_RAM_GB_approx": 17,
+      "both_profile": "learned_sigmoid_persistent",
+      "feature_dimension": 32,
+      "expected_trainable_parameters": 45798,
+      "state_encoder": [
+        32,
+        32,
+        32
+      ],
+      "head": [
+        192,
+        128,
+        64,
+        6
+      ],
+      "scalers": "FIT25912_all20_candidatepoints_only_std_floor_.001",
+      "amplitude_drift_partition": 0.5
+    }
+  },
+  "scope": "LOCAL_PRIMARY_NOT_TOTAL_ADAMW"
+}

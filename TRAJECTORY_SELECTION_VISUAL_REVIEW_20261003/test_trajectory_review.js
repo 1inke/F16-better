@@ -1,0 +1,21 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const path=process.argv[2],html=fs.readFileSync(path,'utf8');
+const code=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+const elements={};
+const ctx=new Proxy({},{get:()=>()=>{}});
+function element(id){if(!elements[id])elements[id]={value:({A:'.3',F:'.5',R:'.2',sort:'id',stage:'final',time:'12',judgement:'待观察'})[id]||'',checked:id==='showall',options:[],children:[],selectedIndex:0,clientWidth:600,clientHeight:480,getContext:()=>ctx,append(x){this.children.push(x)},replaceChildren(...x){this.children=x;if(id==='category'||id==='case'){this.options=x;if(!x.some(o=>String(o.value)===String(this.value)))this.value=x[0]?.value||''}},addEventListener(){}};return elements[id]}
+const sandbox={document:{getElementById:element,createElement:()=>({append(){},click(){}})},Option:function(text,value){this.text=text;this.value=value},localStorage:{getItem:()=>null,setItem(){}},devicePixelRatio:1,matchMedia:()=>({matches:false,addEventListener(){}}),ResizeObserver:class{observe(){}},console,alert(){},Blob,URL,setTimeout};
+vm.createContext(sandbox);new vm.Script(code).runInContext(sandbox);
+assert.equal(vm.runInContext('data.length',sandbox),1516);
+let counts=JSON.parse(vm.runInContext('JSON.stringify(data.reduce((r,d)=>{let c=classify(d);r[c]=(r[c]||0)+1;return r},{}))',sandbox));
+const audit=JSON.parse(fs.readFileSync(path.replace('index.html','audit.json'),'utf8'));assert.deepStrictEqual(counts,audit.counts);
+assert.equal(element('modes').children.length,20);assert.ok(element('caseinfo').textContent.includes('ID'));
+element('category').value='好候选未选中';vm.runInContext('filter()',sandbox);assert.equal(element('case').options.length,688);
+element('sort').value='regret';vm.runInContext('filter()',sandbox);assert.ok(vm.runInContext('q(current)[current.s]-Math.min(...q(current))',sandbox)>0);
+element('A').value='0.1';vm.runInContext('recompute()',sandbox);assert.notEqual(element('case').options.length,688);
+element('category').value='全部';vm.runInContext('filter()',sandbox);element('stage').value='coarse';vm.runInContext('draw()',sandbox);assert.equal(element('modes').children.length,20);
+element('time').value='4';vm.runInContext('draw()',sandbox);assert.ok(element('timeval').textContent.includes('1.6s'));
+vm.runInContext('manual=3;draw()',sandbox);element('note').value='测试标注';element('save').onclick();assert.ok(element('saved').textContent.includes('已保存'));
+const report={status:'PASS_JS_UNIT',samples:1516,default_counts:counts,checks:['JS syntax and initial render logic with mock DOM','all classes agree with independently recomputed Python audit','category filter','regret sorting','threshold reclassification','coarse/final stage','time slider','manual candidate highlight','annotation save'],limitation:'Mock DOM/canvas, not browser screenshot or pixel/layout QA; local file browser navigation was blocked by policy.'};
+if(process.argv.includes('--save'))fs.writeFileSync(path.replace('index.html','interface_unit_test.json'),JSON.stringify(report,null,2));
+console.log(JSON.stringify(report,null,2));

@@ -1,0 +1,36 @@
+{
+  "status": "SUCCESS",
+  "predictions": "jobs/final_logistic_common64_B1.predictions.npz",
+  "metrics": {
+    "n": 2780,
+    "prevalence": 0.4892086330935252,
+    "AUPRC": 0.43467259862362095,
+    "AUROC": 0.3969943558409279,
+    "Brier": 0.2579990078097193,
+    "log_loss": 0.7095189506559377
+  },
+  "probe": "B1",
+  "mode": "common64",
+  "reader": "L2_logistic",
+  "C": 1.0,
+  "selection": {
+    "inner_groups": 3,
+    "Cs": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_log_losses": [
+      0.8902723647239704,
+      0.8900319562199359,
+      0.8901347632469727
+    ],
+    "selection": "FIT inner scene-family held-out log loss; no CAL/DEV choice"
+  },
+  "evaluation": "CAL descriptive; original overlap is not purged",
+  "train_n": 25217,
+  "hashes": {
+    "jobs/final_logistic_common64_B1.predictions.npz": "1b195d20afa052afcce76130d76734d74c186bc29f5135aba92b1b025929ac12",
+    "jobs/final_logistic_common64_B1.joblib": "9e5a982f1b9a5149b45ed4b6a0988ee773977ffbf30a778e51765f146e131f8a"
+  }
+}

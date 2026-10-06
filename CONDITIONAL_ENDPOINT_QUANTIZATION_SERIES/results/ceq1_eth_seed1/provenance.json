@@ -1,0 +1,102 @@
+{
+  "experiment": "CEQ1_CONDITIONAL_EMPIRICAL_FUTURE_QUANTIZATION",
+  "scope": "ETH seed 1 validation-only feasibility pilot",
+  "new_neural_training": false,
+  "test_paths_read_or_passed": false,
+  "candidate_family": "training-only conditional empirical future distribution; weighted full-trajectory Lloyd components; component mass is score",
+  "not_used": [
+    "pairwise repulsion",
+    "fixed global endpoint prototypes",
+    "hard candidate-family quota",
+    "validation future in retrieval features"
+  ],
+  "split": {
+    "train_count": 28791,
+    "validation_count": 1516,
+    "validation_id_sha256": "dfd29348a6eb3d3ac601c3fae60250d86762a85fb94ea326d050d582621e870d",
+    "split_file_sha256": "1f53e20b1d2462df27c6fe9d2032973fd92304f7616f7f0dd6f80da01de8197e"
+  },
+  "baseline": {
+    "checkpoint": "C:\\Users\\linke\\Documents\\New project\\E2_F16_END_TO_END_COMPARISON_SERIES\\EXP_173_E2_F16_END_TO_END\\results\\eth\\v2\\e3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth",
+    "checkpoint_sha256": "691e9f9ff6b7dc1df1c7d5f4901d97ea9885fac891099c84044bf56dd98d2341",
+    "contract": {
+      "decoder_class": "JointTrainableV2Decoder",
+      "decoder_fingerprint": "4bec38da2b5907d9",
+      "num_modes": 20,
+      "decoder_experiment": "v2_joint_wide_endpoint_correction",
+      "encoder_experiment": "none",
+      "classification_weight": 0.5,
+      "loss_class": "ModeQueryLoss",
+      "fusion_alpha": 0.3,
+      "oracle_coverage_weight": 0.2,
+      "oracle_coverage_temperature": 0.1,
+      "oracle_coverage_fde_weight": 0.25,
+      "oracle_coverage_warmup_epochs": 0.0,
+      "oracle_coverage_normalized": false,
+      "scene_sampling": "none",
+      "motion_difficulty_sampling": false,
+      "motion_difficulty_strength": 0.8,
+      "ema_decay": 0.995,
+      "augmentation": {
+        "rotation": false,
+        "reflection": true,
+        "speed_min": 0.9,
+        "speed_max": 1.1,
+        "probability": 0.5,
+        "curvature_max": 0.0
+      },
+      "future_difficulty_weight": 0.0,
+      "focal_heading_normalize": true,
+      "velocity_loss_weight": 0.0,
+      "acceleration_loss_weight": 0.0,
+      "masked_history_weight": 0.0,
+      "masked_history_probability": 0.15,
+      "equivariance_weight": 0.0,
+      "training_only_auxiliary_parameters": 0,
+      "checkpoint_criterion": "oracle_combo",
+      "hierarchical_decoder": {
+        "cv_reference": false,
+        "anchor_steps": [
+          4,
+          8,
+          12
+        ],
+        "top_m": 20,
+        "use_refiner": true
+      },
+      "parameter_counts": {
+        "total": 321988,
+        "trainable": 321411,
+        "decoder": 54829
+      }
+    }
+  },
+  "smoke": false,
+  "device": "cuda:0",
+  "feature_dimension": 42,
+  "calibration": {
+    "fit_count": 28023,
+    "calibration_count": 768,
+    "seed": 20260922,
+    "objective": "mean(J) + 0.25 * mean(selected_ADE)",
+    "selected": {
+      "neighbours": 64,
+      "temperature": 0.5,
+      "components": 20,
+      "lloyd_iterations": 8
+    }
+  },
+  "validation_count_evaluated": 1516,
+  "motion_threshold_train_q75": 0.1424953192472458,
+  "verdict": {
+    "code": "STOP_CEQ_ROUTE",
+    "explanation": "The conditional empirical future family does not clear the geometry gate or collapses locally; do not build a neural distillation head.",
+    "gates": {
+      "generation_quality": false,
+      "selected_ade_improves_2pct": false,
+      "support_1m_increases_0p25": true,
+      "high_motion_j_not_worse_1pct": false,
+      "duplicate_pair_rate_below_10pct": true
+    }
+  }
+}

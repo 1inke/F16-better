@@ -1,0 +1,201 @@
+{
+  "status": "PASS_DESCRIPTIVE_ONLY",
+  "dev_access": false,
+  "test_access": false,
+  "optimizer_steps": 0,
+  "seeds": [
+    {
+      "seed": 1,
+      "selected_epoch": 14,
+      "history_source": "FIT loss and CAL metrics only",
+      "early": {
+        "train_loss": "0.37056219577789307",
+        "cal_feasible": "True",
+        "cal_change_key": "1.9980987844176528",
+        "transition_minade20": "0.2266172617673874",
+        "transition_minfde20": "0.37686464190483093"
+      },
+      "final": {
+        "train_loss": "0.33523155888313144",
+        "cal_feasible": "False",
+        "cal_change_key": "2.0646956804573837",
+        "transition_minade20": "0.2301407754421234",
+        "transition_minfde20": "0.3815467953681946"
+      },
+      "drift": {
+        "constrained": {
+          "attention": {
+            "parameter_elements": 37248,
+            "reference_squared_norm": 203.69381881574284,
+            "update_squared_norm": 19.04975464400354,
+            "relative_update_norm": 0.3058128766924698
+          },
+          "ffn": {
+            "parameter_elements": 37152,
+            "reference_squared_norm": 112.31202599812569,
+            "update_squared_norm": 24.161303540552392,
+            "relative_update_norm": 0.46381741376160013
+          },
+          "layernorm": {
+            "parameter_elements": 384,
+            "reference_squared_norm": 192.2543618825208,
+            "update_squared_norm": 0.18515906592196868,
+            "relative_update_norm": 0.031033759462269668
+          }
+        },
+        "final": {
+          "attention": {
+            "parameter_elements": 37248,
+            "reference_squared_norm": 203.69381881574284,
+            "update_squared_norm": 62.46769844622501,
+            "relative_update_norm": 0.5537819897608147
+          },
+          "ffn": {
+            "parameter_elements": 37152,
+            "reference_squared_norm": 112.31202599812569,
+            "update_squared_norm": 105.74258331373552,
+            "relative_update_norm": 0.9703129492583683
+          },
+          "layernorm": {
+            "parameter_elements": 384,
+            "reference_squared_norm": 192.2543618825208,
+            "update_squared_norm": 1.423479365894628,
+            "relative_update_norm": 0.08604734747321359
+          }
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "selected_epoch": 4,
+      "history_source": "FIT loss and CAL metrics only",
+      "early": {
+        "train_loss": "0.37208536252599633",
+        "cal_feasible": "True",
+        "cal_change_key": "1.9996771536354738",
+        "transition_minade20": "0.22677448391914368",
+        "transition_minfde20": "0.37662404775619507"
+      },
+      "final": {
+        "train_loss": "0.320344729082925",
+        "cal_feasible": "False",
+        "cal_change_key": "2.089727222730999",
+        "transition_minade20": "0.2385835349559784",
+        "transition_minfde20": "0.4021008312702179"
+      },
+      "drift": {
+        "constrained": {
+          "attention": {
+            "parameter_elements": 37248,
+            "reference_squared_norm": 203.69381881574284,
+            "update_squared_norm": 6.102994156393077,
+            "relative_update_norm": 0.17309421435375444
+          },
+          "ffn": {
+            "parameter_elements": 37152,
+            "reference_squared_norm": 112.31202599812569,
+            "update_squared_norm": 6.7655611515925305,
+            "relative_update_norm": 0.2454362920279754
+          },
+          "layernorm": {
+            "parameter_elements": 384,
+            "reference_squared_norm": 192.2543618825208,
+            "update_squared_norm": 0.040916998455491294,
+            "relative_update_norm": 0.014588605584014017
+          }
+        },
+        "final": {
+          "attention": {
+            "parameter_elements": 37248,
+            "reference_squared_norm": 203.69381881574284,
+            "update_squared_norm": 67.91854247781852,
+            "relative_update_norm": 0.5774378577959519
+          },
+          "ffn": {
+            "parameter_elements": 37152,
+            "reference_squared_norm": 112.31202599812569,
+            "update_squared_norm": 133.56768573709553,
+            "relative_update_norm": 1.0905298807370472
+          },
+          "layernorm": {
+            "parameter_elements": 384,
+            "reference_squared_norm": 192.2543618825208,
+            "update_squared_norm": 2.669312913326446,
+            "relative_update_norm": 0.11783156415959502
+          }
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "selected_epoch": 7,
+      "history_source": "FIT loss and CAL metrics only",
+      "early": {
+        "train_loss": "0.371850131474105",
+        "cal_feasible": "True",
+        "cal_change_key": "1.9974851128525035",
+        "transition_minade20": "0.22675539553165436",
+        "transition_minfde20": "0.3768964111804962"
+      },
+      "final": {
+        "train_loss": "0.3332219699333454",
+        "cal_feasible": "False",
+        "cal_change_key": "2.0879169385611434",
+        "transition_minade20": "0.2331438958644867",
+        "transition_minfde20": "0.385612428188324"
+      },
+      "drift": {
+        "constrained": {
+          "attention": {
+            "parameter_elements": 37248,
+            "reference_squared_norm": 203.69381881574284,
+            "update_squared_norm": 10.414509192782921,
+            "relative_update_norm": 0.22611557540565808
+          },
+          "ffn": {
+            "parameter_elements": 37152,
+            "reference_squared_norm": 112.31202599812569,
+            "update_squared_norm": 13.091635988415819,
+            "relative_update_norm": 0.34141596854277506
+          },
+          "layernorm": {
+            "parameter_elements": 384,
+            "reference_squared_norm": 192.2543618825208,
+            "update_squared_norm": 0.07373883060935403,
+            "relative_update_norm": 0.019584388785269153
+          }
+        },
+        "final": {
+          "attention": {
+            "parameter_elements": 37248,
+            "reference_squared_norm": 203.69381881574284,
+            "update_squared_norm": 67.94142692917842,
+            "relative_update_norm": 0.5775351304638123
+          },
+          "ffn": {
+            "parameter_elements": 37152,
+            "reference_squared_norm": 112.31202599812569,
+            "update_squared_norm": 113.96223510953989,
+            "relative_update_norm": 1.0073197485414116
+          },
+          "layernorm": {
+            "parameter_elements": 384,
+            "reference_squared_norm": 192.2543618825208,
+            "update_squared_norm": 1.7157441614979205,
+            "relative_update_norm": 0.09446874892283533
+          }
+        }
+      }
+    }
+  ],
+  "source_hashes": {
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_UPSTREAM_TEMPORAL_SERIES\\run_head.py": "e6af480a72b84b0574009cb11088f72359936d0cc60b1a1d86f4297c5e94ab0e",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_UPSTREAM_TEMPORAL_SERIES\\results\\models\\mean_std\\seed_1\\balanced_protected\\constrained.pth": "4e3e97ed8381f6090a1b9531158d7376aa547a5790c5e371a0163d8bfe8b7a53",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_UPSTREAM_TEMPORAL_SERIES\\results\\models\\mean_std\\seed_1\\balanced_protected\\final.pth": "f8e9bbf9064d99b94ebba376e4f6146a389f3eef2d4c25c8012a802f4b768ecf",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_UPSTREAM_TEMPORAL_SERIES\\results\\models\\mean_std\\seed_2\\balanced_protected\\constrained.pth": "b215abcc5cfa7125cd1e1f919327a603e96c131fe13c41df7ebb1260b8f7f58d",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_UPSTREAM_TEMPORAL_SERIES\\results\\models\\mean_std\\seed_2\\balanced_protected\\final.pth": "6e526b6b8bf38a227996b84ec948b2748ee56bf1449d4f83876a6ebfbffcd2c2",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_UPSTREAM_TEMPORAL_SERIES\\results\\models\\mean_std\\seed_3\\balanced_protected\\constrained.pth": "924d430b3ae5904569e5cf6a367799c61be70f600afd62cfb58cbf0f627c9537",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_UPSTREAM_TEMPORAL_SERIES\\results\\models\\mean_std\\seed_3\\balanced_protected\\final.pth": "961f2ce9762446ca1484f02acad439694033e88668db6ad33262ef75b5b2a122"
+  },
+  "interpretation": "Weight update norms and FIT/CAL trends describe drift, do not identify causal harmful block, useful new information, or benefit of attention-only training. No dev-driven hyperparameters."
+}

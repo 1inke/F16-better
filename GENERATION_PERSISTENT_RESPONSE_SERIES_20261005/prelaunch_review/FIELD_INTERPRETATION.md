@@ -1,0 +1,7 @@
+# Supplemental saved-quality field interpretation
+
+The locked quality_audit.py uses ONE adequacy-closest slot minimizing max(ADE/.2,FDE/.4) for its early/middle/late arrays. This matches the complete-path quality question; it is NOT the original ADE+.5FDE joint-loss winner. The original temporal/ arrays retain their own ONE ADE+.5FDE joint-oracle slot. Both hold the chosen slot for all twelve steps; no early/middle/late segment oracle is assembled. Reports must name these two references separately, never imply the indices are identical. This clarification changes no code, quality thresholds, prediction, loss or slot selection.
+
+QUALITY_SMOKE.json separately checks native1516 good733, original score argmax, four alternate scalar metric rows, all-twenty duplicate-good reducing to ONE effective-good cluster, and disjoint minADE/minFDE passing while no same candidate passes. Saved/native-only and synthetic checks, no model forward/optimizer; not a substitute for final18-output audit or all historical hashes.
+
+Major-decision review must inspect BOTH displacement CIs and joint CIs, per-seed consistency, strict same-path coverage, and pooled ALL-group motion. Automated summary labels are not sufficient authority to declare major, psychological intention, calibrated probabilities or SOTA. Any apparent all-gate success additionally needs scene/sample correlation and three-seed uncertainty assessment before declaring success or halting the project.

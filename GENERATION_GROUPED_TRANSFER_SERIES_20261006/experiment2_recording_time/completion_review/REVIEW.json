@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "scope": "CPU saved outputs and labels only; no torch/model forward/backward/optimizer; same assistant not external reviewer",
+  "jobs": 57,
+  "outputs": 114,
+  "models": 18,
+  "records_exact": 216,
+  "full_complete_link_reconstructed": true,
+  "all_quality_columns_EXACT": true,
+  "all_group_pooled_motion_EXACT": true,
+  "bootstrap_reconstructed": 360,
+  "bootstrap_primary_timeblock": 180,
+  "bootstrap_track_sensitivity": 180,
+  "bootstrap_max_error": 0.0,
+  "legacy_minADE_FDE_max_error": 0.0,
+  "strict_perwindow_accel_and_endpoint_PASS": true,
+  "sources": 588,
+  "old_files": 33551,
+  "old_source_output_model_SHA_before_after": true,
+  "histories": [
+    {
+      "arm": "random",
+      "seed": 1,
+      "epochs": 80,
+      "constrained_epoch": 10,
+      "legacy_epoch": 24,
+      "initial_loss": 0.3744773466539557,
+      "final_loss": 0.3075367455680207
+    },
+    {
+      "arm": "random",
+      "seed": 2,
+      "epochs": 80,
+      "constrained_epoch": 6,
+      "legacy_epoch": 8,
+      "initial_loss": 0.3746239772997872,
+      "final_loss": 0.3035377846719495
+    },
+    {
+      "arm": "random",
+      "seed": 3,
+      "epochs": 80,
+      "constrained_epoch": 8,
+      "legacy_epoch": 9,
+      "initial_loss": 0.3746271670824752,
+      "final_loss": 0.30596869000970756
+    },
+    {
+      "arm": "grouped",
+      "seed": 1,
+      "epochs": 80,
+      "constrained_epoch": 9,
+      "legacy_epoch": 9,
+      "initial_loss": 0.3721667242818912,
+      "final_loss": 0.2989211671937492
+    },
+    {
+      "arm": "grouped",
+      "seed": 2,
+      "epochs": 80,
+      "constrained_epoch": 8,
+      "legacy_epoch": 9,
+      "initial_loss": 0.3721643650345824,
+      "final_loss": 0.2969203127633336
+    },
+    {
+      "arm": "grouped",
+      "seed": 3,
+      "epochs": 80,
+      "constrained_epoch": 9,
+      "legacy_epoch": 7,
+      "initial_loss": 0.3723689278062302,
+      "final_loss": 0.29673725116045574
+    }
+  ],
+  "resource": {
+    "peak_RSS_GiB": 0.22439956665039062,
+    "peak_private_GiB": 0.206756591796875,
+    "min_physical_GiB": 17.55068588256836,
+    "min_commit_GiB": 18.68042755126953,
+    "checks": 775
+  },
+  "elapsed_seconds": 161.6767067000037
+}

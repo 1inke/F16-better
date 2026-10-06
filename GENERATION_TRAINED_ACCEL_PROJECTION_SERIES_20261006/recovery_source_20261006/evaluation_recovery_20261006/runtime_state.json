@@ -1,0 +1,282 @@
+{
+  "status": "ANALYZED_MAJOR_FAIL_THREE_REVIEW_COMPLETE_WAIT_PROTOCOL_DECISION",
+  "production_worker_started": true,
+  "evaluation_only": true,
+  "no_optimizer": true,
+  "no_training": true,
+  "logical_formal_experiment": "GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006",
+  "experiment_in_study": 3,
+  "formal_completed": 3,
+  "formal_total": 3,
+  "worker_pid": 11344,
+  "parent_pid": 2728,
+  "task_name": "Trajectory-TrainedAccelProjection-EvaluationRecovery-20261006",
+  "task_triggers": 0,
+  "started_at": "2026-10-06T03:22:48.132944+08:00",
+  "startup_checked_at": "2026-10-06T03:23:05.6932604+08:00",
+  "sole_startup_confirmation_count": 1,
+  "startup": {
+    "checked_at": "2026-10-06T03:23:05.6932604+08:00",
+    "worker": {
+      "pid": 11344,
+      "parent_pid": 2728,
+      "status": "RUNNING",
+      "evaluation_only": true,
+      "started_at": "2026-10-06T03:22:48.132944+08:00",
+      "stage": "INITIAL_SOURCE_OLD_COMPLETED_SHA"
+    },
+    "progress": {
+      "stage": "INITIAL_SOURCE_OLD_COMPLETED_SHA",
+      "at": "2026-10-06T03:22:50.809891+08:00"
+    },
+    "actual_process": {
+      "ProcessId": 11344,
+      "ParentProcessId": 2728,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006\\recovery_source_20261006\\evaluation_recovery_20261006\\independent_worker.py\""
+    },
+    "task_state": "Running",
+    "triggers": 0,
+    "exit_state": null,
+    "trainings": [
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 1,
+        "arm": "zero"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 2,
+        "arm": "zero"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 3,
+        "arm": "zero"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 1,
+        "arm": "mean_std"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 2,
+        "arm": "mean_std"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 3,
+        "arm": "mean_std"
+      }
+    ],
+    "stderr_bytes": 0
+  },
+  "observed_worker_stage": "INITIAL_SOURCE_OLD_COMPLETED_SHA",
+  "science_jobs_complete_not_claimed": true,
+  "completed_parent_trainings": 6,
+  "epochs_each": 80,
+  "parent_failed_worker": {
+    "checked_at": "2026-10-06T03:10:38.2532615+08:00",
+    "worker": {
+      "pid": 31532,
+      "parent_pid": 2728,
+      "status": "FAILURE",
+      "started_at": "2026-10-06T02:15:03.676192+08:00",
+      "stage": "INITIAL_SOURCE_OLD_SHA",
+      "finished_at": "2026-10-06T02:56:56.057522+08:00"
+    },
+    "progress": {
+      "stage": "EVALUATE",
+      "at": "2026-10-06T02:56:40.914482+08:00"
+    },
+    "actual_process": null,
+    "task_state": "Ready",
+    "triggers": 0,
+    "exit_state": null,
+    "trainings": [
+      {
+        "complete": true,
+        "last_completed_epoch": "80",
+        "arm": "zero",
+        "seed": 1
+      },
+      {
+        "complete": true,
+        "last_completed_epoch": "80",
+        "arm": "zero",
+        "seed": 2
+      },
+      {
+        "complete": true,
+        "last_completed_epoch": "80",
+        "arm": "zero",
+        "seed": 3
+      },
+      {
+        "complete": true,
+        "last_completed_epoch": "80",
+        "arm": "mean_std",
+        "seed": 1
+      },
+      {
+        "complete": true,
+        "last_completed_epoch": "80",
+        "arm": "mean_std",
+        "seed": 2
+      },
+      {
+        "complete": true,
+        "last_completed_epoch": "80",
+        "arm": "mean_std",
+        "seed": 3
+      }
+    ],
+    "stderr_bytes": 2356
+  },
+  "parent_source_count": 541,
+  "source_count": 11,
+  "old_files": 31968,
+  "parent_input_SHA_records": 69,
+  "preflight": "PASS_SAVED_METRICS0_ALL_MODELS_SOURCE_OLD_SHA_FROZEN_FIT128_PHYSICS_RESOURCE",
+  "source_locked": true,
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "ETA_minutes": [
+    8,
+    16
+  ],
+  "planning_minutes": 12,
+  "query_at": null,
+  "automation_query_ceil": "2026-10-06T03:28:49.000+08:00",
+  "analysis_deadline": null,
+  "automation_analysis_ceil": "2026-10-06T03:34:49.000+08:00",
+  "next_review_at": null,
+  "process_budget_GiB": 6,
+  "system_reserve_each_GiB": 6,
+  "training_lifetime_peak_unavailable": true,
+  "mandatory_next": "Complete remaining original audits and dual success then formal3/3 and mandatory fullthree physicalfeedback review before any new scientific direction.",
+  "waiting_policy": "ANALYZED and no new human decision: DONT_NOTIFY. No PID/task/log/results/resources queries; never repeat03:28half/03:34completion oroldworkers. Do not ask repeatedly or start fourthlocalvariant. Await directhuman protocol decision; goalnotcomplete orhumanpaused.",
+  "completion_required": "Worker AND newresults exit SUCCESS /18 immutable predictions+models/1516 explicit uniqueIDs finiteK20/six80 histories/fullsamplegroupsbootstrapCI/fullGTfree qualityclusters and pooledmotion/projectionstrictphysics/36FITCAL originaltotalP+traces/frozenall/source541+11 old31968 plus69parentcompletioninputs unchanged.",
+  "science_unchanged": true,
+  "stop_on_substantive_obstruction": true,
+  "automation_id": "automation",
+  "halfway_checked_at": "2026-10-06T03:29:33.2796765+08:00",
+  "halfway_snapshot": {
+    "checked_at": "2026-10-06T03:29:33.2796765+08:00",
+    "worker": {
+      "pid": 11344,
+      "parent_pid": 2728,
+      "status": "SUCCESS",
+      "evaluation_only": true,
+      "started_at": "2026-10-06T03:22:48.132944+08:00",
+      "finished_at": "2026-10-06T03:25:46.554410+08:00"
+    },
+    "progress": {
+      "stage": "SUCCESS",
+      "at": "2026-10-06T03:25:46.553410+08:00"
+    },
+    "actual_process": null,
+    "task_state": "Ready",
+    "triggers": 0,
+    "exit_state": {
+      "status": "SUCCESS",
+      "evaluation_only": true,
+      "no_optimizer": true,
+      "no_training": true,
+      "six_completed_trainings_reused_SHA_exact": true,
+      "source541_and_old31968_unchanged": true,
+      "frozen_all_weights_bool_scalers_exact": true,
+      "metric_audit": "PASS",
+      "quality_audit": {
+        "status": "PASS",
+        "quality_predictions": 18,
+        "pooled_motion_pass": true
+      },
+      "physical_audit": "PASS",
+      "finished_at": "2026-10-06T03:25:46.551408+08:00"
+    },
+    "trainings": [
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 1,
+        "arm": "zero"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 2,
+        "arm": "zero"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 3,
+        "arm": "zero"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 1,
+        "arm": "mean_std"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 2,
+        "arm": "mean_std"
+      },
+      {
+        "last_completed_epoch": "80",
+        "complete": true,
+        "seed": 3,
+        "arm": "mean_std"
+      }
+    ],
+    "stderr_bytes": 0
+  },
+  "worker_status": "SUCCESS",
+  "worker_finished_at": "2026-10-06T03:25:46.554410+08:00",
+  "recovery_actual_elapsed_seconds": 178.421466,
+  "all_completion_audits_pass": true,
+  "result_analysis": "C:/Users/linke/Documents/New project/GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006/recovery_source_20261006/evaluation_recovery_20261006/RESULT_ANALYSIS.md",
+  "mandatory_fullreview_complete": true,
+  "fullreview": "C:/Users/linke/Documents/New project/GENERATION_TRAINED_ACCEL_PROJECTION_SERIES_20261006/recovery_source_20261006/evaluation_recovery_20261006/PHYSICAL_FEEDBACK_STUDY_REVIEW.md",
+  "models_54_SHA_rechecked": true,
+  "next_research_plan": {
+    "status": "STOP_PROTOCOL_SCOPE_DECISION_WAIT_HUMAN",
+    "no_new_worker": true,
+    "no_new_formal": true,
+    "specific_decision_needed": "Approve within-existingFIT grouped pedestrian/scene adaptation validation with matched random-window control while originalCAL untouched andoldF16/decoder/scorerfixed, no newloss/event/test/fold/externaldata. This alters fixed training/validation commitments so exact scope confirmation before design/launch.",
+    "not_approved_or_started": true
+  },
+  "resource": {
+    "status": "SUCCESS",
+    "peak_RSS_GiB": 1.8603591918945312,
+    "peak_private_GiB": 2.5763511657714844,
+    "min_physical_GiB": 17.537548065185547,
+    "min_commit_GiB": 16.751304626464844,
+    "checks": 8677,
+    "process_budget_GiB": 6,
+    "system_reserve_GiB": 6,
+    "time": 1791228346.5504177
+  },
+  "cpu_completion_review": {
+    "status": "PASS",
+    "maximum_population_component_error": 0,
+    "maximum_min_metric_error": 0,
+    "sources": 552,
+    "old_files": 31968,
+    "models": 18,
+    "parent_artifacts": 69,
+    "no_model_forward": true,
+    "no_optimizer": true
+  }
+}

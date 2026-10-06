@@ -1,0 +1,8 @@
+# Implementation provenance
+
+- First inherited 32754 old digests retained; expanded 33551 old files verified before/after identity audit, GPU/statistics, final prelaunch. 588 final scientific sources frozen.
+- Only new experiment2 code was adapted from experiment1 for own split paths, common count12544, time-block primary bootstrap and target-track sensitivity. Model/loss/projection mathematics and success gates unchanged. Registered outer statistics never fit scalers or choose checkpoints.
+- Both actual FIT21/inner12 two-epoch subset continuous/interrupted params/boolscalers/optimizer/allRNG/history/calibration/objective trace EXACT. Not full16104 two rounds. Both actual GPU8 and fixed active projection128 passed; natural initial8 P=0 reported.
+- Actual production completed-seed AST branch exercised on six SHA-locked smoke-model fixtures (not six scientific trained results). Saved-output done SHA skip and badsource/badoutput rejection passed. CPU final review did not forward/backward/train.
+- Once-only startup check observed Python48928/parent2728, taskRunning, XPath0triggers, workerRUNNING, stageINITIAL_SOURCE_OLD_SHA, six0epoch histories, stderr0. No TRAIN yet observed. The first low-permission read of parent2728 name was denied; escalated parent-only read confirmed svchost.exe, without rechecking Python/task/history or modifying any process. This is not a scientific or production failure.
+- 57 future scientific jobs excludes2preflight-smoke jobs. F16 previously saw data; time-disjoint nottarget-disjoint; unknown123 IDs retained; no independent wholemodel generalization claim.

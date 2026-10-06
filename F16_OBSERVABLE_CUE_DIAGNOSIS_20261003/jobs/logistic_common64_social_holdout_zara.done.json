@@ -1,0 +1,38 @@
+{
+  "status": "SUCCESS",
+  "predictions": "jobs/logistic_common64_social_holdout_zara.predictions.npz",
+  "metrics": {
+    "n": 7668,
+    "prevalence": 0.19444444444444445,
+    "AUPRC": 0.5871613943508368,
+    "AUROC": 0.8277227989381435,
+    "Brier": 0.12326018132605104,
+    "log_loss": 0.40257089883568764
+  },
+  "probe": "social",
+  "mode": "common64",
+  "reader": "L2_logistic",
+  "heldout_scene_family": "zara",
+  "C": 0.1,
+  "selection": {
+    "inner_groups": 2,
+    "Cs": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_log_losses": [
+      1.0869187347167306,
+      1.1784132737637096,
+      1.7704960342842175
+    ],
+    "selection": "FIT inner scene-family held-out log loss; no CAL/DEV choice"
+  },
+  "train_n": 17549,
+  "input_dim": 96,
+  "transformed_dim": 64,
+  "hashes": {
+    "jobs/logistic_common64_social_holdout_zara.predictions.npz": "e9a74a2232b2ab625fcd9f54d12b219cb89542dc6eb15f4b4bcc8ff72b25a020",
+    "jobs/logistic_common64_social_holdout_zara.joblib": "bc76c30dbd791554ce3320d5e1eeaa0122f4713dc14da97d69a1a4516eb9f67e"
+  }
+}

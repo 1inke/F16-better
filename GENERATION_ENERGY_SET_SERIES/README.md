@@ -1,0 +1,11 @@
+# Cycle8 experiment2: whole-set supervision
+
+Production started 2026-10-03 01:53:22 HK, real Python worker41436, parent2728 svchost, Windows on-demand task Trajectory-EnergySet-Cycle8, no recurring triggers. Sole startup confirmation: epoch1/80, stderr empty. Independent of Codex process tree; machine must stay awake/logged in.
+
+Six fresh80epoch trainings, hardwinner vs whole-set energy-like score, seeds1/2/3. Same25158parameter anchorhead, same forward and native-output identity; all original F16/native decoder/scorer frozen. See locked DESIGN.md/protocol.json for formula and scope. Primary energy-like score includes intrinsic pair repulsion; additive timestep metric does not identify full joint temporal distribution. Original other regularizers/protection.1/calibration guards unchanged. GT only in training loss, not forward. No intent, ranking or independent-generator claim.
+
+GPU preflight passed K1 reduction, candidate permutation, manual distance agreement, finite gradient for all20 synthetic candidates, actual8FITsteps, paired initialization, frozen tensors, native identity, finiteK20, clipping, source/split and12715 old-file hashes. Both arms actual2epoch continuous/interrupted parameters, buffers, optimizer, all RNG, history and calibration EXACT. No old results or parent scientific source modified; no failed warmstart.
+
+ETA45-70min planning55; single60%time progress query02:26:23HK; initial analysis02:48:23HK. Stay quiet before query; use actual remaining workload to revise once. Completion requires18SHA,18explicit1516ID finite20x12x2 predictions, independent metric recomputation, source/frozen audit, SUCCESS and all12715 old hashes unchanged. Major5%/protected1%/three-seed/CI/coverage/samepath/allgroupmotion gates unchanged. Cycle8completed1/3; third new formal completion requires full cycle review. Prior hard controls repeat architecture/seeds, not independent generalization.
+
+Launch/recovery: start_independent.ps1, exclusive worker byte lock and completed-checkpoint SHA skip; exact optimizer/RNG resume. Do not repeat an active/completed experiment. Old SOFT_SET worker43644 completed and fully audited; no reliable benefit. FIT/CAL assignment diagnosis is descriptive, not formal experiment or proof of instability.

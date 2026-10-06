@@ -1,0 +1,3 @@
+# Paired conditioning learning diagnosis
+
+No optimizer/new training, no DEV/test. Evaluate original constrained and final checkpoints for both conditioning arms and all3seeds on fixed2048random FIT IDs(seed20261006) and all2879CAL IDs. FullFIT25912 original statistics/weights/scales remain. Compare original objective, group oracle/samepath, coverage/duplicates, motion, correction residual/clip, context/mode feature drift and winner occupancy, with complete80epoch stored FIT-loss/CAL-history. No CAL parameter tuning or routing; GT only posthoc/loss. This is descriptive diagnosis, not formalcycle9trial or newbaseline/rootcause proof. All outputs in this newfolder; original checkpoint/source and every prior result SHA immutable before/after.

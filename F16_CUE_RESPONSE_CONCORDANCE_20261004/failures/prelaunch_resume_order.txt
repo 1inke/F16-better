@@ -1,0 +1,6 @@
+2026-10-04 prelaunch setup failure, no scheduled task/production worker/training started.
+Invocation: diagnosis.py --resume-test before --preflight.
+FileNotFoundError: newfolder/old_results_manifest.json did not yet exist when sources() was called.
+Trace: resume_test -> sources -> digest -> Path.open.
+Resolution plan: finish creation/verification of manifest, then run the same deterministic analysis-job SHA-skip test and refresh preflight source lock if resume_check is newly included. No scientific rule/data/old results change.
+This is not a generator training failure or evidence against the research hypothesis.

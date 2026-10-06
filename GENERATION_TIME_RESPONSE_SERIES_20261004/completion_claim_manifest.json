@@ -1,0 +1,47 @@
+{
+  "manifest_version": "1.0",
+  "manifest_id": "M-time-response-completion-20261004",
+  "emitted_by": "root_inline_synthesis",
+  "claims": [
+    {
+      "id": "C1",
+      "text": "The registered temporal response experiment completed with full output/source/frozen/old-file audits, but major gates failed.",
+      "refs": [
+        "results/independent_audit.json",
+        "results/saved_metrics_recompute.json",
+        "results/summary.json",
+        "independent_worker_state.json"
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "Constrained stepwise ADE/FDE increments do not reliably beat native or fresh block control, and acceleration means increase.",
+      "refs": [
+        "results/summary.json"
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "Rescued native-inadequate cases and event/timing changes are descriptive and small, not deployed accuracy.",
+      "refs": [
+        "results/temporal_response_analysis.json",
+        "completion_review/REVIEW.json"
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "This result does not establish decoder causality, irreducible unpredictability, SOTA, or superiority of AR; no next experiment authorized.",
+      "refs": [
+        "DESIGN.md",
+        "runtime_state.json"
+      ]
+    }
+  ],
+  "negative_constraints": [
+    "No production or old-source/result edits",
+    "No new training or unfreezing",
+    "No 18policies=18independenttrainings claim",
+    "No saved arithmetic audit=allmodelreplay claim",
+    "No rescues summed across seeds as unique people"
+  ]
+}

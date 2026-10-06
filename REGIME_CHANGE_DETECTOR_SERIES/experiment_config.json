@@ -1,0 +1,26 @@
+{
+  "protocol": "observation_only_regime_detector_v1",
+  "dataset": "ETH",
+  "source_model": "EXP-173/C00 F16 H3-to-V2 best_selected",
+  "variants": {
+    "d0_motion_only": "causal focal-history kinematics only",
+    "d1_motion_social": "D0 plus frozen F16 focal social representation"
+  },
+  "unavailable_variant": "D2 is excluded because the current baseline has no map/scene-semantic input",
+  "validation_split": "exact locked C00 scene-tail validation IDs",
+  "detector_dev_split": "the immediately preceding 5% tail within each scene, drawn only from C00 training IDs",
+  "seed": 1,
+  "epochs": 30,
+  "batch_size": 512,
+  "feature_batch_size": 128,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "dropout": 0.1,
+  "bootstrap_repetitions": 5000,
+  "bootstrap_seed": 20260929,
+  "stable_threshold": 0.25,
+  "change_threshold": 0.5,
+  "binary_policy": "stable=0, change=1, transition excluded from BCE but retained for diagnosis",
+  "stage_c_automatic": false,
+  "test_access_authorized": false
+}

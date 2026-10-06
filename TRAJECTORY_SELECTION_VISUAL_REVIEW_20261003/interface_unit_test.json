@@ -1,0 +1,26 @@
+{
+  "status": "PASS_JS_UNIT",
+  "samples": 1516,
+  "default_counts": {
+    "准确选中：双oracle": 232,
+    "好候选未选中": 688,
+    "准确选中：可接受非双oracle": 149,
+    "终点接近、路径不足": 77,
+    "路径接近、终点不足": 104,
+    "ADE/FDE分属不同候选": 54,
+    "候选不足且选择有额外损失": 207,
+    "候选不足、选择接近最优": 5
+  },
+  "checks": [
+    "JS syntax and initial render logic with mock DOM",
+    "all classes agree with independently recomputed Python audit",
+    "category filter",
+    "regret sorting",
+    "threshold reclassification",
+    "coarse/final stage",
+    "time slider",
+    "manual candidate highlight",
+    "annotation save"
+  ],
+  "limitation": "Mock DOM/canvas, not browser screenshot or pixel/layout QA; local file browser navigation was blocked by policy."
+}

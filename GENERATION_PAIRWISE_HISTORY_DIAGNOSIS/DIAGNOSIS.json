@@ -1,0 +1,41 @@
+{
+  "status": "PASS_OBSERVATION_ONLY_FIT_CAL_FEASIBILITY",
+  "rows": [
+    {
+      "split": "FIT",
+      "n": 2048,
+      "neighbor_present_fraction": 0.98828125,
+      "neighbor_count_mean": 6.5458984375,
+      "feature_std_mean": 1.6238555908203125,
+      "pooled_std_mean": 0.12803593277931213,
+      "real_vs_zero_mean_abs": 0.10508763790130615,
+      "neighbor_reversal_max_error": 1.1920928955078125e-07
+    },
+    {
+      "split": "CAL",
+      "n": 512,
+      "neighbor_present_fraction": 0.99609375,
+      "neighbor_count_mean": 7.21875,
+      "feature_std_mean": 1.5245943069458008,
+      "pooled_std_mean": 0.10629816353321075,
+      "real_vs_zero_mean_abs": 0.10095471888780594,
+      "neighbor_reversal_max_error": 8.940696716308594e-08
+    }
+  ],
+  "source_hashes": {
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_PAIRWISE_HISTORY_DIAGNOSIS\\run_diagnosis.py": "ee66ff065263df56f962ea128e913230952043e1f61eade405d0e0bd3f81a32e",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_PAIRWISE_HISTORY_DIAGNOSIS\\README.md": "336108363b294ab8c80221287e0c542e77b7c7ed81cedde254adfb0115c42372",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_UPSTREAM_TEMPORAL_SERIES\\train_observations.npz": "ff582948c69c72a1a6b4adb939a6958350e5db450bdc06691715f9a0d41d3497",
+    "C:\\Users\\linke\\Documents\\New project\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_PAIRWISE_HISTORY_DIAGNOSIS\\fit_pairwise_scalers.npz": "857c9a4e1a6a7bd4a1f0cde9a617c0964f9248ff9f10b0c3ea0e0eac028bf959",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_PAIRWISE_HISTORY_DIAGNOSIS\\split_ids.npz": "4dad1d80082752a0a7771f61621691349764b7c77f098921af25684c35f2e704"
+  },
+  "all_old_files_unchanged": 15770,
+  "fit_valid_neighbor_pairs": 168527,
+  "actual_new_encoder_parameters": 3168,
+  "raw_schema": "local160:304=9x8x2; count304; focalpast0:16; native tokens are separate cached features",
+  "optimizer_steps": 0,
+  "GT_used": false,
+  "DEV_test_used": false,
+  "limitations": "Observed numerical reachability only, not learned improvement or independent information gain. Tokens/social are already enriched; prior tap failures matter. Zero control retains SAME masks/neighbor presence and learnable bias constant. Original native20 order stays locked; neighbor permutation check is not native-candidate equivariance."
+}

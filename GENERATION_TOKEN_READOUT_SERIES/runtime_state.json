@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETE_AUDITED_GATE_FAIL",
+  "cycle": 4,
+  "experiment_in_cycle": 1,
+  "completed_in_cycle": 1,
+  "pid": 44332,
+  "parent_pid": 2728,
+  "windows_task": "Trajectory-TokenReadout-Cycle4",
+  "launched_at": "2026-10-02T01:59:01.706949+08:00",
+  "estimate_minutes_range": [
+    35,
+    55
+  ],
+  "planning_minutes": 45,
+  "first_progress_query_at": "2026-10-02T02:26:02+08:00",
+  "first_progress_query_done": true,
+  "next_review_at": null,
+  "analysis_deadline": null,
+  "startup_confirmed": true,
+  "startup_progress": "realPID44332 parent2728/service taskRunning zero seed1epoch1/80 stderr empty",
+  "new_trainings": 6,
+  "epochs_each": 80,
+  "parameters_each": 39590,
+  "token_dim": 96,
+  "readout_dim": 32,
+  "paired_full_init_exact": true,
+  "native_identity_exact": true,
+  "internal_arm_mapping": {
+    "zero": "uniform_value_pool",
+    "mean_std": "candidate_conditioned_token_attention"
+  },
+  "effective_capacity_note": "Uniform query/keydata gradients zero; matching nominalparameters not equal effectivecapacity",
+  "mode_order": "lockedoriginalnative20",
+  "resume": "twoarm actual2epoch parameters/boolbuffer/optimizer/RNG/history/calibrationEXACT",
+  "scope": "allolddecoder F16 scorer frozen;nativebase+3anchorclip1.5;originalfitcal loss/noGTforward/no test",
+  "progress_checked_at": "2026-10-02T02:28:30+08:00",
+  "progress": "samePID44332 parent2728/taskRunning/stderr empty;uniform3seeds andattentionseed1 complete4/6;attentionseed2epoch15/80,total335/48070%",
+  "remaining_estimate_minutes": [
+    13,
+    16
+  ],
+  "finished_at": "2026-10-02T02:35:33.304694+08:00",
+  "audit": "independent18SHA IDsfiniteK20 metricsrecomputePASS; builtinfreeze18/SUCCESS",
+  "result_analysis": "RESULT_ANALYSIS.md"
+}

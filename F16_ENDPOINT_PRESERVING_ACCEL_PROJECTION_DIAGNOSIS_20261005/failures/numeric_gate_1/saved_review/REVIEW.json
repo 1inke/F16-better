@@ -1,0 +1,95 @@
+{
+  "status": "PASS_SAVED_FIXTURE_RECOMPUTE_CONFIRMS_NUMERIC_STOP",
+  "rows": [
+    {
+      "device": "cpu",
+      "fixture": "identity",
+      "native_acceleration_mean": 0.0,
+      "projected_acceleration_mean": 0.0,
+      "strict_one_percent_bound_pass": true,
+      "endpoint_error_m": 0.0
+    },
+    {
+      "device": "cpu",
+      "fixture": "static_constant_drift_D0",
+      "native_acceleration_mean": 0.0,
+      "projected_acceleration_mean": 3.076421319961851e-08,
+      "strict_one_percent_bound_pass": false,
+      "endpoint_error_m": 0.0
+    },
+    {
+      "device": "cpu",
+      "fixture": "static_varying_Dpositive",
+      "native_acceleration_mean": 0.0,
+      "projected_acceleration_mean": 4.0822897481574505e-08,
+      "strict_one_percent_bound_pass": false,
+      "endpoint_error_m": 5.122274160385132e-09
+    },
+    {
+      "device": "cpu",
+      "fixture": "constant_velocity_D0",
+      "native_acceleration_mean": 0.0,
+      "projected_acceleration_mean": 2.555796173506769e-07,
+      "strict_one_percent_bound_pass": false,
+      "endpoint_error_m": 1.4901161193847656e-08
+    },
+    {
+      "device": "cpu",
+      "fixture": "curved_varying",
+      "native_acceleration_mean": 0.012499999932267448,
+      "projected_acceleration_mean": 0.012588659080191415,
+      "strict_one_percent_bound_pass": true,
+      "endpoint_error_m": 5.448237061500549e-08
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "identity",
+      "native_acceleration_mean": 0.0,
+      "projected_acceleration_mean": 0.0,
+      "strict_one_percent_bound_pass": true,
+      "endpoint_error_m": 0.0
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "static_constant_drift_D0",
+      "native_acceleration_mean": 0.0,
+      "projected_acceleration_mean": 2.366477938432193e-09,
+      "strict_one_percent_bound_pass": false,
+      "endpoint_error_m": 2.9802322387695312e-08
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "static_varying_Dpositive",
+      "native_acceleration_mean": 0.0,
+      "projected_acceleration_mean": 5.820766091346741e-09,
+      "strict_one_percent_bound_pass": false,
+      "endpoint_error_m": 2.7939677238464355e-08
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "constant_velocity_D0",
+      "native_acceleration_mean": 0.0,
+      "projected_acceleration_mean": 2.555796173506769e-07,
+      "strict_one_percent_bound_pass": false,
+      "endpoint_error_m": 1.4901161193847656e-08
+    },
+    {
+      "device": "cuda:0",
+      "fixture": "curved_varying",
+      "native_acceleration_mean": 0.012499999932267448,
+      "projected_acceleration_mean": 0.012588726811062418,
+      "strict_one_percent_bound_pass": true,
+      "endpoint_error_m": 6.472691893577576e-08
+    }
+  ],
+  "strict_failed_count": 6,
+  "maximum_summary_error": 1.734723475976807e-18,
+  "saved_output_SHA_before_after_unchanged": true,
+  "four_original_source_SHA_before_after_unchanged": true,
+  "no_torch_model_optimizer": true,
+  "all_prior_scientific_SHA_revalidation": false,
+  "resource": {
+    "peak_private_GiB": 0.7417030334472656,
+    "peak_RSS_GiB": 0.03495025634765625
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "status": "PASS_READY_FOR_SOLE_PRODUCTION_LAUNCH",
+  "checked_at": "2026-10-05T18:54:51.239331+08:00",
+  "reviewer": "Same assistant inline review, not external independent reviewer",
+  "current_source_count": 484,
+  "all_prior_files_locked": 30298,
+  "preflight_SHA": "1a151b99e925e0310c2529f15be9940b5172350ee4c4e9930a334166487a4f91",
+  "resume_SHA": "b1f88f26a912e3be42582f699eb4f53d4a943407dbe11263443728c41c391584",
+  "benchmark_SHA": "d2afb7a7b21f6f4729e9329c838c632a438a8156a594cfc598b67fd2dd71ffac",
+  "actual_GPU8FIT": true,
+  "both_trainable_parameters": 45798,
+  "fullpaired_weights_buffers": true,
+  "rawcontrol_originaltotal_and_gradient_exact": true,
+  "rawcontrol_parent_nonzero_outputs_exact": true,
+  "actual_physical_gradient": {
+    "zero": {
+      "natural_active_steps": 0,
+      "physical_parameter_gradient_norms": [],
+      "clock_gradient": 0.0002531158388592303,
+      "state_sensitivity": 0.0553930401802063,
+      "endpoint_decomposition_error": 1.862645149230957e-09
+    },
+    "mean_std": {
+      "natural_active_steps": 0,
+      "physical_parameter_gradient_norms": [],
+      "clock_gradient": 0.0002531158388592303,
+      "state_sensitivity": 0.0553930401802063,
+      "endpoint_decomposition_error": 1.862645149230957e-09
+    }
+  },
+  "physical_math": {
+    "status": "PASS",
+    "numpy_max": 0.0,
+    "finite_difference_errors": [
+      6.53819706708525e-12,
+      8.449813765354364e-12
+    ],
+    "native_zero": true,
+    "below_zero": true,
+    "tolerance": true,
+    "empty_groups": true,
+    "mixed_weights": true
+  },
+  "both_real_FITCAL_subset_2epoch_allparams_boolscalerbuffers_optimizer_allRNG_history_calibration": "EXACT",
+  "no_fullFIT_twoepoch_claim": true,
+  "completed_seed_SHA_skip_verified": true,
+  "source_badoutput_reject": true,
+  "frozenwholeold_F16_decoder_scorer": true,
+  "process_budget_GiB": 6,
+  "system_reserve_each_GiB": 6,
+  "resource": {
+    "peak_RSS_GiB": 0.5251998901367188,
+    "peak_private_GiB": 0.8998260498046875,
+    "min_physical_GiB": 17.736125946044922,
+    "min_commit_GiB": 18.067760467529297,
+    "checks": 34
+  },
+  "preflight_resource": {
+    "peak_RSS_GiB": 2.3714027404785156,
+    "peak_private_GiB": 3.3063087463378906,
+    "min_physical_GiB": 15.875877380371094,
+    "min_commit_GiB": 15.605045318603516,
+    "checks": 194
+  },
+  "benchmark_compute_minutes": 45.72720241027855,
+  "estimated_inputs_MiB": 162,
+  "physical_reference_batch128_MiB": 0.22,
+  "eighteen_uncompressed_DEVpaths_MiB": 49.9658203125,
+  "all18_not_resident": true,
+  "one_model_batch128": true,
+  "benchmark_savedmodel": false,
+  "benchmark_not_gpu_isolation_or_production_guarantee": true,
+  "production_started": false,
+  "formal_counter_not_reset": true,
+  "limits": [
+    "Batch class hinge not population physical gate",
+    "Only accelmean added; jerk/p95 may fail",
+    "May suppress legitimate changes; coverage-first, no native-only success",
+    "FIT/CAL transfer and repeatedDEV limitations; local gradients not actual AdamW effect"
+  ]
+}

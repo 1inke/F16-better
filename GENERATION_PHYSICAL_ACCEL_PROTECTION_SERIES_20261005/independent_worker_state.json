@@ -1,0 +1,1475 @@
+{
+  "pid": 39304,
+  "parent_pid": 2728,
+  "started_at": "2026-10-05T18:55:41.279151+08:00",
+  "status": "SUCCESS",
+  "launcher": "Windows Task Scheduler on-demand, no triggers",
+  "stage": "PHYSICAL_POPULATION_AND_ORIGINAL_OBJECTIVE_AUDIT",
+  "completion_recompute": {
+    "sample_max_error": 0.0,
+    "group_rows": 72,
+    "aggregate_rows": 24,
+    "CI_rows": 96
+  },
+  "quality_recompute": {
+    "status": "PASS",
+    "quality_predictions": 18,
+    "pooled_motion_pass": false
+  },
+  "physical_recompute": {
+    "status": "PASS",
+    "records": [
+      {
+        "seed": 1,
+        "arm": "zero",
+        "policy": "constrained",
+        "split": "FIT",
+        "original_total": 0.36126453857413526,
+        "P": 0.04466260923183381,
+        "added_total": 0.36126453857413526,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09543316182430617,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.02330219545178402
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.09022800864377238,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.009469963634716342
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.09105378471477635,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.011890450145333444
+          }
+        ],
+        "coverage": 15157,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "zero",
+        "policy": "constrained",
+        "split": "CAL",
+        "original_total": 0.39647691274925007,
+        "P": 0.040677504602380475,
+        "added_total": 0.39647691274925007,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09467115744657159,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.01915337975332261
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09421216515442414,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.011143545470036428
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.09303995104772704,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.010380579379021437
+          }
+        ],
+        "coverage": 1489,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "zero",
+        "policy": "legacy",
+        "split": "FIT",
+        "original_total": 0.36312947956503944,
+        "P": 0.03222640667209773,
+        "added_total": 0.36312947956503944,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09438813685597762,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.016761633744548973
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08907341802027856,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.006966619928412233
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08987367630946376,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.008498152999136525
+          }
+        ],
+        "coverage": 15096,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "zero",
+        "policy": "legacy",
+        "split": "CAL",
+        "original_total": 0.3952266134939273,
+        "P": 0.029556344454549067,
+        "added_total": 0.3952266134939273,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09377569648701127,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.013895412338029075
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09309453685530779,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.008202710426635628
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.09200561393584523,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.0074582216898843616
+          }
+        ],
+        "coverage": 1500,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "zero",
+        "policy": "final",
+        "split": "FIT",
+        "original_total": 0.31855299182854235,
+        "P": 0.13352405491963903,
+        "added_total": 0.31855299182854235,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.10287976042792134,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.0699086777388588
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.09865167847767448,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.027733875045040903
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.09939976411634786,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.035881502135739346
+          }
+        ],
+        "coverage": 16697,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "zero",
+        "policy": "final",
+        "split": "CAL",
+        "original_total": 0.4194719309692739,
+        "P": 0.12622900413392518,
+        "added_total": 0.4194719309692739,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.1014938433512026,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.05921482496579342
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.10298024308260369,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.03421514347345729
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.10097472283989191,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.03279903569467446
+          }
+        ],
+        "coverage": 1489,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "zero",
+        "policy": "constrained",
+        "split": "FIT",
+        "original_total": 0.36414093806595205,
+        "P": 0.02736568518222377,
+        "added_total": 0.36414093806595205,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09406569138453631,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.014743524544197964
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08847198301576814,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.005662609223097344
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08933842937097349,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.006959551414928465
+          }
+        ],
+        "coverage": 15064,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "zero",
+        "policy": "constrained",
+        "split": "CAL",
+        "original_total": 0.3971586957874457,
+        "P": 0.023684678321866694,
+        "added_total": 0.3971586957874457,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09321335548783746,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.010593458614227102
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09264505678290351,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.007019985589333329
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.09151470458401101,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.006071234118306264
+          }
+        ],
+        "coverage": 1493,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "zero",
+        "policy": "legacy",
+        "split": "FIT",
+        "original_total": 0.3629199220643534,
+        "P": 0.03248182805478788,
+        "added_total": 0.3629199220643534,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.0945283892218787,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.017639439808100676
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08903242853568427,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.006877747936733266
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.0896880785325853,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.00796464030995394
+          }
+        ],
+        "coverage": 15109,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "zero",
+        "policy": "legacy",
+        "split": "CAL",
+        "original_total": 0.3971271834932617,
+        "P": 0.028351626277096337,
+        "added_total": 0.3971271834932617,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09359014617212433,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.012805898050268237
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09322994306498433,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.008559007172902432
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.0918387313506433,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.006986721053925667
+          }
+        ],
+        "coverage": 1500,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "zero",
+        "policy": "final",
+        "split": "FIT",
+        "original_total": 0.31906070291031813,
+        "P": 0.1407765383787446,
+        "added_total": 0.31906070291031813,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.10364183115630099,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.07467829643248375
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.09926355326114537,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.029060520920280216
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.09980198820579257,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.03703772102598064
+          }
+        ],
+        "coverage": 16564,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "zero",
+        "policy": "final",
+        "split": "CAL",
+        "original_total": 0.42524052558327263,
+        "P": 0.1326747745421567,
+        "added_total": 0.42524052558327263,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.10211861743455213,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.06288337325603345
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.10366762340392756,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.03602385942910338
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.10131751519228731,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.03376754185701986
+          }
+        ],
+        "coverage": 1457,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "zero",
+        "policy": "constrained",
+        "split": "FIT",
+        "original_total": 0.3545523209981045,
+        "P": 0.05742270426681438,
+        "added_total": 0.3545523209981045,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09641015876838933,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.029416986001503224
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.09123074956678191,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.011644072039540845
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.0926092192327223,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.016361646225770316
+          }
+        ],
+        "coverage": 15370,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "zero",
+        "policy": "constrained",
+        "split": "CAL",
+        "original_total": 0.39853412749227013,
+        "P": 0.052298257919618146,
+        "added_total": 0.39853412749227013,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09554756242017404,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.024299454235526142
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09529977751120647,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.01400539903529607
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.09431867174272027,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.013993404648795933
+          }
+        ],
+        "coverage": 1490,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "zero",
+        "policy": "legacy",
+        "split": "FIT",
+        "original_total": 0.3557529485679164,
+        "P": 0.05505221985825311,
+        "added_total": 0.3557529485679164,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09640561903517127,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.029388572895455965
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.09090301866597891,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.010933497164609033
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.09204165614362626,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.014730149798188114
+          }
+        ],
+        "coverage": 15352,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "zero",
+        "policy": "legacy",
+        "split": "CAL",
+        "original_total": 0.3983030603138873,
+        "P": 0.048817468763628566,
+        "added_total": 0.3983030603138873,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09531823726255653,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.022952902838297227
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09502706544832414,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.013287806977259793
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.09381726521466459,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.012576758948071549
+          }
+        ],
+        "coverage": 1500,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "zero",
+        "policy": "final",
+        "split": "FIT",
+        "original_total": 0.31725755794671906,
+        "P": 0.13048790638809968,
+        "added_total": 0.31725755794671906,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.10233464063733763,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.06649690315336694
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.09846571288921775,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.02733067084783068
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.09967070268278189,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.03666033238690205
+          }
+        ],
+        "coverage": 16761,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "zero",
+        "policy": "final",
+        "split": "CAL",
+        "original_total": 0.4206572312730955,
+        "P": 0.125023914617674,
+        "added_total": 0.4206572312730955,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.10128897395021363,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.05801187287358878
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.10287121250091688,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.03392824938203133
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.10107550940343311,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.0330837923620539
+          }
+        ],
+        "coverage": 1471,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "mean_std",
+        "policy": "constrained",
+        "split": "FIT",
+        "original_total": 0.3725782408466433,
+        "P": 0.0,
+        "added_total": 0.3725782408466433,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09115268713318425,
+            "native": 0.09080200950393377,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08539327259691841,
+            "native": 0.08501017615869891,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08632596781456991,
+            "native": 0.08605678087033553,
+            "active": false,
+            "contribution": 0.0
+          }
+        ],
+        "coverage": 14864,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "mean_std",
+        "policy": "constrained",
+        "split": "CAL",
+        "original_total": 0.3944851067054641,
+        "P": 0.0,
+        "added_total": 0.3944851067054641,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09079503296883565,
+            "native": 0.09050418894968515,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.08947946187918601,
+            "native": 0.08908633399546517,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.0887568226935608,
+            "native": 0.08848104602524212,
+            "active": false,
+            "contribution": 0.0
+          }
+        ],
+        "coverage": 1494,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "mean_std",
+        "policy": "legacy",
+        "split": "FIT",
+        "original_total": 0.36463444219101065,
+        "P": 9.24597074904222e-05,
+        "added_total": 0.3646436881617597,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09149602119273689,
+            "native": 0.09080200950393377,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.0858427465462767,
+            "native": 0.08501017615869891,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08694951345507701,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 9.24597074904222e-05
+          }
+        ],
+        "coverage": 15052,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "mean_std",
+        "policy": "legacy",
+        "split": "CAL",
+        "original_total": 0.3971227071261048,
+        "P": 0.0,
+        "added_total": 0.3971227071261048,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09118540557617084,
+            "native": 0.09050418894968515,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.08990517924452976,
+            "native": 0.08908633399546517,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.08928699647741659,
+            "native": 0.08848104602524212,
+            "active": false,
+            "contribution": 0.0
+          }
+        ],
+        "coverage": 1492,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "mean_std",
+        "policy": "final",
+        "split": "FIT",
+        "original_total": 0.3244830763234117,
+        "P": 0.0025055266894487872,
+        "added_total": 0.3247336289923566,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09171569279306377,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 3.544457934749188e-05
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08617486765957633,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.0006820826602051025
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08753935585841653,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.0017879994498961928
+          }
+        ],
+        "coverage": 16373,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 1,
+        "arm": "mean_std",
+        "policy": "final",
+        "split": "CAL",
+        "original_total": 0.4136304955547265,
+        "P": 0.002646493499383506,
+        "added_total": 0.41389514490466484,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09154260549269592,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.0007831492537057553
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09026488338984688,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.0007569933859277811
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.08975743748779808,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.0011063508597499697
+          }
+        ],
+        "coverage": 1488,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "mean_std",
+        "policy": "constrained",
+        "split": "FIT",
+        "original_total": 0.36616836815536224,
+        "P": 0.0001902327827405663,
+        "added_total": 0.3661873914336363,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09148523895469403,
+            "native": 0.09080200950393377,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08588311225534659,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 4.9508620457037325e-05
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08696630363775397,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.00014072416228352896
+          }
+        ],
+        "coverage": 15009,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "mean_std",
+        "policy": "constrained",
+        "split": "CAL",
+        "original_total": 0.3965162188706753,
+        "P": 0.0,
+        "added_total": 0.3965162188706753,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09111280836868751,
+            "native": 0.09050418894968515,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.08997405118522991,
+            "native": 0.08908633399546517,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.08930785725691488,
+            "native": 0.08848104602524212,
+            "active": false,
+            "contribution": 0.0
+          }
+        ],
+        "coverage": 1499,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "mean_std",
+        "policy": "legacy",
+        "split": "FIT",
+        "original_total": 0.36061988335754747,
+        "P": 0.0009346921220910814,
+        "added_total": 0.36071335256975656,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09155030088312241,
+            "native": 0.09080200950393377,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08594974119940045,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.00019397120690191707
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08717502981377838,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.0007407209151891643
+          }
+        ],
+        "coverage": 15201,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "mean_std",
+        "policy": "legacy",
+        "split": "CAL",
+        "original_total": 0.39779267522253703,
+        "P": 0.0004969254869365803,
+        "added_total": 0.39784236777123066,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.0912136249438365,
+            "native": 0.09050418894968515,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09003564802733083,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.00015380233590971723
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.08948730123894555,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.00034312315102686314
+          }
+        ],
+        "coverage": 1497,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "mean_std",
+        "policy": "final",
+        "split": "FIT",
+        "original_total": 0.3242708728245529,
+        "P": 0.003330297542655347,
+        "added_total": 0.32460390257881844,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.0917472810498762,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 0.00023314793492965343
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08628053627705429,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.0009111897247652236
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08767779787331122,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.0021859598829604703
+          }
+        ],
+        "coverage": 16371,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 2,
+        "arm": "mean_std",
+        "policy": "final",
+        "split": "CAL",
+        "original_total": 0.4158217319493881,
+        "P": 0.0029349723075988536,
+        "added_total": 0.416115229180148,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09152283514652657,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.0006670617405230408
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09031477792662863,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.0008882817600303707
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.08985416128167084,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.0013796288070454421
+          }
+        ],
+        "coverage": 1498,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "mean_std",
+        "policy": "constrained",
+        "split": "FIT",
+        "original_total": 0.362245398709504,
+        "P": 0.000442828136477588,
+        "added_total": 0.3622896815231518,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09154755585163762,
+            "native": 0.09080200950393377,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08581681499940966,
+            "native": 0.08501017615869891,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08707139921867159,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.000442828136477588
+          }
+        ],
+        "coverage": 15098,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "mean_std",
+        "policy": "constrained",
+        "split": "CAL",
+        "original_total": 0.3967337196520507,
+        "P": 0.0,
+        "added_total": 0.3967337196520507,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09118197024208327,
+            "native": 0.09050418894968515,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.08990149818337667,
+            "native": 0.08908633399546517,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.08934596819004842,
+            "native": 0.08848104602524212,
+            "active": false,
+            "contribution": 0.0
+          }
+        ],
+        "coverage": 1492,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "mean_std",
+        "policy": "legacy",
+        "split": "FIT",
+        "original_total": 0.3568503634004084,
+        "P": 0.0005529973564820737,
+        "added_total": 0.3569056631360566,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09155464837152795,
+            "native": 0.09080200950393377,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08585776652207901,
+            "native": 0.08501017615869891,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08710972475942788,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.0005529973564820737
+          }
+        ],
+        "coverage": 15314,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "mean_std",
+        "policy": "legacy",
+        "split": "CAL",
+        "original_total": 0.3972965745450811,
+        "P": 2.569418569602992e-05,
+        "added_total": 0.3972991439636507,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09124748030683505,
+            "native": 0.09050418894968515,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.08997599960460981,
+            "native": 0.08908633399546517,
+            "active": false,
+            "contribution": 0.0
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.08937495066651276,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 2.569418569602992e-05
+          }
+        ],
+        "coverage": 1488,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "mean_std",
+        "policy": "final",
+        "split": "FIT",
+        "original_total": 0.32405804391563436,
+        "P": 0.002736193965370825,
+        "added_total": 0.32433166331217145,
+        "groups": [
+          {
+            "group": 0,
+            "n": 14726,
+            "mean": 0.09172050554963553,
+            "native": 0.09080200950393377,
+            "active": true,
+            "contribution": 6.556647336292552e-05
+          },
+          {
+            "group": 1,
+            "n": 4776,
+            "mean": 0.08614052013592355,
+            "native": 0.08501017615869891,
+            "active": true,
+            "contribution": 0.0006076115399537322
+          },
+          {
+            "group": 2,
+            "n": 6410,
+            "mean": 0.08763502828091058,
+            "native": 0.08605678087033553,
+            "active": true,
+            "contribution": 0.0020630159520541673
+          }
+        ],
+        "coverage": 16385,
+        "n": 25912,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      },
+      {
+        "seed": 3,
+        "arm": "mean_std",
+        "policy": "final",
+        "split": "CAL",
+        "original_total": 0.41686971655756416,
+        "P": 0.0030870201686680507,
+        "added_total": 0.41717841857443094,
+        "groups": [
+          {
+            "group": 0,
+            "n": 1535,
+            "mean": 0.09156726319160834,
+            "native": 0.09050418894968515,
+            "active": true,
+            "contribution": 0.0009279343233767292
+          },
+          {
+            "group": 1,
+            "n": 644,
+            "mean": 0.09027861894010017,
+            "native": 0.08908633399546517,
+            "active": true,
+            "contribution": 0.0007931359814196812
+          },
+          {
+            "group": 2,
+            "n": 700,
+            "mean": 0.08984931976667472,
+            "native": 0.08848104602524212,
+            "active": true,
+            "contribution": 0.0013659498638716402
+          }
+        ],
+        "coverage": 1467,
+        "n": 2879,
+        "definition": "population denominator; NOT original batch objective or training AdamW direction"
+      }
+    ],
+    "output_SHA": {
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_zero_constrained_FIT.npz": "e9d50b60745ec89f0a7ad86316c8aba05d265ff306a673c83f9db64d216b7264",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_zero_constrained_CAL.npz": "b995e178e7a1da4e2b0e81a0c2248228516314f8ad1e73d12ccdd99c950c44f0",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_zero_legacy_FIT.npz": "b1299b6e0c8b7f24315c6d359ad7d06b7f5a200ec9045e9b34efd207b2e5b78a",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_zero_legacy_CAL.npz": "62310c70cd169dffc543b6db77aea1e887e5fc96c2930eff620748693eb9bc38",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_zero_final_FIT.npz": "ed5d44c79c9d16a2f339ee0c9642ebf239fb3f91a0d19b6aa3ad5453c64d0005",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_zero_final_CAL.npz": "eaa0b19bfaa3b38447ac1858b39a0dfacc1f1edad306303d0dd4394d449fb547",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_zero_constrained_FIT.npz": "5988ad12e6f6f8f5b5f00a6c06919964687913928d8b21987c0d67e7d6f6ac8b",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_zero_constrained_CAL.npz": "53649db7ea20f8d1d8ef45a5caa46a7e89e72e6fc65726cd66cf5f747fbc25bd",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_zero_legacy_FIT.npz": "d92a2e0f51f08a626e775bfb4d03005f5a0a7de8c650c3cbbbf2aeaad15d7e2d",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_zero_legacy_CAL.npz": "e6e85637c2dcc4bcd821e313f2254092dc176987af6045b57ff81baec924d44e",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_zero_final_FIT.npz": "b9e703f32f9476c17a41a35bc2e31823e4732f6e57388c0dbeb799f977c9bc26",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_zero_final_CAL.npz": "393d7c0aee5957bc9c9f2ad287ea0e13e22518bb078ac70908a988557581dbf1",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_zero_constrained_FIT.npz": "d3cbafe3e75301299d2ca136392b6213bef7003a0cfee3ee4ce355083acc3978",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_zero_constrained_CAL.npz": "b2327a5e48fa20ff99db87d64d47309c0f2c36a0244aa041baa76266bc252fbf",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_zero_legacy_FIT.npz": "b983d5a49646a1ded7fc12a782097b08abe53dbba412d6de64fbce03b20ee106",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_zero_legacy_CAL.npz": "7ba9ba06ad1999fea9eed71f6978152a1078fb85016c06dfdf5ad5001ab04d46",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_zero_final_FIT.npz": "05f9cb969635710eddef620f47b6ecd44c3c29adf518dfbfdbd8b2ee69497d8a",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_zero_final_CAL.npz": "3fbdf16db6414063f91cbf264e9abee70a17c87344a1ffd1ba5740ff5c844994",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_mean_std_constrained_FIT.npz": "8f5786451f716fc8c9c54820bfbdfafd8a275369a9dfb5d0711bda98817ba47d",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_mean_std_constrained_CAL.npz": "3bc39d4351ccd81605bfbe9fec5cdb5862942e9fac1a02c413cdd60d6668c062",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_mean_std_legacy_FIT.npz": "599749143d9246ad47e0ade1140eea53a6235ed266bf59910fb2b44cb2369384",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_mean_std_legacy_CAL.npz": "6d92fe27453d93a2ec30d08d4f67e88807fb22e5d1a585843addd0ce2b453120",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_mean_std_final_FIT.npz": "1d5815d0ecc38021bc6c9aef6ef37bf6496a30b232bf53fae780a83e8871c587",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed1_mean_std_final_CAL.npz": "843b693cb265f6ca75ab91a0e7ab0db18f714177cd0fae66ae08b5b1e88508b3",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_mean_std_constrained_FIT.npz": "bbb152138ec8002f8b04b26a0c9550538209e843addabacf065fe5bc716b1e7a",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_mean_std_constrained_CAL.npz": "04151ffb6664d4ebf81f5942ef625ae360264efa99956fa6bf784a106baa0dc9",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_mean_std_legacy_FIT.npz": "f6907a4e9f0ffacc168936ccd84ab31044698491a65f08002e8cbf83b96a8046",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_mean_std_legacy_CAL.npz": "ba1064a25c1d59d3745df849862af44b272a96dd624dc966a1a76cc0b1a5d3b6",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_mean_std_final_FIT.npz": "b04a90075d50885298053920493952a27d7b10ab22d09f8f71f67d849e079cb6",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed2_mean_std_final_CAL.npz": "f3fa674069986b1b00d8f6b39352726833368e387482d8cbddcf8b1b9c91a75e",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_mean_std_constrained_FIT.npz": "6d25da5b92c9df70f2eac7f0ab4f53fa1f2435c71577556992fb1bf292a86330",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_mean_std_constrained_CAL.npz": "b7c42d3bb8d2f9d046a04c9872c3000af9897eca232456f97c3936f4837f698e",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_mean_std_legacy_FIT.npz": "af34fce5229c99966d495e6908f2250469bdc7de7d01c596a3f240d1fc199c94",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_mean_std_legacy_CAL.npz": "c97eefc81b20d1544426e9f8b232c08e69b89e1f46ec67ef1cc0da9ee52672e0",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_mean_std_final_FIT.npz": "2950564d734842cae18cfc4556db3fcc52efb4c4bf1d260a40f5d1f88c376d50",
+      "C:\\Users\\linke\\Documents\\New project\\GENERATION_PHYSICAL_ACCEL_PROTECTION_SERIES_20261005\\results\\physical_population\\seed3_mean_std_final_CAL.npz": "67cdf6809670811d227cc4e58a09be411f44023fb7ef56596cd99f4a57bc8f8a"
+    },
+    "sampled_original_scalar_max": 2.90139783865051e-08,
+    "training_trace_checks": [
+      {
+        "arm": "zero",
+        "seed": 1,
+        "epochs": 80,
+        "exact_resume_prefix": true
+      },
+      {
+        "arm": "zero",
+        "seed": 2,
+        "epochs": 80,
+        "exact_resume_prefix": true
+      },
+      {
+        "arm": "zero",
+        "seed": 3,
+        "epochs": 80,
+        "exact_resume_prefix": true
+      },
+      {
+        "arm": "mean_std",
+        "seed": 1,
+        "epochs": 80,
+        "exact_resume_prefix": true
+      },
+      {
+        "arm": "mean_std",
+        "seed": 2,
+        "epochs": 80,
+        "exact_resume_prefix": true
+      },
+      {
+        "arm": "mean_std",
+        "seed": 3,
+        "epochs": 80,
+        "exact_resume_prefix": true
+      }
+    ],
+    "original_total_and_P_population_recompute": true,
+    "no_optimizer": true,
+    "weights_buffers_fixed": true,
+    "saved_arithmetic_not_allmodels_second_replay": true
+  },
+  "final_old_SHA_files": 30298,
+  "finished_at": "2026-10-05T19:59:21.969362+08:00"
+}

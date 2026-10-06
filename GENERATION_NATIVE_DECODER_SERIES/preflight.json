@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "fit_n": 25912,
+  "cal_n": 2879,
+  "parameters_trainable": {
+    "zero": 26514,
+    "mean_std": 50080
+  },
+  "trainable_whitelists": {
+    "zero": [
+      "decoder.refiner.network.0.weight",
+      "decoder.refiner.network.0.bias",
+      "decoder.refiner.network.1.weight",
+      "decoder.refiner.network.1.bias",
+      "decoder.refiner.network.3.weight",
+      "decoder.refiner.network.3.bias",
+      "decoder.refiner.network.5.weight",
+      "decoder.refiner.network.5.bias"
+    ],
+    "mean_std": [
+      "decoder.mode_embedding",
+      "decoder.anchor_templates",
+      "decoder.context.0.weight",
+      "decoder.context.0.bias",
+      "decoder.context.1.weight",
+      "decoder.context.1.bias",
+      "decoder.context.3.weight",
+      "decoder.context.3.bias",
+      "decoder.mode_mlp.0.weight",
+      "decoder.mode_mlp.0.bias",
+      "decoder.mode_mlp.1.weight",
+      "decoder.mode_mlp.1.bias",
+      "decoder.proposal_scale.weight",
+      "decoder.proposal_scale.bias",
+      "decoder.proposal_delta.weight",
+      "decoder.proposal_delta.bias",
+      "decoder.refiner.network.0.weight",
+      "decoder.refiner.network.0.bias",
+      "decoder.refiner.network.1.weight",
+      "decoder.refiner.network.1.bias",
+      "decoder.refiner.network.3.weight",
+      "decoder.refiner.network.3.bias",
+      "decoder.refiner.network.5.weight",
+      "decoder.refiner.network.5.bias"
+    ]
+  },
+  "seconds_per_128step": {
+    "zero": 0.03785210999994888,
+    "mean_std": 0.01767957000010938
+  },
+  "fit_protection_scales": [
+    0.17423726618289948,
+    0.3010268807411194
+  ],
+  "source_hashes": {
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_DECODER_SERIES\\run_native.py": "38ad8f93227a5e61f9437f058bafd7b375282533243537b49e9947e40e84cca7",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_DECODER_SERIES\\protocol.json": "1935d8b4ccf22a19bf99992c1a85bf23b2d27e5c0172ff94a6066f49e5cd6a88",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_DUAL_ORACLE_SERIES\\run_dual.py": "687e3715e70d10cb1884992c25e1445fba9fdeebbb5cf4e1c497416fc01e148a",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_SET_CONTEXT_SERIES\\run_context.py": "257d250b95c91e2111d417ef900c9f57477d76b30a29e0e704a19614871f5601",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_BALANCE_REPLICATION_SERIES\\run_replication.py": "e7d3f096a378c33d0c3bca40adbd504cd3ade6782b218a0792ba97719d9d6d96",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_PROTECTED_BALANCE_SERIES\\run_protected.py": "2c47d258f04bb83174af76c8e34561411fcdff1778321a7718ca77cc29027e89",
+    "C:\\Users\\linke\\Documents\\New project\\FRONT_ENCODER_SERIES\\front_encoder_models.py": "2d270336a40704c13a8d127e70898ac091715a276114d07776733f814d8a5949",
+    "C:\\Users\\linke\\Documents\\New project\\FRONT_ENCODER_SERIES\\train_front_variant.py": "8bd583d8b4b6972babebaabc939d61848133e082bd9d72aa02a148674ee9058a",
+    "C:\\Users\\linke\\Documents\\New project\\E2_F16_END_TO_END_COMPARISON_SERIES\\joint_v2_adapter.py": "0ddceb3149add6b02353184ac85f002c8375d238f67c673029bf6aa7c134bd76",
+    "C:\\Users\\linke\\Documents\\New project\\CONTROLLED_ANCHOR_CORRECTION_SERIES\\controlled_anchor_correction_models.py": "2017af3b71c51c180bf80f1a1ba0eb230873dcbab9c535ef238be5a344e6f0c7",
+    "C:\\Users\\linke\\Documents\\New project\\HIERARCHICAL_DECODER_SERIES\\hierarchical_decoder_models.py": "420c5e1e611d2217d75d1344f4672d6b68c5ca8f96208e9b5628a3a592cc6e04",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "f245c1ba7277b9b843c891f7f3902a66f3c4005108fe1f729a74be3c7167bc43",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\h3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "8fee24d0bd7b009e6e6ee280a0eee4e0e6c345d750733754741192f3adf0bb57",
+    "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\motif_rbf_official_4p8.yaml": "d0a826f632b728110dd22c16a7449d97dd153ba60f219a01548d1482da4cdfd3",
+    "C:\\Users\\linke\\Documents\\New project\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "C:\\Users\\linke\\Documents\\New project\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_dev.npz": "08efe1f46ca65159f3839b4816d329c293b4d58a940aff61e1b1f737832899b9",
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy": "43e2fc02e8a9d42496697fdcf3c1a51c54362a73ce7f4e02e0b784df9b7301f5",
+    "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_train.npy": "9df5b73eb575722f289079f3050117dc4e76ffc4f01dbe4020df2e63ae860ddf",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_DECODER_SERIES\\train_encoder.npz": "f6c232e4b05e4e8db2a01c7fd0880beecd835b59352b81ba08132c8b610e87f0",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_DECODER_SERIES\\dev_encoder.npz": "eaec9fba2bc0209749232653a7ea259876f1c300c0a36802968b759a7a139fec",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_DIRECTION_COVERAGE_SERIES\\run_direction_coverage.py": "04524f0fa618283a898c3fb6518df811acb0099f25a161851a1483061674ca71",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_DIRECTION_COVERAGE_SERIES\\config.json": "ce0638613dbccb602a7048cb2dba50bd2efdfd710fd91a83079fdf58270541fa",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_MODE_SUPPORT_SERIES\\run_mode_support.py": "2e24ccc856c0bafef655632dd0a1c18d06b89d42c3194ab242194e06bca226ed",
+    "C:\\Users\\linke\\Documents\\New project\\GENERATION_LOCAL_SUPPORT_SERIES\\run_generation_support.py": "79819d5a907bd2742037e9c1eec7d8654c8950d167ed93ba7a911470ac5a683b",
+    "C:\\Users\\linke\\Documents\\New project\\DIRECTIONAL_REGIME_CANDIDATE_PILOT_SERIES\\directional_regime_pilot.py": "f68ea487f389c3ec01366c543be3a1dc81dca5f5c8833599fa6e15e7d1fddde4",
+    "C:\\Users\\linke\\Documents\\New project\\DIRECTIONAL_REGIME_CANDIDATE_PILOT_SERIES\\config.json": "ddbdb900cf61cf97aeff9669cbac6cadf0d31f502caaf6c96a41d0bc38a87350"
+  },
+  "test_access": false,
+  "native_source": "C:\\Users\\linke\\Documents\\New project\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth",
+  "token_dim": 96
+}
