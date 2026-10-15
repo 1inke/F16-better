@@ -1,0 +1,32 @@
+{
+  "stage": "01A_ORACLE_DECOMPOSITION",
+  "budget_k": 24,
+  "native_slots": 20,
+  "proposal_slots": 4,
+  "evaluation_sets": [
+    "zara_outer_primary",
+    "eth_dev_reference"
+  ],
+  "optimizer": {
+    "steps": 160,
+    "lr": 0.06,
+    "restarts": 3
+  },
+  "maneuver_classes": [
+    "stop",
+    "decelerate",
+    "accelerate",
+    "mild_left",
+    "mild_right",
+    "sharp_left",
+    "sharp_right",
+    "reverse"
+  ],
+  "gates": {
+    "min_total_j_gain": 0.03,
+    "min_free4_cov_gain_pp": 1.0,
+    "param_gap_threshold": 0.20,
+    "class_gap_threshold": 0.20,
+    "tax_gap_threshold": 0.30
+  }
+}

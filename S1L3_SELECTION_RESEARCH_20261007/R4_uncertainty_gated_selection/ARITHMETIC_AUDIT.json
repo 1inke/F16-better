@@ -1,0 +1,51 @@
+{
+  "stage": "R4_UNCERTAINTY_GATED_SELECTION",
+  "macro_summary": {
+    "r4a_gate_auroc": 0.743,
+    "r4b_sweep_summary": {
+      "at_5pct_override": {
+        "macro_change_gain_pp": 0.32,
+        "macro_ade_harm_pct": 1.32,
+        "macro_top1_gain_pp": 0.01,
+        "gate_passed": false
+      },
+      "at_10pct_override": {
+        "macro_change_gain_pp": 0.78,
+        "macro_ade_harm_pct": 3.15,
+        "macro_top1_gain_pp": 0.02,
+        "gate_passed": false
+      },
+      "at_20pct_override": {
+        "macro_change_gain_pp": 1.04,
+        "macro_ade_harm_pct": 6.27,
+        "macro_top1_gain_pp": -0.25,
+        "gate_passed": false
+      },
+      "at_50pct_override": {
+        "macro_change_gain_pp": 2.11,
+        "macro_ade_harm_pct": 15.26,
+        "macro_top1_gain_pp": -0.69,
+        "gate_passed": false
+      },
+      "at_100pct_override": {
+        "macro_change_gain_pp": 2.31,
+        "macro_ade_harm_pct": 18.60,
+        "macro_top1_gain_pp": -1.16,
+        "gate_passed": false
+      }
+    },
+    "r4c_aurc": {
+      "overall_aurc": 0.261,
+      "change_aurc": 0.350
+    },
+    "r4d_top3_multihypothesis": {
+      "macro_overall_set_good_rate_pct": 34.95,
+      "macro_overall_gain_pp_vs_native_top1": 4.03,
+      "macro_change_set_good_rate_pct": 19.70,
+      "macro_change_gain_pp_vs_native_top1": 8.16,
+      "expected_effective_set_size": 2.77
+    }
+  },
+  "gate_verdict": "FAIL (No operating point satisfies Change Gain > 0 AND ADE Harm < 1.0%)",
+  "final_scientific_verdict": "PAST_ONLY_TOP1_LIMITED"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "STOP",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_MOTION_UNDERSTANDING_SERIES_20261009\\model_diagnosis_20261009\\forward_diagnostics\\run.py\", line 95, in <module>\n    try:main()\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_MOTION_UNDERSTANDING_SERIES_20261009\\model_diagnosis_20261009\\forward_diagnostics\\run.py\", line 67, in main\n    bclose=closest(obs);aclose=closest(mirror);ok=defined&np.isfinite(bclose);err=float(abs(bclose[ok]-aclose[ok]).max()) if ok.any() else 0.;assert err<=2e-5,('STOP_MIRROR_CLOSEST',fold,err)\nAssertionError: ('STOP_MIRROR_CLOSEST', 'univ', 2.1119129586799623e-05)\n",
+  "resource": {
+    "peak_private_GiB": 2.9179000854492188,
+    "peak_RSS_GiB": 2.0087013244628906,
+    "min_physical_GiB": 12.713909149169922,
+    "min_commit_GiB": 15.5126953125,
+    "checks": 1226
+  },
+  "elapsed_seconds": 100.78948220000166
+}

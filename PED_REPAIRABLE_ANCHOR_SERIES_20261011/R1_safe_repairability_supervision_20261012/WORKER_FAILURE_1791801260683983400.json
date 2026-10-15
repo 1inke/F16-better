@@ -1,0 +1,10 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\R1_safe_repairability_supervision_20261012\\independent_worker.py\", line 14, in <module>\n    run.main();state.update(status=\"SUCCESS\",finished_at=c.now())\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\R1_safe_repairability_supervision_20261012\\run.py\", line 16, in main\n    c.stage(\"ALL_POTENTIAL_ANCHOR_FIXED_SOLVE\",done=len(recs),total=1022,sample_id=int(d[\"ids\"][i]),slot=int(s),mode=mode)\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\R1_safe_repairability_supervision_20261012\\common.py\", line 42, in stage\n    guard();write(\"progress.json\",dict(stage=s,at=now(),**kw));print(s,kw,flush=True)\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\R1_safe_repairability_supervision_20261012\\common.py\", line 25, in write\n    tmp=p.with_suffix(p.suffix+\".tmp\");tmp.write_text(json.dumps(o,ensure_ascii=False,indent=2,allow_nan=False,default=lambda x:x.tolist() if isinstance(x,np.ndarray) else x.item()),encoding=\"utf-8\");os.replace(tmp,p)\nPermissionError: [WinError 5] 拒绝访问。: 'C:\\\\Users\\\\linke\\\\Documents\\\\New project\\\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\\\R1_safe_repairability_supervision_20261012\\\\progress.json.tmp' -> 'C:\\\\Users\\\\linke\\\\Documents\\\\New project\\\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\\\R1_safe_repairability_supervision_20261012\\\\progress.json'\n",
+  "resource": {
+    "peak_private_GiB": 0.18251800537109375,
+    "peak_RSS_GiB": 0.20748519897460938,
+    "min_physical_GiB": 12.587482452392578,
+    "min_commit_GiB": 16.809314727783203,
+    "checks": 3807
+  }
+}

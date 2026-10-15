@@ -1,0 +1,22 @@
+{
+  "stage": "06_INTERNAL_VALIDATION",
+  "generator": "STATIC_K24",
+  "scorer": null,
+  "protocols": [
+    "leave_one_scene_family_out",
+    "leave_one_recording_out",
+    "original_cal_descriptive"
+  ],
+  "frozen_parameters": {
+    "ade_threshold_m": 0.2,
+    "fde_threshold_m": 0.4,
+    "quality_criterion": "ADE <= 0.2 AND FDE <= 0.4",
+    "candidate_budget": 24,
+    "native_slots": 20,
+    "explicit_slots": 4
+  },
+  "guardrails": {
+    "lost_limit": 0,
+    "motion_guard": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\stage1_selector\\preflight.py\", line 72, in <module>\n    try:preflight()\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\stage1_selector\\preflight.py\", line 20, in preflight\n    m1,r1=sel.fit(d,tr);m2,r2=sel.fit(d,tr)\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\stage1_selector\\selector.py\", line 22, in fit\n    raise RuntimeError(\"STOP_SELECTOR_CONVERGENCE_\"+str(report))\nRuntimeError: STOP_SELECTOR_CONVERGENCE_{'elapsed_seconds': 1.7904102000175044, 'n_windows': 513, 'n_candidate_rows': 10260, 'positive_candidates': 460, 'iterations': 500, 'warnings': ['lbfgs failed to converge (status=1):\\nSTOP: TOTAL NO. of ITERATIONS REACHED LIMIT.\\n\\nIncrease the number of iterations (max_iter) or scale the data as shown in:\\n    https://scikit-learn.org/stable/modules/preprocessing.html\\nPlease also refer to the documentation for alternative solver options:\\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression'], 'sklearn': '1.4.1.post1', 'parameters': {'C': 1.0, 'penalty': 'l2', 'class_weight': 'balanced', 'solver': 'lbfgs', 'tol': 1e-06, 'max_iter': 500}, 'threads': 1}\n",
+  "resource": {
+    "peak_private_GiB": 0.23879623413085938,
+    "peak_RSS_GiB": 0.2646293640136719,
+    "min_physical_GiB": 12.535945892333984,
+    "min_commit_GiB": 20.434261322021484,
+    "checks": 122
+  }
+}

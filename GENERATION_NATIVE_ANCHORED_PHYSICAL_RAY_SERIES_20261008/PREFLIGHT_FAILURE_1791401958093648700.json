@@ -1,0 +1,11 @@
+{
+  "status": "STOP",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_PHYSICAL_RAY_SERIES_20261008\\preflight.py\", line 108, in <module>\n    try:main()\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_PHYSICAL_RAY_SERIES_20261008\\preflight.py\", line 94, in main\n    before={k:z.detach().cpu().clone() for k,z in m.state_dict().items()};small=sp['outer_eval_index'][:128];out,res,u=r.generated(m,data,small,arm,True);z=r.portfolio(data,small,out,res,arm,u);met,extra=r.evaluate(z);imet,iextra=r.evaluate(z,True);error=r.v.compare(met,imet);assert error<=1e-12 and all(np.array_equal(extra[k],iextra[k]) for k in extra);assert all(torch.equal(z.detach().cpu(),before[k]) for k,z in m.state_dict().items());saved=r.H/'prelaunch_review'/f'{arm}_smoke128.npz';saved.parent.mkdir(exist_ok=True);np.savez_compressed(saved,**z);back=r.q.npz(saved);assert all(np.array_equal(x,back[k]) for k,x in z.items())\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_PHYSICAL_RAY_SERIES_20261008\\run.py\", line 85, in evaluate\n    temporal_audit(z);paths=[z[k] for k in PORTS];raw=[v.errors(p,z['gt'],ind) for p in paths];ng=raw[0][3].any(1);cg=raw[1][3].any(1);metrics={};vectors=[];cc=[]\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_PHYSICAL_RAY_SERIES_20261008\\run.py\", line 81, in temporal_audit\n    physical=pr.audit_numpy(z['reference4'],z['refined4']) if arm=='physical' else dict(status='NOT_CONSTRAINED_CONTROL')\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_PHYSICAL_RAY_SERIES_20261008\\physical_ray.py\", line 46, in audit_numpy\n    assert np.all(pn<=MARGIN*bn),float(np.max(pn-MARGIN*bn))\nAssertionError: 3.864602421585557e-17\n",
+  "resource": {
+    "peak_private_GiB": 2.6554603576660156,
+    "peak_RSS_GiB": 1.940704345703125,
+    "min_physical_GiB": 16.61736297607422,
+    "min_commit_GiB": 24.651710510253906,
+    "checks": 6442
+  }
+}

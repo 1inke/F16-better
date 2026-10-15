@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "source_sha": "e7044f77887cb06963c1a52dbf60c2e124912dd956f0e828480d67a04ac219bc",
+  "source_count": 3538,
+  "inheritance": {
+    "inherited_R5_sources": 3450,
+    "R5_outputs": 49,
+    "not_all_historical_files": true
+  },
+  "actual_parameter_count": 26306,
+  "train_only_stats_kmeans_repeat_EXACT": true,
+  "initial_prototype20_identity_EXACT": true,
+  "initial_center_distinct": 20,
+  "initial_zero_last_gradients": {
+    "query": 0.0,
+    "context.0.weight": 0.0,
+    "context.0.bias": 0.0,
+    "context.2.weight": 0.0,
+    "context.2.bias": 0.0,
+    "head.0.weight": 0.0,
+    "head.0.bias": 0.0,
+    "head.2.weight": 0.1281997263431549,
+    "head.2.bias": 0.3799401819705963
+  },
+  "actual8GPUFIT256_alllegal_gradients_positive_finite": {
+    "query": 0.0007385032367892563,
+    "context.0.weight": 0.007916992530226707,
+    "context.0.bias": 0.0006555519648827612,
+    "context.2.weight": 0.006666654720902443,
+    "context.2.bias": 0.0013755555264651775,
+    "head.0.weight": 0.004559057764708996,
+    "head.0.bias": 0.004071446135640144,
+    "head.2.weight": 0.1798553168773651,
+    "head.2.bias": 0.425464391708374
+  },
+  "canonical20pair190_numpy_scalar_error": 0.0,
+  "fixed_double_parameter_FD": [
+    {
+      "eps": 0.0001,
+      "relative_error": 3.1223954829558578e-12,
+      "winner_switch": false
+    },
+    {
+      "eps": 1e-05,
+      "relative_error": 2.767575579184657e-13,
+      "winner_switch": false
+    }
+  ],
+  "resume": {
+    "actualFIT513_inner12_twoepoch_ALLparams_buffers_optimizer_CPU_CUDA_loader_numpy_pythonRNG_history_EXACT": true,
+    "not_fullFIT2epochs": true
+  },
+  "saved128_full_clusters_motion_independent_PASS": true,
+  "done_source_output_reject_PASS": true,
+  "FIT_step36_4warm32measure_seconds": 0.0046011812482902315,
+  "dualquality_seconds_perwindow": 0.0014052242186153308,
+  "auditquality_seconds_perwindow": 0.0010848007814274752,
+  "retrieval_seconds_perwindow": 0.002001312495849561,
+  "nominal_compute_saved_audit_seconds": 481.95584309846345,
+  "planning_minutes": 12.540746731217988,
+  "ETA_minutes": [
+    8.778522711852592,
+    18.811120096826983
+  ],
+  "disk_free_GiB": 31.092742919921875,
+  "elapsed_seconds": 11.98772720003035,
+  "resource": {
+    "peak_private_GiB": 2.7483749389648438,
+    "peak_RSS_GiB": 1.8401756286621094,
+    "min_physical_GiB": 15.88778305053711,
+    "min_commit_GiB": 24.548274993896484,
+    "checks": 270
+  },
+  "benchmark_checkpoint_or_outcome_choice": false,
+  "not_all_old_GPU_replay": true
+}

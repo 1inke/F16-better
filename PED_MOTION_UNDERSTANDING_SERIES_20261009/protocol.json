@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "source_plan": "C:/Users/linke/Downloads/ped_motion_understanding_experiment_plan.md",
+  "folds": ["eth", "hotel", "univ", "zara01", "zara02"],
+  "model_seeds": [1, 2, 3],
+  "random_control_seeds": [42, 43, 44],
+  "stage1": ["E0", "E1", "E2", "E7"],
+  "stage2": ["E3_test_interventions", "E4", "E5", "E6"],
+  "stage3": ["E3_retraining", "E5_augmentation", "E8", "E9_feasibility"],
+  "dt": 0.4,
+  "K": 20,
+  "batch": 128,
+  "bootstrap": 2000,
+  "permutations": 1000,
+  "stat_seed": 20261009,
+  "process_max_GiB": 6,
+  "physical_reserve_GiB": 6,
+  "commit_reserve_GiB": 6,
+  "old_artifacts_immutable": true,
+  "thresholds_train_only_before_test_outputs": true,
+  "no_understanding_claim_from_oracle": true,
+  "all_original_major_and_motion_gates_unchanged": true
+}

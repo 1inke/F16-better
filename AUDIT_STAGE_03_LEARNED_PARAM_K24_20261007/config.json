@@ -1,0 +1,33 @@
+{
+  "stage": "03_LEARNED_PARAM_K24",
+  "version": "1.0",
+  "date": "2026-10-07",
+  "primary_protocol": "scene-family",
+  "representation": "P2",
+  "representation_dim": 96,
+  "seeds": [42, 43, 44],
+  "candidate_budget": {
+    "control_k": 24,
+    "treatment_k": 24,
+    "native_k": 20,
+    "explicit_k": 4
+  },
+  "model": {
+    "type": "MotionProgramMLP",
+    "hidden_dim": 128,
+    "activation": "GELU",
+    "output_dim": 8
+  },
+  "training": {
+    "epochs": 20,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "promotion_gate": {
+    "change_min_ade_or_fde_gain_pct": 3.0,
+    "change_or_clear_event_coverage_gain_pp": 1.0,
+    "max_overall_harm_pct": 1.0,
+    "min_consistent_seeds": 2
+  }
+}

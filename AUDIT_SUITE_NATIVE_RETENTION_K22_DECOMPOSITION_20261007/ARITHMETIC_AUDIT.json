@@ -1,0 +1,65 @@
+{
+  "arithmetic_audit_status": "SUCCESS",
+  "audit_timestamp_utc": "2026-10-06 17:28:45",
+  "independent_recomputation_checks": {
+    "dev_coverage_consistency": {
+      "native20_coverage_formula": "sum_i (min_k max(ade_ik / 0.2, fde_ik / 0.4) <= 1.0)",
+      "recomputed_value": 733,
+      "stored_value": 733,
+      "exact_match": true
+    },
+    "native12_coverage_consistency": {
+      "recomputed_value": 532,
+      "stored_value": 532,
+      "net_loss_count": 201,
+      "exact_match": true
+    },
+    "hybrid20_arithmetic": {
+      "native20_covered": 733,
+      "lost_from_native": 177,
+      "rescued_by_explicit": 48,
+      "net_coverage_formula": "733 - 177 + 48",
+      "expected_coverage": 604,
+      "observed_coverage": 604,
+      "exact_match": true
+    },
+    "k22_arithmetic": {
+      "native20_covered": 733,
+      "lost_from_native": 0,
+      "rescued_method_A": 25,
+      "coverage_method_A": 758,
+      "rescued_method_B": 30,
+      "coverage_method_B": 763,
+      "exact_match": true
+    },
+    "k24_arithmetic": {
+      "native20_covered": 733,
+      "lost_from_native": 0,
+      "rescued_method_A": 46,
+      "coverage_method_A": 779,
+      "rescued_method_B": 39,
+      "coverage_method_B": 772,
+      "exact_match": true
+    },
+    "augmented28_arithmetic": {
+      "native20_covered": 733,
+      "rescued_explicit8": 48,
+      "coverage": 781,
+      "exact_match": true
+    },
+    "null_controls_arithmetic": {
+      "duplicate8_rescues": 0,
+      "duplicate8_coverage": 733,
+      "jitter8_01cm_rescues": 4,
+      "jitter8_02cm_rescues": 9,
+      "jitter8_05cm_rescues": 18,
+      "exact_match": true
+    },
+    "bootstrap_percentile_sanity": {
+      "R_support_median": 1.2573,
+      "ci_low_95": 1.2099,
+      "ci_high_95": 1.3106,
+      "order_valid": true
+    }
+  }
+}

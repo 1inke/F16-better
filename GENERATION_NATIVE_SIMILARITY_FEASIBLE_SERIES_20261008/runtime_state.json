@@ -1,0 +1,134 @@
+{
+  "status": "ANALYZED",
+  "formal_started": true,
+  "new_worker_started": true,
+  "formal_study_completed": 1,
+  "formal_study_total": 3,
+  "formal_experiments_started": 1,
+  "task": "Trajectory-NativeSimilarityFeasible-20261008",
+  "triggers": 0,
+  "worker_pid": 39992,
+  "service_parent": 2840,
+  "created_at": "2026-10-08T10:12:03.624018+08:00",
+  "start": "2026-10-08T10:12:03.882747+08:00",
+  "sole_startup_checked_at": "2026-10-08T10:12:19.1748039+08:00",
+  "startup_stage": {
+    "stage": "TRAIN",
+    "at": "2026-10-08T10:12:18.737278+08:00",
+    "arm": "ray",
+    "seed": 42,
+    "epoch": 8,
+    "runs_done": 0,
+    "runs_total": 6
+  },
+  "startup_histories": [
+    {
+      "seed": 42,
+      "epochs": 7,
+      "arm": "ray"
+    },
+    {
+      "seed": 43,
+      "epochs": 0,
+      "arm": "ray"
+    },
+    {
+      "seed": 44,
+      "epochs": 0,
+      "arm": "ray"
+    },
+    {
+      "seed": 42,
+      "epochs": 0,
+      "arm": "similarity"
+    },
+    {
+      "seed": 43,
+      "epochs": 0,
+      "arm": "similarity"
+    },
+    {
+      "seed": 44,
+      "epochs": 0,
+      "arm": "similarity"
+    }
+  ],
+  "startup_done_runs": 0,
+  "startup_stderr_bytes": 0,
+  "source_locked_files": 1344,
+  "inherited_relevant_files": 1193,
+  "source_sha": "5325ef079d4465dfc45234cfb2f1baf74c51bc4350a46c9f8b07308f0b26a732",
+  "planning_minutes": 8,
+  "estimated_elapsed_minutes": [
+    5,
+    15
+  ],
+  "query_at": "2026-10-08T10:16:04.000+08:00",
+  "analysis_deadline": "2026-10-08T10:20:04.000+08:00",
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "query_policy": "ONE50percent elapsed then ONE actual completion, no pre-node PID/task/log/results/resources query",
+  "automation_id": "native-similarity-one-halfway-check",
+  "old_six_hour_window_reset": false,
+  "single_new_experiment_authorized": true,
+  "execution_deadline": "2026-10-08T12:00:00+08:00",
+  "benchmark_is_throughput_not_guarantee": true,
+  "preflight_peak_not_production": true,
+  "baseline_upgrade": false,
+  "first_progress_checked_at": "2026-10-08T10:17:17.8864475+08:00",
+  "first_progress_actual_stage": {
+    "stage": "SUCCESS",
+    "at": "2026-10-08T10:16:49.547049+08:00",
+    "runs_done": 6,
+    "saved_jobs": 18
+  },
+  "first_progress_histories": [
+    {
+      "seed": 42,
+      "epochs": 25,
+      "arm": "ray"
+    },
+    {
+      "seed": 43,
+      "epochs": 25,
+      "arm": "ray"
+    },
+    {
+      "seed": 44,
+      "epochs": 25,
+      "arm": "ray"
+    },
+    {
+      "seed": 42,
+      "epochs": 25,
+      "arm": "similarity"
+    },
+    {
+      "seed": 43,
+      "epochs": 25,
+      "arm": "similarity"
+    },
+    {
+      "seed": 44,
+      "epochs": 25,
+      "arm": "similarity"
+    }
+  ],
+  "first_progress_done_runs": 6,
+  "first_progress_stderr_bytes": 0,
+  "worker_finished_at": "2026-10-08T10:16:49.552609+08:00",
+  "worker_and_exit_SUCCESS": true,
+  "completion_separate_check_not_needed": true,
+  "actual_worker_elapsed_seconds": 285.669862,
+  "analyzed_at": "2026-10-08T10:27:00+08:00",
+  "independent_saved_review": "completion_review/REVIEW.json",
+  "independent_saved_review_PASS": true,
+  "result_analysis": "RESULT_ANALYSIS.md",
+  "result_analysis_json": "RESULT_ANALYSIS.json",
+  "major_verdict": "FAIL",
+  "motion_all72_groupcells_ALL5_PASS": true,
+  "obsolete_followup_removed": true,
+  "automation_removed_id": "native-similarity-one-halfway-check",
+  "no_further_progress_or_completion_checks": true,
+  "next_action": "REPORT_AND_END_ONE_AUTHORIZED_EXPERIMENT_NO_AUTOMATIC_SECOND_TRAINING"
+}

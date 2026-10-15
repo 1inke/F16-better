@@ -1,0 +1,44 @@
+{
+  "stage": "02P_MDN",
+  "status": "COMPLETED",
+  "science_audit_pass": true,
+  "resource_audit_pass": true,
+  "metrics": {
+    "probabilistic_program_beats_static_in_2of3": true,
+    "protocol_wins": 2,
+    "best_representation": "P2",
+    "parameter_predictor": "MDN_JointModeAllocator",
+    "candidate_budget": "K=24 (Native 20 + 4 MDN modes)"
+  },
+  "protocol_breakdown": {
+    "target-track": {
+      "static_coverage_pct": 61.64251207729469,
+      "mdn_coverage_pct": 62.70531400966184,
+      "coverage_gain_pp": 1.0628019323671523,
+      "j_gain_pct": 0.4026914235625029,
+      "change_coverage_gain_pp": 0.0,
+      "beats_static": true
+    },
+    "recording-time": {
+      "static_coverage_pct": 56.00706713780919,
+      "mdn_coverage_pct": 55.12367491166078,
+      "coverage_gain_pp": -0.8833922261484051,
+      "j_gain_pct": -1.0221329854382475,
+      "change_coverage_gain_pp": -0.7042253521126725,
+      "beats_static": false
+    },
+    "scene-family": {
+      "static_coverage_pct": 67.96925048046124,
+      "mdn_coverage_pct": 68.48174247277386,
+      "coverage_gain_pp": 0.5124919923126248,
+      "j_gain_pct": 0.43604427985769867,
+      "change_coverage_gain_pp": -2.3696682464454923,
+      "beats_static": true
+    }
+  },
+  "notes": [
+    "Evaluated 3-component Gaussian MDN with joint mode allocation across 3 grouped protocols.",
+    "Candidate budget strictly constrained to K=24 (Native 20 frozen + 4 selected modes).",
+    "MDN beat Static-K24 in 2/3 protocols."
+  ]
+}

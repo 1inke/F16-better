@@ -1,0 +1,6 @@
+# Rank versus utility figure contract
+
+Question, not predetermined conclusion: do low original native-logit ranks carry nonzero marginal coverage/error support?
+Quantitative grid: columns three grouping populations; rows coverage / ADE / FDE / J leave-one-out utility. All four original groups plotted with distinct line styles and restrained colors. Separate outer-primary, inner-secondary and originalCAL-secondary figures. Native seed42 only AFTER all three seed-native arrays verified exactly equal. This avoids counting frozen native outputs three times; show original N and tracks in source data. No sampling/exclusion or pooling different outer IDs. Per-rank means and positive counts saved for ALL windows including zeros, not just lost cases.
+
+Saved user backend Python; matplotlib exclusively. 183mm width, 190mm height, fonts7–8pt, editable SVG/PDF and 300dpi PNG preview, all source data JSON traceable. No inferential CI/test/p-value: native duplicate seeds are not independent replicates. GT utilities are descriptive oracle diagnostics, never a deployable ranking. Figure captions/QA identify units, per-window denominator, native20 baseline and zero/tie handling. No journal-submission-compliance claim.

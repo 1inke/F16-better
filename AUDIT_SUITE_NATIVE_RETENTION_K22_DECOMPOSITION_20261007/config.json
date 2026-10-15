@@ -1,0 +1,32 @@
+{
+  "experiment_series": "AUDIT_SUITE_NATIVE_RETENTION_K22_DECOMPOSITION_20261007",
+  "audit_version": "1.0",
+  "source_dataset": "ETH-UCY (ETH formal DEV N=1516, Zara outer N=1561)",
+  "metrics_contract": {
+    "ade_threshold_m": 0.20,
+    "fde_threshold_m": 0.40,
+    "j_metric_formula": "min_k max(ADE_k / 0.20, FDE_k / 0.40)",
+    "coverage_criterion": "J <= 1.0 (Same candidate satisfies both ADE and FDE thresholds)"
+  },
+  "experiment_A_config": {
+    "pruning_rule": "choose_native_subset",
+    "native_keep": 12,
+    "preserve_top_native_logits": 4,
+    "distance_mean_path_scale_m": 0.10,
+    "distance_endpoint_scale_m": 0.20
+  },
+  "experiment_B_config": {
+    "intent_classifier_checkpoint": "DIRECTIONAL_REGIME_CANDIDATE_PILOT_SERIES/results/models/intent_classifier.pth",
+    "maneuver_classes": ["continue", "decelerate", "stop", "accelerate", "left", "right", "reverse"],
+    "explicit_proposals": ["stop", "decelerate", "accelerate", "mild_left", "mild_right", "sharp_left", "sharp_right", "reverse"],
+    "k_budgets": [20, 22, 24, 28],
+    "null_controls": ["duplicate8", "jitter8_01cm", "jitter8_02cm", "jitter8_05cm"]
+  },
+  "experiment_C_config": {
+    "pca_dims": [8, 16, 24, 32, 48],
+    "knn_ks": [1, 3, 5, 10, 20],
+    "bootstrap_iterations": 1000,
+    "bootstrap_seed": 20261007,
+    "heuristic_signal_threshold": 1.25
+  }
+}

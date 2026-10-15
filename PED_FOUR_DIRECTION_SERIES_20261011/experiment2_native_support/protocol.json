@@ -1,0 +1,47 @@
+{
+  "kind": "FROZEN_NATIVE_GEOMETRIC_SUPPORT_K20_INTEGRATION",
+  "source": "../experiment1_motion_process",
+  "arms": [
+    "position3",
+    "acceleration3"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "splits": {
+    "outer": 1035,
+    "inner": 1856,
+    "original_CAL": 2879
+  },
+  "source_jobs": 18,
+  "training": false,
+  "torch": false,
+  "primary": "outer_fixed25",
+  "policy": "native complete-link reserve lowestphysical representative; ascending learned; min redundancy removal; strict novelty; all5 perwindow 1% physical admission",
+  "distance": {
+    "meanpath": 0.1,
+    "endpoint": 0.2,
+    "complete_link": 1
+  },
+  "K": 20,
+  "K24_reference_only": true,
+  "GT_in_policy": false,
+  "coefficient_search": false,
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261011,
+    "cluster": "pairedtargettracks+modelseeds",
+    "records": 48,
+    "scalar_CIs": 192,
+    "exploratory": true
+  },
+  "resource": {
+    "process_GiB": 6,
+    "physical_reserve_GiB": 6,
+    "commit_reserve_GiB": 6
+  },
+  "planning_limit_minutes": 30,
+  "old_E3_remains_paused": true
+}

@@ -1,0 +1,139 @@
+{
+  "status": "MODEL_DIAGNOSIS_T0_T1_ANALYZED_T2_PARTIAL_STOP_GEOMETRY",
+  "current_stage": "D1A_D2_D3_D4_D5A_D5C_D6_D7_COMPLETE_T2_PARTIAL",
+  "production_started": true,
+  "whole_series_complete": false,
+  "completed_stages": [
+    "stage1_E0_E1_E2_E7",
+    "stage2_E3test_E4_E5",
+    "stage3_E6_train_only_kNN_independent_review",
+    "E4_exploratory_statistical_supplement",
+    "E5_saved_only_permutation_invariant_geometry_supplement",
+    "claim_evidence_N0_N1_N2_registered_bins_N3_N6_saved_only",
+    "claim_evidence_v2_A1_A6_saved_only",
+    "model_diagnosis_T0_T1_saved_D5c"
+  ],
+  "worker_pid": 14508,
+  "service_parent": 2484,
+  "worker_creation": "2026-10-09T01:44:40.832721+08:00",
+  "worker_start": "2026-10-09T01:44:41.290294+08:00",
+  "task_name": "Trajectory-PedMotionUnderstanding-KNNMemory-20261009",
+  "task_triggers": 0,
+  "sole_startup_check": "2026-10-09T01:44:50.2020787+08:00",
+  "startup_jobs_done": 5,
+  "startup_actual_stage": "KNN_QUERY_AND_TRACK_METRICS univ velocity_only all_train",
+  "startup_stderr_bytes": 0,
+  "jobs_total": 14,
+  "source_locked_files": 383,
+  "ETA_range_minutes": [
+    2,
+    5
+  ],
+  "planning_minutes": 3,
+  "first_progress_query_done": false,
+  "first_progress_query_count": 0,
+  "query_at": null,
+  "analysis_deadline": null,
+  "estimated_completion": null,
+  "automation_id": "automation",
+  "automation_node": null,
+  "automation_occurrences": 1,
+  "no_model_training": true,
+  "stage2_analysis": "stage2_raw_interventions/RESULT_ANALYSIS.md",
+  "pending_experiments": [
+    "E8_outside_current_E0_E6_scope",
+    "E9_feasibility_outside_current_E0_E6_scope"
+  ],
+  "worker_pid_is_historical": true,
+  "active_worker": false,
+  "worker_finished_at": "2026-10-09T01:45:13.986372+08:00",
+  "E6_independent_review": {
+    "status": "PASS",
+    "jobs": 14,
+    "checks": 6692,
+    "max_numeric_error": 0,
+    "locked_files": 431,
+    "analysis": "stage3_knn_memory/RESULT_ANALYSIS.md"
+  },
+  "E4_statistical_supplement": {
+    "status": "PASS_SAVED_ONLY_EXPLORATORY",
+    "direction_Holm_rejections": "0/300",
+    "dose_Holm_rejections": "0/60",
+    "attention_Holm_rejections": "15/15",
+    "analysis": "stage2_raw_interventions/statistical_completion/RESULT_ANALYSIS.md"
+  },
+  "previous_check_nodes_obsolete": true,
+  "stage4_production_started": true,
+  "completion_plan": "E0_E6_COMPLETION_PLAN.md",
+  "previous_worker_provenance": {
+    "pid": 14508,
+    "finished_at": "2026-10-09T01:45:13.986372+08:00",
+    "historical": true
+  },
+  "stage4_runtime": "stage4_matched_retraining/production_source_v2/runtime_state.json",
+  "stage4_worker_pid": 35588,
+  "stage4_task_name": "Trajectory-PedMotionUnderstanding-MatchedRetraining-20261009",
+  "stage4_ETA_range_minutes": [
+    795,
+    1490
+  ],
+  "stage4_planning_minutes": 1023,
+  "paused_processes": [
+    35588,
+    14516
+  ],
+  "paused_at": "2026-10-09T13:48:10.203664+08:00",
+  "requires_explicit_human_resume": true,
+  "stage4_ETA_historical_obsolete": true,
+  "automation_status": "PAUSED",
+  "long_retraining_decision": "SKIPPED_BY_HUMAN_TIME_BUDGET_PROCESSES_REMAIN_SUSPENDED",
+  "no_new_training_worker": true,
+  "current_report": "model_diagnosis_20261009/REPORT.md",
+  "model_diagnosis": {
+    "runtime": "model_diagnosis_20261009/runtime_state.json",
+    "completed": "T0_D1a_D2_D3_D6_D7_savedD5c_and_fixed_light_D4_D5a",
+    "partial": "T2_ETH_HOTEL_6of15_STOP_MIRROR_CLOSEST_GEOMETRY_UNIV",
+    "physical_error_m": 0.000021119129586799623,
+    "gate_m": 0.00002,
+    "no_retry_or_gate_relaxation": true,
+    "no_neural_training_or_E3_resume": true
+  },
+  "claim_evidence_v2": {
+    "status": "A1_A6_ANALYZED_E8_STOP_CACHE_ALIGNMENT",
+    "runtime": "claim_evidence_v2_20261009/runtime_state.json",
+    "result_child": "claim_evidence_v2_20261009/numeric_fixture_recovery",
+    "actual_inputs_SHA": 218,
+    "saved_review_checks": 4017,
+    "new_training": false,
+    "A1_A6_new_forward": false,
+    "E8_attempted_CPU_frozen_forward": true,
+    "B2_trigger_met": false,
+    "E8_complete": false,
+    "exploratory_not_confirmatory": true
+  },
+  "claim_evidence_followup": {
+    "status": "ANALYZED_SAVED_READER_RECOVERY",
+    "runtime": "claim_evidence_followup_20261009/runtime_state.json",
+    "result_child": "claim_evidence_followup_20261009/saved_reader_recovery",
+    "actual_inputs_SHA": 514,
+    "saved_review_checks": 1245,
+    "new_model_forward_or_training": false,
+    "N2_nonempty_density_bins": 2,
+    "exploratory_not_confirmatory": true
+  },
+  "low_cost_supplement": {
+    "status": "ANALYZED",
+    "jobs": 75,
+    "rows": 66900,
+    "group_checks": 450,
+    "locked_inputs": 153,
+    "compute_seconds": 23.9338526,
+    "no_model_forward_optimizer": true
+  },
+  "skipped_experiments": [
+    "E3_fresh_full_last2_noNbr",
+    "E3_neural_position_velocity",
+    "E5_fresh_rotation_augmentation",
+    "E6_neural_no_sibling"
+  ]
+}

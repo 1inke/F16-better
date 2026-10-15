@@ -1,0 +1,121 @@
+{
+  "status": "PASS_DIAGNOSTIC_EXECUTION_ONLY",
+  "windows": 64,
+  "anchors": 88,
+  "solves": 176,
+  "groups": {
+    "overall": {
+      "n": 64,
+      "safe_windows": 42,
+      "native_motion": [
+        1.164388887465435,
+        0.08223636439627627,
+        0.6032743561121747,
+        0.4522975345471086,
+        2.5488487496784376
+      ],
+      "oracle_motion": [
+        1.164388887465435,
+        0.08225071478867153,
+        0.6033965835652371,
+        0.45237646735533915,
+        2.5488487496784376
+      ],
+      "pooled_allfive_PASS": true,
+      "minADE_mean": 0.17930192555086827,
+      "minFDE_mean": 0.26152892559303964,
+      "J_mean": 0.9635556987746399,
+      "effective_good_mean": 0.65625,
+      "distinct_mean": 19.90625
+    },
+    "stable": {
+      "n": 16,
+      "safe_windows": 11,
+      "native_motion": [
+        1.2811083004235009,
+        0.0878255692194321,
+        0.6032943192132542,
+        0.48303726759764315,
+        2.764854538954103
+      ],
+      "oracle_motion": [
+        1.2811083004235009,
+        0.08781575405721656,
+        0.6037859241514856,
+        0.48298329040451704,
+        2.764854538954103
+      ],
+      "pooled_allfive_PASS": true,
+      "minADE_mean": 0.17300189138516703,
+      "minFDE_mean": 0.2781466462202471,
+      "J_mean": 0.920438608291572,
+      "effective_good_mean": 0.6875,
+      "distinct_mean": 20.0
+    },
+    "transition": {
+      "n": 16,
+      "safe_windows": 10,
+      "native_motion": [
+        1.1512918244479144,
+        0.08374058402027765,
+        0.6173449599656669,
+        0.46057025218680236,
+        2.5735875997144313
+      ],
+      "oracle_motion": [
+        1.1512918244479144,
+        0.08372444870649551,
+        0.62027374127337,
+        0.4604815257103384,
+        2.5735875997144313
+      ],
+      "pooled_allfive_PASS": true,
+      "minADE_mean": 0.18183412392694198,
+      "minFDE_mean": 0.21298315874429663,
+      "J_mean": 0.9484092718013254,
+      "effective_good_mean": 0.625,
+      "distinct_mean": 20.0
+    },
+    "change": {
+      "n": 32,
+      "safe_windows": 21,
+      "native_motion": [
+        1.0040300070357082,
+        0.07868965217269766,
+        0.5937229242849266,
+        0.4327913092019945,
+        2.459422840242654
+      ],
+      "oracle_motion": [
+        1.0040300070357082,
+        0.078731328195487,
+        0.5932195875322641,
+        0.43302052665325064,
+        2.459422840242654
+      ],
+      "pooled_allfive_PASS": true,
+      "minADE_mean": 0.181185843445682,
+      "minFDE_mean": 0.27749294870380736,
+      "J_mean": 0.992687457502831,
+      "effective_good_mean": 0.65625,
+      "distinct_mean": 19.8125
+    }
+  },
+  "output_sha": {
+    "C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\position3_feasibility_audit_20261012\\sample.npz": "c6ca301d7e77cdc3cefd9f62b2c80baca207a24749203f643dd241338e4102e0",
+    "C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\position3_feasibility_audit_20261012\\solutions.npz": "25dce3b9828c5ccc014f2347ea248d545ac331f68eeeb88a140292a6508a9ba6",
+    "C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\position3_feasibility_audit_20261012\\records.json": "d99a6d462e256217d60c89c4a6015c8428a0567bbb0a907df404301bafbd613c",
+    "C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\position3_feasibility_audit_20261012\\oracle_diagnostic.npz": "2fac62bd33d7b2d4f4a5cfe4fb302845b310e7147aa133573d60189a563f027c"
+  },
+  "source_count": 2030,
+  "elapsed_seconds": 68.12512240000069,
+  "resource": {
+    "peak_private_GiB": 0.17172622680664062,
+    "peak_RSS_GiB": 0.19092559814453125,
+    "min_physical_GiB": 16.15155029296875,
+    "min_commit_GiB": 27.83859634399414,
+    "checks": 42727
+  },
+  "no_neural_training": true,
+  "unknown_is_not_infeasible": true
+}

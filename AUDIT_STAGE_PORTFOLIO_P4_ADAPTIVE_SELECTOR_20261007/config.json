@@ -1,0 +1,31 @@
+{
+  "stage": "PORTFOLIO_P4_ADAPTIVE_SELECTOR",
+  "seeds": [42, 43, 44],
+  "protocol": "scene-family",
+  "data": {
+    "train_samples": 16337,
+    "outer_samples": 1561,
+    "change_samples": 211
+  },
+  "budget": {
+    "native_slots": 20,
+    "proposal_budget": 4,
+    "total_K": 24
+  },
+  "model": {
+    "architecture": "ProposalPortfolioSelector",
+    "in_dim": 96,
+    "geom_dim": 5,
+    "epochs": 15,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "comparisons": [
+    "Static4 (S4L0)",
+    "Learned4 (S0L4)",
+    "Best Fixed Portfolio (S1L3 / S2L2)",
+    "Adaptive-4of8",
+    "Oracle4Of8"
+  ]
+}

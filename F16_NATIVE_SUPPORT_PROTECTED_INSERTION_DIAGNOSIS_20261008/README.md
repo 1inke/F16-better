@@ -1,0 +1,7 @@
+# Fixed-K20 native-support protected insertion diagnostic
+
+Human 2026-10-08 explicitly requested the next step after the removed-tail audit. This is ONE frozen saved-output-only integration policy, not training, not an alternative deletion-policy/threshold search. All original models, F16/native20/decoder/scorer and scientific artifacts remain unchanged. Use all27 existing canonical epoch25 outer/inner/originalCAL outputs. Outer is primary; other splits descriptive secondary. This file is a pre-execution snapshot; runtime and actual sole worker determine status.
+
+Policy input contains only the 24 predicted paths and original20 frozen native logits. GT, groups, scene, ID and track are NEVER passed to selection. Registered complete-link pair distance/threshold and dt are reused unchanged. Native cluster singleton support is protected, but SAME-CANDIDATE GT coverage is not mathematically guaranteed. Evaluation must report lost, rescue, oracle error, effective good clusters and every original motion/major gate. New paths are optional; portfolio always remains K20.
+
+No torch/model forward/backward/optimizer/newformal/newdata/scorer/loss intervention. No event labels, original module import side effects, OS/pagefile/user-program changes. Process6GiB; both physical and commit reserves6GiB. All new artifacts only here. Preserve all inherited digests, failures and earlier contradictory evidence. One sole startup and one estimated elapsed-half check, then a real completion node; do not poll old completed tasks.

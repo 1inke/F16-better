@@ -1,0 +1,245 @@
+{
+  "stage": "BEST_OF_4_GENERATOR_PILOT",
+  "seed": 42,
+  "control": {
+    "overall": {
+      "coverage_pct": 67.96925048046124,
+      "covered_count": 1061,
+      "mean_j": 0.7982296185182839,
+      "min_ade": 0.14102761666754957,
+      "min_fde": 0.24750167678611773,
+      "effective_good_clusters": 1832
+    },
+    "subgroups": {
+      "overall": {
+        "n": 1561,
+        "coverage_pct": 67.96925048046124,
+        "covered_count": 1061,
+        "mean_j": 0.7982296185182839,
+        "min_ade": 0.14102761666754957,
+        "min_fde": 0.24750167678611773
+      },
+      "stable": {
+        "n": 1226,
+        "coverage_pct": 74.46982055464927,
+        "covered_count": 913,
+        "mean_j": 0.6604958852342978,
+        "min_ade": 0.11811654198833307,
+        "min_fde": 0.20352118244799905
+      },
+      "transition": {
+        "n": 124,
+        "coverage_pct": 48.38709677419355,
+        "covered_count": 60,
+        "mean_j": 1.1603639978242741,
+        "min_ade": 0.20269104674030156,
+        "min_fde": 0.36844140851526486
+      },
+      "change": {
+        "n": 211,
+        "coverage_pct": 41.70616113744076,
+        "covered_count": 88,
+        "mean_j": 1.385703049666266,
+        "min_ade": 0.23791250874194841,
+        "min_fde": 0.43197352192412375
+      }
+    },
+    "kinematics": {
+      "speed_p95": 1.4349576234817505,
+      "accel_mean": 0.10121249407529831,
+      "accel_p95": 0.5343365788459776,
+      "jerk_mean": 0.4529688358306885,
+      "jerk_p95": 2.9814572095870964
+    }
+  },
+  "treatment": {
+    "overall": {
+      "coverage_pct": 69.44266495836003,
+      "covered_count": 1084,
+      "coverage_gain_pp": 1.4734144778987823,
+      "rescue": 40,
+      "lost": 17,
+      "net_rescue": 23,
+      "mean_j": 0.7816007557368124,
+      "j_gain_pct": 2.0832179608091765,
+      "min_ade": 0.13870507343330982,
+      "ade_gain_pct": 1.646871222191026,
+      "min_fde": 0.2386575214301194,
+      "fde_gain_pct": 3.573371894219991,
+      "effective_good_clusters": 1813
+    },
+    "subgroups": {
+      "overall": {
+        "n": 1561,
+        "coverage_pct": 69.44266495836003,
+        "covered_count": 1084,
+        "mean_j": 0.7816007557368124,
+        "min_ade": 0.13870507343330982,
+        "min_fde": 0.2386575214301194
+      },
+      "stable": {
+        "n": 1226,
+        "coverage_pct": 76.2642740619902,
+        "covered_count": 935,
+        "mean_j": 0.6444387423223885,
+        "min_ade": 0.11612526891287073,
+        "min_fde": 0.19580078126883385
+      },
+      "transition": {
+        "n": 124,
+        "coverage_pct": 48.38709677419355,
+        "covered_count": 60,
+        "mean_j": 1.1466335081774868,
+        "min_ade": 0.19989277118354318,
+        "min_fde": 0.36380418908872325
+      },
+      "change": {
+        "n": 211,
+        "coverage_pct": 42.18009478672986,
+        "covered_count": 89,
+        "mean_j": 1.3640489412507464,
+        "min_ade": 0.23394472187420737,
+        "min_fde": 0.4141275529375565
+      }
+    },
+    "gains": {
+      "change_coverage_gain_pp": 0.4739336492891013,
+      "change_ade_gain_pct": 1.6677504216664383,
+      "change_fde_gain_pct": 4.131264552298627
+    },
+    "kinematics": {
+      "speed_p95": 1.4286978542804707,
+      "speed_p95_diff_pct": -0.436233732539866,
+      "accel_mean": 0.09521788358688354,
+      "accel_p95": 0.5490431994199751,
+      "accel_p95_diff_pct": 2.7523140200807212,
+      "jerk_mean": 0.46878108382225037,
+      "jerk_p95": 2.982816517353056,
+      "jerk_p95_diff_pct": 0.04559206020427734,
+      "motion_guard_pass": false
+    }
+  },
+  "collapse_and_diversity_monitoring": {
+    "mean_pairwise_traj_dist_m": 0.6377271413803101,
+    "median_pairwise_traj_dist_m": 0.5255210995674133,
+    "min_pairwise_traj_dist_m": 0.06542327255010605,
+    "effective_slots_mean": 3.9276105060858426,
+    "mean_pairwise_param_dist": 3.602543354034424,
+    "slot_winners_overall_pct": [
+      24.023062139654066,
+      22.35746316463805,
+      15.566944266495836,
+      38.05253042921205
+    ],
+    "slot_winners_stable_pct": [
+      24.87765089722675,
+      23.73572593800979,
+      16.721044045676997,
+      34.66557911908646
+    ],
+    "slot_winners_transition_pct": [
+      21.774193548387096,
+      25.0,
+      21.774193548387096,
+      31.451612903225808
+    ],
+    "slot_winners_change_pct": [
+      20.379146919431278,
+      12.796208530805686,
+      5.213270142180095,
+      61.61137440758294
+    ],
+    "max_slot_dominance_pct": 38.05253042921205,
+    "is_slot_collapsed": false
+  },
+  "change_paired_cases": {
+    "n_change": 211,
+    "lost_change_count": 4,
+    "rescue_change_count": 5,
+    "net_change_rescue": 1,
+    "representative_lost_cases": [
+      {
+        "sample_id": 3497,
+        "static_min_ade": 0.1884520144467682,
+        "static_min_fde": 0.11429059210473384,
+        "bo4_min_ade": 0.3006795533309106,
+        "bo4_min_fde": 0.11429059210473384,
+        "winning_bo4_slot": 3
+      },
+      {
+        "sample_id": 4069,
+        "static_min_ade": 0.10838777242808949,
+        "static_min_fde": 0.21223189023012415,
+        "bo4_min_ade": 0.2891049663194037,
+        "bo4_min_fde": 0.21223189023012415,
+        "winning_bo4_slot": 3
+      },
+      {
+        "sample_id": 6204,
+        "static_min_ade": 0.1003445532736212,
+        "static_min_fde": 0.13690400744480272,
+        "bo4_min_ade": 0.19322421393959274,
+        "bo4_min_fde": 0.17076551502660872,
+        "winning_bo4_slot": 3
+      },
+      {
+        "sample_id": 6832,
+        "static_min_ade": 0.1914985563213679,
+        "static_min_fde": 0.11347386713106161,
+        "bo4_min_ade": 0.264305781871511,
+        "bo4_min_fde": 0.23991573135052813,
+        "winning_bo4_slot": 1
+      }
+    ],
+    "representative_rescue_cases": [
+      {
+        "sample_id": 5383,
+        "static_min_ade": 0.20684658158736693,
+        "static_min_fde": 0.35923184710756395,
+        "bo4_min_ade": 0.17713323017347485,
+        "bo4_min_fde": 0.3402074643326779,
+        "winning_bo4_slot": 3
+      },
+      {
+        "sample_id": 6255,
+        "static_min_ade": 0.2753292385162818,
+        "static_min_fde": 0.34335922690046117,
+        "bo4_min_ade": 0.15407608039944382,
+        "bo4_min_fde": 0.29468683256333567,
+        "winning_bo4_slot": 3
+      },
+      {
+        "sample_id": 6290,
+        "static_min_ade": 0.2025636479422832,
+        "static_min_fde": 0.48440888144542604,
+        "bo4_min_ade": 0.14983811912801404,
+        "bo4_min_fde": 0.09265520525574873,
+        "winning_bo4_slot": 3
+      },
+      {
+        "sample_id": 6761,
+        "static_min_ade": 0.2788081539149805,
+        "static_min_fde": 0.604253873024317,
+        "bo4_min_ade": 0.14203611174399386,
+        "bo4_min_fde": 0.37703529241669764,
+        "winning_bo4_slot": 1
+      },
+      {
+        "sample_id": 8262,
+        "static_min_ade": 0.146267908098113,
+        "static_min_fde": 0.5128934531766332,
+        "bo4_min_ade": 0.12265162126842764,
+        "bo4_min_fde": 0.3980090750342273,
+        "winning_bo4_slot": 0
+      }
+    ]
+  },
+  "checkpoint": {
+    "path": "c:\\Users\\linke\\Documents\\New project\\AUDIT_STAGE_BEST_OF_4_GENERATOR_PILOT_20261007\\models\\bo4_pilot_seed_42.pth",
+    "sha256": "1d3b5a8a661c1340d3f40033e193f4d421ce59b87e9e8d0512ab3c9fd21b6fe8"
+  },
+  "pilot_decision": {
+    "pilot_positive_signal": true,
+    "recommended_action": "PROCEED_STAGE_B_3SEED"
+  }
+}

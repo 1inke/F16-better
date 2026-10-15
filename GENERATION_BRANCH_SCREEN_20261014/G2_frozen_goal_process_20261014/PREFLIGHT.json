@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "source_sha": "5bf765cffc7b5cbc84803779e328567f060442000e32f15fd5c193aba3fe3f51",
+  "source_count": 3655,
+  "inheritance": {
+    "inherited_G1_sources": 3538,
+    "G1_outputs": 72,
+    "not_all_historical_files": true
+  },
+  "all3_actual_GPU": [
+    {
+      "seed": 42,
+      "zero_A_B_EXACT": true,
+      "all128_endpoints_FDE_EXACT": true,
+      "G1_all_parameters_buffers_and_no_grad_EXACT": true,
+      "scalar_error": 0.0,
+      "saved_full_clusters_motion_independent": true
+    },
+    {
+      "seed": 43,
+      "zero_A_B_EXACT": true,
+      "all128_endpoints_FDE_EXACT": true,
+      "G1_all_parameters_buffers_and_no_grad_EXACT": true,
+      "scalar_error": 0.0,
+      "saved_full_clusters_motion_independent": true
+    },
+    {
+      "seed": 44,
+      "zero_A_B_EXACT": true,
+      "all128_endpoints_FDE_EXACT": true,
+      "G1_all_parameters_buffers_and_no_grad_EXACT": true,
+      "scalar_error": 2.7755575615628914e-17,
+      "saved_full_clusters_motion_independent": true
+    }
+  ],
+  "all3_actual_gradient": [
+    {
+      "seed": 42,
+      "zero_last_phase": {
+        "0.weight": 0.0,
+        "0.bias": 0.0,
+        "2.weight": 0.019223207607865334,
+        "2.bias": 0.046761587262153625
+      },
+      "actual8FIT256_all_process_gradients_positive_finite": {
+        "0.weight": 0.0017293127020820975,
+        "0.bias": 0.00046829364146105945,
+        "2.weight": 0.03644848242402077,
+        "2.bias": 0.04059263691306114
+      }
+    },
+    {
+      "seed": 43,
+      "zero_last_phase": {
+        "0.weight": 0.0,
+        "0.bias": 0.0,
+        "2.weight": 0.03279118984937668,
+        "2.bias": 0.041408341377973557
+      },
+      "actual8FIT256_all_process_gradients_positive_finite": {
+        "0.weight": 0.0020885169506073,
+        "0.bias": 0.0007101825322024524,
+        "2.weight": 0.04633120447397232,
+        "2.bias": 0.05992858111858368
+      }
+    },
+    {
+      "seed": 44,
+      "zero_last_phase": {
+        "0.weight": 0.0,
+        "0.bias": 0.0,
+        "2.weight": 0.032221317291259766,
+        "2.bias": 0.027947288006544113
+      },
+      "actual8FIT256_all_process_gradients_positive_finite": {
+        "0.weight": 0.0012509042862802744,
+        "0.bias": 0.0003839849086944014,
+        "2.weight": 0.03496392443776131,
+        "2.bias": 0.0536343939602375
+      }
+    }
+  ],
+  "perseed_FIT_goal_stats": [
+    {
+      "seed": 42,
+      "n_candidates": 378180,
+      "chunk256_independent_mean_std_max_error": 2.9309887850104133e-13,
+      "training_only": true
+    },
+    {
+      "seed": 43,
+      "n_candidates": 378180,
+      "chunk256_independent_mean_std_max_error": 3.9257486150745535e-13,
+      "training_only": true
+    },
+    {
+      "seed": 44,
+      "n_candidates": 378180,
+      "chunk256_independent_mean_std_max_error": 3.7614356074300304e-13,
+      "training_only": true
+    }
+  ],
+  "fixed_double_FD": {
+    "fixture": "isolated_double_copy_fixed_synthetic_centres_2k0_not_saved_scientific_model_or_float32quantization_proof",
+    "values": [
+      {
+        "eps": 0.0001,
+        "error": 5.623754682817374e-14,
+        "analytic": 0.004665864696989531,
+        "no_winner_hinge_face_switch": true
+      },
+      {
+        "eps": 1e-05,
+        "error": 2.979709381681898e-13,
+        "analytic": 0.004665864696989531,
+        "no_winner_hinge_face_switch": true
+      }
+    ]
+  },
+  "real_twoepoch_resume": {
+    "actualFIT513_inner12_twoepoch_ALLparams_boolbuffers_basis_optimizer_CPU_CUDA_loader_numpy_pythonRNG_history_EXACT": true,
+    "not_fullFIT2epochs_or_analysisresume": true
+  },
+  "done_badsource_output_reject": true,
+  "trainable_parameters": 5572,
+  "optimization_steps_total": 5550,
+  "FIT36_4warm32measure_seconds": 0.021449590616612113,
+  "dualquality_seconds_perwindow": 0.003891691406352038,
+  "auditquality_seconds_perwindow": 0.0030299882810140844,
+  "nominal_compute_saved_audit_seconds": 631.5056269357228,
+  "planning_minutes": 15.656367227827559,
+  "ETA_minutes": [
+    10.959457059479291,
+    23.48455084174134
+  ],
+  "disk_free_GiB": 30.35120391845703,
+  "resource": {
+    "peak_private_GiB": 2.651531219482422,
+    "peak_RSS_GiB": 1.9433975219726562,
+    "min_physical_GiB": 11.388225555419922,
+    "min_commit_GiB": 16.138355255126953,
+    "checks": 276
+  },
+  "elapsed_seconds": 31.97399420000147,
+  "no_scientific_benchmark_checkpoint_or_outcome_choice": true,
+  "preflight_not_fullFIT2epochs_or_allold_GPUreplay": true
+}

@@ -1,0 +1,30 @@
+{
+  "phase": "M0_TOP3_COMPLEMENTARITY_AUDIT",
+  "macro_metrics": {
+    "overall": {
+      "native_top1_good_pct": 30.93,
+      "top3_set_good_pct": 34.95,
+      "gain_pp": 4.03,
+      "min_ade_3": 0.354,
+      "ade_reduction_pct": 15.4,
+      "distinct_modes": 2.77
+    },
+    "change": {
+      "native_top1_good_pct": 11.54,
+      "top3_set_good_pct": 19.70,
+      "gain_pp": 8.16,
+      "relative_improvement_pct": 70.7,
+      "rescues_breakdown": {
+        "learned_only_rescue_pp": 6.56,
+        "learned_share_pct": 80.3,
+        "static_only_rescue_pp": 1.11,
+        "static_share_pct": 13.6,
+        "shared_rescue_pp": 0.49,
+        "shared_share_pct": 6.0,
+        "total_rescue_pp": 8.16
+      }
+    }
+  },
+  "venn_sum_check_passed": true,
+  "macro_mean_verified": true
+}

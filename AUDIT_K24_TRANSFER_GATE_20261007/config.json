@@ -1,0 +1,74 @@
+{
+  "protocol": "K24_TRANSFER_GATE_20261007",
+  "seed": 42,
+  "thresholds": {
+    "ade": 0.2,
+    "fde": 0.4,
+    "dt": 0.4
+  },
+  "clustering": {
+    "mean_scale": 0.1,
+    "end_scale": 0.2,
+    "threshold": 1.0,
+    "method": "complete"
+  },
+  "datasets": [
+    {
+      "name": "zara_scene_family_outer",
+      "n_samples": 1561,
+      "split_source": "GENERATION_GROUPED_TRANSFER_SERIES_20261006/experiment3_scene_family/identity_audit/splits.npz",
+      "eval_index_key": "outer_eval_index",
+      "train_index_key": "grouped_train_index",
+      "cal_index_key": "inner_cal_index",
+      "isolation_type": "scene_family_unseen",
+      "has_zara_exposure_in_global_model": true
+    },
+    {
+      "name": "target_track_outer",
+      "n_samples": 1035,
+      "split_source": "GENERATION_GROUPED_TRANSFER_SERIES_20261006/identity_audit/splits.npz",
+      "eval_index_key": "outer_eval_index",
+      "train_index_key": "grouped_train_index",
+      "cal_index_key": "inner_cal_index",
+      "isolation_type": "pedestrian_id_unseen",
+      "has_zara_exposure_in_global_model": false
+    },
+    {
+      "name": "recording_time_outer",
+      "n_samples": 566,
+      "split_source": "GENERATION_GROUPED_TRANSFER_SERIES_20261006/experiment2_recording_time/identity_audit/splits.npz",
+      "eval_index_key": "outer_eval_index",
+      "train_index_key": "grouped_train_index",
+      "cal_index_key": "inner_cal_index",
+      "isolation_type": "time_block_unseen",
+      "has_zara_exposure_in_global_model": false
+    },
+    {
+      "name": "original_cal",
+      "n_samples": 2879,
+      "split_source": "SPLITS_CAL_25912_28791",
+      "eval_index_key": "cal_index",
+      "isolation_type": "internal_calibration_held_out",
+      "has_zara_exposure_in_global_model": false
+    }
+  ],
+  "candidate_protocols": [
+    "native20",
+    "null_duplicate8_K28",
+    "null_jitter8_1cm_K28",
+    "null_jitter8_2cm_K28",
+    "null_jitter8_5cm_K28",
+    "K24_global_top4_classes",
+    "K24_global_prior_weighted",
+    "K24_isolated_top4_classes",
+    "K24_isolated_prior_weighted",
+    "augmented28_full"
+  ],
+  "intent_classifier_hyperparameters": {
+    "epochs": 24,
+    "batch_size": 512,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "dropout": 0.1
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "independent_max_error": 0.0,
+  "all_saved_quality_full_clusters_five_motion": true,
+  "unchanged16_exact": true,
+  "bounded_residual": true,
+  "temporal_coupling": {
+    "status": "PASS",
+    "independent_residual_reconstruction_max": 8.775261333554552e-19,
+    "alpha_min": 0.0,
+    "alpha_mean": 3.5545828616070687e-06,
+    "alpha_quantiles": [
+      0.0,
+      0.0,
+      0.0,
+      4.08834078343927e-06,
+      0.0006605989584085166
+    ],
+    "alpha_zero_fraction": 0.5681660298714831,
+    "pointwise_physical": {
+      "status": "PASS_POINTWISE_WITH_DERIVED_ROUNDOFF_CERTIFICATE",
+      "max_ratio_per_order": [
+        1.000069711516613,
+        1.0099999974763614,
+        1.009999997750924
+      ],
+      "zero_native_constraints": 8685,
+      "roundoff": [
+        {
+          "order": 1,
+          "raw_strict_excess_count": 0,
+          "max_raw_excess": 0.0,
+          "max_excess_to_derived_bound": 0.0,
+          "rounded_operations_upper_bound": 24
+        },
+        {
+          "order": 2,
+          "raw_strict_excess_count": 0,
+          "max_raw_excess": 0.0,
+          "max_excess_to_derived_bound": 0.0,
+          "rounded_operations_upper_bound": 32
+        },
+        {
+          "order": 3,
+          "raw_strict_excess_count": 0,
+          "max_raw_excess": 0.0,
+          "max_excess_to_derived_bound": 0.0,
+          "rounded_operations_upper_bound": 40
+        }
+      ],
+      "no_scientific_floor_or_threshold_change": true,
+      "pooled_five_motion_must_be_tested_literally": true
+    },
+    "stronger_than_pooled_gate": true,
+    "no_GT_in_projection": true
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "independent_max_error": 0.0,
+  "all_saved_quality_full_clusters_five_motion": true,
+  "unchanged16_exact": true,
+  "bounded_residual": true,
+  "temporal_coupling": {
+    "status": "PASS",
+    "independent_residual_reconstruction_max": 3.3480163086352377e-16,
+    "geometry": {
+      "fit_a": {
+        "min": 0.8915508424267548,
+        "mean": 0.987075058665485,
+        "max": 1.0395047746217736
+      },
+      "fit_b": {
+        "min": -0.051965975108942374,
+        "mean": -0.0025046784997551455,
+        "max": 0.06639113987158442
+      },
+      "scale_before": {
+        "min": 0.8916233089935118,
+        "mean": 0.9871494242610269,
+        "max": 1.0395126981144835
+      },
+      "capped_a": {
+        "min": 0.8915508424267548,
+        "mean": 0.9859271636535145,
+        "max": 1.0099990367682004
+      },
+      "capped_b": {
+        "min": -0.051965975108942374,
+        "mean": -0.0025018296400823254,
+        "max": 0.06639113987158442
+      },
+      "position_lambda": {
+        "min": 0.17612685136564624,
+        "mean": 0.3983251885740566,
+        "max": 1.0
+      },
+      "final_a": {
+        "min": 0.9621624391008371,
+        "mean": 0.9957250726797534,
+        "max": 1.0099990367682004
+      },
+      "final_b": {
+        "min": -0.021220127757660967,
+        "mean": -0.0008245469579293758,
+        "max": 0.02800604690028298
+      },
+      "final_scale": {
+        "min": 0.962271994794553,
+        "mean": 0.99573632005277,
+        "max": 1.0099990367889407
+      }
+    },
+    "residual_max": 0.07327980059136949,
+    "residual_ge_1mm_fraction": 1.0,
+    "pointwise_physical": {
+      "status": "PASS",
+      "similarity_reconstruction_max": 1.7763568394002505e-15,
+      "final_scale_max": 1.0099990367889407,
+      "zero_energy_candidates": 0,
+      "position_lambda_quantiles": [
+        0.17612685136564624,
+        0.24962520362140495,
+        0.3622231169247323,
+        0.5829910952088533,
+        1.0
+      ],
+      "pointwise_roundoff_certificate": {
+        "status": "PASS_POINTWISE_WITH_DERIVED_ROUNDOFF_CERTIFICATE",
+        "max_ratio_per_order": [
+          1.0099990367889458,
+          1.0099990406346102,
+          1.009999040818072
+        ],
+        "zero_native_constraints": 3022,
+        "roundoff": [
+          {
+            "order": 1,
+            "raw_strict_excess_count": 0,
+            "max_raw_excess": 0.0,
+            "max_excess_to_derived_bound": 0.0,
+            "rounded_operations_upper_bound": 24
+          },
+          {
+            "order": 2,
+            "raw_strict_excess_count": 904,
+            "max_raw_excess": 5.721958498152797e-15,
+            "max_excess_to_derived_bound": 0.01164244182879046,
+            "rounded_operations_upper_bound": 32
+          },
+          {
+            "order": 3,
+            "raw_strict_excess_count": 207,
+            "max_raw_excess": 1.5515838457795457e-14,
+            "max_excess_to_derived_bound": 0.007425463218558182,
+            "rounded_operations_upper_bound": 40
+          }
+        ],
+        "no_scientific_floor_or_threshold_change": true,
+        "pooled_five_motion_must_be_tested_literally": true
+      },
+      "not_new_turn_stop_shape": true,
+      "all_five_pooled_must_be_checked_literally": true
+    },
+    "all_pooled_gates_separate": true,
+    "no_GT_in_projection": true
+  }
+}

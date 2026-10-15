@@ -1,0 +1,13 @@
+# STOP_RESOURCE — all training saved, final audit unfinished
+
+Sole completion check2026-10-07T20:56:01.7326789HK found taskReady/XPath0/no process, worker AND exitFAILURE at20:53:33.489776HK. Startup and half are historical; do not query/restart completed38996 or any older PID. This is NOT doubleSUCCESS or ANALYZED.
+
+Nine runs each completed25epochs (225 total); all nine checkpoints, requested per-run manifests/metrics/assignment statistics and27prediction NPZs are present with nine local done.json PASS records. Local done reports do not replace the final complete audit or final old-source preservation SHA. All training results and the original failure/code/stderr/RESOURCE files remain intact. No scientific files were changed after source lock.
+
+Failure was inside final saved-output complete-link arithmetic reconstruction, where the registered resource guard raised MemoryError. Lifetime recorded privatepeak2.47265GiB/RSSpeak1.78701GiB, commitminimum21.21836GiB, but system available physical memory minimum4.25059GiB violated the6GiB reserve. Thus this record points to the SYSTEM physical reserve, not an oversized model process. It does not identify which application consumed memory. No live resource polling or user-program closure was performed.
+
+Pending: full27 saved-output quality/clustering/motion/assignment audit, complete9checkpoint-manifest/statistics/history/source binding validation, final273 relevant source/input/old-model/results SHA, independent CPU supplement and final DA2/3 research report. Do NOT call numerical outcomes scientifically final or majorPASS, claim allold34kfilesSHA, or restore baseline/goal/cycle counters.
+
+Wait for a DIRECT human instruction after freeing sufficient memory. No automatic retry, resource polling, new experiment or threshold relaxation. On that instruction, do ONE current resource assessment under the same process6GiB/systemphysical+commit EACHreserve6GiB. If it passes, use a new audit-recovery subfolder to verify all completed artifacts' SHA and source contract, then resume ONLY frozen saved-data audit (no optimizer/backward/model forward/retraining). Preserve the failed parent worker/source/results unchanged. Recovery needs its own preflight/actualETA/unique0triggerworker/one startup/onehalf→completion. This plan is not launched or preflighted; no ETA or PID exists for recovery.
+
+Human-approved canonical protocol remains approved, but the resource gate is STOP_RESOURCE_WAIT_HUMAN. Existing automation remains quiet, with no new scheduled experiment/resource retry. Different grouping train/eval populations, F16seen and exploratory limits remain; no new loss/head/scorer/data permission inferred.

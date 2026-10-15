@@ -1,0 +1,48 @@
+{
+  "task": "S1L3_CANDIDATE_SELECTION_AND_RANKABILITY_RESEARCH",
+  "date": "2026-10-07",
+  "generator_status": "FROZEN (FREEZE_S1L3_GENERATOR)",
+  "generator_configuration": "Native20 + Static1 + Learned3 [slots 3, 0, 1] (Total K=24)",
+  "stages_executed": [
+    "R0_S1L3_RANKABILITY_AND_SCORE_BIAS_AUDIT",
+    "R2_CANDIDATE_AWARE_SCORER",
+    "R3_REPRESENTATION_AMBIGUITY_AUDIT",
+    "R4_UNCERTAINTY_GATED_SELECTION"
+  ],
+  "stage_conclusions": {
+    "R0_frozen_scorer_audit": {
+      "selection_conversion_efficiency": "0.00%",
+      "provenance_bias": "PROVENANCE_SCORE_BIAS_PRESENT (Native mean logit +2.861 vs Learned +0.148 at equal quality J<=1.0)",
+      "rankability_ceiling": "Probe achieves 92.0% - 94.0% pairwise good-vs-bad accuracy",
+      "routing_decision": "PROVENANCE_BIAS_DOMINANT -> Stage R2"
+    },
+    "R2_candidate_aware_scorer": {
+      "macro_change_gain_pp": "+2.12 pp (8/9 runs positive)",
+      "macro_new_support_recall_at_1_pct": "27.83% (up from 0.0%)",
+      "macro_new_support_recall_at_5_pct": "84.38% (up from 0.0%)",
+      "macro_overall_top1_gain_pp": "-0.79 pp",
+      "macro_ade_harm_pct": "-18.23%",
+      "gate_status": "FAILED (breached overall Top1 gain and ADE harm limits)",
+      "routing_decision": "Stage R2 failed -> Stage R3"
+    },
+    "R3_representation_ambiguity_audit": {
+      "change_vs_stable_mode_entropy_ratio": "1.59x higher in Change",
+      "change_vs_stable_direction_variance_ratio": "2.32x higher in Change",
+      "past_entropy_top1_failure_correlation": "r = +0.404 (macro mean)",
+      "decision": "PAST_ONLY_SELECTION_AMBIGUITY_CONFIRMED -> Stage R4 Bridge"
+    },
+    "R4_uncertainty_gated_selection": {
+      "r4a_gate_predictability_auroc": 0.743,
+      "r4b_gated_routing_verdict": "FAIL (Even at 5% override, ADE Harm = +1.32% > 1.0% limit for Change gain of +0.32 pp; no operating point simultaneously satisfies Change gain > 0 and ADE harm < 1%)",
+      "r4c_selective_forecasting": "AURC = 0.261, 20% abstention increases retained accuracy by +3.2 pp macro mean",
+      "r4d_top3_multihypothesis": {
+        "macro_overall_set_good_rate": "34.95% (+4.03 pp vs Native Top-1)",
+        "macro_change_set_good_rate": "19.70% (+8.16 pp vs Native Top-1)",
+        "expected_effective_set_size": 2.77
+      }
+    }
+  },
+  "final_scientific_verdict": "PAST_ONLY_TOP1_LIMITED",
+  "operational_action": "STOP_SELECTION_PAST_ONLY_LIMITED",
+  "recommended_future_direction": "Transition research from single deterministic Top-1 forecasting to Calibrated Multi-Hypothesis Portfolio (Track B) and Selective Forecasting (Track C)"
+}

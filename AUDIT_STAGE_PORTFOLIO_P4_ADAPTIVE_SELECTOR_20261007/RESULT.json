@@ -1,0 +1,234 @@
+{
+  "stage": "PORTFOLIO_P4_ADAPTIVE_SELECTOR",
+  "primary_gate_pass": false,
+  "final_action": "FREEZE_BEST_FIXED_OR_STATIC_K24",
+  "aggregate": {
+    "mean_overall_coverage_gain_pp": 1.3025838137945815,
+    "mean_change_coverage_gain_pp": 0.3159557661927342,
+    "change_positive_seeds_count": 2,
+    "change_gains_by_seed": [
+      0.4739336492891013,
+      0.4739336492891013,
+      0.0
+    ],
+    "mean_change_ade_gain_pct": 1.6315674562040392,
+    "mean_change_fde_gain_pct": 3.605272796479527,
+    "accel_p95_diffs_pct": [
+      -8.981192328849524,
+      -9.654664502062992,
+      -8.715679118374553
+    ],
+    "motion_guards_all_pass": false
+  },
+  "by_seed": {
+    "seed_42": {
+      "overall": {
+        "coverage_pct": 69.31454196028187,
+        "coverage_gain_pp": 1.3452914798206317,
+        "rescue": 39,
+        "lost": 18,
+        "net_rescue": 21,
+        "mean_j": 0.781044281479447,
+        "min_ade": 0.13860962680637917,
+        "ade_gain_pct": 1.6739367284383073,
+        "min_fde": 0.23854578849855337,
+        "fde_gain_pct": 3.582474562467506
+      },
+      "change": {
+        "change_coverage_pct": 41.70616113744076,
+        "change_coverage_gain_pp": 0.4739336492891013,
+        "change_ade_gain_pct": 2.055313028317335,
+        "change_fde_gain_pct": 3.930040070607937
+      },
+      "subgroups": {
+        "overall": {
+          "n": 1561,
+          "coverage_pct": 69.31454196028187,
+          "covered_count": 1082,
+          "mean_j": 0.781044281479447,
+          "min_ade": 0.13860962680637917,
+          "min_fde": 0.23854578849855337
+        },
+        "stable": {
+          "n": 1226,
+          "coverage_pct": 76.2642740619902,
+          "covered_count": 935,
+          "mean_j": 0.6437365366013218,
+          "min_ade": 0.11605292516860427,
+          "min_fde": 0.19536675129503564
+        },
+        "transition": {
+          "n": 124,
+          "coverage_pct": 47.58064516129033,
+          "covered_count": 59,
+          "mean_j": 1.1482583157847202,
+          "min_ade": 0.2000146824009897,
+          "min_fde": 0.3648351408645354
+        },
+        "change": {
+          "n": 211,
+          "coverage_pct": 41.70616113744076,
+          "covered_count": 88,
+          "mean_j": 1.3630573381937954,
+          "min_ade": 0.23358730128116764,
+          "min_fde": 0.4152169729446716
+        }
+      },
+      "kinematics": {
+        "speed_mean": 0.7045683264732361,
+        "speed_p95": 1.4286978542804707,
+        "accel_mean": 0.09493983536958694,
+        "accel_p95": 0.5490431994199751,
+        "jerk_mean": 0.4677444100379944,
+        "jerk_p95": 2.982816517353056
+      },
+      "motion_guard_pass": false,
+      "accel_p95_diff_pct": -8.981192328849524,
+      "portfolio_composition": {
+        "static_share_pct": 15.390775144138372,
+        "learned_share_pct": 84.60922485586163
+      }
+    },
+    "seed_43": {
+      "overall": {
+        "coverage_pct": 69.57078795643818,
+        "coverage_gain_pp": 1.601537475976944,
+        "rescue": 43,
+        "lost": 18,
+        "net_rescue": 25,
+        "mean_j": 0.7805609881919329,
+        "min_ade": 0.13791677069478364,
+        "ade_gain_pct": 2.1654308290752984,
+        "min_fde": 0.2409351450749096,
+        "fde_gain_pct": 2.6167235008780922
+      },
+      "change": {
+        "change_coverage_pct": 41.70616113744076,
+        "change_coverage_gain_pp": 0.4739336492891013,
+        "change_ade_gain_pct": 1.891219314020331,
+        "change_fde_gain_pct": 3.699038448001236
+      },
+      "subgroups": {
+        "overall": {
+          "n": 1561,
+          "coverage_pct": 69.57078795643818,
+          "covered_count": 1086,
+          "mean_j": 0.7805609881919329,
+          "min_ade": 0.13791677069478364,
+          "min_fde": 0.2409351450749096
+        },
+        "stable": {
+          "n": 1226,
+          "coverage_pct": 76.2642740619902,
+          "covered_count": 935,
+          "mean_j": 0.6436256678624153,
+          "min_ade": 0.11506861808407913,
+          "min_fde": 0.19817022826640407
+        },
+        "transition": {
+          "n": 124,
+          "coverage_pct": 50.806451612903224,
+          "covered_count": 63,
+          "mean_j": 1.142612949451768,
+          "min_ade": 0.2003585388918776,
+          "min_fde": 0.36549692671005596
+        },
+        "change": {
+          "n": 211,
+          "coverage_pct": 41.70616113744076,
+          "covered_count": 88,
+          "mean_j": 1.3634437347690371,
+          "min_ade": 0.23397864673404475,
+          "min_fde": 0.416215368224055
+        }
+      },
+      "kinematics": {
+        "speed_mean": 0.7035908102989197,
+        "speed_p95": 1.4262781679630274,
+        "accel_mean": 0.09524954855442047,
+        "accel_p95": 0.5449806839227671,
+        "jerk_mean": 0.4668407440185547,
+        "jerk_p95": 2.9815202355384827
+      },
+      "motion_guard_pass": false,
+      "accel_p95_diff_pct": -9.654664502062992,
+      "portfolio_composition": {
+        "static_share_pct": 21.877001921844972,
+        "learned_share_pct": 78.12299807815502
+      }
+    },
+    "seed_44": {
+      "overall": {
+        "coverage_pct": 68.93017296604741,
+        "coverage_gain_pp": 0.9609224855861687,
+        "rescue": 33,
+        "lost": 18,
+        "net_rescue": 15,
+        "mean_j": 0.7848176720578868,
+        "min_ade": 0.13910028854117082,
+        "ade_gain_pct": 1.3258740585384023,
+        "min_fde": 0.23905349142443902,
+        "fde_gain_pct": 3.3772667485740078
+      },
+      "change": {
+        "change_coverage_pct": 41.23222748815166,
+        "change_coverage_gain_pp": 0.0,
+        "change_ade_gain_pct": 0.9481700262744517,
+        "change_fde_gain_pct": 3.186739870829408
+      },
+      "subgroups": {
+        "overall": {
+          "n": 1561,
+          "coverage_pct": 68.93017296604741,
+          "covered_count": 1076,
+          "mean_j": 0.7848176720578868,
+          "min_ade": 0.13910028854117082,
+          "min_fde": 0.23905349142443902
+        },
+        "stable": {
+          "n": 1226,
+          "coverage_pct": 75.93800978792822,
+          "covered_count": 931,
+          "mean_j": 0.6453995842686142,
+          "min_ade": 0.11603701954320031,
+          "min_fde": 0.19494423498944288
+        },
+        "transition": {
+          "n": 124,
+          "coverage_pct": 46.774193548387096,
+          "covered_count": 58,
+          "mean_j": 1.1598266580067786,
+          "min_ade": 0.20185577805112354,
+          "min_fde": 0.3699373854823823
+        },
+        "change": {
+          "n": 211,
+          "coverage_pct": 41.23222748815166,
+          "covered_count": 87,
+          "mean_j": 1.3745118017829379,
+          "min_ade": 0.23622771551879032,
+          "min_fde": 0.41842953657192866
+        }
+      },
+      "kinematics": {
+        "speed_mean": 0.7029638886451721,
+        "speed_p95": 1.422987461090088,
+        "accel_mean": 0.09535930305719376,
+        "accel_p95": 0.5506448268890378,
+        "jerk_mean": 0.4688844680786133,
+        "jerk_p95": 2.9815233945846558
+      },
+      "motion_guard_pass": false,
+      "accel_p95_diff_pct": -8.715679118374553,
+      "portfolio_composition": {
+        "static_share_pct": 17.953235105701474,
+        "learned_share_pct": 82.04676489429853
+      }
+    }
+  },
+  "checkpoints": {
+    "seed_42": "1f4f5a8fd52493e29999df8ce8be217d3df7739422d1db263597a3173a6d3869",
+    "seed_43": "faf1f6d9c35080595f81c0561eaded3181fd2ed58bb62a48b85d736df9553371",
+    "seed_44": "96f6272b47b466bacb3dcd4ed1716ab20880ac020407b7bbd22828bd27a56058"
+  }
+}

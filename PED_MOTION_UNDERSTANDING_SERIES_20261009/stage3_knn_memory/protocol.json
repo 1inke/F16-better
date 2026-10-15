@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "folds": [
+    "eth",
+    "hotel",
+    "univ",
+    "zara01",
+    "zara02"
+  ],
+  "features": [
+    "position_velocity",
+    "velocity_only"
+  ],
+  "k": 32,
+  "weights": "uniform",
+  "distance": "Euclidean_train_only_zscore",
+  "tie": "distance_then_original_trainID",
+  "std_floor_threshold": 0.000001,
+  "std_replacement": 1,
+  "bootstrap": 2000,
+  "seed": 20261009,
+  "query_batch": 128,
+  "jobs": 14,
+  "no_model_training": true,
+  "no_torch_forward": true,
+  "whole_series_complete": false,
+  "process_GiB": 6,
+  "reserve_each_GiB": 6,
+  "sibling_exclusion": {
+    "zara01": "crowds_zara02",
+    "zara02": "crowds_zara01"
+  }
+}

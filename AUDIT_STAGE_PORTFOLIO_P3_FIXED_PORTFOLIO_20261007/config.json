@@ -1,0 +1,19 @@
+{
+  "stage": "PORTFOLIO_P3_FIXED_PORTFOLIO",
+  "seeds": [42, 43, 44],
+  "protocol": "scene-family",
+  "configurations": [
+    "S4L0",
+    "S3L1",
+    "S2L2",
+    "S1L3",
+    "S0L4"
+  ],
+  "total_K": 24,
+  "proposal_budget": 4,
+  "retention_rules": {
+    "static_priority": "top classifier probabilities [0, 1, 2, 3]",
+    "learned_priority": "P2-locked semantic specialization [Slot 3, Slot 0, Slot 1, Slot 2]"
+  },
+  "checkpoint_dir": "AUDIT_STAGE_BEST_OF_4_GENERATOR_3SEED_20261007/models"
+}

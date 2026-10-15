@@ -1,0 +1,39 @@
+{
+  "stage": "03_LEARNED_PARAM_K24_MDN",
+  "version": "1.0",
+  "date": "2026-10-07",
+  "representation": "P2",
+  "representation_dim": 96,
+  "seeds": [42, 43, 44],
+  "candidate_budget": {
+    "control_k": 24,
+    "treatment_k": 24,
+    "native_k": 20,
+    "treatment_slots": 4
+  },
+  "model": {
+    "type": "GaussianMDN",
+    "hidden_dim": 128,
+    "num_components": 3,
+    "param_dim": 8
+  },
+  "training": {
+    "epochs": 20,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "GaussianNLL"
+  },
+  "allocation_policy": {
+    "total_hypotheses": 24,
+    "selected_slots": 4,
+    "max_slots_per_class": 2,
+    "scoring": "joint_likelihood"
+  },
+  "promotion_gate": {
+    "change_min_ade_or_fde_gain_pct": 3.0,
+    "change_coverage_gain_pp": 1.0,
+    "max_overall_harm_pct": 1.0,
+    "min_consistent_seeds": 2
+  }
+}

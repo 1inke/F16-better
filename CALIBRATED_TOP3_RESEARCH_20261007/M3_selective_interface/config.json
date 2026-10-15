@@ -1,0 +1,10 @@
+{
+  "phase": "M3_SELECTIVE_INTERFACE",
+  "tier_rules": {
+    "tier1_single_top1": "p_native >= 0.60 AND p2_knn_entropy < median",
+    "tier2_top3_portfolio": "remaining non-tier1, non-tier3 windows",
+    "tier3_abstain_warning": "p2_knn_entropy >= 90th percentile"
+  },
+  "protocols": ["scene_family", "target_track", "recording_time"],
+  "seeds": [42, 43, 44]
+}

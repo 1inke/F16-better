@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-10-08T10:12:19.1748039+08:00",
+  "task_name": "Trajectory-NativeSimilarityFeasible-20261008",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "ProcessId": 39992,
+      "ParentProcessId": 2840,
+      "CreationDate": "2026-10-08T10:12:03.624018+08:00",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_SIMILARITY_FEASIBLE_SERIES_20261008\\independent_worker.py\""
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 39992,
+    "parent": 2840,
+    "started_at": "2026-10-08T10:12:03.882747+08:00",
+    "type": "PAIRED_NATIVE_SIMILARITY_FEASIBLE_FRESH_TRAINING"
+  },
+  "exit": null,
+  "progress": {
+    "stage": "TRAIN",
+    "at": "2026-10-08T10:12:18.737278+08:00",
+    "arm": "ray",
+    "seed": 42,
+    "epoch": 8,
+    "runs_done": 0,
+    "runs_total": 6
+  },
+  "runs_done": 0,
+  "histories": [
+    {
+      "seed": 42,
+      "epochs": 7,
+      "arm": "ray"
+    },
+    {
+      "seed": 43,
+      "epochs": 0,
+      "arm": "ray"
+    },
+    {
+      "seed": 44,
+      "epochs": 0,
+      "arm": "ray"
+    },
+    {
+      "seed": 42,
+      "epochs": 0,
+      "arm": "similarity"
+    },
+    {
+      "seed": 43,
+      "epochs": 0,
+      "arm": "similarity"
+    },
+    {
+      "seed": 44,
+      "epochs": 0,
+      "arm": "similarity"
+    }
+  ],
+  "stderr_bytes": 0,
+  "parent_identity": [
+    {
+      "ProcessId": 2840,
+      "Name": "svchost.exe"
+    }
+  ]
+}

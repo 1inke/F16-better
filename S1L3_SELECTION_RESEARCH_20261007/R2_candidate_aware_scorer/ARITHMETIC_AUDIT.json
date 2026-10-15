@@ -1,0 +1,57 @@
+{
+  "stage": "R2_CANDIDATE_AWARE_SCORER",
+  "macro_metrics": {
+    "protocol_means": {
+      "scene_family": {
+        "top1_good_rate_mean_pct": 38.14,
+        "top1_gain_pp_mean": -2.09,
+        "change_good_rate_mean_pct": 17.69,
+        "change_gain_pp_mean": 1.11,
+        "ade_gain_pct_mean": -16.07,
+        "fde_gain_pct_mean": -16.46,
+        "new_support_recall_at_1_mean_pct": 42.21,
+        "new_support_recall_at_5_mean_pct": 90.03,
+        "severe_regret_drop_pp_mean": -4.19
+      },
+      "target_track": {
+        "top1_good_rate_mean_pct": 26.96,
+        "top1_gain_pp_mean": -0.68,
+        "change_good_rate_mean_pct": 13.18,
+        "change_gain_pp_mean": 2.90,
+        "ade_gain_pct_mean": -20.56,
+        "fde_gain_pct_mean": -21.26,
+        "new_support_recall_at_1_mean_pct": 16.05,
+        "new_support_recall_at_5_mean_pct": 77.49,
+        "severe_regret_drop_pp_mean": -1.42
+      },
+      "recording_time": {
+        "top1_good_rate_mean_pct": 25.32,
+        "top1_gain_pp_mean": 0.41,
+        "change_good_rate_mean_pct": 10.09,
+        "change_gain_pp_mean": 2.35,
+        "ade_gain_pct_mean": -18.06,
+        "fde_gain_pct_mean": -17.17,
+        "new_support_recall_at_1_mean_pct": 25.23,
+        "new_support_recall_at_5_mean_pct": 85.61,
+        "severe_regret_drop_pp_mean": -1.30
+      }
+    },
+    "protocol_macro_summary": {
+      "macro_top1_gain_pp": -0.79,
+      "macro_change_gain_pp": 2.12,
+      "macro_ade_harm_pct": -18.23,
+      "macro_fde_harm_pct": -18.30,
+      "macro_new_support_recall_at_1_pct": 27.83,
+      "macro_new_support_recall_at_5_pct": 84.38
+    }
+  },
+  "gate_audit": {
+    "protocols_with_top1_gain_positive": "1/3 (recording_time only)",
+    "protocols_with_2of3_seeds_positive": "1/3 (recording_time only)",
+    "overall_ade_harm_under_1pct": false,
+    "change_top1_no_drop": true,
+    "severe_regret_decreased": true,
+    "new_support_recall_increased": true,
+    "gate_verdict": "FAIL"
+  }
+}

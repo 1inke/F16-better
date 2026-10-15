@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-08T02:31:53.4327331+08:00",
+  "task_name": "Trajectory-NativeAnchoredResidual-20261008",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "worker": {
+    "status": "SUCCESS",
+    "pid": 11028,
+    "parent": 2840,
+    "started_at": "2026-10-08T02:27:09.675194+08:00",
+    "type": "PAIRED_NATIVE_ANCHORED_RESIDUAL_FRESH_TRAINING",
+    "finished_at": "2026-10-08T02:30:55.870470+08:00"
+  },
+  "exit": {
+    "status": "SUCCESS",
+    "pid": 11028,
+    "parent": 2840,
+    "started_at": "2026-10-08T02:27:09.675194+08:00",
+    "type": "PAIRED_NATIVE_ANCHORED_RESIDUAL_FRESH_TRAINING",
+    "finished_at": "2026-10-08T02:30:55.870470+08:00"
+  },
+  "progress": {
+    "stage": "SUCCESS",
+    "at": "2026-10-08T02:30:55.864231+08:00",
+    "runs_done": 6,
+    "saved_jobs": 18
+  },
+  "runs_done": 6,
+  "histories": [
+    {
+      "arm": "CV",
+      "seed": 42,
+      "epochs": 25
+    },
+    {
+      "arm": "CV",
+      "seed": 43,
+      "epochs": 25
+    },
+    {
+      "arm": "CV",
+      "seed": 44,
+      "epochs": 25
+    },
+    {
+      "arm": "native",
+      "seed": 42,
+      "epochs": 25
+    },
+    {
+      "arm": "native",
+      "seed": 43,
+      "epochs": 25
+    },
+    {
+      "arm": "native",
+      "seed": 44,
+      "epochs": 25
+    }
+  ],
+  "stderr_bytes": 0,
+  "scheduled_at": "2026-10-08T02:31:09.675194+08:00",
+  "lateness_seconds": 43.7575391,
+  "sole_progress_check": true,
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "found_already_complete": true,
+  "no_separate_completion_query": true
+}

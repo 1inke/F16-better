@@ -1,0 +1,16 @@
+{
+  "kind":"NONFORMAL_FROZEN_REMOVED_TAIL_AND_LOO_UTILITY",
+  "groupings":["scene_family","target_track","recording_time"],
+  "seeds":[42,43,44],"splits":["outer","inner","original_CAL"],
+  "primary_split":"outer","fixed_epoch":25,"jobs":27,
+  "selection":"unchanged_bottom4_frozen_native_logits_no_policy_search",
+  "quality":{"ADE":0.2,"FDE":0.4,"same_candidate":true},
+  "distance":{"meanpath":0.1,"endpoint":0.2,"combine":"max","nearest":"min_common16"},
+  "dt":0.4,"low_speed":0.1,"turn_valid_speed":0.03,"direction_valid_displacement":0.03,
+  "descriptive_direction_turn_degrees":30,"descriptive_overshoot_arclength_m":0.2,
+  "utility":["coverage","ADE","FDE","J"],"utility_reference":"leave_one_out_same20",
+  "batch_rows":128,"no_torch_model_forward_backward_optimizer":true,
+  "no_GT_deployable_selection":true,"new_formal_count":0,
+  "resource":{"process_GiB":6,"physical_reserve_GiB":6,"commit_reserve_GiB":6},
+  "plot_backend":"saved_user_preference_python","native_plot_seed_deduplication":true
+}

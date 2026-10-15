@@ -1,0 +1,5 @@
+# Trace illustration QA
+
+Python-only, same existing experiment workflow. Final dimensions 183×155mm, editable SVG/PDF text, 600dpi PNG; no target-journal submission compliance claim. Individual paths/speeds do not carry inferential error bars. Fixed hash picks three outer windows before GT is examined; all three seeds and all twelve future points retained, no crop/smoothing/axis-log/truncation. J-closest B candidate is GT-posthoc display selection; A shown at the identical candidate/endpoint. No claim of representative cases, independent nine-subject sample, or motion understanding.
+
+Initial source lint did not recognize loop-generated export filenames and misread the arithmetic width expression as 183 inches. Exports were made explicit and inches numeric before rendering; no data or experimental science changed. The final source validator and rendered previews must be inspected before delivery. These are figure-only source formatting findings, not production/preflight scientific failures.

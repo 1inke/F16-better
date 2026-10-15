@@ -1,0 +1,13 @@
+# Saved-results recovery design
+
+Question: do the nine completed canonical runs and all 27 saved outputs satisfy their registered identity, source, checkpoint, arithmetic and resource contracts?
+
+Use the original registered quality and SciPy complete-link definitions unchanged. Recompute all native20/full24/learned4 metrics, strict SAME candidate ADE<=.2 AND FDE<=.4 coverage, rescue/lost, distinct and effective-good clusters (.10 mean path/.20 endpoint), and all five pooled motion quantities at dt=.4. Independently verify these using the isolated prelaunch-review function and independently reconstruct assignment statistics. Check 225 history rows, nine checkpoint-manifest-statistics bindings and train-only normalization directly from cached encoder features; load checkpoint as CPU data only.
+
+Extend, never replace, the original 273 relevant SHA digests with completed artifacts and this child science code. This is relevant-file preservation, NOT all historical 34k files or full old-model forward replay. Check source/input/output SHA before and after. Job recovery requires compatible source and output SHA; reject bad source/output fixtures. This is analysis recovery, not optimizer/RNG training resume.
+
+Supplement single-J-closest complete-slot early/middle/late errors, never stitched oracles. Within each grouping/split/group, report paired full24-minus-native20 and learned4-minus-native20 ADE/FDE/J/coverage with exploratory target-track and model-seed bootstrap (2000, seed20261007). Native20 is retained in full24: lost=0 and nondecreasing coverage by construction; K24 versus K20 is NOT equal-budget improvement. No across-grouping paired comparisons: train sizes, populations and train-only numerical statistics differ. No reliable three-scene independent inference, SOTA, whole-model unseen generalization or decoder-root claims.
+
+Mandatory same-assistant devil's-advocate checkpoints: (1) arithmetic recovery cannot fix design-level composition and K confounds; retain these limits; (2) and (3) after full analysis, preserve contrary groups/seeds, motion failures and confidence intervals. Not external independent review. AI-assisted analysis is disclosed.
+
+Resource: process<=6 GiB and BOTH physical/commit available>=6 GiB, bounded sequential saved jobs. Internal resource guard only, no conversational resource polling/OS changes/pagefile/user-program termination. On substantive source/identity/numeric/resource issue STOP and preserve evidence. After measured saved-data throughput and SHA/IO preflight, one new zero-trigger OS task, one startup, one elapsed-half review, then one completion review. No new training, loss, scorer, external data or research expansion.

@@ -1,0 +1,7 @@
+# 原H3监督信息使用：源证据说明
+
+原train_front_variant.run将future传给train模式，并调用set_training_target；原hierarchical_decoder_models.py在self.training时，利用coarse-to-GT质量，将oracle粗候选纳入top_m训练选择。该路径是既有H3科学协议，三输入branch全部相同，本次AST原样保留，没有新增GT teacher或test oracle。
+
+因此“GT仅loss”若按字面理解为GT绝不进入训练内部候选选择，是不准确的。准确表述：未来GT仅训练监督及事后评价，包含原H3监督式候选选择；validation/test的mode=testing且model.eval，forward输入future=None，训练target每次原forward末清空。预检与保存预测均检查这些实际测试路径。该说明修正文档措辞，不改变任何模型、损失、选择或来源digest。
+
+研究因素仍是观测历史/邻居可用性。由于训练期候选选择和测试期logit选择存在既有差异，结果不能直接证明心理意图或真实运动理解；监督协议、有限优化和mode selection替代解释一并保留。GT不参与输入消融、ID划分、测试子集后选、epoch/超参后选。

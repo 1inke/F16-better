@@ -1,0 +1,9 @@
+{
+  "status": "FAILURE",
+  "pid": 44736,
+  "parent": 2840,
+  "started_at": "2026-10-08T10:43:40.481728+08:00",
+  "type": "NONFORMAL_FROZEN_SAVED_REACHABILITY_NO_TRAINING",
+  "finished_at": "2026-10-08T10:43:43.861556+08:00",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\independent_worker.py\", line 15, in <module>\n    run.main()\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\run.py\", line 137, in main\n    stage('FIXED_K20_POLICY_SAVED_ARITHMETIC',split=split,partner=j,done=len(records),total=60);records.append(job(split,j,z,digest(files)));saved=npz(H/f'jobs/{split}/partner_{j:02d}/paths.npz');cg=saved['candidate_good'];union|=cg.any(1);shapeunion|=(cg&(saved['shape_RMS_beyond_global_similarity']>=.001)).any(1)\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\run.py\", line 125, in job\n    np.savez_compressed(path,**g,sample_id=z['sample_id'],partner=j,slots=z['slots'],shape_RMS_beyond_global_similarity=rms,candidate_good=cgood,**x)\nTypeError: numpy.savez_compressed() got multiple values for keyword argument 'candidate_good'\n"
+}

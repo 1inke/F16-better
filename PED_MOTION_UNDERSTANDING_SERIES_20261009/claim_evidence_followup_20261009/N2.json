@@ -1,0 +1,5326 @@
+{
+  "calibration": {
+    "eth": {
+      "n_train": 28791,
+      "id_sha": "b33140420c40f608a485d478223ab9753350e71fc6ba96c42fb4d2c0dd9d4aae",
+      "R_m": 0.7032698506873264,
+      "density_edges": [
+        0.0,
+        1.0
+      ],
+      "effective_density_bins": 3,
+      "training_density_hist": [
+        14608,
+        10203,
+        3093,
+        674,
+        159,
+        44,
+        8,
+        2
+      ],
+      "training_C3": 23726,
+      "positive_C3_g_n": 11216,
+      "delta_g_m": 0.852100189830367,
+      "all_train_only": true
+    },
+    "hotel": {
+      "n_train": 28192,
+      "id_sha": "af882b65173213634407fc9b28b1a1eabac70b60d526b2169695bfc4f648df13",
+      "R_m": 0.7000702436653617,
+      "density_edges": [
+        0.0,
+        1.0
+      ],
+      "effective_density_bins": 3,
+      "training_density_hist": [
+        14315,
+        9958,
+        3050,
+        663,
+        153,
+        43,
+        8,
+        2
+      ],
+      "training_C3": 23328,
+      "positive_C3_g_n": 11063,
+      "delta_g_m": 0.8585871272991394,
+      "all_train_only": true
+    },
+    "univ": {
+      "n_train": 9380,
+      "id_sha": "159f099f4ba47e763d972fd66ae24a6b4602147fa50b60909e89e99cf934380d",
+      "R_m": 0.7873069257187397,
+      "density_edges": [
+        0.0,
+        1.0
+      ],
+      "effective_density_bins": 3,
+      "training_density_hist": [
+        5001,
+        3392,
+        958,
+        25,
+        4
+      ],
+      "training_C3": 6558,
+      "positive_C3_g_n": 3174,
+      "delta_g_m": 0.6312480548187687,
+      "all_train_only": true
+    },
+    "zara01": {
+      "n_train": 27148,
+      "id_sha": "24b182c273b50e8ee80c9f37be1839a51414e5a8d006fff0b6dab8dc04c3d423",
+      "R_m": 0.6912761060358718,
+      "density_edges": [
+        0.0,
+        1.0
+      ],
+      "effective_density_bins": 3,
+      "training_density_hist": [
+        13811,
+        9660,
+        2865,
+        633,
+        132,
+        39,
+        6,
+        2
+      ],
+      "training_C3": 22435,
+      "positive_C3_g_n": 10573,
+      "delta_g_m": 0.8669575251403868,
+      "all_train_only": true
+    },
+    "zara02": {
+      "n_train": 24772,
+      "id_sha": "bbe4eef08900a408b8ff3f347a1a7e79a11e3a4d8c0d0795381bd69e61747f12",
+      "R_m": 0.7102324234460899,
+      "density_edges": [
+        0.0,
+        1.0
+      ],
+      "effective_density_bins": 3,
+      "training_density_hist": [
+        12628,
+        8582,
+        2636,
+        700,
+        169,
+        46,
+        9,
+        2
+      ],
+      "training_C3": 20199,
+      "positive_C3_g_n": 9466,
+      "delta_g_m": 0.9049774886035099,
+      "all_train_only": true
+    }
+  },
+  "records": [
+    {
+      "fold": "eth",
+      "seed": 1,
+      "subset": "P1",
+      "n": 123,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.03181100166381445,
+        "CI": [
+          -0.44293161670216724,
+          -0.025981283081923212,
+          0.2941929587284799
+        ],
+        "tracks": 25
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 110,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.4800499002947409,
+            "CI": [
+              0.331880669994387,
+              0.47790870680338504,
+              0.5970201611804151
+            ],
+            "tracks": 23,
+            "n": 110
+          }
+        },
+        {
+          "bin": 2,
+          "n": 13,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.4482388986309266,
+            "CI": [
+              0.03774857411645562,
+              0.4466826204004024,
+              0.7462999971745802
+            ],
+            "tracks": 8,
+            "n": 13
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 1,
+      "subset": "all",
+      "n": 364,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.3682228298654144,
+        "CI": [
+          -1.2230447777229458,
+          -0.3504827276915375,
+          0.14611344622237418
+        ],
+        "tracks": 44
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 318,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.353170163170903,
+            "CI": [
+              0.19320077744646025,
+              0.35237991295845345,
+              0.4606086539440286
+            ],
+            "tracks": 40,
+            "n": 318
+          }
+        },
+        {
+          "bin": 2,
+          "n": 46,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -0.015052666694510775,
+            "CI": [
+              -0.8342372386669474,
+              -0.016072700236213766,
+              0.49135588050907564
+            ],
+            "tracks": 12,
+            "n": 46
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 1,
+      "subset": "P1_speed0",
+      "n": 16,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 16,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.004726338372258443,
+            "CI": [
+              -0.015486110373709394,
+              0.004726338372258443,
+              0.007687094109824821
+            ],
+            "tracks": 2,
+            "n": 16
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 1,
+      "subset": "P1_speed1",
+      "n": 26,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -1.0894020758894474,
+        "CI": [
+          -1.5056342793552302,
+          -1.0921350913722194,
+          -0.7780128471902172
+        ],
+        "tracks": 6
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 25,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.37833277071904337,
+            "CI": [
+              0.09479374403559548,
+              0.3810657862018153,
+              0.7832596961212723
+            ],
+            "tracks": 5,
+            "n": 25
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -0.711069305170404,
+            "CI": null,
+            "tracks": 1,
+            "n": 1
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 1,
+      "subset": "P1_speed2",
+      "n": 20,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -4.82161990931533,
+        "CI": [
+          -5.058368337389354,
+          -4.82161990931533,
+          -4.097215078181782
+        ],
+        "tracks": 6
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 19,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.6519503007368255,
+            "CI": [
+              0.09303016843177347,
+              0.6519503007368255,
+              0.8835156520478223
+            ],
+            "tracks": 5,
+            "n": 19
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -4.169669608578504,
+            "CI": null,
+            "tracks": 1,
+            "n": 1
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 1,
+      "subset": "P1_speed3",
+      "n": 61,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.11698315986769924,
+        "CI": [
+          -0.11497545377936681,
+          0.14857107182355334,
+          0.3944142763301996
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 50,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.5124827735699864,
+            "CI": [
+              0.32792712190039575,
+              0.5105791895723445,
+              0.6066930834595639
+            ],
+            "tracks": 22,
+            "n": 50
+          }
+        },
+        {
+          "bin": 2,
+          "n": 11,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.6294659334376856,
+            "CI": [
+              0.3800129577007642,
+              0.6374115016724815,
+              0.8261560651625256
+            ],
+            "tracks": 8,
+            "n": 11
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 2,
+      "subset": "P1",
+      "n": 123,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.14414761887632302,
+        "CI": [
+          -0.7668423323624698,
+          -0.14798441881950147,
+          0.31396349009965446
+        ],
+        "tracks": 25
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 110,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.43129415823672446,
+            "CI": [
+              0.2919949292381913,
+              0.43435977082319255,
+              0.5818085665178198
+            ],
+            "tracks": 23,
+            "n": 110
+          }
+        },
+        {
+          "bin": 2,
+          "n": 13,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.2871465393604017,
+            "CI": [
+              -0.31102770185671186,
+              0.28275194416897476,
+              0.6814084326515216
+            ],
+            "tracks": 8,
+            "n": 13
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 2,
+      "subset": "all",
+      "n": 364,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.40436539032037117,
+        "CI": [
+          -1.2970643497760113,
+          -0.39844947237371175,
+          0.09518857934520741
+        ],
+        "tracks": 44
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 318,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.3487959405883396,
+            "CI": [
+              0.18357063321207506,
+              0.3480986137757336,
+              0.4660009623886627
+            ],
+            "tracks": 40,
+            "n": 318
+          }
+        },
+        {
+          "bin": 2,
+          "n": 46,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -0.05556944973203115,
+            "CI": [
+              -0.837313046227812,
+              -0.07107525489686606,
+              0.4458436462753823
+            ],
+            "tracks": 12,
+            "n": 46
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 2,
+      "subset": "P1_speed0",
+      "n": 16,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 16,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.014185768482108285,
+            "CI": [
+              0.004098109450266674,
+              0.014185768482108285,
+              0.08305206790723163
+            ],
+            "tracks": 2,
+            "n": 16
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 2,
+      "subset": "P1_speed1",
+      "n": 26,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -1.3349180427557268,
+        "CI": [
+          -1.7768398150785327,
+          -1.3371897141184816,
+          -1.0161983801715602
+        ],
+        "tracks": 6
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 25,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.368598997796472,
+            "CI": [
+              0.07039753442165797,
+              0.3718734712299159,
+              0.7957560872390154
+            ],
+            "tracks": 5,
+            "n": 25
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -0.9663190449592549,
+            "CI": null,
+            "tracks": 1,
+            "n": 1
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 2,
+      "subset": "P1_speed2",
+      "n": 20,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -8.958809006401628,
+        "CI": [
+          -9.192339869061826,
+          -8.961273661361359,
+          -8.598697718701088
+        ],
+        "tracks": 6
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 19,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.6800976355593837,
+            "CI": [
+              0.45010495670787454,
+              0.680097635559384,
+              0.8852499863903154
+            ],
+            "tracks": 5,
+            "n": 19
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -8.278711370842244,
+            "CI": null,
+            "tracks": 1,
+            "n": 1
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 2,
+      "subset": "P1_speed3",
+      "n": 61,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.1144384042539558,
+        "CI": [
+          -0.21513766533760678,
+          0.14604716989712185,
+          0.43047375613443567
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 50,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.43000502825294695,
+            "CI": [
+              0.2615151100164573,
+              0.4313355625135157,
+              0.5522537464938913
+            ],
+            "tracks": 22,
+            "n": 50
+          }
+        },
+        {
+          "bin": 2,
+          "n": 11,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.5444434325069029,
+            "CI": [
+              0.1864558970542793,
+              0.5576406056903753,
+              0.8022344857794258
+            ],
+            "tracks": 8,
+            "n": 11
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 3,
+      "subset": "P1",
+      "n": 123,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.11792701377634308,
+        "CI": [
+          -0.6820760941514056,
+          -0.1037335911097026,
+          0.25013953590272436
+        ],
+        "tracks": 25
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 110,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.49556620439171595,
+            "CI": [
+              0.33141088628580045,
+              0.4911755727088707,
+              0.6302236472290885
+            ],
+            "tracks": 23,
+            "n": 110
+          }
+        },
+        {
+          "bin": 2,
+          "n": 13,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.3776391906153731,
+            "CI": [
+              -0.15628791961488647,
+              0.37708995277778573,
+              0.7035405258927981
+            ],
+            "tracks": 8,
+            "n": 13
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 3,
+      "subset": "all",
+      "n": 364,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.5292892593212162,
+        "CI": [
+          -1.6288551202573134,
+          -0.49323661710130107,
+          0.1631855279125361
+        ],
+        "tracks": 44
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 318,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.35474695537289536,
+            "CI": [
+              0.19310946637290036,
+              0.35507657342617704,
+              0.46834665783283724
+            ],
+            "tracks": 40,
+            "n": 318
+          }
+        },
+        {
+          "bin": 2,
+          "n": 46,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -0.17454230394832027,
+            "CI": [
+              -1.2276660960697,
+              -0.16734470067882135,
+              0.4941106991852833
+            ],
+            "tracks": 12,
+            "n": 46
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 3,
+      "subset": "P1_speed0",
+      "n": 16,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 16,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.04136495093925707,
+            "CI": [
+              0.030844720639338075,
+              0.04136495093925707,
+              0.04290597313861921
+            ],
+            "tracks": 2,
+            "n": 16
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 3,
+      "subset": "P1_speed1",
+      "n": 26,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -1.639951320143843,
+        "CI": [
+          -2.049044698691795,
+          -1.641925742927121,
+          -1.322961396278193
+        ],
+        "tracks": 6
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 25,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.3912833633536945,
+            "CI": [
+              0.08497860784924671,
+              0.3962414797495135,
+              0.785167926564343
+            ],
+            "tracks": 5,
+            "n": 25
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -1.2486679567901486,
+            "CI": null,
+            "tracks": 1,
+            "n": 1
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 3,
+      "subset": "P1_speed2",
+      "n": 20,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -6.4025126420774,
+        "CI": [
+          -6.653897282296109,
+          -6.405462825218931,
+          -5.622457085414677
+        ],
+        "tracks": 6
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 19,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.6684037810269339,
+            "CI": [
+              0.12406341038208057,
+              0.6684037810269339,
+              0.9187630323646967
+            ],
+            "tracks": 5,
+            "n": 19
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -5.7341088610504665,
+            "CI": null,
+            "tracks": 1,
+            "n": 1
+          }
+        }
+      ]
+    },
+    {
+      "fold": "eth",
+      "seed": 3,
+      "subset": "P1_speed3",
+      "n": 61,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.09984414154507948,
+        "CI": [
+          -0.10571102333881974,
+          0.12205915729500633,
+          0.3863806041681866
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 50,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.525733909565919,
+            "CI": [
+              0.31810273301610525,
+              0.5221798010300837,
+              0.6460097998512153
+            ],
+            "tracks": 22,
+            "n": 50
+          }
+        },
+        {
+          "bin": 2,
+          "n": 11,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.6255780511109985,
+            "CI": [
+              0.4297824562001433,
+              0.6347944249723199,
+              0.8089045760673274
+            ],
+            "tracks": 8,
+            "n": 11
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "subset": "P1",
+      "n": 76,
+      "speed_bin": null,
+      "density_slope": {
+        "value": 0.1318462249497253,
+        "CI": [
+          -0.23839073787450854,
+          0.13475202311683765,
+          0.4571318838245269
+        ],
+        "tracks": 40
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 58,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.338553106147498,
+            "CI": [
+              0.20323873291222022,
+              0.3384224729900881,
+              0.468725804636488
+            ],
+            "tracks": 29,
+            "n": 58
+          }
+        },
+        {
+          "bin": 2,
+          "n": 18,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.4703993310972231,
+            "CI": [
+              0.11578200025644775,
+              0.4705976313387549,
+              0.7587764040741297
+            ],
+            "tracks": 11,
+            "n": 18
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "subset": "all",
+      "n": 1197,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.3177663650111239,
+        "CI": [
+          -0.7265500724884216,
+          -0.3154680706894864,
+          0.11893041931305899
+        ],
+        "tracks": 122
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 888,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.1712377909216647,
+            "CI": [
+              0.012637965944994075,
+              0.16859098557129398,
+              0.29007569221737295
+            ],
+            "tracks": 102,
+            "n": 888
+          }
+        },
+        {
+          "bin": 2,
+          "n": 309,
+          "density_mean": 1.0097087378640777,
+          "skill": {
+            "value": -0.14961368442937317,
+            "CI": [
+              -0.5573369324988996,
+              -0.14714857246416846,
+              0.24933571187787176
+            ],
+            "tracks": 41,
+            "n": 309
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "subset": "P1_speed0",
+      "n": 0,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "subset": "P1_speed1",
+      "n": 29,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": 0.35011041682425154,
+        "CI": [
+          0.058065493104617366,
+          0.3241769963196074,
+          0.6589697680482945
+        ],
+        "tracks": 14
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 22,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.5139481392842655,
+            "CI": [
+              0.2122371360968495,
+              0.5324885514714118,
+              0.7427421794620148
+            ],
+            "tracks": 11,
+            "n": 22
+          }
+        },
+        {
+          "bin": 2,
+          "n": 7,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.864058556108517,
+            "CI": [
+              0.7341438446410675,
+              0.864058556108517,
+              0.9234287964703879
+            ],
+            "tracks": 3,
+            "n": 7
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "subset": "P1_speed2",
+      "n": 11,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -0.3705640399193797,
+        "CI": [
+          -1.1208865750683263,
+          -0.33772333111615654,
+          0.2653345301409532
+        ],
+        "tracks": 10
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 8,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.42409410533853165,
+            "CI": [
+              0.06145070768574951,
+              0.42309466670047324,
+              0.6397543956923092
+            ],
+            "tracks": 7,
+            "n": 8
+          }
+        },
+        {
+          "bin": 2,
+          "n": 3,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.05353006541915195,
+            "CI": [
+              -0.6327598002251564,
+              0.05353006541915195,
+              0.5341248926323352
+            ],
+            "tracks": 3,
+            "n": 3
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "subset": "P1_speed3",
+      "n": 36,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.01349321727842967,
+        "CI": [
+          -0.46949000923353207,
+          0.04457981754371376,
+          0.4584122456499841
+        ],
+        "tracks": 23
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 28,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.24489389237172254,
+            "CI": [
+              0.04948969238842986,
+              0.24261229641254833,
+              0.35640401084251805
+            ],
+            "tracks": 16,
+            "n": 28
+          }
+        },
+        {
+          "bin": 2,
+          "n": 8,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.258387109650152,
+            "CI": [
+              -0.1744743833954076,
+              0.276103738093571,
+              0.6206516897886691
+            ],
+            "tracks": 7,
+            "n": 8
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 2,
+      "subset": "P1",
+      "n": 76,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.06767041609632118,
+        "CI": [
+          -0.5435824836184822,
+          -0.07835105476428034,
+          0.3430473296748496
+        ],
+        "tracks": 40
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 58,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.2839446807568048,
+            "CI": [
+              0.12616304460264705,
+              0.284947881831263,
+              0.44275026388346456
+            ],
+            "tracks": 29,
+            "n": 58
+          }
+        },
+        {
+          "bin": 2,
+          "n": 18,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.21627426466048338,
+            "CI": [
+              -0.2247734369877684,
+              0.2190461473262304,
+              0.5963906358070682
+            ],
+            "tracks": 11,
+            "n": 18
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 2,
+      "subset": "all",
+      "n": 1197,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.37398556472145283,
+        "CI": [
+          -0.7757417385691004,
+          -0.3786798362496258,
+          0.04148402872047509
+        ],
+        "tracks": 122
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 888,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.12553435666161372,
+            "CI": [
+              -0.04994549191132239,
+              0.12087339156856403,
+              0.25662120120382287
+            ],
+            "tracks": 102,
+            "n": 888
+          }
+        },
+        {
+          "bin": 2,
+          "n": 309,
+          "density_mean": 1.0097087378640777,
+          "skill": {
+            "value": -0.25208213587266837,
+            "CI": [
+              -0.6239076906469005,
+              -0.2564550252027993,
+              0.1262615849964022
+            ],
+            "tracks": 41,
+            "n": 309
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 2,
+      "subset": "P1_speed0",
+      "n": 0,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 2,
+      "subset": "P1_speed1",
+      "n": 29,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": 0.07071634589531595,
+        "CI": [
+          -0.7250648959974171,
+          0.05659473622458566,
+          0.4990927233536235
+        ],
+        "tracks": 14
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 22,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.5463649646746445,
+            "CI": [
+              0.28410640044632174,
+              0.553381463078062,
+              0.7590029255995092
+            ],
+            "tracks": 11,
+            "n": 22
+          }
+        },
+        {
+          "bin": 2,
+          "n": 7,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.6170813105699604,
+            "CI": [
+              -0.09948298303103753,
+              0.6170813105699604,
+              0.9115224781712619
+            ],
+            "tracks": 3,
+            "n": 7
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 2,
+      "subset": "P1_speed2",
+      "n": 11,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -0.6306425269008598,
+        "CI": [
+          -1.567584332763751,
+          -0.6305277194864334,
+          0.3189734667173847
+        ],
+        "tracks": 10
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 8,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.3271700262169013,
+            "CI": [
+              -0.1422934813383281,
+              0.30686002284250347,
+              0.6173577073899764
+            ],
+            "tracks": 7,
+            "n": 8
+          }
+        },
+        {
+          "bin": 2,
+          "n": 3,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -0.3034725006839585,
+            "CI": [
+              -1.1407629557175247,
+              -0.3034725006839585,
+              0.5384003987334289
+            ],
+            "tracks": 3,
+            "n": 3
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 2,
+      "subset": "P1_speed3",
+      "n": 36,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": -0.1234170494777157,
+        "CI": [
+          -0.723370310862705,
+          -0.10531786109829305,
+          0.38416482051164075
+        ],
+        "tracks": 23
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 28,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.16122159435258276,
+            "CI": [
+              -0.09687141432677324,
+              0.1580047004701185,
+              0.32516356739824653
+            ],
+            "tracks": 16,
+            "n": 28
+          }
+        },
+        {
+          "bin": 2,
+          "n": 8,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.03780454487486684,
+            "CI": [
+              -0.48776505332567965,
+              0.03780454487486706,
+              0.4285039984726826
+            ],
+            "tracks": 7,
+            "n": 8
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 3,
+      "subset": "P1",
+      "n": 76,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.10013788664592271,
+        "CI": [
+          -0.6338292429725223,
+          -0.10132723327622661,
+          0.38458321008060115
+        ],
+        "tracks": 40
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 58,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.31953718756266736,
+            "CI": [
+              0.09456219225263462,
+              0.3245171347587053,
+              0.4907053922321767
+            ],
+            "tracks": 29,
+            "n": 58
+          }
+        },
+        {
+          "bin": 2,
+          "n": 18,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.2193993009167443,
+            "CI": [
+              -0.3167185450377368,
+              0.22394274944065112,
+              0.6284745621772737
+            ],
+            "tracks": 11,
+            "n": 18
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 3,
+      "subset": "all",
+      "n": 1197,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.39984158337368836,
+        "CI": [
+          -0.825767992004543,
+          -0.4032124756350419,
+          0.07914794696367528
+        ],
+        "tracks": 122
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 888,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.11843441466015214,
+            "CI": [
+              -0.11049671667929294,
+              0.11330036178269637,
+              0.27252973638996913
+            ],
+            "tracks": 102,
+            "n": 888
+          }
+        },
+        {
+          "bin": 2,
+          "n": 309,
+          "density_mean": 1.0097087378640777,
+          "skill": {
+            "value": -0.2852891258336685,
+            "CI": [
+              -0.6972063156047912,
+              -0.29156415762127796,
+              0.12313926643803802
+            ],
+            "tracks": 41,
+            "n": 309
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 3,
+      "subset": "P1_speed0",
+      "n": 0,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 3,
+      "subset": "P1_speed1",
+      "n": 29,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": 0.30712183485601896,
+        "CI": [
+          0.007541491044879019,
+          0.2843714750315961,
+          0.6794624944104267
+        ],
+        "tracks": 14
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 22,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.5435361962733167,
+            "CI": [
+              0.17690540166750193,
+              0.5582760435830307,
+              0.8301276105814596
+            ],
+            "tracks": 11,
+            "n": 22
+          }
+        },
+        {
+          "bin": 2,
+          "n": 7,
+          "density_mean": 1.0,
+          "skill": {
+            "value": 0.8506580311293357,
+            "CI": [
+              0.7798473724877228,
+              0.8506580311293357,
+              0.8744776226632259
+            ],
+            "tracks": 3,
+            "n": 7
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 3,
+      "subset": "P1_speed2",
+      "n": 11,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -1.117383486709172,
+        "CI": [
+          -3.000288412576104,
+          -1.0562709008107674,
+          0.15809519529487417
+        ],
+        "tracks": 10
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 8,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.5059943140492211,
+            "CI": [
+              0.09888996601945255,
+              0.5040659810635097,
+              0.7644972697804918
+            ],
+            "tracks": 7,
+            "n": 8
+          }
+        },
+        {
+          "bin": 2,
+          "n": 3,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -0.611389172659951,
+            "CI": [
+              -2.425723411173987,
+              -0.611389172659951,
+              0.5385285348685743
+            ],
+            "tracks": 3,
+            "n": 3
+          }
+        }
+      ]
+    },
+    {
+      "fold": "hotel",
+      "seed": 3,
+      "subset": "P1_speed3",
+      "n": 36,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": -0.24096429394877739,
+        "CI": [
+          -0.842336131724241,
+          -0.20951057160650977,
+          0.34085255840117745
+        ],
+        "tracks": 23
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 28,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.18406701031065176,
+            "CI": [
+              -0.21603392351141754,
+              0.17460722132532347,
+              0.39902554985519645
+            ],
+            "tracks": 16,
+            "n": 28
+          }
+        },
+        {
+          "bin": 2,
+          "n": 8,
+          "density_mean": 1.0,
+          "skill": {
+            "value": -0.05689728363812585,
+            "CI": [
+              -0.5660596774313166,
+              -0.04901329325352877,
+              0.306361182972817
+            ],
+            "tracks": 7,
+            "n": 8
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "subset": "P1",
+      "n": 8793,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.03306166822251247,
+        "CI": [
+          -0.05979825566218422,
+          -0.03335674314898453,
+          -0.00599408336941664
+        ],
+        "tracks": 653
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 3777,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.03815055252489885,
+            "CI": [
+              -0.0660766120376983,
+              -0.03787910072069489,
+              -0.010349313108250584
+            ],
+            "tracks": 490,
+            "n": 3777
+          }
+        },
+        {
+          "bin": 2,
+          "n": 5016,
+          "density_mean": 1.4389952153110048,
+          "skill": {
+            "value": -0.0857261349072922,
+            "CI": [
+              -0.11392131767704694,
+              -0.08572246728482202,
+              -0.058425151051187965
+            ],
+            "tracks": 540,
+            "n": 5016
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "subset": "all",
+      "n": 24334,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.07000691183717155,
+        "CI": [
+          -0.09557597010008348,
+          -0.07043808109704919,
+          -0.04612172368769137
+        ],
+        "tracks": 722
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 9670,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.09937007496833705,
+            "CI": [
+              -0.1271416229602929,
+              -0.09962484090865231,
+              -0.07395182071957389
+            ],
+            "tracks": 604,
+            "n": 9670
+          }
+        },
+        {
+          "bin": 2,
+          "n": 14664,
+          "density_mean": 1.494544462629569,
+          "skill": {
+            "value": -0.2039985174003791,
+            "CI": [
+              -0.23273765197033422,
+              -0.2043074421861919,
+              -0.1758503771101955
+            ],
+            "tracks": 623,
+            "n": 14664
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "subset": "P1_speed0",
+      "n": 155,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": -0.010249889640791593,
+        "CI": [
+          -0.033649670724493014,
+          -0.009682009309695063,
+          0.01983599016571018
+        ],
+        "tracks": 32
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 33,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.007787549043705155,
+            "CI": [
+              -0.06197195088328668,
+              -0.006680931565980819,
+              0.026845276519795607
+            ],
+            "tracks": 13,
+            "n": 33
+          }
+        },
+        {
+          "bin": 2,
+          "n": 122,
+          "density_mean": 2.057377049180328,
+          "skill": {
+            "value": -0.028875436747300975,
+            "CI": [
+              -0.05723679073731493,
+              -0.026957982377467715,
+              -0.0030723506915525103
+            ],
+            "tracks": 23,
+            "n": 122
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "subset": "P1_speed1",
+      "n": 5910,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.038601926552211674,
+        "CI": [
+          -0.07638327395007674,
+          -0.03932612507893869,
+          -0.0022656370594309368
+        ],
+        "tracks": 549
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 2276,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.078808317450894,
+            "CI": [
+              -0.1227482826283848,
+              -0.07861299620508255,
+              -0.03374071418173535
+            ],
+            "tracks": 370,
+            "n": 2276
+          }
+        },
+        {
+          "bin": 2,
+          "n": 3634,
+          "density_mean": 1.512107870115575,
+          "skill": {
+            "value": -0.13717859439211755,
+            "CI": [
+              -0.1770420172899223,
+              -0.137416814059642,
+              -0.09851048510125839
+            ],
+            "tracks": 453,
+            "n": 3634
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "subset": "P1_speed2",
+      "n": 1984,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": 0.011005907896601726,
+        "CI": [
+          -0.026788374173710224,
+          0.011203962561182966,
+          0.04953122702916527
+        ],
+        "tracks": 387
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 975,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.027768396794301875,
+            "CI": [
+              -0.060904239219738754,
+              -0.028235546629391983,
+              0.005146209852324365
+            ],
+            "tracks": 257,
+            "n": 975
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1009,
+          "density_mean": 1.1892963330029733,
+          "skill": {
+            "value": -0.014679110891506308,
+            "CI": [
+              -0.04512291973444772,
+              -0.014963711266105295,
+              0.01868569785466451
+            ],
+            "tracks": 284,
+            "n": 1009
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "subset": "P1_speed3",
+      "n": 744,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.04590418103394744,
+        "CI": [
+          -0.011879879724052841,
+          0.04666662680661314,
+          0.1030332145929363
+        ],
+        "tracks": 185
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 493,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.06369275706610622,
+            "CI": [
+              0.016161078444137566,
+              0.06337730774268086,
+              0.11006712968675662
+            ],
+            "tracks": 139,
+            "n": 493
+          }
+        },
+        {
+          "bin": 2,
+          "n": 251,
+          "density_mean": 1.0836653386454183,
+          "skill": {
+            "value": 0.11343752695149945,
+            "CI": [
+              0.06792829309154451,
+              0.11480055648223958,
+              0.16006851075695533
+            ],
+            "tracks": 99,
+            "n": 251
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 2,
+      "subset": "P1",
+      "n": 8793,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.04127291378175065,
+        "CI": [
+          -0.0685497155305012,
+          -0.04156005746109896,
+          -0.013423157452790773
+        ],
+        "tracks": 653
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 3777,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.028052361255406666,
+            "CI": [
+              -0.05900395628414226,
+              -0.02757149278387161,
+              0.0011700693890274309
+            ],
+            "tracks": 490,
+            "n": 3777
+          }
+        },
+        {
+          "bin": 2,
+          "n": 5016,
+          "density_mean": 1.4389952153110048,
+          "skill": {
+            "value": -0.08744388670928727,
+            "CI": [
+              -0.11465103366201333,
+              -0.08732683952746012,
+              -0.0612286129334261
+            ],
+            "tracks": 540,
+            "n": 5016
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 2,
+      "subset": "all",
+      "n": 24334,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.07620008145386191,
+        "CI": [
+          -0.10407089614676306,
+          -0.0767247422093838,
+          -0.050549672536756615
+        ],
+        "tracks": 722
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 9670,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.10294208456392151,
+            "CI": [
+              -0.13377985497634537,
+              -0.10260652011987415,
+              -0.0725708813206119
+            ],
+            "tracks": 604,
+            "n": 9670
+          }
+        },
+        {
+          "bin": 2,
+          "n": 14664,
+          "density_mean": 1.494544462629569,
+          "skill": {
+            "value": -0.21682649435271228,
+            "CI": [
+              -0.24701751624940785,
+              -0.21743072428498367,
+              -0.1869231085308861
+            ],
+            "tracks": 623,
+            "n": 14664
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 2,
+      "subset": "P1_speed0",
+      "n": 155,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": -0.001905997257070264,
+        "CI": [
+          -0.01717900001751145,
+          -0.0003290054023193922,
+          0.023977067140810382
+        ],
+        "tracks": 32
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 33,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.031472017015698794,
+            "CI": [
+              -0.07872632334617574,
+              -0.03359080070002707,
+              -0.002767976436137385
+            ],
+            "tracks": 13,
+            "n": 33
+          }
+        },
+        {
+          "bin": 2,
+          "n": 122,
+          "density_mean": 2.057377049180328,
+          "skill": {
+            "value": -0.03539337202819581,
+            "CI": [
+              -0.050147987261507085,
+              -0.035019304429167564,
+              -0.02287962887880145
+            ],
+            "tracks": 23,
+            "n": 122
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 2,
+      "subset": "P1_speed1",
+      "n": 5910,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.03881625146678346,
+        "CI": [
+          -0.07584628304035237,
+          -0.0399317665439492,
+          -0.0006703980972130915
+        ],
+        "tracks": 549
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 2276,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.08736514246520377,
+            "CI": [
+              -0.13302969036330875,
+              -0.08774167443843583,
+              -0.0428819208438922
+            ],
+            "tracks": 370,
+            "n": 2276
+          }
+        },
+        {
+          "bin": 2,
+          "n": 3634,
+          "density_mean": 1.512107870115575,
+          "skill": {
+            "value": -0.14605950179651206,
+            "CI": [
+              -0.1837420777529737,
+              -0.14612854858131352,
+              -0.10714983268327323
+            ],
+            "tracks": 453,
+            "n": 3634
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 2,
+      "subset": "P1_speed2",
+      "n": 1984,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": 0.006423561467595378,
+        "CI": [
+          -0.03449413145672502,
+          0.007213983743683796,
+          0.047362946633362366
+        ],
+        "tracks": 387
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 975,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.0051188267632797935,
+            "CI": [
+              -0.04370158759697352,
+              -0.005915124959850582,
+              0.032165245328380505
+            ],
+            "tracks": 257,
+            "n": 975
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1009,
+          "density_mean": 1.1892963330029733,
+          "skill": {
+            "value": 0.0025206913349493654,
+            "CI": [
+              -0.03115337783038144,
+              0.0028895433568399964,
+              0.03498922592208526
+            ],
+            "tracks": 284,
+            "n": 1009
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 2,
+      "subset": "P1_speed3",
+      "n": 744,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.007085080925945367,
+        "CI": [
+          -0.055628876000979974,
+          0.007401337708028971,
+          0.07479161766262041
+        ],
+        "tracks": 185
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 493,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.10997683858566543,
+            "CI": [
+              0.05905203750974157,
+              0.11039662160249458,
+              0.16052588486156397
+            ],
+            "tracks": 139,
+            "n": 493
+          }
+        },
+        {
+          "bin": 2,
+          "n": 251,
+          "density_mean": 1.0836653386454183,
+          "skill": {
+            "value": 0.1176546952066101,
+            "CI": [
+              0.06929710302631978,
+              0.1192612382250291,
+              0.17305385954259564
+            ],
+            "tracks": 99,
+            "n": 251
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 3,
+      "subset": "P1",
+      "n": 8793,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.04223334679312115,
+        "CI": [
+          -0.06636928456933858,
+          -0.04257012288779584,
+          -0.01810704315124965
+        ],
+        "tracks": 653
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 3777,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.008275070886776037,
+            "CI": [
+              -0.0353036709168034,
+              -0.007868809632564755,
+              0.02010736941634207
+            ],
+            "tracks": 490,
+            "n": 3777
+          }
+        },
+        {
+          "bin": 2,
+          "n": 5016,
+          "density_mean": 1.4389952153110048,
+          "skill": {
+            "value": -0.0690486548486462,
+            "CI": [
+              -0.09494112106900969,
+              -0.06908065506379624,
+              -0.042791424289039835
+            ],
+            "tracks": 540,
+            "n": 5016
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 3,
+      "subset": "all",
+      "n": 24334,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.07829925848974416,
+        "CI": [
+          -0.10234719727434874,
+          -0.07846142984608051,
+          -0.05409653568936266
+        ],
+        "tracks": 722
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 9670,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.07688664090251329,
+            "CI": [
+              -0.10623399720408373,
+              -0.07697898154523741,
+              -0.05082881575396972
+            ],
+            "tracks": 604,
+            "n": 9670
+          }
+        },
+        {
+          "bin": 2,
+          "n": 14664,
+          "density_mean": 1.494544462629569,
+          "skill": {
+            "value": -0.19390836410636303,
+            "CI": [
+              -0.2217072708119667,
+              -0.1944103850451434,
+              -0.16627556325139214
+            ],
+            "tracks": 623,
+            "n": 14664
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 3,
+      "subset": "P1_speed0",
+      "n": 155,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": -0.0105077446862159,
+        "CI": [
+          -0.02906650520071728,
+          -0.009394645585630787,
+          0.015444288159410503
+        ],
+        "tracks": 32
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 33,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.016269675389505744,
+            "CI": [
+              -0.0659744465205891,
+              -0.017881671527077536,
+              0.01970583387278939
+            ],
+            "tracks": 13,
+            "n": 33
+          }
+        },
+        {
+          "bin": 2,
+          "n": 122,
+          "density_mean": 2.057377049180328,
+          "skill": {
+            "value": -0.03788806814557266,
+            "CI": [
+              -0.050222096664608015,
+              -0.03774124286076852,
+              -0.025723022612769684
+            ],
+            "tracks": 23,
+            "n": 122
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 3,
+      "subset": "P1_speed1",
+      "n": 5910,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.045320454876049104,
+        "CI": [
+          -0.08052444731973138,
+          -0.046114550118550646,
+          -0.00949154101779561
+        ],
+        "tracks": 549
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 2276,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.06304891060148954,
+            "CI": [
+              -0.1053110243723552,
+              -0.06288922119159068,
+              -0.021258654162852133
+            ],
+            "tracks": 370,
+            "n": 2276
+          }
+        },
+        {
+          "bin": 2,
+          "n": 3634,
+          "density_mean": 1.512107870115575,
+          "skill": {
+            "value": -0.13157832709678008,
+            "CI": [
+              -0.16452020859748998,
+              -0.13151079164814228,
+              -0.09635283922328648
+            ],
+            "tracks": 453,
+            "n": 3634
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 3,
+      "subset": "P1_speed2",
+      "n": 1984,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": 0.003660927580914244,
+        "CI": [
+          -0.03433784870196565,
+          0.003462366584743798,
+          0.04202545273979754
+        ],
+        "tracks": 387
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 975,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.03398841487648274,
+            "CI": [
+              0.0014446199928399666,
+              0.033695359307396144,
+              0.06702029556476939
+            ],
+            "tracks": 257,
+            "n": 975
+          }
+        },
+        {
+          "bin": 2,
+          "n": 1009,
+          "density_mean": 1.1892963330029733,
+          "skill": {
+            "value": 0.0383423426238525,
+            "CI": [
+              0.008067869498922223,
+              0.03813015122433061,
+              0.07092472285244746
+            ],
+            "tracks": 284,
+            "n": 1009
+          }
+        }
+      ]
+    },
+    {
+      "fold": "univ",
+      "seed": 3,
+      "subset": "P1_speed3",
+      "n": 744,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.035209600524206346,
+        "CI": [
+          -0.03608890297963385,
+          0.033705822431956745,
+          0.11208496415733396
+        ],
+        "tracks": 185
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 493,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.08671229731208407,
+            "CI": [
+              0.027291052833769636,
+              0.08731087927641618,
+              0.14942300250137688
+            ],
+            "tracks": 139,
+            "n": 493
+          }
+        },
+        {
+          "bin": 2,
+          "n": 251,
+          "density_mean": 1.0836653386454183,
+          "skill": {
+            "value": 0.12486772098771759,
+            "CI": [
+              0.042914691392203164,
+              0.12621843804936567,
+              0.20455946854571633
+            ],
+            "tracks": 99,
+            "n": 251
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "subset": "P1",
+      "n": 289,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.039118480578398646,
+        "CI": [
+          -0.19630273660793482,
+          -0.037166510363597555,
+          0.11797384114207525
+        ],
+        "tracks": 63
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 237,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.11889227475113617,
+            "CI": [
+              0.02482505112232687,
+              0.11782203002402625,
+              0.19071768518883278
+            ],
+            "tracks": 52,
+            "n": 237
+          }
+        },
+        {
+          "bin": 2,
+          "n": 52,
+          "density_mean": 1.1153846153846154,
+          "skill": {
+            "value": 0.0752601233367679,
+            "CI": [
+              -0.07771887224700519,
+              0.07861053323545475,
+              0.22031448363869838
+            ],
+            "tracks": 22,
+            "n": 52
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "subset": "all",
+      "n": 2356,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.0370858574560035,
+        "CI": [
+          -0.1529873459053094,
+          -0.035281086400628076,
+          0.0790440352069923
+        ],
+        "tracks": 142
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 1984,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.035698871929097264,
+            "CI": [
+              -0.03548713613951259,
+              0.035932179973697076,
+              0.09523707477651161
+            ],
+            "tracks": 135,
+            "n": 1984
+          }
+        },
+        {
+          "bin": 2,
+          "n": 372,
+          "density_mean": 1.053763440860215,
+          "skill": {
+            "value": -0.0033808488309918783,
+            "CI": [
+              -0.11800320391429525,
+              -0.003222474336000314,
+              0.10524948527334665
+            ],
+            "tracks": 53,
+            "n": 372
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "subset": "P1_speed0",
+      "n": 12,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 12,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.012905341205258436,
+            "CI": [
+              -0.045536204926249324,
+              -0.012905341205258436,
+              0.02641963432853167
+            ],
+            "tracks": 2,
+            "n": 12
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "subset": "P1_speed1",
+      "n": 51,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.31372696952521323,
+        "CI": [
+          -0.8010045957390554,
+          -0.2872922146248542,
+          -0.02885646102048014
+        ],
+        "tracks": 14
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 40,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.07715385859622226,
+            "CI": [
+              -0.13856180256306086,
+              0.07233000178049426,
+              0.206806914487918
+            ],
+            "tracks": 12,
+            "n": 40
+          }
+        },
+        {
+          "bin": 2,
+          "n": 11,
+          "density_mean": 1.0909090909090908,
+          "skill": {
+            "value": -0.2650937445221919,
+            "CI": [
+              -0.7854701856011483,
+              -0.2650937445221919,
+              -0.04672573254314161
+            ],
+            "tracks": 4,
+            "n": 11
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "subset": "P1_speed2",
+      "n": 79,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -0.15591619675751597,
+        "CI": [
+          -0.524750497906602,
+          -0.14397785681975736,
+          0.2741652931656199
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 70,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.08740537438092644,
+            "CI": [
+              -0.16374511893691088,
+              0.08934797730742666,
+              0.24059728093337723
+            ],
+            "tracks": 20,
+            "n": 70
+          }
+        },
+        {
+          "bin": 2,
+          "n": 9,
+          "density_mean": 1.1111111111111112,
+          "skill": {
+            "value": -0.08583484423853571,
+            "CI": [
+              -0.4241513672061325,
+              -0.08583484423853571,
+              0.28654947137622033
+            ],
+            "tracks": 6,
+            "n": 9
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "subset": "P1_speed3",
+      "n": 147,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.02093657252565498,
+        "CI": [
+          -0.13424156679092478,
+          0.024107220451316733,
+          0.17404924699326618
+        ],
+        "tracks": 47
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 115,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.20297000586467184,
+            "CI": [
+              0.08632359285094197,
+              0.20719358333617083,
+              0.3159749963546867
+            ],
+            "tracks": 40,
+            "n": 115
+          }
+        },
+        {
+          "bin": 2,
+          "n": 32,
+          "density_mean": 1.125,
+          "skill": {
+            "value": 0.2265236499560339,
+            "CI": [
+              0.09950883013900999,
+              0.22606064038607754,
+              0.37012703046900813
+            ],
+            "tracks": 14,
+            "n": 32
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 2,
+      "subset": "P1",
+      "n": 289,
+      "speed_bin": null,
+      "density_slope": {
+        "value": 0.013764656563356919,
+        "CI": [
+          -0.1547350441667951,
+          0.01691135126989876,
+          0.17216681381874863
+        ],
+        "tracks": 63
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 237,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.11188448061187684,
+            "CI": [
+              0.021199451210401118,
+              0.11169862636652461,
+              0.1860969084440229
+            ],
+            "tracks": 52,
+            "n": 237
+          }
+        },
+        {
+          "bin": 2,
+          "n": 52,
+          "density_mean": 1.1153846153846154,
+          "skill": {
+            "value": 0.12723736677869757,
+            "CI": [
+              -0.03965647186947865,
+              0.1306049269960216,
+              0.2736843194464219
+            ],
+            "tracks": 22,
+            "n": 52
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 2,
+      "subset": "all",
+      "n": 2356,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.00547211252664707,
+        "CI": [
+          -0.13474681304677052,
+          -0.003503275787453881,
+          0.12192529012084023
+        ],
+        "tracks": 142
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 1984,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.037779424587343624,
+            "CI": [
+              -0.02840876539335378,
+              0.03742723930685421,
+              0.09432419583066441
+            ],
+            "tracks": 135,
+            "n": 1984
+          }
+        },
+        {
+          "bin": 2,
+          "n": 372,
+          "density_mean": 1.053763440860215,
+          "skill": {
+            "value": 0.03201311246248939,
+            "CI": [
+              -0.10437693163220031,
+              0.0340536231739858,
+              0.14879311067573187
+            ],
+            "tracks": 53,
+            "n": 372
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 2,
+      "subset": "P1_speed0",
+      "n": 12,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 12,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.007461149302462777,
+            "CI": [
+              -0.028592461689200377,
+              -0.007461149302462777,
+              0.018005180663874576
+            ],
+            "tracks": 2,
+            "n": 12
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 2,
+      "subset": "P1_speed1",
+      "n": 51,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.37440613753816826,
+        "CI": [
+          -1.0285389606903614,
+          -0.33158375870367707,
+          -0.05579891380146781
+        ],
+        "tracks": 14
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 40,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.18456272209667723,
+            "CI": [
+              -0.032102925884231415,
+              0.1810850273804992,
+              0.30879156327922036
+            ],
+            "tracks": 12,
+            "n": 40
+          }
+        },
+        {
+          "bin": 2,
+          "n": 11,
+          "density_mean": 1.0909090909090908,
+          "skill": {
+            "value": -0.22388033703586974,
+            "CI": [
+              -0.9077006991288117,
+              -0.22388033703586974,
+              0.04103976209402049
+            ],
+            "tracks": 4,
+            "n": 11
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 2,
+      "subset": "P1_speed2",
+      "n": 79,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -0.10024472782667089,
+        "CI": [
+          -0.41647014733585563,
+          -0.09479365086962126,
+          0.28633972454850976
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 70,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.08517247579694465,
+            "CI": [
+              -0.11510287488083054,
+              0.0872937736934567,
+              0.22427032131334573
+            ],
+            "tracks": 20,
+            "n": 70
+          }
+        },
+        {
+          "bin": 2,
+          "n": 9,
+          "density_mean": 1.1111111111111112,
+          "skill": {
+            "value": -0.02621055512157855,
+            "CI": [
+              -0.34257967343647333,
+              -0.02621055512157855,
+              0.26782161170538077
+            ],
+            "tracks": 6,
+            "n": 9
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 2,
+      "subset": "P1_speed3",
+      "n": 147,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.12144479656501125,
+        "CI": [
+          -0.03313752001292414,
+          0.12229903538634568,
+          0.269371068298147
+        ],
+        "tracks": 47
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 115,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.14372672548942345,
+            "CI": [
+              0.01360438188435341,
+              0.14929382515696993,
+              0.2634307980955792
+            ],
+            "tracks": 40,
+            "n": 115
+          }
+        },
+        {
+          "bin": 2,
+          "n": 32,
+          "density_mean": 1.125,
+          "skill": {
+            "value": 0.2803521216250612,
+            "CI": [
+              0.1504677161706336,
+              0.2817459297302212,
+              0.3976393002238274
+            ],
+            "tracks": 14,
+            "n": 32
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 3,
+      "subset": "P1",
+      "n": 289,
+      "speed_bin": null,
+      "density_slope": {
+        "value": 0.03860662377765428,
+        "CI": [
+          -0.10187657334671364,
+          0.03921510845408208,
+          0.18450720314448926
+        ],
+        "tracks": 63
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 237,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.1274185131660982,
+            "CI": [
+              0.04996035097264246,
+              0.12649153563896487,
+              0.1961417860638956
+            ],
+            "tracks": 52,
+            "n": 237
+          }
+        },
+        {
+          "bin": 2,
+          "n": 52,
+          "density_mean": 1.1153846153846154,
+          "skill": {
+            "value": 0.17047974737963556,
+            "CI": [
+              0.029567491242032323,
+              0.1743819623170494,
+              0.3068459763241868
+            ],
+            "tracks": 22,
+            "n": 52
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 3,
+      "subset": "all",
+      "n": 2356,
+      "speed_bin": null,
+      "density_slope": {
+        "value": 0.02512807980500852,
+        "CI": [
+          -0.10674161357226007,
+          0.026966879237796615,
+          0.14706162532467018
+        ],
+        "tracks": 142
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 1984,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.045876347549634544,
+            "CI": [
+              -0.018150380226693064,
+              0.04600103881594553,
+              0.10089823032616328
+            ],
+            "tracks": 135,
+            "n": 1984
+          }
+        },
+        {
+          "bin": 2,
+          "n": 372,
+          "density_mean": 1.053763440860215,
+          "skill": {
+            "value": 0.07235539938717028,
+            "CI": [
+              -0.05907710465917993,
+              0.07753250491325003,
+              0.18903794655486186
+            ],
+            "tracks": 53,
+            "n": 372
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 3,
+      "subset": "P1_speed0",
+      "n": 12,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": null,
+        "CI": null,
+        "reason": "LESS_THAN_TWO_NONEMPTY_BINS"
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 12,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.024994785227102856,
+            "CI": [
+              -0.04644927225105211,
+              -0.024994785227102856,
+              0.0008610175650276553
+            ],
+            "tracks": 2,
+            "n": 12
+          }
+        },
+        {
+          "bin": 2,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 3,
+      "subset": "P1_speed1",
+      "n": 51,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.23847485301148258,
+        "CI": [
+          -0.8849631403398426,
+          -0.22269335087989284,
+          0.07412672908363985
+        ],
+        "tracks": 14
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 40,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.09133876859846857,
+            "CI": [
+              -0.11291998292354549,
+              0.08649755270210996,
+              0.22442709500984634
+            ],
+            "tracks": 12,
+            "n": 40
+          }
+        },
+        {
+          "bin": 2,
+          "n": 11,
+          "density_mean": 1.0909090909090908,
+          "skill": {
+            "value": -0.16881561650496657,
+            "CI": [
+              -0.8968201453697175,
+              -0.16881561650496657,
+              0.09730792461624249
+            ],
+            "tracks": 4,
+            "n": 11
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 3,
+      "subset": "P1_speed2",
+      "n": 79,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": 0.15099961516624077,
+        "CI": [
+          -0.020629462584297598,
+          0.1527615125489615,
+          0.35172771347371945
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 70,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.09287912721326086,
+            "CI": [
+              -0.08868731207769745,
+              0.09366872042483554,
+              0.22438329555590322
+            ],
+            "tracks": 20,
+            "n": 70
+          }
+        },
+        {
+          "bin": 2,
+          "n": 9,
+          "density_mean": 1.1111111111111112,
+          "skill": {
+            "value": 0.26065647739797293,
+            "CI": [
+              0.11606073385287975,
+              0.26079608751755556,
+              0.3866557626084814
+            ],
+            "tracks": 6,
+            "n": 9
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara01",
+      "seed": 3,
+      "subset": "P1_speed3",
+      "n": 147,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.04035549828671167,
+        "CI": [
+          -0.09850802981179871,
+          0.04305116721323442,
+          0.21147755306918678
+        ],
+        "tracks": 47
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 115,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.21815738077636715,
+            "CI": [
+              0.10513297916208213,
+              0.22160367159794941,
+              0.3265999649463789
+            ],
+            "tracks": 40,
+            "n": 115
+          }
+        },
+        {
+          "bin": 2,
+          "n": 32,
+          "density_mean": 1.125,
+          "skill": {
+            "value": 0.26355731634891777,
+            "CI": [
+              0.1523423763851084,
+              0.26547594564088234,
+              0.4358055196417835
+            ],
+            "tracks": 14,
+            "n": 32
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "subset": "P1",
+      "n": 763,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.05074677100257811,
+        "CI": [
+          -0.11256811689795873,
+          -0.0504252181275007,
+          0.015129880551524949
+        ],
+        "tracks": 117
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 434,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.15738103291566008,
+            "CI": [
+              0.09021460546379277,
+              0.1584384879100887,
+              0.2221076594751893
+            ],
+            "tracks": 95,
+            "n": 434
+          }
+        },
+        {
+          "bin": 2,
+          "n": 329,
+          "density_mean": 1.1246200607902737,
+          "skill": {
+            "value": 0.10031019622583104,
+            "CI": [
+              0.05829695108423505,
+              0.10125217653073121,
+              0.14412607308896858
+            ],
+            "tracks": 70,
+            "n": 329
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "subset": "all",
+      "n": 5910,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.037020211234545554,
+        "CI": [
+          -0.0894737024819739,
+          -0.03597889203354153,
+          0.013655138241782171
+        ],
+        "tracks": 189
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 2911,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.11231285527987567,
+            "CI": [
+              0.05715010586774884,
+              0.11167664860323279,
+              0.1653317262881333
+            ],
+            "tracks": 173,
+            "n": 2911
+          }
+        },
+        {
+          "bin": 2,
+          "n": 2999,
+          "density_mean": 1.2090696898966322,
+          "skill": {
+            "value": 0.06755283996261519,
+            "CI": [
+              0.02590105404645268,
+              0.06759953015048548,
+              0.10488287557313143
+            ],
+            "tracks": 131,
+            "n": 2999
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "subset": "P1_speed0",
+      "n": 84,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": 0.04163837385050623,
+        "CI": [
+          -0.03939725708522672,
+          0.04029779549372238,
+          0.0994414941589581
+        ],
+        "tracks": 19
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 28,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.09041356456373273,
+            "CI": [
+              -0.1502828119906058,
+              -0.0885022594845295,
+              -0.02301241453134985
+            ],
+            "tracks": 9,
+            "n": 28
+          }
+        },
+        {
+          "bin": 2,
+          "n": 56,
+          "density_mean": 1.1428571428571428,
+          "skill": {
+            "value": -0.04282685159172539,
+            "CI": [
+              -0.1039083718375217,
+              -0.04233184314670546,
+              0.0009124290871635679
+            ],
+            "tracks": 13,
+            "n": 56
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "subset": "P1_speed1",
+      "n": 80,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.024574413024884174,
+        "CI": [
+          -0.20137114042631485,
+          -0.021114842993883016,
+          0.2034448100559979
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 48,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.034208009890583035,
+            "CI": [
+              -0.21849579989232018,
+              -0.026943269304340545,
+              0.14968172237216978
+            ],
+            "tracks": 17,
+            "n": 48
+          }
+        },
+        {
+          "bin": 2,
+          "n": 32,
+          "density_mean": 1.09375,
+          "skill": {
+            "value": -0.0610862741365501,
+            "CI": [
+              -0.1685873825823358,
+              -0.06121932758999005,
+              0.11211142606219511
+            ],
+            "tracks": 13,
+            "n": 32
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "subset": "P1_speed2",
+      "n": 178,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -0.12240153432682484,
+        "CI": [
+          -0.26064085779650353,
+          -0.12194862804543263,
+          0.024668236754455293
+        ],
+        "tracks": 45
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 105,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.24843587992045424,
+            "CI": [
+              0.13102652607692816,
+              0.24797775551705564,
+              0.3622877657943742
+            ],
+            "tracks": 34,
+            "n": 105
+          }
+        },
+        {
+          "bin": 2,
+          "n": 73,
+          "density_mean": 1.0273972602739727,
+          "skill": {
+            "value": 0.12268087889974366,
+            "CI": [
+              0.017602347225428906,
+              0.12136427129860022,
+              0.23780850258038796
+            ],
+            "tracks": 26,
+            "n": 73
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "subset": "P1_speed3",
+      "n": 421,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.009925730093472371,
+        "CI": [
+          -0.04758272854838348,
+          0.011174638641006363,
+          0.07291447849131252
+        ],
+        "tracks": 98
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 253,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.19085473980758028,
+            "CI": [
+              0.1282821729611006,
+              0.19169843553545263,
+              0.24971664523038956
+            ],
+            "tracks": 77,
+            "n": 253
+          }
+        },
+        {
+          "bin": 2,
+          "n": 168,
+          "density_mean": 1.1666666666666667,
+          "skill": {
+            "value": 0.20243475824996482,
+            "CI": [
+              0.16285107346850114,
+              0.20273953564117808,
+              0.2529864552237452
+            ],
+            "tracks": 53,
+            "n": 168
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 2,
+      "subset": "P1",
+      "n": 763,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.023200520927938006,
+        "CI": [
+          -0.08023191177414465,
+          -0.02312731627692053,
+          0.039408524267248425
+        ],
+        "tracks": 117
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 434,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.15117279787421745,
+            "CI": [
+              0.09000417221459919,
+              0.15143072855059636,
+              0.20998985476242546
+            ],
+            "tracks": 95,
+            "n": 434
+          }
+        },
+        {
+          "bin": 2,
+          "n": 329,
+          "density_mean": 1.1246200607902737,
+          "skill": {
+            "value": 0.1250810266178739,
+            "CI": [
+              0.08103926606312514,
+              0.12574072619119836,
+              0.17565527401643086
+            ],
+            "tracks": 70,
+            "n": 329
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 2,
+      "subset": "all",
+      "n": 5910,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.016989050494033455,
+        "CI": [
+          -0.06557975921099075,
+          -0.016813428139219475,
+          0.032353229697029584
+        ],
+        "tracks": 189
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 2911,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.10967951764420503,
+            "CI": [
+              0.05730545009719636,
+              0.10897748030837279,
+              0.15733382918632252
+            ],
+            "tracks": 173,
+            "n": 2911
+          }
+        },
+        {
+          "bin": 2,
+          "n": 2999,
+          "density_mean": 1.2090696898966322,
+          "skill": {
+            "value": 0.08913857163174543,
+            "CI": [
+              0.04649758231957972,
+              0.0889307830402743,
+              0.12827046497898606
+            ],
+            "tracks": 131,
+            "n": 2999
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 2,
+      "subset": "P1_speed0",
+      "n": 84,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": 0.040351764242834376,
+        "CI": [
+          -0.012571988437354761,
+          0.03627079877656436,
+          0.12515944053090955
+        ],
+        "tracks": 19
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 28,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.05264890111839837,
+            "CI": [
+              -0.14750371504872317,
+              -0.04917279940766972,
+              0.015788701954926276
+            ],
+            "tracks": 9,
+            "n": 28
+          }
+        },
+        {
+          "bin": 2,
+          "n": 56,
+          "density_mean": 1.1428571428571428,
+          "skill": {
+            "value": -0.006532599126587879,
+            "CI": [
+              -0.04374724937884744,
+              -0.005386112605734961,
+              0.03409652009833171
+            ],
+            "tracks": 13,
+            "n": 56
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 2,
+      "subset": "P1_speed1",
+      "n": 80,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.051761205495077935,
+        "CI": [
+          -0.2232866794909776,
+          -0.0482348643670967,
+          0.1726722191452416
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 48,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.014424986567592502,
+            "CI": [
+              -0.15849956085948239,
+              0.02104656675299177,
+              0.1635667880666742
+            ],
+            "tracks": 17,
+            "n": 48
+          }
+        },
+        {
+          "bin": 2,
+          "n": 32,
+          "density_mean": 1.09375,
+          "skill": {
+            "value": -0.04218883194264911,
+            "CI": [
+              -0.18216146600419644,
+              -0.04034862546803941,
+              0.15656167081621264
+            ],
+            "tracks": 13,
+            "n": 32
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 2,
+      "subset": "P1_speed2",
+      "n": 178,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -0.12019933901108121,
+        "CI": [
+          -0.2699589595519853,
+          -0.11933058177348216,
+          0.025311734786015193
+        ],
+        "tracks": 45
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 105,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.22986991224784936,
+            "CI": [
+              0.11766887601837908,
+              0.22932251329416387,
+              0.3398961819408095
+            ],
+            "tracks": 34,
+            "n": 105
+          }
+        },
+        {
+          "bin": 2,
+          "n": 73,
+          "density_mean": 1.0273972602739727,
+          "skill": {
+            "value": 0.10637744066112209,
+            "CI": [
+              -0.013378632329037726,
+              0.10408462245841466,
+              0.23869891920494943
+            ],
+            "tracks": 26,
+            "n": 73
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 2,
+      "subset": "P1_speed3",
+      "n": 421,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.05993115196036203,
+        "CI": [
+          0.007798326857549718,
+          0.06038215462378327,
+          0.12054348728430352
+        ],
+        "tracks": 98
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 253,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.17186529822143892,
+            "CI": [
+              0.10810297422962414,
+              0.17199908600894082,
+              0.23872406501512936
+            ],
+            "tracks": 77,
+            "n": 253
+          }
+        },
+        {
+          "bin": 2,
+          "n": 168,
+          "density_mean": 1.1666666666666667,
+          "skill": {
+            "value": 0.24178497550852796,
+            "CI": [
+              0.1971948695621488,
+              0.24145784522925978,
+              0.29795635586780067
+            ],
+            "tracks": 53,
+            "n": 168
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 3,
+      "subset": "P1",
+      "n": 763,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.03300428335689909,
+        "CI": [
+          -0.09642148899693616,
+          -0.03355005614290541,
+          0.03747129869610246
+        ],
+        "tracks": 117
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 434,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.16569154422730836,
+            "CI": [
+              0.10408756496498507,
+              0.16625948918947975,
+              0.22673169125992523
+            ],
+            "tracks": 95,
+            "n": 434
+          }
+        },
+        {
+          "bin": 2,
+          "n": 329,
+          "density_mean": 1.1246200607902737,
+          "skill": {
+            "value": 0.128574265072133,
+            "CI": [
+              0.08770446002071851,
+              0.12974904645550606,
+              0.17177150186345627
+            ],
+            "tracks": 70,
+            "n": 329
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 3,
+      "subset": "all",
+      "n": 5910,
+      "speed_bin": null,
+      "density_slope": {
+        "value": -0.021880888547001563,
+        "CI": [
+          -0.07660058640583343,
+          -0.02136088629397621,
+          0.033168368061015314
+        ],
+        "tracks": 189
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 2911,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.1100245534963058,
+            "CI": [
+              0.05666378024186987,
+              0.10891731280040934,
+              0.1598235009702721
+            ],
+            "tracks": 173,
+            "n": 2911
+          }
+        },
+        {
+          "bin": 2,
+          "n": 2999,
+          "density_mean": 1.2090696898966322,
+          "skill": {
+            "value": 0.08356903436612007,
+            "CI": [
+              0.0368779594181822,
+              0.08392213084042599,
+              0.12203984486955814
+            ],
+            "tracks": 131,
+            "n": 2999
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 3,
+      "subset": "P1_speed0",
+      "n": 84,
+      "speed_bin": 0,
+      "density_slope": {
+        "value": 0.03578047272819834,
+        "CI": [
+          -0.023015529422715862,
+          0.03295312211951276,
+          0.10805020348500947
+        ],
+        "tracks": 19
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 28,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.07165591571634145,
+            "CI": [
+              -0.15761546850545005,
+              -0.06913614820192904,
+              -0.010758857001026368
+            ],
+            "tracks": 9,
+            "n": 28
+          }
+        },
+        {
+          "bin": 2,
+          "n": 56,
+          "density_mean": 1.1428571428571428,
+          "skill": {
+            "value": -0.030763946884114768,
+            "CI": [
+              -0.06052563007107176,
+              -0.030452959807938607,
+              -0.0064801275895648575
+            ],
+            "tracks": 13,
+            "n": 56
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 3,
+      "subset": "P1_speed1",
+      "n": 80,
+      "speed_bin": 1,
+      "density_slope": {
+        "value": -0.008127639692402714,
+        "CI": [
+          -0.2048740454712798,
+          -0.00841349464960919,
+          0.2707122818582182
+        ],
+        "tracks": 24
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 48,
+          "density_mean": 0.0,
+          "skill": {
+            "value": -0.028962344591217715,
+            "CI": [
+              -0.2300078617088875,
+              -0.01967919611743174,
+              0.15490261179481163
+            ],
+            "tracks": 17,
+            "n": 48
+          }
+        },
+        {
+          "bin": 2,
+          "n": 32,
+          "density_mean": 1.09375,
+          "skill": {
+            "value": -0.037851950504783405,
+            "CI": [
+              -0.17394139192102284,
+              -0.0332813887054636,
+              0.1734878764615834
+            ],
+            "tracks": 13,
+            "n": 32
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 3,
+      "subset": "P1_speed2",
+      "n": 178,
+      "speed_bin": 2,
+      "density_slope": {
+        "value": -0.08064097742215148,
+        "CI": [
+          -0.22127840593788484,
+          -0.07759408774472823,
+          0.06158548610103351
+        ],
+        "tracks": 45
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 105,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.28277564833898816,
+            "CI": [
+              0.16978015100517443,
+              0.28254462538025565,
+              0.3860307096300382
+            ],
+            "tracks": 34,
+            "n": 105
+          }
+        },
+        {
+          "bin": 2,
+          "n": 73,
+          "density_mean": 1.0273972602739727,
+          "skill": {
+            "value": 0.19992532906965466,
+            "CI": [
+              0.09080462714300541,
+              0.1995197997865863,
+              0.3136373828650453
+            ],
+            "tracks": 26,
+            "n": 73
+          }
+        }
+      ]
+    },
+    {
+      "fold": "zara02",
+      "seed": 3,
+      "subset": "P1_speed3",
+      "n": 421,
+      "speed_bin": 3,
+      "density_slope": {
+        "value": 0.02535142494755597,
+        "CI": [
+          -0.03506364066174724,
+          0.026729775542201965,
+          0.09179120274044945
+        ],
+        "tracks": 98
+      },
+      "bins": [
+        {
+          "bin": 0,
+          "n": 0,
+          "density_mean": null,
+          "skill": {
+            "value": null,
+            "CI": null,
+            "tracks": 0,
+            "n": 0
+          }
+        },
+        {
+          "bin": 1,
+          "n": 253,
+          "density_mean": 0.0,
+          "skill": {
+            "value": 0.18844174424523985,
+            "CI": [
+              0.13789951219443222,
+              0.18903414615516245,
+              0.24374874818854947
+            ],
+            "tracks": 77,
+            "n": 253
+          }
+        },
+        {
+          "bin": 2,
+          "n": 168,
+          "density_mean": 1.1666666666666667,
+          "skill": {
+            "value": 0.21801840668405514,
+            "CI": [
+              0.17339662981306372,
+              0.21940096234305118,
+              0.27601230466418153
+            ],
+            "tracks": 53,
+            "n": 168
+          }
+        }
+      ]
+    }
+  ],
+  "no_density_causal_claim": true
+}

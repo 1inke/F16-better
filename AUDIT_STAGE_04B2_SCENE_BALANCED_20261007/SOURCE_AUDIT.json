@@ -1,0 +1,14 @@
+{
+  "stage": "04B2_SCENE_BALANCED",
+  "audit_timestamp": "2026-10-07T02:34:00+08:00",
+  "sources": {
+    "feature_source": "data/extracted/grouped_features.npz",
+    "index_source": "data/extracted/grouped_splits_strict_v2.json",
+    "training_set": "grouped_train_index (N=16337)",
+    "sampling_strategy": "WeightedRandomSampler (inverse scene frequency: hotel=0.001318, university=0.000064)",
+    "evaluation_set": "zara_outer_index (N=1561)",
+    "proposal_posteriors": "5-fold out-of-fold cross-fitting on grouped_train_index",
+    "leakage_check": "ZERO Zara exposure during training and sampling"
+  },
+  "audit_status": "PASS"
+}

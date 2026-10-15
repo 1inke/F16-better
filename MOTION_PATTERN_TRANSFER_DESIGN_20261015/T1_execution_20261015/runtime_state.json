@@ -1,0 +1,171 @@
+{
+  "status": "ANALYZED",
+  "at": "2026-10-15T01:18:53.0080877+08:00",
+  "production_started": true,
+  "active_worker": false,
+  "source_sha": "226ebd669ba8dc96973e4bb2b6f557311df262d8e1b9788f8863be822c905b94",
+  "source_count": 4145,
+  "planning_minutes": 13.409918154184075,
+  "ETA_minutes": [
+    9.386942707928851,
+    20.11487723127611
+  ],
+  "planned_runs": 6,
+  "completed_runs": 6,
+  "planned_epochs": 150,
+  "planned_final_jobs": 24,
+  "planned_shared_P0_jobs": 4,
+  "first_progress_query_done": true,
+  "progress_query_count": 1,
+  "startup_check_count": 1,
+  "T2_started": false,
+  "T3_started": false,
+  "whole_series_complete": false,
+  "worker_pid": 30404,
+  "service_parent": 2688,
+  "service_parent_name": "svchost.exe",
+  "task_name": "Trajectory-MotionPatternT1Responsibility-20261015",
+  "task_triggers": 0,
+  "creation_at": "2026-10-15T01:00:28.079632+08:00",
+  "worker_started_at": "2026-10-15T01:00:28.388844+08:00",
+  "full_commandline": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\MOTION_PATTERN_TRANSFER_DESIGN_20261015\\T1_execution_20261015\\independent_worker.py\"",
+  "ONE_startup_at": "2026-10-15T01:00:52.4298220+08:00",
+  "startup_stage": {
+    "stage": "SHARED_FULL_P0_SAVE_QUALITY",
+    "at": "2026-10-15T01:00:41.730517+08:00",
+    "split": "FIT",
+    "runs_done": 0
+  },
+  "startup_histories": [
+    {
+      "arm": "dynamic_winner",
+      "done": false,
+      "seed": 42,
+      "completed_epochs": 0
+    },
+    {
+      "arm": "dynamic_winner",
+      "done": false,
+      "seed": 43,
+      "completed_epochs": 0
+    },
+    {
+      "arm": "dynamic_winner",
+      "done": false,
+      "seed": 44,
+      "completed_epochs": 0
+    },
+    {
+      "arm": "fixed_motion_responsibility",
+      "done": false,
+      "seed": 42,
+      "completed_epochs": 0
+    },
+    {
+      "arm": "fixed_motion_responsibility",
+      "done": false,
+      "seed": 43,
+      "completed_epochs": 0
+    },
+    {
+      "arm": "fixed_motion_responsibility",
+      "done": false,
+      "seed": 44,
+      "completed_epochs": 0
+    }
+  ],
+  "startup_stderr_bytes": 0,
+  "query_at": "2026-10-15T01:07:10.685+08:00",
+  "scheduled_query_at_ceil": "2026-10-15T01:07:11.000+08:00",
+  "completion_deadline": "2026-10-15T01:13:52.983+08:00",
+  "automation_id": "motion-pattern-t1",
+  "automation_status": "DELETED_ONLY_THIS_COMPLETED_FOLLOWUP",
+  "next_automatic_event": null,
+  "half_estimate_not_epoch_fraction": true,
+  "registered_budget_minutes": 30,
+  "latest_human_authorization": "2026-10-15 execute this series including T1 fixed FIT responsibility; conditional T2/T3 only",
+  "baseline_historycycle11_unfinishedgoal_unchanged": true,
+  "old_paused_tasks_unchanged": true,
+  "ONE_half_at": "2026-10-15T01:08:22.5295945+08:00",
+  "half_scheduled_at": "2026-10-15T01:07:10.685+08:00",
+  "half_late_seconds": 71.844,
+  "production_end_time": "2026-10-15T01:06:12.131275+08:00",
+  "worker_status": "SUCCESS",
+  "exit_status": "SUCCESS",
+  "completed_epochs": 150,
+  "completed_saved_jobs": 28,
+  "completion_query_needed": false,
+  "old_completion_deadline_obsolete": true,
+  "observed_half_histories": [
+    {
+      "seed": 42,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "dynamic_winner"
+    },
+    {
+      "seed": 43,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "dynamic_winner"
+    },
+    {
+      "seed": 44,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "dynamic_winner"
+    },
+    {
+      "seed": 42,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "fixed_motion_responsibility"
+    },
+    {
+      "seed": 43,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "fixed_motion_responsibility"
+    },
+    {
+      "seed": 44,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "fixed_motion_responsibility"
+    }
+  ],
+  "observed_half_stage": {
+    "stage": "SUCCESS",
+    "at": "2026-10-15T01:06:12.109003+08:00",
+    "runs_done": 6,
+    "S_T1": false,
+    "Q": false,
+    "T2_permitted": false
+  },
+  "observed_half_stderr_bytes": 0,
+  "S_T1": false,
+  "Q": false,
+  "completed_stages": 1,
+  "T1_analyzed": true,
+  "major_A": "FAIL",
+  "major_B": "FAIL",
+  "T2_status": "NOT_TRIGGERED_T1_S_OR_Q_FAIL",
+  "T3_time_status": "NOT_TRIGGERED",
+  "T3_scene_status": "NOT_TRIGGERED",
+  "series_route_status": "STOP_FIXED_RESPONSIBILITY_SERIES_BY_PREREGISTERED_GATES",
+  "completion_review_status": "PASS",
+  "completion_review_seconds": 87.28663159999996,
+  "supplement_status": "PASS",
+  "supplement_seconds": 30.174369400017895,
+  "source_final_SHA": "PASS_4145_RELATED_SOURCES_AND_189_SCIENTIFIC_OUTPUTS",
+  "audit_no_NN_forward_optimizer_or_gradient_replay": true,
+  "report": "MOTION_PATTERN_TRANSFER_DESIGN_20261015/T1_execution_20261015/RESULT_ANALYSIS.md",
+  "report_JSON": "MOTION_PATTERN_TRANSFER_DESIGN_20261015/T1_execution_20261015/RESULT_ANALYSIS.json",
+  "production_elapsed_worker_seconds": 343.742431,
+  "production_elapsed_RESULT_seconds": 341.1883796000038,
+  "completion_query_count": 0,
+  "next_action": "NO_AUTOMATIC_NEW_TRAINING_WAIT_NEW_PRECISE_HUMAN_DESIGN",
+  "baseline_upgrade": false,
+  "historycycle11_unfinishedgoal_oldpauses_unchanged": true,
+  "actual_source_and_scientific_outputs_retained": true
+}

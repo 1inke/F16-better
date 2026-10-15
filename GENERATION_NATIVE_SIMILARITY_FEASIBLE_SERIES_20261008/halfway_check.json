@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-08T10:17:17.8864475+08:00",
+  "task_name": "Trajectory-NativeSimilarityFeasible-20261008",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "worker": {
+    "status": "SUCCESS",
+    "pid": 39992,
+    "parent": 2840,
+    "started_at": "2026-10-08T10:12:03.882747+08:00",
+    "type": "PAIRED_NATIVE_SIMILARITY_FEASIBLE_FRESH_TRAINING",
+    "finished_at": "2026-10-08T10:16:49.552609+08:00"
+  },
+  "exit": {
+    "status": "SUCCESS",
+    "pid": 39992,
+    "parent": 2840,
+    "started_at": "2026-10-08T10:12:03.882747+08:00",
+    "type": "PAIRED_NATIVE_SIMILARITY_FEASIBLE_FRESH_TRAINING",
+    "finished_at": "2026-10-08T10:16:49.552609+08:00"
+  },
+  "progress": {
+    "stage": "SUCCESS",
+    "at": "2026-10-08T10:16:49.547049+08:00",
+    "runs_done": 6,
+    "saved_jobs": 18
+  },
+  "runs_done": 6,
+  "histories": [
+    {
+      "seed": 42,
+      "epochs": 25,
+      "arm": "ray"
+    },
+    {
+      "seed": 43,
+      "epochs": 25,
+      "arm": "ray"
+    },
+    {
+      "seed": 44,
+      "epochs": 25,
+      "arm": "ray"
+    },
+    {
+      "seed": 42,
+      "epochs": 25,
+      "arm": "similarity"
+    },
+    {
+      "seed": 43,
+      "epochs": 25,
+      "arm": "similarity"
+    },
+    {
+      "seed": 44,
+      "epochs": 25,
+      "arm": "similarity"
+    }
+  ],
+  "stderr_bytes": 0
+}

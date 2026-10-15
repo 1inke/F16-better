@@ -1,0 +1,116 @@
+{
+  "kind": "FORMAL_NATIVE_GLOBAL_SIMILARITY_GEOMETRY",
+  "grouping": "target_track",
+  "arms": [
+    "ray",
+    "similarity"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "train_n": 18909,
+  "outer_n": 1035,
+  "inner_n": 1856,
+  "CAL_n": 2879,
+  "K": 20,
+  "refined_slots": "bottom4 frozen native logits stable-originalslot ties ascending selected indices",
+  "input": "same P2 observed96 + selected immutable native12x2=24, per-candidate shared120D",
+  "head": [
+    120,
+    128,
+    64,
+    24
+  ],
+  "parameter_count": 25304,
+  "zero_last_layer": true,
+  "bound": "same .20*(t/12)^2 endpoint .20 mean .0752314814814815",
+  "head_dtype": "float32",
+  "output_dtype": "float64",
+  "winner_assignment": "hardmin4 ADE+0.5FDE",
+  "winner_loss": "hardmin4 ADE+0.5FDE",
+  "diversity": {
+    "type": "sixpair mean squaredhinge",
+    "margin": 0.3,
+    "weight": 0.05
+  },
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 256,
+  "epochs": 25,
+  "grad_clip": null,
+  "normalization": "ONLY target grouped_train18909 x4; productionfloat32/float64statistics; std<1e-6->1; commonfloat32buffers",
+  "checkpoint_selection": "fixed epoch25; inner and CAL posthoc only",
+  "dt": 0.4,
+  "quality": {
+    "ADE": 0.2,
+    "FDE": 0.4,
+    "samecandidate": true
+  },
+  "motion_acceptance": "all five pooled perseed/group <=native1.01",
+  "old_F16_decoder_scorer_training": false,
+  "future_GT_groups_logits_prediction_input": false,
+  "no_new_loss_assignment_event_scorer_data": true,
+  "resource": {
+    "process_GiB": 6,
+    "physical_reserve_GiB": 6,
+    "commit_reserve_GiB": 6
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261008,
+    "cluster": "targettrack + paired modelseeds",
+    "exploratory": true
+  },
+  "only_factor": "Same paired Bernstein proposal and canonical objective: exact prior physical-ray map versus GT-free native global similarity least-squares fit with common position bound",
+  "time_basis": {
+    "degree": 11,
+    "times": "s=(t-1)/11,t1..12",
+    "coefficient": "C(11,i)s^i(1-s)^(11-i),i0..11",
+    "nonnegative_convex": true,
+    "first_last_same_given_controls": true,
+    "both_same_registered_float64_basis": true,
+    "not_allmotion_guarantee": false
+  },
+  "projection": {
+    "native_relative_per_order_norm": 1.01,
+    "orders": [
+      "speed12",
+      "acceleration11",
+      "jerk10"
+    ],
+    "alpha": "minimum nonnegative quadratic exit root across all31 step constraints, clipped[0,1]",
+    "zero_native_nonzero_difference": "alpha0; no floor",
+    "zero_residual": "alpha1 and exact native identity",
+    "numerical_interior": "1-2^-20 only for alpha<1, not evaluation epsilon",
+    "stronger_than_original_pooled_gate": true,
+    "GT_free": true,
+    "not_endpoint_preserving": true,
+    "piecewise_gradient_zero_budget_nonsmooth": true
+  },
+  "autonomous_stop_deadline": "2026-10-08T12:00:00+08:00",
+  "numeric_validation": {
+    "production_map": "EXACT parent closed-root/interior algorithm; no safety fallback",
+    "arithmetic_audit": "gamma_n=n*u/(1-n*u), n=8*difference_order+16 times absolute binomial coefficient position scale/dt^order; nonfinite or excess above enclosure fails; retain raw exceedances; not literal bitwise pointwise PASS",
+    "all_five_population_motion": "Unchanged literal <=1.01 native each seed/group; no evaluation epsilon or floor",
+    "nonzero_gradient_check": "Original nominal FD recorded honestly; supplemental decreasing-step convergence and active-face switches checked; no change to training hyperparameters or objective"
+  },
+  "direct_launch_authorization": "Latest human 开始下一个方向 authorizes ONE fresh structural paired experiment; no renewal of old six-hour window.",
+  "similarity": {
+    "fit": "a=1+sum(p dot r)/sum||p||²,b=sum(cross(p,r))/sum||p||²; M=aI+bJ",
+    "zero_energy": "exact zero -> identity; no denominator floor",
+    "scale_cap": "if sqrt(a²+b²)>1.01 radially cap to1.01*(1-2^-20)",
+    "position_cap": "one lambda=min(1,min_t bound_t/||Mp-p||), if lambda<1 numerical interior1-2^-20",
+    "final": "p+lambda(Mp-p); same global similarity, coefficients between identity and capped M",
+    "proof": "Difference operators linear; norms of all v/a/j scale by common coefficient norm<=1.01 in exact arithmetic; original pooled five gates literal",
+    "not_new_temporal_shapes": true,
+    "not_equal_effective_capacity": true
+  },
+  "preflight_nondegeneracy": {
+    "synthetic": "known constant-velocity rotation fixture residualnorm>.001 while native acceleration/jerk nearzero",
+    "actual": "fixed seed20261008 nonzero final-weight head on first128 FIT, similarity max residual>=.001 and >=5% candidates residualmax>=.001; no GT outcome selection",
+    "failure": "STOP_SCIENTIFIC_DEGENERATE_GEOMETRY no coefficient sweep"
+  }
+}

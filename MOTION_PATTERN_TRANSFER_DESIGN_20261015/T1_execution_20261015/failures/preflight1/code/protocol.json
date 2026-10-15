@@ -1,0 +1,36 @@
+{
+  "stage": "T1",
+  "authorization": "2026-10-15 execute directory series; includes this fixed FIT responsibility supervision",
+  "design_version": "parent v1.0 unchanged",
+  "dictionary": {
+    "K": 20, "rng": "numpy.PCG64", "seed": 20261015,
+    "features": "float64 complete future position minus t*0.4*observed_v0; 24 equal-weight metre coordinates",
+    "first_center": "rng.integers(nFIT) in original FIT order",
+    "subsequent": "rng.choice(nFIT,p=nearest_squared_distance/sum); selected rows probability zero",
+    "lloyd_max_iterations": 100, "stop": "labels exactly unchanged",
+    "empty_cluster": "largest current squared reconstruction error, original FIT row tie; different rows for successive empty modes",
+    "final_order": "float64 flattened24 lexicographic, construction-index tie",
+    "final_labels": "recompute nearest sorted final centers, lowest mode index ties",
+    "minimum_windows_every_mode": 50, "minimum_tracks_every_mode": 5,
+    "failure_action": "STOP fixed design, no K/seed/threshold/window search"
+  },
+  "paired_training_if_eligible": {
+    "arms": ["dynamic_winner", "fixed_motion_responsibility"],
+    "model": "122->128->64->24 GELU zero-last full position correction; 25560 parameters",
+    "seeds": [42,43,44], "epochs": 25, "batch_size": 256,
+    "optimizer": "AdamW lr .001 wd .0001 betas .9,.999 eps1e-8 foreachFalse no clip",
+    "loss": "same Q=ADE+.5FDE regression; only regression index changes; .05 mean190pair squaredhinge margin .3",
+    "forward": "P2 96 + observed v0 2 + fixed mode center24; no GT/label/ID/scene/native/logits",
+    "splits": {"FIT":18909,"outer":1035,"inner":1856,"original_CAL":2879},
+    "primary": "fixed final25 outer change",
+    "final_saved_jobs":24, "P0_saved_jobs":4,
+    "budget_cap_minutes":30,
+    "preflight": "actualGPU finite phased gradients paired weights and P0, independent NumPy+two fixed FD eps, both real513FIT+12inner subset2epoch alloptimizer/allRNG exact resume, saved128 fullquality/clusters/motion, actual fullcost/RAM benchmark",
+    "checkpoint_epochs": [5,10,15,20,25]
+  },
+  "statistics": {"reserved_primary_family":48,"draws":20000,"seed":20261015,"cluster":"sequence+target wholetrack crossed three modelseeds; time uses sourceblock primary","do_not_shrink":true},
+  "resources": {"process_GiB":6,"physical_reserve_GiB":6,"commit_reserve_GiB":6,"no_OS_pagefile_userkill":true},
+  "progression": "T1 S_T1 AND commonQ -> T2; T2 S_T2 AND commonQ -> T3time; time S_T1 AND Q -> scene; otherwise STOP",
+  "old_science_immutable":true,
+  "baseline_historycycle11_unfinishedgoal_unchanged":true
+}

@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-10-08T09:32:22.8988194+08:00",
+  "task_name": "Trajectory-NativeAnchoredPhysicalRay-ApprovedLaunch-20261008",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "ProcessId": 42092,
+      "ParentProcessId": 2840,
+      "CreationDate": "2026-10-08T09:32:12.884808+08:00",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B -u \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_PHYSICAL_RAY_SERIES_20261008\\roundoff_certified_recovery_20261008\\approved_launch_20261008\\independent_worker.py\""
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 42092,
+    "parent": 2840,
+    "started_at": "2026-10-08T09:32:13.080314+08:00",
+    "type": "PAIRED_NATIVE_ANCHORED_PHYSICAL_RAY_FRESH_TRAINING"
+  },
+  "exit": null,
+  "progress": {
+    "stage": "TRAIN",
+    "at": "2026-10-08T09:32:22.40725+08:00",
+    "arm": "unprojected",
+    "seed": 42,
+    "epoch": 5,
+    "runs_done": 0,
+    "runs_total": 6
+  },
+  "runs_done": 0,
+  "histories": [
+    {
+      "arm": "unprojected",
+      "seed": 42,
+      "epochs": 4
+    },
+    {
+      "arm": "unprojected",
+      "seed": 43,
+      "epochs": 0
+    },
+    {
+      "arm": "unprojected",
+      "seed": 44,
+      "epochs": 0
+    },
+    {
+      "arm": "physical",
+      "seed": 42,
+      "epochs": 0
+    },
+    {
+      "arm": "physical",
+      "seed": 43,
+      "epochs": 0
+    },
+    {
+      "arm": "physical",
+      "seed": 44,
+      "epochs": 0
+    }
+  ],
+  "stderr_bytes": 0
+}

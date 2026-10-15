@@ -1,0 +1,9 @@
+# Existing frozen full-four winner-switch diagnostic
+
+All nine existing BestOf4Generator checkpoints were frozen-replayed on their original training IDs, outer IDs and original CAL; all FOUR learned candidates, including previously omitted slot2. Native20 is not an assignment competitor for this existing Bo4 loss. Twenty-seven explicit-ID outputs store ADE/FDE and both winners. Old weights/buffers torch.equal and model SHA unchanged; saved winners/confusion/counts independently rebuilt from saved ADE/FDE. No optimizer or retraining.
+
+On original TRAIN, overall switch1.502–2.004%; outer overall2.434–5.124%; original CAL overall2.779–3.473%. Change subsets: TRAIN1.418–2.497%, outer1.408–6.338%, original CAL2.714–4.571%. These are per checkpoint, not9independent sample populations. scene outer change211, target253, time142; CAL change700.
+
+Thus the final saved learned trajectories do not show20–40% responsibility redistribution between these two assignment formulas. This does NOT remove the protocol blocker: FDE weight, diversity form and gradient clipping can change gradients even with the same winner, and final-output switch does not measure every training-step switch. Small switch does not establish equivalent algorithms, loss sufficiency or candidate repairability. Saved distances are independently recomputed in float64; exact/near ties and both rule margins are reported in OLD_WINNER_SWITCH.json. Old bare checkpoints cannot retrospectively prove the source version used during training.
+
+Canonical choice is the HUMAN-APPROVED protocol, not selected by switch outcomes. New nine trainings will record actual float32 training-batch switch statistics and final posthoc saved-output switch rates separately. AI-assisted methodology/DA by same assistant using academic-research-suite; not external peer review.

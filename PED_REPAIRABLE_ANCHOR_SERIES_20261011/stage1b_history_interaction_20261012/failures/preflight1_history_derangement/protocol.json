@@ -1,0 +1,73 @@
+{
+  "kind": "S1b_HISTORY_CANDIDATE_INTERACTION_PAIRED_CPU_PROBE",
+  "human_authorized": "按照建议执行",
+  "parent": "stage1_selector_production_20261011",
+  "arms": {
+    "additive": 124,
+    "interaction": 136
+  },
+  "dt": 0.4,
+  "observed_velocity": "(past[-1]-past[-2])/.4",
+  "observed_velocity_change": "v_last-(past[-2]-past[-3])/.4",
+  "candidate_velocity": "diff([zero_origin,native12])/.4",
+  "bands": [
+    [
+      0,
+      4
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      8,
+      12
+    ]
+  ],
+  "interaction_order": "for u in [v_last,delta_v], for band early/middle/late: dot then cross",
+  "features_dtype": "float32_final_cast; raw motion and products float64 from immutable float32 positions",
+  "stats": "float64 per-OOF-training-only mean/std; std<1e-6=>1",
+  "selector": {
+    "C": 1,
+    "penalty": "l2",
+    "class_weight": "balanced",
+    "solver": "newton-cholesky",
+    "tol": 0.000001,
+    "max_iter": 500,
+    "threads": 1,
+    "sklearn": "1.4.1.post1"
+  },
+  "A": 7334,
+  "B": 11575,
+  "OOF": 3,
+  "inherit_split_and_label_exact": true,
+  "gates": {
+    "gain_vs_bottom_and_random": 0.05,
+    "overall_paired_track_CI975_lower_gt": 0,
+    "change_each_fold_at_least_bottom": true,
+    "B_advantage_over_both_strict": true,
+    "B_change_at_least_bottom": true
+  },
+  "history_swap": "fixed SHA order cyclic offset first all different tracks within each validation fold; swap p2 and past together; no label/GT; no fit; OOD diagnostic only",
+  "bootstrap": 2000,
+  "rng": [
+    20261011,
+    20261012,
+    20261021,
+    20261022
+  ],
+  "additive_comparison": "same track paired exploratory CI not extra gate or model selection",
+  "planning_limit_minutes": 30,
+  "resource": {
+    "process_GiB": 6,
+    "physical_reserve_GiB": 6,
+    "commit_reserve_GiB": 6
+  },
+  "no_neural_training": true,
+  "no_torch": true,
+  "no_new_trajectories": true,
+  "S2_only_after_interaction_OOF_and_B_gates": true,
+  "scientific_coverage_motion_major_gates_unchanged": true,
+  "independent_feature_audit": "float32 exact scalar reconstruction on actual128; full saved models/statistics/scores rebuilt",
+  "no_solver_width_C_split_threshold_search": true
+}

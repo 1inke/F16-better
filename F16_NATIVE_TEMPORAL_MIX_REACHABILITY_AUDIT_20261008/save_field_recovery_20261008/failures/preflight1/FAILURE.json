@@ -1,0 +1,12 @@
+{
+  "status": "FAILURE",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\save_field_recovery_20261008\\preflight.py\", line 38, in <module>\n    try:main()\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\save_field_recovery_20261008\\preflight.py\", line 33, in main\n    q.job('actual_production_smoke',0,z,q.digest(initial));saved=q.npz(q.H/'jobs/actual_production_smoke/partner_00/paths.npz');assert saved['generated_candidate_good'].shape==(128,4) and saved['candidate_good'].shape==(128,20)\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\save_field_recovery_20261008\\run.py\", line 128, in job\n    physical_error2,audit2=physical_review(z,j,saved);assert compare(audit,audit2)==0 and physical_error2<=2e-12\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\save_field_recovery_20261008\\run.py\", line 100, in compare\n    if isinstance(a,dict):assert a.keys()==b.keys();return max([compare(a[k],b[k]) for k in a] or [0.])\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\save_field_recovery_20261008\\run.py\", line 100, in <listcomp>\n    if isinstance(a,dict):assert a.keys()==b.keys();return max([compare(a[k],b[k]) for k in a] or [0.])\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_NATIVE_TEMPORAL_MIX_REACHABILITY_AUDIT_20261008\\save_field_recovery_20261008\\run.py\", line 102, in compare\n    x=np.asarray(a,dtype=float);y=np.asarray(b,dtype=float);assert x.shape==y.shape;return float(np.max(abs(x-y))) if x.size else 0.\nTypeError: float() argument must be a string or a real number, not 'dict'\n",
+  "resource": {
+    "peak_private_GiB": 0.08869552612304688,
+    "peak_RSS_GiB": 0.10686111450195312,
+    "min_physical_GiB": 17.082721710205078,
+    "min_commit_GiB": 26.654876708984375,
+    "checks": 165
+  },
+  "not_production_failure": true
+}

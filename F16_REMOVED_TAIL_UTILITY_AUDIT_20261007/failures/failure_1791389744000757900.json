@@ -1,0 +1,11 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_REMOVED_TAIL_UTILITY_AUDIT_20261007\\run.py\", line 165, in <module>\n    try:preflight() if '--preflight' in sys.argv else main()\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_REMOVED_TAIL_UTILITY_AUDIT_20261007\\run.py\", line 132, in preflight\n    start=time.perf_counter();guard();fx=fixture();files,inherit=manifests();q.verify(files);data=q.cache();info=[]\n  File \"C:\\Users\\linke\\Documents\\New project\\F16_REMOVED_TAIL_UTILITY_AUDIT_20261007\\run.py\", line 109, in fixture\n    assert q.compare(x,y)<1e-12 and x['events'][:,0].tolist()==[True,False,True] and x['events'][1,1]\nAssertionError\n",
+  "resource": {
+    "peak_private_GiB": 0.033382415771484375,
+    "peak_RSS_GiB": 0.051605224609375,
+    "min_physical_GiB": 19.08350372314453,
+    "min_commit_GiB": 23.40436553955078,
+    "checks": 1
+  },
+  "no_training": true
+}

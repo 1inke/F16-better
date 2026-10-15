@@ -1,0 +1,11 @@
+{
+  "status": "STOP",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_RESIDUAL_SERIES_20261008\\completion_review\\audit_saved.py\", line 130, in <module>\n    try:main()\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_RESIDUAL_SERIES_20261008\\completion_review\\audit_saved.py\", line 124, in main\n    ci=boot(saved);cierr=compare(ci,read(H/'BOOTSTRAP.json')['records']);assert cierr<=1e-12 and len(ci)==36\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_RESIDUAL_SERIES_20261008\\completion_review\\audit_saved.py\", line 37, in compare\n    x=np.asarray(a,dtype=float);y=np.asarray(b,dtype=float);assert x.shape==y.shape;return float(np.max(abs(x-y))) if x.size else 0.\nTypeError: float() argument must be a string or a real number, not 'dict'\n",
+  "resource": {
+    "peak_private_GiB": 0.2726631164550781,
+    "peak_RSS_GiB": 0.29029083251953125,
+    "min_physical_GiB": 18.00705337524414,
+    "min_commit_GiB": 27.06170654296875,
+    "checks": 4454
+  }
+}

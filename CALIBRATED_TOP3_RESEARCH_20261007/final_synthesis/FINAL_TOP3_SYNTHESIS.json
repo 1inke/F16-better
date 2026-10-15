@@ -1,0 +1,48 @@
+{
+  "project": "F16-better / CALIBRATED_TOP3_PORTFOLIO_RESEARCH",
+  "date": "2026-10-07",
+  "status": "COMPLETED",
+  "generator_status": "FROZEN (FREEZE_S1L3_GENERATOR, K=24)",
+  "phases_executed": [
+    "M0_TOP3_COMPLEMENTARITY_AUDIT",
+    "M1_TOP3_PROBABILITY_CALIBRATION",
+    "M2_ADAPTIVE_PORTFOLIO_COMPOSITION",
+    "M3_SELECTIVE_INTERFACE"
+  ],
+  "synthesis_summary": {
+    "M0_complementarity": {
+      "change_top3_gain_pp": 8.16,
+      "relative_change_improvement_pct": 70.7,
+      "learned_share_of_change_rescues_pct": 80.3,
+      "static_share_of_change_rescues_pct": 13.6,
+      "shared_overlap_pct": 6.0,
+      "overall_set_good_rate_pct": 34.95,
+      "min_ade_3": 0.354,
+      "distinct_modes_ratio": 2.77
+    },
+    "M1_probability_calibration": {
+      "ece": 0.2439,
+      "brier_score": 0.2305,
+      "nll": 0.9284,
+      "p_good_overall": 0.283,
+      "change_proposal_probability_mass_pct": 61.3,
+      "stable_native_probability_mass_pct": 55.9
+    },
+    "M2_portfolio_alternatives": {
+      "C1_canonical_NSL3": {"overall_cov": 34.95, "change_cov": 19.70, "diversity_m": 0.409},
+      "C2_dual_learned_NL3L0": {"overall_cov": 37.12, "change_cov": 20.45, "diversity_m": 0.538},
+      "C4_pure_native_N1N2N3": {"overall_cov": 42.06, "change_cov": 20.67, "diversity_m": 0.260}
+    },
+    "M3_selective_interface": {
+      "tier1_single_top1_pct": 26.9,
+      "tier1_acc_pct": 37.16,
+      "tier2_top3_portfolio_pct": 62.7,
+      "tier2_cov_pct": 34.31,
+      "tier3_abstain_warning_pct": 10.5,
+      "system_retained_accuracy_pct": 36.33,
+      "expected_hypotheses_per_window": 2.15
+    }
+  },
+  "scientific_verdict": "CALIBRATED_TOP3_PORTFOLIO_ACCEPTED",
+  "operational_action": "READY_FOR_HUMAN_REVIEW_CALIBRATED_PORTFOLIO"
+}

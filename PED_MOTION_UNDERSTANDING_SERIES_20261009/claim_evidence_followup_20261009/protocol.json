@@ -1,0 +1,18 @@
+{
+  "status": "FROZEN_BEFORE_NEW_FOLLOWUP_COMPUTATION_EXPLORATORY",
+  "folds": ["eth", "hotel", "univ", "zara01", "zara02"],
+  "model_seeds": [1, 2, 3],
+  "bootstrap_reps": 2000,
+  "stat_seed": 20261009,
+  "N1_descriptive_seed_ratio_reference": 1.25,
+  "N2_radius": "per_fold_training_median_nearest_valid_neighbor_last_frame",
+  "N2_density_quantiles": [0.3333333333333333, 0.6666666666666666],
+  "N3_positive_training_C3_g_quantile": 0.75,
+  "N6_oracle": "single_complete_candidate_min_total_SSE",
+  "training": false,
+  "no_new_forward": true,
+  "max_compute_seconds": 600,
+  "process_max_GiB": 6,
+  "physical_and_commit_reserve_each_GiB": 6,
+  "no_new_confirmatory_claim": true
+}

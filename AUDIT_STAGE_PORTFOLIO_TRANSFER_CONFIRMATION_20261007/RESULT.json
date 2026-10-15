@@ -1,0 +1,26 @@
+{
+  "suite": "PORTFOLIO_TRANSFER_CONFIRMATION",
+  "baseline_reconciliation": {
+    "status": "PASS",
+    "canonical_scene_family_change_coverage": "88/211 = 41.71%",
+    "discrepancy_explanation": "Marginal rank variations between 'stop' and other maneuvers on boundary samples caused by unseeded IntentClassifier initialization in ad-hoc runs. Fully resolved and frozen via canonical_intent_classifier.pth."
+  },
+  "gate_evaluations": {
+    "S1L3": {
+      "transfer_pass": true,
+      "macro_overall_gain_pp": 0.6626,
+      "macro_change_gain_pp": 1.4896,
+      "change_positive_runs": "8/9 (1 neutral, 0 negative)",
+      "protocols_positive": "3/3"
+    },
+    "S2L2": {
+      "transfer_pass": true,
+      "macro_overall_gain_pp": 0.3686,
+      "macro_change_gain_pp": 1.2548,
+      "change_positive_runs": "7/9 (1 neutral, 1 negative)",
+      "protocols_positive": "3/3"
+    }
+  },
+  "final_decision": "FREEZE_S1L3_GENERATOR",
+  "decision_rationale": "S1L3 achieved higher macro Change gain (+1.49 pp vs +1.25 pp), higher macro Overall gain (+0.66 pp vs +0.37 pp), superior cross-seed consistency (8/9 positive runs vs 7/9, 0 negative runs on Change), and strict compliance with all motion and error guards."
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "S1_CPU_ENVELOPE_POTENTIAL_SELECTOR",
+  "registered_design": "PED_FOUR_DIRECTION_SERIES_20261011/NEXT_EXPERIMENT_DESIGN_20261011/EXPERIMENT_DESIGN.md",
+  "fixed_train": 18909,
+  "A_bucket": [
+    0,
+    1
+  ],
+  "B_bucket": [
+    2,
+    3,
+    4
+  ],
+  "identity_hash_tag": "repair-address-v1",
+  "OOF_hash_tag": "repair-oof-v1",
+  "OOF_folds": 3,
+  "min_A": 5000,
+  "min_B": 8000,
+  "min_positive_tracks_per_validationfold": 20,
+  "features": 120,
+  "P2": 96,
+  "native12x2": 24,
+  "features_dtype": "float32",
+  "statistics_dtype": "float64",
+  "normalization_dtype": "float64",
+  "std_floor_under": 0.000001,
+  "std_replacement": 1,
+  "selector": {
+    "C": 1,
+    "penalty": "l2",
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "tol": 0.000001,
+    "max_iter": 500,
+    "threads": 1,
+    "sklearn": "1.4.1.post1"
+  },
+  "random_tag": "repair-random-v1",
+  "OOF_H4_min_gain": 0.05,
+  "CI": 97.5,
+  "bootstrap": 2000,
+  "bootstrap_rng": [
+    20261011,
+    20261012,
+    20261021,
+    20261022
+  ],
+  "B_advantage_both_strict_positive": true,
+  "change_not_worse_each_fold": true,
+  "resource_process_GiB": 6,
+  "resource_system_reserve_each_GiB": 6,
+  "planning_max_minutes": 30,
+  "no_neural_training": true,
+  "no_torch": true,
+  "S2_conditional_only": true
+}

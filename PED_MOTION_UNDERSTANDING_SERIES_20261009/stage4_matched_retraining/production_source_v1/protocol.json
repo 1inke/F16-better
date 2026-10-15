@@ -1,0 +1,20 @@
+{
+  "name": "E3_fresh_matched_raw_information_ablation",
+  "folds": ["eth", "hotel", "univ", "zara01", "zara02"],
+  "seeds": [1, 2, 3],
+  "branches": ["full", "last2", "noNbr"],
+  "pipelines": 45,
+  "stage_fits": 90,
+  "epochs": {"h3": 30, "v2": 20},
+  "batch_size": 64,
+  "validation": "original_scene_tail_5percent_seed20260830_oracle_combo_every5",
+  "test": "after_validation_selection_only_original_E1_strata",
+  "fresh_H3_then_own_branch_H3_to_V2": true,
+  "optimizer": "original_AdamW_lr0.00025_wd0.0005_clip5",
+  "scheduler_EMA_loss_augmentation": "exact_original_AST_and_saved_canonical_contract",
+  "resource": {"process_GiB": 6, "physical_reserve_GiB": 6, "commit_reserve_GiB": 6},
+  "sole_OS_task": "Trajectory-PedMotionUnderstanding-MatchedRetraining-20261009",
+  "major_thresholds_unchanged": true,
+  "whole_series_complete": false,
+  "scope": "E3_first_fresh_group; E5_rotation_and_E6_neural_sibling_remaining"
+}

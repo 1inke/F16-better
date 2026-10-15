@@ -1,0 +1,3 @@
+# Report control patch provenance
+
+First report patch wrapper was39221characters despite intended <32k per-patch rule. Windows refused launching codex.exe: filename or extension too long. This occurred BEFORE patch process/file edits; no scientific or report file applied. Exact failed wrapper retained in allowedvisualizations/k20_final_report.patch. Corrected by compacting duplicated JSON aggregates, keeping complete metrics in completion_review/SUMMARY.json and RESULT, then explicitly validating new patch length<30000 before approved codex apply_patch. No deletion of failure, no source/threshold/model/metric change, not production scientific failure.

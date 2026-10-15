@@ -1,0 +1,7 @@
+# Fixed-sample paired trace contract
+
+Claim: fixed endpoints permit a learned temporal process to change intermediate position and velocity; these illustrations do not establish motion safety or population-level gain. Population conclusions come from the full saved-data audit.
+
+Quantitative grid, 183×155mm, one trajectory and one speed panel per stable/transition/change group, separate complete figure for each of all three seeds. Python/matplotlib matches the existing language-specific experiment workflow; preference persisted. Fixed minimum SHA256(tag 20261014-g2trace-v1 + ID) per outer group, unchanged across seeds, no GT/outcome window selection. Nine displayed model-window pairs are not nine independent subjects; only three fixed windows. All other windows remain in full statistical evaluation.
+
+For each fixed window, B's GT-posthoc same-candidate J-closest slot is displayed together with A at exactly the same physical slot and endpoint. This is an oracle diagnostic for display, not deployable candidate selection or a second significance test. Entire measured future GT and original past are retained. No cropping/smoothing/interpolation/GT fit/synthetic data. Velocities are discrete increments from origin /0.4 seconds; t=0 marker is actual last observed speed. SVG/PDF editable text and PNG preview, CSV source data and SHA provenance. No error bars/p-values on individual illustrative traces; all inferential statistics remain in the report. Limited cubic bridge, fixed target tracks, repeated benchmark, and all physics failures remain reported.

@@ -1,0 +1,77 @@
+{
+  "kind": "PAIRED_FIXED_POSITION3_SAMEPATH_QUALITY_OBJECTIVE",
+  "factor": "four_path_quality_functional_and_its_consistent_hardwinner",
+  "arms": [
+    "sum",
+    "joint"
+  ],
+  "control": "min4(ADE+.5FDE)",
+  "treatment": "min4(max(ADE,.5FDE))=.20*Jjoint",
+  "quality_units": "meters",
+  "treatment_max_tie": "ADE component first via stack.max",
+  "winner_tie": "first ascending physical selected slot",
+  "extra_protection_term": false,
+  "diversity": {
+    "type": "six_pair_mean_squared_hinge",
+    "margin": 0.3,
+    "weight": 0.05
+  },
+  "architecture": {
+    "input": 120,
+    "layers": [
+      120,
+      128,
+      64,
+      6
+    ],
+    "activation": "GELU",
+    "parameters": 24134,
+    "mapping": "unchanged direction1 position3 nodes4/8/12 original trajectorylambda"
+  },
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "grad_clip": null,
+    "batch_size": 256,
+    "shuffle": true,
+    "epochs": 25
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "train": 18909,
+  "outer": 1035,
+  "inner": 1856,
+  "original_CAL": 2879,
+  "primary": "outer_fixed_epoch25",
+  "checkpoint_selection": false,
+  "K": 20,
+  "fixed_native_slots": 16,
+  "policy": "original bottom4 immutable logits stableties, physicalascending; direction2 policy not embedded",
+  "training_runs": 6,
+  "history_rows": 150,
+  "saved_jobs": 18,
+  "statistics": "train-only float32features float64meanstd/std<1e-6->1 storedfloat32 shared botharms",
+  "old_F16_decoder_scorer": "not instantiated trained or optimizer accessed; immutable nativecache SHA",
+  "implementation_node": "2026-10-11T01:25:00+08:00",
+  "implementation_node_not_production_ETA": true,
+  "bootstrap": {
+    "records": 36,
+    "scalar_CIs": 144,
+    "replicates": 2000,
+    "seed": 20261011,
+    "clusters": "paired targettracks+modelseed",
+    "exploratory": true
+  },
+  "resource": {
+    "process_GiB": 6,
+    "physical_reserve_GiB": 6,
+    "commit_reserve_GiB": 6
+  },
+  "planning_limit_minutes": 30,
+  "old_E3_and_old_automation_remain_paused": true,
+  "no_additional_data": true
+}

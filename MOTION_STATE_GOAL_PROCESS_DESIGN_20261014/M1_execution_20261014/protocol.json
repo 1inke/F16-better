@@ -1,0 +1,71 @@
+{
+  "status": "PREREGISTERED_BEFORE_PREFLIGHT",
+  "stage": "M1_DYNAMIC_HISTORY",
+  "human_authorized": "2026-10-14 根据目录下内容按步骤逐步开始实验",
+  "source_design": "../M1_DYNAMIC_HISTORY.md",
+  "common": "../COMMON_PROTOCOL.md",
+  "arms": [
+    "last_velocity",
+    "dynamic_history"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "K": 20,
+  "train": 18909,
+  "outer": 1035,
+  "inner": 1856,
+  "original_CAL": 2879,
+  "epochs": 25,
+  "batch_size": 256,
+  "steps_per_run": 1850,
+  "total_new_steps": 11100,
+  "total_new_epochs": 150,
+  "scientific_saved_jobs": 24,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-8,
+    "foreach": false
+  },
+  "grad_clip": null,
+  "scheduler": null,
+  "checkpoint_selection": "fixed_epoch25_inner_CAL_posthoc_only",
+  "network": "GRU(5,32)x1_P2plusmotion128_context128_64_query20x16_head80_64_2",
+  "expected_parameters_per_arm": 34146,
+  "precision": "NNfloat32_physdiff64_cast32_physicalfeatures_stats64_goals_paths64",
+  "acceleration_features": "difference_float32_velocities_in_float64_divide_dt_cast32",
+  "control_acceleration": "physical_zero_normalized_shared_FIT_stats; invalid_first_acc_mask0_normalizedfill0",
+  "loss": "min20(ADE+.5FDE)+.05mean190pair_relu(.3-meanpathdistance)^2",
+  "ties": "first_candidate",
+  "centres": "reuse_SHA_compatible_G1_FIT_Kmeans20_no_refit",
+  "inputs_no_GT_group_ID_scene_native_logits": true,
+  "CI": {
+    "draws": 20000,
+    "rng_seed": 20261014,
+    "algorithm": "numpy_default_rng_PCG64",
+    "family_size": 26,
+    "family_reserved_for_M1_M2_M3_not_reduced_if_unrun": true,
+    "primary": "outer_change_B-A_and_B-native_C_ADE_FDE_J_plus_M1_endpoint_two",
+    "track": "sequence+target_track",
+    "crossed_independent_model_seed_resampling": 3,
+    "secondary": "95percent_exploratory",
+    "draw_indices": "per_draw_SHA_and_indices_saved"
+  },
+  "S1": "all3 endpoint_B-A>0;mean>=.05;family26_CI_lower>0;changeFDE_each<=A;outerprotected_ADEFDE_each<=1.01A",
+  "M2_parent": "S1_all_PASS=>all3M1B_else_all3existingG1",
+  "M1_negative_does_not_cancel_independent_M2": true,
+  "M3_conditional_on_M2_Q2_only": true,
+  "major_unchanged": true,
+  "process_GiB": 6,
+  "reserve_each_GiB": 6,
+  "planning_limit_minutes": 30,
+  "old_paused_E3_automations_unchanged": true
+}

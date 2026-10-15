@@ -1,0 +1,11 @@
+{
+  "status": "FAILURE",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_MOTION_UNDERSTANDING_SERIES_20261009\\stage2_raw_interventions\\completion_review\\audit_saved.py\", line 192, in <module>\n    try:main()\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_MOTION_UNDERSTANDING_SERIES_20261009\\stage2_raw_interventions\\completion_review\\audit_saved.py\", line 97, in main\n    assert read(H/'worker_state.json')['status']=='SUCCESS';assert read(H/'results/exit_status.json')['status']=='SUCCESS'\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_MOTION_UNDERSTANDING_SERIES_20261009\\stage2_raw_interventions\\completion_review\\audit_saved.py\", line 11, in read\n    def read(p):return json.loads(Path(p).read_text(encoding='utf-8-sig'))\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\linke\\\\Documents\\\\New project\\\\PED_MOTION_UNDERSTANDING_SERIES_20261009\\\\stage2_raw_interventions\\\\results\\\\exit_status.json'\n",
+  "resource": {
+    "peak_private_GiB": 0.051483154296875,
+    "peak_RSS_GiB": 0.07303619384765625,
+    "min_physical_GiB": 18.878719329833984,
+    "min_commit_GiB": 28.867069244384766,
+    "checks": 1
+  }
+}

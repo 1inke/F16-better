@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-11T00:22:47.7566420+08:00",
+  "task_name": "Trajectory-MotionProcessPaired-20261011",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "worker": {
+    "status": "SUCCESS",
+    "pid": 30276,
+    "parent": 2688,
+    "started_at": "2026-10-11T00:16:31.594153+08:00",
+    "type": "PAIRED_MOTION_PROCESS_FRESH_TRAINING",
+    "finished_at": "2026-10-11T00:21:34.489003+08:00"
+  },
+  "exit": {
+    "status": "SUCCESS",
+    "pid": 30276,
+    "parent": 2688,
+    "started_at": "2026-10-11T00:16:31.594153+08:00",
+    "type": "PAIRED_MOTION_PROCESS_FRESH_TRAINING",
+    "finished_at": "2026-10-11T00:21:34.489003+08:00"
+  },
+  "progress": {
+    "stage": "SUCCESS",
+    "at": "2026-10-11T00:21:34.48082+08:00",
+    "runs_done": 6,
+    "saved_jobs": 18
+  },
+  "runs_done": 6,
+  "histories": [
+    {
+      "seed": 42,
+      "arm": "position3",
+      "epochs": 25
+    },
+    {
+      "seed": 43,
+      "arm": "position3",
+      "epochs": 25
+    },
+    {
+      "seed": 44,
+      "arm": "position3",
+      "epochs": 25
+    },
+    {
+      "seed": 42,
+      "arm": "acceleration3",
+      "epochs": 25
+    },
+    {
+      "seed": 43,
+      "arm": "acceleration3",
+      "epochs": 25
+    },
+    {
+      "seed": 44,
+      "arm": "acceleration3",
+      "epochs": 25
+    }
+  ],
+  "stderr_bytes": 0,
+  "scheduled_at": "2026-10-11T00:20:31.594153+08:00",
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "late_check_discovered_completion": true
+}

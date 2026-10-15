@@ -1,0 +1,33 @@
+{
+  "stage": "R0_RANKABILITY_AND_SCORE_BIAS_AUDIT",
+  "r0_decision": "PROVENANCE_BIAS_DOMINANT",
+  "next_branch": "Branch B -> Stage R2 (Candidate-Aware Scorer)",
+  "diagnostics": {
+    "mean_recall_at_1": 48.98647514239787,
+    "mean_recall_at_5": 79.24901418192046,
+    "pairwise_good_vs_bad_accuracy_pct": 69.75236007940286,
+    "mean_good_native_score": 2.8607191695560346,
+    "mean_good_learned_score": 0.1478728982010243,
+    "newsupport_median_rank": 18.0,
+    "newsupport_frequently_gt_10": true,
+    "provenance_bias_present": true,
+    "ranking_signal_present": true
+  },
+  "probes": {
+    "P0_native_logits_calibrated": {
+      "top1_good_rate_pct": 40.23061990737915
+    },
+    "P1_history_plus_trajectory": {
+      "top1_good_rate_pct": 36.19474768638611,
+      "pairwise_acc_pct": 93.65063739725353
+    },
+    "P2_history_plus_geom_prov": {
+      "top1_good_rate_pct": 35.29788553714752,
+      "pairwise_acc_pct": 92.0034125773162
+    },
+    "P3_history_plus_traj_context": {
+      "top1_good_rate_pct": 37.8603458404541,
+      "pairwise_acc_pct": 94.04603698052534
+    }
+  }
+}

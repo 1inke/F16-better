@@ -1,0 +1,7 @@
+{
+  "status": "ENVIRONMENT_IMPORT_FAILURE_BEFORE_DATA",
+  "attempt": "readonly inline metadata probe importing sklearn",
+  "message": "SciPy import requires temporary directory; read-only sandbox had no writable tempfile location. No fixtures/data or fit ran in failed attempt.",
+  "source_modified": false,
+  "remedy": "approved S1 code uses task-local tmp under new experiment folder, not OS/global pagefile/other programs; subsequent readonly numpy-only metadata scale probe passed."
+}

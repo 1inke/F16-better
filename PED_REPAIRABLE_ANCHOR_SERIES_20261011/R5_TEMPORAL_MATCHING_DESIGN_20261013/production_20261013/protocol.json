@@ -1,0 +1,43 @@
+{
+  "status": "IMPLEMENTATION_NOT_LAUNCHED",
+  "design": "../EXPERIMENT_DESIGN.md",
+  "human_execution_authorized": true,
+  "arms": {
+    "control": 200,
+    "temporal": 368
+  },
+  "new_features": 168,
+  "feature_order": "t1..7_k1..12_DthenC",
+  "source_f32_to_f64_primitive_to_f32_then_f64_statistics": true,
+  "dt": 0.4,
+  "stats": "common_train_all20_mean_popstd_std<1e-6_scale1",
+  "objective": "same_R3_allPN_softplus+L2/(2S)",
+  "S": "20*train_windows",
+  "C": 1,
+  "solver": "newton-cholesky",
+  "tol": 0.000001,
+  "max_iter": 500,
+  "intercept": 0,
+  "CPU_threads": 1,
+  "OOF_folds": 3,
+  "fits": 6,
+  "primary": "same263_Hit4",
+  "references": [
+    "control",
+    "pointwise",
+    "linear",
+    "envelope",
+    "fixed_random",
+    "bottom"
+  ],
+  "min_gain_pp": 5,
+  "bootstrap_seed": 20261013,
+  "bootstrap_draws": 2000,
+  "confidence": 0.9916666666666667,
+  "change_gate": "every_fold_at_least_all6refs",
+  "planning_minutes_max": 30,
+  "process_GiB_max": 6,
+  "reserve_physical_commit_each_GiB": 6,
+  "automatic_B_S2": false,
+  "formal_increment": 0
+}

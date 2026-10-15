@@ -1,0 +1,5 @@
+# Latest explicit start: execution-time binding only
+
+Human asked ETA, received currentrun7–17minutes including audit and20–30minutes including synthesis, then said 开始. This authorizes the single pending third run and complete result/series/recent review beyond old09:30:18 boundary. It does not silently reset the earlier03:30:18–09:30:18 autonomous six-hour window or authorize fourth training/extra modules/loss/data.
+
+Only run.py workspace-root plumbing and executiondeadline literal09:30:18→10:10:00 differ from preserved parent. Inverse textual transformation verified exact full body equality. protocol.json and DESIGN bind the latest authorization/deadline transparently. Current-source complete GPU/preflight/resume/SHA tests rerun; parent sources/digests/reports/failures untouched. No scientific objective/model/input/trajectory math/normalization/assignment/motion threshold changed. This child is the same formalthird, not newfourth. Only currentsoleworker may launch afterPASS; temporary scheduling replaced by actualhalf aftersolelaunch.

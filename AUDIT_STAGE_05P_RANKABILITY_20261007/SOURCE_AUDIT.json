@@ -1,0 +1,13 @@
+{
+  "stage": "05P_RANKABILITY",
+  "audit_timestamp": "2026-10-07T02:44:40+08:00",
+  "sources": {
+    "generator": "STATIC_K24 (frozen)",
+    "training_set": "grouped_train_index (N=16337)",
+    "inner_set": "inner_cal_index (N=1773)",
+    "outer_set": "outer_eval_index (Zara Outer N=1561)",
+    "proposal_posteriors": "5-fold cross-fitting out-of-fold predictions on grouped_train_index",
+    "leakage_check": "ZERO future trajectory leakage into model inputs; zero Zara exposure during training"
+  },
+  "audit_status": "PASS"
+}

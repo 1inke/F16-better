@@ -1,0 +1,3 @@
+# R1 最终保存记录恢复
+
+继承io_recovery全部2090锁源和实际预检，不启动中间目录worker。启动前静态检查发现prefix记录含NumPy arrays，canonical digest需同JSON writer规范转换；仅完善序列化，不变数值/科学协议。32真实atomicwrites、np/listdigest同值、前8旧metadata重构EXACT及完整预检必须PASS。父原18未落盘case仍明确重构一次，之后每case完整checkpoint。NoS2/B/eval。

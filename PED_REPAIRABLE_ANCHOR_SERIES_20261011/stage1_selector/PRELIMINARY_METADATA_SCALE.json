@@ -1,0 +1,79 @@
+{
+  "sklearn": "1.4.1.post1",
+  "metadata_keys": [
+    "sample_id",
+    "scene_family",
+    "sequence",
+    "pedestrian_id",
+    "start_frame",
+    "ambiguous_track_time",
+    "matching_source_windows"
+  ],
+  "train": 18909,
+  "A": 7334,
+  "B": 11575,
+  "A_groups": [
+    4089,
+    1353,
+    1892
+  ],
+  "B_groups": [
+    6678,
+    2064,
+    2833
+  ],
+  "folds": [
+    {
+      "fold": 0,
+      "n": 2456,
+      "native_failed": 1051,
+      "positive_windows": 1351,
+      "positive_tracks": 85,
+      "failed_positive_tracks": 79,
+      "groups": [
+        1313,
+        463,
+        680
+      ]
+    },
+    {
+      "fold": 1,
+      "n": 2543,
+      "native_failed": 1109,
+      "positive_windows": 1471,
+      "positive_tracks": 95,
+      "failed_positive_tracks": 86,
+      "groups": [
+        1415,
+        484,
+        644
+      ]
+    },
+    {
+      "fold": 2,
+      "n": 2335,
+      "native_failed": 1045,
+      "positive_windows": 1321,
+      "positive_tracks": 89,
+      "failed_positive_tracks": 87,
+      "groups": [
+        1361,
+        406,
+        568
+      ]
+    }
+  ],
+  "A_scene": {
+    "hotel": 218,
+    "university": 5433,
+    "zara": 1683
+  },
+  "B_scene": {
+    "hotel": 375,
+    "university": 7387,
+    "zara": 3813
+  },
+  "initial_physical_GiB": 15.157661437988281,
+  "initial_commit_GiB": 23.740936279296875,
+  "process_private_GiB": 0.814453125
+}

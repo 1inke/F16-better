@@ -1,0 +1,212 @@
+{
+  "status": "PASS",
+  "at": "2026-10-13T13:26:31.834792+08:00",
+  "source_count_before_final_lock": 3313,
+  "counts": {
+    "inherited_R2_sources": 3244,
+    "R2_outputs": 35,
+    "not_all_historical_files": true
+  },
+  "map_rebuild_all_arrays_EXACT": true,
+  "shared_history_delta_ZERO": true,
+  "pointwise_R2_reproduction": [
+    {
+      "fold": 0,
+      "coef_intercept_scores_top4_weights_EXACT": true,
+      "score_max_error": 0.0,
+      "fit": {
+        "iterations": 5,
+        "loss": 0.5759830686827956,
+        "gradient_inf": 1.4638759507780547e-10,
+        "solver_rows": 3434,
+        "independent_units": "tracks_not_pairs_or_signed_rows",
+        "train_windows": 177,
+        "train_tracks": 75,
+        "pairs": 0,
+        "total_weight": 3540.0,
+        "intercept_fixed": false
+      }
+    },
+    {
+      "fold": 1,
+      "coef_intercept_scores_top4_weights_EXACT": true,
+      "score_max_error": 0.0,
+      "fit": {
+        "iterations": 5,
+        "loss": 0.5823469720462807,
+        "gradient_inf": 2.7446872410654934e-10,
+        "solver_rows": 3506,
+        "independent_units": "tracks_not_pairs_or_signed_rows",
+        "train_windows": 180,
+        "train_tracks": 78,
+        "pairs": 0,
+        "total_weight": 3600.0,
+        "intercept_fixed": false
+      }
+    },
+    {
+      "fold": 2,
+      "coef_intercept_scores_top4_weights_EXACT": true,
+      "score_max_error": 0.0,
+      "fit": {
+        "iterations": 5,
+        "loss": 0.5925615673260706,
+        "gradient_inf": 2.408286217390777e-10,
+        "solver_rows": 3296,
+        "independent_units": "tracks_not_pairs_or_signed_rows",
+        "train_windows": 169,
+        "train_tracks": 77,
+        "pairs": 0,
+        "total_weight": 3380.0,
+        "intercept_fixed": false
+      }
+    }
+  ],
+  "subset_numeric_fixtures": [
+    {
+      "arm": "pointwise",
+      "repeat_fit_EXACT": true,
+      "pair_contract_EXACT": true,
+      "shared_history_delta_ZERO": true,
+      "independent_loss_and_gradient_PASS": true,
+      "FD": [
+        {
+          "eps": 0.0001,
+          "gradient_error": 9.497358455234917e-11,
+          "hessian_error": 1.3145131649849873e-09
+        },
+        {
+          "eps": 1e-05,
+          "gradient_error": 1.1706857705462426e-11,
+          "hessian_error": 1.778233116311867e-11
+        },
+        {
+          "eps": 0.0001,
+          "gradient_error": 2.6937820030159543e-11,
+          "hessian_error": 1.9141392637589405e-10
+        },
+        {
+          "eps": 1e-05,
+          "gradient_error": 9.174248166710086e-12,
+          "hessian_error": 1.0492037794129772e-11
+        },
+        {
+          "eps": 0.0001,
+          "gradient_error": 1.916819741126785e-11,
+          "hessian_error": 8.928071060232412e-10
+        },
+        {
+          "eps": 1e-05,
+          "gradient_error": 1.3709286527177622e-12,
+          "hessian_error": 1.6563084237475323e-11
+        }
+      ],
+      "saved_score_EXACT": true,
+      "fit": {
+        "iterations": 6,
+        "loss": 0.34627872371700064,
+        "gradient_inf": 4.033158081634563e-07,
+        "solver_rows": 402,
+        "independent_units": "tracks_not_pairs_or_signed_rows",
+        "train_windows": 21,
+        "train_tracks": 20,
+        "pairs": 0,
+        "total_weight": 420.0,
+        "intercept_fixed": false
+      }
+    },
+    {
+      "arm": "pairwise",
+      "repeat_fit_EXACT": true,
+      "pair_contract_EXACT": true,
+      "shared_history_delta_ZERO": true,
+      "independent_loss_and_gradient_PASS": true,
+      "FD": [
+        {
+          "eps": 0.0001,
+          "gradient_error": 1.2918438541120736e-10,
+          "hessian_error": 1.8267825585560615e-09
+        },
+        {
+          "eps": 1e-05,
+          "gradient_error": 3.7291836285646696e-12,
+          "hessian_error": 3.144065563454035e-11
+        },
+        {
+          "eps": 0.0001,
+          "gradient_error": 1.4459572428293654e-11,
+          "hessian_error": 2.016356387413154e-10
+        },
+        {
+          "eps": 1e-05,
+          "gradient_error": 1.607156074889815e-11,
+          "hessian_error": 1.2607307559031611e-11
+        },
+        {
+          "eps": 0.0001,
+          "gradient_error": 4.1748965395882465e-12,
+          "hessian_error": 1.4256201774642818e-10
+        },
+        {
+          "eps": 1e-05,
+          "gradient_error": 2.659955589123797e-13,
+          "hessian_error": 1.6478603204195252e-11
+        }
+      ],
+      "saved_score_EXACT": true,
+      "fit": {
+        "iterations": 7,
+        "loss": 0.19262069253058334,
+        "gradient_inf": 3.814700800374213e-08,
+        "solver_rows": 954,
+        "independent_units": "tracks_not_pairs_or_signed_rows",
+        "train_windows": 21,
+        "train_tracks": 20,
+        "pairs": 477,
+        "total_weight": 419.9999999999999,
+        "intercept_fixed": true
+      }
+    }
+  ],
+  "full_pair_throwaway_seconds": 0.4338763999985531,
+  "pair_diagnostic_only_no_outcome_selection": {
+    "iterations": 5,
+    "loss": 0.4466672178098398,
+    "gradient_inf": 5.154865987362676e-07,
+    "solver_rows": 8046,
+    "independent_units": "tracks_not_pairs_or_signed_rows",
+    "train_windows": 177,
+    "train_tracks": 75,
+    "pairs": 4023,
+    "total_weight": 3540.000000000001,
+    "intercept_fixed": true
+  },
+  "pointwise_seconds": [
+    5.661516599997412,
+    0.23442039999645203,
+    0.18194629997015
+  ],
+  "sha_seconds": 7.162255699979141,
+  "empty_group_JSON_N0_null": true,
+  "planning_minutes": 3.815453059997526,
+  "ETA_minutes": [
+    2.2892718359985156,
+    6.867815507995546
+  ],
+  "resource": {
+    "peak_private_GiB": 0.20525741577148438,
+    "peak_RSS_GiB": 0.16837310791015625,
+    "min_physical_GiB": 15.778648376464844,
+    "min_commit_GiB": 23.953227996826172,
+    "checks": 713
+  },
+  "elapsed_seconds": 24.54241809999803,
+  "versions": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "1.25.2",
+    "scipy": "1.12.0",
+    "sklearn": "1.4.1.post1",
+    "threadpoolctl": "3.3.0"
+  },
+  "no_solver_neural_training": true
+}

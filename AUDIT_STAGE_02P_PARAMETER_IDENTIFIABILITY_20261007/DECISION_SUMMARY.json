@@ -1,0 +1,60 @@
+{
+  "stage": "02P_PARAMETER_IDENTIFIABILITY",
+  "status": "COMPLETED",
+  "science_audit_pass": true,
+  "resource_audit_pass": true,
+  "metrics": {
+    "deterministic_program_beats_static_in_2of3": true,
+    "oracle_parameter_gap_large": true,
+    "best_representation": "P2",
+    "best_arm_wins": 2,
+    "best_arm_avg_coverage_gain_pp": 0.22406225840311636,
+    "best_arm_avg_j_gain_pct": -0.2502176420965598,
+    "all_arm_wins": {
+      "P0": 1,
+      "P1": 2,
+      "P2": 2,
+      "P3": 1
+    },
+    "all_arm_avg_coverage_gain_pp": {
+      "P0": 0.28828793638057126,
+      "P1": 0.004489586799560907,
+      "P2": 0.22406225840311636,
+      "P3": 0.026194159098791303
+    },
+    "all_arm_avg_j_gain_pct": {
+      "P0": -0.04933648861155682,
+      "P1": -0.28046038484341307,
+      "P2": -0.2502176420965598,
+      "P3": -0.30033286285318295
+    }
+  },
+  "protocol_breakdown": {
+    "target-track": {
+      "static_coverage_pct": 61.64251207729469,
+      "best_arm_coverage_pct": 61.93236714975845,
+      "best_arm_coverage_gain_pp": 0.28985507246376274,
+      "best_arm_j_gain_pct": 0.035456240119707993,
+      "best_arm_beats_static": true
+    },
+    "recording-time": {
+      "static_coverage_pct": 56.18374558303887,
+      "best_arm_coverage_pct": 55.47703180212014,
+      "best_arm_coverage_gain_pp": -0.7067137809187329,
+      "best_arm_j_gain_pct": -1.1779817303312712,
+      "best_arm_beats_static": false
+    },
+    "scene-family": {
+      "static_coverage_pct": 67.96925048046124,
+      "best_arm_coverage_pct": 69.05829596412556,
+      "best_arm_coverage_gain_pp": 1.0890454836643193,
+      "best_arm_j_gain_pct": 0.3918725639218839,
+      "best_arm_beats_static": true
+    }
+  },
+  "notes": [
+    "Evaluated 4 representation arms (P0, P1, P2, P3) across 3 grouped protocols.",
+    "Supervision target was continuous oracle motion program parameter z.",
+    "Best representation arm P2 achieved 2/3 wins against Static-K24."
+  ]
+}

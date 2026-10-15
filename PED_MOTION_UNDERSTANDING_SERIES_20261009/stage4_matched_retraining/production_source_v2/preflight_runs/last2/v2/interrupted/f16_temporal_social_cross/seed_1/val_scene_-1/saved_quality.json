@@ -1,0 +1,55 @@
+{
+  "status": "PASS_SAVED_QUALITY_CLUSTERS_MOTION",
+  "rows": 12,
+  "K": 20,
+  "selected_by_validation_only": true,
+  "GT_prediction_forward": false,
+  "all_weights_bool_statbuffers_EXACT": true,
+  "original_metrics_difference": {
+    "min_ade_20": 1.3987592195618959e-09,
+    "min_fde_20": 4.223236482747694e-10,
+    "same_path_fde": 9.188019234329659e-10
+  },
+  "full_saved_arithmetic_EXACT": true,
+  "records": [
+    {
+      "subset": "all",
+      "n": 12,
+      "minADE": 0.10015532979564157,
+      "minFDE": 0.13707287567344814,
+      "J": 0.5205863619001427,
+      "coverage": 0.8333333333333334,
+      "nonCV_hit": 0.16666666666666666,
+      "nonCV_candidate_count": 18.416666666666668,
+      "spread": 0.9627891590371439,
+      "coverage_0.10": 0.75,
+      "coverage_0.15": 0.8333333333333334,
+      "coverage_0.20": 0.8333333333333334,
+      "coverage_0.30": 0.9166666666666666,
+      "coverage_0.40": 1.0,
+      "distinct": 20.0,
+      "effectivegood": 1.6666666666666667,
+      "motion": {
+        "speedp95": 0.47194601529475355,
+        "accelmean": 4.381020632653926e-05,
+        "accelp95": 0.0004404327836882363,
+        "jerkmean": 0.00024020703863210453,
+        "jerkp95": 0.0011800248876728972
+      },
+      "points": {
+        "top1": {
+          "ADE": 0.21679174096232603,
+          "FDE": 0.32477815930411713,
+          "skill": 0.784604699147016
+        },
+        "meanK": {
+          "ADE": 0.5343865595925168,
+          "FDE": 0.9567018087612502,
+          "skill": 0.3352847320805338
+        }
+      }
+    }
+  ],
+  "not_external_review": true,
+  "fixture": true
+}

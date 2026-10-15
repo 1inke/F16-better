@@ -1,0 +1,18 @@
+{
+  "stage": "05P_RANKABILITY",
+  "generator": "STATIC_K24",
+  "representation": "candidate_aware",
+  "hidden_dim": 128,
+  "state_dim": 32,
+  "type_dim": 16,
+  "num_types": 9,
+  "set_encoder_heads": 4,
+  "num_seeds": 3,
+  "seeds": [1, 2, 3],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "epochs": 20,
+  "batch_size": 256,
+  "pairwise_margin": 0.10,
+  "baseline_control": "NATIVE_LOGITS_PRIOR"
+}

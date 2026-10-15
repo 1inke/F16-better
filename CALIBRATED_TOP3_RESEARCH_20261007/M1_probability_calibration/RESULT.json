@@ -1,0 +1,46 @@
+{
+  "phase": "M1_TOP3_PROBABILITY_CALIBRATION",
+  "macro_summary": {
+    "nll_mean": 0.9284246497684054,
+    "brier_mean": 0.23047900365458596,
+    "ece_mean": 0.24394976271574212,
+    "subgroups": {
+      "overall": {
+        "p_native": 0.508586542473899,
+        "p_static": 0.23586911625332302,
+        "p_learned": 0.25554432802730137,
+        "p_good": 0.2834867437680562
+      },
+      "stable": {
+        "p_native": 0.5593823558754392,
+        "p_static": 0.18987204796738094,
+        "p_learned": 0.25074560774697197,
+        "p_good": 0.37158457438151044
+      },
+      "change": {
+        "p_native": 0.38707520564397174,
+        "p_static": 0.33274582028388977,
+        "p_learned": 0.2801789674494002,
+        "p_good": 0.10969189968374041
+      }
+    }
+  },
+  "checkpoints": {
+    "scene_family_seed_42": "5f8178278b776c79614a311144504df99563935476d28d29a23f0d1751fd4762",
+    "scene_family_seed_43": "70a79e600e2824d92b88ae6ee7e2afa228c4921d4bf81077fce0b1302cb0277e",
+    "scene_family_seed_44": "76ddf96334aee5c3ae64095879f04d3ef8cf8115457154bf73fc89dc91689e98",
+    "target_track_seed_42": "f64e937921b8b247cde2f457df5caf7779acf2613d1b866428f0e4a300ab8baa",
+    "target_track_seed_43": "03212e0f00b2e79c5d78a9703e75d0649c5d1ed1ace019f9f229d6e2a5877b9d",
+    "target_track_seed_44": "f9102ef6e4e7e0821ceb68b0fb21bd16ab5ca3b957c41b5405cc7de4f1e0a3d5",
+    "recording_time_seed_42": "b07324781580445e8d5522809f9e6b57d152d37a29b36b1f7e490d6f61460b48",
+    "recording_time_seed_43": "ecb51cb4031ac72c131a637d826c1ca336ffb7721d8b709359093a3a64415faa",
+    "recording_time_seed_44": "a0485aa68059d4a3bc0ecd25ce235c49d1d451de1b850430ee34facb5c2e114e"
+  },
+  "conclusions": {
+    "ece": 0.24394976271574212,
+    "brier_score": 0.23047900365458596,
+    "learned_probability_shift_ratio": 1.1173833510660314,
+    "expected_p_good_overall": 0.2834867437680562,
+    "expected_p_good_change": 0.10969189968374041
+  }
+}

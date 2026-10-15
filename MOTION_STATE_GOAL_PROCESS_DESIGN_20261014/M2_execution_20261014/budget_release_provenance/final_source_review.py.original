@@ -1,0 +1,11 @@
+"""CPU-only final source / preflight / budget / science preregistration review."""
+import common as c
+def main():
+ pre=c.read(c.H/"PREFLIGHT.json");lock=c.read(c.H/"source_manifest.json");c.verify(lock["files"]);c.guard()
+ assert pre["status"]=="PASS" and pre["planning_minutes"]<=30
+ assert lock["source_sha"]==c.digest(lock["files"])
+ assert pre["paired_all_initial_state_EXACT"] and pre["geometry"]["S"]==650
+ assert set(pre["arms"])=={"frozen_goal","joint_goal"} and pre["stats_chunk_error"]<1e-11
+ c.write("prelaunch_review/REVIEW.json",dict(status="PASS",source_sha=lock["source_sha"],source_count=len(lock["files"]),planning_minutes=pre["planning_minutes"],actual_GPU_resume_evidence_reused_not_replayed=True,CPU_only_final_review=True,ARS_DA1_inline_sameassistant_not_external=dict(verdict="PASS_WITH_LIMITATIONS",major="Joint arm has5314 extra trainable goal parameters; improvement could be endpoint adjustment/capacity rather than process learning. Preserve endpoint, initial-P0 and motion decomposition; not pure causality.",minor="Projection guarantees endpoint algebra only, no physical safety; nullspace rank22 not24.",no_critical_issue=True),resource=c.RESOURCE))
+ print("FINAL_SOURCE_PASS",flush=True)
+if __name__=="__main__":main()

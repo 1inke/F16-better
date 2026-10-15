@@ -1,0 +1,88 @@
+{
+  "status": "IMPLEMENTATION_PENDING_PREFLIGHT",
+  "stage": "G1_GOAL20",
+  "series": "../SERIES_EXPERIMENT_DESIGN.md",
+  "human_authorized_continuous": true,
+  "K": 20,
+  "past_steps": 8,
+  "future_steps": 12,
+  "dt": 0.4,
+  "train": 18909,
+  "outer": 1035,
+  "inner": 1856,
+  "original_CAL": 2879,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 25,
+  "batch": 256,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "foreach": false,
+  "grad_clip": null,
+  "model": "P2_96to128to64_GELU_query20x16_shared80to64to2",
+  "query_init_std": 0.02,
+  "goal": "4.8*last_velocity+fixed_train20_kmeans_centers+learned_delta",
+  "precision": "float32head_float64CV_centers_goal_path",
+  "loss": "min20ADE+.5FDE + .05mean190pair_squared_hinge(.3)",
+  "winner_tie": "first_index",
+  "kmeans": {
+    "K": 20,
+    "seed": 20261014,
+    "n_init": 1,
+    "max_iter": 100,
+    "tol": 0.0001,
+    "init": "k-means++",
+    "algorithm": "lloyd",
+    "dtype": "float64"
+  },
+  "prototype_statistics": "onlytrain18909",
+  "rawforward_noGTgroupIDscene_native_logits": true,
+  "checkpoint": "fixed_epoch25_no_selection",
+  "output_splits": [
+    "FIT",
+    "outer",
+    "inner",
+    "original_CAL"
+  ],
+  "ports": [
+    "native20",
+    "CV1",
+    "prototype20",
+    "retrieval20",
+    "learned20"
+  ],
+  "CI": {
+    "draws": 2000,
+    "seed": 20261014,
+    "outer_family_size": 48,
+    "confidence": 0.9989583333333333,
+    "refs": [
+      "native20",
+      "prototype20",
+      "retrieval20"
+    ],
+    "metrics": [
+      "coverage",
+      "ADE",
+      "FDE",
+      "J"
+    ],
+    "groups": [
+      "overall",
+      "stable",
+      "transition",
+      "change"
+    ],
+    "secondary_samecorrected_exploratory": true
+  },
+  "G2_gate": "eachseed_outerchange_endpointcoverage_atleast_native_complete+.05",
+  "major": "unchanged_change5%ADEFDE_protected1%_jointCI_allseedgroup5motion<=native1.01",
+  "planning_limit_minutes": 30,
+  "process_GiB": 6,
+  "reserve_each_GiB": 6,
+  "old_E3_paused_unchanged": true
+}

@@ -1,0 +1,60 @@
+{
+  "status": "IMPLEMENTATION_PENDING_ACTUAL_PREFLIGHT",
+  "stage": "G2_FROZEN_PREDICTED_GOAL_PROCESS",
+  "parent": "../G1_goal20_20261014",
+  "human_authorized_continuous": true,
+  "K": 20,
+  "train": 18909,
+  "outer": 1035,
+  "inner": 1856,
+  "original_CAL": 2879,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 25,
+  "batch": 256,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "grad_clip": null,
+  "foreach": false,
+  "model": "Frozen_allG1_Process82_64_4_GELU",
+  "trainable": 5572,
+  "goal_prediction_frozen": true,
+  "GT_endpoint_teacher": false,
+  "goal_stats": "perseed_G1_predicted_FIT_goals_only_float64meanstd_floor1e-6scale1",
+  "bridge": "s*g+s(1-s)*a+s(1-s)(2s-1)*b",
+  "precision": "float32process_float64path",
+  "position_bound": null,
+  "loss": "min20ADE+.5FDE+.05mean190pair_squarehinge.3",
+  "CI": {
+    "draws": 2000,
+    "seed": 20261014,
+    "outer_family": 64,
+    "tails": 0.000390625,
+    "refs": [
+      "G1",
+      "native20",
+      "prototype20",
+      "retrieval20"
+    ],
+    "metrics": [
+      "coverage",
+      "ADE",
+      "FDE",
+      "J"
+    ]
+  },
+  "endpoint_FDE": "candidatewise_EXACT",
+  "new_training_phases": 3,
+  "saved_jobs": 12,
+  "old_F16_decoder_scorer_training": false,
+  "major": "unchanged",
+  "resource": {
+    "process_GiB": 6,
+    "physical_commit_each_reserve_GiB": 6
+  },
+  "planning_limit_minutes": 30
+}

@@ -1,0 +1,157 @@
+{
+  "status": "PASS_IDENTITY_LABEL_PREPARATION_ONLY",
+  "composition": {
+    "A": {
+      "n": 7334,
+      "tracks": 281,
+      "groups": [
+        4089,
+        1353,
+        1892
+      ],
+      "scenes": {
+        "hotel": 218,
+        "university": 5433,
+        "zara": 1683
+      },
+      "ambiguous_time": 48
+    },
+    "B": {
+      "n": 11575,
+      "tracks": 408,
+      "groups": [
+        6678,
+        2064,
+        2833
+      ],
+      "scenes": {
+        "hotel": 375,
+        "university": 7387,
+        "zara": 3813
+      },
+      "ambiguous_time": 53
+    },
+    "train": {
+      "n": 18909,
+      "tracks": 689,
+      "groups": [
+        10767,
+        3417,
+        4725
+      ],
+      "scenes": {
+        "hotel": 593,
+        "university": 12820,
+        "zara": 5496
+      },
+      "ambiguous_time": 101
+    },
+    "outer": {
+      "n": 1035,
+      "tracks": 191,
+      "groups": [
+        604,
+        178,
+        253
+      ],
+      "scenes": {
+        "hotel": 46,
+        "university": 662,
+        "zara": 327
+      },
+      "ambiguous_time": 4
+    },
+    "inner": {
+      "n": 1856,
+      "tracks": 76,
+      "groups": [
+        978,
+        381,
+        497
+      ],
+      "scenes": {
+        "hotel": 28,
+        "university": 1150,
+        "zara": 678
+      },
+      "ambiguous_time": 1
+    },
+    "original_CAL": {
+      "n": 2879,
+      "tracks": 111,
+      "groups": [
+        1535,
+        644,
+        700
+      ],
+      "scenes": {
+        "university": 2879
+      },
+      "ambiguous_time": 0
+    }
+  },
+  "OOF": [
+    {
+      "fold": 0,
+      "train": 4878,
+      "validation": 2456,
+      "positive_tracks": 85,
+      "failed_positive_tracks": 79,
+      "groups": [
+        1313,
+        463,
+        680
+      ]
+    },
+    {
+      "fold": 1,
+      "train": 4791,
+      "validation": 2543,
+      "positive_tracks": 95,
+      "failed_positive_tracks": 86,
+      "groups": [
+        1415,
+        484,
+        644
+      ]
+    },
+    {
+      "fold": 2,
+      "train": 4999,
+      "validation": 2335,
+      "positive_tracks": 89,
+      "failed_positive_tracks": 87,
+      "groups": [
+        1361,
+        406,
+        568
+      ]
+    }
+  ],
+  "A_to_B_time_context_proxy": {
+    "target_windows": 11575,
+    "known_same_sequence_20_source_index_exposure": 11323,
+    "unknown": 53,
+    "not_seconds_or_verified_video_frame": true
+  },
+  "B_to_outer_time_context_proxy": {
+    "target_windows": 1035,
+    "known_same_sequence_20_source_index_exposure": 1026,
+    "unknown": 4,
+    "not_seconds_or_verified_video_frame": true
+  },
+  "A_B_target_disjoint": true,
+  "outer_inner_train_target_disjoint": true,
+  "CAL_tracks_shared_with_train": 29,
+  "all25912_registry_retained": true,
+  "metadata_unknown_retained": true,
+  "source_ID_full_preflight_not_yet": true,
+  "resource": {
+    "peak_private_GiB": 0.19661712646484375,
+    "peak_RSS_GiB": 0.21043014526367188,
+    "min_physical_GiB": 12.739871978759766,
+    "min_commit_GiB": 20.50176239013672,
+    "checks": 3
+  },
+  "elapsed_seconds": 6.589955300005386
+}

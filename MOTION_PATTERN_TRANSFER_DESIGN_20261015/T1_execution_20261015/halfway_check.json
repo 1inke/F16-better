@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-10-15T01:08:22.5295945+08:00",
+  "task": "Trajectory-MotionPatternT1Responsibility-20261015",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "worker_state": {
+    "status": "SUCCESS",
+    "pid": 30404,
+    "parent_pid": 2688,
+    "started_at": "2026-10-15T01:00:28.388844+08:00",
+    "finished_at": "2026-10-15T01:06:12.131275+08:00"
+  },
+  "exit_status": {
+    "status": "SUCCESS",
+    "started_at": "2026-10-15T01:00:28.388844+08:00",
+    "finished_at": "2026-10-15T01:06:12.117338+08:00",
+    "code": 0
+  },
+  "progress": {
+    "stage": "SUCCESS",
+    "at": "2026-10-15T01:06:12.109003+08:00",
+    "runs_done": 6,
+    "S_T1": false,
+    "Q": false,
+    "T2_permitted": false
+  },
+  "RESULT": {
+    "saved_jobs": 28,
+    "status": "PASS_T1_MOTION_PATTERN_RESPONSIBILITY_PAIRED_RUN",
+    "epochs": 150,
+    "production_trainings": 6,
+    "decision": {
+      "S_T1": false,
+      "S_T1_components": {
+        "B_A_coverage_each_positive": false,
+        "B_A_mean_coverage_atleast5pp": false,
+        "B_A_48family_lower_positive": false,
+        "B_ownP0_coverage_each_positive": true,
+        "B_ownP0_48family_lower_positive": false,
+        "B_change_ADEFDE_mean_not_worseA": false,
+        "B_protected_each_ADEFDE_within_A1percent": false
+      },
+      "Q": false,
+      "Q_components": {
+        "B_change_coverage_each_atleast_native": false,
+        "B_change_each_netpositive_ownP0": true,
+        "B_protected_each_native_ADEFDE": false,
+        "B_all48_seed_split_group_fiveMotion_PASS": false
+      },
+      "B_A_coverage_gain_pp": [
+        -18.972332015810277,
+        -9.88142292490119,
+        -9.881422924901184
+      ],
+      "B_ownP0_coverage_gain_pp": [
+        5.533596837944662,
+        7.5098814229249,
+        8.300395256916996
+      ],
+      "T2_permitted": false,
+      "next_action": "STOP_THIS_FIXED_RESPONSIBILITY_SERIES",
+      "major_constraints_not_relaxed": true,
+      "major_precheck": {
+        "dynamic_winner": {
+          "all_fiveMotion": false,
+          "baseline_upgrade": false
+        },
+        "fixed_motion_responsibility": {
+          "all_fiveMotion": false,
+          "baseline_upgrade": false
+        }
+      },
+      "baseline_upgrade": false,
+      "whole_series_complete": false
+    }
+  },
+  "histories": [
+    {
+      "seed": 42,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "dynamic_winner"
+    },
+    {
+      "seed": 43,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "dynamic_winner"
+    },
+    {
+      "seed": 44,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "dynamic_winner"
+    },
+    {
+      "seed": 42,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "fixed_motion_responsibility"
+    },
+    {
+      "seed": 43,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "fixed_motion_responsibility"
+    },
+    {
+      "seed": 44,
+      "completed_epochs": 25,
+      "done": true,
+      "arm": "fixed_motion_responsibility"
+    }
+  ],
+  "stderr_bytes": 0
+}

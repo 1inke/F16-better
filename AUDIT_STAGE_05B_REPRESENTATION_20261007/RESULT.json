@@ -1,0 +1,130 @@
+{
+  "stage": "05B_REPRESENTATION",
+  "timestamp_utc": "2026-10-06 18:49:36",
+  "generator": "STATIC_K24",
+  "representation": "candidate_history_cross_attention",
+  "base_native_prior": {
+    "outer": {
+      "top1_good_rate": 0.4023062139654068,
+      "top1_ade": 0.3512724041938782,
+      "top1_fde": 0.7737426161766052,
+      "top1_j": 2.027102470397949,
+      "pairwise_acc_margin_10": 0.8290073514854752,
+      "spearman_rho": 0.7500011124942846,
+      "oracle_coverage": 0.6758488148622678
+    }
+  },
+  "seeds": {
+    "1": {
+      "best_inner_good_rate": 0.1895093062605753,
+      "outer_eval": {
+        "top1_good_rate": 0.3734785393978219,
+        "top1_good_count": 583,
+        "top1_ade": 0.37962186336517334,
+        "top1_fde": 0.8464207649230957,
+        "top1_j": 2.1959991455078125,
+        "pairwise_acc_margin_10": 0.8019348793010149,
+        "spearman_rho": 0.7111193344710728,
+        "explicit_selection_rate": 0.009609224855861628
+      },
+      "inner_eval": {
+        "top1_good_rate": 0.1895093062605753,
+        "top1_good_count": 336,
+        "top1_ade": 0.5495355129241943,
+        "top1_fde": 1.203204870223999,
+        "top1_j": 3.137197971343994,
+        "pairwise_acc_margin_10": 0.73737326268548,
+        "spearman_rho": 0.5673111197413278,
+        "explicit_selection_rate": 0.01015228426395939
+      },
+      "train_eval": {
+        "top1_good_rate": 0.23027483626124748,
+        "top1_good_count": 3762,
+        "top1_ade": 0.4793526828289032,
+        "top1_fde": 1.0442240238189697,
+        "top1_j": 2.7349090576171875,
+        "pairwise_acc_margin_10": 0.7691992437125685,
+        "spearman_rho": 0.6819124525013686,
+        "explicit_selection_rate": 0.011691252984023995
+      }
+    },
+    "2": {
+      "best_inner_good_rate": 0.19627749576988154,
+      "outer_eval": {
+        "top1_good_rate": 0.38757206918641895,
+        "top1_good_count": 605,
+        "top1_ade": 0.35928264260292053,
+        "top1_fde": 0.7928516864776611,
+        "top1_j": 2.0732996463775635,
+        "pairwise_acc_margin_10": 0.8306413082212573,
+        "spearman_rho": 0.7506940894715215,
+        "explicit_selection_rate": 0.0032030749519538757
+      },
+      "inner_eval": {
+        "top1_good_rate": 0.19627749576988154,
+        "top1_good_count": 348,
+        "top1_ade": 0.5463830828666687,
+        "top1_fde": 1.2020899057388306,
+        "top1_j": 3.1310575008392334,
+        "pairwise_acc_margin_10": 0.7429585159251383,
+        "spearman_rho": 0.5923483229408616,
+        "explicit_selection_rate": 0.005076142131979695
+      },
+      "train_eval": {
+        "top1_good_rate": 0.23437595641794698,
+        "top1_good_count": 3829,
+        "top1_ade": 0.47426939010620117,
+        "top1_fde": 1.0379682779312134,
+        "top1_j": 2.717198133468628,
+        "pairwise_acc_margin_10": 0.7908273742249639,
+        "spearman_rho": 0.7492902333468162,
+        "explicit_selection_rate": 0.003978698659484605
+      }
+    },
+    "3": {
+      "best_inner_good_rate": 0.19120135363790186,
+      "outer_eval": {
+        "top1_good_rate": 0.3850096092248559,
+        "top1_good_count": 601,
+        "top1_ade": 0.37128323316574097,
+        "top1_fde": 0.8256109356880188,
+        "top1_j": 2.1449954509735107,
+        "pairwise_acc_margin_10": 0.8281652962371481,
+        "spearman_rho": 0.7427223895788349,
+        "explicit_selection_rate": 0.014093529788597053
+      },
+      "inner_eval": {
+        "top1_good_rate": 0.19120135363790186,
+        "top1_good_count": 339,
+        "top1_ade": 0.5408708453178406,
+        "top1_fde": 1.1781320571899414,
+        "top1_j": 3.074202537536621,
+        "pairwise_acc_margin_10": 0.7583021018127989,
+        "spearman_rho": 0.6241899987236067,
+        "explicit_selection_rate": 0.01804850535815003
+      },
+      "train_eval": {
+        "top1_good_rate": 0.23358021668605006,
+        "top1_good_count": 3816,
+        "top1_ade": 0.47169989347457886,
+        "top1_fde": 1.0268510580062866,
+        "top1_j": 2.692646026611328,
+        "pairwise_acc_margin_10": 0.8006907988550062,
+        "spearman_rho": 0.7522973626091856,
+        "explicit_selection_rate": 0.016832955867050255
+      }
+    }
+  },
+  "summary_metrics": {
+    "mean_outer_good_rate": 0.3820200726030322,
+    "good_rate_gain_vs_base_pp": -2.0286141362374552,
+    "mean_outer_pairwise_acc": 0.82024716125314,
+    "pairwise_gain_vs_base_pp": -0.8760190232335208,
+    "mean_outer_spearman_rho": 0.7348452711738096,
+    "mean_outer_ade": 0.37006257971127826,
+    "mean_outer_fde": 0.8216277956962585,
+    "mean_outer_j": 2.1380980809529624,
+    "positive_seeds_count": 0,
+    "scorer_success": false
+  }
+}

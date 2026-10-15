@@ -1,0 +1,18 @@
+{
+  "stage": "PORTFOLIO_P0_COMPLEMENTARITY",
+  "seeds": [42, 43, 44],
+  "protocol": "scene-family",
+  "data": {
+    "outer_samples": 1561,
+    "stable_samples": 1226,
+    "transition_samples": 124,
+    "change_samples": 211
+  },
+  "candidate_sets": {
+    "control": "Static-K24 (Native20 + Static4)",
+    "bo4": "Bo4-K24 (Native20 + Learned4)",
+    "union": "Union-K28 (Native20 + Static4 + Learned4)"
+  },
+  "assertion": "lost_vs_static == 0 and union_coverage >= static_coverage",
+  "checkpoint_dir": "AUDIT_STAGE_BEST_OF_4_GENERATOR_3SEED_20261007/models"
+}

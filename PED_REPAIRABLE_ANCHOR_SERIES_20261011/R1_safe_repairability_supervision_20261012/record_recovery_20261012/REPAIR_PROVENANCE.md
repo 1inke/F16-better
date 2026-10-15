@@ -1,0 +1,9 @@
+# R1 预检1记录字段修复
+
+首次预检在第一锚求解返回并独立decode核验后，metadata dict重复传mode触发TypeError，未科学生产/OOF拟合。保留rootPREFLIGHT_FAILURE与failures/preflight1_duplicate_mode原preflight/run代码。只移除重复记录参数（solver结果保留原mode）；source sample已保存时仅按全部数组EXACT验证后复用，不覆盖旧科学输入；锁前同步修复生产同字段。求解预算、参数、模型、数据、三态标签和原sciencegate不变，完整重预检。首次工具JS构造ReferenceError发生在文件写入前，无任何科学文件改变。
+
+父worker15680于18:34:20.683983因WinError5失败，唯一startup18:34:57.380473确认FAILURE/Ready/0trigger/processnone，未观察Running。18记录无raw/path，不混为全完成模型。具体拒绝原因未证，不断言antivirus。修复仅子目录boundedwrite/percase完整checkpoint；18metadata按固定原数值逐项重构必须EXACT。构建child工具一次JS ReferenceError在文件写入前失败，无科学文件改变。
+
+中间io_recovery已完整预检PASS2090/13.80097min但未启动任何worker。启动前静态检查识别prefixdigest不接受np.ndarray，若launch会metadataTypeError；因此保留中间source/preflight不改，仅新record_recovery完善同JSONwriter的数组canonicalization。实际np/listdigest一致+前8旧recordnonelapsed EXACT在启动前核验；不是根据科学结果更换方法。父生产失败未重启，不重复活跃worker；中间无PID/生产失败。
+
+最终record预检首次在旧prefix计数断言停止（未锁源、未生产）：此前依据progress done18估计18条，实际已保存partial_records为19条，progress替换失败落后一条。核对当前partial_records count19/最后window9-slot14-shape，并用真实保存count19修复unlocked caller/docs。原失败code和JSON全部保留；当前恢复按19全部非耗时EXACT，对科学labels/预算/数据不改。此前18描述是已纠正的历史估计，不声称18已全部恢复。

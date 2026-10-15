@@ -1,0 +1,54 @@
+{
+  "status": "ANALYZED",
+  "scientific_verdict": "MAJOR_FAIL_BOTH",
+  "review": "completion_review/REVIEW.json",
+  "source_files": 1746,
+  "output_files": 103,
+  "runs": 6,
+  "epochs": 150,
+  "jobs": 18,
+  "quality_clusters_motion_assignment_recompute_max_error": 0,
+  "CI_recompute_max_error": 0,
+  "motion_groups_pass": 72,
+  "motion_groups_total": 72,
+  "protected_groups_ADE_FDE_harm_exceed_1pct": 0,
+  "coverage": {
+    "outer_native": [
+      625,
+      110
+    ],
+    "sum_each_seed": [
+      628,
+      111
+    ],
+    "joint_each_seed": [
+      628,
+      111
+    ],
+    "inner_native_change": 166,
+    "inner_both_each_seed": 165,
+    "CAL_native_change": 243,
+    "CAL_sum": [
+      244,
+      244,
+      245
+    ],
+    "CAL_joint": [
+      244,
+      245,
+      244
+    ]
+  },
+  "joint_outer_change_FDE_harm_pct": [
+    0.4761691965551984,
+    0.42538431114036435,
+    0.3340692966108838
+  ],
+  "scope": "target-grouped newhead exploration; not wholemodel unseen generalization",
+  "directions_completed": 3,
+  "direction4": "NOT_EXECUTED_GATE_NOT_TRIGGERED",
+  "new_reachability": "completion_review/REACHABILITY_ENVELOPE.json",
+  "synthesis": "../CURRENT_MODEL_ANALYSIS_AND_NEXT_STEPS.md",
+  "not_external_review": true,
+  "no_new_training_started_this_analysis": true
+}

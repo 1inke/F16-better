@@ -1,0 +1,49 @@
+{
+  "stage": "06_INTERNAL_VALIDATION",
+  "audit_timestamp": "2026-10-07T02:54:00+08:00",
+  "formulas_checked": {
+    "hotel_coverage_gain": {
+      "expression": "75.7503 - 72.9892",
+      "expected": 2.7611,
+      "reported": 2.7611,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "university_coverage_gain": {
+      "expression": "55.0208 - 52.4807",
+      "expected": 2.5401,
+      "reported": 2.5401,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "zara_coverage_gain": {
+      "expression": "67.8160 - 66.2907",
+      "expected": 1.5253,
+      "reported": 1.5253,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "scene_gain_pp_mean": {
+      "expression": "mean(2.7611, 2.5401, 1.5253)",
+      "expected": 2.2755,
+      "reported": 2.2755,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "total_rescued_scenes": {
+      "expression": "23 + 512 + 119",
+      "expected": 654,
+      "reported": 654,
+      "diff": 0,
+      "status": "PASS"
+    },
+    "total_lost_scenes": {
+      "expression": "0 + 0 + 0",
+      "expected": 0,
+      "reported": 0,
+      "diff": 0,
+      "status": "PASS"
+    }
+  },
+  "audit_status": "PASS"
+}

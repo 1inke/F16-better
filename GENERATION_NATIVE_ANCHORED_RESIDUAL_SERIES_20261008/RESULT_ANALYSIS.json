@@ -1,0 +1,257 @@
+{
+  "status": "ANALYZED_EXECUTION_AUDIT_PASS_MAJOR_FAIL",
+  "formal_experiments_completed": 1,
+  "baseline_upgraded": false,
+  "started_at": "2026-10-08T02:27:09.675194+08:00",
+  "finished_at": "2026-10-08T02:30:55.870470+08:00",
+  "actual_seconds": 226.195276,
+  "sole_check_at": "2026-10-08T02:31:53.4327331+08:00",
+  "scheduled_half": "2026-10-08T02:31:09.675194+08:00",
+  "half_lateness_seconds": 43.7575391,
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "runs": 6,
+  "epochs_per_run": 25,
+  "epoch_rows": 150,
+  "jobs": 18,
+  "replay_rows": 34620,
+  "source_count": 852,
+  "inherited_related_digests": 737,
+  "output_SHA_count": 103,
+  "all_historical_files_audited": false,
+  "completion_review": {
+    "status": "PASS",
+    "saved_metrics_full_SciPy_clusters_motion_assignment_bounds_max_error": 0,
+    "bootstrap_records": 36,
+    "scalar_CI": 144,
+    "bootstrap_max_error": 0,
+    "source_output_initial_final_SHA_PASS": true,
+    "no_torch_model_gradient_optimizer_replay": true
+  },
+  "change_counts": {
+    "outer": {
+      "n": 253,
+      "native": 110,
+      "zeroCV": 108,
+      "CV": [
+        108,
+        108,
+        108
+      ],
+      "native_anchor": [
+        111,
+        111,
+        111
+      ]
+    },
+    "inner": {
+      "n": 497,
+      "native": 166,
+      "zeroCV": 164,
+      "CV": [
+        166,
+        166,
+        166
+      ],
+      "native_anchor": [
+        165,
+        165,
+        165
+      ]
+    },
+    "original_CAL": {
+      "n": 700,
+      "native": 243,
+      "zeroCV": 236,
+      "CV": [
+        241,
+        239,
+        240
+      ],
+      "native_anchor": [
+        243,
+        244,
+        245
+      ]
+    }
+  },
+  "change_rescue_lost_native": {
+    "outer": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "inner": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "original_CAL": [
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        2
+      ]
+    ]
+  },
+  "change_rescue_lost_CV_vs_native": {
+    "outer": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "inner": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "original_CAL": [
+      [
+        5,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        7
+      ]
+    ]
+  },
+  "outer_change_mean": {
+    "native20": {
+      "ADE": 0.24914661896382423,
+      "FDE": 0.4293782977069047,
+      "J": 1.390568400937841
+    },
+    "native_anchor": {
+      "ADE": 0.24916757915700002,
+      "FDE": 0.4309419759690945,
+      "J": 1.3944413461052843
+    },
+    "CV_anchor": {
+      "ADE": 0.2780935076998626,
+      "FDE": 0.5235732701487777,
+      "J": 1.583379761415614
+    }
+  },
+  "outer_native_minus_native_CI": {
+    "coverage_pp": [
+      -0.8889880952380953,
+      1.8315018315018317
+    ],
+    "ADE": [
+      -0.0018342252972393153,
+      0.0019386489981388707
+    ],
+    "FDE": [
+      -0.00423915088469578,
+      0.007789050090024625
+    ],
+    "J": [
+      -0.008339392394503079,
+      0.01729467359666941
+    ]
+  },
+  "motion": {
+    "final_group_cells": 72,
+    "failed_group_cells": 66,
+    "scalar_cells": 360,
+    "failed_scalar_cells": 66,
+    "native_anchor_failed_all36_accelmean_percent_range": [
+      2.6126504259570416,
+      3.054406483991734
+    ],
+    "CV_failed30_speedp95_percent_range": [
+      1.2932105815370853,
+      3.6937953787183675
+    ],
+    "all_1pct_thresholds_unchanged": true
+  },
+  "train_batch_loss_reduction_percent": {
+    "native": [
+      2.5369612295310597,
+      2.4497560892183086,
+      2.3782670490441755
+    ],
+    "CV": [
+      5.344717815012115,
+      5.267471402801185,
+      5.716466024087885
+    ]
+  },
+  "current_branch": "Native anchor retains original error advantage but bounded pointwise residual fails simultaneous change coverage and kinematic protection; not scorer or unique loss/head root proof.",
+  "next": "No automatic new run. Define a falsifiable native-anchored smooth/physically feasible output-form contrast before future implementation; preserve loss/assignment/scorer/data authority boundaries, no bound/LR/epoch sweep.",
+  "limitations": [
+    "different initial quality and reachable function sets",
+    "conditioning common to both arms",
+    "no fullFIT set coverage saved this run",
+    "F16 seen/window-correlated/3seeds/reusedCAL/adaptivebottom4",
+    "independent arithmetic not external review"
+  ],
+  "DA2": {
+    "verdict": "PASS_WITH_LIMITATIONS_NOT_MAJOR_PASS",
+    "main_attack": "Native-vsCV advantage can be initial support/reachable-set advantage, not new learned understanding."
+  },
+  "DA3": {
+    "verdict": "PASS_WITH_LIMITATIONS_NOT_MAJOR_PASS",
+    "main_attack": "New25304-parameter bounded head is not old64032-Bo4 capacity-matched counterfactual. Report only current paired contrast."
+  },
+  "production_resource": {
+    "peak_private_GiB": 2.5291900634765625,
+    "peak_RSS_GiB": 1.8594818115234375,
+    "min_physical_GiB": 15.963672637939453,
+    "min_commit_GiB": 24.497188568115234
+  },
+  "supplement_resource": {
+    "peak_private_GiB": 0.2723236083984375,
+    "min_physical_GiB": 18.305072784423828,
+    "min_commit_GiB": 27.594070434570312
+  },
+  "automation": "One COUNT1 half consumed; found complete. No new completion event or repeated task queries; existing one-shot not deleted/paused."
+}

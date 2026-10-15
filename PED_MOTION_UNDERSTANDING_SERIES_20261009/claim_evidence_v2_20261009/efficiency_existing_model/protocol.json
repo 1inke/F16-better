@@ -1,0 +1,22 @@
+{
+  "scope": "E8_SHORT_FROZEN_EXISTING_ETH_SEED1_SINGLE_HOST",
+  "valid_agents": [1, 3, 5, 7, 9],
+  "fixed_padded_agents": 9,
+  "batch_size": 1,
+  "K": 20,
+  "warmup": 50,
+  "measure": 500,
+  "devices": ["cpu", "cuda:0"],
+  "CPU_threads": 1,
+  "selection": "first_official_TRAIN_ID_with_valid9_no_GT_quality_choice",
+  "calibration_fit": false,
+  "no_optimizer_backward_training": true,
+  "MAC": "torch_profiler_supported_matmul_conv_reported_FLOPs_divided2; explicitly_PARTIAL_not_all_ops",
+  "time_scope": "numpy_obs_valid_to_tensor_device+normalization+fullK20forward+relative_world_inverse+CPU_candidate_and_logit_return",
+  "baselines": ["CV_last", "position_velocity_kNN_train_bank_K32_original_tie_ID_rule"],
+  "baseline_time_scope": "fixed_numpy_obs_to_CPU_pred; banks_ready_in_RAM; includesqueryfeature/search/reconstruction_not_model_init_or_disk",
+  "max_compute_seconds": 600,
+  "process_max_GiB": 6,
+  "physical_and_commit_reserve_each_GiB": 6,
+  "no_edge_hardware_claim": true
+}

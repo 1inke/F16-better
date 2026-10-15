@@ -1,0 +1,27 @@
+{
+  "completion_status": "SUCCESS",
+  "review_timestamp_utc": "2026-10-06 17:29:00",
+  "audited_experiments": [
+    "Experiment_A_Native_Slot_Retention_Audit",
+    "Experiment_B_K22_K24_K28_Null_Controls",
+    "Experiment_C_Scene_Transfer_Decomposition_Robustness_Audit"
+  ],
+  "verdict_summary": {
+    "experiment_A": {
+      "verdict": "CONFIRMED_SINGLE_GOOD_CANDIDATE_FRAGILITY",
+      "summary": "70% of DEV covered windows and 100% of the 201 lost windows possess exactly ONE good candidate. Pruning drops candidates that are ranked ranks 5-8 (78.6%) and heavily concentrated in slots 14 & 15 (45.8%), because farthest-point clustering leaps over viable moderate-probability modes to pick extreme geometric outliers."
+    },
+    "experiment_B": {
+      "verdict": "CONFIRMED_K22_K24_SUBSTANTIAL_RESCUE_AND_NULL_HYPOTHESIS_SUPPORTED",
+      "summary": "Duplicate8 yields exactly 0 rescues (proving candidate count alone cannot improve coverage). Jitter8 yields only 4-9 rescues. K22 rescues 25-30 windows (52-62.5% of K28) with 0 lost windows. K24 rescues 39-46 windows (81-95.8% of K28) with 0 lost windows. Progression from K20 to K22/K24 is highly superior to aggressive pruning."
+    },
+    "experiment_C": {
+      "verdict": "CONFIRMED_SUPPORT_PLUS_MAPPING_MIXED_SHIFT",
+      "summary": "Across the 25-cell PCA/kNN grid and 1000 bootstrap iterations, R_support fluctuates in [1.188, 1.350] with 95% CI [1.210, 1.311]. R_support is never in the 1.05-1.15 regime. Forcing a purely conditional classification based on 1.248 vs 1.25 was an artifact of point evaluation. The robust conclusion is support + mapping mixed shift."
+    }
+  },
+  "overall_recommendation": {
+    "action": "REVIEW_REQUIRED_BEFORE_STAGE_04",
+    "next_scientific_step": "Adopt K22/K24 proposal conditioning instead of destructive K20 pruning; design Stage 04 conditioned head addressing both covariate support shift and conditional mapping mismatch simultaneously."
+  }
+}

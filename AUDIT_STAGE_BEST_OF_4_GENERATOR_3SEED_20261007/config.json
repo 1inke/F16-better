@@ -1,0 +1,29 @@
+{
+  "stage": "BEST_OF_4_GENERATOR_3SEED",
+  "seeds": [42, 43, 44],
+  "protocol": "scene-family",
+  "data": {
+    "train_samples": 16337,
+    "outer_samples": 1561,
+    "change_samples": 211
+  },
+  "candidate_budget": {
+    "native_slots": 20,
+    "bo4_slots": 4,
+    "total_K": 24
+  },
+  "model": {
+    "architecture": "BestOf4Generator",
+    "in_dim": 96,
+    "hidden_dim": 128,
+    "num_slots": 4,
+    "param_dim": 8,
+    "epochs": 25,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "diversity_margin": 0.3,
+    "lambda_div": 0.05
+  },
+  "loss": "min_m(ADE + 0.5*FDE) + lambda_div * hinge_div"
+}

@@ -1,0 +1,2442 @@
+{
+  "audit_timestamp_utc": "2026-10-06 17:48:13",
+  "scope": "K24_TRANSFER_GATE across 4 isolation sets (Zara outer, Target-track outer, Recording-time outer, Original CAL)",
+  "datasets": {
+    "zara_scene_family_outer": {
+      "dataset_name": "Zara Scene-Family Outer",
+      "n_samples": 1561,
+      "isolation_type": "scene_family_unseen",
+      "has_zara_in_global_model": true,
+      "has_isolated_training": true,
+      "results": {
+        "native20": {
+          "candidate_count_K": 20,
+          "coverage_count": 1040,
+          "coverage_rate": 0.6662395900064062,
+          "coverage_gain_count": 0,
+          "coverage_gain_pp": 0.0,
+          "rescued_count": 0,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 0.0,
+          "minADE": 0.14468966323655333,
+          "minFDE": 0.25541773726296996,
+          "mean_J": 0.8150817572342186,
+          "early_error": 0.06955407844275131,
+          "middle_error": 0.15711357462171383,
+          "late_error": 0.22219132439143666,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9795003203074952,
+            "mean_distinct_clusters": 19.6527866752082
+          },
+          "kinematics": {
+            "speed_mean": 0.7135511040687561,
+            "speed_p95": 1.4244597375392911,
+            "accel_mean": 0.09783796966075897,
+            "accel_p95": 0.6927660942077636,
+            "jerk_mean": 0.538105845451355,
+            "jerk_p95": 3.1626718044281
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 901,
+              "coverage_rate": 0.734910277324633,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.12149453021483204,
+              "minFDE": 0.2111998976477641,
+              "mean_J": 0.6750429807042622
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 57,
+              "coverage_rate": 0.4596774193548387,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.20662087540120846,
+              "minFDE": 0.3787619919770423,
+              "mean_J": 1.1801355870384194
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 82,
+              "coverage_rate": 0.3886255924170616,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.243067685872634,
+              "minFDE": 0.43985557510039847,
+              "mean_J": 1.4142327768077056
+            }
+          }
+        },
+        "null_duplicate8_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 1040,
+          "coverage_rate": 0.6662395900064062,
+          "coverage_gain_count": 0,
+          "coverage_gain_pp": 0.0,
+          "rescued_count": 0,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 0.0,
+          "minADE": 0.14468966323655333,
+          "minFDE": 0.25541773726296996,
+          "mean_J": 0.8150817572342186,
+          "early_error": 0.06955407844275131,
+          "middle_error": 0.15711357462171383,
+          "late_error": 0.22219132439143666,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9795003203074952,
+            "mean_distinct_clusters": 19.6527866752082
+          },
+          "kinematics": {
+            "speed_mean": 0.7152255177497864,
+            "speed_p95": 1.4311065673828125,
+            "accel_mean": 0.08453334122896194,
+            "accel_p95": 0.5279040783643718,
+            "jerk_mean": 0.46493059396743774,
+            "jerk_p95": 2.730078589916227
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 901,
+              "coverage_rate": 0.734910277324633,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.12149453021483204,
+              "minFDE": 0.2111998976477641,
+              "mean_J": 0.6750429807042622
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 57,
+              "coverage_rate": 0.4596774193548387,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.20662087540120846,
+              "minFDE": 0.3787619919770423,
+              "mean_J": 1.1801355870384194
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 82,
+              "coverage_rate": 0.3886255924170616,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.243067685872634,
+              "minFDE": 0.43985557510039847,
+              "mean_J": 1.4142327768077056
+            }
+          }
+        },
+        "K24_global_top4_classes": {
+          "candidate_count_K": 24,
+          "coverage_count": 1057,
+          "coverage_rate": 0.6771300448430493,
+          "coverage_gain_count": 17,
+          "coverage_gain_pp": 1.0890454836643082,
+          "rescued_count": 17,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 94.44444444444444,
+          "minADE": 0.14058073690804343,
+          "minFDE": 0.24563068102666333,
+          "mean_J": 0.7949639967854125,
+          "early_error": 0.0687535221128076,
+          "middle_error": 0.1534600807007517,
+          "late_error": 0.21520404382461603,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.1037796284433057,
+            "mean_distinct_clusters": 23.144778987828314
+          },
+          "kinematics": {
+            "speed_mean": 0.703463613986969,
+            "speed_p95": 1.4557800233364104,
+            "accel_mean": 0.09929206967353821,
+            "accel_p95": 0.5341427981853479,
+            "jerk_mean": 0.4502963721752167,
+            "jerk_p95": 2.9814572095870964
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 911,
+              "coverage_rate": 0.7430668841761827,
+              "rescued": 10,
+              "lost": 0,
+              "minADE": 0.1178952398081707,
+              "minFDE": 0.20294409423584275,
+              "mean_J": 0.6588169859235137
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 59,
+              "coverage_rate": 0.47580645161290325,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.2032647607536305,
+              "minFDE": 0.3686872900414115,
+              "mean_J": 1.1591512329700944
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 87,
+              "coverage_rate": 0.41232227488151657,
+              "rescued": 5,
+              "lost": 0,
+              "minADE": 0.23555514680184056,
+              "minFDE": 0.4213403297836168,
+              "mean_J": 1.3720114755995707
+            }
+          }
+        },
+        "K24_global_prior_weighted": {
+          "candidate_count_K": 24,
+          "coverage_count": 1057,
+          "coverage_rate": 0.6771300448430493,
+          "coverage_gain_count": 17,
+          "coverage_gain_pp": 1.0890454836643082,
+          "rescued_count": 17,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 94.44444444444444,
+          "minADE": 0.1404241735959453,
+          "minFDE": 0.2448536494313982,
+          "mean_J": 0.7945277615045375,
+          "early_error": 0.06887676824387165,
+          "middle_error": 0.15360619700340833,
+          "late_error": 0.2146193685418903,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.1037796284433057,
+            "mean_distinct_clusters": 23.151825752722615
+          },
+          "kinematics": {
+            "speed_mean": 0.7013276219367981,
+            "speed_p95": 1.4291321992874093,
+            "accel_mean": 0.10334347933530807,
+            "accel_p95": 0.5341427981853479,
+            "jerk_mean": 0.451861709356308,
+            "jerk_p95": 2.9814572095870964
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 911,
+              "coverage_rate": 0.7430668841761827,
+              "rescued": 10,
+              "lost": 0,
+              "minADE": 0.1174998166000636,
+              "minFDE": 0.20144765977989404,
+              "mean_J": 0.656822726448134
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 59,
+              "coverage_rate": 0.47580645161290325,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.20447441858609366,
+              "minFDE": 0.3729139343938245,
+              "mean_J": 1.1694690612810337
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 87,
+              "coverage_rate": 0.41232227488151657,
+              "rescued": 5,
+              "lost": 0,
+              "minADE": 0.2359835636346782,
+              "minFDE": 0.4218027867650632,
+              "mean_J": 1.3743081018214347
+            }
+          }
+        },
+        "K24_isolated_top4_classes": {
+          "candidate_count_K": 24,
+          "coverage_count": 1055,
+          "coverage_rate": 0.6758488148622678,
+          "coverage_gain_count": 15,
+          "coverage_gain_pp": 0.9609224855861576,
+          "rescued_count": 15,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 83.33333333333334,
+          "minADE": 0.14059611062711394,
+          "minFDE": 0.24618772600473254,
+          "mean_J": 0.7954915706096183,
+          "early_error": 0.06841219705292109,
+          "middle_error": 0.1535917505895415,
+          "late_error": 0.21562673229070214,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.0992953235105702,
+            "mean_distinct_clusters": 23.14029468289558
+          },
+          "kinematics": {
+            "speed_mean": 0.6879231333732605,
+            "speed_p95": 1.4279194235801698,
+            "accel_mean": 0.09807540476322174,
+            "accel_p95": 0.5390799909830072,
+            "jerk_mean": 0.45031246542930603,
+            "jerk_p95": 2.9814572095870964
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 910,
+              "coverage_rate": 0.7422512234910277,
+              "rescued": 9,
+              "lost": 0,
+              "minADE": 0.11790065983689527,
+              "minFDE": 0.20298765955424752,
+              "mean_J": 0.6588050739086817
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 59,
+              "coverage_rate": 0.47580645161290325,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.20309618931362525,
+              "minFDE": 0.36988976547811464,
+              "mean_J": 1.161590201081147
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 86,
+              "coverage_rate": 0.4075829383886256,
+              "rescued": 4,
+              "lost": 0,
+              "minADE": 0.23573645618010314,
+              "minFDE": 0.4245016055004447,
+              "mean_J": 1.3745504084147304
+            }
+          }
+        },
+        "K24_isolated_prior_weighted": {
+          "candidate_count_K": 24,
+          "coverage_count": 1055,
+          "coverage_rate": 0.6758488148622678,
+          "coverage_gain_count": 15,
+          "coverage_gain_pp": 0.9609224855861576,
+          "rescued_count": 15,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 83.33333333333334,
+          "minADE": 0.14062252691957433,
+          "minFDE": 0.2457213299366055,
+          "mean_J": 0.7953969444072388,
+          "early_error": 0.06863232337364121,
+          "middle_error": 0.15393294546655997,
+          "late_error": 0.21537611163205778,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.0980140935297886,
+            "mean_distinct_clusters": 23.145419602818706
+          },
+          "kinematics": {
+            "speed_mean": 0.7011764049530029,
+            "speed_p95": 1.427621668577194,
+            "accel_mean": 0.10332377254962921,
+            "accel_p95": 0.5348371863365169,
+            "jerk_mean": 0.4517892301082611,
+            "jerk_p95": 2.9814572095870964
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 910,
+              "coverage_rate": 0.7422512234910277,
+              "rescued": 9,
+              "lost": 0,
+              "minADE": 0.11773218635584523,
+              "minFDE": 0.20164218178418658,
+              "mean_J": 0.6575054173770875
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 59,
+              "coverage_rate": 0.47580645161290325,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.2050944499611897,
+              "minFDE": 0.37626538069609916,
+              "mean_J": 1.1732488091925997
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 86,
+              "coverage_rate": 0.4075829383886256,
+              "rescued": 4,
+              "lost": 0,
+              "minADE": 0.23573645618010314,
+              "minFDE": 0.425122151456456,
+              "mean_J": 1.3745504084147304
+            }
+          }
+        },
+        "augmented28_full": {
+          "candidate_count_K": 28,
+          "coverage_count": 1058,
+          "coverage_rate": 0.6777706598334401,
+          "coverage_gain_count": 18,
+          "coverage_gain_pp": 1.153106982703389,
+          "rescued_count": 18,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 100.0,
+          "minADE": 0.13934257936936373,
+          "minFDE": 0.24216153836664364,
+          "mean_J": 0.7892400151647383,
+          "early_error": 0.06856692246853145,
+          "middle_error": 0.1527406967814447,
+          "late_error": 0.2131253655213498,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.259449071108264,
+            "mean_distinct_clusters": 26.9583600256246
+          },
+          "kinematics": {
+            "speed_mean": 0.6876701712608337,
+            "speed_p95": 1.4585882425308228,
+            "accel_mean": 0.11649329960346222,
+            "accel_p95": 0.6826552212238293,
+            "jerk_mean": 0.4004005491733551,
+            "jerk_p95": 2.7084777712821944
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 912,
+              "coverage_rate": 0.7438825448613376,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.1168892202418009,
+              "minFDE": 0.19994086524403126,
+              "mean_J": 0.6543967403146661
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 59,
+              "coverage_rate": 0.47580645161290325,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.20167401848648184,
+              "minFDE": 0.3641178091412343,
+              "mean_J": 1.1521007080344225
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 87,
+              "coverage_rate": 0.41232227488151657,
+              "rescued": 5,
+              "lost": 0,
+              "minADE": 0.23317537481898162,
+              "minFDE": 0.415810674254196,
+              "mean_J": 1.3594918116118841
+            }
+          }
+        },
+        "null_jitter8_01cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 1045,
+          "coverage_rate": 0.66944266495836,
+          "coverage_gain_count": 5,
+          "coverage_gain_pp": 0.32030749519538215,
+          "rescued_count": 5,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 27.77777777777778,
+          "minADE": 0.1442204817438972,
+          "minFDE": 0.2527172966790647,
+          "mean_J": 0.8111917964787014,
+          "early_error": 0.06947680809997507,
+          "middle_error": 0.1565156743832105,
+          "late_error": 0.22170262178043748,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9948750800768738,
+            "mean_distinct_clusters": 19.66047405509289
+          },
+          "kinematics": {
+            "speed_mean": 0.716916561126709,
+            "speed_p95": 1.432335376739502,
+            "accel_mean": 0.13280968368053436,
+            "accel_p95": 0.561623689532277,
+            "jerk_mean": 0.6675273776054382,
+            "jerk_p95": 2.8098576426506043
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 905,
+              "coverage_rate": 0.7381729200652528,
+              "rescued": 4,
+              "lost": 0,
+              "minADE": 0.12100671664873959,
+              "minFDE": 0.20823262828257194,
+              "mean_J": 0.6709799858413487
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 58,
+              "coverage_rate": 0.46774193548387094,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.20615912572473158,
+              "minFDE": 0.3769658780575658,
+              "mean_J": 1.1768237365277445
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 82,
+              "coverage_rate": 0.3886255924170616,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24270239716114728,
+              "minFDE": 0.43817407091207866,
+              "mean_J": 1.4110084755086219
+            }
+          }
+        },
+        "null_jitter8_02cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 1047,
+          "coverage_rate": 0.6707238949391415,
+          "coverage_gain_count": 7,
+          "coverage_gain_pp": 0.4484304932735328,
+          "rescued_count": 7,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 38.88888888888889,
+          "minADE": 0.14401264510188164,
+          "minFDE": 0.25038313697599673,
+          "mean_J": 0.8087023993068604,
+          "early_error": 0.07000927004823211,
+          "middle_error": 0.15623654915517068,
+          "late_error": 0.22131596475646886,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.0096092248558617,
+            "mean_distinct_clusters": 19.671364509929532
+          },
+          "kinematics": {
+            "speed_mean": 0.7197718024253845,
+            "speed_p95": 1.4366349875926971,
+            "accel_mean": 0.18440409004688263,
+            "accel_p95": 0.7759396433830259,
+            "jerk_mean": 0.9034367799758911,
+            "jerk_p95": 3.3456457972526543
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 907,
+              "coverage_rate": 0.7398042414355628,
+              "rescued": 6,
+              "lost": 0,
+              "minADE": 0.12076727005705806,
+              "minFDE": 0.205718802834097,
+              "mean_J": 0.668374115995697
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 58,
+              "coverage_rate": 0.46774193548387094,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.20603581446981536,
+              "minFDE": 0.3753234483580413,
+              "mean_J": 1.1745649449836275
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 82,
+              "coverage_rate": 0.3886255924170616,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24262855412240278,
+              "minFDE": 0.43647733150962503,
+              "mean_J": 1.4090603124612064
+            }
+          }
+        },
+        "null_jitter8_05cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 1050,
+          "coverage_rate": 0.672645739910314,
+          "coverage_gain_count": 10,
+          "coverage_gain_pp": 0.6406149903907754,
+          "rescued_count": 10,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 55.55555555555556,
+          "minADE": 0.14394925605504483,
+          "minFDE": 0.24441114382496715,
+          "mean_J": 0.8052716195780634,
+          "early_error": 0.0718195030006802,
+          "middle_error": 0.15583404859684225,
+          "late_error": 0.22043345361158453,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.1069827033952595,
+            "mean_distinct_clusters": 19.779628443305572
+          },
+          "kinematics": {
+            "speed_mean": 0.7321662306785583,
+            "speed_p95": 1.4634425342082977,
+            "accel_mean": 0.3445722162723541,
+            "accel_p95": 1.5084646821022032,
+            "jerk_mean": 1.6411144733428955,
+            "jerk_p95": 6.572023725509643
+          },
+          "groups": {
+            "stable": {
+              "n": 1226,
+              "coverage_count": 909,
+              "coverage_rate": 0.7414355628058727,
+              "rescued": 8,
+              "lost": 0,
+              "minADE": 0.12067919583229986,
+              "minFDE": 0.19935366802863014,
+              "mean_J": 0.6647678376095714
+            },
+            "transition": {
+              "n": 124,
+              "coverage_count": 59,
+              "coverage_rate": 0.47580645161290325,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.20605562597476457,
+              "minFDE": 0.37116395206553227,
+              "mean_J": 1.170657103273399
+            },
+            "change": {
+              "n": 211,
+              "coverage_count": 82,
+              "coverage_rate": 0.3886255924170616,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24265970137750978,
+              "minFDE": 0.43172449503102933,
+              "mean_J": 1.4069296134887248
+            }
+          }
+        }
+      }
+    },
+    "target_track_outer": {
+      "dataset_name": "Target-Track Outer",
+      "n_samples": 1035,
+      "isolation_type": "pedestrian_id_unseen",
+      "has_zara_in_global_model": false,
+      "has_isolated_training": true,
+      "results": {
+        "native20": {
+          "candidate_count_K": 20,
+          "coverage_count": 625,
+          "coverage_rate": 0.6038647342995169,
+          "coverage_gain_count": 0,
+          "coverage_gain_pp": 0.0,
+          "rescued_count": 0,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 0.0,
+          "minADE": 0.17547758517828596,
+          "minFDE": 0.2966327368653397,
+          "mean_J": 0.9807671744856704,
+          "early_error": 0.08706446680139805,
+          "middle_error": 0.19351813609547402,
+          "late_error": 0.26198454439385954,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.8144927536231884,
+            "mean_distinct_clusters": 19.69855072463768
+          },
+          "kinematics": {
+            "speed_mean": 0.6151463389396667,
+            "speed_p95": 1.309346306324005,
+            "accel_mean": 0.08778207004070282,
+            "accel_p95": 0.620509409904479,
+            "jerk_mean": 0.48279887437820435,
+            "jerk_p95": 2.7770932793617193
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 434,
+              "coverage_rate": 0.7185430463576159,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.13488642078914104,
+              "minFDE": 0.22770019089959204,
+              "mean_J": 0.7526372640459279
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 81,
+              "coverage_rate": 0.4550561797752809,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.20850453879234426,
+              "minFDE": 0.34186100018216914,
+              "mean_J": 1.1724006329868242
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 110,
+              "coverage_rate": 0.43478260869565216,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24914661896382423,
+              "minFDE": 0.4293782977069047,
+              "mean_J": 1.390568400937841
+            }
+          }
+        },
+        "null_duplicate8_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 625,
+          "coverage_rate": 0.6038647342995169,
+          "coverage_gain_count": 0,
+          "coverage_gain_pp": 0.0,
+          "rescued_count": 0,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 0.0,
+          "minADE": 0.17547758517828596,
+          "minFDE": 0.2966327368653397,
+          "mean_J": 0.9807671744856704,
+          "early_error": 0.08706446680139805,
+          "middle_error": 0.19351813609547402,
+          "late_error": 0.26198454439385954,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.8144927536231884,
+            "mean_distinct_clusters": 19.69855072463768
+          },
+          "kinematics": {
+            "speed_mean": 0.6039800643920898,
+            "speed_p95": 1.3235210180282593,
+            "accel_mean": 0.07701551169157028,
+            "accel_p95": 0.5097436308860779,
+            "jerk_mean": 0.42358291149139404,
+            "jerk_p95": 2.392471802234649
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 434,
+              "coverage_rate": 0.7185430463576159,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.13488642078914104,
+              "minFDE": 0.22770019089959204,
+              "mean_J": 0.7526372640459279
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 81,
+              "coverage_rate": 0.4550561797752809,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.20850453879234426,
+              "minFDE": 0.34186100018216914,
+              "mean_J": 1.1724006329868242
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 110,
+              "coverage_rate": 0.43478260869565216,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24914661896382423,
+              "minFDE": 0.4293782977069047,
+              "mean_J": 1.390568400937841
+            }
+          }
+        },
+        "K24_global_top4_classes": {
+          "candidate_count_K": 24,
+          "coverage_count": 649,
+          "coverage_rate": 0.6270531400966184,
+          "coverage_gain_count": 24,
+          "coverage_gain_pp": 2.3188405797101463,
+          "rescued_count": 24,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 72.72727272727273,
+          "minADE": 0.17053516305029373,
+          "minFDE": 0.28436114450299493,
+          "mean_J": 0.9559564128672857,
+          "early_error": 0.08609031178077316,
+          "middle_error": 0.1904444826113409,
+          "late_error": 0.2525486680535184,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9826086956521739,
+            "mean_distinct_clusters": 23.003864734299516
+          },
+          "kinematics": {
+            "speed_mean": 0.6023219227790833,
+            "speed_p95": 1.3341508209705353,
+            "accel_mean": 0.08779293298721313,
+            "accel_p95": 0.507573494315147,
+            "jerk_mean": 0.40393906831741333,
+            "jerk_p95": 2.553838598728173
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 445,
+              "coverage_rate": 0.7367549668874173,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.1303599666770148,
+              "minFDE": 0.21688811737754735,
+              "mean_J": 0.7308518799657909
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 87,
+              "coverage_rate": 0.4887640449438202,
+              "rescued": 6,
+              "lost": 0,
+              "minADE": 0.20409772216693947,
+              "minFDE": 0.3290802702831643,
+              "mean_J": 1.1456677075292252
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 117,
+              "coverage_rate": 0.4624505928853755,
+              "rescued": 7,
+              "lost": 0,
+              "minADE": 0.24283430568546194,
+              "minFDE": 0.413980527882047,
+              "mean_J": 1.359887351296841
+            }
+          }
+        },
+        "K24_global_prior_weighted": {
+          "candidate_count_K": 24,
+          "coverage_count": 648,
+          "coverage_rate": 0.6260869565217392,
+          "coverage_gain_count": 23,
+          "coverage_gain_pp": 2.2222222222222254,
+          "rescued_count": 23,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 69.6969696969697,
+          "minADE": 0.17054315916292265,
+          "minFDE": 0.2836157871191221,
+          "mean_J": 0.955811319920458,
+          "early_error": 0.08587672061675765,
+          "middle_error": 0.19007949508999492,
+          "late_error": 0.2528092942735505,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.978743961352657,
+            "mean_distinct_clusters": 23.003864734299516
+          },
+          "kinematics": {
+            "speed_mean": 0.6013915538787842,
+            "speed_p95": 1.3178561925888062,
+            "accel_mean": 0.09045088291168213,
+            "accel_p95": 0.5083943247795101,
+            "jerk_mean": 0.40491750836372375,
+            "jerk_p95": 2.553838598728173
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 445,
+              "coverage_rate": 0.7367549668874173,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.13006595857722306,
+              "minFDE": 0.2145523721164483,
+              "mean_J": 0.7287487144029009
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 86,
+              "coverage_rate": 0.48314606741573035,
+              "rescued": 5,
+              "lost": 0,
+              "minADE": 0.20495877667180962,
+              "minFDE": 0.33260332505435247,
+              "mean_J": 1.150965666656022
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 117,
+              "coverage_rate": 0.4624505928853755,
+              "rescued": 7,
+              "lost": 0,
+              "minADE": 0.24296311662213482,
+              "minFDE": 0.41402891324222085,
+              "mean_J": 1.3605873674053357
+            }
+          }
+        },
+        "K24_isolated_top4_classes": {
+          "candidate_count_K": 24,
+          "coverage_count": 648,
+          "coverage_rate": 0.6260869565217392,
+          "coverage_gain_count": 23,
+          "coverage_gain_pp": 2.2222222222222254,
+          "rescued_count": 23,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 69.6969696969697,
+          "minADE": 0.17077736060510484,
+          "minFDE": 0.2849655769518067,
+          "mean_J": 0.9566542936440118,
+          "early_error": 0.08602871431283081,
+          "middle_error": 0.19046986377017117,
+          "late_error": 0.25296950256530853,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.978743961352657,
+            "mean_distinct_clusters": 23.031884057971016
+          },
+          "kinematics": {
+            "speed_mean": 0.5951793789863586,
+            "speed_p95": 1.3221048951148986,
+            "accel_mean": 0.08719779551029205,
+            "accel_p95": 0.510218846797943,
+            "jerk_mean": 0.40394002199172974,
+            "jerk_p95": 2.553838598728173
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 444,
+              "coverage_rate": 0.7350993377483444,
+              "rescued": 10,
+              "lost": 0,
+              "minADE": 0.13036423169656547,
+              "minFDE": 0.21726419169842562,
+              "mean_J": 0.73118687654141
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 87,
+              "coverage_rate": 0.4887640449438202,
+              "rescued": 6,
+              "lost": 0,
+              "minADE": 0.204442010127131,
+              "minFDE": 0.329557056545057,
+              "mean_J": 1.1472749092832404
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 117,
+              "coverage_rate": 0.4624505928853755,
+              "rescued": 7,
+              "lost": 0,
+              "minADE": 0.24357270545031087,
+              "minFDE": 0.4152199379219395,
+              "mean_J": 1.3608118048937694
+            }
+          }
+        },
+        "K24_isolated_prior_weighted": {
+          "candidate_count_K": 24,
+          "coverage_count": 647,
+          "coverage_rate": 0.6251207729468599,
+          "coverage_gain_count": 22,
+          "coverage_gain_pp": 2.1256038647342934,
+          "rescued_count": 22,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 66.66666666666666,
+          "minADE": 0.17064471272130963,
+          "minFDE": 0.28362929323530583,
+          "mean_J": 0.9555899690943067,
+          "early_error": 0.08590021896235969,
+          "middle_error": 0.1902636417045176,
+          "late_error": 0.25274619640046014,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9768115942028985,
+            "mean_distinct_clusters": 23.030917874396135
+          },
+          "kinematics": {
+            "speed_mean": 0.600267767906189,
+            "speed_p95": 1.3168993413448289,
+            "accel_mean": 0.09052688628435135,
+            "accel_p95": 0.5092015773057923,
+            "jerk_mean": 0.4049795866012573,
+            "jerk_p95": 2.553838598728173
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 445,
+              "coverage_rate": 0.7367549668874173,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.12995680276551602,
+              "minFDE": 0.21405065195300604,
+              "mean_J": 0.7280345044684864
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 85,
+              "coverage_rate": 0.47752808988764045,
+              "rescued": 4,
+              "lost": 0,
+              "minADE": 0.20514510968653082,
+              "minFDE": 0.33269146305997294,
+              "mean_J": 1.1517830936826852
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 117,
+              "coverage_rate": 0.4624505928853755,
+              "rescued": 7,
+              "lost": 0,
+              "minADE": 0.24350806036356237,
+              "minFDE": 0.4152199379219395,
+              "mean_J": 1.3608118048937694
+            }
+          }
+        },
+        "augmented28_full": {
+          "candidate_count_K": 28,
+          "coverage_count": 658,
+          "coverage_rate": 0.6357487922705314,
+          "coverage_gain_count": 33,
+          "coverage_gain_pp": 3.1884057971014457,
+          "rescued_count": 33,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 100.0,
+          "minADE": 0.16803099162207238,
+          "minFDE": 0.2764084570380107,
+          "mean_J": 0.9410168137542522,
+          "early_error": 0.08565189384197791,
+          "middle_error": 0.18858317493012006,
+          "late_error": 0.24747138382573466,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.1352657004830917,
+            "mean_distinct_clusters": 26.715942028985506
+          },
+          "kinematics": {
+            "speed_mean": 0.5855011940002441,
+            "speed_p95": 1.3407899141311646,
+            "accel_mean": 0.10096237063407898,
+            "accel_p95": 0.5624921947717666,
+            "jerk_mean": 0.3580228090286255,
+            "jerk_p95": 2.3387156486511187
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 451,
+              "coverage_rate": 0.7466887417218543,
+              "rescued": 17,
+              "lost": 0,
+              "minADE": 0.12790943471967833,
+              "minFDE": 0.20730909367897465,
+              "mean_J": 0.7166768691477675
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 88,
+              "coverage_rate": 0.4943820224719101,
+              "rescued": 7,
+              "lost": 0,
+              "minADE": 0.202638223949473,
+              "minFDE": 0.32641876391068225,
+              "mean_J": 1.1397177417632691
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 119,
+              "coverage_rate": 0.47035573122529645,
+              "rescued": 9,
+              "lost": 0,
+              "minADE": 0.23946709049467585,
+              "minFDE": 0.4061878279689287,
+              "mean_J": 1.3367976886819661
+            }
+          }
+        },
+        "null_jitter8_01cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 626,
+          "coverage_rate": 0.6048309178743961,
+          "coverage_gain_count": 1,
+          "coverage_gain_pp": 0.09661835748792091,
+          "rescued_count": 1,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 3.0303030303030303,
+          "minADE": 0.1749947063992138,
+          "minFDE": 0.29397049649438867,
+          "mean_J": 0.9769568799421766,
+          "early_error": 0.08728229333946778,
+          "middle_error": 0.19331995590483175,
+          "late_error": 0.2614033419809071,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.8299516908212561,
+            "mean_distinct_clusters": 19.711111111111112
+          },
+          "kinematics": {
+            "speed_mean": 0.6053465604782104,
+            "speed_p95": 1.323651671409607,
+            "accel_mean": 0.12542986869812012,
+            "accel_p95": 0.5395721405744544,
+            "jerk_mean": 0.6273791790008545,
+            "jerk_p95": 2.481365966796875
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 435,
+              "coverage_rate": 0.7201986754966887,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.13438210274839227,
+              "minFDE": 0.22484257038901037,
+              "mean_J": 0.7490151450099883
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 81,
+              "coverage_rate": 0.4550561797752809,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.20800124192676694,
+              "minFDE": 0.3391396008262976,
+              "mean_J": 1.167404849959549
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 110,
+              "coverage_rate": 0.43478260869565216,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24872928853831158,
+              "minFDE": 0.4272241201962411,
+              "mean_J": 1.3871429243530442
+            }
+          }
+        },
+        "null_jitter8_02cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 626,
+          "coverage_rate": 0.6048309178743961,
+          "coverage_gain_count": 1,
+          "coverage_gain_pp": 0.09661835748792091,
+          "rescued_count": 1,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 3.0303030303030303,
+          "minADE": 0.17480734707731882,
+          "minFDE": 0.29168321837529687,
+          "mean_J": 0.974354503399124,
+          "early_error": 0.08803581001977318,
+          "middle_error": 0.19337350782481944,
+          "late_error": 0.2610864710282087,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.8415458937198068,
+            "mean_distinct_clusters": 19.72463768115942
+          },
+          "kinematics": {
+            "speed_mean": 0.6080063581466675,
+            "speed_p95": 1.3255679547786712,
+            "accel_mean": 0.17724885046482086,
+            "accel_p95": 0.7468891113996505,
+            "jerk_mean": 0.864497184753418,
+            "jerk_p95": 3.182506835460663
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 435,
+              "coverage_rate": 0.7201986754966887,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.1341878697493433,
+              "minFDE": 0.2225362338708371,
+              "mean_J": 0.7469115604501493
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 81,
+              "coverage_rate": 0.4550561797752809,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.20778880737020444,
+              "minFDE": 0.3365907875036944,
+              "mean_J": 1.1633064886513715
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 110,
+              "coverage_rate": 0.43478260869565216,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24857598096650296,
+              "minFDE": 0.425166346184937,
+              "mean_J": 1.3844022669022096
+            }
+          }
+        },
+        "null_jitter8_05cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 629,
+          "coverage_rate": 0.6077294685990338,
+          "coverage_gain_count": 4,
+          "coverage_gain_pp": 0.38647342995168366,
+          "rescued_count": 4,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 12.121212121212121,
+          "minADE": 0.1747964102756193,
+          "minFDE": 0.2860024953866974,
+          "mean_J": 0.9717842124536524,
+          "early_error": 0.09006212311001162,
+          "middle_error": 0.1938682007191966,
+          "late_error": 0.2606359348485511,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9256038647342996,
+            "mean_distinct_clusters": 19.829951690821257
+          },
+          "kinematics": {
+            "speed_mean": 0.6209275126457214,
+            "speed_p95": 1.342729502916336,
+            "accel_mean": 0.3379373550415039,
+            "accel_p95": 1.4854927539825435,
+            "jerk_mean": 1.6051758527755737,
+            "jerk_p95": 6.573784136772154
+          },
+          "groups": {
+            "stable": {
+              "n": 604,
+              "coverage_count": 435,
+              "coverage_rate": 0.7201986754966887,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.13414986655038752,
+              "minFDE": 0.21715614054303334,
+              "mean_J": 0.7449836848594711
+            },
+            "transition": {
+              "n": 178,
+              "coverage_count": 83,
+              "coverage_rate": 0.46629213483146065,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.2078437662655306,
+              "minFDE": 0.3296620944779243,
+              "mean_J": 1.1585272570135052
+            },
+            "change": {
+              "n": 253,
+              "coverage_count": 111,
+              "coverage_rate": 0.43873517786561267,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.24858329977694654,
+              "minFDE": 0.4196459328860439,
+              "mean_J": 1.3818524208933034
+            }
+          }
+        }
+      }
+    },
+    "recording_time_outer": {
+      "dataset_name": "Recording-Time Outer",
+      "n_samples": 566,
+      "isolation_type": "time_block_unseen",
+      "has_zara_in_global_model": false,
+      "has_isolated_training": true,
+      "results": {
+        "native20": {
+          "candidate_count_K": 20,
+          "coverage_count": 303,
+          "coverage_rate": 0.5353356890459364,
+          "coverage_gain_count": 0,
+          "coverage_gain_pp": 0.0,
+          "rescued_count": 0,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 0.0,
+          "minADE": 0.17833359805014493,
+          "minFDE": 0.31036359730530966,
+          "mean_J": 1.0115056204666102,
+          "early_error": 0.08781476843809533,
+          "middle_error": 0.1911204552879284,
+          "late_error": 0.2751586322486509,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.7385159010600707,
+            "mean_distinct_clusters": 19.74558303886926
+          },
+          "kinematics": {
+            "speed_mean": 0.6049447059631348,
+            "speed_p95": 1.2879763722419721,
+            "accel_mean": 0.08923914283514023,
+            "accel_p95": 0.6527644217014308,
+            "jerk_mean": 0.49081286787986755,
+            "jerk_p95": 2.8033740401268004
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 199,
+              "coverage_rate": 0.6503267973856209,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.13871099236779,
+              "minFDE": 0.24352867107546486,
+              "mean_J": 0.790594407704145
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 44,
+              "coverage_rate": 0.3728813559322034,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.21365802349172094,
+              "minFDE": 0.3468046298404421,
+              "mean_J": 1.2043581257564995
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 60,
+              "coverage_rate": 0.4225352112676056,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.23436342295644513,
+              "minFDE": 0.42410617186296384,
+              "mean_J": 1.3272960111786345
+            }
+          }
+        },
+        "null_duplicate8_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 303,
+          "coverage_rate": 0.5353356890459364,
+          "coverage_gain_count": 0,
+          "coverage_gain_pp": 0.0,
+          "rescued_count": 0,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 0.0,
+          "minADE": 0.17833359805014493,
+          "minFDE": 0.31036359730530966,
+          "mean_J": 1.0115056204666102,
+          "early_error": 0.08781476843809533,
+          "middle_error": 0.1911204552879284,
+          "late_error": 0.2751586322486509,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.7385159010600707,
+            "mean_distinct_clusters": 19.74558303886926
+          },
+          "kinematics": {
+            "speed_mean": 0.5876575112342834,
+            "speed_p95": 1.2963807582855225,
+            "accel_mean": 0.07855269312858582,
+            "accel_p95": 0.5198229551315308,
+            "jerk_mean": 0.43203747272491455,
+            "jerk_p95": 2.424005556106549
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 199,
+              "coverage_rate": 0.6503267973856209,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.13871099236779,
+              "minFDE": 0.24352867107546486,
+              "mean_J": 0.790594407704145
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 44,
+              "coverage_rate": 0.3728813559322034,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.21365802349172094,
+              "minFDE": 0.3468046298404421,
+              "mean_J": 1.2043581257564995
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 60,
+              "coverage_rate": 0.4225352112676056,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.23436342295644513,
+              "minFDE": 0.42410617186296384,
+              "mean_J": 1.3272960111786345
+            }
+          }
+        },
+        "K24_global_top4_classes": {
+          "candidate_count_K": 24,
+          "coverage_count": 318,
+          "coverage_rate": 0.5618374558303887,
+          "coverage_gain_count": 15,
+          "coverage_gain_pp": 2.6501766784452263,
+          "rescued_count": 15,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 65.21739130434783,
+          "minADE": 0.17135871149864618,
+          "minFDE": 0.29516356765345564,
+          "mean_J": 0.9722098203373739,
+          "early_error": 0.08528238084647172,
+          "middle_error": 0.18533154646430366,
+          "late_error": 0.2630880760266071,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9293286219081273,
+            "mean_distinct_clusters": 23.014134275618375
+          },
+          "kinematics": {
+            "speed_mean": 0.5877542495727539,
+            "speed_p95": 1.3011555612087249,
+            "accel_mean": 0.08825304359197617,
+            "accel_p95": 0.5212165653705598,
+            "jerk_mean": 0.4106545150279999,
+            "jerk_p95": 2.59661316871643
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 210,
+              "coverage_rate": 0.6862745098039216,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.13013374026273247,
+              "minFDE": 0.2235606065966823,
+              "mean_J": 0.7395068507471078
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 46,
+              "coverage_rate": 0.3898305084745763,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.20697690002598484,
+              "minFDE": 0.3363869903757889,
+              "mean_J": 1.1731078394617362
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 62,
+              "coverage_rate": 0.43661971830985913,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.23059740834346062,
+              "minFDE": 0.41520682259808467,
+              "mean_J": 1.3067249079285481
+            }
+          }
+        },
+        "K24_global_prior_weighted": {
+          "candidate_count_K": 24,
+          "coverage_count": 318,
+          "coverage_rate": 0.5618374558303887,
+          "coverage_gain_count": 15,
+          "coverage_gain_pp": 2.6501766784452263,
+          "rescued_count": 15,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 65.21739130434783,
+          "minADE": 0.17123270360690954,
+          "minFDE": 0.29533128728224195,
+          "mean_J": 0.9723214977157649,
+          "early_error": 0.08521801301959749,
+          "middle_error": 0.18562491852154403,
+          "late_error": 0.2630946737384605,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9240282685512368,
+            "mean_distinct_clusters": 23.01060070671378
+          },
+          "kinematics": {
+            "speed_mean": 0.5882570743560791,
+            "speed_p95": 1.2931926250457764,
+            "accel_mean": 0.09038291126489639,
+            "accel_p95": 0.5198953807353974,
+            "jerk_mean": 0.4113155007362366,
+            "jerk_p95": 2.59661316871643
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 210,
+              "coverage_rate": 0.6862745098039216,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.12990066684206927,
+              "minFDE": 0.22368499677230982,
+              "mean_J": 0.7396647228172029
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 46,
+              "coverage_rate": 0.3898305084745763,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.20697690002598484,
+              "minFDE": 0.33670718504117386,
+              "mean_J": 1.1731078394617362
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 62,
+              "coverage_rate": 0.43661971830985913,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.23059740834346062,
+              "minFDE": 0.4153412095391805,
+              "mean_J": 1.3068298413279862
+            }
+          }
+        },
+        "K24_isolated_top4_classes": {
+          "candidate_count_K": 24,
+          "coverage_count": 318,
+          "coverage_rate": 0.5618374558303887,
+          "coverage_gain_count": 15,
+          "coverage_gain_pp": 2.6501766784452263,
+          "rescued_count": 15,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 65.21739130434783,
+          "minADE": 0.1713849378348502,
+          "minFDE": 0.29511157339736144,
+          "mean_J": 0.9722989991018132,
+          "early_error": 0.08512964870890725,
+          "middle_error": 0.18553653012538476,
+          "late_error": 0.2632591751094291,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9187279151943463,
+            "mean_distinct_clusters": 23.042402826855124
+          },
+          "kinematics": {
+            "speed_mean": 0.5895653963088989,
+            "speed_p95": 1.3071088790893555,
+            "accel_mean": 0.08828531950712204,
+            "accel_p95": 0.5212165653705598,
+            "jerk_mean": 0.410625696182251,
+            "jerk_p95": 2.59661316871643
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 209,
+              "coverage_rate": 0.6830065359477124,
+              "rescued": 10,
+              "lost": 0,
+              "minADE": 0.13013374026273247,
+              "minFDE": 0.22377381304273677,
+              "mean_J": 0.7403463328133689
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 46,
+              "coverage_rate": 0.3898305084745763,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.20697690002598484,
+              "minFDE": 0.3363869903757889,
+              "mean_J": 1.1731078394617362
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 63,
+              "coverage_rate": 0.44366197183098594,
+              "rescued": 3,
+              "lost": 0,
+              "minADE": 0.23070194430325977,
+              "minFDE": 0.414540133010465,
+              "mean_J": 1.305271342213031
+            }
+          }
+        },
+        "K24_isolated_prior_weighted": {
+          "candidate_count_K": 24,
+          "coverage_count": 318,
+          "coverage_rate": 0.5618374558303887,
+          "coverage_gain_count": 15,
+          "coverage_gain_pp": 2.6501766784452263,
+          "rescued_count": 15,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 65.21739130434783,
+          "minADE": 0.1714311704610814,
+          "minFDE": 0.29516580103335444,
+          "mean_J": 0.9730016041833007,
+          "early_error": 0.0853452859400335,
+          "middle_error": 0.1864832879792856,
+          "late_error": 0.26314267305915384,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.9240282685512368,
+            "mean_distinct_clusters": 23.021201413427562
+          },
+          "kinematics": {
+            "speed_mean": 0.5887309908866882,
+            "speed_p95": 1.2957663118839264,
+            "accel_mean": 0.08991499990224838,
+            "accel_p95": 0.5206992924213414,
+            "jerk_mean": 0.41115841269493103,
+            "jerk_p95": 2.59661316871643
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 210,
+              "coverage_rate": 0.6862745098039216,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.12985746852483568,
+              "minFDE": 0.2235606065966823,
+              "mean_J": 0.7394815598138885
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 46,
+              "coverage_rate": 0.3898305084745763,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.20697690002598484,
+              "minFDE": 0.3363869903757889,
+              "mean_J": 1.1731078394617362
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 62,
+              "coverage_rate": 0.43661971830985913,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.2314815697838461,
+              "minFDE": 0.4152157246616251,
+              "mean_J": 1.3099353916071372
+            }
+          }
+        },
+        "augmented28_full": {
+          "candidate_count_K": 28,
+          "coverage_count": 326,
+          "coverage_rate": 0.5759717314487632,
+          "coverage_gain_count": 23,
+          "coverage_gain_pp": 4.063604240282681,
+          "rescued_count": 23,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 100.0,
+          "minADE": 0.1686798196818226,
+          "minFDE": 0.2868931995439026,
+          "mean_J": 0.9550725990184412,
+          "early_error": 0.08526873707174912,
+          "middle_error": 0.18390133720824892,
+          "late_error": 0.2565573498461336,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.0441696113074206,
+            "mean_distinct_clusters": 26.69611307420495
+          },
+          "kinematics": {
+            "speed_mean": 0.5700836777687073,
+            "speed_p95": 1.3071092367172241,
+            "accel_mean": 0.09987398236989975,
+            "accel_p95": 0.554523009061813,
+            "jerk_mean": 0.3630143404006958,
+            "jerk_p95": 2.3689695239067055
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 212,
+              "coverage_rate": 0.6928104575163399,
+              "rescued": 13,
+              "lost": 0,
+              "minADE": 0.12840659269814403,
+              "minFDE": 0.21988164157219622,
+              "mean_J": 0.7282339083478664
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 50,
+              "coverage_rate": 0.423728813559322,
+              "rescued": 6,
+              "lost": 0,
+              "minADE": 0.20294183810631775,
+              "minFDE": 0.3284996025682304,
+              "mean_J": 1.1506948074077816
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 64,
+              "coverage_rate": 0.4507042253521127,
+              "rescued": 4,
+              "lost": 0,
+              "minADE": 0.22699453294178884,
+              "minFDE": 0.39672405294158897,
+              "mean_J": 1.2813347029286783
+            }
+          }
+        },
+        "null_jitter8_01cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 305,
+          "coverage_rate": 0.5388692579505301,
+          "coverage_gain_count": 2,
+          "coverage_gain_pp": 0.35335689045936647,
+          "rescued_count": 2,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 8.695652173913043,
+          "minADE": 0.17793899180130857,
+          "minFDE": 0.3077306732227321,
+          "mean_J": 1.0079490537099747,
+          "early_error": 0.08782336536471856,
+          "middle_error": 0.19082196906897894,
+          "late_error": 0.27459740542244493,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.7508833922261484,
+            "mean_distinct_clusters": 19.750883392226147
+          },
+          "kinematics": {
+            "speed_mean": 0.5889769196510315,
+            "speed_p95": 1.296671450138092,
+            "accel_mean": 0.1268034726381302,
+            "accel_p95": 0.5522359013557426,
+            "jerk_mean": 0.634271502494812,
+            "jerk_p95": 2.5281477093696596
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 200,
+              "coverage_rate": 0.6535947712418301,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.13832170187691262,
+              "minFDE": 0.24051443241243964,
+              "mean_J": 0.7869846986338788
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 44,
+              "coverage_rate": 0.3728813559322034,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.2131694416835763,
+              "minFDE": 0.34453514143437663,
+              "mean_J": 1.1995948187878023
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 61,
+              "coverage_rate": 0.4295774647887324,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.2340354539897422,
+              "minFDE": 0.42199294391974235,
+              "mean_J": 1.324856746485339
+            }
+          }
+        },
+        "null_jitter8_02cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 306,
+          "coverage_rate": 0.5406360424028268,
+          "coverage_gain_count": 3,
+          "coverage_gain_pp": 0.5300353356890386,
+          "rescued_count": 3,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 13.043478260869565,
+          "minADE": 0.1777957039008251,
+          "minFDE": 0.3055796503295999,
+          "mean_J": 1.005729823416864,
+          "early_error": 0.08837548278792055,
+          "middle_error": 0.19074664335091004,
+          "late_error": 0.27464935744549707,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.7561837455830389,
+            "mean_distinct_clusters": 19.752650176678443
+          },
+          "kinematics": {
+            "speed_mean": 0.5916998982429504,
+            "speed_p95": 1.2989866137504578,
+            "accel_mean": 0.17860588431358337,
+            "accel_p95": 0.7548867881298065,
+            "jerk_mean": 0.8714417815208435,
+            "jerk_p95": 3.189412760734558
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 201,
+              "coverage_rate": 0.6568627450980392,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.1381980915645661,
+              "minFDE": 0.2383363749519579,
+              "mean_J": 0.7850867605736912
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 44,
+              "coverage_rate": 0.3728813559322034,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.2129355643481767,
+              "minFDE": 0.3422863575293585,
+              "mean_J": 1.1958559988331006
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 61,
+              "coverage_rate": 0.4295774647887324,
+              "rescued": 1,
+              "lost": 0,
+              "minADE": 0.23392504081707688,
+              "minFDE": 0.419981416639367,
+              "mean_J": 1.3232079116626025
+            }
+          }
+        },
+        "null_jitter8_05cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 307,
+          "coverage_rate": 0.5424028268551236,
+          "coverage_gain_count": 4,
+          "coverage_gain_pp": 0.7067137809187218,
+          "rescued_count": 4,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 17.391304347826086,
+          "minADE": 0.17766550431808223,
+          "minFDE": 0.30007175012269377,
+          "mean_J": 1.0023811531849989,
+          "early_error": 0.08996177600947342,
+          "middle_error": 0.1900656855757121,
+          "late_error": 0.27421553750456645,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.8180212014134276,
+            "mean_distinct_clusters": 19.8321554770318
+          },
+          "kinematics": {
+            "speed_mean": 0.6051191687583923,
+            "speed_p95": 1.3138172328472137,
+            "accel_mean": 0.33957740664482117,
+            "accel_p95": 1.486368155479431,
+            "jerk_mean": 1.613258957862854,
+            "jerk_p95": 6.59325873851776
+          },
+          "groups": {
+            "stable": {
+              "n": 306,
+              "coverage_count": 203,
+              "coverage_rate": 0.6633986928104575,
+              "rescued": 4,
+              "lost": 0,
+              "minADE": 0.13805583555544454,
+              "minFDE": 0.2332817631743088,
+              "mean_J": 0.7818284695008505
+            },
+            "transition": {
+              "n": 118,
+              "coverage_count": 44,
+              "coverage_rate": 0.3728813559322034,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.21272176596295397,
+              "minFDE": 0.3357261416689604,
+              "mean_J": 1.1914964998829838
+            },
+            "change": {
+              "n": 142,
+              "coverage_count": 60,
+              "coverage_rate": 0.4225352112676056,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.23389029141154882,
+              "minFDE": 0.4143711712758371,
+              "mean_J": 1.3205044651356126
+            }
+          }
+        }
+      }
+    },
+    "original_cal": {
+      "dataset_name": "Original CAL (Held-Out)",
+      "n_samples": 2879,
+      "isolation_type": "internal_calibration_held_out",
+      "has_zara_in_global_model": false,
+      "has_isolated_training": false,
+      "results": {
+        "native20": {
+          "candidate_count_K": 20,
+          "coverage_count": 1490,
+          "coverage_rate": 0.5175408127822161,
+          "coverage_gain_count": 0,
+          "coverage_gain_pp": 0.0,
+          "rescued_count": 0,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 0.0,
+          "minADE": 0.18057557270224198,
+          "minFDE": 0.30325341374023596,
+          "mean_J": 1.0126210984655022,
+          "early_error": 0.09210981220487201,
+          "middle_error": 0.20146011133869318,
+          "late_error": 0.2683245715360077,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.7311566516151441,
+            "mean_distinct_clusters": 19.655783258075722
+          },
+          "kinematics": {
+            "speed_mean": 0.5794867873191833,
+            "speed_p95": 1.186349797248839,
+            "accel_mean": 0.08969511836767197,
+            "accel_p95": 0.6603154838085152,
+            "jerk_mean": 0.49332088232040405,
+            "jerk_p95": 2.812704002857208
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 994,
+              "coverage_rate": 0.647557003257329,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.13141074819410864,
+              "minFDE": 0.21371347398562054,
+              "mean_J": 0.7312347886074627
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 253,
+              "coverage_rate": 0.39285714285714285,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.2267221025231059,
+              "minFDE": 0.3767711638589841,
+              "mean_J": 1.2639272633717755
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 243,
+              "coverage_rate": 0.34714285714285714,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24593220186702508,
+              "minFDE": 0.4319653800928944,
+              "mean_J": 1.3984594062261457
+            }
+          }
+        },
+        "null_duplicate8_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 1490,
+          "coverage_rate": 0.5175408127822161,
+          "coverage_gain_count": 0,
+          "coverage_gain_pp": 0.0,
+          "rescued_count": 0,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 0.0,
+          "minADE": 0.18057557270224198,
+          "minFDE": 0.30325341374023596,
+          "mean_J": 1.0126210984655022,
+          "early_error": 0.09210981220487201,
+          "middle_error": 0.20146011133869318,
+          "late_error": 0.2683245715360077,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.7311566516151441,
+            "mean_distinct_clusters": 19.655783258075722
+          },
+          "kinematics": {
+            "speed_mean": 0.5570701956748962,
+            "speed_p95": 1.1867667436599731,
+            "accel_mean": 0.0790620818734169,
+            "accel_p95": 0.5424614459276184,
+            "jerk_mean": 0.4348391890525818,
+            "jerk_p95": 2.456791865825647
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 994,
+              "coverage_rate": 0.647557003257329,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.13141074819410864,
+              "minFDE": 0.21371347398562054,
+              "mean_J": 0.7312347886074627
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 253,
+              "coverage_rate": 0.39285714285714285,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.2267221025231059,
+              "minFDE": 0.3767711638589841,
+              "mean_J": 1.2639272633717755
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 243,
+              "coverage_rate": 0.34714285714285714,
+              "rescued": 0,
+              "lost": 0,
+              "minADE": 0.24593220186702508,
+              "minFDE": 0.4319653800928944,
+              "mean_J": 1.3984594062261457
+            }
+          }
+        },
+        "K24_global_top4_classes": {
+          "candidate_count_K": 24,
+          "coverage_count": 1546,
+          "coverage_rate": 0.5369920111149705,
+          "coverage_gain_count": 56,
+          "coverage_gain_pp": 1.9451198332754438,
+          "rescued_count": 56,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 82.35294117647058,
+          "minADE": 0.1764476708080454,
+          "minFDE": 0.2917554626298061,
+          "mean_J": 0.9890765525027991,
+          "early_error": 0.09050211217716134,
+          "middle_error": 0.19791004620425676,
+          "late_error": 0.26134146544843434,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.924279263633206,
+            "mean_distinct_clusters": 23.008336227856894
+          },
+          "kinematics": {
+            "speed_mean": 0.5631538033485413,
+            "speed_p95": 1.2025883197784424,
+            "accel_mean": 0.08813650161027908,
+            "accel_p95": 0.5435179173946381,
+            "jerk_mean": 0.41283801198005676,
+            "jerk_p95": 2.6204605460166923
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 1036,
+              "coverage_rate": 0.6749185667752443,
+              "rescued": 42,
+              "lost": 0,
+              "minADE": 0.1265426188345434,
+              "minFDE": 0.19953093102602143,
+              "mean_J": 0.7021864100147029
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 255,
+              "coverage_rate": 0.39596273291925466,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.22383101771324754,
+              "minFDE": 0.3712363930979858,
+              "mean_J": 1.2527019617318138
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 255,
+              "coverage_rate": 0.36428571428571427,
+              "rescued": 12,
+              "lost": 0,
+              "minADE": 0.2422896413400103,
+              "minFDE": 0.42086822947309455,
+              "mean_J": 1.375650274182431
+            }
+          }
+        },
+        "K24_global_prior_weighted": {
+          "candidate_count_K": 24,
+          "coverage_count": 1546,
+          "coverage_rate": 0.5369920111149705,
+          "coverage_gain_count": 56,
+          "coverage_gain_pp": 1.9451198332754438,
+          "rescued_count": 56,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 82.35294117647058,
+          "minADE": 0.17634510479993246,
+          "minFDE": 0.2915055947795995,
+          "mean_J": 0.9886452546574381,
+          "early_error": 0.09042957848141325,
+          "middle_error": 0.19770750911898083,
+          "late_error": 0.2613453838891682,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.924279263633206,
+            "mean_distinct_clusters": 23.01146231330323
+          },
+          "kinematics": {
+            "speed_mean": 0.5623368620872498,
+            "speed_p95": 1.1885957002639764,
+            "accel_mean": 0.08987545222043991,
+            "accel_p95": 0.5431413501501083,
+            "jerk_mean": 0.41339167952537537,
+            "jerk_p95": 2.6204605460166923
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 1037,
+              "coverage_rate": 0.6755700325732898,
+              "rescued": 43,
+              "lost": 0,
+              "minADE": 0.1263972651978132,
+              "minFDE": 0.1987539559654192,
+              "mean_J": 0.7008541032673493
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 255,
+              "coverage_rate": 0.39596273291925466,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.2234883536525648,
+              "minFDE": 0.37160295507348484,
+              "mean_J": 1.2520842765118285
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 254,
+              "coverage_rate": 0.3628571428571429,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.24250179269730085,
+              "minFDE": 0.4212071169946059,
+              "mean_J": 1.3773662365282373
+            }
+          }
+        },
+        "K24_isolated_top4_classes": {
+          "candidate_count_K": 24,
+          "coverage_count": 1546,
+          "coverage_rate": 0.5369920111149705,
+          "coverage_gain_count": 56,
+          "coverage_gain_pp": 1.9451198332754438,
+          "rescued_count": 56,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 82.35294117647058,
+          "minADE": 0.1764476708080454,
+          "minFDE": 0.2917554626298061,
+          "mean_J": 0.9890765525027991,
+          "early_error": 0.09050211217716134,
+          "middle_error": 0.19791004620425676,
+          "late_error": 0.26134146544843434,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.924279263633206,
+            "mean_distinct_clusters": 23.008336227856894
+          },
+          "kinematics": {
+            "speed_mean": 0.5631538033485413,
+            "speed_p95": 1.2025883197784424,
+            "accel_mean": 0.08813650161027908,
+            "accel_p95": 0.5435179173946381,
+            "jerk_mean": 0.41283801198005676,
+            "jerk_p95": 2.6204605460166923
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 1036,
+              "coverage_rate": 0.6749185667752443,
+              "rescued": 42,
+              "lost": 0,
+              "minADE": 0.1265426188345434,
+              "minFDE": 0.19953093102602143,
+              "mean_J": 0.7021864100147029
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 255,
+              "coverage_rate": 0.39596273291925466,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.22383101771324754,
+              "minFDE": 0.3712363930979858,
+              "mean_J": 1.2527019617318138
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 255,
+              "coverage_rate": 0.36428571428571427,
+              "rescued": 12,
+              "lost": 0,
+              "minADE": 0.2422896413400103,
+              "minFDE": 0.42086822947309455,
+              "mean_J": 1.375650274182431
+            }
+          }
+        },
+        "K24_isolated_prior_weighted": {
+          "candidate_count_K": 24,
+          "coverage_count": 1546,
+          "coverage_rate": 0.5369920111149705,
+          "coverage_gain_count": 56,
+          "coverage_gain_pp": 1.9451198332754438,
+          "rescued_count": 56,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 82.35294117647058,
+          "minADE": 0.17634510479993246,
+          "minFDE": 0.2915055947795995,
+          "mean_J": 0.9886452546574381,
+          "early_error": 0.09042957848141325,
+          "middle_error": 0.19770750911898083,
+          "late_error": 0.2613453838891682,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.924279263633206,
+            "mean_distinct_clusters": 23.01146231330323
+          },
+          "kinematics": {
+            "speed_mean": 0.5623368620872498,
+            "speed_p95": 1.1885957002639764,
+            "accel_mean": 0.08987545222043991,
+            "accel_p95": 0.5431413501501083,
+            "jerk_mean": 0.41339167952537537,
+            "jerk_p95": 2.6204605460166923
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 1037,
+              "coverage_rate": 0.6755700325732898,
+              "rescued": 43,
+              "lost": 0,
+              "minADE": 0.1263972651978132,
+              "minFDE": 0.1987539559654192,
+              "mean_J": 0.7008541032673493
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 255,
+              "coverage_rate": 0.39596273291925466,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.2234883536525648,
+              "minFDE": 0.37160295507348484,
+              "mean_J": 1.2520842765118285
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 254,
+              "coverage_rate": 0.3628571428571429,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.24250179269730085,
+              "minFDE": 0.4212071169946059,
+              "mean_J": 1.3773662365282373
+            }
+          }
+        },
+        "augmented28_full": {
+          "candidate_count_K": 28,
+          "coverage_count": 1558,
+          "coverage_rate": 0.5411601250434178,
+          "coverage_gain_count": 68,
+          "coverage_gain_pp": 2.361931226120173,
+          "rescued_count": 68,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 100.0,
+          "minADE": 0.173706837779234,
+          "minFDE": 0.286158445687481,
+          "mean_J": 0.9757376832757579,
+          "early_error": 0.08999667849706947,
+          "middle_error": 0.19571494804642806,
+          "late_error": 0.2568435547283868,
+          "effective_good_clusters": {
+            "mean_good_clusters": 1.1833970128516846,
+            "mean_distinct_clusters": 26.680097255991665
+          },
+          "kinematics": {
+            "speed_mean": 0.543999969959259,
+            "speed_p95": 1.200405865907669,
+            "accel_mean": 0.09813116490840912,
+            "accel_p95": 0.5632595926523196,
+            "jerk_mean": 0.3640938997268677,
+            "jerk_p95": 2.4328622698783864
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 1043,
+              "coverage_rate": 0.6794788273615635,
+              "rescued": 49,
+              "lost": 0,
+              "minADE": 0.12384387584749675,
+              "minFDE": 0.1929785935089947,
+              "mean_J": 0.6888028518842775
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 256,
+              "coverage_rate": 0.39751552795031053,
+              "rescued": 3,
+              "lost": 0,
+              "minADE": 0.22029878811342044,
+              "minFDE": 0.36700995351888704,
+              "mean_J": 1.2369937187237958
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 259,
+              "coverage_rate": 0.37,
+              "rescued": 16,
+              "lost": 0,
+              "minADE": 0.2401845957078064,
+              "minFDE": 0.4161051629025538,
+              "mean_J": 1.3645892252148812
+            }
+          }
+        },
+        "null_jitter8_01cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 1500,
+          "coverage_rate": 0.5210142410559222,
+          "coverage_gain_count": 10,
+          "coverage_gain_pp": 0.3473428273706114,
+          "rescued_count": 10,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 14.705882352941178,
+          "minADE": 0.18017425168504025,
+          "minFDE": 0.3011000132279632,
+          "mean_J": 1.0093523915235458,
+          "early_error": 0.09206141294264285,
+          "middle_error": 0.20075471872516537,
+          "late_error": 0.26800793453744415,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.7551233067037165,
+            "mean_distinct_clusters": 19.676276484890586
+          },
+          "kinematics": {
+            "speed_mean": 0.5586223006248474,
+            "speed_p95": 1.1877115964889526,
+            "accel_mean": 0.12707656621932983,
+            "accel_p95": 0.5663386374711988,
+            "jerk_mean": 0.6353601217269897,
+            "jerk_p95": 2.5464463233947727
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 1000,
+              "coverage_rate": 0.6514657980456026,
+              "rescued": 6,
+              "lost": 0,
+              "minADE": 0.13105058064782552,
+              "minFDE": 0.21147359233329727,
+              "mean_J": 0.7284136345441345
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 255,
+              "coverage_rate": 0.39596273291925466,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.22616702599628768,
+              "minFDE": 0.37441305217089754,
+              "mean_J": 1.2595054610957812
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 245,
+              "coverage_rate": 0.35,
+              "rescued": 2,
+              "lost": 0,
+              "minADE": 0.24558209223601352,
+              "minFDE": 0.43018995464805254,
+              "mean_J": 1.3952701274647978
+            }
+          }
+        },
+        "null_jitter8_02cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 1507,
+          "coverage_rate": 0.5234456408475165,
+          "coverage_gain_count": 17,
+          "coverage_gain_pp": 0.590482806530046,
+          "rescued_count": 17,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 25.0,
+          "minADE": 0.18001290244123436,
+          "minFDE": 0.2993032156863449,
+          "mean_J": 1.0072764565791692,
+          "early_error": 0.09255168949964881,
+          "middle_error": 0.20057182439618276,
+          "late_error": 0.2677275806238364,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.771795762417506,
+            "mean_distinct_clusters": 19.68982285515804
+          },
+          "kinematics": {
+            "speed_mean": 0.561652421951294,
+            "speed_p95": 1.1907439947128293,
+            "accel_mean": 0.17853058874607086,
+            "accel_p95": 0.7588053464889526,
+            "jerk_mean": 0.8706051111221313,
+            "jerk_p95": 3.1793747425079344
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 1002,
+              "coverage_rate": 0.6527687296416939,
+              "rescued": 8,
+              "lost": 0,
+              "minADE": 0.13091537199158193,
+              "minFDE": 0.20979515220846978,
+              "mean_J": 0.7266864009246945
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 259,
+              "coverage_rate": 0.40217391304347827,
+              "rescued": 6,
+              "lost": 0,
+              "minADE": 0.22589868809441205,
+              "minFDE": 0.37218651970764177,
+              "mean_J": 1.2566999652494588
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 246,
+              "coverage_rate": 0.3514285714285714,
+              "rescued": 3,
+              "lost": 0,
+              "minADE": 0.24546184998347728,
+              "minFDE": 0.4285289723275207,
+              "mean_J": 1.3931007363591006
+            }
+          }
+        },
+        "null_jitter8_05cm_K28": {
+          "candidate_count_K": 28,
+          "coverage_count": 1517,
+          "coverage_rate": 0.5269190691212227,
+          "coverage_gain_count": 27,
+          "coverage_gain_pp": 0.9378256339006574,
+          "rescued_count": 27,
+          "lost_count": 0,
+          "capture_rate_of_K28_rescue": 39.705882352941174,
+          "minADE": 0.18002204984160483,
+          "minFDE": 0.2949374454615092,
+          "mean_J": 1.004514228040197,
+          "early_error": 0.09435210375209989,
+          "middle_error": 0.20101904996042777,
+          "late_error": 0.2672766397407294,
+          "effective_good_clusters": {
+            "mean_good_clusters": 0.859326154914901,
+            "mean_distinct_clusters": 19.799930531434526
+          },
+          "kinematics": {
+            "speed_mean": 0.5758731365203857,
+            "speed_p95": 1.2086577117443085,
+            "accel_mean": 0.3385741114616394,
+            "accel_p95": 1.4745749592781063,
+            "jerk_mean": 1.6074556112289429,
+            "jerk_p95": 6.544988656044
+          },
+          "groups": {
+            "stable": {
+              "n": 1535,
+              "coverage_count": 1005,
+              "coverage_rate": 0.6547231270358306,
+              "rescued": 11,
+              "lost": 0,
+              "minADE": 0.13095356460839153,
+              "minFDE": 0.20583824918241048,
+              "mean_J": 0.7247389715856885
+            },
+            "transition": {
+              "n": 644,
+              "coverage_count": 262,
+              "coverage_rate": 0.40683229813664595,
+              "rescued": 9,
+              "lost": 0,
+              "minADE": 0.22579881293133752,
+              "minFDE": 0.36688600041347963,
+              "mean_J": 1.252007068958977
+            },
+            "change": {
+              "n": 700,
+              "coverage_count": 250,
+              "coverage_rate": 0.35714285714285715,
+              "rescued": 7,
+              "lost": 0,
+              "minADE": 0.2455076061318827,
+              "minFDE": 0.4241265838891484,
+              "mean_J": 1.390327983905877
+            }
+          }
+        }
+      }
+    }
+  }
+}

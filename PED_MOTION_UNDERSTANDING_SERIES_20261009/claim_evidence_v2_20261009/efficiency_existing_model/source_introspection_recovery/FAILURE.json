@@ -1,0 +1,12 @@
+{
+  "status": "STOP",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_MOTION_UNDERSTANDING_SERIES_20261009\\claim_evidence_v2_20261009\\efficiency_existing_model\\source_introspection_recovery\\benchmark.py\", line 90, in <module>\n    try:main()\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_MOTION_UNDERSTANDING_SERIES_20261009\\claim_evidence_v2_20261009\\efficiency_existing_model\\source_introspection_recovery\\benchmark.py\", line 71, in main\n    reference,logs=forward(model,trainer,evaluation['obs'][:1],evaluation['valid'][:1],device);patherr=float(np.max(abs(reference-saved['model_paths'][:1])));logerr=float(np.max(abs(logs-saved['model_logits'][:1])));assert max(patherr,logerr)<=2e-5,('CACHE_ALIGN',patherr,logerr)\nAssertionError: ('CACHE_ALIGN', 0.0002770423889160156, 0.0003324747085571289)\n",
+  "resource": {
+    "peak_private_GiB": 0.9936294555664062,
+    "peak_RSS_GiB": 0.6093940734863281,
+    "min_physical_GiB": 12.17684555053711,
+    "min_commit_GiB": 15.215076446533203,
+    "checks": 1124
+  },
+  "elapsed_seconds": 4.846863599999779
+}

@@ -1,0 +1,3 @@
+# Recovery preflight caught nested-report reader bug
+
+Actualproduction smoke128 generated/saved4vs20fields correctly, then recursive comparator attempted float conversion of list-of-dictionaries in pointwise roundoff report. Numerical generation/metrics hadpassed. Fix only comparator recursion, no source scientificthreshold/generation change. Preserve originalrun.py here, existing FAILURE.json andpartial preflight_smoke plus actual_production_smoke output; freshsecondfixturepaths avoidoverwrites. Notproductionworker failure or scientificblocker. Explicitly test nestedreports andrealjobbranch before locks.

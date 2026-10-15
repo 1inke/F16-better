@@ -1,0 +1,23 @@
+{
+  "stage": "MOTION_PROGRAM_TARGET_IDENTIFIABILITY_AUDIT",
+  "version": "1.0",
+  "date": "2026-10-07",
+  "experiment_a": {
+    "num_restarts": 16,
+    "steps": 160,
+    "lr": 0.06,
+    "near_optimal_threshold_ratio": 1.01,
+    "sample_subsets": ["change", "stable"]
+  },
+  "experiment_b": {
+    "k_neighbors": 20,
+    "representation": "P2",
+    "distance_metric": "cosine",
+    "query_subsets": ["change"]
+  },
+  "candidate_budget_constraint": {
+    "k": 24,
+    "native_k": 20,
+    "program_k": 4
+  }
+}

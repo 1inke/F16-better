@@ -1,0 +1,286 @@
+{
+  "status": "PASS_ALL_ACTUAL_PREFLIGHT_AND_FINAL_SOURCE",
+  "binding_sha": "daad115c199545ad8bd01f3cbee2011661b6ed66ca1a5f4563aea6abbd2950f1",
+  "folds": [
+    "eth",
+    "hotel",
+    "univ",
+    "zara01",
+    "zara02"
+  ],
+  "branches": [
+    "full",
+    "last2",
+    "noNbr"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "pipelines": 45,
+  "stage_fits": 90,
+  "epoch_rows": 2250,
+  "current_real_six_recovery_cases": 6,
+  "actual_original_gradient_batches": 48,
+  "full_fold_two_epoch": false,
+  "source_files": 472,
+  "identity": [
+    {
+      "fold": "eth",
+      "train": 28791,
+      "validation": 1516,
+      "test": 364,
+      "raw_meter_dt04_cache_EXACT": true,
+      "train_test_target_intersection": 0,
+      "train_validation_shared_targets": 33,
+      "validation_known20index_target_overlap": 363,
+      "ambiguous_train_time_n": 134,
+      "not_context_disjoint": true
+    },
+    {
+      "fold": "hotel",
+      "train": 28192,
+      "validation": 1484,
+      "test": 1197,
+      "raw_meter_dt04_cache_EXACT": true,
+      "train_test_target_intersection": 0,
+      "train_validation_shared_targets": 28,
+      "validation_known20index_target_overlap": 358,
+      "ambiguous_train_time_n": 2,
+      "not_context_disjoint": true
+    },
+    {
+      "fold": "univ",
+      "train": 9380,
+      "validation": 494,
+      "test": 24334,
+      "raw_meter_dt04_cache_EXACT": true,
+      "train_test_target_intersection": 0,
+      "train_validation_shared_targets": 20,
+      "validation_known20index_target_overlap": 180,
+      "ambiguous_train_time_n": 136,
+      "not_context_disjoint": true
+    },
+    {
+      "fold": "zara01",
+      "train": 27148,
+      "validation": 1429,
+      "test": 2356,
+      "raw_meter_dt04_cache_EXACT": true,
+      "train_test_target_intersection": 0,
+      "train_validation_shared_targets": 35,
+      "validation_known20index_target_overlap": 389,
+      "ambiguous_train_time_n": 136,
+      "not_context_disjoint": true
+    },
+    {
+      "fold": "zara02",
+      "train": 24772,
+      "validation": 1304,
+      "test": 5910,
+      "raw_meter_dt04_cache_EXACT": true,
+      "train_test_target_intersection": 0,
+      "train_validation_shared_targets": 25,
+      "validation_known20index_target_overlap": 264,
+      "ambiguous_train_time_n": 136,
+      "not_context_disjoint": true
+    }
+  ],
+  "benchmark": [
+    {
+      "branch": "full",
+      "stage": "h3",
+      "status": "PASS_ACTUAL_THROWAWAY_THROUGHPUT",
+      "train_step_seconds": 0.06388392499994211,
+      "validation_seconds": 0.6875641999995423,
+      "train_rows": 28791,
+      "validation_rows": 1516,
+      "batch64": true,
+      "warm": 4,
+      "measured": 32,
+      "resource": {
+        "checks": 37,
+        "peak_private_GiB": 3.770763397216797,
+        "peak_RSS_GiB": 2.1767234802246094,
+        "min_physical_GiB": 13.42633056640625,
+        "min_commit_GiB": 17.14779281616211,
+        "bounded_recent_samples": 8
+      },
+      "no_saved_benchmark_model": true,
+      "no_outcome_selection": true
+    },
+    {
+      "branch": "full",
+      "stage": "v2",
+      "status": "PASS_ACTUAL_THROWAWAY_THROUGHPUT",
+      "train_step_seconds": 0.045332965624908184,
+      "validation_seconds": 0.6858823000002303,
+      "train_rows": 28791,
+      "validation_rows": 1516,
+      "batch64": true,
+      "warm": 4,
+      "measured": 32,
+      "resource": {
+        "checks": 37,
+        "peak_private_GiB": 3.641651153564453,
+        "peak_RSS_GiB": 2.164867401123047,
+        "min_physical_GiB": 13.477916717529297,
+        "min_commit_GiB": 17.299808502197266,
+        "bounded_recent_samples": 8
+      },
+      "no_saved_benchmark_model": true,
+      "no_outcome_selection": true
+    },
+    {
+      "branch": "last2",
+      "stage": "h3",
+      "status": "PASS_ACTUAL_THROWAWAY_THROUGHPUT",
+      "train_step_seconds": 0.06383710000002907,
+      "validation_seconds": 0.7212849999996251,
+      "train_rows": 28791,
+      "validation_rows": 1516,
+      "batch64": true,
+      "warm": 4,
+      "measured": 32,
+      "resource": {
+        "checks": 37,
+        "peak_private_GiB": 3.7715835571289062,
+        "peak_RSS_GiB": 2.177448272705078,
+        "min_physical_GiB": 13.503799438476562,
+        "min_commit_GiB": 17.228084564208984,
+        "bounded_recent_samples": 8
+      },
+      "no_saved_benchmark_model": true,
+      "no_outcome_selection": true
+    },
+    {
+      "branch": "last2",
+      "stage": "v2",
+      "status": "PASS_ACTUAL_THROWAWAY_THROUGHPUT",
+      "train_step_seconds": 0.046069871875118906,
+      "validation_seconds": 0.7564849000000322,
+      "train_rows": 28791,
+      "validation_rows": 1516,
+      "batch64": true,
+      "warm": 4,
+      "measured": 32,
+      "resource": {
+        "checks": 37,
+        "peak_private_GiB": 3.642017364501953,
+        "peak_RSS_GiB": 2.1659622192382812,
+        "min_physical_GiB": 13.94631576538086,
+        "min_commit_GiB": 17.460594177246094,
+        "bounded_recent_samples": 8
+      },
+      "no_saved_benchmark_model": true,
+      "no_outcome_selection": true
+    },
+    {
+      "branch": "noNbr",
+      "stage": "h3",
+      "status": "PASS_ACTUAL_THROWAWAY_THROUGHPUT",
+      "train_step_seconds": 0.0644558343750532,
+      "validation_seconds": 0.7676395999997112,
+      "train_rows": 28791,
+      "validation_rows": 1516,
+      "batch64": true,
+      "warm": 4,
+      "measured": 32,
+      "resource": {
+        "checks": 37,
+        "peak_private_GiB": 3.770374298095703,
+        "peak_RSS_GiB": 2.17645263671875,
+        "min_physical_GiB": 13.90713882446289,
+        "min_commit_GiB": 17.223777770996094,
+        "bounded_recent_samples": 8
+      },
+      "no_saved_benchmark_model": true,
+      "no_outcome_selection": true
+    },
+    {
+      "branch": "noNbr",
+      "stage": "v2",
+      "status": "PASS_ACTUAL_THROWAWAY_THROUGHPUT",
+      "train_step_seconds": 0.04600346562494906,
+      "validation_seconds": 0.7577080999999453,
+      "train_rows": 28791,
+      "validation_rows": 1516,
+      "batch64": true,
+      "warm": 4,
+      "measured": 32,
+      "resource": {
+        "checks": 37,
+        "peak_private_GiB": 3.6461753845214844,
+        "peak_RSS_GiB": 2.166454315185547,
+        "min_physical_GiB": 13.730056762695312,
+        "min_commit_GiB": 17.31222915649414,
+        "bounded_recent_samples": 8
+      },
+      "no_saved_benchmark_model": true,
+      "no_outcome_selection": true
+    }
+  ],
+  "nominal_training_seconds": 47275.087028345166,
+  "nominal_validation_seconds": 377.2226505659998,
+  "ETA_range_minutes": [
+    795,
+    1490
+  ],
+  "planning_minutes": 1023,
+  "no_saved_benchmark_model": true,
+  "disk_free_GiB": 47.184959411621094,
+  "conservative_saved_path_GiB": 1.2873585373163223,
+  "checkpoint_temp_estimate_GiB": 2.197265625,
+  "resource_samples": [
+    {
+      "checks": 39,
+      "peak_private_GiB": 3.781787872314453,
+      "peak_RSS_GiB": 2.171131134033203,
+      "min_physical_GiB": 13.55141830444336,
+      "min_commit_GiB": 17.92660140991211,
+      "bounded_recent_samples": 8
+    },
+    {
+      "checks": 40,
+      "peak_private_GiB": 3.6565513610839844,
+      "peak_RSS_GiB": 2.1845932006835938,
+      "min_physical_GiB": 13.488597869873047,
+      "min_commit_GiB": 17.95153045654297,
+      "bounded_recent_samples": 8
+    },
+    {
+      "checks": 39,
+      "peak_private_GiB": 3.7922096252441406,
+      "peak_RSS_GiB": 2.174224853515625,
+      "min_physical_GiB": 13.360527038574219,
+      "min_commit_GiB": 17.591068267822266,
+      "bounded_recent_samples": 8
+    },
+    {
+      "checks": 40,
+      "peak_private_GiB": 3.6534767150878906,
+      "peak_RSS_GiB": 2.182727813720703,
+      "min_physical_GiB": 13.754608154296875,
+      "min_commit_GiB": 17.910289764404297,
+      "bounded_recent_samples": 8
+    },
+    {
+      "checks": 39,
+      "peak_private_GiB": 3.795238494873047,
+      "peak_RSS_GiB": 2.1757850646972656,
+      "min_physical_GiB": 13.859703063964844,
+      "min_commit_GiB": 17.894363403320312,
+      "bounded_recent_samples": 8
+    },
+    {
+      "checks": 40,
+      "peak_private_GiB": 3.6537208557128906,
+      "peak_RSS_GiB": 2.182392120361328,
+      "min_physical_GiB": 14.071971893310547,
+      "min_commit_GiB": 17.88642120361328,
+      "bounded_recent_samples": 8
+    }
+  ],
+  "whole_series_complete": false
+}

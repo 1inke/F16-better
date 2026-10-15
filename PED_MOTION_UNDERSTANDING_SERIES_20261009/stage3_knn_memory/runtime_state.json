@@ -1,0 +1,59 @@
+{
+  "status": "STAGE3_ANALYZED",
+  "current_stage": "E6_SAVED_AUDIT_COMPLETE",
+  "production_started": true,
+  "whole_series_complete": false,
+  "completed_stages": [
+    "stage1_E0_E1_E2_E7",
+    "stage2_E3test_E4_E5",
+    "stage3_E6_train_only_kNN_independent_review",
+    "E4_exploratory_statistical_supplement"
+  ],
+  "worker_pid": 14508,
+  "service_parent": 2484,
+  "worker_creation": "2026-10-09T01:44:40.832721+08:00",
+  "worker_start": "2026-10-09T01:44:41.290294+08:00",
+  "task_name": "Trajectory-PedMotionUnderstanding-KNNMemory-20261009",
+  "task_triggers": 0,
+  "sole_startup_check": "2026-10-09T01:44:50.2020787+08:00",
+  "startup_jobs_done": 5,
+  "startup_actual_stage": "KNN_QUERY_AND_TRACK_METRICS univ velocity_only all_train",
+  "startup_stderr_bytes": 0,
+  "jobs_total": 14,
+  "source_locked_files": 383,
+  "ETA_range_minutes": [
+    2,
+    5
+  ],
+  "planning_minutes": 3,
+  "first_progress_query_done": false,
+  "first_progress_query_count": 0,
+  "query_at": "2026-10-09T01:46:11.290294+08:00",
+  "analysis_deadline": "2026-10-09T01:47:41.290294+08:00",
+  "estimated_completion": "2026-10-09T01:47:41.290294+08:00",
+  "automation_id": "automation",
+  "automation_node": "2026-10-09T01:46:12+08:00",
+  "automation_occurrences": 1,
+  "no_model_training": true,
+  "worker_pid_is_historical": true,
+  "active_worker": false,
+  "worker_finished_at": "2026-10-09T01:45:13.986372+08:00",
+  "E6_independent_review": {
+    "status": "PASS",
+    "jobs": 14,
+    "checks": 6692,
+    "max_numeric_error": 0,
+    "locked_files": 431,
+    "analysis": "stage3_knn_memory/RESULT_ANALYSIS.md"
+  },
+  "E4_statistical_supplement": {
+    "status": "PASS_SAVED_ONLY_EXPLORATORY",
+    "direction_Holm_rejections": "0/300",
+    "dose_Holm_rejections": "0/60",
+    "attention_Holm_rejections": "15/15",
+    "analysis": "stage2_raw_interventions/statistical_completion/RESULT_ANALYSIS.md"
+  },
+  "previous_check_nodes_obsolete": true,
+  "stage4_production_started": false,
+  "completion_plan": "E0_E6_COMPLETION_PLAN.md"
+}

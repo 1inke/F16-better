@@ -1,0 +1,9 @@
+# M2 单项预算释放：2026-10-14
+
+人类在收到M2约51分钟（36–76分钟）的具体预算报告后直接回复“批准”。此次批准仅覆盖同一M2完整协议的生产与审核，不扩展M3/V，不改科学代码、loss、数据、seed、epoch、原质量/运动学门或旧模块权限。
+
+原PREFLIGHT.json为STOP_BUDGET，BENCHMARK.json和failures/preflight1全部保留，不覆写为PASS。预算释放仅允许两个预生产控制文件final_source_review.py/start_independent.ps1读取本批准与新的LAUNCH_GATE.json。它们的原件和原BLOCKED审查保存在budget_release_provenance。原3930源快照不覆盖；逐项重验所有原源，其中仅上述两文件可出现已授权控制差异，其余3928项必须EXACT。
+
+CPU最终source/批准/资源审核复用未改变的真实GPU、数值、子集恢复、保存pipeline预检证据，不冒称重新GPU预检、全量训练两轮或外审。通过后才能产生新的source_manifest/LAUNCH_GATE并唯一按需0triggerOS启动；启动后以实际start计算半程与完成ETA。若来源、资源或科学冲突实质阻碍则STOP保留来源，不放宽门。
+
+此次披露范围是当前吞吐估计，不是杀健康worker的超时限制，也不是后续项目通用的76分钟预算。旧E3及automation/automation-2保持PAUSED，旧completed进程不查询。M1研究门失败依旧正确使用all3原G1父。M2 S2/Q2/major在正式结果与完整审核前未评价。

@@ -1,0 +1,139 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "orders": [
+    {
+      "order": 1,
+      "violations": 0,
+      "max_excess": -5.891382659537446e-05,
+      "max_excess_to_bound": 0.0,
+      "cases": []
+    },
+    {
+      "order": 2,
+      "violations": 2,
+      "max_excess": 3.864602421585557e-17,
+      "max_excess_to_bound": 8.321306953485151e-05,
+      "cases": [
+        {
+          "sample_id": "1513",
+          "window": 53,
+          "selected_candidate": 0,
+          "physical_slot": 4,
+          "difference_step": 9,
+          "native_norm": 1.1641532182693481e-08,
+          "actual_norm": 1.1757947525586774e-08,
+          "absolute_excess": 2.106635790781469e-17,
+          "forward_error_scale_bound": 1.1986361950843282e-12,
+          "alpha": 2.7172480891932775e-06
+        },
+        {
+          "sample_id": "1630",
+          "window": 62,
+          "selected_candidate": 3,
+          "physical_slot": 19,
+          "difference_step": 5,
+          "native_norm": 1.4551915228366852e-09,
+          "actual_norm": 1.4697434767110762e-09,
+          "absolute_excess": 3.864602421585557e-17,
+          "forward_error_scale_bound": 4.644225291998121e-13,
+          "alpha": 1.0650196394165768e-07
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "violations": 0,
+      "max_excess": 0.0,
+      "max_excess_to_bound": 0.0,
+      "cases": []
+    }
+  ],
+  "pooled_groups": [
+    {
+      "group": "overall",
+      "n": 128,
+      "native": {
+        "speed_p95": 1.4691779627221533,
+        "accel_mean": 0.09279703670997283,
+        "accel_p95": 0.6316418427159747,
+        "jerk_mean": 0.510380335042639,
+        "jerk_p95": 3.0263618417659632
+      },
+      "refined": {
+        "speed_p95": 1.4691779627221533,
+        "accel_mean": 0.09279703658825149,
+        "accel_p95": 0.6316418427159747,
+        "jerk_mean": 0.5103803350595079,
+        "jerk_p95": 3.0263618417606333
+      },
+      "strict_all5_1pct": true
+    },
+    {
+      "group": "stable",
+      "n": 91,
+      "native": {
+        "speed_p95": 1.5304819705328165,
+        "accel_mean": 0.09465443000457388,
+        "accel_p95": 0.6172961178203745,
+        "jerk_mean": 0.520595412932165,
+        "jerk_p95": 3.1388622714867878
+      },
+      "refined": {
+        "speed_p95": 1.5304819705328165,
+        "accel_mean": 0.09465442985514026,
+        "accel_p95": 0.6172961178203745,
+        "jerk_mean": 0.5205954129432557,
+        "jerk_p95": 3.1388622714867878
+      },
+      "strict_all5_1pct": true
+    },
+    {
+      "group": "transition",
+      "n": 16,
+      "native": {
+        "speed_p95": 1.2544683866348236,
+        "accel_mean": 0.08072837227821412,
+        "accel_p95": 0.6097309085694496,
+        "jerk_mean": 0.444003248381972,
+        "jerk_p95": 2.5331975861763762
+      },
+      "refined": {
+        "speed_p95": 1.2544683866348236,
+        "accel_mean": 0.08072837216614154,
+        "accel_p95": 0.6097309085694496,
+        "jerk_mean": 0.444003248393293,
+        "jerk_p95": 2.5331975861763762
+      },
+      "strict_all5_1pct": true
+    },
+    {
+      "group": "change",
+      "n": 21,
+      "native": {
+        "speed_p95": 1.0040727193591765,
+        "accel_mean": 0.09394350533375583,
+        "accel_p95": 0.740514970618913,
+        "jerk_mean": 0.5166880159294879,
+        "jerk_p95": 2.982283093792849
+      },
+      "refined": {
+        "speed_p95": 1.0040727193591765,
+        "accel_mean": 0.09394350532476972,
+        "accel_p95": 0.740514970618913,
+        "jerk_mean": 0.5166880159756211,
+        "jerk_p95": 2.982283093792849
+      },
+      "strict_all5_1pct": true
+    }
+  ],
+  "fixture_sha": "aa6d62adf6a57a1c7bb13c6cfcb8bbf30cc7805161410859ef7372415a3accd1",
+  "source_parent_1151_initial_final_unchanged": true,
+  "no_formal_training_or_old_model_access": true,
+  "resource": {
+    "peak_private_GiB": 2.560211181640625,
+    "peak_RSS_GiB": 1.8321418762207031,
+    "min_physical_GiB": 14.95880126953125,
+    "min_commit_GiB": 24.368972778320312,
+    "checks": 40
+  }
+}

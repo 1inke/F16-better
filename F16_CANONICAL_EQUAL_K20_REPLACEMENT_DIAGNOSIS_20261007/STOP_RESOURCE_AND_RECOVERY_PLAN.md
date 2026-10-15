@@ -1,0 +1,9 @@
+# Resource STOP before any scientific preflight
+
+Human explicitly authorized the narrow equal-K20 experiment. Registered source/code/protocol and launch/check helpers were created in this new folder only. First preflight exited1 on its very first resource guard; failure traceback retained in failures/failure_1791382786624488200.json and RESOURCE_USAGE.json. No numeric fixtures ran, no prior model/data was loaded, no source/ID/cache/numerical gate PASS exists, no production task or worker, no scientific result, no ETA/half node.
+
+Failure-time recorded physical available .9670562744140625GiB <6GiB reserve. Commit available13.846508026123047GiB; tiny preflight process peak private .0319976806640625GiB/RSS .05013275146484375GiB. This is system physical reserve failure, not process6GiB or commit failure, and does not identify which application consumed RAM. No later live resource snapshot was made. No OS/pagefile changes/user application termination.
+
+STOP_RESOURCE_WAIT_HUMAN. Do not automatically retry or poll resources. After human explicitly resumes following memory release, first reassess current resources read-only, then the SAME protocol preflight. Retain this failed source and traceback before any necessary new-folder infrastructure fixes; no old code/model/results edit or retraining. Planning ETA only after actual complete saved-only scientific/source/ID gates and throughput measurement. Then sole on-demand0trigger worker/one startup/one half->one completion follow-up. Current code has not passed its fixtures; do not portray implementation as verified.
+
+No new automation is scheduled while waiting. Previous nine-run follow-up was already obsolete/deleted. Research goal and formal counters remain unchanged. Prior canonical results still stand independently; this attempted diagnostic produces no new efficacy result.

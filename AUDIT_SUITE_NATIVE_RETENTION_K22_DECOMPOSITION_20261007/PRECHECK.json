@@ -1,0 +1,31 @@
+{
+  "precheck_status": "PREFLIGHT_PASSED",
+  "checked_at_utc": "2026-10-06 17:25:00",
+  "git_commit": "e08cd6b81ee0584ef117366b553eeb4a991bce98",
+  "checks": {
+    "gt_leakage_in_proposals": {
+      "status": "PASS",
+      "detail": "explicit_candidates accepts only past 8-frame observations; future coordinates are completely unreferenced in proposal generation."
+    },
+    "gt_leakage_in_selection": {
+      "status": "PASS",
+      "detail": "K22/K24 proposal selection uses only past observation intent classifier logits; no future/ground-truth is involved in ranking."
+    },
+    "model_weights_frozen": {
+      "status": "PASS",
+      "detail": "F16 decoder and IntentClassifier are run strictly in torch.inference_mode(); no gradients or weights are modified."
+    },
+    "dataset_split_integrity": {
+      "status": "PASS",
+      "detail": "DEV dataset has exactly N=1516 samples; Zara scene-family outer has N=1561 samples; zero unexpected overlap between train and outer."
+    },
+    "reproducibility_seed_locked": {
+      "status": "PASS",
+      "detail": "Bootstrap seed locked at 20261007; Jitter seed locked at 42."
+    },
+    "native20_baseline_matched": {
+      "status": "PASS",
+      "detail": "Native20 complete coverage on formal DEV exactly verified as 733 / 1516 (48.35%)."
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "arms": [
+    {
+      "arm": "additive",
+      "fit": {
+        "solver_seconds": 0.08673589999671094,
+        "elapsed_seconds": 0.17035219998797402,
+        "n_windows": 513,
+        "n_candidate_rows": 10260,
+        "positive_candidates": 519,
+        "iterations": 4,
+        "warnings": [],
+        "sklearn": "1.4.1.post1",
+        "parameters": {
+          "C": 1.0,
+          "penalty": "l2",
+          "class_weight": "balanced",
+          "solver": "newton-cholesky",
+          "tol": 1e-06,
+          "max_iter": 500
+        },
+        "threads": 1,
+        "independent_objective_certificate": {
+          "objective": 0.6035992422684102,
+          "gradient_inf": 2.70032031866938e-07,
+          "weight_sum": 10260.000000000002,
+          "n": 10260,
+          "positive": 519,
+          "intercept_unpenalized": true,
+          "L2_C": 1.0
+        }
+      },
+      "repeat_exact": true,
+      "reference": {
+        "status": "PASS_SAME_OBJECTIVE_INDEPENDENT_STATIONARITY_AND_REFERENCE",
+        "solver": "scipy_trust_exact_FIXED_NOT_DEPLOYED",
+        "reference_success_flag": true,
+        "reference_message": "Optimization terminated successfully.",
+        "reference_iterations": 6,
+        "sklearn": {
+          "objective": 0.6035992422684102,
+          "gradient_inf": 2.70032031866938e-07,
+          "weight_sum": 10260.000000000002,
+          "n": 10260,
+          "positive": 519,
+          "intercept_unpenalized": true,
+          "L2_C": 1.0
+        },
+        "reference": {
+          "objective": 0.6035992422641737,
+          "gradient_inf": 2.2140442307828846e-10,
+          "weight_sum": 10260.000000000002,
+          "n": 10260,
+          "positive": 519,
+          "intercept_unpenalized": true,
+          "L2_C": 1.0
+        },
+        "objective_difference": 4.236500039667135e-12,
+        "probability_difference_max": 1.3551488456192695e-05,
+        "FD_gradient_max": 1.1596765214783034e-11,
+        "FD_hessian_max": 4.5360035172414825e-11,
+        "Hessian_min_eigenvalue": 9.746588693950803e-05,
+        "Hessian_condition": 141118.58530922743,
+        "not_H4_or_outcome_selection": true,
+        "elapsed_seconds": 0.18771860000560991
+      }
+    },
+    {
+      "arm": "interaction",
+      "fit": {
+        "solver_seconds": 0.1021208000020124,
+        "elapsed_seconds": 0.15771160001168028,
+        "n_windows": 513,
+        "n_candidate_rows": 10260,
+        "positive_candidates": 519,
+        "iterations": 5,
+        "warnings": [],
+        "sklearn": "1.4.1.post1",
+        "parameters": {
+          "C": 1.0,
+          "penalty": "l2",
+          "class_weight": "balanced",
+          "solver": "newton-cholesky",
+          "tol": 1e-06,
+          "max_iter": 500
+        },
+        "threads": 1,
+        "independent_objective_certificate": {
+          "objective": 0.5208292004259386,
+          "gradient_inf": 1.0187001645012295e-08,
+          "weight_sum": 10260.000000000002,
+          "n": 10260,
+          "positive": 519,
+          "intercept_unpenalized": true,
+          "L2_C": 1.0
+        }
+      },
+      "repeat_exact": true,
+      "reference": {
+        "status": "PASS_SAME_OBJECTIVE_INDEPENDENT_STATIONARITY_AND_REFERENCE",
+        "solver": "scipy_trust_exact_FIXED_NOT_DEPLOYED",
+        "reference_success_flag": true,
+        "reference_message": "Optimization terminated successfully.",
+        "reference_iterations": 7,
+        "sklearn": {
+          "objective": 0.5208292004259386,
+          "gradient_inf": 1.0187001645012295e-08,
+          "weight_sum": 10260.000000000002,
+          "n": 10260,
+          "positive": 519,
+          "intercept_unpenalized": true,
+          "L2_C": 1.0
+        },
+        "reference": {
+          "objective": 0.5208292004259331,
+          "gradient_inf": 3.6102473888557397e-12,
+          "weight_sum": 10260.000000000002,
+          "n": 10260,
+          "positive": 519,
+          "intercept_unpenalized": true,
+          "L2_C": 1.0
+        },
+        "objective_difference": 5.551115123125783e-15,
+        "probability_difference_max": 3.0691255759052183e-07,
+        "FD_gradient_max": 1.7246499367518098e-11,
+        "FD_hessian_max": 3.8458292106469116e-11,
+        "Hessian_min_eigenvalue": 9.746588693951485e-05,
+        "Hessian_condition": 127402.26886603724,
+        "not_H4_or_outcome_selection": true,
+        "elapsed_seconds": 0.26258000000962056
+      }
+    }
+  ]
+}

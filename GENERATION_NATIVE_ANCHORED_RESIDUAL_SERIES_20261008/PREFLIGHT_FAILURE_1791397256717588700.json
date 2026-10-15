@@ -1,0 +1,11 @@
+{
+  "status": "STOP",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_RESIDUAL_SERIES_20261008\\preflight.py\", line 72, in <module>\n    try:main()\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_RESIDUAL_SERIES_20261008\\preflight.py\", line 45, in main\n    start=time.perf_counter();r.guard();assert torch.cuda.is_available();r.stage('PREFLIGHT_SOURCE_IDS_STATS');ns,data,sp=r.data_load();tr=sp['grouped_train_index'];st=r.statistics(data,tr);assert all(np.isfinite(x).all() for x in st) and (st[1]>0).all();np.savez_compressed(r.H/'statistics.npz',mean=st[0],std=st[1],normalization_ids=data['ids'][tr])\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_RESIDUAL_SERIES_20261008\\run.py\", line 30, in statistics\n    x=features(data,tr).reshape(-1,144);mu=x.mean(0,dtype=np.float64);sd=x.std(0,dtype=np.float64);sd=np.where(sd<1e-6,1.,sd);return mu.astype(np.float32),sd.astype(np.float32)\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_NATIVE_ANCHORED_RESIDUAL_SERIES_20261008\\run.py\", line 28, in features\n    def features(data,ix):return np.concatenate((np.repeat(data['p2'][ix,None],4,axis=1),data['anchor'][ix].reshape(-1,4,48)),axis=-1).astype(np.float32)\nValueError: cannot reshape array of size 1815264 into shape (4,48)\n",
+  "resource": {
+    "peak_private_GiB": 1.1885337829589844,
+    "peak_RSS_GiB": 0.8862037658691406,
+    "min_physical_GiB": 17.506084442138672,
+    "min_commit_GiB": 26.207149505615234,
+    "checks": 3
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "R1_MATCHED_SAFE_WITNESS_SUPERVISION_SELECTOR",
+  "human_authorized": "根据以下内容执行新的实验",
+  "hash": "repairability-supervision-v1",
+  "group_quota": 128,
+  "max_windows_per_track_per_group": 4,
+  "exclude_all_discovery_tracks": 56,
+  "A_only": true,
+  "B_and_eval_sealed": true,
+  "windows": 384,
+  "potential_anchors": 511,
+  "solves": 1022,
+  "solver": {
+    "name": "SLSQP",
+    "modes": [
+      "shape",
+      "pointwise"
+    ],
+    "zero_init": true,
+    "maxiter": 150,
+    "ftol": 1e-9,
+    "restarts": 0
+  },
+  "label": {
+    "P": "independently_verified_safe_witness",
+    "N": "exactFraction endpoint necessary exclusion at float.2+.4+1e-9",
+    "U": "unknown masked never negative"
+  },
+  "feature": 136,
+  "common_train": "atleast1P andatleast1N",
+  "weighted_classes_half": true,
+  "weighted_tracks_equal": true,
+  "weight_sum": "commonwindows*20",
+  "statistics": "same commontrain all20 float64 mean/std;floor<1e-6=>1",
+  "selector": {
+    "C": 1,
+    "penalty": "l2",
+    "class_weight": null,
+    "solver": "newton-cholesky",
+    "tol": 0.000001,
+    "max_iter": 500,
+    "threads": 1
+  },
+  "ranking": "raw score stable descending physical tie; physicalascending selected4",
+  "primary": "Hit4 foundwitness conditional on windowhasP",
+  "comparisons": [
+    "envelope",
+    "fixed_random",
+    "bottom"
+  ],
+  "gain_min": 0.05,
+  "CI": 98.33333333333333,
+  "bootstrap": 2000,
+  "rng": [
+    20261012,
+    20261013,
+    20261014
+  ],
+  "fold_support_min_windows": 20,
+  "fold_support_min_tracks": 10,
+  "change_fold_atleast_envelope_and_fixedrandom": true,
+  "only_next_B_transfer": true,
+  "no_directS2": true,
+  "resource_process_GiB": 6,
+  "resource_each_reserve_GiB": 6,
+  "planning_max_minutes": 30,
+  "recovery": {
+    "parent": "R1_safe_repairability_supervision_20261012",
+    "only_io_repair": true,
+    "replace_retry_wait": [
+      0,
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.8
+    ],
+    "prefix18_reconstruction_nonelapsed_exact": true,
+    "percase_checkpoint_before_next": true,
+    "no_science_or_permission_change": true
+  }
+}

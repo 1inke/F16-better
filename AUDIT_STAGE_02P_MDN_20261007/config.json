@@ -1,0 +1,39 @@
+{
+  "stage": "02P_MDN",
+  "version": "1.0",
+  "date": "2026-10-07",
+  "representation": "P2",
+  "representation_dim": 96,
+  "mixture_components": 3,
+  "model": {
+    "type": "GaussianMDN",
+    "hidden_dim": 128,
+    "num_hidden_layers": 2,
+    "activation": "GELU",
+    "num_components": 3,
+    "param_dim": 8
+  },
+  "protocols": [
+    "target-track",
+    "recording-time",
+    "scene-family"
+  ],
+  "training": {
+    "epochs": 20,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "GaussianNLL"
+  },
+  "candidate_allocation": {
+    "total_hypotheses": 24,
+    "selected_slots": 4,
+    "max_slots_per_class": 2,
+    "joint_scoring": "p_class * p_mode"
+  },
+  "candidate_budget_constraint": {
+    "k": 24,
+    "native_k": 20,
+    "treatment_k": 4
+  }
+}

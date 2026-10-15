@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-08T09:37:33.3125873+08:00",
+  "task_name": "Trajectory-NativeAnchoredPhysicalRay-ApprovedLaunch-20261008",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "worker": {
+    "status": "SUCCESS",
+    "pid": 42092,
+    "parent": 2840,
+    "started_at": "2026-10-08T09:32:13.080314+08:00",
+    "type": "PAIRED_NATIVE_ANCHORED_PHYSICAL_RAY_FRESH_TRAINING",
+    "finished_at": "2026-10-08T09:36:45.282905+08:00"
+  },
+  "exit": {
+    "status": "SUCCESS",
+    "pid": 42092,
+    "parent": 2840,
+    "started_at": "2026-10-08T09:32:13.080314+08:00",
+    "type": "PAIRED_NATIVE_ANCHORED_PHYSICAL_RAY_FRESH_TRAINING",
+    "finished_at": "2026-10-08T09:36:45.282905+08:00"
+  },
+  "progress": {
+    "stage": "SUCCESS",
+    "at": "2026-10-08T09:36:45.278851+08:00",
+    "runs_done": 6,
+    "saved_jobs": 18
+  },
+  "runs_done": 6,
+  "histories": [
+    {
+      "seed": 42,
+      "epochs": 25,
+      "arm": "unprojected"
+    },
+    {
+      "seed": 43,
+      "epochs": 25,
+      "arm": "unprojected"
+    },
+    {
+      "seed": 44,
+      "epochs": 25,
+      "arm": "unprojected"
+    },
+    {
+      "seed": 42,
+      "epochs": 25,
+      "arm": "physical"
+    },
+    {
+      "seed": 43,
+      "epochs": 25,
+      "arm": "physical"
+    },
+    {
+      "seed": 44,
+      "epochs": 25,
+      "arm": "physical"
+    }
+  ],
+  "stderr_bytes": 0
+}

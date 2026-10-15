@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-13T11:32:10.7002518+08:00",
+  "task": "Trajectory-RepairableAnchorR2Nonlinear-20261013",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "worker_state": {
+    "status": "FAILURE",
+    "pid": 12864,
+    "parent_pid": 2688,
+    "started_at": "2026-10-13T11:31:22.323132+08:00",
+    "finished_at": "2026-10-13T11:31:39.665335+08:00",
+    "error": "ValueError('Out of range float values are not JSON compliant: nan')"
+  },
+  "exit_status": {
+    "status": "FAILURE",
+    "started_at": "2026-10-13T11:31:22.323132+08:00",
+    "finished_at": "2026-10-13T11:31:39.640497+08:00",
+    "error": "ValueError('Out of range float values are not JSON compliant: nan')",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\R2_NONLINEAR_MATCHING_DESIGN_20261012\\production_20261013\\independent_worker.py\", line 13, in <module>\n    run.main()\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\R2_NONLINEAR_MATCHING_DESIGN_20261012\\production_20261013\\run.py\", line 36, in main\n    c.write(\"train_diagnostics.json\",train_reports)\n  File \"C:\\Users\\linke\\Documents\\New project\\PED_REPAIRABLE_ANCHOR_SERIES_20261011\\R2_NONLINEAR_MATCHING_DESIGN_20261012\\production_20261013\\common.py\", line 24, in write\n    with t.open(\"x\",encoding=\"utf8\") as f:f.write(json.dumps(v,ensure_ascii=False,indent=2,allow_nan=False,default=lambda x:x.tolist() if isinstance(x,np.ndarray) else x.item()));f.flush();os.fsync(f.fileno())\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\json\\__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\json\\encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\json\\encoder.py\", line 429, in _iterencode\n    yield from _iterencode_list(o, _current_indent_level)\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\json\\encoder.py\", line 325, in _iterencode_list\n    yield from chunks\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\json\\encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\json\\encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\json\\encoder.py\", line 397, in _iterencode_dict\n    yield _floatstr(value)\n  File \"C:\\coding_toobox\\envs\\astra2\\lib\\json\\encoder.py\", line 239, in floatstr\n    raise ValueError(\nValueError: Out of range float values are not JSON compliant: nan\n",
+    "code": 1
+  },
+  "progress": {
+    "stage": "OOF_METRICS_BOOTSTRAP",
+    "at": "2026-10-13T11:31:39.292008+08:00",
+    "done": 6,
+    "total": 6
+  },
+  "RESULT": null,
+  "stderr_bytes": 5684
+}

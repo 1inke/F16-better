@@ -1,0 +1,210 @@
+{
+  "status": "PASS",
+  "locked_source_count": 1344,
+  "source_sha": "5325ef079d4465dfc45234cfb2f1baf74c51bc4350a46c9f8b07308f0b26a732",
+  "source_initial_final_PASS": true,
+  "all_saved_smoke": [
+    {
+      "arm": "ray",
+      "rows": 128,
+      "full_quality_original_SciPy_complete_link": true,
+      "all_groups_five_pooled_literal_1pct": {
+        "overall": true,
+        "stable": true,
+        "transition": true,
+        "change": true
+      },
+      "bounds_geometry": {
+        "max_endpoint_residual": 3.336840352789295e-07,
+        "max_meanpath_residual": 1.2657032880674435e-07,
+        "temporal": {
+          "status": "PASS",
+          "reconstruction_max_error": 5.61159327555974e-21,
+          "alpha_reconstruction_max_error": 0.0,
+          "alpha_quantiles": [
+            0.0,
+            0.0,
+            0.0,
+            3.809698133516188e-05,
+            0.00018192010181453463
+          ],
+          "alpha_zero_fraction": 0.51171875,
+          "alpha_below_1e_6_fraction": 0.53125,
+          "alpha_mean": 1.2838319834495461e-05,
+          "raw_pointwise_excess": [
+            {
+              "order": 1,
+              "raw_strict_excess_count": 0,
+              "max_raw_excess": 0.0,
+              "max_excess_to_certificate": 0.0
+            },
+            {
+              "order": 2,
+              "raw_strict_excess_count": 2,
+              "max_raw_excess": 3.864602421585557e-17,
+              "max_excess_to_certificate": 0.00016642613906970246
+            },
+            {
+              "order": 3,
+              "raw_strict_excess_count": 0,
+              "max_raw_excess": 0.0,
+              "max_excess_to_certificate": 0.0
+            }
+          ],
+          "zero_native_constraints": 368,
+          "certificate_not_literal_pointwise_PASS": true,
+          "full_path_motion_separately_literal": true,
+          "residual_only_speed_mean": 7.93748707962986e-09,
+          "residual_only_accel_mean": 3.3925049383100904e-09,
+          "residual_only_jerk_mean": 1.1063865920790265e-09,
+          "residual_norm_quantiles": [
+            0.0,
+            0.0,
+            7.92295816222353e-08,
+            3.336840352789295e-07
+          ],
+          "geometry": {},
+          "candidate_residual_ge_1mm_fraction": 0.0,
+          "proposed_norm_quantiles": [
+            9.442046250553801e-07,
+            0.0009059779102679269,
+            0.004215067114290611,
+            0.006665186122089942
+          ]
+        }
+      }
+    },
+    {
+      "arm": "similarity",
+      "rows": 128,
+      "full_quality_original_SciPy_complete_link": true,
+      "all_groups_five_pooled_literal_1pct": {
+        "overall": true,
+        "stable": true,
+        "transition": true,
+        "change": true
+      },
+      "bounds_geometry": {
+        "max_endpoint_residual": 0.05836770959153543,
+        "max_meanpath_residual": 0.02397901932447143,
+        "temporal": {
+          "status": "PASS",
+          "reconstruction_max_error": 5.863365348801608e-16,
+          "alpha_reconstruction_max_error": 0.0,
+          "alpha_quantiles": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "alpha_zero_fraction": 0.0,
+          "alpha_below_1e_6_fraction": 0.0,
+          "alpha_mean": 1.0,
+          "raw_pointwise_excess": [
+            {
+              "order": 1,
+              "raw_strict_excess_count": 0,
+              "max_raw_excess": 0.0,
+              "max_excess_to_certificate": 0.0
+            },
+            {
+              "order": 2,
+              "raw_strict_excess_count": 123,
+              "max_raw_excess": 3.1031676915590912e-15,
+              "max_excess_to_certificate": 0.00848203598538411
+            },
+            {
+              "order": 3,
+              "raw_strict_excess_count": 31,
+              "max_raw_excess": 1.3904866443919907e-14,
+              "max_excess_to_certificate": 0.00567540717443229
+            }
+          ],
+          "zero_native_constraints": 368,
+          "certificate_not_literal_pointwise_PASS": true,
+          "full_path_motion_separately_literal": true,
+          "residual_only_speed_mean": 0.002598276877564368,
+          "residual_only_accel_mean": 0.0007253033544906907,
+          "residual_only_jerk_mean": 0.003989160286723623,
+          "residual_norm_quantiles": [
+            3.995792040464397e-05,
+            0.005396926382472324,
+            0.02178615724291211,
+            0.05836770959153543
+          ],
+          "geometry": {
+            "fit_a": {
+              "min": 0.9753853519872161,
+              "mean": 1.0020254990741402,
+              "max": 1.0130312448434569
+            },
+            "fit_b": {
+              "min": -0.003987861237876054,
+              "mean": 0.0010913205144724137,
+              "max": 0.01785056062919346
+            },
+            "scale_before": {
+              "min": 0.9754246284731438,
+              "mean": 1.0020351785609016,
+              "max": 1.0130353960209966
+            },
+            "capped_a": {
+              "min": 0.9753853519872161,
+              "mean": 1.0019952490326167,
+              "max": 1.0099964281943261
+            },
+            "capped_b": {
+              "min": -0.003987861237876054,
+              "mean": 0.0010912255797637374,
+              "max": 0.01785056062919346
+            },
+            "position_lambda": {
+              "min": 0.5593520327275439,
+              "mean": 0.8863332804283539,
+              "max": 1.0
+            },
+            "final_a": {
+              "min": 0.9753853519872161,
+              "mean": 1.0014796638198296,
+              "max": 1.0099964281943261
+            },
+            "final_b": {
+              "min": -0.0038820477269209115,
+              "mean": 0.001137111443874293,
+              "max": 0.01785056062919346
+            },
+            "final_scale": {
+              "min": 0.9754246284731438,
+              "mean": 1.00148877322411,
+              "max": 1.0099990367889407
+            },
+            "zero_energy": {
+              "min": 0.0,
+              "mean": 0.0,
+              "max": 0.0
+            }
+          },
+          "candidate_residual_ge_1mm_fraction": 0.994140625,
+          "proposed_norm_quantiles": [
+            5.799472574529178e-06,
+            0.003660361591296191,
+            0.022466933463522867,
+            0.06378231706595792
+          ]
+        }
+      }
+    }
+  ],
+  "no_torch_forward_optimizer": true,
+  "review_script_sha": "553751e892d6390cfc004168c7c6c6a8403717d125f89e5bb627c46f509320e9",
+  "audit_script_sha": "edfe2ffce6f7c5190f3572deab5973790ca9a9b7dab56ccd77efeff4fcc2de16",
+  "not_external_review": true,
+  "resource": {
+    "peak_private_GiB": 0.038883209228515625,
+    "peak_RSS_GiB": 0.05678558349609375,
+    "min_physical_GiB": 16.267559051513672,
+    "min_commit_GiB": 26.91000747680664,
+    "checks": 110
+  }
+}

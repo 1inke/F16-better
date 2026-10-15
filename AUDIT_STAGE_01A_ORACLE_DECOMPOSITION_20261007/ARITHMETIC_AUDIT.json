@@ -1,0 +1,49 @@
+{
+  "stage": "01A_ORACLE_DECOMPOSITION",
+  "audit_timestamp": "2026-10-07T09:27:40+08:00",
+  "formulas_checked": {
+    "total_oracle_J_gain_fraction": {
+      "expression": "(0.798157 - 0.222744) / 0.798157",
+      "expected": 0.720928,
+      "reported": 0.720928,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "free4_coverage_gain_pp": {
+      "expression": "(1490 / 1561 - 1061 / 1561) * 100",
+      "expected": 27.4824,
+      "reported": 27.4824,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "parameter_gap_share": {
+      "expression": "(0.798157 - 0.337180) / (0.798157 - 0.222744)",
+      "expected": 0.801108,
+      "reported": 0.801108,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "class_gap_share": {
+      "expression": "(0.337180 - 0.306707) / (0.798157 - 0.222744)",
+      "expected": 0.052959,
+      "reported": 0.052959,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "taxonomy_gap_share": {
+      "expression": "(0.306707 - 0.222744) / (0.798157 - 0.222744)",
+      "expected": 0.145933,
+      "reported": 0.145933,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "gap_shares_sum": {
+      "expression": "0.801108 + 0.052959 + 0.145933",
+      "expected": 1.0,
+      "reported": 1.0,
+      "diff": 0.0,
+      "status": "PASS"
+    }
+  },
+  "audit_status": "PASS"
+}

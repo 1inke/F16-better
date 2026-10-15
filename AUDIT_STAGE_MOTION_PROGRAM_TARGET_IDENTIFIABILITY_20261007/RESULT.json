@@ -1,0 +1,80 @@
+{
+  "stage": "MOTION_PROGRAM_TARGET_IDENTIFIABILITY_AUDIT",
+  "status": "COMPLETED",
+  "experiment_a_parameter_uniqueness": {
+    "change_subset": {
+      "n_samples": 211,
+      "mean_near_optimal_solutions": 9.649289099526067,
+      "mean_trajectory_dispersion_ade_m": 0.005468470347058735,
+      "median_trajectory_dispersion_ade_m": 0.0017846301198005676,
+      "mean_normalized_param_dispersion": 0.05368129194436056,
+      "median_normalized_param_dispersion": 0.024374518543481827,
+      "degenerate_solutions_fraction": 0.037914691943127965,
+      "mean_parameter_std": {
+        "s1": 0.013637868188055655,
+        "s2": 0.011720165624934296,
+        "s3": 0.015876901804399733,
+        "theta1_deg": 0.7065528400663852,
+        "theta2_deg": 1.1190336075880658,
+        "theta3_deg": 1.3911514869180477,
+        "onset_step": 0.1415185897182938,
+        "persistence": 0.0913142840360331
+      },
+      "mean_onset_theta_correlation": 0.04042630139537144,
+      "mean_speed_persistence_correlation": -0.017515842798982592
+    },
+    "stable_subset": {
+      "n_samples": 211,
+      "mean_near_optimal_solutions": 2.881516587677725,
+      "mean_trajectory_dispersion_ade_m": 0.002455137628522344,
+      "median_trajectory_dispersion_ade_m": 0.0,
+      "mean_normalized_param_dispersion": 0.0275816820645749,
+      "median_normalized_param_dispersion": 0.0,
+      "degenerate_solutions_fraction": 0.037914691943127965,
+      "mean_parameter_std": {
+        "s1": 0.003441446315333296,
+        "s2": 0.0037149618193838235,
+        "s3": 0.0036466985751827294,
+        "theta1_deg": 0.11821139193365077,
+        "theta2_deg": 0.10782463508172588,
+        "theta3_deg": 0.14168854523891522,
+        "onset_step": 0.08723608957012118,
+        "persistence": 0.04636004470924348
+      },
+      "mean_onset_theta_correlation": -0.0072895559954177696,
+      "mean_speed_persistence_correlation": -0.0868615071887104
+    },
+    "key_finding": {
+      "parameter_degeneracy_rate_pct": 3.7914691943127963,
+      "is_parameter_degenerate": false,
+      "mean_onset_theta_correlation": 0.04042630139537144
+    }
+  },
+  "experiment_b_conditional_multimodality": {
+    "metrics": {
+      "n_samples": 211,
+      "k_neighbors": 20,
+      "mean_topk_similarity": 0.8847334980964661,
+      "mean_distinct_classes_in_k": 4.0,
+      "mean_class_entropy_bits": 1.4705984592437744,
+      "samples_with_ge_3_classes_pct": 77.72511848341233,
+      "mean_theta3_std_deg": 28.141202926635742,
+      "mean_theta3_span_deg": 111.09699249267578,
+      "samples_with_angular_bimodality_pct": 77.25118483412322,
+      "mean_s3_std": 0.5227461457252502,
+      "mean_s3_span": 1.4712218046188354
+    },
+    "key_finding": {
+      "samples_with_angular_bimodality_pct": 77.25118483412322,
+      "samples_with_ge_3_classes_pct": 77.72511848341233,
+      "is_conditional_multimodal": true
+    }
+  },
+  "routing_decision": {
+    "selected_route": "PROBABILISTIC_MDN_JOINT_ALLOCATOR",
+    "rationale": "Parameters are identifiable but past conditional distribution is multimodal; 3-component MDN required.",
+    "is_parameter_degenerate": false,
+    "is_conditional_multimodal": true,
+    "budget_constraint": "K=24 (Native 20 frozen + 4 learned program slots)"
+  }
+}

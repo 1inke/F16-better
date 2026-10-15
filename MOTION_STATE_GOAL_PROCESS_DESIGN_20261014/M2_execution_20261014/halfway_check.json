@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-10-14T20:52:47.5983068+08:00",
+  "task": "Trajectory-MotionStateM2JointGoalProcess-20261014",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "worker_state": {
+    "status": "SUCCESS",
+    "pid": 10364,
+    "parent_pid": 2688,
+    "started_at": "2026-10-14T20:26:20.384351+08:00",
+    "finished_at": "2026-10-14T20:41:48.062001+08:00"
+  },
+  "exit_status": {
+    "status": "SUCCESS",
+    "started_at": "2026-10-14T20:26:20.384351+08:00",
+    "finished_at": "2026-10-14T20:41:48.047848+08:00",
+    "code": 0
+  },
+  "progress": {
+    "stage": "SUCCESS",
+    "at": "2026-10-14T20:41:48.040555+08:00",
+    "runs_done": 6,
+    "S2": false,
+    "Q2": false
+  },
+  "RESULT": {
+    "saved_jobs": 24,
+    "production_trainings": 6,
+    "decision": {
+      "S2": false,
+      "S2_components": {
+        "coverage_all3_positive": false,
+        "coverage_mean_atleast5pp": false,
+        "coverage_family26_CI_lower_positive": false,
+        "change_ADE_FDE_mean_not_worse": true,
+        "protected_each_ADEFDE_within_A1percent": false
+      },
+      "coverage_gain_pp": [
+        3.1620553359683834,
+        -0.39525691699604515,
+        -3.557312252964423
+      ],
+      "Q2": false,
+      "Q2_components": {
+        "S2": false,
+        "change_coverage_each_atleast_native": false,
+        "protected_each_ADEFDE_within_native1percent": false,
+        "all48_fiveMotion": false
+      },
+      "M3_allowed": false,
+      "not_major": true,
+      "original_major_not_relaxed": true
+    },
+    "epochs": 150,
+    "status": "PASS_M2_JOINT_GOAL_PROCESS_PAIRED_RUN"
+  },
+  "histories": [
+    {
+      "seed": 42,
+      "arm": "frozen_goal",
+      "completed_epochs": 25,
+      "done": true
+    },
+    {
+      "seed": 43,
+      "arm": "frozen_goal",
+      "completed_epochs": 25,
+      "done": true
+    },
+    {
+      "seed": 44,
+      "arm": "frozen_goal",
+      "completed_epochs": 25,
+      "done": true
+    },
+    {
+      "seed": 42,
+      "arm": "joint_goal",
+      "completed_epochs": 25,
+      "done": true
+    },
+    {
+      "seed": 43,
+      "arm": "joint_goal",
+      "completed_epochs": 25,
+      "done": true
+    },
+    {
+      "seed": 44,
+      "arm": "joint_goal",
+      "completed_epochs": 25,
+      "done": true
+    }
+  ],
+  "stderr_bytes": 0
+}

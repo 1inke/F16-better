@@ -1,0 +1,298 @@
+{
+  "stage": "01A_ORACLE_DECOMPOSITION",
+  "timestamp_utc": "2026-10-07 01:27:36",
+  "evaluation_set": "zara_outer_primary",
+  "n_samples": 1561,
+  "suites": {
+    "native20": {
+      "suite_name": "Native20_Reference",
+      "coverage_count": 1040,
+      "coverage_rate": 0.6662395900064062,
+      "minADE": 0.1446896642446518,
+      "minFDE": 0.25541773438453674,
+      "mean_J": 0.8150817155838013,
+      "prefix_errors": {
+        "early": 0.06955407559871674,
+        "middle": 0.15711356699466705,
+        "late": 0.22219133377075195
+      },
+      "kinematics": {
+        "speed_mean": 0.7135511040687561,
+        "speed_p95": 1.4244597375392911,
+        "accel_mean": 0.09783796966075897,
+        "accel_p95": 0.6927660942077636,
+        "jerk_mean": 0.538105845451355,
+        "jerk_p95": 3.1626718044281
+      },
+      "subgroups": {
+        "overall": {
+          "n": 1561,
+          "coverage_count": 1040,
+          "coverage_rate": 0.6662395900064062,
+          "minADE": 0.1446896642446518,
+          "minFDE": 0.25541773438453674,
+          "mean_J": 0.8150817155838013
+        },
+        "stable": {
+          "n": 1226,
+          "coverage_count": 901,
+          "coverage_rate": 0.734910277324633,
+          "minADE": 0.12149453908205032,
+          "minFDE": 0.21119990944862366,
+          "mean_J": 0.6750429272651672
+        },
+        "transition": {
+          "n": 124,
+          "coverage_count": 57,
+          "coverage_rate": 0.4596774193548387,
+          "minADE": 0.20662088692188263,
+          "minFDE": 0.37876200675964355,
+          "mean_J": 1.1801356077194214
+        },
+        "change": {
+          "n": 211,
+          "coverage_count": 82,
+          "coverage_rate": 0.3886255924170616,
+          "minADE": 0.2430676966905594,
+          "minFDE": 0.4398556053638458,
+          "mean_J": 1.414232611656189
+        }
+      }
+    },
+    "S0_static_k24": {
+      "suite_name": "S0_Static_K24",
+      "coverage_count": 1061,
+      "coverage_rate": 0.6796925048046124,
+      "minADE": 0.14090938866138458,
+      "minFDE": 0.24741408228874207,
+      "mean_J": 0.7981622219085693,
+      "prefix_errors": {
+        "early": 0.06859377771615982,
+        "middle": 0.1539090871810913,
+        "late": 0.21643303334712982
+      },
+      "kinematics": {
+        "speed_mean": 0.7088361978530884,
+        "speed_p95": 1.448256725072858,
+        "accel_mean": 0.10088176280260086,
+        "accel_p95": 0.5387900143861761,
+        "jerk_mean": 0.45309367775917053,
+        "jerk_p95": 2.9814572095870964
+      },
+      "subgroups": {
+        "overall": {
+          "n": 1561,
+          "coverage_count": 1061,
+          "coverage_rate": 0.6796925048046124,
+          "minADE": 0.14090938866138458,
+          "minFDE": 0.24741408228874207,
+          "mean_J": 0.7981622219085693
+        },
+        "stable": {
+          "n": 1226,
+          "coverage_count": 913,
+          "coverage_rate": 0.7446982055464927,
+          "minADE": 0.11794411391019821,
+          "minFDE": 0.20352117717266083,
+          "mean_J": 0.6604958772659302
+        },
+        "transition": {
+          "n": 124,
+          "coverage_count": 60,
+          "coverage_rate": 0.4838709677419355,
+          "minADE": 0.20262637734413147,
+          "minFDE": 0.36844146251678467,
+          "mean_J": 1.160140872001648
+        },
+        "change": {
+          "n": 211,
+          "coverage_count": 88,
+          "coverage_rate": 0.41706161137440756,
+          "minADE": 0.2380778044462204,
+          "minFDE": 0.4313255548477173,
+          "mean_J": 1.3853358030319214
+        }
+      }
+    },
+    "S1_top4_oracle": {
+      "suite_name": "S1_Top4_OracleParam_K24",
+      "coverage_count": 1455,
+      "coverage_rate": 0.9320948110185778,
+      "minADE": 0.06254752725362778,
+      "minFDE": 0.0484975203871727,
+      "mean_J": 0.33719027042388916,
+      "prefix_errors": {
+        "early": 0.05056973919272423,
+        "middle": 0.07628235965967178,
+        "late": 0.0654323548078537
+      },
+      "kinematics": {
+        "speed_mean": 0.7068036794662476,
+        "speed_p95": 1.4273046851158135,
+        "accel_mean": 0.09466371685266495,
+        "accel_p95": 0.5681447505950913,
+        "jerk_mean": 0.46771660447120667,
+        "jerk_p95": 2.995197796821594
+      },
+      "subgroups": {
+        "overall": {
+          "n": 1561,
+          "coverage_count": 1455,
+          "coverage_rate": 0.9320948110185778,
+          "minADE": 0.06254752725362778,
+          "minFDE": 0.0484975203871727,
+          "mean_J": 0.33719027042388916
+        },
+        "stable": {
+          "n": 1226,
+          "coverage_count": 1197,
+          "coverage_rate": 0.9763458401305057,
+          "minADE": 0.0443686805665493,
+          "minFDE": 0.01289051491767168,
+          "mean_J": 0.22716401517391205
+        },
+        "transition": {
+          "n": 124,
+          "coverage_count": 122,
+          "coverage_rate": 0.9838709677419355,
+          "minADE": 0.06007903441786766,
+          "minFDE": 0.015144494362175465,
+          "mean_J": 0.3040085732936859
+        },
+        "change": {
+          "n": 211,
+          "coverage_count": 136,
+          "coverage_rate": 0.6445497630331753,
+          "minADE": 0.16962505877017975,
+          "minFDE": 0.2749902009963989,
+          "mean_J": 0.9959899187088013
+        }
+      }
+    },
+    "S2_allclass_oracle": {
+      "suite_name": "S2_AllClass_OracleParam_K24",
+      "coverage_count": 1474,
+      "coverage_rate": 0.9442664958360025,
+      "minADE": 0.057616226375103,
+      "minFDE": 0.033708952367305756,
+      "mean_J": 0.3067169785499573,
+      "prefix_errors": {
+        "early": 0.050765618681907654,
+        "middle": 0.0707683116197586,
+        "late": 0.05537323281168938
+      },
+      "kinematics": {
+        "speed_mean": 0.7080788016319275,
+        "speed_p95": 1.4306743741035461,
+        "accel_mean": 0.09735065698623657,
+        "accel_p95": 0.5745752811431872,
+        "jerk_mean": 0.471709668636322,
+        "jerk_p95": 2.9927321076393096
+      },
+      "subgroups": {
+        "overall": {
+          "n": 1561,
+          "coverage_count": 1474,
+          "coverage_rate": 0.9442664958360025,
+          "minADE": 0.057616226375103,
+          "minFDE": 0.033708952367305756,
+          "mean_J": 0.3067169785499573
+        },
+        "stable": {
+          "n": 1226,
+          "coverage_count": 1203,
+          "coverage_rate": 0.9812398042414355,
+          "minADE": 0.042220260947942734,
+          "minFDE": 0.007288524415344,
+          "mean_J": 0.21472568809986115
+        },
+        "transition": {
+          "n": 124,
+          "coverage_count": 123,
+          "coverage_rate": 0.9919354838709677,
+          "minADE": 0.05364082753658295,
+          "minFDE": 0.006718788295984268,
+          "mean_J": 0.27098220586776733
+        },
+        "change": {
+          "n": 211,
+          "coverage_count": 148,
+          "coverage_rate": 0.7014218009478673,
+          "minADE": 0.14940959215164185,
+          "minFDE": 0.20308440923690796,
+          "mean_J": 0.8622260093688965
+        }
+      }
+    },
+    "S3_free4_oracle": {
+      "suite_name": "S3_Free4_OracleProgram_K24",
+      "coverage_count": 1490,
+      "coverage_rate": 0.9545163356822549,
+      "minADE": 0.04059266671538353,
+      "minFDE": 0.03830143064260483,
+      "mean_J": 0.222744420170784,
+      "prefix_errors": {
+        "early": 0.04283241927623749,
+        "middle": 0.04037567973136902,
+        "late": 0.04234471172094345
+      },
+      "kinematics": {
+        "speed_mean": 0.7103645205497742,
+        "speed_p95": 1.4327557981014243,
+        "accel_mean": 0.10187103599309921,
+        "accel_p95": 0.5732587158679961,
+        "jerk_mean": 0.48085179924964905,
+        "jerk_p95": 2.9839499473571776
+      },
+      "subgroups": {
+        "overall": {
+          "n": 1561,
+          "coverage_count": 1490,
+          "coverage_rate": 0.9545163356822549,
+          "minADE": 0.04059266671538353,
+          "minFDE": 0.03830143064260483,
+          "mean_J": 0.222744420170784
+        },
+        "stable": {
+          "n": 1226,
+          "coverage_count": 1225,
+          "coverage_rate": 0.9991843393148451,
+          "minADE": 0.020731760188937187,
+          "minFDE": 0.007038615178316832,
+          "mean_J": 0.10511789470911026
+        },
+        "transition": {
+          "n": 124,
+          "coverage_count": 124,
+          "coverage_rate": 1.0,
+          "minADE": 0.036503080278635025,
+          "minFDE": 0.012086069211363792,
+          "mean_J": 0.18542982637882233
+        },
+        "change": {
+          "n": 211,
+          "coverage_count": 141,
+          "coverage_rate": 0.6682464454976303,
+          "minADE": 0.15839633345603943,
+          "minFDE": 0.23535791039466858,
+          "mean_J": 0.928133487701416
+        }
+      }
+    }
+  },
+  "gap_decomposition": {
+    "J_S0_static": 0.7981622219085693,
+    "J_S1_top4_oracle": 0.33719027042388916,
+    "J_S2_allclass_oracle": 0.3067169785499573,
+    "J_S3_free4_oracle": 0.222744420170784,
+    "G_total": 0.5754178017377853,
+    "G_param": 0.4609719514846802,
+    "G_class": 0.030473291873931885,
+    "G_tax": 0.08397255837917328,
+    "total_oracle_J_gain_fraction": 0.7209283851619079,
+    "free4_coverage_gain_pp": 27.48238308776425,
+    "parameter_gap_share": 0.8011082557622061,
+    "class_gap_share": 0.05295854904367104,
+    "taxonomy_gap_share": 0.1459331951941228
+  }
+}

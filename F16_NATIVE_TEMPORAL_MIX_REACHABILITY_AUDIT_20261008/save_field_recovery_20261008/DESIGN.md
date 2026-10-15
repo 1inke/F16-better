@@ -1,0 +1,3 @@
+# Same scientific design; one save-field recovery
+
+Read ../DESIGN.md in full. Parent fields collided atnp.savez argumentbinding before writing. Child renames explicit4path goodmask generated_candidate_good; policyextra candidate_good remains20pathmask, unchanged. Bank uses generated_candidate_good4, independent perpolicy evaluator remainsK20. No GT selection or numericalstandardchange. Rootpaths/sourceinheritance redirectedchild; parent1461digestsretained andfailureevidenceextended. Additional preflight runs exactproduction job save/readback/donebranch on128 savedrows to prevent another schemaomission. No parentworker restart/overwrite/oldPIDquery.

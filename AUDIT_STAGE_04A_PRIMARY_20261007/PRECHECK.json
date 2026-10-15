@@ -1,0 +1,22 @@
+{
+  "status": "PRECHECK_PASSED",
+  "stage": "04A_PRIMARY",
+  "timestamp_utc": "2026-10-06 18:17:15",
+  "git_commit": "e08cd6ba0ac5504122a81bf33a37ed70e3f85917",
+  "data_integrity": {
+    "grouped_train_samples": 16337,
+    "inner_cal_samples": 1773,
+    "outer_eval_samples": 1561,
+    "original_cal_samples": 2879,
+    "zero_split_overlap_verified": true,
+    "zero_future_leakage_verified": true,
+    "cross_fitting_configured": true
+  },
+  "model_integrity": {
+    "backbone_f16_frozen": true,
+    "decoder_frozen": true,
+    "scorer_frozen": true,
+    "output_layer_zero_init": true,
+    "parameter_count_control_vs_treatment_identical": true
+  }
+}

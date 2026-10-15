@@ -1,0 +1,192 @@
+{
+  "status": "STOP_BUDGET",
+  "source_count": 3930,
+  "inheritance": {
+    "inherited_M1_sources": 3746,
+    "inherited_M1_outputs": 107,
+    "not_all_historical34k": true
+  },
+  "geometry": {
+    "independent_projection_max": 7.105427357601002e-15,
+    "S": 650,
+    "effective_rank": 22,
+    "CV_and_nullspace_PASS": true,
+    "FD_b_g": [
+      {
+        "eps": 0.0001,
+        "error": 2.2407644876284574e-11,
+        "analytic": -0.06011926087024344
+      },
+      {
+        "eps": 1e-05,
+        "error": 1.7866673942642143e-10,
+        "analytic": -0.06011926087024344
+      },
+      {
+        "eps": 0.0001,
+        "error": 7.946704363312284e-12,
+        "analytic": -1.4071234754111979
+      },
+      {
+        "eps": 1e-05,
+        "error": 4.371028705553106e-11,
+        "analytic": -1.4071234754111979
+      }
+    ]
+  },
+  "arms": {
+    "frozen_goal": {
+      "total_parameters": 33306,
+      "trainable": 7000,
+      "initial_zero_last_gradients": {
+        "goal.query": null,
+        "goal.context.0.weight": null,
+        "goal.context.0.bias": null,
+        "goal.context.2.weight": null,
+        "goal.context.2.bias": null,
+        "goal.head.0.weight": null,
+        "goal.head.0.bias": null,
+        "goal.head.2.weight": null,
+        "goal.head.2.bias": null,
+        "process.0.weight": 0.0,
+        "process.0.bias": 0.0,
+        "process.2.weight": 0.05603758618235588,
+        "process.2.bias": 0.08766470104455948
+      },
+      "actual_GPU8FIT256_positive_finite": {
+        "process.0.weight": 0.00833350419998169,
+        "process.0.bias": 0.0019762578886002302,
+        "process.2.weight": 0.09290798753499985,
+        "process.2.bias": 0.15077313780784607
+      },
+      "canonical_AST_scalar_outputgrad_EXACT": true,
+      "numpy_scalar_error": 0.0,
+      "G1_actual_goal_replay_EXACT": true,
+      "frozen_parent_EXACT": true,
+      "goal_gradient_routes": null,
+      "geometry_saved_error": 1.1546319456101628e-14,
+      "FD": [
+        {
+          "parameter": "process.2.weight",
+          "eps": 0.0001,
+          "analytic": 0.0014974331176026837,
+          "error": 4.2038117287582073e-13
+        },
+        {
+          "parameter": "process.2.weight",
+          "eps": 1e-05,
+          "analytic": 0.0014974331176026837,
+          "error": 8.707346855248866e-13
+        }
+      ],
+      "resume": {
+        "FIT513_inner12_SUBSET_twoepoch_ALLparams_buffers_optimizer_TorchCPUCUDA_loader_numpy_pythonRNG_history_EXACT": true,
+        "not_fullFIT2epochs_or_analysis_resume": true
+      },
+      "bad_source_output_resume_rejected": true
+    },
+    "joint_goal": {
+      "total_parameters": 33306,
+      "trainable": 12314,
+      "initial_zero_last_gradients": {
+        "goal.query": null,
+        "goal.context.0.weight": null,
+        "goal.context.0.bias": null,
+        "goal.context.2.weight": null,
+        "goal.context.2.bias": null,
+        "goal.head.0.weight": 0.07984086871147156,
+        "goal.head.0.bias": 0.0819864273071289,
+        "goal.head.2.weight": 0.09249531477689743,
+        "goal.head.2.bias": 0.25747835636138916,
+        "process.0.weight": 0.0,
+        "process.0.bias": 0.0,
+        "process.2.weight": 0.05603758618235588,
+        "process.2.bias": 0.08766470104455948
+      },
+      "actual_GPU8FIT256_positive_finite": {
+        "goal.head.0.weight": 0.1817558854818344,
+        "goal.head.0.bias": 0.09109099209308624,
+        "goal.head.2.weight": 0.31076425313949585,
+        "goal.head.2.bias": 0.2662688195705414,
+        "process.0.weight": 0.008692754432559013,
+        "process.0.bias": 0.0020259704906493425,
+        "process.2.weight": 0.09845495969057083,
+        "process.2.bias": 0.1619834005832672
+      },
+      "canonical_AST_scalar_outputgrad_EXACT": true,
+      "numpy_scalar_error": 0.0,
+      "G1_actual_goal_replay_EXACT": true,
+      "frozen_parent_EXACT": true,
+      "goal_gradient_routes": {
+        "input_norm": 0.028052229204567878,
+        "endpoint_norm": 1543.7538772458977,
+        "both_connected": true
+      },
+      "geometry_saved_error": 1.1546319456101628e-14,
+      "FD": [
+        {
+          "parameter": "process.2.weight",
+          "eps": 0.0001,
+          "analytic": 0.0014974331176026837,
+          "error": 4.2038117287582073e-13
+        },
+        {
+          "parameter": "process.2.weight",
+          "eps": 1e-05,
+          "analytic": 0.0014974331176026837,
+          "error": 8.707346855248866e-13
+        },
+        {
+          "parameter": "goal.head.2.weight",
+          "eps": 0.0001,
+          "analytic": 0.03734111162020024,
+          "error": 5.976836890056075e-10
+        },
+        {
+          "parameter": "goal.head.2.weight",
+          "eps": 1e-05,
+          "analytic": 0.03734111162020024,
+          "error": 3.7237299376512774e-12
+        }
+      ],
+      "resume": {
+        "FIT513_inner12_SUBSET_twoepoch_ALLparams_buffers_optimizer_TorchCPUCUDA_loader_numpy_pythonRNG_history_EXACT": true,
+        "not_fullFIT2epochs_or_analysis_resume": true
+      },
+      "bad_source_output_resume_rejected": true
+    }
+  },
+  "parent_checks": [
+    {
+      "seed": 42,
+      "paired_all_params_buffers_and_initial_outputs_EXACT": true,
+      "actual_GPU128_parent_saved_goals_EXACT": true
+    },
+    {
+      "seed": 43,
+      "paired_all_params_buffers_and_initial_outputs_EXACT": true,
+      "actual_GPU128_parent_saved_goals_EXACT": true
+    },
+    {
+      "seed": 44,
+      "paired_all_params_buffers_and_initial_outputs_EXACT": true,
+      "actual_GPU128_parent_saved_goals_EXACT": true
+    }
+  ],
+  "paired_all_initial_state_EXACT": true,
+  "stats_chunk_error": 4.4586556668946287e-13,
+  "planning_minutes": 50.98947905320727,
+  "ETA_minutes": [
+    35.692635337245086,
+    76.4842185798109
+  ],
+  "resource": {
+    "peak_private_GiB": 2.6843605041503906,
+    "peak_RSS_GiB": 1.8030281066894531,
+    "min_physical_GiB": 12.899547576904297,
+    "min_commit_GiB": 16.996135711669922,
+    "checks": 375
+  },
+  "elapsed_seconds": 55.92858050001087,
+  "old_F16_not_instantiated_or_optimized": true
+}

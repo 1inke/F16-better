@@ -1,0 +1,267 @@
+{
+  "status": "ANALYZED_SAVED_ONLY",
+  "post_report_verification": {
+    "status": "STOP_RESOURCE_POST_REPORT_RECHECK_NOT_PRODUCTION_FAILURE",
+    "at": "2026-10-08T00:37:44+08:00",
+    "resource": {
+      "status": "STOP_RESOURCE",
+      "peak_private_GiB": 0.03173828125,
+      "peak_RSS_GiB": 0.048770904541015625,
+      "min_physical_GiB": 0.76324462890625,
+      "min_commit_GiB": 16.180519104003906,
+      "checks": 1
+    },
+    "first_internal_guard": true,
+    "no_resource_poll_or_retry": true,
+    "source571_output108_figure12_recheck_completed": false,
+    "prior_worker_and_completion_review_PASS_remain": true,
+    "production_resource_authoritative_source": "RESULT.json.resource",
+    "generic_resource_file_overwritten_by_helper_guard": true,
+    "production_snapshot_reconstructed_from_immutable_result_resource": true,
+    "new_training_started": false,
+    "next": "No automatic verification retry or new worker; explicit human continue after memory release required for new computation."
+  },
+  "completed_at": "2026-10-08T00:17:39.18401+08:00",
+  "execution_seconds": 29.331683,
+  "no_training": true,
+  "new_formal_count": 0,
+  "scope": {
+    "jobs": 27,
+    "run_window_rows": 52686,
+    "output_files": 108,
+    "source_locks": 571,
+    "inherited_relevant_locks": 470,
+    "not_all_historical_SHA": true,
+    "primary": "outer",
+    "secondary": [
+      "inner",
+      "original_CAL"
+    ],
+    "quality": "samecandidate ADE<=0.2 AND FDE<=0.4",
+    "policy": "unchanged bottom4 frozen native logit replacement, no search"
+  },
+  "checks": {
+    "worker_and_exit_SUCCESS": true,
+    "arithmetic_max_error": 0,
+    "completion_CPU_max_error": 0,
+    "source_SHA_unchanged": true,
+    "independent_LOO_all20_deletions": true,
+    "no_model_or_gradient_replay": true,
+    "figure_static_PASS": 14,
+    "figure_visual_PASS": true
+  },
+  "lost": {
+    "row_events_including_repeated_replays": 258,
+    "unique_sample_IDs_across_all_replays": 51,
+    "unique_change_sample_IDs_across_all_replays": 32,
+    "J_and_Q_removed": 258,
+    "one_native_good_candidate_per_observed_lost": 258,
+    "near_common_D_le1": 0,
+    "minimum_D": 2.42342472076416,
+    "maximum_D": 12.39452838897705,
+    "GT_low_average_speed_row_events": 0,
+    "GT_terminal_stop_row_events": 42,
+    "unique_GT_terminal_stop": 11,
+    "not_independent_replicates": true
+  },
+  "primary_change": [
+    {
+      "grouping": "scene_family",
+      "n": 211,
+      "lost": [
+        3,
+        3,
+        2
+      ],
+      "rescue": [
+        7,
+        6,
+        5
+      ],
+      "native_bottom4_unique_support_windows": 3,
+      "D_mean_seed42": 5.66814661026001,
+      "GT_lost_vp95_mean_seed42": 0.9610360664508416,
+      "GT_rescue_vp95_mean": [
+        0.49810522882256725,
+        0.628,
+        0.33
+      ],
+      "error_utility_bottom4_share_percent": {
+        "ADE": 26.456,
+        "FDE": 26.273
+      }
+    },
+    {
+      "grouping": "target_track",
+      "n": 253,
+      "lost": [
+        2,
+        2,
+        2
+      ],
+      "rescue": [
+        5,
+        8,
+        8
+      ],
+      "native_bottom4_unique_support_windows": 2,
+      "D_mean_seed42": 5.692741870880127,
+      "GT_lost_vp95_mean_seed42": 0.764,
+      "GT_rescue_vp95_mean": [
+        0.348,
+        0.44,
+        0.381
+      ]
+    },
+    {
+      "grouping": "recording_time",
+      "n": 142,
+      "lost": [
+        3,
+        3,
+        3
+      ],
+      "rescue": [
+        2,
+        1,
+        4
+      ],
+      "native_bottom4_unique_support_windows": 3,
+      "D_mean_seed42": 3.8639396031697593,
+      "GT_lost_vp95_mean_seed42": 0.567,
+      "GT_rescue_vp95_mean": [
+        0.621,
+        0.569,
+        0.632
+      ]
+    }
+  ],
+  "CAL_change": {
+    "n": 700,
+    "unique_lost_IDs": [
+      26604,
+      26662,
+      26674,
+      26992,
+      27322,
+      28395,
+      29103
+    ],
+    "same_seven_in_all_nine_heads": true,
+    "not_63_independent_lost_cases": true,
+    "native_good": 243,
+    "bottom4_unique_support_windows": 7,
+    "GT_low_average_speed": 0,
+    "GT_terminal_stop": 2,
+    "GT_population_low_average_speed": 75,
+    "GT_population_terminal_stop": 158,
+    "D_mean": 7.464205128805978,
+    "nearest_common_meanpath_m": 0.709893,
+    "nearest_common_endpoint_m": 1.459522,
+    "native_J_ADE_mean": 0.1502037597472766,
+    "native_J_FDE_mean": 0.22898068408182634,
+    "learned_J_ADE_mean_range": [
+      1.0963954118397776,
+      1.2147144118210866
+    ],
+    "learned_J_FDE_mean_range": [
+      2.252574894429444,
+      2.561935790422663
+    ],
+    "GT_lost_vp95_mean": 0.88114,
+    "GT_rescue_vp95_mean_range": [
+      0.575,
+      0.708
+    ],
+    "native_J_good_slot_histogram_1based": {
+      "6": 1,
+      "14": 3,
+      "18": 1,
+      "20": 2
+    },
+    "native_J_logit_rank_histogram": {
+      "17": 1,
+      "18": 2,
+      "19": 2,
+      "20": 2
+    },
+    "overlapping_flags_per_model_ranges": {
+      "direction_error_30deg": [
+        1,
+        4
+      ],
+      "endpoint_overshoot_02m": [
+        2,
+        3
+      ],
+      "arc_excess_02m": [
+        2,
+        4
+      ],
+      "stop_not_retained": [
+        2,
+        2
+      ],
+      "abs_total_turn_error_30deg": [
+        4,
+        7
+      ]
+    }
+  },
+  "speed_tail": {
+    "exceedance_identity_exact": true,
+    "positive_delta_cells": 94,
+    "cells": 108,
+    "overall_stable_transition_positive_all81": true,
+    "change_positive_cells": 13,
+    "change_cells": 27,
+    "example_scene42_outer": {
+      "native_p95": 1.4244598045062065,
+      "common16_p95": 1.4620344701732566,
+      "removed4_p95": 1.121893800133372,
+      "learned4_p95": 1.4427404127816348,
+      "replacement20_p95": 1.4581369622367943,
+      "exceedance_delta": 3813
+    },
+    "interpretation": "Removal of slower candidates changes composition; added4 need not be the fastest component. Count attribution is exact, p95 change is not additively attributable."
+  },
+  "conclusions": [
+    "Original frozen logit rank is not set redundancy rank; low ranks can retain unique oracle support.",
+    "Observed lost paths are outside registered pair-nearness threshold versus common16, not proof of semantic rare-mode uniqueness.",
+    "Complementary learned coverage exists but does not establish new physical information or motion understanding.",
+    "No support for a universal fast-rescue/low-speed-lost mechanism; all lost GT-average-speed low counts are zero, with heterogeneous terminal-stop/geometry failures.",
+    "Do not continue blind bottom4 replacement or posthoc slot search; prioritize native-support-preserving complementary integration, before new training or scorer."
+  ],
+  "limitations": [
+    "GT utility is oracle-only, never deployable ranking.",
+    "Geometric flags overlap; abs-total-turn is not an exact curvature diagnosis.",
+    "Frozen endpoint comparison cannot identify loss or shared-head causal interference.",
+    "Different outer populations, only three seeds, overlapping windows, F16 seen data, reused CAL.",
+    "Preserving all20 plus4 is K24, not an equal-K20 solution.",
+    "Pair-nearness cannot guarantee samecandidate adequacy across threshold.",
+    "Current audit does not repeat prior full SciPy clustering; immutable earlier full-quality/cluster artifacts remain SHA-protected."
+  ],
+  "ARS_inline": {
+    "DA2": "Same-assistant adversarial check: algebraic lost=>removed does not itself demonstrate rare mode; actual all-lost single-good utility and distances add evidence. Global correlation of logit and utility remains; only equivalence to redundancy is rejected.",
+    "DA3": "Same-assistant adversarial check: loss patterns contradict universal low-speed suppression; speed tail is population composition, local geometry flags are descriptive, not causal mechanism or model-understanding proof.",
+    "not_external_review": true
+  },
+  "next": {
+    "new_worker_started": false,
+    "new_training_authorized_or_started": false,
+    "proposal": "Native-support-preserving + complementary residual novelty, with frozen native20+4 only as unequal-budget reference. Any subsequent equalbudget GT-free integration policy requires a fixed pre-registration, train-only rule calibration, no utility-from-evaluation labels, samepath coverage/lost and allfive-motion1% auditing; no automatic policy or training sweep."
+  },
+  "provenance_notes": [
+    "Initial resource stop and later synthetic fixture failure preserved. No true-data algorithm/threshold changed.",
+    "Locked dynamic plot source preserved; new supplemental explicit-export renderer statically passes and all plots visually checked.",
+    "SUMMARY.GT_prevalence.allwindows is whole-job N, not group N; group-specific reporting uses row.n. Metadata caveat retained without editing locked source.",
+    "Exploratory console initially checked label3 for change; corrected to registered integer2 before report. No saved numerical or scientific result was altered."
+  ],
+  "files": {
+    "full_all_group_rows": "completion_review/SUMMARY.json",
+    "individual_cases": "jobs/*.cases.json",
+    "figures": "figures/rank_utility_{outer,inner,original_CAL}.{svg,pdf,png,tiff}",
+    "source_data": "figures/SOURCE_DATA.json",
+    "completion": "completion_review/REVIEW.json"
+  }
+}

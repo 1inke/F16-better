@@ -1,0 +1,39 @@
+{
+  "stage": "R3_AMBIGUITY_AUDIT",
+  "knn_entropy_and_variance_summary": {
+    "k_20_macro": {
+      "stable": {
+        "future_mode_entropy": 0.739,
+        "provenance_entropy": 0.947,
+        "direction_variance": 0.0763,
+        "speed_variance": 0.0293
+      },
+      "transition": {
+        "future_mode_entropy": 1.197,
+        "provenance_entropy": 1.179,
+        "direction_variance": 0.1166,
+        "speed_variance": 0.0444
+      },
+      "change": {
+        "future_mode_entropy": 1.177,
+        "provenance_entropy": 1.081,
+        "direction_variance": 0.1770,
+        "speed_variance": 0.0409
+      }
+    },
+    "change_vs_stable_ratios": {
+      "future_mode_entropy_ratio": 1.593,
+      "provenance_entropy_ratio": 1.142,
+      "direction_variance_ratio": 2.319,
+      "speed_variance_ratio": 1.393
+    }
+  },
+  "uncertainty_diagnostics_macro": {
+    "top1_native_good_rate_mean_pct": 30.92,
+    "hybrid_top3_good_rate_mean_pct": 34.74,
+    "hybrid_top3_gain_mean_pp": 3.81,
+    "confidence_abstention_retained_gain_mean_pp": 5.62,
+    "entropy_failure_correlation_mean": 0.404
+  },
+  "scientific_hypothesis_supported": true
+}

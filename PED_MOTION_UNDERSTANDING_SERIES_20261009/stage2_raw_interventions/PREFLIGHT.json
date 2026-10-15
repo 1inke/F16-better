@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "actual_models": [
+    {
+      "fold": "eth",
+      "seed": 1,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 2.384185791015625e-06
+    },
+    {
+      "fold": "eth",
+      "seed": 2,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 2.86102294921875e-06
+    },
+    {
+      "fold": "eth",
+      "seed": 3,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 2.384185791015625e-06
+    },
+    {
+      "fold": "hotel",
+      "seed": 1,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 1.9073486328125e-06
+    },
+    {
+      "fold": "hotel",
+      "seed": 2,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 9.5367431640625e-07
+    },
+    {
+      "fold": "hotel",
+      "seed": 3,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 9.5367431640625e-07
+    },
+    {
+      "fold": "univ",
+      "seed": 1,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 0.0
+    },
+    {
+      "fold": "univ",
+      "seed": 2,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 0.0
+    },
+    {
+      "fold": "univ",
+      "seed": 3,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 0.0
+    },
+    {
+      "fold": "zara01",
+      "seed": 1,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 1.1324882507324219e-06
+    },
+    {
+      "fold": "zara01",
+      "seed": 2,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 1.1920928955078125e-06
+    },
+    {
+      "fold": "zara01",
+      "seed": 3,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 9.5367431640625e-07
+    },
+    {
+      "fold": "zara02",
+      "seed": 1,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 0.0
+    },
+    {
+      "fold": "zara02",
+      "seed": 2,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 0.0
+    },
+    {
+      "fold": "zara02",
+      "seed": 3,
+      "parameters": 321988,
+      "all_weights_bool_statbuffers_EXACT": true,
+      "attention_hook_BITWISE_original": true,
+      "cache_alignment_max": 0.0
+    }
+  ],
+  "identities": [
+    {
+      "fold": "eth",
+      "n": 364,
+      "tracks": 44,
+      "synthetic_n": 128,
+      "moving_n": 286,
+      "sampling_tag": "20261009-stage2",
+      "all_ids_explicit": true
+    },
+    {
+      "fold": "hotel",
+      "n": 1024,
+      "tracks": 118,
+      "synthetic_n": 128,
+      "moving_n": 589,
+      "sampling_tag": "20261009-stage2",
+      "all_ids_explicit": true
+    },
+    {
+      "fold": "univ",
+      "n": 1024,
+      "tracks": 431,
+      "synthetic_n": 128,
+      "moving_n": 856,
+      "sampling_tag": "20261009-stage2",
+      "all_ids_explicit": true
+    },
+    {
+      "fold": "zara01",
+      "n": 1024,
+      "tracks": 141,
+      "synthetic_n": 128,
+      "moving_n": 982,
+      "sampling_tag": "20261009-stage2",
+      "all_ids_explicit": true
+    },
+    {
+      "fold": "zara02",
+      "n": 1024,
+      "tracks": 175,
+      "synthetic_n": 128,
+      "moving_n": 583,
+      "sampling_tag": "20261009-stage2",
+      "all_ids_explicit": true
+    }
+  ],
+  "saved_math_repeat_exact": true,
+  "source_initial_final_PASS": true,
+  "source_files": 363,
+  "jobs": 480,
+  "windows_estimate": 313560,
+  "benchmark": {
+    "forward_128": 0.01676638749995618,
+    "fullquality_CI_cluster_128": 0.02291499999955704
+  },
+  "nominal_compute_seconds": 153.34158800162868,
+  "planning_seconds": 600.0,
+  "ETA_range_minutes": [
+    10.0,
+    18.0
+  ],
+  "uncompressed_output_estimate_GiB": 4.485511779785156,
+  "diskfree_GiB": 22.14266586303711,
+  "resource": {
+    "peak_private_GiB": 2.892333984375,
+    "peak_RSS_GiB": 2.218944549560547,
+    "min_physical_GiB": 17.648746490478516,
+    "min_commit_GiB": 26.3765869140625,
+    "checks": 33
+  },
+  "elapsed_seconds": 18.162966699999743,
+  "not_training": true,
+  "not_optimizer_RNG_resume": true
+}

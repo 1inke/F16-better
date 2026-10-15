@@ -1,0 +1,7 @@
+$ErrorActionPreference='Stop'
+$root=$PSScriptRoot;$name='Trajectory-PedMotionUnderstanding-MatchedRetraining-20261009';$t=Get-ScheduledTask -TaskName $name;$xml=[xml](Export-ScheduledTask -TaskName $name)
+$p=@(Get-CimInstance Win32_Process -Filter "Name='python.exe'" | Where-Object {$_.CommandLine -and $_.CommandLine.Contains($root) -and $_.CommandLine.Contains('independent_worker.py')} | Select-Object ProcessId,ParentProcessId,CreationDate,CommandLine)
+function ReadNew($name){$f=Join-Path $root $name;if(Test-Path -LiteralPath $f){Get-Content -LiteralPath $f -Raw -Encoding UTF8 | ConvertFrom-Json}else{$null}}
+$stages=0;$histories=@();$runs=Join-Path $root 'runs'
+if(Test-Path -LiteralPath $runs){$stages=@(Get-ChildItem -LiteralPath $runs -Filter 'done.json' -Recurse).Count;$histories=@(Get-ChildItem -LiteralPath $runs -Filter 'history.csv' -Recurse | ForEach-Object {[pscustomobject]@{path=$_.FullName;epochs=@(Import-Csv -LiteralPath $_.FullName).Count}})}
+[pscustomobject]@{checked_at=(Get-Date).ToString('o');task_name=$name;task_state=[string]$t.State;triggers=$xml.SelectNodes("/*[local-name()='Task']/*[local-name()='Triggers']/*").Count;processes=$p;worker=(ReadNew 'worker_state.json');exit=(ReadNew 'exit_status.json');progress=(ReadNew 'progress.json');stage_fits_done=$stages;stage_fits_total=90;histories=$histories;stderr_bytes=(Get-Item -LiteralPath (Join-Path $root 'worker_stderr.log')).Length} | ConvertTo-Json -Depth 10

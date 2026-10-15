@@ -1,0 +1,3 @@
+# R1 预检1记录字段修复
+
+首次预检在第一锚求解返回并独立decode核验后，metadata dict重复传mode触发TypeError，未科学生产/OOF拟合。保留rootPREFLIGHT_FAILURE与failures/preflight1_duplicate_mode原preflight/run代码。只移除重复记录参数（solver结果保留原mode）；source sample已保存时仅按全部数组EXACT验证后复用，不覆盖旧科学输入；锁前同步修复生产同字段。求解预算、参数、模型、数据、三态标签和原sciencegate不变，完整重预检。首次工具JS构造ReferenceError发生在文件写入前，无任何科学文件改变。

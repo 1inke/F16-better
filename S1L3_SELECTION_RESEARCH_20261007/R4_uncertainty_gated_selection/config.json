@@ -1,0 +1,21 @@
+{
+  "stage": "R4_UNCERTAINTY_GATED_SELECTION",
+  "candidate_set": "S1L3_K24 (Native20 + Static1 + Learned3 [slots 3, 0, 1])",
+  "native_scorer": "Native frozen logits + median-std prior for proposals",
+  "r2_scorer": "CandidateAwareScorer (trained Stage R2 checkpoint)",
+  "gating_features": [
+    "margin_native",
+    "entropy_native",
+    "entropy_r2",
+    "disagree_top1",
+    "r2_chose_proposal",
+    "prob_non_cont",
+    "p2_knn_entropy",
+    "cand_endpoint_std",
+    "learned_advantage"
+  ],
+  "routing_fractions": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 1.0],
+  "abstention_fractions": [0.0, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4],
+  "protocols": ["scene_family", "target_track", "recording_time"],
+  "seeds": [42, 43, 44]
+}

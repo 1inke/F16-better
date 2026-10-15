@@ -1,0 +1,94 @@
+{
+  "status": "ANALYZED",
+  "question": "Can this one GT-free fixed-K20 protected insertion rule safely admit useful learned paths?",
+  "answer": "No. Policy outputs exactly native20 for every evaluated row; safe fallback, zero complement admitted.",
+  "rows": 52686,
+  "row_interpretation": "replay rows, not unique independent windows; repeated CAL across nine models",
+  "proposals": 210744,
+  "decisions": {
+    "duplicate": 47173,
+    "no_eligible_redundant_native": 129368,
+    "all_eligible_swaps_fail_stronger_physics": 34203,
+    "accepted": 0
+  },
+  "decision_percent": [
+    22.384029913069885,
+    61.386326538359334,
+    16.229643548570778,
+    0
+  ],
+  "rescue": 0,
+  "lost": 0,
+  "all108_protected_motion_PASS": true,
+  "all_metrics_exact_native": true,
+  "primary_change": [
+    {
+      "grouping": "scene_family",
+      "n": 211,
+      "native_and_protected": 82,
+      "bottom_logit": [
+        86,
+        85,
+        85
+      ]
+    },
+    {
+      "grouping": "target_track",
+      "n": 253,
+      "native_and_protected": 110,
+      "bottom_logit": [
+        113,
+        116,
+        116
+      ]
+    },
+    {
+      "grouping": "recording_time",
+      "n": 142,
+      "native_and_protected": 60,
+      "bottom_logit": [
+        59,
+        58,
+        61
+      ]
+    }
+  ],
+  "original_CAL_change": {
+    "n": 700,
+    "native_and_protected": 243,
+    "not_nine_independent_populations": true
+  },
+  "CI_vs_native": "All coverage/ADE/FDE/J estimates and intervals exactly [0,0] by identical outputs, not proof of equivalence of nontrivial methods.",
+  "audit": {
+    "production_arithmetic_error": 0,
+    "CPU_completion_error": 0,
+    "outputs": 82,
+    "source_locks": 737,
+    "inherited": 571,
+    "full_quality_complete_link_selector_motion_reconstruction": true,
+    "bootstrap_records": 72,
+    "scalar_CIs": 288,
+    "not_external_review": true,
+    "no_model_or_gradient_replay": true
+  },
+  "major_PASS": false,
+  "baseline_changed": false,
+  "new_training_runs": 0,
+  "new_formal_count": 0,
+  "limits": [
+    "Joint geometry and stronger distribution-envelope rule does not isolate gate causality.",
+    "The envelope is stronger than original five pooled 1% gates; rejection does not mean an original gate necessarily fails.",
+    "Adaptive reuse of outputs, three seeds/scenes, overlapping windows, F16 seen pool and reused CAL; no independent generalization or pedestrian intent evidence.",
+    "Geometric nearness is not guaranteed same-candidate coverage redundancy."
+  ],
+  "DA2": {
+    "verdict": "PASS_WITH_LIMITATIONS",
+    "issue": "Zero lost and all motion PASS are vacuous gains under zero admission; report no coverage/ADE/FDE improvement.",
+    "counterargument": "Current rule may reject useful physically acceptable complements; generation not disproved."
+  },
+  "DA3": {
+    "verdict": "PASS_WITH_LIMITATIONS",
+    "issue": "Do not conclude fixed K20 integration is impossible or that any gate should be relaxed based on this exploratory null outcome.",
+    "next": "Avoid deletion-rank or threshold sweeps; a new design should explicitly address safe admissible complementarity and native support. No automatic new model/loss/scorer."
+  }
+}

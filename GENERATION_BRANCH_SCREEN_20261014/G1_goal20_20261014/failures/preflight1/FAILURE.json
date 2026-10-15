@@ -1,0 +1,12 @@
+{
+  "status": "STOP",
+  "error": "RuntimeError('Expected all tensors to be on the same device, but got other is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA__equal)')",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_BRANCH_SCREEN_20261014\\G1_goal20_20261014\\preflight.py\", line 86, in <module>\n    try:main()\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_BRANCH_SCREEN_20261014\\G1_goal20_20261014\\preflight.py\", line 66, in main\n    fd=fixture_fd(st,d);resume=resume_fixture(d,st)\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_BRANCH_SCREEN_20261014\\G1_goal20_20261014\\preflight.py\", line 23, in resume_fixture\n    net,opt,g=fresh();hist=m.restore(path,net,opt,g,man);hist.append(one(net,opt,g,2));exact(reference,dict(model=net.state_dict(),optimizer=opt.state_dict(),rng=m.rng_state(g),history=hist))\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_BRANCH_SCREEN_20261014\\G1_goal20_20261014\\preflight.py\", line 9, in exact\n    for k in a:exact(a[k],b[k])\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_BRANCH_SCREEN_20261014\\G1_goal20_20261014\\preflight.py\", line 9, in exact\n    for k in a:exact(a[k],b[k])\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_BRANCH_SCREEN_20261014\\G1_goal20_20261014\\preflight.py\", line 9, in exact\n    for k in a:exact(a[k],b[k])\n  [Previous line repeated 1 more time]\n  File \"C:\\Users\\linke\\Documents\\New project\\GENERATION_BRANCH_SCREEN_20261014\\G1_goal20_20261014\\preflight.py\", line 5, in exact\n    if torch.is_tensor(a):assert torch.equal(a,b),\"TENSOR_RESUME_NOT_EXACT\"\nRuntimeError: Expected all tensors to be on the same device, but got other is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA__equal)\n",
+  "resource": {
+    "peak_private_GiB": 2.746185302734375,
+    "peak_RSS_GiB": 1.8230476379394531,
+    "min_physical_GiB": 16.104312896728516,
+    "min_commit_GiB": 24.655261993408203,
+    "checks": 136
+  }
+}

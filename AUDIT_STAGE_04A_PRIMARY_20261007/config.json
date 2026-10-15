@@ -1,0 +1,43 @@
+{
+  "stage": "04A_PRIMARY",
+  "protocol": "matched_scene_family_proposal_conditioned_head_v1",
+  "dataset": "experiment3_scene_family",
+  "split_source": "GENERATION_GROUPED_TRANSFER_SERIES_20261006/experiment3_scene_family/identity_audit/splits.npz",
+  "samples": {
+    "grouped_train": 16337,
+    "inner_cal": 1773,
+    "outer_eval_zara": 1561,
+    "original_cal": 2879
+  },
+  "candidate_protocol": "K24_additive",
+  "arms": [
+    "control",
+    "treatment"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "cross_fitting_folds": 5,
+  "hyperparameters": {
+    "obs_dim": 193,
+    "state_dim": 32,
+    "type_dim": 16,
+    "num_types": 9,
+    "hidden": 128,
+    "steps": 12,
+    "batch_size": 128,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "epochs": 50,
+    "residual_weight": 0.01,
+    "smoothness_weight": 0.01,
+    "fde_loss_weight": 0.5,
+    "dt": 0.4
+  },
+  "quality_thresholds": {
+    "ade": 0.2,
+    "fde": 0.4
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "NONFORMAL_POSITION3_EXISTENCE_WITNESS",
+  "A_only": 7334,
+  "sample": {
+    "change": 32,
+    "transition": 16,
+    "stable": 16,
+    "hash_tag": "position3-feasibility-v1",
+    "distinct_track_within_group": true
+  },
+  "all_potential_anchors": true,
+  "modes": [
+    "shape",
+    "pointwise"
+  ],
+  "solver": {
+    "name": "SLSQP",
+    "maxiter": 150,
+    "ftol": 1e-9,
+    "restarts": 0
+  },
+  "raw_clip": 1e-7,
+  "raw_dtype": "float32",
+  "output_dtype": "float64",
+  "node_steps": [
+    4,
+    8,
+    12
+  ],
+  "radius": ".20*(t/12)^2",
+  "quality": {
+    "ADE": 0.2,
+    "FDE": 0.4,
+    "same_candidate": true
+  },
+  "motion_ratio": 1.01,
+  "unknown_not_infeasible": true,
+  "training": false,
+  "planning_max_minutes": 30
+}

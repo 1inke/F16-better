@@ -1,0 +1,1114 @@
+{
+  "arm": "frozen_goal",
+  "seed": 43,
+  "epoch": 25,
+  "parameter_count": 33306,
+  "trainable_parameters": 7000,
+  "optimization_steps": 1850,
+  "splits": {
+    "FIT": {
+      "overall": {
+        "n": 18909,
+        "K": 20,
+        "good": 12638,
+        "coverage": 0.6683589824951082,
+        "endpoint_good": 15354,
+        "endpoint_coverage": 0.8119942884340791,
+        "minADE": 0.15760965061704338,
+        "minFDE": 0.26911728152538733,
+        "J": 0.897753378482679,
+        "rescued": 2887,
+        "lost": 1107,
+        "retained": 9751,
+        "effective_distinct": 19.959437304987045,
+        "effective_good": 1.2143423766460415,
+        "single_Jclosest_segments": [
+          0.07675765554722674,
+          0.17741919250125054,
+          0.2335446400274209
+        ],
+        "sensitivity_03_05_good": 15649,
+        "winner_counts": [
+          908,
+          1018,
+          654,
+          833,
+          521,
+          447,
+          844,
+          967,
+          871,
+          789,
+          762,
+          1161,
+          1127,
+          767,
+          450,
+          868,
+          332,
+          4199,
+          988,
+          403
+        ],
+        "motion": {
+          "speed_p95": 1.292250294877536,
+          "accel_mean": 0.12724347847527745,
+          "accel_p95": 0.35745003178239415,
+          "jerk_mean": 0.14354918359759136,
+          "jerk_p95": 0.5432602103061115
+        },
+        "native_motion": {
+          "speed_p95": 1.275891287084953,
+          "accel_mean": 0.08841134779618323,
+          "accel_p95": 0.6342564188069475,
+          "jerk_mean": 0.48625995264266336,
+          "jerk_p95": 2.8001470056822306
+        },
+        "motion_failed": [
+          "speed_p95",
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03014001609437167,
+          "p95": 0.08577693641056461,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.2610140666673624
+      },
+      "stable": {
+        "n": 10767,
+        "K": 20,
+        "good": 8496,
+        "coverage": 0.7890777375313458,
+        "endpoint_good": 9710,
+        "endpoint_coverage": 0.9018296647162627,
+        "minADE": 0.1131021321186856,
+        "minFDE": 0.1835827620227322,
+        "J": 0.640177496208314,
+        "rescued": 1532,
+        "lost": 450,
+        "retained": 6964,
+        "effective_distinct": 19.94585306956441,
+        "effective_good": 1.6054611312343272,
+        "single_Jclosest_segments": [
+          0.05775224585770811,
+          0.12996908684985808,
+          0.16280092233724136
+        ],
+        "sensitivity_03_05_good": 9833,
+        "winner_counts": [
+          341,
+          774,
+          307,
+          647,
+          213,
+          131,
+          460,
+          766,
+          407,
+          5,
+          591,
+          746,
+          366,
+          233,
+          59,
+          585,
+          0,
+          3833,
+          82,
+          221
+        ],
+        "motion": {
+          "speed_p95": 1.353276657571821,
+          "accel_mean": 0.12126140661575463,
+          "accel_p95": 0.3376469700504922,
+          "jerk_mean": 0.13583900803861323,
+          "jerk_p95": 0.5260643801149205
+        },
+        "native_motion": {
+          "speed_p95": 1.3369318329040734,
+          "accel_mean": 0.09054616715016847,
+          "accel_p95": 0.6352650101609876,
+          "jerk_mean": 0.49800124052329325,
+          "jerk_p95": 2.929186706335065
+        },
+        "motion_failed": [
+          "speed_p95",
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.027299985204942274,
+          "p95": 0.07772271880333417,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.1958394449632426
+      },
+      "transition": {
+        "n": 3417,
+        "K": 20,
+        "good": 1879,
+        "coverage": 0.549897570968686,
+        "endpoint_good": 2526,
+        "endpoint_coverage": 0.7392449517120281,
+        "minADE": 0.19282504774653778,
+        "minFDE": 0.3347012593745253,
+        "J": 1.1086956903891418,
+        "rescued": 620,
+        "lost": 248,
+        "retained": 1259,
+        "effective_distinct": 19.967515364354696,
+        "effective_good": 0.8159203980099502,
+        "single_Jclosest_segments": [
+          0.09289279668364032,
+          0.2167299440125568,
+          0.28691907930187605
+        ],
+        "sensitivity_03_05_good": 2589,
+        "winner_counts": [
+          330,
+          155,
+          148,
+          126,
+          115,
+          180,
+          131,
+          131,
+          262,
+          62,
+          85,
+          122,
+          446,
+          195,
+          177,
+          135,
+          1,
+          284,
+          238,
+          94
+        ],
+        "motion": {
+          "speed_p95": 1.2192108106659645,
+          "accel_mean": 0.13404093528670585,
+          "accel_p95": 0.38560735783269123,
+          "jerk_mean": 0.15125531689051577,
+          "jerk_p95": 0.5547312563874812
+        },
+        "native_motion": {
+          "speed_p95": 1.2160453012758028,
+          "accel_mean": 0.085056449694119,
+          "accel_p95": 0.6173403899819482,
+          "jerk_mean": 0.467807807833446,
+          "jerk_p95": 2.614963655207435
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03570571056217141,
+          "p95": 0.09544487985630186,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.3488132748587203
+      },
+      "change": {
+        "n": 4725,
+        "K": 20,
+        "good": 2263,
+        "coverage": 0.47894179894179895,
+        "endpoint_good": 3118,
+        "endpoint_coverage": 0.6598941798941799,
+        "minADE": 0.23356339446473356,
+        "minFDE": 0.4165987035729182,
+        "J": 1.3321511868771136,
+        "rescued": 735,
+        "lost": 409,
+        "retained": 1528,
+        "effective_distinct": 19.984550264550265,
+        "effective_good": 0.6112169312169312,
+        "single_Jclosest_segments": [
+          0.10839733149726227,
+          0.25711664215932645,
+          0.3561514441267606
+        ],
+        "sensitivity_03_05_good": 3227,
+        "winner_counts": [
+          237,
+          89,
+          199,
+          60,
+          193,
+          136,
+          253,
+          70,
+          202,
+          722,
+          86,
+          293,
+          315,
+          339,
+          214,
+          148,
+          331,
+          82,
+          668,
+          88
+        ],
+        "motion": {
+          "speed_p95": 1.0437001767604352,
+          "accel_mean": 0.1359592579010622,
+          "accel_p95": 0.38629698413218777,
+          "jerk_mean": 0.1555457132868169,
+          "jerk_p95": 0.5714875148073939
+        },
+        "native_motion": {
+          "speed_p95": 1.0945254673492377,
+          "accel_mean": 0.08597284765446712,
+          "accel_p95": 0.6449148286103057,
+          "jerk_mean": 0.472848848346863,
+          "jerk_p95": 2.70242375577452
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03258671124569752,
+          "p95": 0.09371431131825765,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.3460352851855393
+      }
+    },
+    "outer": {
+      "overall": {
+        "n": 1035,
+        "K": 20,
+        "good": 631,
+        "coverage": 0.6096618357487923,
+        "endpoint_good": 788,
+        "endpoint_coverage": 0.7613526570048309,
+        "minADE": 0.18344499950091525,
+        "minFDE": 0.32287274520009207,
+        "J": 1.0427792146723345,
+        "rescued": 94,
+        "lost": 88,
+        "retained": 537,
+        "effective_distinct": 19.96231884057971,
+        "effective_good": 1.173913043478261,
+        "single_Jclosest_segments": [
+          0.08324231122867166,
+          0.20203590862685308,
+          0.28390197735235695
+        ],
+        "sensitivity_03_05_good": 814,
+        "winner_counts": [
+          52,
+          61,
+          43,
+          37,
+          30,
+          47,
+          55,
+          46,
+          41,
+          39,
+          47,
+          61,
+          60,
+          50,
+          8,
+          43,
+          12,
+          237,
+          44,
+          22
+        ],
+        "motion": {
+          "speed_p95": 1.329263970198703,
+          "accel_mean": 0.12619392703152577,
+          "accel_p95": 0.3529661836550078,
+          "jerk_mean": 0.14208433215904007,
+          "jerk_p95": 0.5414152455680961
+        },
+        "native_motion": {
+          "speed_p95": 1.3093463769152214,
+          "accel_mean": 0.08778207124571084,
+          "accel_p95": 0.6205093723030161,
+          "jerk_mean": 0.4827988968119614,
+          "jerk_p95": 2.7770934544973604
+        },
+        "motion_failed": [
+          "speed_p95",
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03008551084396274,
+          "p95": 0.08709805978308255,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.2526604422958016
+      },
+      "stable": {
+        "n": 604,
+        "K": 20,
+        "good": 456,
+        "coverage": 0.7549668874172185,
+        "endpoint_good": 533,
+        "endpoint_coverage": 0.8824503311258278,
+        "minADE": 0.1247405675842744,
+        "minFDE": 0.20321920992385234,
+        "J": 0.7090347533743117,
+        "rescued": 58,
+        "lost": 36,
+        "retained": 398,
+        "effective_distinct": 19.956953642384107,
+        "effective_good": 1.5794701986754967,
+        "single_Jclosest_segments": [
+          0.06174706117957554,
+          0.14115974186758254,
+          0.1850145457382688
+        ],
+        "sensitivity_03_05_good": 535,
+        "winner_counts": [
+          22,
+          38,
+          25,
+          27,
+          17,
+          20,
+          30,
+          35,
+          14,
+          0,
+          30,
+          47,
+          22,
+          15,
+          0,
+          30,
+          0,
+          218,
+          5,
+          9
+        ],
+        "motion": {
+          "speed_p95": 1.3840812558604165,
+          "accel_mean": 0.12075240847504365,
+          "accel_p95": 0.3351536074538318,
+          "jerk_mean": 0.1351223276061164,
+          "jerk_p95": 0.52773331134955
+        },
+        "native_motion": {
+          "speed_p95": 1.3678118299723765,
+          "accel_mean": 0.0901553877572672,
+          "accel_p95": 0.6229340524479884,
+          "jerk_mean": 0.4958519262512168,
+          "jerk_p95": 2.9353404398096545
+        },
+        "motion_failed": [
+          "speed_p95",
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.02788117295376346,
+          "p95": 0.08091870779824913,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.1978417899906482
+      },
+      "transition": {
+        "n": 178,
+        "K": 20,
+        "good": 84,
+        "coverage": 0.47191011235955055,
+        "endpoint_good": 116,
+        "endpoint_coverage": 0.651685393258427,
+        "minADE": 0.21155289688927342,
+        "minFDE": 0.3665472871933751,
+        "J": 1.1932471910199705,
+        "rescued": 20,
+        "lost": 17,
+        "retained": 64,
+        "effective_distinct": 19.99438202247191,
+        "effective_good": 0.7696629213483146,
+        "single_Jclosest_segments": [
+          0.10042761409107501,
+          0.23495234837292184,
+          0.3239569936756327
+        ],
+        "sensitivity_03_05_good": 131,
+        "winner_counts": [
+          13,
+          13,
+          6,
+          4,
+          4,
+          8,
+          12,
+          6,
+          15,
+          4,
+          6,
+          7,
+          24,
+          15,
+          0,
+          7,
+          0,
+          15,
+          12,
+          7
+        ],
+        "motion": {
+          "speed_p95": 1.266824060490445,
+          "accel_mean": 0.1354895152816553,
+          "accel_p95": 0.39083607445359053,
+          "jerk_mean": 0.15287329109792278,
+          "jerk_p95": 0.5577253076208801
+        },
+        "native_motion": {
+          "speed_p95": 1.257153591645289,
+          "accel_mean": 0.08556417081949055,
+          "accel_p95": 0.6121142365927994,
+          "jerk_mean": 0.47060017890604805,
+          "jerk_p95": 2.583811236591349
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03645238543014434,
+          "p95": 0.10058508862664794,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.359812369048308
+      },
+      "change": {
+        "n": 253,
+        "K": 20,
+        "good": 91,
+        "coverage": 0.35968379446640314,
+        "endpoint_good": 139,
+        "endpoint_coverage": 0.549407114624506,
+        "minADE": 0.30381761271246976,
+        "minFDE": 0.5778002820856432,
+        "J": 1.7336818029495145,
+        "rescued": 16,
+        "lost": 35,
+        "retained": 75,
+        "effective_distinct": 19.952569169960473,
+        "effective_good": 0.4901185770750988,
+        "single_Jclosest_segments": [
+          0.12246818917391365,
+          0.32421013174068425,
+          0.4918000634763346
+        ],
+        "sensitivity_03_05_good": 148,
+        "winner_counts": [
+          17,
+          10,
+          12,
+          6,
+          9,
+          19,
+          13,
+          5,
+          12,
+          35,
+          11,
+          7,
+          14,
+          20,
+          8,
+          6,
+          12,
+          4,
+          27,
+          6
+        ],
+        "motion": {
+          "speed_p95": 1.0549889846973228,
+          "accel_mean": 0.1326447669508624,
+          "accel_p95": 0.3725838691259022,
+          "jerk_mean": 0.1511144351584264,
+          "jerk_p95": 0.5615261640807069
+        },
+        "native_motion": {
+          "speed_p95": 1.081244268790005,
+          "accel_mean": 0.0836765499132491,
+          "accel_p95": 0.6213657999049347,
+          "jerk_mean": 0.46021922094612056,
+          "jerk_p95": 2.642064982030258
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.030868579655583466,
+          "p95": 0.09088897106811795,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.3081443277913225
+      }
+    },
+    "inner": {
+      "overall": {
+        "n": 1856,
+        "K": 20,
+        "good": 1021,
+        "coverage": 0.5501077586206896,
+        "endpoint_good": 1322,
+        "endpoint_coverage": 0.7122844827586207,
+        "minADE": 0.2021053210198209,
+        "minFDE": 0.36704626741340485,
+        "J": 1.1635364467719638,
+        "rescued": 236,
+        "lost": 147,
+        "retained": 785,
+        "effective_distinct": 19.96497844827586,
+        "effective_good": 0.9881465517241379,
+        "single_Jclosest_segments": [
+          0.08797043852123866,
+          0.22077056251787391,
+          0.31998454213718963
+        ],
+        "sensitivity_03_05_good": 1365,
+        "winner_counts": [
+          84,
+          108,
+          82,
+          73,
+          39,
+          62,
+          70,
+          101,
+          95,
+          83,
+          67,
+          108,
+          137,
+          106,
+          29,
+          107,
+          53,
+          286,
+          102,
+          64
+        ],
+        "motion": {
+          "speed_p95": 1.3593391617751633,
+          "accel_mean": 0.1310410269869094,
+          "accel_p95": 0.3714079783651995,
+          "jerk_mean": 0.14679851621262688,
+          "jerk_p95": 0.5449987668580437
+        },
+        "native_motion": {
+          "speed_p95": 1.3467121592186422,
+          "accel_mean": 0.09237220182858123,
+          "accel_p95": 0.6569523212112709,
+          "jerk_mean": 0.5080442142947003,
+          "jerk_p95": 2.9314601623263985
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.033582290172311506,
+          "p95": 0.09441542057757021,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.319777573065743
+      },
+      "stable": {
+        "n": 978,
+        "K": 20,
+        "good": 665,
+        "coverage": 0.679959100204499,
+        "endpoint_good": 806,
+        "endpoint_coverage": 0.8241308793456033,
+        "minADE": 0.14632115445684102,
+        "minFDE": 0.25322451570559185,
+        "J": 0.8333499728034442,
+        "rescued": 135,
+        "lost": 71,
+        "retained": 530,
+        "effective_distinct": 19.949897750511248,
+        "effective_good": 1.3476482617586911,
+        "single_Jclosest_segments": [
+          0.06856334923433782,
+          0.16251440909883974,
+          0.2226230902035411
+        ],
+        "sensitivity_03_05_good": 834,
+        "winner_counts": [
+          33,
+          93,
+          35,
+          48,
+          13,
+          14,
+          44,
+          50,
+          51,
+          0,
+          57,
+          62,
+          61,
+          34,
+          6,
+          67,
+          0,
+          252,
+          14,
+          44
+        ],
+        "motion": {
+          "speed_p95": 1.4196331371601267,
+          "accel_mean": 0.1251266444130701,
+          "accel_p95": 0.35067842275223343,
+          "jerk_mean": 0.1395918675167036,
+          "jerk_p95": 0.5222945332210781
+        },
+        "native_motion": {
+          "speed_p95": 1.4150983711604135,
+          "accel_mean": 0.09543195396097365,
+          "accel_p95": 0.6568946247852062,
+          "jerk_mean": 0.52487241515463,
+          "jerk_p95": 3.0608990071518583
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03193680764197631,
+          "p95": 0.08723051660804798,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.2564300704134748
+      },
+      "transition": {
+        "n": 381,
+        "K": 20,
+        "good": 189,
+        "coverage": 0.49606299212598426,
+        "endpoint_good": 268,
+        "endpoint_coverage": 0.7034120734908137,
+        "minADE": 0.21318089739635135,
+        "minFDE": 0.3753134874763288,
+        "J": 1.2306314047074292,
+        "rescued": 51,
+        "lost": 27,
+        "retained": 138,
+        "effective_distinct": 19.979002624671917,
+        "effective_good": 0.7821522309711286,
+        "single_Jclosest_segments": [
+          0.09637534231804297,
+          0.24006389818409807,
+          0.3346524051667399
+        ],
+        "sensitivity_03_05_good": 276,
+        "winner_counts": [
+          35,
+          13,
+          23,
+          15,
+          1,
+          22,
+          13,
+          34,
+          23,
+          5,
+          4,
+          24,
+          51,
+          22,
+          10,
+          15,
+          0,
+          29,
+          28,
+          14
+        ],
+        "motion": {
+          "speed_p95": 1.2913090187642011,
+          "accel_mean": 0.1378182908869842,
+          "accel_p95": 0.39799367285828374,
+          "jerk_mean": 0.15264645327676338,
+          "jerk_p95": 0.558701167139863
+        },
+        "native_motion": {
+          "speed_p95": 1.2740968148369605,
+          "accel_mean": 0.08789838717199353,
+          "accel_p95": 0.6355182101852146,
+          "jerk_mean": 0.48343830410461797,
+          "jerk_p95": 2.707293135949759
+        },
+        "motion_failed": [
+          "speed_p95",
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03623779080295807,
+          "p95": 0.09898734760345033,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.398691025898004
+      },
+      "change": {
+        "n": 497,
+        "K": 20,
+        "good": 167,
+        "coverage": 0.33601609657947684,
+        "endpoint_good": 248,
+        "endpoint_coverage": 0.49899396378269617,
+        "minADE": 0.3033872532112418,
+        "minFDE": 0.5846878415105218,
+        "J": 1.7618446813148207,
+        "rescued": 50,
+        "lost": 49,
+        "retained": 117,
+        "effective_distinct": 19.983903420523138,
+        "effective_good": 0.4386317907444668,
+        "single_Jclosest_segments": [
+          0.11971664571642263,
+          0.32061715639108307,
+          0.5003286954105312
+        ],
+        "sensitivity_03_05_good": 255,
+        "winner_counts": [
+          16,
+          2,
+          24,
+          10,
+          25,
+          26,
+          13,
+          17,
+          21,
+          78,
+          6,
+          22,
+          25,
+          50,
+          13,
+          25,
+          53,
+          5,
+          60,
+          6
+        ],
+        "motion": {
+          "speed_p95": 1.154114818269634,
+          "accel_mean": 0.13748394169774705,
+          "accel_p95": 0.3930770940044318,
+          "jerk_mean": 0.1564967826174095,
+          "jerk_p95": 0.5756498982882997
+        },
+        "native_motion": {
+          "speed_p95": 1.1721206160113342,
+          "accel_mean": 0.08978082516596568,
+          "accel_p95": 0.6750425248604182,
+          "jerk_mean": 0.49379244636997177,
+          "jerk_p95": 2.821205077980657
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.034784576237485494,
+          "p95": 0.10450700136859599,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.3839382009627799
+      }
+    },
+    "original_CAL": {
+      "overall": {
+        "n": 2879,
+        "K": 20,
+        "good": 1482,
+        "coverage": 0.5147620701632512,
+        "endpoint_good": 2038,
+        "endpoint_coverage": 0.707884682181313,
+        "minADE": 0.18973136136237437,
+        "minFDE": 0.3268084737379121,
+        "J": 1.073683673741513,
+        "rescued": 296,
+        "lost": 304,
+        "retained": 1186,
+        "effective_distinct": 19.990621743660995,
+        "effective_good": 1.0059048280653005,
+        "single_Jclosest_segments": [
+          0.08723366741298061,
+          0.21164288157246813,
+          0.29062218126835454
+        ],
+        "sensitivity_03_05_good": 2096,
+        "winner_counts": [
+          165,
+          111,
+          105,
+          148,
+          86,
+          77,
+          102,
+          108,
+          130,
+          126,
+          104,
+          131,
+          166,
+          92,
+          83,
+          103,
+          76,
+          754,
+          120,
+          92
+        ],
+        "motion": {
+          "speed_p95": 1.1954847590707343,
+          "accel_mean": 0.1320970901175902,
+          "accel_p95": 0.36897549996432644,
+          "jerk_mean": 0.14976705481269145,
+          "jerk_p95": 0.5537902278365062
+        },
+        "native_motion": {
+          "speed_p95": 1.1863497572825552,
+          "accel_mean": 0.08969512655288099,
+          "accel_p95": 0.660315488624152,
+          "jerk_mean": 0.4933209372674328,
+          "jerk_p95": 2.8127041668526704
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.031671992832048336,
+          "p95": 0.08983953548375703,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.3094496718484683
+      },
+      "stable": {
+        "n": 1535,
+        "K": 20,
+        "good": 1043,
+        "coverage": 0.6794788273615635,
+        "endpoint_good": 1294,
+        "endpoint_coverage": 0.8429967426710098,
+        "minADE": 0.12526640267379027,
+        "minFDE": 0.2031478411124199,
+        "J": 0.7081180742320864,
+        "rescued": 177,
+        "lost": 128,
+        "retained": 866,
+        "effective_distinct": 19.994788273615637,
+        "effective_good": 1.482084690553746,
+        "single_Jclosest_segments": [
+          0.062355342140607825,
+          0.14237091666147428,
+          0.18507784583923179
+        ],
+        "sensitivity_03_05_good": 1309,
+        "winner_counts": [
+          59,
+          76,
+          56,
+          117,
+          18,
+          14,
+          32,
+          77,
+          50,
+          6,
+          63,
+          70,
+          56,
+          13,
+          8,
+          64,
+          0,
+          691,
+          11,
+          54
+        ],
+        "motion": {
+          "speed_p95": 1.193135150334813,
+          "accel_mean": 0.1279497299727249,
+          "accel_p95": 0.34664370072207923,
+          "jerk_mean": 0.14442109354673624,
+          "jerk_p95": 0.5412954202541621
+        },
+        "native_motion": {
+          "speed_p95": 1.1793164093541753,
+          "accel_mean": 0.09050419163938074,
+          "accel_p95": 0.6669699147555027,
+          "jerk_mean": 0.49777088353440246,
+          "jerk_p95": 2.8816741655236275
+        },
+        "motion_failed": [
+          "speed_p95",
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.028353284071734274,
+          "p95": 0.08341980876504362,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.2564651992054925
+      },
+      "transition": {
+        "n": 644,
+        "K": 20,
+        "good": 255,
+        "coverage": 0.39596273291925466,
+        "endpoint_good": 406,
+        "endpoint_coverage": 0.6304347826086957,
+        "minADE": 0.2381318638581624,
+        "minFDE": 0.4081852395014359,
+        "J": 1.3358657877401283,
+        "rescued": 73,
+        "lost": 71,
+        "retained": 182,
+        "effective_distinct": 19.987577639751553,
+        "effective_good": 0.6024844720496895,
+        "single_Jclosest_segments": [
+          0.11018696442391801,
+          0.2652666881672966,
+          0.3597429947197807
+        ],
+        "sensitivity_03_05_good": 421,
+        "winner_counts": [
+          63,
+          22,
+          31,
+          22,
+          20,
+          33,
+          23,
+          20,
+          58,
+          17,
+          21,
+          22,
+          76,
+          17,
+          55,
+          23,
+          0,
+          54,
+          42,
+          25
+        ],
+        "motion": {
+          "speed_p95": 1.2451314541701048,
+          "accel_mean": 0.1371340102318918,
+          "accel_p95": 0.39593840021302423,
+          "jerk_mean": 0.15494429826930678,
+          "jerk_p95": 0.5616476111277665
+        },
+        "native_motion": {
+          "speed_p95": 1.2428816183468518,
+          "accel_mean": 0.08908633672395871,
+          "accel_p95": 0.6464189967187574,
+          "jerk_mean": 0.48997205862560017,
+          "jerk_p95": 2.7050793743414374
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03841003253724935,
+          "p95": 0.09922002268471998,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.396141684539795
+      },
+      "change": {
+        "n": 700,
+        "K": 20,
+        "good": 184,
+        "coverage": 0.26285714285714284,
+        "endpoint_good": 338,
+        "endpoint_coverage": 0.4828571428571429,
+        "minADE": 0.2865653441905018,
+        "minFDE": 0.5231119507785141,
+        "J": 1.6341092649298874,
+        "rescued": 46,
+        "lost": 105,
+        "retained": 138,
+        "effective_distinct": 19.984285714285715,
+        "effective_good": 0.33285714285714285,
+        "single_Jclosest_segments": [
+          0.12067124743876363,
+          0.31421250256004907,
+          0.4584746827269049
+        ],
+        "sensitivity_03_05_good": 366,
+        "winner_counts": [
+          43,
+          13,
+          18,
+          9,
+          48,
+          30,
+          47,
+          11,
+          22,
+          103,
+          20,
+          39,
+          34,
+          62,
+          20,
+          16,
+          76,
+          9,
+          67,
+          13
+        ],
+        "motion": {
+          "speed_p95": 1.1234518765566885,
+          "accel_mean": 0.13655769193010164,
+          "accel_p95": 0.38562930668683626,
+          "jerk_mean": 0.15672692018009313,
+          "jerk_p95": 0.5744570210400607
+        },
+        "native_motion": {
+          "speed_p95": 1.121925793387097,
+          "accel_mean": 0.08848104904152217,
+          "accel_p95": 0.6649768514961254,
+          "jerk_mean": 0.4866438091610639,
+          "jerk_p95": 2.752016264352123
+        },
+        "motion_failed": [
+          "accel_mean"
+        ],
+        "initial_velocity_jump_diagnostic": {
+          "mean": 0.03275045051338067,
+          "p95": 0.09125232452635543,
+          "not_part_of_11_acceleration_gate": true
+        },
+        "goal_change_from_initial_mean": 0.0,
+        "goal_CV_gap_mean": 1.3458803994681163
+      }
+    }
+  },
+  "weights_buffers_eval_EXACT": true,
+  "frozen_parent_contract_EXACT": true
+}

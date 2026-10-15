@@ -1,0 +1,2041 @@
+{
+  "results": {
+    "scene_family": {
+      "seeds": {
+        "seed_42": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 1561,
+              "native_top1_good_rate_pct": 40.23062139654068,
+              "static_top1_good_rate_pct": 17.680973734785393,
+              "learned3_good_rate_pct": 30.685458039718128,
+              "top3_union_good_rate_pct": 42.47277386290839,
+              "union_gain_pp_vs_native": 2.242152466367714,
+              "venn_counts": {
+                "none_good": 898,
+                "native_only": 159,
+                "static_only": 17,
+                "learned_only": 16,
+                "native_and_static": 8,
+                "native_and_learned": 212,
+                "static_and_learned": 2,
+                "all_three_good": 249
+              },
+              "venn_fractions_pct": {
+                "none_good": 57.5272261370916,
+                "native_only": 10.185778347213324,
+                "static_only": 1.0890454836643177,
+                "learned_only": 1.0249839846252402,
+                "native_and_static": 0.5124919923126201,
+                "native_and_learned": 13.581037796284434,
+                "static_and_learned": 0.12812299807815503,
+                "all_three_good": 15.951313260730302
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 1.0249839846252402,
+                "static_only_rescue_pct": 1.0890454836643177,
+                "static_and_learned_rescue_pct": 0.12812299807815503,
+                "total_proposal_rescues_pct": 2.242152466367713
+              },
+              "quality_metrics": {
+                "native_ade": 0.3512724041938782,
+                "native_fde": 0.7737426161766052,
+                "top3_min_ade": 0.2997945249080658,
+                "top3_min_fde": 0.6518263220787048,
+                "ade_reduction_pct": 14.654688537120819,
+                "fde_reduction_pct": 15.756699442863464
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 57.5272261370916,
+                "1_of_3_pct": 12.299807815502884,
+                "2_of_3_pct": 14.221652786675207,
+                "3_of_3_pct": 15.951313260730302
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.42941582202911377,
+                "expected_distinct_modes": 2.7245354652404785
+              }
+            },
+            "stable": {
+              "n_samples": 1226,
+              "native_top1_good_rate_pct": 46.900489396411096,
+              "static_top1_good_rate_pct": 19.65742251223491,
+              "learned3_good_rate_pct": 34.42088091353997,
+              "top3_union_good_rate_pct": 47.71615008156607,
+              "union_gain_pp_vs_native": 0.815660685154973,
+              "venn_counts": {
+                "none_good": 641,
+                "native_only": 151,
+                "static_only": 9,
+                "learned_only": 1,
+                "native_and_static": 3,
+                "native_and_learned": 192,
+                "static_and_learned": 0,
+                "all_three_good": 229
+              },
+              "venn_fractions_pct": {
+                "none_good": 52.28384991843393,
+                "native_only": 12.31647634584013,
+                "static_only": 0.734094616639478,
+                "learned_only": 0.08156606851549755,
+                "native_and_static": 0.24469820554649263,
+                "native_and_learned": 15.660685154975528,
+                "static_and_learned": 0.0,
+                "all_three_good": 18.67862969004894
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.08156606851549755,
+                "static_only_rescue_pct": 0.734094616639478,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 0.8156606851549755
+              },
+              "quality_metrics": {
+                "native_ade": 0.2653513252735138,
+                "native_fde": 0.5563504099845886,
+                "top3_min_ade": 0.24532802402973175,
+                "top3_min_fde": 0.5145755410194397,
+                "ade_reduction_pct": 7.545958459377289,
+                "fde_reduction_pct": 7.508733123540878
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 52.28384991843393,
+                "1_of_3_pct": 13.132137030995105,
+                "2_of_3_pct": 15.905383360522023,
+                "3_of_3_pct": 18.67862969004894
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.43603190779685974,
+                "expected_distinct_modes": 2.716965675354004
+              }
+            },
+            "transition": {
+              "n_samples": 124,
+              "native_top1_good_rate_pct": 14.516129032258066,
+              "static_top1_good_rate_pct": 12.903225806451612,
+              "learned3_good_rate_pct": 8.870967741935484,
+              "top3_union_good_rate_pct": 16.93548387096774,
+              "union_gain_pp_vs_native": 2.4193548387096753,
+              "venn_counts": {
+                "none_good": 103,
+                "native_only": 3,
+                "static_only": 3,
+                "learned_only": 0,
+                "native_and_static": 4,
+                "native_and_learned": 2,
+                "static_and_learned": 0,
+                "all_three_good": 9
+              },
+              "venn_fractions_pct": {
+                "none_good": 83.06451612903226,
+                "native_only": 2.4193548387096775,
+                "static_only": 2.4193548387096775,
+                "learned_only": 0.0,
+                "native_and_static": 3.225806451612903,
+                "native_and_learned": 1.6129032258064515,
+                "static_and_learned": 0.0,
+                "all_three_good": 7.258064516129033
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.0,
+                "static_only_rescue_pct": 2.4193548387096775,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 2.4193548387096775
+              },
+              "quality_metrics": {
+                "native_ade": 0.5768964886665344,
+                "native_fde": 1.3117789030075073,
+                "top3_min_ade": 0.4461090862751007,
+                "top3_min_fde": 1.0092597007751465,
+                "ade_reduction_pct": 22.670860588550568,
+                "fde_reduction_pct": 23.061752319335938
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 83.06451612903226,
+                "1_of_3_pct": 4.838709677419355,
+                "2_of_3_pct": 4.838709677419355,
+                "3_of_3_pct": 7.258064516129033
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.468260794878006,
+                "expected_distinct_modes": 2.846774101257324
+              }
+            },
+            "change": {
+              "n_samples": 211,
+              "native_top1_good_rate_pct": 16.587677725118482,
+              "static_top1_good_rate_pct": 9.004739336492891,
+              "learned3_good_rate_pct": 21.80094786729858,
+              "top3_union_good_rate_pct": 27.014218009478675,
+              "union_gain_pp_vs_native": 10.426540284360192,
+              "venn_counts": {
+                "none_good": 154,
+                "native_only": 5,
+                "static_only": 5,
+                "learned_only": 15,
+                "native_and_static": 1,
+                "native_and_learned": 18,
+                "static_and_learned": 2,
+                "all_three_good": 11
+              },
+              "venn_fractions_pct": {
+                "none_good": 72.98578199052133,
+                "native_only": 2.3696682464454977,
+                "static_only": 2.3696682464454977,
+                "learned_only": 7.109004739336493,
+                "native_and_static": 0.47393364928909953,
+                "native_and_learned": 8.530805687203792,
+                "static_and_learned": 0.9478672985781991,
+                "all_three_good": 5.213270142180095
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 7.109004739336493,
+                "static_only_rescue_pct": 2.3696682464454977,
+                "static_and_learned_rescue_pct": 0.9478672985781991,
+                "total_proposal_rescues_pct": 10.42654028436019
+              },
+              "quality_metrics": {
+                "native_ade": 0.7179163098335266,
+                "native_fde": 1.7206921577453613,
+                "top3_min_ade": 0.5302823185920715,
+                "top3_min_fde": 1.2392563819885254,
+                "ade_reduction_pct": 26.135915517807007,
+                "fde_reduction_pct": 27.9791921377182
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 72.98578199052133,
+                "1_of_3_pct": 11.848341232227488,
+                "2_of_3_pct": 9.95260663507109,
+                "3_of_3_pct": 5.213270142180095
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.3681453764438629,
+                "expected_distinct_modes": 2.6966824531555176
+              }
+            }
+          }
+        },
+        "seed_43": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 1561,
+              "native_top1_good_rate_pct": 40.23062139654068,
+              "static_top1_good_rate_pct": 17.680973734785393,
+              "learned3_good_rate_pct": 31.3260730301089,
+              "top3_union_good_rate_pct": 42.92120435618194,
+              "union_gain_pp_vs_native": 2.690582959641258,
+              "venn_counts": {
+                "none_good": 891,
+                "native_only": 156,
+                "static_only": 17,
+                "learned_only": 23,
+                "native_and_static": 8,
+                "native_and_learned": 215,
+                "static_and_learned": 2,
+                "all_three_good": 249
+              },
+              "venn_fractions_pct": {
+                "none_good": 57.07879564381807,
+                "native_only": 9.993593850096092,
+                "static_only": 1.0890454836643177,
+                "learned_only": 1.4734144778987828,
+                "native_and_static": 0.5124919923126201,
+                "native_and_learned": 13.773222293401666,
+                "static_and_learned": 0.12812299807815503,
+                "all_three_good": 15.951313260730302
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 1.4734144778987828,
+                "static_only_rescue_pct": 1.0890454836643177,
+                "static_and_learned_rescue_pct": 0.12812299807815503,
+                "total_proposal_rescues_pct": 2.690582959641256
+              },
+              "quality_metrics": {
+                "native_ade": 0.3512724041938782,
+                "native_fde": 0.7737426161766052,
+                "top3_min_ade": 0.2989654541015625,
+                "top3_min_fde": 0.6494138240814209,
+                "ade_reduction_pct": 14.890708029270172,
+                "fde_reduction_pct": 16.06849431991577
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 57.07879564381807,
+                "1_of_3_pct": 12.556053811659194,
+                "2_of_3_pct": 14.413837283792441,
+                "3_of_3_pct": 15.951313260730302
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.41320401430130005,
+                "expected_distinct_modes": 2.8257527351379395
+              }
+            },
+            "stable": {
+              "n_samples": 1226,
+              "native_top1_good_rate_pct": 46.900489396411096,
+              "static_top1_good_rate_pct": 19.65742251223491,
+              "learned3_good_rate_pct": 34.66557911908646,
+              "top3_union_good_rate_pct": 47.87928221859706,
+              "union_gain_pp_vs_native": 0.9787928221859699,
+              "venn_counts": {
+                "none_good": 639,
+                "native_only": 150,
+                "static_only": 9,
+                "learned_only": 3,
+                "native_and_static": 3,
+                "native_and_learned": 193,
+                "static_and_learned": 0,
+                "all_three_good": 229
+              },
+              "venn_fractions_pct": {
+                "none_good": 52.12071778140294,
+                "native_only": 12.234910277324634,
+                "static_only": 0.734094616639478,
+                "learned_only": 0.24469820554649263,
+                "native_and_static": 0.24469820554649263,
+                "native_and_learned": 15.742251223491028,
+                "static_and_learned": 0.0,
+                "all_three_good": 18.67862969004894
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.24469820554649263,
+                "static_only_rescue_pct": 0.734094616639478,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 0.9787928221859705
+              },
+              "quality_metrics": {
+                "native_ade": 0.2653513252735138,
+                "native_fde": 0.5563504099845886,
+                "top3_min_ade": 0.24244122207164764,
+                "top3_min_fde": 0.5093596577644348,
+                "ade_reduction_pct": 8.633875846862793,
+                "fde_reduction_pct": 8.446250855922699
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 52.12071778140294,
+                "1_of_3_pct": 13.213703099510605,
+                "2_of_3_pct": 15.98694942903752,
+                "3_of_3_pct": 18.67862969004894
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.4160568118095398,
+                "expected_distinct_modes": 2.8409461975097656
+              }
+            },
+            "transition": {
+              "n_samples": 124,
+              "native_top1_good_rate_pct": 14.516129032258066,
+              "static_top1_good_rate_pct": 12.903225806451612,
+              "learned3_good_rate_pct": 12.096774193548388,
+              "top3_union_good_rate_pct": 20.161290322580644,
+              "union_gain_pp_vs_native": 5.645161290322578,
+              "venn_counts": {
+                "none_good": 99,
+                "native_only": 3,
+                "static_only": 3,
+                "learned_only": 4,
+                "native_and_static": 4,
+                "native_and_learned": 2,
+                "static_and_learned": 0,
+                "all_three_good": 9
+              },
+              "venn_fractions_pct": {
+                "none_good": 79.83870967741935,
+                "native_only": 2.4193548387096775,
+                "static_only": 2.4193548387096775,
+                "learned_only": 3.225806451612903,
+                "native_and_static": 3.225806451612903,
+                "native_and_learned": 1.6129032258064515,
+                "static_and_learned": 0.0,
+                "all_three_good": 7.258064516129033
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 3.225806451612903,
+                "static_only_rescue_pct": 2.4193548387096775,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 5.64516129032258
+              },
+              "quality_metrics": {
+                "native_ade": 0.5768964886665344,
+                "native_fde": 1.3117789030075073,
+                "top3_min_ade": 0.4435352087020874,
+                "top3_min_fde": 0.9927923083305359,
+                "ade_reduction_pct": 23.11702072620392,
+                "fde_reduction_pct": 24.317100644111633
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 79.83870967741935,
+                "1_of_3_pct": 8.064516129032258,
+                "2_of_3_pct": 4.838709677419355,
+                "3_of_3_pct": 7.258064516129033
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.46415528655052185,
+                "expected_distinct_modes": 2.862903118133545
+              }
+            },
+            "change": {
+              "n_samples": 211,
+              "native_top1_good_rate_pct": 16.587677725118482,
+              "static_top1_good_rate_pct": 9.004739336492891,
+              "learned3_good_rate_pct": 23.22274881516588,
+              "top3_union_good_rate_pct": 27.488151658767773,
+              "union_gain_pp_vs_native": 10.900473933649291,
+              "venn_counts": {
+                "none_good": 153,
+                "native_only": 3,
+                "static_only": 5,
+                "learned_only": 16,
+                "native_and_static": 1,
+                "native_and_learned": 20,
+                "static_and_learned": 2,
+                "all_three_good": 11
+              },
+              "venn_fractions_pct": {
+                "none_good": 72.51184834123224,
+                "native_only": 1.4218009478672986,
+                "static_only": 2.3696682464454977,
+                "learned_only": 7.5829383886255926,
+                "native_and_static": 0.47393364928909953,
+                "native_and_learned": 9.47867298578199,
+                "static_and_learned": 0.9478672985781991,
+                "all_three_good": 5.213270142180095
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 7.5829383886255926,
+                "static_only_rescue_pct": 2.3696682464454977,
+                "static_and_learned_rescue_pct": 0.9478672985781991,
+                "total_proposal_rescues_pct": 10.90047393364929
+              },
+              "quality_metrics": {
+                "native_ade": 0.7179163098335266,
+                "native_fde": 1.7206921577453613,
+                "top3_min_ade": 0.5424349308013916,
+                "top3_min_fde": 1.2613924741744995,
+                "ade_reduction_pct": 24.44315254688263,
+                "fde_reduction_pct": 26.692727208137512
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 72.51184834123224,
+                "1_of_3_pct": 11.374407582938389,
+                "2_of_3_pct": 10.90047393364929,
+                "3_of_3_pct": 5.213270142180095
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.3666849732398987,
+                "expected_distinct_modes": 2.71563982963562
+              }
+            }
+          }
+        },
+        "seed_44": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 1561,
+              "native_top1_good_rate_pct": 40.23062139654068,
+              "static_top1_good_rate_pct": 17.680973734785393,
+              "learned3_good_rate_pct": 30.813581037796283,
+              "top3_union_good_rate_pct": 42.47277386290839,
+              "union_gain_pp_vs_native": 2.242152466367714,
+              "venn_counts": {
+                "none_good": 898,
+                "native_only": 157,
+                "static_only": 17,
+                "learned_only": 16,
+                "native_and_static": 8,
+                "native_and_learned": 214,
+                "static_and_learned": 2,
+                "all_three_good": 249
+              },
+              "venn_fractions_pct": {
+                "none_good": 57.5272261370916,
+                "native_only": 10.05765534913517,
+                "static_only": 1.0890454836643177,
+                "learned_only": 1.0249839846252402,
+                "native_and_static": 0.5124919923126201,
+                "native_and_learned": 13.709160794362587,
+                "static_and_learned": 0.12812299807815503,
+                "all_three_good": 15.951313260730302
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 1.0249839846252402,
+                "static_only_rescue_pct": 1.0890454836643177,
+                "static_and_learned_rescue_pct": 0.12812299807815503,
+                "total_proposal_rescues_pct": 2.242152466367713
+              },
+              "quality_metrics": {
+                "native_ade": 0.3512724041938782,
+                "native_fde": 0.7737426161766052,
+                "top3_min_ade": 0.2994230389595032,
+                "top3_min_fde": 0.6507707834243774,
+                "ade_reduction_pct": 14.760443568229675,
+                "fde_reduction_pct": 15.89311808347702
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 57.5272261370916,
+                "1_of_3_pct": 12.171684817424728,
+                "2_of_3_pct": 14.349775784753364,
+                "3_of_3_pct": 15.951313260730302
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.4635421931743622,
+                "expected_distinct_modes": 2.7258167266845703
+              }
+            },
+            "stable": {
+              "n_samples": 1226,
+              "native_top1_good_rate_pct": 46.900489396411096,
+              "static_top1_good_rate_pct": 19.65742251223491,
+              "learned3_good_rate_pct": 34.58401305057096,
+              "top3_union_good_rate_pct": 47.79771615008156,
+              "union_gain_pp_vs_native": 0.8972267536704714,
+              "venn_counts": {
+                "none_good": 640,
+                "native_only": 150,
+                "static_only": 9,
+                "learned_only": 2,
+                "native_and_static": 3,
+                "native_and_learned": 193,
+                "static_and_learned": 0,
+                "all_three_good": 229
+              },
+              "venn_fractions_pct": {
+                "none_good": 52.20228384991843,
+                "native_only": 12.234910277324634,
+                "static_only": 0.734094616639478,
+                "learned_only": 0.1631321370309951,
+                "native_and_static": 0.24469820554649263,
+                "native_and_learned": 15.742251223491028,
+                "static_and_learned": 0.0,
+                "all_three_good": 18.67862969004894
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.1631321370309951,
+                "static_only_rescue_pct": 0.734094616639478,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 0.897226753670473
+              },
+              "quality_metrics": {
+                "native_ade": 0.2653513252735138,
+                "native_fde": 0.5563504099845886,
+                "top3_min_ade": 0.24420759081840515,
+                "top3_min_fde": 0.5114420056343079,
+                "ade_reduction_pct": 7.9682037234306335,
+                "fde_reduction_pct": 8.071964234113693
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 52.20228384991843,
+                "1_of_3_pct": 13.132137030995105,
+                "2_of_3_pct": 15.98694942903752,
+                "3_of_3_pct": 18.67862969004894
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.471090704202652,
+                "expected_distinct_modes": 2.7218596935272217
+              }
+            },
+            "transition": {
+              "n_samples": 124,
+              "native_top1_good_rate_pct": 14.516129032258066,
+              "static_top1_good_rate_pct": 12.903225806451612,
+              "learned3_good_rate_pct": 8.870967741935484,
+              "top3_union_good_rate_pct": 16.93548387096774,
+              "union_gain_pp_vs_native": 2.4193548387096753,
+              "venn_counts": {
+                "none_good": 103,
+                "native_only": 3,
+                "static_only": 3,
+                "learned_only": 0,
+                "native_and_static": 4,
+                "native_and_learned": 2,
+                "static_and_learned": 0,
+                "all_three_good": 9
+              },
+              "venn_fractions_pct": {
+                "none_good": 83.06451612903226,
+                "native_only": 2.4193548387096775,
+                "static_only": 2.4193548387096775,
+                "learned_only": 0.0,
+                "native_and_static": 3.225806451612903,
+                "native_and_learned": 1.6129032258064515,
+                "static_and_learned": 0.0,
+                "all_three_good": 7.258064516129033
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.0,
+                "static_only_rescue_pct": 2.4193548387096775,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 2.4193548387096775
+              },
+              "quality_metrics": {
+                "native_ade": 0.5768964886665344,
+                "native_fde": 1.3117789030075073,
+                "top3_min_ade": 0.448116272687912,
+                "top3_min_fde": 1.0145583152770996,
+                "ade_reduction_pct": 22.32293337583542,
+                "fde_reduction_pct": 22.65782654285431
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 83.06451612903226,
+                "1_of_3_pct": 4.838709677419355,
+                "2_of_3_pct": 4.838709677419355,
+                "3_of_3_pct": 7.258064516129033
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.5181020498275757,
+                "expected_distinct_modes": 2.838709592819214
+              }
+            },
+            "change": {
+              "n_samples": 211,
+              "native_top1_good_rate_pct": 16.587677725118482,
+              "static_top1_good_rate_pct": 9.004739336492891,
+              "learned3_good_rate_pct": 21.80094786729858,
+              "top3_union_good_rate_pct": 26.540284360189574,
+              "union_gain_pp_vs_native": 9.952606635071092,
+              "venn_counts": {
+                "none_good": 155,
+                "native_only": 4,
+                "static_only": 5,
+                "learned_only": 14,
+                "native_and_static": 1,
+                "native_and_learned": 19,
+                "static_and_learned": 2,
+                "all_three_good": 11
+              },
+              "venn_fractions_pct": {
+                "none_good": 73.45971563981043,
+                "native_only": 1.8957345971563981,
+                "static_only": 2.3696682464454977,
+                "learned_only": 6.6350710900473935,
+                "native_and_static": 0.47393364928909953,
+                "native_and_learned": 9.004739336492891,
+                "static_and_learned": 0.9478672985781991,
+                "all_three_good": 5.213270142180095
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 6.6350710900473935,
+                "static_only_rescue_pct": 2.3696682464454977,
+                "static_and_learned_rescue_pct": 0.9478672985781991,
+                "total_proposal_rescues_pct": 9.95260663507109
+              },
+              "quality_metrics": {
+                "native_ade": 0.7179163098335266,
+                "native_fde": 1.7206921577453613,
+                "top3_min_ade": 0.5328646898269653,
+                "top3_min_fde": 1.2465406656265259,
+                "ade_reduction_pct": 25.77621042728424,
+                "fde_reduction_pct": 27.555859088897705
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 73.45971563981043,
+                "1_of_3_pct": 10.90047393364929,
+                "2_of_3_pct": 10.42654028436019,
+                "3_of_3_pct": 5.213270142180095
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.3876182734966278,
+                "expected_distinct_modes": 2.682464361190796
+              }
+            }
+          }
+        }
+      },
+      "macro": {}
+    },
+    "target_track": {
+      "seeds": {
+        "seed_42": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 1035,
+              "native_top1_good_rate_pct": 27.632850241545892,
+              "static_top1_good_rate_pct": 16.81159420289855,
+              "learned3_good_rate_pct": 22.028985507246375,
+              "top3_union_good_rate_pct": 31.88405797101449,
+              "union_gain_pp_vs_native": 4.251207729468598,
+              "venn_counts": {
+                "none_good": 705,
+                "native_only": 65,
+                "static_only": 20,
+                "learned_only": 22,
+                "native_and_static": 17,
+                "native_and_learned": 69,
+                "static_and_learned": 2,
+                "all_three_good": 135
+              },
+              "venn_fractions_pct": {
+                "none_good": 68.11594202898551,
+                "native_only": 6.280193236714976,
+                "static_only": 1.932367149758454,
+                "learned_only": 2.1256038647342996,
+                "native_and_static": 1.6425120772946862,
+                "native_and_learned": 6.666666666666667,
+                "static_and_learned": 0.1932367149758454,
+                "all_three_good": 13.043478260869565
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.1256038647342996,
+                "static_only_rescue_pct": 1.932367149758454,
+                "static_and_learned_rescue_pct": 0.1932367149758454,
+                "total_proposal_rescues_pct": 4.251207729468599
+              },
+              "quality_metrics": {
+                "native_ade": 0.43411967158317566,
+                "native_fde": 0.9410865902900696,
+                "top3_min_ade": 0.36395084857940674,
+                "top3_min_fde": 0.7782407999038696,
+                "ade_reduction_pct": 16.163474321365356,
+                "fde_reduction_pct": 17.304018139839172
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 68.11594202898551,
+                "1_of_3_pct": 10.33816425120773,
+                "2_of_3_pct": 8.502415458937199,
+                "3_of_3_pct": 13.043478260869565
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.40812888741493225,
+                "expected_distinct_modes": 2.7555556297302246
+              }
+            },
+            "stable": {
+              "n_samples": 604,
+              "native_top1_good_rate_pct": 39.23841059602649,
+              "static_top1_good_rate_pct": 22.8476821192053,
+              "learned3_good_rate_pct": 29.304635761589402,
+              "top3_union_good_rate_pct": 41.556291390728475,
+              "union_gain_pp_vs_native": 2.3178807947019875,
+              "venn_counts": {
+                "none_good": 353,
+                "native_only": 51,
+                "static_only": 11,
+                "learned_only": 3,
+                "native_and_static": 12,
+                "native_and_learned": 59,
+                "static_and_learned": 0,
+                "all_three_good": 115
+              },
+              "venn_fractions_pct": {
+                "none_good": 58.443708609271525,
+                "native_only": 8.443708609271523,
+                "static_only": 1.8211920529801324,
+                "learned_only": 0.49668874172185434,
+                "native_and_static": 1.9867549668874174,
+                "native_and_learned": 9.7682119205298,
+                "static_and_learned": 0.0,
+                "all_three_good": 19.039735099337747
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.49668874172185434,
+                "static_only_rescue_pct": 1.8211920529801324,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 2.3178807947019866
+              },
+              "quality_metrics": {
+                "native_ade": 0.3171900510787964,
+                "native_fde": 0.6724922060966492,
+                "top3_min_ade": 0.27317091822624207,
+                "top3_min_fde": 0.5767000913619995,
+                "ade_reduction_pct": 13.877841830253601,
+                "fde_reduction_pct": 14.24434632062912
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 58.443708609271525,
+                "1_of_3_pct": 10.76158940397351,
+                "2_of_3_pct": 11.754966887417218,
+                "3_of_3_pct": 19.039735099337747
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.40662381052970886,
+                "expected_distinct_modes": 2.736754894256592
+              }
+            },
+            "transition": {
+              "n_samples": 178,
+              "native_top1_good_rate_pct": 12.921348314606742,
+              "static_top1_good_rate_pct": 10.674157303370785,
+              "learned3_good_rate_pct": 8.426966292134832,
+              "top3_union_good_rate_pct": 20.224719101123593,
+              "union_gain_pp_vs_native": 7.303370786516853,
+              "venn_counts": {
+                "none_good": 142,
+                "native_only": 10,
+                "static_only": 8,
+                "learned_only": 4,
+                "native_and_static": 3,
+                "native_and_learned": 3,
+                "static_and_learned": 1,
+                "all_three_good": 7
+              },
+              "venn_fractions_pct": {
+                "none_good": 79.7752808988764,
+                "native_only": 5.617977528089887,
+                "static_only": 4.49438202247191,
+                "learned_only": 2.247191011235955,
+                "native_and_static": 1.6853932584269662,
+                "native_and_learned": 1.6853932584269662,
+                "static_and_learned": 0.5617977528089888,
+                "all_three_good": 3.932584269662921
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.247191011235955,
+                "static_only_rescue_pct": 4.49438202247191,
+                "static_and_learned_rescue_pct": 0.5617977528089888,
+                "total_proposal_rescues_pct": 7.303370786516854
+              },
+              "quality_metrics": {
+                "native_ade": 0.5217956304550171,
+                "native_fde": 1.1322208642959595,
+                "top3_min_ade": 0.4265514016151428,
+                "top3_min_fde": 0.9110566973686218,
+                "ade_reduction_pct": 18.25316697359085,
+                "fde_reduction_pct": 19.533659517765045
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 79.7752808988764,
+                "1_of_3_pct": 12.359550561797752,
+                "2_of_3_pct": 3.932584269662921,
+                "3_of_3_pct": 3.932584269662921
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.46156054735183716,
+                "expected_distinct_modes": 2.8932583332061768
+              }
+            },
+            "change": {
+              "n_samples": 253,
+              "native_top1_good_rate_pct": 10.276679841897234,
+              "static_top1_good_rate_pct": 6.719367588932807,
+              "learned3_good_rate_pct": 14.229249011857709,
+              "top3_union_good_rate_pct": 16.99604743083004,
+              "union_gain_pp_vs_native": 6.719367588932805,
+              "venn_counts": {
+                "none_good": 210,
+                "native_only": 4,
+                "static_only": 1,
+                "learned_only": 15,
+                "native_and_static": 2,
+                "native_and_learned": 7,
+                "static_and_learned": 1,
+                "all_three_good": 13
+              },
+              "venn_fractions_pct": {
+                "none_good": 83.00395256916995,
+                "native_only": 1.5810276679841897,
+                "static_only": 0.3952569169960474,
+                "learned_only": 5.928853754940711,
+                "native_and_static": 0.7905138339920948,
+                "native_and_learned": 2.766798418972332,
+                "static_and_learned": 0.3952569169960474,
+                "all_three_good": 5.138339920948617
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 5.928853754940711,
+                "static_only_rescue_pct": 0.3952569169960474,
+                "static_and_learned_rescue_pct": 0.3952569169960474,
+                "total_proposal_rescues_pct": 6.719367588932807
+              },
+              "quality_metrics": {
+                "native_ade": 0.6515868306159973,
+                "native_fde": 1.447842001914978,
+                "top3_min_ade": 0.5366313457489014,
+                "top3_min_fde": 1.1659460067749023,
+                "ade_reduction_pct": 17.642389237880707,
+                "fde_reduction_pct": 19.470079243183136
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 83.00395256916995,
+                "1_of_3_pct": 7.905138339920949,
+                "2_of_3_pct": 3.9525691699604746,
+                "3_of_3_pct": 5.138339920948617
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.3741297721862793,
+                "expected_distinct_modes": 2.703557252883911
+              }
+            }
+          }
+        },
+        "seed_43": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 1035,
+              "native_top1_good_rate_pct": 27.632850241545892,
+              "static_top1_good_rate_pct": 16.81159420289855,
+              "learned3_good_rate_pct": 22.22222222222222,
+              "top3_union_good_rate_pct": 32.07729468599034,
+              "union_gain_pp_vs_native": 4.4444444444444455,
+              "venn_counts": {
+                "none_good": 703,
+                "native_only": 63,
+                "static_only": 20,
+                "learned_only": 24,
+                "native_and_static": 19,
+                "native_and_learned": 71,
+                "static_and_learned": 2,
+                "all_three_good": 133
+              },
+              "venn_fractions_pct": {
+                "none_good": 67.92270531400966,
+                "native_only": 6.086956521739131,
+                "static_only": 1.932367149758454,
+                "learned_only": 2.318840579710145,
+                "native_and_static": 1.8357487922705313,
+                "native_and_learned": 6.859903381642512,
+                "static_and_learned": 0.1932367149758454,
+                "all_three_good": 12.85024154589372
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.318840579710145,
+                "static_only_rescue_pct": 1.932367149758454,
+                "static_and_learned_rescue_pct": 0.1932367149758454,
+                "total_proposal_rescues_pct": 4.444444444444445
+              },
+              "quality_metrics": {
+                "native_ade": 0.43411967158317566,
+                "native_fde": 0.9410865902900696,
+                "top3_min_ade": 0.36736270785331726,
+                "top3_min_fde": 0.7836311459541321,
+                "ade_reduction_pct": 15.377548336982727,
+                "fde_reduction_pct": 16.73123836517334
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 67.92270531400966,
+                "1_of_3_pct": 10.33816425120773,
+                "2_of_3_pct": 8.88888888888889,
+                "3_of_3_pct": 12.85024154589372
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.3853851854801178,
+                "expected_distinct_modes": 2.7584540843963623
+              }
+            },
+            "stable": {
+              "n_samples": 604,
+              "native_top1_good_rate_pct": 39.23841059602649,
+              "static_top1_good_rate_pct": 22.8476821192053,
+              "learned3_good_rate_pct": 29.47019867549669,
+              "top3_union_good_rate_pct": 41.556291390728475,
+              "union_gain_pp_vs_native": 2.3178807947019875,
+              "venn_counts": {
+                "none_good": 353,
+                "native_only": 50,
+                "static_only": 11,
+                "learned_only": 3,
+                "native_and_static": 12,
+                "native_and_learned": 60,
+                "static_and_learned": 0,
+                "all_three_good": 115
+              },
+              "venn_fractions_pct": {
+                "none_good": 58.443708609271525,
+                "native_only": 8.27814569536424,
+                "static_only": 1.8211920529801324,
+                "learned_only": 0.49668874172185434,
+                "native_and_static": 1.9867549668874174,
+                "native_and_learned": 9.933774834437086,
+                "static_and_learned": 0.0,
+                "all_three_good": 19.039735099337747
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.49668874172185434,
+                "static_only_rescue_pct": 1.8211920529801324,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 2.3178807947019866
+              },
+              "quality_metrics": {
+                "native_ade": 0.3171900510787964,
+                "native_fde": 0.6724922060966492,
+                "top3_min_ade": 0.2756924629211426,
+                "top3_min_fde": 0.5808266997337341,
+                "ade_reduction_pct": 13.082878291606903,
+                "fde_reduction_pct": 13.630716502666473
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 58.443708609271525,
+                "1_of_3_pct": 10.596026490066226,
+                "2_of_3_pct": 11.920529801324504,
+                "3_of_3_pct": 19.039735099337747
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.38121679425239563,
+                "expected_distinct_modes": 2.7483444213867188
+              }
+            },
+            "transition": {
+              "n_samples": 178,
+              "native_top1_good_rate_pct": 12.921348314606742,
+              "static_top1_good_rate_pct": 10.674157303370785,
+              "learned3_good_rate_pct": 8.426966292134832,
+              "top3_union_good_rate_pct": 20.786516853932586,
+              "union_gain_pp_vs_native": 7.865168539325842,
+              "venn_counts": {
+                "none_good": 141,
+                "native_only": 10,
+                "static_only": 8,
+                "learned_only": 5,
+                "native_and_static": 4,
+                "native_and_learned": 3,
+                "static_and_learned": 1,
+                "all_three_good": 6
+              },
+              "venn_fractions_pct": {
+                "none_good": 79.21348314606742,
+                "native_only": 5.617977528089887,
+                "static_only": 4.49438202247191,
+                "learned_only": 2.8089887640449436,
+                "native_and_static": 2.247191011235955,
+                "native_and_learned": 1.6853932584269662,
+                "static_and_learned": 0.5617977528089888,
+                "all_three_good": 3.3707865168539324
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.8089887640449436,
+                "static_only_rescue_pct": 4.49438202247191,
+                "static_and_learned_rescue_pct": 0.5617977528089888,
+                "total_proposal_rescues_pct": 7.865168539325842
+              },
+              "quality_metrics": {
+                "native_ade": 0.5217956304550171,
+                "native_fde": 1.1322208642959595,
+                "top3_min_ade": 0.43260958790779114,
+                "top3_min_fde": 0.9200355410575867,
+                "ade_reduction_pct": 17.092140018939972,
+                "fde_reduction_pct": 18.74063014984131
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 79.21348314606742,
+                "1_of_3_pct": 12.921348314606742,
+                "2_of_3_pct": 4.49438202247191,
+                "3_of_3_pct": 3.3707865168539324
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.4434533417224884,
+                "expected_distinct_modes": 2.8876404762268066
+              }
+            },
+            "change": {
+              "n_samples": 253,
+              "native_top1_good_rate_pct": 10.276679841897234,
+              "static_top1_good_rate_pct": 6.719367588932807,
+              "learned3_good_rate_pct": 14.624505928853754,
+              "top3_union_good_rate_pct": 17.391304347826086,
+              "union_gain_pp_vs_native": 7.114624505928853,
+              "venn_counts": {
+                "none_good": 209,
+                "native_only": 3,
+                "static_only": 1,
+                "learned_only": 16,
+                "native_and_static": 3,
+                "native_and_learned": 8,
+                "static_and_learned": 1,
+                "all_three_good": 12
+              },
+              "venn_fractions_pct": {
+                "none_good": 82.6086956521739,
+                "native_only": 1.185770750988142,
+                "static_only": 0.3952569169960474,
+                "learned_only": 6.324110671936759,
+                "native_and_static": 1.185770750988142,
+                "native_and_learned": 3.1620553359683794,
+                "static_and_learned": 0.3952569169960474,
+                "all_three_good": 4.743083003952568
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 6.324110671936759,
+                "static_only_rescue_pct": 0.3952569169960474,
+                "static_and_learned_rescue_pct": 0.3952569169960474,
+                "total_proposal_rescues_pct": 7.114624505928854
+              },
+              "quality_metrics": {
+                "native_ade": 0.6515868306159973,
+                "native_fde": 1.447842001914978,
+                "top3_min_ade": 0.5403069257736206,
+                "top3_min_fde": 1.1718283891677856,
+                "ade_reduction_pct": 17.07829236984253,
+                "fde_reduction_pct": 19.063793122768402
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 82.6086956521739,
+                "1_of_3_pct": 7.905138339920949,
+                "2_of_3_pct": 4.743083003952568,
+                "3_of_3_pct": 4.743083003952568
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.35448217391967773,
+                "expected_distinct_modes": 2.691699504852295
+              }
+            }
+          }
+        },
+        "seed_44": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 1035,
+              "native_top1_good_rate_pct": 27.632850241545892,
+              "static_top1_good_rate_pct": 16.81159420289855,
+              "learned3_good_rate_pct": 23.091787439613526,
+              "top3_union_good_rate_pct": 32.463768115942024,
+              "union_gain_pp_vs_native": 4.8309178743961345,
+              "venn_counts": {
+                "none_good": 699,
+                "native_only": 61,
+                "static_only": 19,
+                "learned_only": 28,
+                "native_and_static": 17,
+                "native_and_learned": 73,
+                "static_and_learned": 3,
+                "all_three_good": 135
+              },
+              "venn_fractions_pct": {
+                "none_good": 67.53623188405797,
+                "native_only": 5.8937198067632846,
+                "static_only": 1.8357487922705313,
+                "learned_only": 2.7053140096618358,
+                "native_and_static": 1.6425120772946862,
+                "native_and_learned": 7.053140096618357,
+                "static_and_learned": 0.2898550724637681,
+                "all_three_good": 13.043478260869565
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.7053140096618358,
+                "static_only_rescue_pct": 1.8357487922705313,
+                "static_and_learned_rescue_pct": 0.2898550724637681,
+                "total_proposal_rescues_pct": 4.830917874396135
+              },
+              "quality_metrics": {
+                "native_ade": 0.43411967158317566,
+                "native_fde": 0.9410865902900696,
+                "top3_min_ade": 0.3654482066631317,
+                "top3_min_fde": 0.7786737680435181,
+                "ade_reduction_pct": 15.818555653095245,
+                "fde_reduction_pct": 17.258010804653168
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 67.53623188405797,
+                "1_of_3_pct": 10.434782608695652,
+                "2_of_3_pct": 8.985507246376812,
+                "3_of_3_pct": 13.043478260869565
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.4047224521636963,
+                "expected_distinct_modes": 2.8038647174835205
+              }
+            },
+            "stable": {
+              "n_samples": 604,
+              "native_top1_good_rate_pct": 39.23841059602649,
+              "static_top1_good_rate_pct": 22.8476821192053,
+              "learned3_good_rate_pct": 30.4635761589404,
+              "top3_union_good_rate_pct": 42.05298013245033,
+              "union_gain_pp_vs_native": 2.814569536423839,
+              "venn_counts": {
+                "none_good": 350,
+                "native_only": 47,
+                "static_only": 11,
+                "learned_only": 6,
+                "native_and_static": 12,
+                "native_and_learned": 63,
+                "static_and_learned": 0,
+                "all_three_good": 115
+              },
+              "venn_fractions_pct": {
+                "none_good": 57.94701986754966,
+                "native_only": 7.781456953642383,
+                "static_only": 1.8211920529801324,
+                "learned_only": 0.9933774834437087,
+                "native_and_static": 1.9867549668874174,
+                "native_and_learned": 10.43046357615894,
+                "static_and_learned": 0.0,
+                "all_three_good": 19.039735099337747
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.9933774834437087,
+                "static_only_rescue_pct": 1.8211920529801324,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 2.814569536423841
+              },
+              "quality_metrics": {
+                "native_ade": 0.3171900510787964,
+                "native_fde": 0.6724922060966492,
+                "top3_min_ade": 0.27368444204330444,
+                "top3_min_fde": 0.5760701298713684,
+                "ade_reduction_pct": 13.715943694114685,
+                "fde_reduction_pct": 14.338020980358124
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 57.94701986754966,
+                "1_of_3_pct": 10.596026490066226,
+                "2_of_3_pct": 12.417218543046356,
+                "3_of_3_pct": 19.039735099337747
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.40310677886009216,
+                "expected_distinct_modes": 2.8245034217834473
+              }
+            },
+            "transition": {
+              "n_samples": 178,
+              "native_top1_good_rate_pct": 12.921348314606742,
+              "static_top1_good_rate_pct": 10.674157303370785,
+              "learned3_good_rate_pct": 8.426966292134832,
+              "top3_union_good_rate_pct": 20.224719101123593,
+              "union_gain_pp_vs_native": 7.303370786516853,
+              "venn_counts": {
+                "none_good": 142,
+                "native_only": 10,
+                "static_only": 8,
+                "learned_only": 4,
+                "native_and_static": 3,
+                "native_and_learned": 3,
+                "static_and_learned": 1,
+                "all_three_good": 7
+              },
+              "venn_fractions_pct": {
+                "none_good": 79.7752808988764,
+                "native_only": 5.617977528089887,
+                "static_only": 4.49438202247191,
+                "learned_only": 2.247191011235955,
+                "native_and_static": 1.6853932584269662,
+                "native_and_learned": 1.6853932584269662,
+                "static_and_learned": 0.5617977528089888,
+                "all_three_good": 3.932584269662921
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.247191011235955,
+                "static_only_rescue_pct": 4.49438202247191,
+                "static_and_learned_rescue_pct": 0.5617977528089888,
+                "total_proposal_rescues_pct": 7.303370786516854
+              },
+              "quality_metrics": {
+                "native_ade": 0.5217956304550171,
+                "native_fde": 1.1322208642959595,
+                "top3_min_ade": 0.43370768427848816,
+                "top3_min_fde": 0.9249966144561768,
+                "ade_reduction_pct": 16.88169538974762,
+                "fde_reduction_pct": 18.30245852470398
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 79.7752808988764,
+                "1_of_3_pct": 12.359550561797752,
+                "2_of_3_pct": 3.932584269662921,
+                "3_of_3_pct": 3.932584269662921
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.4660813808441162,
+                "expected_distinct_modes": 2.8820223808288574
+              }
+            },
+            "change": {
+              "n_samples": 253,
+              "native_top1_good_rate_pct": 10.276679841897234,
+              "static_top1_good_rate_pct": 6.719367588932807,
+              "learned3_good_rate_pct": 15.810276679841898,
+              "top3_union_good_rate_pct": 18.181818181818183,
+              "union_gain_pp_vs_native": 7.905138339920949,
+              "venn_counts": {
+                "none_good": 207,
+                "native_only": 4,
+                "static_only": 0,
+                "learned_only": 18,
+                "native_and_static": 2,
+                "native_and_learned": 7,
+                "static_and_learned": 2,
+                "all_three_good": 13
+              },
+              "venn_fractions_pct": {
+                "none_good": 81.81818181818183,
+                "native_only": 1.5810276679841897,
+                "static_only": 0.0,
+                "learned_only": 7.114624505928854,
+                "native_and_static": 0.7905138339920948,
+                "native_and_learned": 2.766798418972332,
+                "static_and_learned": 0.7905138339920948,
+                "all_three_good": 5.138339920948617
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 7.114624505928854,
+                "static_only_rescue_pct": 0.0,
+                "static_and_learned_rescue_pct": 0.7905138339920948,
+                "total_proposal_rescues_pct": 7.905138339920949
+              },
+              "quality_metrics": {
+                "native_ade": 0.6515868306159973,
+                "native_fde": 1.447842001914978,
+                "top3_min_ade": 0.536496102809906,
+                "top3_min_fde": 1.1594135761260986,
+                "ade_reduction_pct": 17.663145065307617,
+                "fde_reduction_pct": 19.921264052391052
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 81.81818181818183,
+                "1_of_3_pct": 8.695652173913043,
+                "2_of_3_pct": 4.3478260869565215,
+                "3_of_3_pct": 5.138339920948617
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.3654099702835083,
+                "expected_distinct_modes": 2.6996047496795654
+              }
+            }
+          }
+        }
+      },
+      "macro": {}
+    },
+    "recording_time": {
+      "seeds": {
+        "seed_42": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 566,
+              "native_top1_good_rate_pct": 24.91166077738516,
+              "static_top1_good_rate_pct": 12.190812720848058,
+              "learned3_good_rate_pct": 21.37809187279152,
+              "top3_union_good_rate_pct": 29.858657243816257,
+              "union_gain_pp_vs_native": 4.946996466431097,
+              "venn_counts": {
+                "none_good": 397,
+                "native_only": 22,
+                "static_only": 12,
+                "learned_only": 14,
+                "native_and_static": 14,
+                "native_and_learned": 64,
+                "static_and_learned": 2,
+                "all_three_good": 41
+              },
+              "venn_fractions_pct": {
+                "none_good": 70.14134275618375,
+                "native_only": 3.8869257950530036,
+                "static_only": 2.1201413427561837,
+                "learned_only": 2.4734982332155475,
+                "native_and_static": 2.4734982332155475,
+                "native_and_learned": 11.307420494699647,
+                "static_and_learned": 0.35335689045936397,
+                "all_three_good": 7.243816254416961
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.4734982332155475,
+                "static_only_rescue_pct": 2.1201413427561837,
+                "static_and_learned_rescue_pct": 0.35335689045936397,
+                "total_proposal_rescues_pct": 4.946996466431095
+              },
+              "quality_metrics": {
+                "native_ade": 0.47222399711608887,
+                "native_fde": 1.0398664474487305,
+                "top3_min_ade": 0.39699265360832214,
+                "top3_min_fde": 0.8605462908744812,
+                "ade_reduction_pct": 15.931282937526703,
+                "fde_reduction_pct": 17.24453717470169
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 70.14134275618375,
+                "1_of_3_pct": 8.480565371024735,
+                "2_of_3_pct": 14.13427561837456,
+                "3_of_3_pct": 7.243816254416961
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.38847973942756653,
+                "expected_distinct_modes": 2.7508833408355713
+              }
+            },
+            "stable": {
+              "n_samples": 306,
+              "native_top1_good_rate_pct": 34.64052287581699,
+              "static_top1_good_rate_pct": 15.686274509803921,
+              "learned3_good_rate_pct": 31.045751633986928,
+              "top3_union_good_rate_pct": 39.54248366013072,
+              "union_gain_pp_vs_native": 4.901960784313725,
+              "venn_counts": {
+                "none_good": 185,
+                "native_only": 13,
+                "static_only": 9,
+                "learned_only": 5,
+                "native_and_static": 4,
+                "native_and_learned": 55,
+                "static_and_learned": 1,
+                "all_three_good": 34
+              },
+              "venn_fractions_pct": {
+                "none_good": 60.45751633986928,
+                "native_only": 4.248366013071895,
+                "static_only": 2.941176470588235,
+                "learned_only": 1.6339869281045754,
+                "native_and_static": 1.3071895424836601,
+                "native_and_learned": 17.973856209150327,
+                "static_and_learned": 0.32679738562091504,
+                "all_three_good": 11.11111111111111
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 1.6339869281045754,
+                "static_only_rescue_pct": 2.941176470588235,
+                "static_and_learned_rescue_pct": 0.32679738562091504,
+                "total_proposal_rescues_pct": 4.901960784313726
+              },
+              "quality_metrics": {
+                "native_ade": 0.3650205135345459,
+                "native_fde": 0.7991077303886414,
+                "top3_min_ade": 0.3008115589618683,
+                "top3_min_fde": 0.657277524471283,
+                "ade_reduction_pct": 17.590506374835968,
+                "fde_reduction_pct": 17.748571932315826
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 60.45751633986928,
+                "1_of_3_pct": 8.823529411764707,
+                "2_of_3_pct": 19.607843137254903,
+                "3_of_3_pct": 11.11111111111111
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.4081556499004364,
+                "expected_distinct_modes": 2.7124183177948
+              }
+            },
+            "transition": {
+              "n_samples": 118,
+              "native_top1_good_rate_pct": 20.33898305084746,
+              "static_top1_good_rate_pct": 14.40677966101695,
+              "learned3_good_rate_pct": 10.16949152542373,
+              "top3_union_good_rate_pct": 23.728813559322035,
+              "union_gain_pp_vs_native": 3.3898305084745757,
+              "venn_counts": {
+                "none_good": 90,
+                "native_only": 5,
+                "static_only": 2,
+                "learned_only": 1,
+                "native_and_static": 9,
+                "native_and_learned": 5,
+                "static_and_learned": 1,
+                "all_three_good": 5
+              },
+              "venn_fractions_pct": {
+                "none_good": 76.27118644067797,
+                "native_only": 4.23728813559322,
+                "static_only": 1.694915254237288,
+                "learned_only": 0.847457627118644,
+                "native_and_static": 7.627118644067797,
+                "native_and_learned": 4.23728813559322,
+                "static_and_learned": 0.847457627118644,
+                "all_three_good": 4.23728813559322
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 0.847457627118644,
+                "static_only_rescue_pct": 1.694915254237288,
+                "static_and_learned_rescue_pct": 0.847457627118644,
+                "total_proposal_rescues_pct": 3.389830508474576
+              },
+              "quality_metrics": {
+                "native_ade": 0.5332895517349243,
+                "native_fde": 1.1366496086120605,
+                "top3_min_ade": 0.4526766240596771,
+                "top3_min_fde": 0.9483553171157837,
+                "ade_reduction_pct": 15.116164088249207,
+                "fde_reduction_pct": 16.565728187561035
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 76.27118644067797,
+                "1_of_3_pct": 6.779661016949152,
+                "2_of_3_pct": 12.711864406779661,
+                "3_of_3_pct": 4.23728813559322
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.41738930344581604,
+                "expected_distinct_modes": 2.8983051776885986
+              }
+            },
+            "change": {
+              "n_samples": 142,
+              "native_top1_good_rate_pct": 7.746478873239436,
+              "static_top1_good_rate_pct": 2.8169014084507045,
+              "learned3_good_rate_pct": 9.859154929577464,
+              "top3_union_good_rate_pct": 14.084507042253522,
+              "union_gain_pp_vs_native": 6.338028169014086,
+              "venn_counts": {
+                "none_good": 122,
+                "native_only": 4,
+                "static_only": 1,
+                "learned_only": 8,
+                "native_and_static": 1,
+                "native_and_learned": 4,
+                "static_and_learned": 0,
+                "all_three_good": 2
+              },
+              "venn_fractions_pct": {
+                "none_good": 85.91549295774648,
+                "native_only": 2.8169014084507045,
+                "static_only": 0.7042253521126761,
+                "learned_only": 5.633802816901409,
+                "native_and_static": 0.7042253521126761,
+                "native_and_learned": 2.8169014084507045,
+                "static_and_learned": 0.0,
+                "all_three_good": 1.4084507042253522
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 5.633802816901409,
+                "static_only_rescue_pct": 0.7042253521126761,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 6.338028169014084
+              },
+              "quality_metrics": {
+                "native_ade": 0.652495265007019,
+                "native_fde": 1.4782590866088867,
+                "top3_min_ade": 0.5579835176467896,
+                "top3_min_fde": 1.2256078720092773,
+                "ade_reduction_pct": 14.484664797782898,
+                "fde_reduction_pct": 17.091132700443268
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 85.91549295774648,
+                "1_of_3_pct": 9.15492957746479,
+                "2_of_3_pct": 3.5211267605633805,
+                "3_of_3_pct": 1.4084507042253522
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.32205602526664734,
+                "expected_distinct_modes": 2.7112677097320557
+              }
+            }
+          }
+        },
+        "seed_43": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 566,
+              "native_top1_good_rate_pct": 24.91166077738516,
+              "static_top1_good_rate_pct": 12.190812720848058,
+              "learned3_good_rate_pct": 21.73144876325088,
+              "top3_union_good_rate_pct": 30.3886925795053,
+              "union_gain_pp_vs_native": 5.477031802120141,
+              "venn_counts": {
+                "none_good": 394,
+                "native_only": 22,
+                "static_only": 13,
+                "learned_only": 17,
+                "native_and_static": 14,
+                "native_and_learned": 64,
+                "static_and_learned": 1,
+                "all_three_good": 41
+              },
+              "venn_fractions_pct": {
+                "none_good": 69.6113074204947,
+                "native_only": 3.8869257950530036,
+                "static_only": 2.2968197879858656,
+                "learned_only": 3.0035335689045937,
+                "native_and_static": 2.4734982332155475,
+                "native_and_learned": 11.307420494699647,
+                "static_and_learned": 0.17667844522968199,
+                "all_three_good": 7.243816254416961
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 3.0035335689045937,
+                "static_only_rescue_pct": 2.2968197879858656,
+                "static_and_learned_rescue_pct": 0.17667844522968199,
+                "total_proposal_rescues_pct": 5.477031802120141
+              },
+              "quality_metrics": {
+                "native_ade": 0.47222399711608887,
+                "native_fde": 1.0398664474487305,
+                "top3_min_ade": 0.39799559116363525,
+                "top3_min_fde": 0.861394464969635,
+                "ade_reduction_pct": 15.718898177146912,
+                "fde_reduction_pct": 17.162971198558807
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 69.6113074204947,
+                "1_of_3_pct": 9.187279151943462,
+                "2_of_3_pct": 13.957597173144876,
+                "3_of_3_pct": 7.243816254416961
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.3914514482021332,
+                "expected_distinct_modes": 2.8197879791259766
+              }
+            },
+            "stable": {
+              "n_samples": 306,
+              "native_top1_good_rate_pct": 34.64052287581699,
+              "static_top1_good_rate_pct": 15.686274509803921,
+              "learned3_good_rate_pct": 31.045751633986928,
+              "top3_union_good_rate_pct": 39.54248366013072,
+              "union_gain_pp_vs_native": 4.901960784313725,
+              "venn_counts": {
+                "none_good": 185,
+                "native_only": 13,
+                "static_only": 9,
+                "learned_only": 5,
+                "native_and_static": 4,
+                "native_and_learned": 55,
+                "static_and_learned": 1,
+                "all_three_good": 34
+              },
+              "venn_fractions_pct": {
+                "none_good": 60.45751633986928,
+                "native_only": 4.248366013071895,
+                "static_only": 2.941176470588235,
+                "learned_only": 1.6339869281045754,
+                "native_and_static": 1.3071895424836601,
+                "native_and_learned": 17.973856209150327,
+                "static_and_learned": 0.32679738562091504,
+                "all_three_good": 11.11111111111111
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 1.6339869281045754,
+                "static_only_rescue_pct": 2.941176470588235,
+                "static_and_learned_rescue_pct": 0.32679738562091504,
+                "total_proposal_rescues_pct": 4.901960784313726
+              },
+              "quality_metrics": {
+                "native_ade": 0.3650205135345459,
+                "native_fde": 0.7991077303886414,
+                "top3_min_ade": 0.29966869950294495,
+                "top3_min_fde": 0.652797281742096,
+                "ade_reduction_pct": 17.90360063314438,
+                "fde_reduction_pct": 18.309226632118225
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 60.45751633986928,
+                "1_of_3_pct": 8.823529411764707,
+                "2_of_3_pct": 19.607843137254903,
+                "3_of_3_pct": 11.11111111111111
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.42009270191192627,
+                "expected_distinct_modes": 2.813725471496582
+              }
+            },
+            "transition": {
+              "n_samples": 118,
+              "native_top1_good_rate_pct": 20.33898305084746,
+              "static_top1_good_rate_pct": 14.40677966101695,
+              "learned3_good_rate_pct": 11.016949152542372,
+              "top3_union_good_rate_pct": 24.576271186440678,
+              "union_gain_pp_vs_native": 4.23728813559322,
+              "venn_counts": {
+                "none_good": 89,
+                "native_only": 4,
+                "static_only": 3,
+                "learned_only": 2,
+                "native_and_static": 9,
+                "native_and_learned": 6,
+                "static_and_learned": 0,
+                "all_three_good": 5
+              },
+              "venn_fractions_pct": {
+                "none_good": 75.42372881355932,
+                "native_only": 3.389830508474576,
+                "static_only": 2.5423728813559325,
+                "learned_only": 1.694915254237288,
+                "native_and_static": 7.627118644067797,
+                "native_and_learned": 5.084745762711865,
+                "static_and_learned": 0.0,
+                "all_three_good": 4.23728813559322
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 1.694915254237288,
+                "static_only_rescue_pct": 2.5423728813559325,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 4.23728813559322
+              },
+              "quality_metrics": {
+                "native_ade": 0.5332895517349243,
+                "native_fde": 1.1366496086120605,
+                "top3_min_ade": 0.45086753368377686,
+                "top3_min_fde": 0.948445737361908,
+                "ade_reduction_pct": 15.455396473407745,
+                "fde_reduction_pct": 16.55777394771576
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 75.42372881355932,
+                "1_of_3_pct": 7.627118644067797,
+                "2_of_3_pct": 12.711864406779661,
+                "3_of_3_pct": 4.23728813559322
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.4089846611022949,
+                "expected_distinct_modes": 2.8983051776885986
+              }
+            },
+            "change": {
+              "n_samples": 142,
+              "native_top1_good_rate_pct": 7.746478873239436,
+              "static_top1_good_rate_pct": 2.8169014084507045,
+              "learned3_good_rate_pct": 10.56338028169014,
+              "top3_union_good_rate_pct": 15.492957746478872,
+              "union_gain_pp_vs_native": 7.746478873239436,
+              "venn_counts": {
+                "none_good": 120,
+                "native_only": 5,
+                "static_only": 1,
+                "learned_only": 10,
+                "native_and_static": 1,
+                "native_and_learned": 3,
+                "static_and_learned": 0,
+                "all_three_good": 2
+              },
+              "venn_fractions_pct": {
+                "none_good": 84.50704225352112,
+                "native_only": 3.5211267605633805,
+                "static_only": 0.7042253521126761,
+                "learned_only": 7.042253521126761,
+                "native_and_static": 0.7042253521126761,
+                "native_and_learned": 2.112676056338028,
+                "static_and_learned": 0.0,
+                "all_three_good": 1.4084507042253522
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 7.042253521126761,
+                "static_only_rescue_pct": 0.7042253521126761,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 7.746478873239436
+              },
+              "quality_metrics": {
+                "native_ade": 0.652495265007019,
+                "native_fde": 1.4782590866088867,
+                "top3_min_ade": 0.5659472942352295,
+                "top3_min_fde": 1.2385681867599487,
+                "ade_reduction_pct": 13.26415240764618,
+                "fde_reduction_pct": 16.21440351009369
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 84.50704225352112,
+                "1_of_3_pct": 11.267605633802818,
+                "2_of_3_pct": 2.8169014084507045,
+                "3_of_3_pct": 1.4084507042253522
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.31516173481941223,
+                "expected_distinct_modes": 2.7676055431365967
+              }
+            }
+          }
+        },
+        "seed_44": {
+          "subgroups": {
+            "overall": {
+              "n_samples": 566,
+              "native_top1_good_rate_pct": 24.91166077738516,
+              "static_top1_good_rate_pct": 12.190812720848058,
+              "learned3_good_rate_pct": 21.554770318021202,
+              "top3_union_good_rate_pct": 30.03533568904594,
+              "union_gain_pp_vs_native": 5.12367491166078,
+              "venn_counts": {
+                "none_good": 396,
+                "native_only": 23,
+                "static_only": 12,
+                "learned_only": 15,
+                "native_and_static": 13,
+                "native_and_learned": 63,
+                "static_and_learned": 2,
+                "all_three_good": 42
+              },
+              "venn_fractions_pct": {
+                "none_good": 69.96466431095406,
+                "native_only": 4.063604240282685,
+                "static_only": 2.1201413427561837,
+                "learned_only": 2.65017667844523,
+                "native_and_static": 2.2968197879858656,
+                "native_and_learned": 11.130742049469964,
+                "static_and_learned": 0.35335689045936397,
+                "all_three_good": 7.420494699646643
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.65017667844523,
+                "static_only_rescue_pct": 2.1201413427561837,
+                "static_and_learned_rescue_pct": 0.35335689045936397,
+                "total_proposal_rescues_pct": 5.123674911660777
+              },
+              "quality_metrics": {
+                "native_ade": 0.47222399711608887,
+                "native_fde": 1.0398664474487305,
+                "top3_min_ade": 0.398271769285202,
+                "top3_min_fde": 0.8629946112632751,
+                "ade_reduction_pct": 15.660412609577179,
+                "fde_reduction_pct": 17.0090913772583
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 69.96466431095406,
+                "1_of_3_pct": 8.8339222614841,
+                "2_of_3_pct": 13.780918727915195,
+                "3_of_3_pct": 7.420494699646643
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.3945775330066681,
+                "expected_distinct_modes": 2.7738516330718994
+              }
+            },
+            "stable": {
+              "n_samples": 306,
+              "native_top1_good_rate_pct": 34.64052287581699,
+              "static_top1_good_rate_pct": 15.686274509803921,
+              "learned3_good_rate_pct": 30.392156862745097,
+              "top3_union_good_rate_pct": 39.21568627450981,
+              "union_gain_pp_vs_native": 4.575163398692811,
+              "venn_counts": {
+                "none_good": 186,
+                "native_only": 14,
+                "static_only": 9,
+                "learned_only": 4,
+                "native_and_static": 4,
+                "native_and_learned": 54,
+                "static_and_learned": 1,
+                "all_three_good": 34
+              },
+              "venn_fractions_pct": {
+                "none_good": 60.78431372549019,
+                "native_only": 4.57516339869281,
+                "static_only": 2.941176470588235,
+                "learned_only": 1.3071895424836601,
+                "native_and_static": 1.3071895424836601,
+                "native_and_learned": 17.647058823529413,
+                "static_and_learned": 0.32679738562091504,
+                "all_three_good": 11.11111111111111
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 1.3071895424836601,
+                "static_only_rescue_pct": 2.941176470588235,
+                "static_and_learned_rescue_pct": 0.32679738562091504,
+                "total_proposal_rescues_pct": 4.57516339869281
+              },
+              "quality_metrics": {
+                "native_ade": 0.3650205135345459,
+                "native_fde": 0.7991077303886414,
+                "top3_min_ade": 0.30157721042633057,
+                "top3_min_fde": 0.6592754125595093,
+                "ade_reduction_pct": 17.38075017929077,
+                "fde_reduction_pct": 17.498555779457092
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 60.78431372549019,
+                "1_of_3_pct": 8.823529411764707,
+                "2_of_3_pct": 19.28104575163399,
+                "3_of_3_pct": 11.11111111111111
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.42506858706474304,
+                "expected_distinct_modes": 2.754901885986328
+              }
+            },
+            "transition": {
+              "n_samples": 118,
+              "native_top1_good_rate_pct": 20.33898305084746,
+              "static_top1_good_rate_pct": 14.40677966101695,
+              "learned3_good_rate_pct": 13.559322033898304,
+              "top3_union_good_rate_pct": 25.423728813559322,
+              "union_gain_pp_vs_native": 5.0847457627118615,
+              "venn_counts": {
+                "none_good": 88,
+                "native_only": 4,
+                "static_only": 2,
+                "learned_only": 3,
+                "native_and_static": 8,
+                "native_and_learned": 6,
+                "static_and_learned": 1,
+                "all_three_good": 6
+              },
+              "venn_fractions_pct": {
+                "none_good": 74.57627118644068,
+                "native_only": 3.389830508474576,
+                "static_only": 1.694915254237288,
+                "learned_only": 2.5423728813559325,
+                "native_and_static": 6.779661016949152,
+                "native_and_learned": 5.084745762711865,
+                "static_and_learned": 0.847457627118644,
+                "all_three_good": 5.084745762711865
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 2.5423728813559325,
+                "static_only_rescue_pct": 1.694915254237288,
+                "static_and_learned_rescue_pct": 0.847457627118644,
+                "total_proposal_rescues_pct": 5.084745762711865
+              },
+              "quality_metrics": {
+                "native_ade": 0.5332895517349243,
+                "native_fde": 1.1366496086120605,
+                "top3_min_ade": 0.4489240050315857,
+                "top3_min_fde": 0.9359647631645203,
+                "ade_reduction_pct": 15.819838643074036,
+                "fde_reduction_pct": 17.65582263469696
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 74.57627118644068,
+                "1_of_3_pct": 7.627118644067797,
+                "2_of_3_pct": 12.711864406779661,
+                "3_of_3_pct": 5.084745762711865
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.4069875478744507,
+                "expected_distinct_modes": 2.8983051776885986
+              }
+            },
+            "change": {
+              "n_samples": 142,
+              "native_top1_good_rate_pct": 7.746478873239436,
+              "static_top1_good_rate_pct": 2.8169014084507045,
+              "learned3_good_rate_pct": 9.15492957746479,
+              "top3_union_good_rate_pct": 14.084507042253522,
+              "union_gain_pp_vs_native": 6.338028169014086,
+              "venn_counts": {
+                "none_good": 122,
+                "native_only": 5,
+                "static_only": 1,
+                "learned_only": 8,
+                "native_and_static": 1,
+                "native_and_learned": 3,
+                "static_and_learned": 0,
+                "all_three_good": 2
+              },
+              "venn_fractions_pct": {
+                "none_good": 85.91549295774648,
+                "native_only": 3.5211267605633805,
+                "static_only": 0.7042253521126761,
+                "learned_only": 5.633802816901409,
+                "native_and_static": 0.7042253521126761,
+                "native_and_learned": 2.112676056338028,
+                "static_and_learned": 0.0,
+                "all_three_good": 1.4084507042253522
+              },
+              "net_rescues": {
+                "learned_only_rescue_pct": 5.633802816901409,
+                "static_only_rescue_pct": 0.7042253521126761,
+                "static_and_learned_rescue_pct": 0.0,
+                "total_proposal_rescues_pct": 6.338028169014084
+              },
+              "quality_metrics": {
+                "native_ade": 0.652495265007019,
+                "native_fde": 1.4782590866088867,
+                "top3_min_ade": 0.5645503997802734,
+                "top3_min_fde": 1.2413579225540161,
+                "ade_reduction_pct": 13.478237390518188,
+                "fde_reduction_pct": 16.025686264038086
+              },
+              "good_trajectories_distribution": {
+                "0_of_3_pct": 85.91549295774648,
+                "1_of_3_pct": 9.859154929577464,
+                "2_of_3_pct": 2.8169014084507045,
+                "3_of_3_pct": 1.4084507042253522
+              },
+              "diversity": {
+                "mean_pairwise_dist_m": 0.318558931350708,
+                "expected_distinct_modes": 2.7112677097320557
+              }
+            }
+          }
+        }
+      },
+      "macro": {}
+    }
+  },
+  "macro": {
+    "overall": {
+      "native_good_pct": 30.925044138490577,
+      "static_good_pct": 15.56112688617733,
+      "learned_good_pct": 24.981379803418783,
+      "top3_good_pct": 34.952728707479224,
+      "top3_gain_pp": 4.027684568988653,
+      "net_rescues": {
+        "learned_only_pp": 2.0889277090912133,
+        "static_only_pp": 1.7227468906976249,
+        "shared_static_learned_pp": 0.2160099691998149,
+        "total_rescues_pp": 4.0276845689886525
+      },
+      "quality": {
+        "native_ade": 0.41920535763104755,
+        "top3_min_ade": 0.35424497723579407,
+        "ade_reduction_pct": 15.441779130034977
+      },
+      "good_trajectories_distribution": {
+        "0_of_3_pct": 65.04727129252076,
+        "1_of_3_pct": 10.515602704461136,
+        "2_of_3_pct": 12.359429885428726,
+        "3_of_3_pct": 12.077696117589369
+      },
+      "diversity": {
+        "mean_pairwise_dist_m": 0.40876747502221,
+        "expected_distinct_modes": 2.770944701300727
+      }
+    },
+    "stable": {
+      "native_good_pct": 40.25980762275153,
+      "static_good_pct": 19.39712638041471,
+      "learned_good_pct": 31.710282645549203,
+      "top3_good_pct": 42.98437388432481,
+      "top3_gain_pp": 2.7245662615732766,
+      "net_rescues": {
+        "learned_only_pp": 0.783479419630357,
+        "static_only_pp": 1.8321543800692817,
+        "shared_static_learned_pp": 0.10893246187363835,
+        "total_rescues_pp": 2.7245662615732775
+      },
+      "quality": {
+        "native_ade": 0.3158539632956187,
+        "top3_min_ade": 0.2729535698890686,
+        "ade_reduction_pct": 13.077728781435225
+      },
+      "good_trajectories_distribution": {
+        "0_of_3_pct": 57.01562611567519,
+        "1_of_3_pct": 10.878023086766767,
+        "2_of_3_pct": 15.829858830725438,
+        "3_of_3_pct": 16.2764919668326
+      },
+      "diversity": {
+        "mean_pairwise_dist_m": 0.41860486070315045,
+        "expected_distinct_modes": 2.7633799976772733
+      }
+    },
+    "transition": {
+      "native_good_pct": 15.925486799237424,
+      "static_good_pct": 12.661387590279782,
+      "learned_good_pct": 9.985041251743139,
+      "top3_good_pct": 20.999669631113104,
+      "top3_gain_pp": 5.074182831875681,
+      "net_rescues": {
+        "learned_only_pp": 1.7348803334268468,
+        "static_only_pp": 2.9637126637083635,
+        "shared_static_learned_pp": 0.3755898347404727,
+        "total_rescues_pp": 5.0741828318756825
+      },
+      "quality": {
+        "native_ade": 0.5439938902854919,
+        "top3_min_ade": 0.4425663782490624,
+        "ade_reduction_pct": 18.525468475288815
+      },
+      "good_trajectories_distribution": {
+        "0_of_3_pct": 79.00033036888688,
+        "1_of_3_pct": 8.601809247461993,
+        "2_of_3_pct": 7.223474757154978,
+        "3_of_3_pct": 5.1743856264961305
+      },
+      "diversity": {
+        "mean_pairwise_dist_m": 0.4505527681774563,
+        "expected_distinct_modes": 2.8784692817264133
+      }
+    },
+    "change": {
+      "native_good_pct": 11.53694548008505,
+      "static_good_pct": 6.180336111292133,
+      "learned_good_pct": 15.674015662116533,
+      "top3_good_pct": 19.69708842443292,
+      "top3_gain_pp": 8.160142944347864,
+      "net_rescues": {
+        "learned_only_pp": 6.5560513673050425,
+        "static_only_pp": 1.1124660699629572,
+        "shared_static_learned_pp": 0.4916255070798652,
+        "total_rescues_pp": 8.160142944347864
+      },
+      "quality": {
+        "native_ade": 0.6739994684855143,
+        "top3_min_ade": 0.5452775028016832,
+        "ade_reduction_pct": 18.885128862328
+      },
+      "good_trajectories_distribution": {
+        "0_of_3_pct": 80.30291157556707,
+        "1_of_3_pct": 9.87898241593502,
+        "2_of_3_pct": 5.942003187934991,
+        "3_of_3_pct": 3.876102820562905
+      },
+      "diversity": {
+        "mean_pairwise_dist_m": 0.35247191455629134,
+        "expected_distinct_modes": 2.7088654571109347
+      }
+    }
+  }
+}

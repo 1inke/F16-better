@@ -1,0 +1,35 @@
+{
+  "stage": "05B_REPRESENTATION",
+  "audit_timestamp": "2026-10-07T02:49:45+08:00",
+  "formulas_checked": {
+    "base_outer_good_rate": {
+      "expression": "628 / 1561",
+      "expected": 0.4023062,
+      "reported": 0.4023062,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "good_rate_gain_vs_base": {
+      "expression": "38.2020 - 40.2306",
+      "expected": -2.0286,
+      "reported": -2.0286,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "selected_ade_diff": {
+      "expression": "0.3701 - 0.3513",
+      "expected": 0.0188,
+      "reported": 0.0188,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "positive_seeds_count": {
+      "expression": "sum([good_rate[s] > base_good_rate for s in [1, 2, 3]])",
+      "expected": 0,
+      "reported": 0,
+      "diff": 0,
+      "status": "PASS"
+    }
+  },
+  "audit_status": "PASS"
+}

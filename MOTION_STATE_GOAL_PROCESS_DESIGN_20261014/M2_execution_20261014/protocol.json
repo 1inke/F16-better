@@ -1,0 +1,288 @@
+{
+  "version": "1.0",
+  "status_at_registration": "DESIGN_IMPLEMENTATION_PENDING",
+  "registered_at": "2026-10-14T19:42:00+08:00",
+  "human_authority": "按目录逐步开始实验; series execution authority; M1 budget exception NOT inherited",
+  "design_sources": [
+    "../COMMON_PROTOCOL.md",
+    "../M2_JOINT_GOAL_PROCESS.md",
+    "../M1_execution_20261014/RESULT_ANALYSIS.md",
+    "../M1_execution_20261014/completion_review/REVIEW.json"
+  ],
+  "parent_selection": {
+    "M1_S1": false,
+    "rule": "existing_G1_all3",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "forbidden": [
+      "pick_M1_seed44",
+      "use_M1_A",
+      "choose_by_CAL",
+      "retrain_G1"
+    ],
+    "parent_contracts_must_be_bound_by_actual_SHA_before_preflight": true
+  },
+  "arms": {
+    "frozen_goal": {
+      "context_query_stats_centres": "frozen",
+      "goal_head": "frozen_no_grad",
+      "process": "trainable"
+    },
+    "joint_goal": {
+      "context_query_stats_centres": "frozen",
+      "goal_head": "80->64->2 GELU; 5314 trainable",
+      "process": "trainable"
+    }
+  },
+  "model": {
+    "parent": "original G1 per seed, immutable",
+    "process_input": "h64/query16/normalized_predicted_goal2/normalized_observed_v0_2",
+    "process_mlp": [
+      84,
+      64,
+      24
+    ],
+    "activation": "GELU",
+    "last_layer": "zero",
+    "process_parameters_expected": 7000,
+    "trainable_expected": {
+      "frozen_goal": 7000,
+      "joint_goal": 12314
+    },
+    "total_parameters_expected": 33306,
+    "parameter_counts_require_actual_instance": true,
+    "NN_dtype": "float32",
+    "geometry_dtype": "float64",
+    "forward_excludes": [
+      "GTfuture",
+      "GTgroups",
+      "IDs",
+      "scene",
+      "nativepaths",
+      "logits"
+    ],
+    "P2_may_contain_historical_social_information": true
+  },
+  "geometry": {
+    "H": 12,
+    "dt": 0.4,
+    "origin": [
+      0,
+      0
+    ],
+    "v0": "(past7-past6)/dt, checked EXACT with G1",
+    "w": "12,11,...,1",
+    "S": 650,
+    "d": "(g-H*dt*v0)/(dt*dt)",
+    "e": "d-sum_t(w_t*b_t)",
+    "a": "b_t+(w_t/S)*e",
+    "v": "v0+dt*cumsum(a)",
+    "p": "dt*cumsum(v)",
+    "minimum_norm": "(w_t/S)*d",
+    "null_term": "b_t-(w_t/S)*sum_s(w_s*b_s)",
+    "projection_nullity": 2,
+    "process_effective_rank": 22,
+    "post_projection_clip": false,
+    "GT_goal": false,
+    "extra_tanh_bound_or_physical_loss": false,
+    "initial_zero_b": "paired minimum-squared-acceleration predicted-goal trajectory, NOT G1/native identity",
+    "not_guaranteed": [
+      "a1=0",
+      "v1=v0",
+      "motion_safety",
+      "coverage",
+      "nonnegative_speed",
+      "no_loops"
+    ]
+  },
+  "data": {
+    "FIT": 18909,
+    "outer": 1035,
+    "outer_change": 253,
+    "inner": 1856,
+    "original_CAL": 2879,
+    "splitIDs": "exact existing target-grouped IDs",
+    "statistics": "FIT-only; initial per-seed G1 18909*20 goals; v0 once per window; fixed float32 features and float64 moments; std<1e-6 ->1",
+    "no_refit_stats_during_training": true
+  },
+  "training": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 25,
+    "runs": 6,
+    "total_epochs": 150,
+    "batch_size": 256,
+    "steps_per_epoch": 74,
+    "steps_per_run": 1850,
+    "total_steps": 11100,
+    "shuffle": true,
+    "drop_last": false,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-8,
+    "foreach": false,
+    "grad_clip": null,
+    "scheduler": null,
+    "early_stopping": false,
+    "primary_checkpoint": "fixed epoch25",
+    "inner_CAL": "posthoc only",
+    "paired_init_and_loader_order": true
+  },
+  "objective": {
+    "quality": "mean_window hardmin20(ADE+0.5FDE)",
+    "winner_tie": "lowest candidate index",
+    "diversity": "mean_window mean_190pairs relu(.3-mean_t L2distance)^2",
+    "diversity_weight": 0.05,
+    "no_new_loss_or_assignment": true
+  },
+  "saving": {
+    "final_scientific_jobs": 24,
+    "initial_P0_jobs": 12,
+    "initial_P0_separate": true,
+    "full_FIT_required": true,
+    "per_run": [
+      "checkpoint.pt",
+      "run_manifest.json",
+      "history.json",
+      "metrics.json",
+      "assignment_stats.json",
+      "statistics",
+      "splitIDs"
+    ],
+    "per_prediction": [
+      "explicit_IDs",
+      "goals",
+      "initial_goals",
+      "v0",
+      "raw_b",
+      "projected_a",
+      "d",
+      "e",
+      "minimum_norm",
+      "null_term",
+      "v",
+      "p"
+    ],
+    "checkpoint_bindings": [
+      "sourceSHA",
+      "parentG1SHA",
+      "splitIDs",
+      "inputSHA",
+      "cacheSHA",
+      "statsSHA",
+      "objective",
+      "initSHA",
+      "ALLoptimizerRNG",
+      "frozen_module_states"
+    ]
+  },
+  "metrics": {
+    "same_candidate_coverage": "min_k max(ADE_k/.2,FDE_k/.4)<=1",
+    "primary": [
+      "B-A outerchange C/ADE/FDE/J",
+      "B-native outerchange C/ADE/FDE/J"
+    ],
+    "endpoint": "same per-candidate final goal; A final goals unchanged from P0",
+    "posthoc": [
+      "P0-final rescue/lost",
+      "A-B rescue/lost",
+      "endpoint rescue/lost",
+      "common_endpoint_good intersection (post-treatment descriptive only)",
+      "goal_change_vs_initial_and_CV",
+      "Qwinner_and_Jclosest same-slot early/middle/late",
+      "first_future_v-v0 separately",
+      "raw/projected/boundary acceleration and jerk separately"
+    ],
+    "clusters": "original SciPy complete-link D=max(meanpath/.10,endpoint/.20) cut1 ALLK20",
+    "motion": "ALL population pooled speedp95 accelmean,p95 jerkmean,p95 dt.4; every seed/split/group literal <=native1.01",
+    "groups": [
+      "overall",
+      "stable",
+      "transition",
+      "change"
+    ],
+    "sensitivity_only": [
+      0.3,
+      0.5
+    ]
+  },
+  "statistics": {
+    "draws": 20000,
+    "rng": "numpy PCG64 seed20261014",
+    "sampling": "sequence+target wholetrack and independently crossed 3modelseeds; shared paired draws",
+    "primary_family_reserved": 26,
+    "quantile_tail": "0.05/(2*26)",
+    "per_draw_indices_SHA": true,
+    "ordinary_95CI": "descriptive secondary",
+    "not_full_historical_multiplicity_correction": true
+  },
+  "decision": {
+    "S2": [
+      "B-A outerchange C eachseed>0",
+      "mean gain>=.05",
+      "26family lowerCI>0",
+      "mean change ADE and FDE not worse than A",
+      "outer overall/stable/transition perseed ADE,FDE<=A1.01"
+    ],
+    "Q2": [
+      "S2 PASS",
+      "B outerchange coverage eachseed>=native",
+      "outer protected groups eachseed ADE,FDE<=native1.01",
+      "all48 B seed/split/group five pooled motions PASS"
+    ],
+    "Q2_failure": "STOP M3; no coefficients/loss/degree/width/LR/epochs sweep",
+    "major": "unchanged COMMON_PROTOCOL: eachseed change ADE AND FDE >=5% native gain; protected1%; correctednative jointCI; samecandidate coverage and duplicate safeguards; everyseed/split/group fiveMotion <=native1.01; correlation review"
+  },
+  "preflight_required": [
+    "inherit all3746 original source digests plus107 M1 outputs/reports/review/supplement/provenance without overwriting",
+    "full source/cache/raw/ID/units/parent bindings audit",
+    "independent NumPy S650 endpoint/state/minimum-norm/nullspace/CV fixtures",
+    "double derivatives b/g; canonical scalar/output gradients; fixed FD eps1e-4,1e-5; no activity-face search",
+    "actual GPU8 FIT256 phased positive finite process and B goal gradients; A no goal gradient; B BOTH goal-input and endpoint paths not detached; exact frozen params/buffers",
+    "actual paired P0; actual GPU128 finite projection endpoint/save reconstruction",
+    "BOTH real FIT513+inner12 subset2epoch continuous/interrupted ALLparams buffers optimizer TorchCPUCUDA loader NumPy Python RNG history EXACT",
+    "completed SHA-skip plus actual badsource/output/resumecontract rejection",
+    "actual128 full saved originalSciPy clusters/fiveMotion and independent geometry",
+    "perarm4warm32measurement FIT256 plus complete36jobs BOTH saved arithmetic and independent CPU audit, bootstrap, sourceSHA IO and resource/disk scaling"
+  ],
+  "resource": {
+    "process_private_GiB_max": 6,
+    "system_available_physical_GiB_min": 6,
+    "system_commit_available_GiB_min": 6,
+    "longstanding_host_budget": "approximately17GiB available; bounded single model/batch256",
+    "production_planning_minutes_max": 30,
+    "M1_budget_exception_inherited": false,
+    "no_OS_pagefile_or_user_program_changes": true
+  },
+  "lifecycle": {
+    "initial_status": "DESIGN_IMPLEMENTATION_PENDING",
+    "no_worker_or_ETA_at_registration": true,
+    "implementation_node_HK": "2026-10-14T20:00:00+08:00",
+    "implementation_node_not_production_ETA": true,
+    "launch": "only all actual gates PASS and planning<=30; sole on-demand0trigger OS byte-lock launcher; verify no same active worker",
+    "startup": "ONE real Python PID/serviceparent/create/commandline/task0/currentstage/stderr",
+    "followup": "ONE50% elapsed TIME then actual completion COUNT1, update same m1; no daily/highfrequency repeats",
+    "completion": "worker+exit doubleSUCCESS, 6*25history,24final+12P0 allSHA, ARITHMETIC/PRESERVATION/RESOURCE, independent full saved CPU audit, report and runtimeANALYZED"
+  },
+  "scope": {
+    "oldF16_decoder_scorer": "immutable and not instantiated for training",
+    "old_completed_workers": "never query/retrain",
+    "old_E3_and_automation_automation2": "PAUSED unchanged",
+    "new_data_DEV_test_fold_external_cloud_messages_delete": false,
+    "substantive_blocker": "STOP with real provenance and report; no rule/hash loosening",
+    "routine_numeric_ownership": "assistant",
+    "new_artifacts_only": "this M2 directory",
+    "baseline_cycle11_goal_complete": false
+  }
+}

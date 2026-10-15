@@ -1,0 +1,24 @@
+{
+  "status":"ANALYZED_PROTOCOL_RECONCILIATION_WITH_SAVED_AUDIT_RECOVERY",
+  "training_runs":9,"epoch_rows":225,"saved_jobs":27,
+  "parent_training_worker_failure_preserved":true,"recovery_double_SUCCESS":true,
+  "arithmetic_independent_max_error":0.0,"independent_CI_max_error":0.0,
+  "CI_records":72,"scalar_CI_intervals":288,"relevant_SHA_files":385,
+  "major_success":false,"baseline_changed":false,"goal_complete":false,
+  "outer_summary":[
+    {"grouping":"scene_family","n":1561,"change_n":211,"overall_coverage_gain_pp":2.733290625667295,"change_good_native":82,"change_good_full24_seeds":[89,88,87],"change_coverage_gain_pp":2.843601895734599,"change_ADE_gain_pct":3.245710408332292,"change_FDE_gain_pct":5.246624111614384},
+    {"grouping":"target_track","n":1035,"change_n":253,"overall_coverage_gain_pp":3.1884057971014457,"change_good_native":110,"change_good_full24_seeds":[115,118,118],"change_coverage_gain_pp":2.766798418972333,"change_ADE_gain_pct":1.9037753580690264,"change_FDE_gain_pct":3.872751104857497},
+    {"grouping":"recording_time","n":566,"change_n":142,"overall_coverage_gain_pp":2.7679623085983485,"change_good_native":60,"change_good_full24_seeds":[62,61,64],"change_coverage_gain_pp":1.6431924882629123,"change_ADE_gain_pct":1.4927535037338235,"change_FDE_gain_pct":2.2001177468948474}
+  ],
+  "CAL_change_native_good":243,"CAL_change_n":700,
+  "CAL_change_full24":{"scene_family":[254,261,258],"target_track":[257,260,261],"recording_time":[256,257,262]},
+  "full24_all_group_motion":{"checks":108,"pass":93,"fail":15,"failed_metric":"accel_mean","max_harm_pct":3.266775692780599},
+  "full24_outer_motion":{"checks":36,"pass":34,"fail":2,"failures":"target_track seeds42/43 transition accel_mean"},
+  "learned4_all_group_motion_fail_checks":41,
+  "interpretation":"Small transferable complement under unified canonical protocol; not no-transfer, not equal-budget gain, not pure grouping cause, not ready for scorer or baseline upgrade",
+  "limitations":["K24 vs K20","native retention guarantees lost0","different training amounts and outer populations","no canonical matched random arm","frozen F16 has seen old data","three model seeds not independent scenes","CAL single university","exploratory correlated-window CIs","small switch does not imply protocol equivalence"],
+  "report_code_error_preserved":"completion_review/failures/outer_motion_summary_flag/PROVENANCE.md",
+  "evidence":{"all_groups":"completion_review/SUMMARY.json","all_CIs":"BOOTSTRAP.json","completion":"completion_review/REVIEW.json","arithmetic":"ARITHMETIC_AUDIT.json","preservation":"PRESERVATION.json","raw_records":"RESULT.json"},
+  "same_assistant_DA2_DA3_not_external":true,"AI_assisted":true,
+  "no_new_experiment_started":true,"no_scope_expansion":true
+}

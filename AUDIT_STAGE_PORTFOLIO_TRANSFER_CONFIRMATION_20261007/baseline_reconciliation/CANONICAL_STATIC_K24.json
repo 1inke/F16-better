@@ -1,0 +1,54 @@
+{
+  "definition": "Canonical Static-K24 on Scene-Family Outer: Native20 + Top-4 Heuristic Proposals from Isolated IntentClassifier (Seed 43, strictly matching Best-of-4 3-seed benchmark)",
+  "source_file_hashes": {
+    "train_cache_sha256": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "lab_train_sha256": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+    "splits_sf_sha256": "f8482b638354426e3d0b8f6a97a14866b57e19f187beb23d97bc0588ee535cd0"
+  },
+  "selector_checkpoint_sha256": "62eda9b548f5d59c4a2bc2c944279cf09c242c54bfeffeb91cac655457ce30ef",
+  "sample_counts": {
+    "overall": 1561,
+    "stable": 1226,
+    "transition": 124,
+    "change": 211
+  },
+  "metrics": {
+    "overall": {
+      "covered_count": 1061,
+      "coverage_pct": 67.96925048046124,
+      "min_ade": 0.1412437385046215,
+      "min_fde": 0.2475721926287199,
+      "mean_j": 0.7989943932641022,
+      "effective_good_clusters": 1832
+    },
+    "stable": {
+      "covered_count": 913,
+      "coverage_pct": 74.46982055464927,
+      "min_ade": 0.1182647922210846,
+      "min_fde": 0.2035194457282159,
+      "mean_j": 0.6608886964560402
+    },
+    "transition": {
+      "covered_count": 60,
+      "coverage_pct": 48.38709677419355,
+      "min_ade": 0.20302086540796596,
+      "min_fde": 0.3700773140308382,
+      "mean_j": 1.1624851292215665
+    },
+    "change": {
+      "covered_count": 88,
+      "coverage_pct": 41.70616113744076,
+      "min_ade": 0.23845617645533945,
+      "min_fde": 0.4315439113308778,
+      "mean_j": 1.3878319905530045
+    }
+  },
+  "kinematics": {
+    "speed_mean": 0.6994397044181824,
+    "speed_p95": 1.4269681334495545,
+    "accel_mean": 0.10347802191972733,
+    "accel_p95": 0.5656382471323003,
+    "jerk_mean": 0.4545559883117676,
+    "jerk_p95": 2.9814572095870964
+  }
+}

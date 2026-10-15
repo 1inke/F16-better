@@ -1,0 +1,49 @@
+{
+  "stage": "04B2_SCENE_BALANCED",
+  "audit_timestamp": "2026-10-07T02:34:00+08:00",
+  "formulas_checked": {
+    "outer_coverage_rate_seed_1": {
+      "expression": "1038 / 1561",
+      "expected": 0.66495836,
+      "reported": 0.66495836,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "outer_coverage_rate_seed_2": {
+      "expression": "1018 / 1561",
+      "expected": 0.65214606,
+      "reported": 0.65214606,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "outer_coverage_rate_seed_3": {
+      "expression": "1037 / 1561",
+      "expected": 0.66431775,
+      "reported": 0.66431775,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "outer_mean_coverage_pp": {
+      "expression": "mean(66.4958, 65.2146, 66.4318)",
+      "expected": 66.0474,
+      "reported": 66.05,
+      "diff": 0.0026,
+      "status": "PASS"
+    },
+    "outer_gain_vs_prev_best": {
+      "expression": "66.0474 - 69.64",
+      "expected": -3.5926,
+      "reported": -3.5926,
+      "diff": 0.0,
+      "status": "PASS"
+    },
+    "outer_minus_static_pp": {
+      "expression": "66.0474 - 67.5849",
+      "expected": -1.5375,
+      "reported": -1.5375,
+      "diff": 0.0,
+      "status": "PASS"
+    }
+  },
+  "audit_status": "PASS"
+}

@@ -1,0 +1,5 @@
+# ETA estimator correction, no science change
+
+Sibling numeric_validated full numerical/label/ID/saved128 native-quality/clusters/five-motion audits passed but heuristic max500 extrapolation yielded91min and stopped before production. Failure/source/smoke remain unchanged. That formula reused whole preprocessing+fit time per iteration and extrapolated to500 nominal steps despite Newton already converging in a handful; it was not an actual production timing.
+
+Replace only planning methodology with one fixed1033 actual TRAIN-only throwaway fit (fold0 training prefix, no validation outcomes, no benchmark model save), wholefit row-scale toA upper row count times4 possiblefits, safety3x plus3min IO/audit. Keep planning<=30min gate, max_iter500 numericalcap, original tolerance and all performance thresholds. If revised measured planning >30 still STOP, not relax budget. Record old and new estimators, actual iterations/solver and total timing. Full preflight is rerun in this final new directory and all sibling sources/failures inherited without overwriting their digest.

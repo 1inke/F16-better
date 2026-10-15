@@ -1,0 +1,13 @@
+{
+  "phase": "M0_TOP3_COMPLEMENTARITY_AUDIT",
+  "portfolio_composition": [
+    {"slot": 0, "source": "Native Top-1 (argmax logits[:20])"},
+    {"slot": 1, "source": "Static Top-1 (IntentClassifier top non-cont motion program)"},
+    {"slot": 2, "source": "Learned Slot 3 (Bo4 generator slot 3)"}
+  ],
+  "candidate_budget": 3,
+  "protocols": ["scene_family", "target_track", "recording_time"],
+  "seeds": [42, 43, 44],
+  "good_criteria": {"ade_max": 0.2, "fde_max": 0.4, "j_max": 1.0},
+  "training": "NONE (Zero-training audit)"
+}

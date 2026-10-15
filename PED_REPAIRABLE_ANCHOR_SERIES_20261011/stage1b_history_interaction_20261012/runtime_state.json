@@ -1,0 +1,73 @@
+{
+  "status": "ANALYZED_S1B_GATE_FAIL_NO_S2",
+  "human_authorized": "按照建议执行",
+  "folder": "PED_REPAIRABLE_ANCHOR_SERIES_20261011/stage1b_history_interaction_20261012",
+  "production_started": true,
+  "active_worker": false,
+  "worker_pid": 1720,
+  "service_parent": 2688,
+  "task_name": "Trajectory-RepairableAnchorInteraction-20261012",
+  "task_triggers": 0,
+  "worker_started_at": "2026-10-12T00:14:43.150101+08:00",
+  "ONE_startup_at": "2026-10-12T00:14:53.9014850+08:00",
+  "observed_stage": {
+    "stage": "FIT_SELECTOR_OOF",
+    "at": "2026-10-12T00:14:52.698103+08:00",
+    "arm": "interaction",
+    "fold": 0,
+    "done": 3,
+    "total": 6
+  },
+  "source_count": 1993,
+  "source_sha": "77df06b411cdb52837465064a0b75103c28d0fc936bee09d8e6240ad5e24b94f",
+  "inherited_source_count": 1953,
+  "query_at": null,
+  "analysis_deadline": null,
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "planning_minutes": 3.7525105722399905,
+  "ETA_minutes": [
+    3,
+    10
+  ],
+  "S1b_analyzed": true,
+  "S2_started": false,
+  "whole_series_complete": false,
+  "formal_increment": 0,
+  "automation_created": false,
+  "old_E3_and_automations_paused_unchanged": true,
+  "baseline_cycle11_unchanged": true,
+  "OOF_gate": false,
+  "B_evaluated": false,
+  "S2_gate": false,
+  "worker_finished_at": "2026-10-12T00:15:02.773806+08:00",
+  "worker_and_exit_status": "SUCCESS",
+  "production_seconds": 19.623705,
+  "first_progress_checked_at": "2026-10-12T00:16:56.7298885+08:00",
+  "completion_review": "PASS_MAX0_SIX_MODELS_28791_LABELS_OBS_ID_SCORE_SWAP_BOOTSTRAP_SHA",
+  "independent_review_seconds": 76.50623900000937,
+  "output_count": 22,
+  "related_source_output_final_SHA_unchanged": true,
+  "performance": {
+    "interaction_overall": 0.14758190327613105,
+    "additive_overall": 0.13478939157566303,
+    "random_overall": 0.1407176287051482,
+    "bottom_overall": 0.01591263650546022,
+    "interaction_minus_random_CI975": [
+      -0.014151976609908646,
+      0.03000175820495647
+    ],
+    "interaction_change": 0.11775362318840579,
+    "additive_change": 0.14402173913043478,
+    "random_change": 0.11231884057971014,
+    "correct_minus_swapped_overall": 0.041497659906396256,
+    "history_swap_changed_windows": 6019
+  },
+  "not_done": [
+    "full_A_fit",
+    "B_transfer",
+    "evaluation_selector_exports",
+    "S2_S3_S4_S5"
+  ],
+  "next_action": "Stop ONE failed preregistered interaction probe; no C/width/feature/split search or directS2; future direction must be separately preregistered."
+}

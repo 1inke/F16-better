@@ -1,0 +1,50 @@
+{
+  "source_manifest_sha": "fa68c3855efdb746fd50099ee8d155ee65cb0028a5f6f9a4a73b71d6feb5c1cb",
+  "protocol_sha": "a60335961ed045b8fc626203bc1109a2d464ebaf45c8a9d8c417e7a18a5f2a29",
+  "split_registry_sha": "ac53380cef10f285558ea3a031dbfe325e487af764df6ede40cb95553b68e892",
+  "labels_sha": "271e7f960a62fb4174ecb97582e9c777c512a5611b34752c8b35a10bd5a932ea",
+  "fit_ids_sha": "0d806002dd592da9c0b63ff2715894205902d4c8c94ce23e7176984c54c6a6a8",
+  "n_fit_windows": 4878,
+  "features": "observed96_native24_float32; normalization_float64_train_only",
+  "parameters": {
+    "C": 1.0,
+    "penalty": "l2",
+    "class_weight": "balanced",
+    "solver": "newton-cholesky",
+    "tol": 1e-06,
+    "max_iter": 500
+  },
+  "sklearn": "1.4.1.post1",
+  "threads": 1,
+  "labels_not_forward_inputs": true,
+  "kind": "CPU_LBFGS_probe_not_torch_epoch_resume",
+  "model_sha": "a85a52f79be4655e0291058d8251416b0508e69ca9b5d3ebcc9fbd7a64db27ec",
+  "fit_report": {
+    "solver_seconds": 0.818682599987369,
+    "elapsed_seconds": 1.2478438999969512,
+    "n_windows": 4878,
+    "n_candidate_rows": 97560,
+    "positive_candidates": 3967,
+    "iterations": 3,
+    "warnings": [],
+    "sklearn": "1.4.1.post1",
+    "parameters": {
+      "C": 1.0,
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "solver": "newton-cholesky",
+      "tol": 1e-06,
+      "max_iter": 500
+    },
+    "threads": 1,
+    "independent_objective_certificate": {
+      "objective": 0.6570566602756487,
+      "gradient_inf": 6.971109167413832e-08,
+      "weight_sum": 97560.00000000001,
+      "n": 97560,
+      "positive": 3967,
+      "intercept_unpenalized": true,
+      "L2_C": 1.0
+    }
+  }
+}

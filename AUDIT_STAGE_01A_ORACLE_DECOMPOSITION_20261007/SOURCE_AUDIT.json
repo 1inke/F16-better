@@ -1,0 +1,13 @@
+{
+  "stage": "01A_ORACLE_DECOMPOSITION",
+  "audit_timestamp": "2026-10-07T09:27:40+08:00",
+  "sources": {
+    "evaluation_set": "splits3.outer_eval_index (Primary Zara Outer N=1561)",
+    "native_candidates": "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES/results/cache/train_dev/eth_train.npz",
+    "ground_truth_future": "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/labels/train.npz",
+    "focal_history": "raw_focal_trajectories from eth_train focal past",
+    "optimizer": "src/oracle_optimizer.py (GPU, Adam lr=0.06, 160 steps, 3 restarts)",
+    "leakage_check": "Oracle GT optimization strictly used for ceiling evaluation and offline diagnostic parameter caching; ZERO leakage into deployed models"
+  },
+  "audit_status": "PASS"
+}

@@ -1,0 +1,20 @@
+{
+  "phase": "M1_TOP3_PROBABILITY_CALIBRATION",
+  "macro_metrics": {
+    "ece_mean": 0.2439,
+    "brier_score_mean": 0.2305,
+    "nll_mean": 0.9284,
+    "probabilities": {
+      "overall": {"p_native": 0.509, "p_static": 0.236, "p_learned": 0.256, "p_good": 0.283},
+      "stable": {"p_native": 0.559, "p_static": 0.190, "p_learned": 0.251, "p_good": 0.372},
+      "change": {"p_native": 0.387, "p_static": 0.333, "p_learned": 0.280, "p_good": 0.110}
+    },
+    "change_vs_stable_shifts": {
+      "p_learned_ratio": 1.12,
+      "p_proposals_combined_stable": 0.441,
+      "p_proposals_combined_change": 0.613,
+      "p_proposals_combined_shift_pp": 17.2
+    }
+  },
+  "sum_to_one_verified": true
+}

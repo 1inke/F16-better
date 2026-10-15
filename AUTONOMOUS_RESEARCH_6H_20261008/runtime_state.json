@@ -1,0 +1,136 @@
+{
+  "status": "BOUNDED_WINDOW_ENDED_LATEST_SINGLE_THIRD_AND_ALL_REVIEWS_COMPLETE_NO_RESET",
+  "human_authorized": true,
+  "start": "2026-10-08T03:30:18+08:00",
+  "deadline": "2026-10-08T09:30:18+08:00",
+  "maximum_hours": 6,
+  "new_worker_started": false,
+  "current_experiment": "GENERATION_NATIVE_ANCHORED_PHYSICAL_RAY_SERIES_20261008/roundoff_certified_recovery_20261008",
+  "native_anchor_completed": 3,
+  "native_anchor_total": 3,
+  "numerical_wait_human_superseded": true,
+  "preflight": "PASS",
+  "technical_review": "PASS",
+  "source_locked_files": 1166,
+  "inherited_files": 1151,
+  "ETA_minutes": [
+    5,
+    15
+  ],
+  "planning_minutes": 8,
+  "completion_review_budget_minutes": 2,
+  "launch_decision": "No launch: conservative15+2minute budget exceeds remaining10m48 at09:19:30HK. No reset.",
+  "assistant_handles_routine_numerical_decisions": true,
+  "no_new_loss_assignment_scorer_oldmodule_data_permission": true,
+  "next": "Latest directsinglethird experiment and fullthree/recent synthesis complete; no newtraining beyond ended oldsixhour window. Report physically feasible nondegenerate complement question; goal incomplete/baseline unchanged.",
+  "latest_direct_start_current_run": {
+    "status": "ANALYZED",
+    "human_latest_direct_start": true,
+    "old_six_hour_window_not_reset": true,
+    "execution_deadline": "2026-10-08T10:10:00+08:00",
+    "formal_started": true,
+    "new_worker_started": true,
+    "formal_study_completed": 3,
+    "formal_study_total": 3,
+    "formal_experiments_started": 3,
+    "third_not_complete": false,
+    "task": "Trajectory-NativeAnchoredPhysicalRay-ApprovedLaunch-20261008",
+    "triggers": 0,
+    "worker_pid": 42092,
+    "service_parent": 2840,
+    "created_at": "2026-10-08T09:32:12.884808+08:00",
+    "start": "2026-10-08T09:32:13.080314+08:00",
+    "sole_startup_checked_at": "2026-10-08T09:32:22.8988194+08:00",
+    "startup_stage": {
+      "stage": "TRAIN",
+      "at": "2026-10-08T09:32:22.40725+08:00",
+      "arm": "unprojected",
+      "seed": 42,
+      "epoch": 5,
+      "runs_done": 0,
+      "runs_total": 6
+    },
+    "startup_histories": [
+      {
+        "arm": "unprojected",
+        "seed": 42,
+        "epochs": 4
+      },
+      {
+        "arm": "unprojected",
+        "seed": 43,
+        "epochs": 0
+      },
+      {
+        "arm": "unprojected",
+        "seed": 44,
+        "epochs": 0
+      },
+      {
+        "arm": "physical",
+        "seed": 42,
+        "epochs": 0
+      },
+      {
+        "arm": "physical",
+        "seed": 43,
+        "epochs": 0
+      },
+      {
+        "arm": "physical",
+        "seed": 44,
+        "epochs": 0
+      }
+    ],
+    "startup_done_runs": 0,
+    "startup_stderr_bytes": 0,
+    "source_locked_files": 1193,
+    "inherited_relevant_files": 1166,
+    "source_sha": "d17d540a70c3fe68398ed550bfc663ee13f5e193f24244a8c95397289600da23",
+    "current_source_preflight": "PASS",
+    "technical_review": "PASS_NUMERIC_CERTIFICATE_ACTIVE_FD_CONVERGENCE_NOT_NOMINAL_NONZERO_TWO_EPS_PASS",
+    "ETA_minutes": [
+      5,
+      15
+    ],
+    "planning_minutes": 8,
+    "completion_review_budget_minutes": 2,
+    "nominal_compute_minutes": 2.3882473475432717,
+    "preflight_resource_not_production_peak": {
+      "peak_private_GiB": 2.7282943725585938,
+      "peak_RSS_GiB": 1.9972724914550781,
+      "min_physical_GiB": 15.054794311523438,
+      "min_commit_GiB": 24.305767059326172,
+      "checks": 12890
+    },
+    "query_at": "2026-10-08T09:36:13.080314+08:00",
+    "half_ceil": "2026-10-08T09:36:14+08:00",
+    "initial_completion_deadline": "2026-10-08T09:40:13.080314+08:00",
+    "analysis_deadline": "2026-10-08T09:40:13.080314+08:00",
+    "anticipated_review_finished": "2026-10-08T09:42:13.080314+08:00",
+    "anticipated_total_synthesis_minutes": [
+      20,
+      30
+    ],
+    "first_progress_query_done": true,
+    "first_progress_query_count": 1,
+    "halfway_actual_at": "2026-10-08T09:37:33.3125873+08:00",
+    "halfway_lateness_seconds": 80.2322733,
+    "finished_at": "2026-10-08T09:36:45.282905+08:00",
+    "actual_elapsed_seconds": 272.202591,
+    "no_further_process_task_queries": true,
+    "automation_id": "native-anchor-residual-one-halfway-check",
+    "notification_policy": "Only actual startup/full analysis/substantive failure/material ETA correction/necessary decisions; quiet before query_at; no polling or repeated half",
+    "current_scope": "Only third native-anchor physical-ray run, complete audits, mandatoryfullthree and recent synthesis; no fourth new training",
+    "no_new_loss_assignment_scorer_oldmodule_data_permission": true,
+    "full_worker_exit_and_saved_audits": "PASS",
+    "major_success": false,
+    "baseline_unchanged": true,
+    "completion_review": "completion_review/REVIEW.json",
+    "analysis_report": "RESULT_ANALYSIS.md",
+    "mandatory_fullthree": "NATIVE_ANCHOR_STUDY_REVIEW.md",
+    "recent_synthesis": "RECENT_EXPERIMENT_SYNTHESIS.md",
+    "automation_obsolete_reason": "Completed sole run and fullthree/recent analysis; six-hour window ended, no fourth training",
+    "no_fourth_training": true
+  }
+}

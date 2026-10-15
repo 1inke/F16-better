@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "numerical_repair": {
+    "status": "PASS_SAME_OBJECTIVE_INDEPENDENT_STATIONARITY_AND_REFERENCE",
+    "solver": "scipy_trust_exact_FIXED_NOT_DEPLOYED",
+    "reference_success_flag": true,
+    "reference_message": "Optimization terminated successfully.",
+    "reference_iterations": 6,
+    "sklearn": {
+      "objective": 0.5828893675311644,
+      "gradient_inf": 6.101553828166023e-07,
+      "weight_sum": 10260.0,
+      "n": 10260,
+      "positive": 460,
+      "intercept_unpenalized": true,
+      "L2_C": 1.0
+    },
+    "reference": {
+      "objective": 0.5828893675061717,
+      "gradient_inf": 1.4952657690618534e-11,
+      "weight_sum": 10260.0,
+      "n": 10260,
+      "positive": 460,
+      "intercept_unpenalized": true,
+      "L2_C": 1.0
+    },
+    "objective_difference": 2.499267459654675e-11,
+    "probability_difference_max": 3.2036510637212245e-05,
+    "FD_gradient_max": 2.3965510131951362e-11,
+    "FD_hessian_max": 3.1044777859534634e-11,
+    "Hessian_min_eigenvalue": 9.746588693950997e-05,
+    "Hessian_condition": 125220.20596508346,
+    "not_H4_or_outcome_selection": true,
+    "elapsed_seconds": 0.751072099985322
+  },
+  "source_sha": "fa68c3855efdb746fd50099ee8d155ee65cb0028a5f6f9a4a73b71d6feb5c1cb",
+  "locked_files": 1953,
+  "inherited": 1927,
+  "actual_A": 7334,
+  "actual_B": 11575,
+  "repeat_actual513_fit_params_stats_probabilities_BITWISE": true,
+  "no_GPU_torch_optimizer_epoch_RNG_claim": true,
+  "all28791_labels_independent_and_cache_ID_EXACT": true,
+  "actual128_saved_selection_full_original_SciPy_quality_five_motion_PASS": true,
+  "GT_group_logit_prediction_invariance": true,
+  "bad_source_output_rejected": true,
+  "fit_fixture_reports": [
+    {
+      "solver_seconds": 0.2553296000114642,
+      "elapsed_seconds": 0.5538119999982882,
+      "n_windows": 513,
+      "n_candidate_rows": 10260,
+      "positive_candidates": 460,
+      "iterations": 4,
+      "warnings": [],
+      "sklearn": "1.4.1.post1",
+      "parameters": {
+        "C": 1.0,
+        "penalty": "l2",
+        "class_weight": "balanced",
+        "solver": "newton-cholesky",
+        "tol": 1e-06,
+        "max_iter": 500
+      },
+      "threads": 1,
+      "independent_objective_certificate": {
+        "objective": 0.5828893675311644,
+        "gradient_inf": 6.101553828166023e-07,
+        "weight_sum": 10260.0,
+        "n": 10260,
+        "positive": 460,
+        "intercept_unpenalized": true,
+        "L2_C": 1.0
+      }
+    },
+    {
+      "solver_seconds": 0.27607910000369884,
+      "elapsed_seconds": 0.3806781999883242,
+      "n_windows": 513,
+      "n_candidate_rows": 10260,
+      "positive_candidates": 460,
+      "iterations": 4,
+      "warnings": [],
+      "sklearn": "1.4.1.post1",
+      "parameters": {
+        "C": 1.0,
+        "penalty": "l2",
+        "class_weight": "balanced",
+        "solver": "newton-cholesky",
+        "tol": 1e-06,
+        "max_iter": 500
+      },
+      "threads": 1,
+      "independent_objective_certificate": {
+        "objective": 0.5828893675311644,
+        "gradient_inf": 6.101553828166023e-07,
+        "weight_sum": 10260.0,
+        "n": 10260,
+        "positive": 460,
+        "intercept_unpenalized": true,
+        "L2_C": 1.0
+      }
+    }
+  ],
+  "infer256_4warm32mean_seconds": 0.01349794062480214,
+  "actual1033_benchmark_report": {
+    "solver_seconds": 0.47910150000825524,
+    "elapsed_seconds": 0.6730694000143558,
+    "n_windows": 1033,
+    "n_candidate_rows": 20660,
+    "positive_candidates": 905,
+    "iterations": 4,
+    "warnings": [],
+    "sklearn": "1.4.1.post1",
+    "parameters": {
+      "C": 1.0,
+      "penalty": "l2",
+      "class_weight": "balanced",
+      "solver": "newton-cholesky",
+      "tol": 1e-06,
+      "max_iter": 500
+    },
+    "threads": 1,
+    "independent_objective_certificate": {
+      "objective": 0.6217513297870393,
+      "gradient_inf": 2.4219150171898482e-09,
+      "weight_sum": 20660.0,
+      "n": 20660,
+      "positive": 905,
+      "intercept_unpenalized": true,
+      "L2_C": 1.0
+    }
+  },
+  "empirical_four_fit_extrapolation_minutes": 0.31857315132012165,
+  "planning_minutes": 5,
+  "ETA_minutes": [
+    3.0,
+    9.0
+  ],
+  "resource": {
+    "peak_private_GiB": 0.2829780578613281,
+    "peak_RSS_GiB": 0.2644767761230469,
+    "min_physical_GiB": 14.36404800415039,
+    "min_commit_GiB": 20.731212615966797,
+    "checks": 291
+  },
+  "disk_free_GiB": 44.2690544128418,
+  "elapsed_seconds": 35.431841899990104,
+  "production_peak_not_measured": true
+}

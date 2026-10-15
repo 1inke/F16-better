@@ -1,0 +1,206 @@
+{
+  "status": "ANALYZED_DIAGNOSTIC_ONLY",
+  "summary": "Safe repair witnesses exist within position3; current selector misses many; no learned/deployment conclusion",
+  "groups": {
+    "overall": {
+      "n": 64,
+      "safe": 42,
+      "quality_only": 12,
+      "unknown": 10,
+      "interaction_hit": 12,
+      "random_hit": 12,
+      "bottom_hit": 4,
+      "pooled_allfive_PASS": true,
+      "motion_native": [
+        1.164388887465435,
+        0.08223636439627627,
+        0.6032743561121747,
+        0.4522975345471086,
+        2.5488487496784376
+      ],
+      "motion_oracle": [
+        1.164388887465435,
+        0.08225071478867153,
+        0.6033965835652371,
+        0.45237646735533915,
+        2.5488487496784376
+      ]
+    },
+    "stable": {
+      "n": 16,
+      "safe": 11,
+      "quality_only": 3,
+      "unknown": 2,
+      "interaction_hit": 3,
+      "random_hit": 3,
+      "bottom_hit": 1,
+      "pooled_allfive_PASS": true,
+      "motion_native": [
+        1.2811083004235009,
+        0.0878255692194321,
+        0.6032943192132542,
+        0.48303726759764315,
+        2.764854538954103
+      ],
+      "motion_oracle": [
+        1.2811083004235009,
+        0.08781575405721656,
+        0.6037859241514856,
+        0.48298329040451704,
+        2.764854538954103
+      ]
+    },
+    "transition": {
+      "n": 16,
+      "safe": 10,
+      "quality_only": 2,
+      "unknown": 4,
+      "interaction_hit": 1,
+      "random_hit": 3,
+      "bottom_hit": 0,
+      "pooled_allfive_PASS": true,
+      "motion_native": [
+        1.1512918244479144,
+        0.08374058402027765,
+        0.6173449599656669,
+        0.46057025218680236,
+        2.5735875997144313
+      ],
+      "motion_oracle": [
+        1.1512918244479144,
+        0.08372444870649551,
+        0.62027374127337,
+        0.4604815257103384,
+        2.5735875997144313
+      ]
+    },
+    "change": {
+      "n": 32,
+      "safe": 21,
+      "quality_only": 7,
+      "unknown": 4,
+      "interaction_hit": 8,
+      "random_hit": 6,
+      "bottom_hit": 3,
+      "pooled_allfive_PASS": true,
+      "motion_native": [
+        1.0040300070357082,
+        0.07868965217269766,
+        0.5937229242849266,
+        0.4327913092019945,
+        2.459422840242654
+      ],
+      "motion_oracle": [
+        1.0040300070357082,
+        0.078731328195487,
+        0.5932195875322641,
+        0.43302052665325064,
+        2.459422840242654
+      ]
+    }
+  },
+  "details": {
+    "overall": {
+      "n": 64,
+      "native_minADE": 0.20814717190362586,
+      "oracle_minADE": 0.17930192555086827,
+      "native_minFDE": 0.3501649330368747,
+      "oracle_minFDE": 0.26152892559303964,
+      "native_J": 1.1970416424108798,
+      "oracle_J": 0.9635556987746399,
+      "motion_percent": [
+        0,
+        0.01745017851970676,
+        0.020260674405259138,
+        0.017451522991307478,
+        0
+      ],
+      "pooled_five_PASS": true
+    },
+    "stable": {
+      "n": 16,
+      "native_minADE": 0.20583891605989701,
+      "oracle_minADE": 0.17300189138516703,
+      "native_minFDE": 0.3778907698098651,
+      "oracle_minFDE": 0.2781466462202471,
+      "native_J": 1.196870518571088,
+      "oracle_J": 0.920438608291572,
+      "motion_percent": [
+        0,
+        -0.011175745631686329,
+        0.0814867507574979,
+        -0.011174540091818397,
+        0
+      ],
+      "pooled_five_PASS": true
+    },
+    "transition": {
+      "n": 16,
+      "native_minADE": 0.20453846864188105,
+      "oracle_minADE": 0.18183412392694198,
+      "native_minFDE": 0.283529347976639,
+      "oracle_minFDE": 0.21298315874429663,
+      "native_J": 1.1905088549249796,
+      "oracle_J": 0.9484092718013254,
+      "motion_percent": [
+        0,
+        -0.01926821262463463,
+        0.4744156829053825,
+        -0.019264482680481088,
+        0
+      ],
+      "pooled_five_PASS": true
+    },
+    "change": {
+      "n": 32,
+      "native_minADE": 0.21110565145636268,
+      "oracle_minADE": 0.181185843445682,
+      "native_minFDE": 0.36961980718049736,
+      "oracle_minFDE": 0.27749294870380736,
+      "native_J": 1.2003935980737257,
+      "oracle_J": 0.992687457502831,
+      "motion_percent": [
+        0,
+        0.05296252002471302,
+        -0.0847763716162131,
+        0.0529625818223467,
+        0
+      ],
+      "pooled_five_PASS": true
+    }
+  },
+  "solver": {
+    "shape": {
+      "solves": 88,
+      "success": 85,
+      "codes": {
+        "0": 85,
+        "9": 3
+      },
+      "safe_records": 39,
+      "safe_windows": 31,
+      "quality_bound_windows": 49,
+      "nonconverged_safe": 2
+    },
+    "pointwise": {
+      "solves": 88,
+      "success": 78,
+      "codes": {
+        "0": 78,
+        "4": 4,
+        "8": 6
+      },
+      "safe_records": 36,
+      "safe_windows": 29,
+      "quality_bound_windows": 30,
+      "nonconverged_safe": 1
+    }
+  },
+  "sample_selected_opportunities": true,
+  "unknown_not_infeasible": true,
+  "S2_started": false,
+  "neural_training": false,
+  "source_count": 2030,
+  "review_status": "PASS",
+  "formal_increment": 0
+}
